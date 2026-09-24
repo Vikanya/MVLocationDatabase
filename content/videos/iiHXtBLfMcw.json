@@ -1,0 +1,34 @@
+{
+  "title": "[MV] ‘아 마음대로 다 된다!’ | Dragon Pony (드래곤포니) EP [RUN RUN RUN]",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=iiHXtBLfMcw",
+  "artists": [
+    "아-마음대로-다-된다"
+  ],
+  "song": "RUN RUN RUN",
+  "type": "mv",
+  "channel": "안테나 Antenna",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "acres-space-subway",
+      "screenshots": [
+        {
+          "image": "ed63a852ae72.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "3fa1f966ab04.webp",
+          "set": "spot-2"
+        },
+        {
+          "image": "f1600012ca1e.webp",
+          "set": "spot-3"
+        }
+      ],
+      "sheet_rows": [
+        "Subway!9"
+      ]
+    }
+  ]
+}

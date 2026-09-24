@@ -1,0 +1,30 @@
+{
+  "title": "LIMELIGHT - \"Paradise\" Special Clip",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=mrgNlZn0s94",
+  "artists": [
+    "limelight"
+  ],
+  "song": "Paradise",
+  "type": "clip",
+  "channel": "MADEIN",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "efbfedc0805c.webp",
+          "set": "diner"
+        },
+        {
+          "image": "35221df65613.webp",
+          "set": "lobby"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!29"
+      ]
+    }
+  ]
+}

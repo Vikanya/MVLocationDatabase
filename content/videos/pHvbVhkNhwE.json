@@ -1,0 +1,24 @@
+{
+  "title": "[MV] 원정백화점(WONJEONG DEPARTMENT STORE) - PURE HYMN",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=pHvbVhkNhwE",
+  "artists": [
+    "wonjeong-department-store"
+  ],
+  "type": "mv",
+  "channel": "원정백화점 WONJEONG DEPARTMENT STORE",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "columbus-studio-4th",
+      "screenshots": [
+        {
+          "image": "dfb32e51bc2b.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Columbus!29"
+      ]
+    }
+  ]
+}

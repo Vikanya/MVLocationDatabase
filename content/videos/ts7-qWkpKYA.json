@@ -1,0 +1,25 @@
+{
+  "title": "CHUNG HA 청하 | Digital Single [México] Music Video",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=ts7-qWkpKYA",
+  "artists": [
+    "chung-ha"
+  ],
+  "song": "México",
+  "type": "mv",
+  "channel": "CHUNG HA 청하",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "quarries-1",
+      "screenshots": [
+        {
+          "image": "689e9cd06e06.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Quarries!5"
+      ]
+    }
+  ]
+}

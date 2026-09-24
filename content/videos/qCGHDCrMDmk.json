@@ -1,0 +1,26 @@
+{
+  "title": "Young K \"let it be summer\" LIVE CLIP",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=qCGHDCrMDmk",
+  "artists": [
+    "young-k"
+  ],
+  "song": "let it be summer",
+  "type": "live",
+  "channel": "DAY6",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "c413b1b82e23.webp",
+          "set": "hospital"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!36"
+      ]
+    }
+  ]
+}

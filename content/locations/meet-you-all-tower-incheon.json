@@ -1,0 +1,21 @@
+{
+  "name": "Meet-You-All Tower, Incheon",
+  "status": "identified",
+  "address": "12 Gaetbeol-ro, Yeonsu-gu, Incheon, Corée du Sud",
+  "coordinates": {
+    "lat": 37.381753,
+    "lng": 126.653421
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/BLmQgENgRgyHhMWh7"
+    ]
+  },
+  "tags": [
+    "Helipads"
+  ],
+  "sheet_rows": [
+    "Helipads!4"
+  ]
+}

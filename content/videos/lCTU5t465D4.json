@@ -1,0 +1,25 @@
+{
+  "title": "tripleS(트리플에스) 'Rolex' Official Performance (SeoYeon, JooBin, HaYeon, Sullin Ver.)",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=lCTU5t465D4",
+  "artists": [
+    "triples"
+  ],
+  "song": "Rolex",
+  "type": "performance",
+  "channel": "tripleS official",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "4x4",
+      "screenshots": [
+        {
+          "image": "d2f48148d803.webp"
+        }
+      ],
+      "sheet_rows": [
+        "4x4!4"
+      ]
+    }
+  ]
+}

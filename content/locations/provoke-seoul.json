@@ -1,0 +1,54 @@
+{
+  "name": "provoke Seoul",
+  "status": "identified",
+  "address": "87 Yeongsin-ro, Yeongdeungpo-gu, Seoul, South Korea",
+  "coordinates": {
+    "lat": 37.515725,
+    "lng": 126.901538
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/CQVwLvLWP7dhhko4A"
+    ],
+    "website": [
+      "https://www.facebook.com/p/Provoke-Seoul-100064198025497/?locale=zh_TW"
+    ],
+    "instagram": [
+      "https://www.instagram.com/provokeseoul/?hl=en"
+    ]
+  },
+  "sets": [
+    {
+      "id": "outside",
+      "name": "OUTSIDE"
+    },
+    {
+      "id": "hallway",
+      "name": "HALLWAY"
+    },
+    {
+      "id": "hangar",
+      "name": "HANGAR"
+    },
+    {
+      "id": "hangar-2",
+      "name": "HANGAR 2"
+    },
+    {
+      "id": "stairs",
+      "name": "STAIRS"
+    },
+    {
+      "id": "bath",
+      "name": "BATH"
+    },
+    {
+      "id": "chimneys",
+      "name": "CHIMNEYS"
+    }
+  ],
+  "sheet_rows": [
+    "provoke Seoul!1"
+  ]
+}

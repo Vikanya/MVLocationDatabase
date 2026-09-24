@@ -1,0 +1,30 @@
+{
+  "title": "[MV] 이진이 (JinE) - 나 이제 망함, 너에게 반함 (I'm Ruined, I'm Into You) / Official Music Video",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=b22rHAMaVm0",
+  "artists": [
+    "jine"
+  ],
+  "song": "m Ruined, I",
+  "type": "mv",
+  "channel": "SEOUL MUSIC / 서울뮤직",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "e8e728922455.webp",
+          "set": "diner"
+        },
+        {
+          "image": "91ecb8ce6081.webp",
+          "set": "lobby"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!50"
+      ]
+    }
+  ]
+}

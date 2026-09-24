@@ -1,0 +1,29 @@
+{
+  "title": "EPEX(이펙스) - 사랑歌 M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=yRSdPSQiAME",
+  "artists": [
+    "epex"
+  ],
+  "type": "mv",
+  "channel": "EPEX",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "43b9e7b34517.webp",
+          "set": "diner"
+        },
+        {
+          "image": "c64b038b562d.webp",
+          "set": "lobby"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!22"
+      ]
+    }
+  ]
+}

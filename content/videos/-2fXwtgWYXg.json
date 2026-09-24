@@ -1,0 +1,36 @@
+{
+  "title": "WayV 威神V 'HIGH FIVE' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=-2fXwtgWYXg",
+  "artists": [
+    "wayv"
+  ],
+  "song": "HIGH FIVE",
+  "type": "mv",
+  "channel": "SMTOWN",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "samyeong-gihoek",
+      "screenshots": [
+        {
+          "image": "2ae47ec9d938.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Parkings/Rooftops!9"
+      ]
+    },
+    {
+      "location": "quarries-1",
+      "screenshots": [
+        {
+          "image": "8af720b63db7.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Quarries!2"
+      ]
+    }
+  ]
+}

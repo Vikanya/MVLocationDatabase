@@ -1,0 +1,30 @@
+{
+  "title": "eite 'INDEPENDENT WOMAN' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=iVy45APARiY",
+  "artists": [
+    "eite"
+  ],
+  "song": "INDEPENDENT WOMAN",
+  "type": "mv",
+  "channel": "EVA.ENTERTAINMENT",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "cfb1e5bf9196.webp",
+          "set": "gas-station"
+        },
+        {
+          "image": "62fb51e7eea1.webp",
+          "set": "motel"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!55"
+      ]
+    }
+  ]
+}

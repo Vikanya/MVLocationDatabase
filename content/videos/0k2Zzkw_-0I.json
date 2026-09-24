@@ -1,0 +1,26 @@
+{
+  "title": "Girls' Generation 소녀시대 '다시 만난 세계 (Into The New World)' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=0k2Zzkw_-0I",
+  "artists": [
+    "girls-generation"
+  ],
+  "song": "다시 만난 세계 (Into The New World)",
+  "type": "mv",
+  "channel": "SMTOWN",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "forest-of-wisdom",
+      "screenshots": [
+        {
+          "image": "941e12ce9f67.webp",
+          "set": "spot-1"
+        }
+      ],
+      "sheet_rows": [
+        "Forest of Wisdom!2"
+      ]
+    }
+  ]
+}

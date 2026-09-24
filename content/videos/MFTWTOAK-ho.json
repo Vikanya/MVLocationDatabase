@@ -1,0 +1,37 @@
+{
+  "title": "TRENDZ(트렌드지) 'NEW DAYZ' Official MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=MFTWTOAK-ho",
+  "artists": [
+    "trendz"
+  ],
+  "song": "NEW DAYZ",
+  "type": "mv",
+  "channel": "TRENDZ(트렌드지)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "e44c3bbaf3a7.webp",
+          "set": "diner"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!8"
+      ]
+    },
+    {
+      "location": "incheon-inner-port-pier-8-parking",
+      "screenshots": [
+        {
+          "image": "489bab3afee4.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Docks!3"
+      ]
+    }
+  ]
+}

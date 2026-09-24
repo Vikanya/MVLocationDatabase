@@ -1,0 +1,30 @@
+{
+  "title": "Queenz Eye  |  2nd Mini Album [PRISM EP.02] 'Y2K' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=tqGcOmgTq_U",
+  "artists": [
+    "queenz-eye"
+  ],
+  "song": "PRISM EP.02",
+  "type": "mv",
+  "channel": "Queenz Eye",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "acres-space-gas-station",
+      "screenshots": [
+        {
+          "image": "f8f3926c6680.webp",
+          "set": "spot-2"
+        },
+        {
+          "image": "7f368a3857e9.webp",
+          "set": "spot-4"
+        }
+      ],
+      "sheet_rows": [
+        "Carwash/Gas Station!42"
+      ]
+    }
+  ]
+}

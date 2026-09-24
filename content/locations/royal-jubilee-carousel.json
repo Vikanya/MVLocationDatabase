@@ -1,0 +1,21 @@
+{
+  "name": "Royal Jubilee Carousel",
+  "status": "identified",
+  "address": "199 Everland-ro, Yongin-si, Gyeonggi-do, South Korea",
+  "coordinates": {
+    "lat": 37.291742,
+    "lng": 127.199522
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/PwHwPb8HbThwfeoM8"
+    ]
+  },
+  "tags": [
+    "Everland"
+  ],
+  "sheet_rows": [
+    "Everland!4"
+  ]
+}

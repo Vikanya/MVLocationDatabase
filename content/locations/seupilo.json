@@ -1,0 +1,23 @@
+{
+  "name": "Seupilo",
+  "status": "identified",
+  "coordinates": {
+    "lat": 37.521367,
+    "lng": 126.930733
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/C4UT1vPeaVjWyuRu7"
+    ],
+    "naver_map": [
+      "https://naver.me/xecgarFd"
+    ]
+  },
+  "tags": [
+    "Helipads"
+  ],
+  "sheet_rows": [
+    "Helipads!48"
+  ]
+}

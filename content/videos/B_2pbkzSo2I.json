@@ -1,0 +1,24 @@
+{
+  "title": "MV | 어센트 (ASC2NT) - LOVE ME DO | Expecting Tomorrow",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=B_2pbkzSo2I",
+  "artists": [
+    "asc2nt"
+  ],
+  "type": "mv",
+  "channel": "DanalEntertainment",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "maison-1",
+      "screenshots": [
+        {
+          "image": "5ee5d51434b6.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Maison!2"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Four Aces Movie Ranch",
+  "status": "identified",
+  "address": "14499 E Ave Q, Palmdale, CA 93591, United States",
+  "coordinates": {
+    "lat": 34.587688,
+    "lng": -117.871921
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/oH1e4ExYLfjsQfUG7"
+    ],
+    "website": [
+      "https://www.4-aces.com/"
+    ]
+  },
+  "tags": [
+    "Carwash/Gas Station"
+  ],
+  "sheet_rows": [
+    "Carwash/Gas Station!47"
+  ]
+}

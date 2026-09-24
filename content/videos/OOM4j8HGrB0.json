@@ -1,0 +1,25 @@
+{
+  "title": "RAMENGVRL (feat. pH-1) - Ain’t No MF (Official Music Video)",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=OOM4j8HGrB0",
+  "artists": [
+    "ramengvrl"
+  ],
+  "type": "mv",
+  "channel": "RAMENGVRL",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "provoke-seoul",
+      "screenshots": [
+        {
+          "image": "0f6912c8a9aa.webp",
+          "set": "hangar-2"
+        }
+      ],
+      "sheet_rows": [
+        "provoke Seoul!25"
+      ]
+    }
+  ]
+}

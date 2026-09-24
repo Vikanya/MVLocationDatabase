@@ -1,0 +1,46 @@
+{
+  "title": "IRENE 아이린 'Biggest Fan' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=x7wLlK9MMN4",
+  "artists": [
+    "irene"
+  ],
+  "song": "Biggest Fan",
+  "type": "mv",
+  "channel": "SMTOWN",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "acres-space-subway",
+      "screenshots": [
+        {
+          "image": "b9ef5fa8f8fd.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "3f48eb341daf.webp",
+          "set": "spot-2"
+        },
+        {
+          "image": "cf24a6767ef0.webp",
+          "set": "spot-3"
+        }
+      ],
+      "sheet_rows": [
+        "Subway!10"
+      ]
+    },
+    {
+      "location": "royal-x",
+      "screenshots": [
+        {
+          "image": "e5d860f59609.webp",
+          "set": "spot-2"
+        }
+      ],
+      "sheet_rows": [
+        "Royal X!6"
+      ]
+    }
+  ]
+}

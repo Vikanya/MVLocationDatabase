@@ -6,7 +6,6 @@
 Input:  source/export/images/<gid>_r<row>_c<col>.png   (from tools/export-sheet.gs)
 Output: media/full/<id>.webp    full resolution, WebP quality 85
         media/thumb/<id>.webp   480 px wide, WebP quality 80
-        data/media.csv          id, width, height, file sizes
         source/export/image-map.json   export name -> id (read by tools/convert_export.py)
 
 <id> is the first 12 hex characters of the PNG's SHA-1: identical screenshots are stored once, and
@@ -14,7 +13,6 @@ re-running only converts files that aren't in media/ yet.
 """
 from __future__ import annotations
 
-import csv
 import hashlib
 import json
 from concurrent.futures import ProcessPoolExecutor
@@ -27,7 +25,6 @@ SOURCE = ROOT / "source" / "export" / "images"
 MAP_FILE = ROOT / "source" / "export" / "image-map.json"
 FULL = ROOT / "media" / "full"
 THUMB = ROOT / "media" / "thumb"
-MEDIA_CSV = ROOT / "data" / "media.csv"
 
 FULL_QUALITY = 85
 THUMB_WIDTH = 480
@@ -57,18 +54,11 @@ def main():
         results = list(pool.map(convert, sources, chunksize=8))
 
     MAP_FILE.write_text(json.dumps({stem: mid for stem, mid, *_ in results}, indent=1), encoding="utf-8")
-    media = {}
-    for _, mid, width, height, png, full, thumb in results:
-        media[mid] = (mid, width, height, full, thumb)
-    MEDIA_CSV.parent.mkdir(exist_ok=True)
-    with open(MEDIA_CSV, "w", encoding="utf-8", newline="") as f:
-        w = csv.writer(f)
-        w.writerow(["media_id", "width", "height", "full_bytes", "thumb_bytes"])
-        w.writerows(sorted(media.values()))
+    media = {mid: (full, thumb) for _, mid, _w, _h, _png, full, thumb in results}
 
     png_total = sum(r[4] for r in results)
-    full_total = sum(m[3] for m in media.values())
-    thumb_total = sum(m[4] for m in media.values())
+    full_total = sum(m[0] for m in media.values())
+    thumb_total = sum(m[1] for m in media.values())
     print(f"{len(results)} screenshots → {len(media)} unique images. "
           f"PNG {png_total / 1e9:.2f} GB → full {full_total / 1e6:.0f} MB + thumbnails {thumb_total / 1e6:.0f} MB")
 

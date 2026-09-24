@@ -1,0 +1,25 @@
+{
+  "title": "Cover by EPEX 위시&뮤&아민&예왕 l NCT DREAM - 같은 시간 같은 자리",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=YMedQQEHpXk",
+  "artists": [
+    "epex"
+  ],
+  "type": "cover",
+  "channel": "EPEX",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "125ea71ea8f5.webp",
+          "set": "motel"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!48"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "title": "KEY キー 'Tongue Tied' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=aH0zux6WOM4",
+  "artists": [
+    "key"
+  ],
+  "song": "Tongue Tied",
+  "type": "mv",
+  "channel": "SMTOWN",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "manchocheongyo",
+      "screenshots": [
+        {
+          "image": "7eca3c1fe133.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Bridges!2"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "name": "465-21 Mongsan-ri, Nam-myeon, Taean-gun, Chungcheongnam-do, South Korea",
+  "status": "identified",
+  "address": "465-21 Mongsan-ri, Nam-myeon, Taean-gun, Chungcheongnam-do, South Korea",
+  "coordinates": {
+    "lat": 36.697037,
+    "lng": 126.266502
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/ZLj2Da2inGr1jEkZ6"
+    ]
+  },
+  "reference_videos": [
+    "https://youtu.be/vYNJDvvmNfY",
+    "https://youtu.be/e8guOHlxBaM"
+  ],
+  "tags": [
+    "Abandoned Park"
+  ],
+  "sets": [
+    {
+      "id": "spot-1",
+      "name": "Spot 1"
+    },
+    {
+      "id": "spot-2",
+      "name": "Spot 2"
+    },
+    {
+      "id": "spot-3",
+      "name": "Spot 3"
+    },
+    {
+      "id": "spot-4",
+      "name": "Spot 4"
+    },
+    {
+      "id": "spot-5",
+      "name": "Spot 5"
+    }
+  ],
+  "sheet_rows": [
+    "Abandoned Park!1"
+  ]
+}

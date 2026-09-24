@@ -1,0 +1,26 @@
+{
+  "title": "이채연 (LEE CHAEYEON) ‘No Tears On The Dancefloor’ MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=kxa11rqAu1g",
+  "artists": [
+    "lee-chaeyeon"
+  ],
+  "song": "No Tears On The Dancefloor",
+  "type": "mv",
+  "channel": "LEE CHAEYEON",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "acres-space-subway",
+      "screenshots": [
+        {
+          "image": "3c8051de5b4d.webp",
+          "set": "spot-2"
+        }
+      ],
+      "sheet_rows": [
+        "Subway!14"
+      ]
+    }
+  ]
+}

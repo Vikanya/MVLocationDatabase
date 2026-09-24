@@ -1,0 +1,25 @@
+{
+  "title": "NARIN(나린) - R.P.G Shine (Official)",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=dC985ExevHM",
+  "artists": [
+    "narin"
+  ],
+  "type": "other",
+  "channel": "아카펠라 나린_Narin",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "c50d9baadfb4.webp",
+          "set": "diner"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!16"
+      ]
+    }
+  ]
+}

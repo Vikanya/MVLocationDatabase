@@ -1,0 +1,25 @@
+{
+  "title": "Billlie | Always Remember Us This Way | COVER BY MOON SUA",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=cf4-NaLmqN4",
+  "artists": [
+    "billlie"
+  ],
+  "type": "cover",
+  "channel": "Billlie",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "parkings-rooftops-7",
+      "screenshots": [
+        {
+          "image": "60fdbe1441b7.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Parkings/Rooftops!46",
+        "Studio Heal!5"
+      ]
+    }
+  ]
+}

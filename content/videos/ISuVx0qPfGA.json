@@ -1,0 +1,34 @@
+{
+  "title": "ICHILLIN’(아이칠린) ‘Alarm’ MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=ISuVx0qPfGA",
+  "artists": [
+    "ichillin"
+  ],
+  "song": "Alarm",
+  "type": "mv",
+  "channel": "ICHILLIN' 아이칠린",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "870c6319583f.webp",
+          "set": "diner"
+        },
+        {
+          "image": "2e172c768306.webp",
+          "set": "hospital"
+        },
+        {
+          "image": "dcb3be33652e.webp",
+          "set": "lobby"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!20"
+      ]
+    }
+  ]
+}

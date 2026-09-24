@@ -1,0 +1,25 @@
+{
+  "title": "EVNNE (이븐) 'How Can I Do' Official MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=2pm8e8i4mGs",
+  "artists": [
+    "evnne"
+  ],
+  "song": "How Can I Do",
+  "type": "mv",
+  "channel": "EVNNE",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "samyeong-gihoek",
+      "screenshots": [
+        {
+          "image": "fa13e79ee660.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Parkings/Rooftops!11"
+      ]
+    }
+  ]
+}

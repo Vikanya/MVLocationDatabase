@@ -1,0 +1,45 @@
+{
+  "name": "Mamago – 와이키키S 와이키키H",
+  "status": "identified",
+  "links": {
+    "website": [
+      "https://www.mamago-info.com/%EB%B3%B5%EC%A0%9C-%EC%B6%A9%EC%A3%BC-%ED%8F%90%EC%88%98%EC%98%81%EC%9E%A5-1",
+      "https://www.mamago-info.com/%EB%B3%B5%EC%A0%9C-%EC%B6%A9%EC%A3%BC-%ED%8F%90%EC%88%98%EC%98%81%EC%9E%A5"
+    ]
+  },
+  "tags": [
+    "Mamago"
+  ],
+  "sets": [
+    {
+      "id": "spot-1",
+      "name": "Spot 1"
+    },
+    {
+      "id": "spot-2",
+      "name": "Spot 2"
+    },
+    {
+      "id": "spot-3",
+      "name": "Spot 3"
+    },
+    {
+      "id": "spot-4",
+      "name": "Spot 4"
+    },
+    {
+      "id": "spot-5",
+      "name": "Spot 5"
+    },
+    {
+      "id": "spot-6",
+      "name": "Spot 6"
+    }
+  ],
+  "review": [
+    "No coordinates — add a Google Maps link or lat/lng"
+  ],
+  "sheet_rows": [
+    "Mamago!15"
+  ]
+}

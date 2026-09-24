@@ -1,0 +1,25 @@
+{
+  "title": "CHUNG HA 청하 ‘PLAY (feat. 창모)’ Official Music Video",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=UsvoDgmfUwc",
+  "artists": [
+    "chung-ha"
+  ],
+  "song": "PLAY (feat. 창모)",
+  "type": "mv",
+  "channel": "CHUNG HA_Official",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "arena",
+      "screenshots": [
+        {
+          "image": "d4eee3cfb759.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Arena!4"
+      ]
+    }
+  ]
+}

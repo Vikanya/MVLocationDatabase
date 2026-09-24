@@ -1,0 +1,24 @@
+{
+  "title": "NewL 뉴엘 Sweet Palace Official MV (Clean Ver)",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=x6ICoe6Ntnw",
+  "type": "mv",
+  "channel": "New L",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "arena",
+      "screenshots": [
+        {
+          "image": "b1c74a70a8ff.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Arena!7"
+      ]
+    }
+  ],
+  "review": [
+    "Artist not recognised from the title — add the artist(s)"
+  ]
+}

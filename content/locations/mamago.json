@@ -1,0 +1,29 @@
+{
+  "name": "MAMAGO / 마마고",
+  "status": "identified",
+  "coordinates": {
+    "lat": 37.599218,
+    "lng": 126.892481
+  },
+  "coordinates_source": "sheet (DMS)",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/LELt4uXPHAt9R4Fo9"
+    ],
+    "website": [
+      "https://www.mamago-info.com/"
+    ],
+    "instagram": [
+      "https://www.instagram.com/mamago_space"
+    ]
+  },
+  "tags": [
+    "Mamago"
+  ],
+  "review": [
+    "No videos are linked to this location"
+  ],
+  "sheet_rows": [
+    "Mamago!1"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "title": "NMIXX “DASH” M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=7UecFm_bSTU",
+  "artists": [
+    "nmixx"
+  ],
+  "song": "DASH",
+  "type": "mv",
+  "channel": "JYP Entertainment",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "streets-1",
+      "screenshots": [
+        {
+          "image": "d6408ab2c936.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Streets!4"
+      ]
+    }
+  ]
+}

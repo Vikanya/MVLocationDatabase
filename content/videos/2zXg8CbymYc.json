@@ -1,0 +1,25 @@
+{
+  "title": "MONSTA X 몬스타엑스 'Beautiful Liar' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=2zXg8CbymYc",
+  "artists": [
+    "monsta-x"
+  ],
+  "song": "Beautiful Liar",
+  "type": "mv",
+  "channel": "STARSHIP",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "arena",
+      "screenshots": [
+        {
+          "image": "30d6bb7dd07a.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Arena!2"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "title": "WayV 威神V 'FREQUENCY (Korean Ver.)' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=REpZEEpjMlc",
+  "artists": [
+    "wayv"
+  ],
+  "song": "FREQUENCY (Korean Ver.)",
+  "type": "mv",
+  "channel": "SMTOWN",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "parkings-rooftops-5",
+      "screenshots": [
+        {
+          "image": "1d0349b80f7d.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Parkings/Rooftops!37"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "title": "Kim Lip ‘Can You Entertain?’ Official MV | ARTMS",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=MlI5f90ZBPM",
+  "artists": [
+    "kim-lip"
+  ],
+  "song": "Can You Entertain?",
+  "type": "mv",
+  "channel": "Official ARTMS",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "acres-space-subway",
+      "screenshots": [
+        {
+          "image": "2f4fc5a549b5.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "03f0dcdb078f.webp",
+          "set": "spot-3"
+        }
+      ],
+      "sheet_rows": [
+        "Subway!2"
+      ]
+    }
+  ]
+}

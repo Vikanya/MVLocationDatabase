@@ -1,0 +1,23 @@
+{
+  "name": "Manchocheongyo",
+  "status": "identified",
+  "coordinates": {
+    "lat": 37.529807,
+    "lng": 126.951548
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/HFjwCus35wEVxdBB6"
+    ],
+    "naver_map": [
+      "https://naver.me/5vcGESbB"
+    ]
+  },
+  "tags": [
+    "Bridges"
+  ],
+  "sheet_rows": [
+    "Bridges!1"
+  ]
+}

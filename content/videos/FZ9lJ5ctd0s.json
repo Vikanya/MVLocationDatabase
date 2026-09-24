@@ -1,0 +1,24 @@
+{
+  "title": "[Special Clip] 몬스타엑스 (MONSTAX) - 히어로 (HERO) Rooftop Ver.",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=FZ9lJ5ctd0s",
+  "artists": [
+    "monstax"
+  ],
+  "type": "clip",
+  "channel": "STARSHIP",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "the-sharp-star-city",
+      "screenshots": [
+        {
+          "image": "213147403f15.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Helipads!2"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "title": "PIXY(픽시) - 'Wings' M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=pEFG9bpQHtI",
+  "artists": [
+    "pixy"
+  ],
+  "song": "Wings",
+  "type": "mv",
+  "channel": "PIXY",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "abandoned-gimcheon-medical-school",
+      "screenshots": [
+        {
+          "image": "56ec81817f52.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Gimcheon campus!18"
+      ]
+    }
+  ]
+}

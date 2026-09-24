@@ -1,0 +1,25 @@
+{
+  "title": "NewJeans (뉴진스) ‘How Sweet’ Performance Video | Coke Studio",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=Ec0Z1v7jKDQ",
+  "artists": [
+    "newjeans"
+  ],
+  "song": "How Sweet",
+  "type": "performance",
+  "channel": "NewJeans",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "columbus-studio-4th",
+      "screenshots": [
+        {
+          "image": "fd696e8f4c32.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Columbus!30"
+      ]
+    }
+  ]
+}

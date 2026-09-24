@@ -1,0 +1,25 @@
+{
+  "title": "Red Velvet 레드벨벳 'Cosmic' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=FyG21rXCxlY",
+  "artists": [
+    "red-velvet"
+  ],
+  "song": "Cosmic",
+  "type": "mv",
+  "channel": "SMTOWN",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "geobugseom",
+      "screenshots": [
+        {
+          "image": "c9f45a98fe7e.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Geobug Island!12"
+      ]
+    }
+  ]
+}

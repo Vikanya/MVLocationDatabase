@@ -1,0 +1,36 @@
+{
+  "title": "박재범 (Jay Park) - ‘Gimme A Minute (Feat. CHUNG HA)’ Official Music Video",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=UUjLMDHlnGg",
+  "artists": [
+    "jay-park"
+  ],
+  "song": "Gimme A Minute (Feat. CHUNG HA)",
+  "type": "mv",
+  "channel": "JAY PARK",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "parkings-rooftops-3",
+      "screenshots": [
+        {
+          "image": "808f49f66ddd.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Parkings/Rooftops!29"
+      ]
+    },
+    {
+      "location": "manchocheongyo",
+      "screenshots": [
+        {
+          "image": "afa28f28dd23.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Bridges!3"
+      ]
+    }
+  ]
+}

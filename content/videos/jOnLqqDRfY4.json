@@ -1,0 +1,34 @@
+{
+  "title": "TXT (투모로우바이투게더) '하루에 하루만 더 (Stick With You)' Official MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=jOnLqqDRfY4",
+  "artists": [
+    "txt"
+  ],
+  "song": "하루에 하루만 더 (Stick With You)",
+  "type": "mv",
+  "channel": "HYBE LABELS",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "acres-space-subway",
+      "screenshots": [
+        {
+          "image": "3c3e118ed481.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "c26f04f480bc.webp",
+          "set": "spot-2"
+        },
+        {
+          "image": "e9d4ddb06f6a.webp",
+          "set": "spot-3"
+        }
+      ],
+      "sheet_rows": [
+        "Subway!12"
+      ]
+    }
+  ]
+}

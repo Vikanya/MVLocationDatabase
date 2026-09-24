@@ -1,0 +1,34 @@
+{
+  "title": "SECRET NUMBER \"Don't Touch\" MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=qq7CIIhYMHM",
+  "artists": [
+    "secret-number"
+  ],
+  "song": "Don",
+  "type": "mv",
+  "channel": "SECRET NUMBER",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "334dada993ef.webp",
+          "set": "diner"
+        },
+        {
+          "image": "3e155de8eddd.webp",
+          "set": "hospital"
+        },
+        {
+          "image": "b544d14f668e.webp",
+          "set": "lobby"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!84"
+      ]
+    }
+  ]
+}

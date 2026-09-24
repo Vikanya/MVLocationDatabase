@@ -1,0 +1,24 @@
+{
+  "title": "[MV] KIIRAS(키라스) _ KILL MA BO$$",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=1UFrqePAB14",
+  "artists": [
+    "kiiras"
+  ],
+  "type": "mv",
+  "channel": "1theK (원더케이)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "arena",
+      "screenshots": [
+        {
+          "image": "632d76fc6bd7.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Arena!6"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "title": "DAY6 \"I like you(좋아합니다)\" M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=daoMYJv8i0c",
+  "artists": [
+    "day6"
+  ],
+  "song": "I like you(좋아합니다)",
+  "type": "mv",
+  "channel": "JYP Entertainment",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "forest-of-wisdom",
+      "screenshots": [
+        {
+          "image": "dfccc92af25b.webp",
+          "set": "spot-1"
+        }
+      ],
+      "sheet_rows": [
+        "Forest of Wisdom!3"
+      ]
+    }
+  ]
+}

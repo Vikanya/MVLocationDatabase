@@ -1,0 +1,38 @@
+{
+  "title": "로꼬 (Loco) - 'INEEDYOURLOVE' Official Music Video [ENG/CHN]",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=bAdCrrarKhE",
+  "artists": [
+    "loco"
+  ],
+  "song": "INEEDYOURLOVE",
+  "type": "mv",
+  "channel": "AOMGOFFICIAL",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "dc76594f0c14.webp",
+          "set": "diner"
+        },
+        {
+          "image": "ff9d1800d09f.webp",
+          "set": "gas-station"
+        },
+        {
+          "image": "b580213dcc0b.webp",
+          "set": "lobby"
+        },
+        {
+          "image": "95736ee4e4ab.webp",
+          "set": "motel"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!42"
+      ]
+    }
+  ]
+}

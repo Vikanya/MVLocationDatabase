@@ -1,0 +1,25 @@
+{
+  "title": "ATEEZ(에이티즈) - ‘멋(The Real) (흥 : 興 Ver.)’ Official MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=yxfCbV21ck8",
+  "artists": [
+    "ateez"
+  ],
+  "song": "멋(The Real) (흥 : 興 Ver.)",
+  "type": "mv",
+  "channel": "KQ ENTERTAINMENT",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "columbus-spacerental-01",
+      "screenshots": [
+        {
+          "image": "4ef7ab4741ca.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Columbus!54"
+      ]
+    }
+  ]
+}

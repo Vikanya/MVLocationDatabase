@@ -1,0 +1,24 @@
+{
+  "title": "[Special] 문별 (MoonByul) - 머리에서 발끝까지 (feat. Seori)",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=Nqz4oh2jogE",
+  "artists": [
+    "moonbyul"
+  ],
+  "type": "clip",
+  "channel": "MAMAMOO",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "interiors-1",
+      "screenshots": [
+        {
+          "image": "bb90d9cc5e5d.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Interiors!2"
+      ]
+    }
+  ]
+}

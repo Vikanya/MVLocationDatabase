@@ -1,0 +1,38 @@
+{
+  "title": "GENBLUE (젠블루) ‘COCOCO’ MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=Ke5jk7Ngpqs",
+  "artists": [
+    "genblue"
+  ],
+  "song": "COCOCO",
+  "type": "mv",
+  "channel": "GENBLUE幻藍小熊",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "ada821b79de0.webp",
+          "set": "diner"
+        },
+        {
+          "image": "dbc0e438ca62.webp",
+          "set": "carpe-diem"
+        },
+        {
+          "image": "937d778ca422.webp",
+          "set": "subway-station"
+        },
+        {
+          "image": "84f2b230dc64.webp",
+          "set": "street"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!70"
+      ]
+    }
+  ]
+}

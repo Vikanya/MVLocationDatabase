@@ -1,0 +1,21 @@
+{
+  "name": "Lotte World Tower",
+  "status": "identified",
+  "address": "300 Olympic-ro, Songpa District, Seoul, South Korea",
+  "coordinates": {
+    "lat": 37.512464,
+    "lng": 127.102543
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/DX9eXN1RTButz4Bp9"
+    ]
+  },
+  "tags": [
+    "Lotte World"
+  ],
+  "sheet_rows": [
+    "Lotte World!1"
+  ]
+}

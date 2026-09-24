@@ -1,0 +1,25 @@
+{
+  "title": "NCT WISH 엔시티 위시 'COLOR' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=28dAfmIAlCo",
+  "artists": [
+    "nct-wish"
+  ],
+  "song": "COLOR",
+  "type": "mv",
+  "channel": "SMTOWN",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "streets-1",
+      "screenshots": [
+        {
+          "image": "249cb2d22660.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Streets!8"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "title": "BoA 보아 'Woman' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=RlMg8FbcP7g",
+  "artists": [
+    "boa"
+  ],
+  "song": "Woman",
+  "type": "mv",
+  "channel": "SMTOWN",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "hangar-bazar-2",
+      "screenshots": [
+        {
+          "image": "c27eb09e584b.webp"
+        },
+        {
+          "image": "844eab70783b.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Hangar bazar!10"
+      ]
+    }
+  ]
+}

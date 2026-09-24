@@ -1,0 +1,26 @@
+{
+  "title": "[4K] 케플러(Kep1er) - 'We Fresh' Performance Clip [#OUTNOW Kep1er]ㅣ네이버 NOW.",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=tEDUHaBLpZg",
+  "artists": [
+    "kep1er"
+  ],
+  "song": "We Fresh",
+  "type": "performance",
+  "channel": "네이버 NOW.",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "b5622d60cf12.webp",
+          "set": "diner"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!31"
+      ]
+    }
+  ]
+}

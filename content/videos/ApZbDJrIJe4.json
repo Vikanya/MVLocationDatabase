@@ -1,0 +1,40 @@
+{
+  "title": "DKB(다크비) - I Need Love MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=ApZbDJrIJe4",
+  "artists": [
+    "dkb"
+  ],
+  "type": "mv",
+  "channel": "Brave Entertainment",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "dc249478aef3.webp",
+          "set": "gas-station"
+        },
+        {
+          "image": "cf04701d52f0.webp",
+          "set": "motel"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!46"
+      ]
+    },
+    {
+      "location": "ddmc",
+      "screenshots": [
+        {
+          "image": "9339639bf6bf.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Helipads!30"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "title": "NCT DREAM 엔시티 드림 'Moonlight' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=A53rrCecxtM",
+  "artists": [
+    "nct-dream"
+  ],
+  "song": "Moonlight",
+  "type": "mv",
+  "channel": "SMTOWN",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "provoke-seoul",
+      "screenshots": [
+        {
+          "image": "f06d272dc13f.webp",
+          "set": "outside"
+        },
+        {
+          "image": "f766e4323518.webp",
+          "set": "hallway"
+        },
+        {
+          "image": "650e083c18f3.webp",
+          "set": "hangar"
+        }
+      ],
+      "sheet_rows": [
+        "provoke Seoul!19"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "title": "[MV] 가호(Gaho) - Love Me (ENG/JPN/ESP/KOR SUB)",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=nuD-a5lDqv0",
+  "artists": [
+    "gaho"
+  ],
+  "type": "mv",
+  "channel": "Gaho",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "columbus-studio-4th",
+      "screenshots": [
+        {
+          "image": "ff1568730347.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Columbus!19"
+      ]
+    }
+  ]
+}

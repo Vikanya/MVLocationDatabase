@@ -1,0 +1,25 @@
+{
+  "title": "New:ID(뉴이드) ‘E.R’ M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=zdkC_4rZmBs",
+  "artists": [
+    "new-id"
+  ],
+  "song": "E.R",
+  "type": "mv",
+  "channel": "MLD ENTERTAINMENT",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "columbus-studio-4th",
+      "screenshots": [
+        {
+          "image": "b53bac933f34.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Columbus!7"
+      ]
+    }
+  ]
+}

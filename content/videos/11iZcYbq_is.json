@@ -1,0 +1,29 @@
+{
+  "title": "[MV] 이영지 - Small girl feat. 도경수 (D.O.)",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=11iZcYbq_is",
+  "artists": [
+    "이영지"
+  ],
+  "type": "mv",
+  "channel": "이영지",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "acres-space-gas-station",
+      "screenshots": [
+        {
+          "image": "668966777842.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "36c26d42b69f.webp",
+          "set": "spot-2"
+        }
+      ],
+      "sheet_rows": [
+        "Carwash/Gas Station!17"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "title": "BABYMONSTER - 'CLIK CLAK' M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=o0oW3lPoOXM",
+  "artists": [
+    "babymonster"
+  ],
+  "song": "CLIK CLAK",
+  "type": "mv",
+  "channel": "BABYMONSTER",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "manchocheongyo",
+      "screenshots": [
+        {
+          "image": "7009d711d247.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Bridges!4"
+      ]
+    }
+  ]
+}

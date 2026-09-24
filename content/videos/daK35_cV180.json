@@ -1,0 +1,30 @@
+{
+  "title": "AIMERS 에이머스 'Fight Inside' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=daK35_cV180",
+  "artists": [
+    "aimers"
+  ],
+  "song": "Fight Inside",
+  "type": "mv",
+  "channel": "AIMERS",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "cb6c397a0f1d.webp",
+          "set": "diner"
+        },
+        {
+          "image": "6ce5126bc17b.webp",
+          "set": "lobby"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!28"
+      ]
+    }
+  ]
+}

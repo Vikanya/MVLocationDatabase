@@ -1,0 +1,34 @@
+{
+  "title": "n.SSign(엔싸인) - 'Tiger (New Flavour)' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=-FT-UajbesM",
+  "artists": [
+    "n-ssign"
+  ],
+  "song": "Tiger (New Flavour)",
+  "type": "mv",
+  "channel": "nSSign",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "provoke-seoul",
+      "screenshots": [
+        {
+          "image": "207fdcd4df44.webp",
+          "set": "outside"
+        },
+        {
+          "image": "7a011c63c1cf.webp",
+          "set": "hangar"
+        },
+        {
+          "image": "859aa599485e.webp",
+          "set": "hangar-2"
+        }
+      ],
+      "sheet_rows": [
+        "provoke Seoul!21"
+      ]
+    }
+  ]
+}

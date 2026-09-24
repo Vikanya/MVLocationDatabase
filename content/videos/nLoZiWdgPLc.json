@@ -1,0 +1,25 @@
+{
+  "title": "AB6IX (에이비식스) 'GRAB ME' M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=nLoZiWdgPLc",
+  "artists": [
+    "ab6ix"
+  ],
+  "song": "GRAB ME",
+  "type": "mv",
+  "channel": "BRANDNEW MUSIC",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "columbus-1",
+      "screenshots": [
+        {
+          "image": "6ef33376331f.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Columbus!60"
+      ]
+    }
+  ]
+}

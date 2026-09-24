@@ -1,0 +1,33 @@
+{
+  "title": "BÉBE YANA (베이비 야나) - SPACE MULAN (Official Video)",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=fXgmejO7vYM",
+  "artists": [
+    "bbe-yana"
+  ],
+  "type": "mv",
+  "channel": "BÉBE YANA",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "abandoned-park-3",
+      "screenshots": [
+        {
+          "image": "8271a29aadc9.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "0665b2a62ae0.webp",
+          "set": "spot-2"
+        },
+        {
+          "image": "dec2d769f78e.webp",
+          "set": "spot-3"
+        }
+      ],
+      "sheet_rows": [
+        "Abandoned Park!29"
+      ]
+    }
+  ]
+}

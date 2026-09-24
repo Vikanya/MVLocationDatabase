@@ -2,8 +2,11 @@
 """Convert the Apps Script export of the "Kpop MV Locations" sheet into flat CSV tables.
 
 Input  (source/export/): index.json, tabs/<gid>.json, links.json   (see tools/export-sheet.gs)
-Output (data/):          locations.csv, sets.csv, videos.csv, artists.csv, appearances.csv, review.csv
-                         (screenshots/photos are media ids from tools/convert_images.py — run that first)
+Output (content/):       artists/<id>.json, locations/<id>.json, videos/<id>.json
+                         (screenshots/photos are media files from tools/convert_images.py — run that first)
+
+This is a ONE-SHOT migration: once content/ has been edited (admin page), don't regenerate it.
+It refuses to overwrite an existing content/ folder unless --force is given.
 
     python tools/convert_export.py            # parse the export only
     python tools/convert_export.py --online   # also resolve Maps links / addresses to coordinates
@@ -21,9 +24,9 @@ How the sheet is read:
 from __future__ import annotations
 
 import argparse
-import csv
 import json
 import re
+import shutil
 import time
 import unicodedata
 import urllib.error
@@ -35,7 +38,7 @@ from urllib.parse import parse_qs, quote, unquote_plus, urljoin, urlparse
 
 ROOT = Path(__file__).resolve().parent.parent
 EXPORT = ROOT / "source" / "export"
-OUT = ROOT / "data"
+CONTENT = ROOT / "content"
 CACHE_FILE = EXPORT / "online-cache.json"
 
 SKIP_TABS = {"Resources", "Racetrack", ""}
@@ -53,6 +56,28 @@ OPERATOR_TAGS = {
 LOCATION_FIXES = {
     ("Subway", 1): {"name": "Acres Space – Subway"},  # header was copied from Columbus
     ("Carwash/Gas Station", 14): {"name": "Acres Space – Gas Station"},
+    ("Everland", 8): {"name": "Everland #2"},  # the Maps pin's place name is a KFC
+}
+# Location IDs (file names and page URLs) to use instead of the generated ones, keyed by (tab, row)
+LOCATION_IDS = {
+    ("Ametage", 1): "ametage-studio",
+    ("Columbus", 1): "columbus-studio",
+    ("Columbus", 4): "columbus-studio-4th",
+    ("Mamago", 1): "mamago",
+    ("Mamago", 4): "mamago-pyramid",
+    ("Mamago", 8): "jongno-geonguk-building-parking-tower",
+    ("Mamago", 15): "mamago-waikiki",
+    ("Abandoned Park", 1): "taean-european-resort",
+    ("Parkings/Rooftops", 1): "samyeong-gihoek",
+    ("Parkings/Rooftops", 16): "los-angeles-628-s-olive-st",
+    ("Parkings/Rooftops", 49): "hyundai-greenery-campus-byeolgaram",
+    ("Parkings/Rooftops", 56): "yeongnam-public-parking",
+    ("Everland", 8): "everland-2",
+    ("Docks", 1): "incheon-inner-port-pier-8-parking",
+    ("Docks", 9): "gunsan-container-terminal",
+    ("꽂", 1): "nomad-one-room-tel",
+    ("Helipads", 51): "seongsu-saenggak-gongjang",
+    ("Carwash/Gas Station", 5): "jayuro-drive-in-theater",
 }
 # Video links missing from the sheet, keyed by (tab, row) of the video row
 MISSING_VIDEO_LINKS = {
@@ -152,8 +177,10 @@ class Db:
         self.review: list[dict] = []
         self.aliases: list[tuple] = []  # (tab, row, target gid, target row)
 
-    def flag(self, tab, row, issue, detail=""):
-        self.review.append({"tab": tab, "row": row, "issue": issue, "detail": detail})
+    def flag(self, tab, row, issue, detail="", target=None):
+        """A review item. With a target (Location/Video) it is written into that record's `review` list;
+        without one it is only printed (informational)."""
+        self.review.append({"tab": tab, "row": row, "issue": issue, "detail": detail, "target": target})
 
     def get_set(self, location, name, source, website=""):
         for s in self.sets:
@@ -561,17 +588,17 @@ def parse_block(db, tab, block, rows, types, loc, set_names):
     for r in block:
         row, t = rows[r], types[r]
         if t == "orphan":
-            db.flag(tab, r, "screenshot without a video", "row has screenshots or X marks but no video link")
+            db.flag(tab, r, "screenshot without a video",
+                    f"Sheet row {tab}!{r} has a screenshot but no video link", target=loc)
             continue
         if t == "video_nolink":
-            db.flag(tab, r, "video without a link", f"'{row[1].text}' — add the YouTube link")
+            db.flag(tab, r, "video without a link",
+                    f"'{row[1].text}' was filmed here but has no YouTube link in the sheet — add the video", target=loc)
             continue
 
         first = row[1]
         urls = media_urls(first)
         title = "" if first.text.startswith("http") else clean_title(first.text)
-        if len(urls) > 1:
-            db.flag(tab, r, "several videos in one cell", " | ".join(urls))
         notes, confidence = [], ""
         if first.note:
             notes.append(first.note)
@@ -583,6 +610,10 @@ def parse_block(db, tab, block, rows, types, loc, set_names):
 
         for url in urls:
             video = db.get_video(url, title)
+            if len(urls) > 1:
+                db.flag(tab, r, "several videos in one cell",
+                        f"Shared one sheet cell with another video ({tab}!{r}) — check the title and screenshots",
+                        target=video)
             if not grid_cols:
                 shots = [row[c].image for c in sorted(row) if c >= 2 and row[c].image]
                 add_appearance(db, video, loc, None, shots, notes, confidence, f"{tab}!{r}")
@@ -598,7 +629,8 @@ def parse_block(db, tab, block, rows, types, loc, set_names):
             elif not made:
                 add_appearance(db, video, loc, None, extras, notes, confidence, f"{tab}!{r}")
                 if not extras:
-                    db.flag(tab, r, "every set marked X", f"'{title or url}' has no screenshot in any set column")
+                    db.flag(tab, r, "every set marked X",
+                            f"Every set at '{loc.name}' was marked X — which set was it filmed in?", target=video)
 
 
 def add_appearance(db, video, loc, set_, shots, notes, confidence, source):
@@ -710,17 +742,25 @@ def finalize(db, tab_order):
         # "더샵스타시티 The Sharp Star City" -> the-sharp-star-city, otherwise the whole name
         latin = latin_part(loc.name)
         use_latin = has_hangul(loc.name) and len(latin.split()) >= 2
-        loc.id = unique(slugify(latin) if use_latin else slugify(loc.name))
+        generated = slugify(latin) if use_latin else slugify(loc.name)
+        loc.id = unique(LOCATION_IDS.get((loc.tab, loc.row), generated))
     for loc in db.locations:
         if not loc.identified:
-            db.flag(loc.tab, loc.row, "location not identified", f"{loc.id}: no name, address or map link")
+            db.flag(loc.tab, loc.row, "location not identified", "Location not identified yet", target=loc)
         elif loc.lat is None:
-            db.flag(loc.tab, loc.row, "no coordinates", f"{loc.id}: add a Google Maps link or lat/lng")
+            db.flag(loc.tab, loc.row, "no coordinates", "No coordinates — add a Google Maps link or lat/lng",
+                    target=loc)
         if not any(a.location is loc for a in db.appearances):
-            db.flag(loc.tab, loc.row, "location without videos", f"{loc.id}: {loc.name}")
+            db.flag(loc.tab, loc.row, "location without videos", "No videos are linked to this location", target=loc)
 
-    for s in db.sets:
-        s.id = unique(f"{s.location.id}--{slugify(s.name) or 'set'}")
+    for loc in db.locations:
+        taken = set()
+        for s in (s for s in db.sets if s.location is loc):
+            base = slugify(s.name) or "set"
+            s.id, n = base, 2
+            while s.id in taken:
+                s.id, n = f"{base}-{n}", n + 1
+            taken.add(s.id)
 
     artists, video_artists = {}, {}
     for video in db.videos.values():
@@ -736,7 +776,8 @@ def finalize(db, tab_order):
             ids.append(aid)
         video_artists[video.key] = (ids, song, kind)
         if not ids:
-            db.flag("", "", "artist not recognised", f"{video.key}: {video.title or video.title_sheet}")
+            db.flag("", "", "artist not recognised", "Artist not recognised from the title — add the artist(s)",
+                    target=video)
     return artists, video_artists
 
 
@@ -864,19 +905,87 @@ def enrich_online(db):
             video.status = info["status"]
             video.title = info.get("title", "")
             video.channel = info.get("channel", "")
-            if info["status"] != "ok":
-                db.flag("", "", "video not embeddable or gone", f"{video.key} ({info['status']}): {video.title_sheet}")
 
 
 # --------------------------------------------------------------------------- output
 
 
-def write_csv(name, header, rows):
-    OUT.mkdir(exist_ok=True)
-    with open(OUT / name, "w", encoding="utf-8", newline="") as f:
-        w = csv.writer(f)
-        w.writerow(header)
-        w.writerows(rows)
+def write_content(db, artists, video_artists, media, force=False):
+    """One JSON file per record: content/artists/<id>.json, content/locations/<id>.json, content/videos/<id>.json."""
+    if CONTENT.exists() and any(CONTENT.iterdir()) and not force:
+        raise SystemExit(f"{CONTENT} already exists — it may contain edits made since the conversion. "
+                         "Use --force only if you really want to regenerate it from the sheet export.")
+    review = {}
+    for x in db.review:
+        if x["target"] is not None:
+            review.setdefault(id(x["target"]), []).append(x["detail"])
+
+    def compact(record):
+        """Drop empty optional values so files stay short (the site treats missing as empty)."""
+        return {k: v for k, v in record.items() if v not in ("", None, [], {})}
+
+    files = {}
+    for aid, a in artists.items():
+        files[f"artists/{aid}.json"] = compact({"name": a["name"], "name_ko": a["name_ko"]})
+
+    for loc in db.locations:
+        sets = [s for s in db.sets if s.location is loc]
+        files[f"locations/{loc.id}.json"] = compact({
+            "name": loc.name,
+            "status": "identified" if loc.identified else "unknown",
+            "address": loc.address,
+            "coordinates": {"lat": round(loc.lat, 6), "lng": round(loc.lng, 6)} if loc.lat is not None else None,
+            "coordinates_source": loc.coords_source,
+            "links": compact({"google_maps": loc.maps_urls, "naver_map": loc.naver_urls,
+                              "website": loc.websites, "instagram": loc.instagram}),
+            "reference_videos": loc.reference_videos,
+            "photos": [f"{m}.webp" for m in media(loc.photos)],
+            "tags": loc.tags,
+            "sets": [{"id": s.id, "name": s.name} for s in sets],
+            "notes": "\n".join(loc.notes),
+            "review": review.get(id(loc), []),
+            "sheet_rows": loc.rows,
+        })
+
+    for video in db.videos.values():
+        ids, song, kind = video_artists[video.key]
+        # one appearance per location; the set is recorded on each screenshot
+        appearances = {}
+        for a in (a for a in db.appearances if a.video is video):
+            entry = appearances.setdefault(a.location.id, {"location": a.location.id, "screenshots": [],
+                                                           "confidence": "", "notes": [], "sheet_rows": []})
+            for m in media(a.screenshots):
+                entry["screenshots"].append(compact({"image": f"{m}.webp", "set": a.set.id if a.set else ""}))
+            entry["confidence"] = entry["confidence"] or a.confidence
+            entry["notes"] += [n for n in a.notes if n not in entry["notes"]]
+            entry["sheet_rows"] += [r for r in a.rows if r not in entry["sheet_rows"]]
+        files[f"videos/{video.key}.json"] = compact({
+            "title": video.title or video.title_sheet,
+            "platform": video.platform,
+            "url": video.url,
+            "artists": ids,
+            "song": song,
+            "type": kind,
+            "channel": video.channel,
+            "embeddable": video.status in ("", "ok"),
+            "start": video.timestamp,
+            "appearances": [compact({**e, "notes": "\n".join(e["notes"])}) for e in appearances.values()],
+            "review": review.get(id(video), []),
+        })
+
+    # file names must stay distinct on case-insensitive disks (Windows/macOS): YouTube IDs are case-sensitive
+    seen = {}
+    for path in files:
+        other = seen.setdefault(path.lower(), path)
+        if other != path:
+            raise SystemExit(f"File name clash on case-insensitive disks: {other} / {path}")
+
+    if CONTENT.exists():
+        shutil.rmtree(CONTENT)
+    for path, record in files.items():
+        target = CONTENT / path
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
 def join(values):
@@ -905,6 +1014,7 @@ def load_image_map():
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--online", action="store_true", help="resolve Maps links/addresses and fetch YouTube titles")
+    parser.add_argument("--force", action="store_true", help="overwrite an existing content/ folder")
     args = parser.parse_args()
 
     index = json.loads((EXPORT / "index.json").read_text(encoding="utf-8"))
@@ -925,39 +1035,17 @@ def main():
     artists, video_artists = finalize(db, tab_order)
     media = load_image_map()
 
-    write_csv("locations.csv",
-              ["location_id", "name", "name_source", "identified", "address", "lat", "lng", "coords_source",
-               "maps_url", "naver_url", "website", "instagram", "reference_videos", "photos", "tags",
-               "source_rows", "notes"],
-              [[l.id, l.name, l.name_source, "yes" if l.identified else "no", l.address,
-                "" if l.lat is None else round(l.lat, 6), "" if l.lng is None else round(l.lng, 6), l.coords_source,
-                join(l.maps_urls), join(l.naver_urls), join(l.websites), join(l.instagram),
-                join(l.reference_videos), join(media(l.photos)), join(l.tags), join(l.rows),
-                join(l.notes)] for l in db.locations])
-    write_csv("sets.csv", ["set_id", "location_id", "name", "source", "website"],
-              [[s.id, s.location.id, s.name, s.source, s.website] for s in db.sets])
-    write_csv("videos.csv",
-              ["video_id", "platform", "url", "title", "title_in_sheet", "channel", "artist_ids", "song", "type",
-               "status"],
-              [[v.key, v.platform, v.url, v.title or v.title_sheet, v.title_sheet, v.channel,
-                join(video_artists[v.key][0]), video_artists[v.key][1], video_artists[v.key][2], v.status]
-               for v in db.videos.values()])
-    write_csv("artists.csv", ["artist_id", "name", "name_ko", "video_count"],
-              [[a["artist_id"], a["name"], a["name_ko"], a["videos"]]
-               for a in sorted(artists.values(), key=lambda a: a["artist_id"])])
-    write_csv("appearances.csv",
-              ["video_id", "location_id", "set_id", "screenshots", "timestamp", "confidence", "notes", "source_rows"],
-              [[a.video.key, a.location.id, a.set.id if a.set else "", join(media(a.screenshots)),
-                a.video.timestamp or "", a.confidence, join(a.notes), join(a.rows)] for a in db.appearances])
-    order = {t: i for i, t in enumerate(tab_order)}
-    db.review.sort(key=lambda x: (order.get(x["tab"], 999), x["row"] if isinstance(x["row"], int) else 0))
-    write_csv("review.csv", ["tab", "row", "issue", "detail"],
-              [[x["tab"], x["row"], x["issue"], x["detail"]] for x in db.review])
+    write_content(db, artists, video_artists, media, force=args.force)
 
+    info = [x for x in db.review if x["target"] is None]
+    if info:
+        print("Notes (not attached to a record):")
+        for x in info:
+            print(f"  {x['tab']}!{x['row']} {x['issue']}: {x['detail']}")
     located = sum(1 for l in db.locations if l.lat is not None)
     print(f"{len(db.locations)} locations ({located} with coordinates), {len(db.sets)} sets, "
           f"{len(db.videos)} videos, {len(artists)} artists, {len(db.appearances)} appearances, "
-          f"{len(db.review)} review items → {OUT}")
+          f"{len(db.review) - len(info)} review items → {CONTENT}")
 
 
 if __name__ == "__main__":

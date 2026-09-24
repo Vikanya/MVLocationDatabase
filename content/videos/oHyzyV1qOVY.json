@@ -1,0 +1,33 @@
+{
+  "title": "[MV] OVAN(오반) _ Church OPPA(교회오빠) (Feat.BOBBY)",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=oHyzyV1qOVY",
+  "artists": [
+    "ovan"
+  ],
+  "type": "mv",
+  "channel": "1theK (원더케이)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "214b49baec8a.webp",
+          "set": "diner"
+        },
+        {
+          "image": "003f2b2d28ff.webp",
+          "set": "gas-station"
+        },
+        {
+          "image": "e3e9b5d758d3.webp",
+          "set": "motel"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!77"
+      ]
+    }
+  ]
+}

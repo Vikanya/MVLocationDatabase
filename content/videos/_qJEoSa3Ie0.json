@@ -1,0 +1,25 @@
+{
+  "title": "[MV] 이달의 소녀/김립 (LOONA/Kim Lip) \"Eclipse\"",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=_qJEoSa3Ie0",
+  "artists": [
+    "loona-kim-lip"
+  ],
+  "song": "Eclipse",
+  "type": "mv",
+  "channel": "loonatheworld",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "abandoned-gimcheon-medical-school",
+      "screenshots": [
+        {
+          "image": "8b7f91a45179.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Gimcheon campus!2"
+      ]
+    }
+  ]
+}

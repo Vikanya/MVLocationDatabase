@@ -1,0 +1,26 @@
+{
+  "title": "Stray Kids \"RUN IT\" M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=Q7IFjVUUb_E",
+  "artists": [
+    "stray-kids"
+  ],
+  "song": "RUN IT",
+  "type": "mv",
+  "channel": "JYP Entertainment",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "taean-european-resort",
+      "screenshots": [
+        {
+          "image": "eb317c681fb4.webp",
+          "set": "spot-4"
+        }
+      ],
+      "sheet_rows": [
+        "Abandoned Park!12"
+      ]
+    }
+  ]
+}

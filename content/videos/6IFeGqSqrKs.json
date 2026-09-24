@@ -1,0 +1,25 @@
+{
+  "title": "LE SSERAFIM (르세라핌) ‘BOOMPALA' OFFICIAL PERFORMANCE FILM @ THE QUARRY",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=6IFeGqSqrKs",
+  "artists": [
+    "le-sserafim"
+  ],
+  "song": "BOOMPALA",
+  "type": "performance",
+  "channel": "HYBE LABELS",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "quarries-1",
+      "screenshots": [
+        {
+          "image": "03d1818451ce.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Quarries!4"
+      ]
+    }
+  ]
+}

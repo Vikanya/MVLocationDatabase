@@ -1,0 +1,26 @@
+{
+  "title": "LIMELIGHT - \"Eye To Eye\" Special Clip",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=pOXtkjFcMjY",
+  "artists": [
+    "limelight"
+  ],
+  "song": "Eye To Eye",
+  "type": "clip",
+  "channel": "MADEIN",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "3efab87a9d02.webp",
+          "set": "hospital"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!57"
+      ]
+    }
+  ]
+}

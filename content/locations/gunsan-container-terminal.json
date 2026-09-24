@@ -1,0 +1,23 @@
+{
+  "name": "군산컨테이너터미널(주)",
+  "status": "identified",
+  "coordinates": {
+    "lat": 35.973665,
+    "lng": 126.559247
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/HAWm3eupkPsDd7jV9"
+    ],
+    "naver_map": [
+      "https://naver.me/GxOF8tXl"
+    ]
+  },
+  "tags": [
+    "Docks"
+  ],
+  "sheet_rows": [
+    "Docks!9"
+  ]
+}

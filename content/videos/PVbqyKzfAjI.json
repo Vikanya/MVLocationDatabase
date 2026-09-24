@@ -1,0 +1,30 @@
+{
+  "title": "MADEIN - \"SATURN\" MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=PVbqyKzfAjI",
+  "artists": [
+    "madein"
+  ],
+  "song": "SATURN",
+  "type": "mv",
+  "channel": "MADEIN",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "acres-space-gas-station",
+      "screenshots": [
+        {
+          "image": "0d733c8d00cf.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "575b0526e616.webp",
+          "set": "spot-2"
+        }
+      ],
+      "sheet_rows": [
+        "Carwash/Gas Station!32"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "title": "DJB eSIM 2025形象大使 NMIXX ｜NICE TO MIXX YOU",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=EFBBDwPNpWk",
+  "artists": [
+    "djb-esim"
+  ],
+  "type": "other",
+  "channel": "DJB",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "8e51fcb71db6.webp",
+          "set": "diner"
+        },
+        {
+          "image": "439b110a6db0.webp",
+          "set": "hospital"
+        },
+        {
+          "image": "7de1f0a15f15.webp",
+          "set": "gas-station"
+        },
+        {
+          "image": "ef7de52b49f2.webp",
+          "set": "lobby"
+        },
+        {
+          "image": "9c3cbb8b3369.webp",
+          "set": "motel"
+        },
+        {
+          "image": "3dc01bebb54d.webp",
+          "set": "house"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!78"
+      ]
+    }
+  ]
+}

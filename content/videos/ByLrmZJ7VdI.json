@@ -1,0 +1,24 @@
+{
+  "title": "VAV(브이에이브이)_예쁘다고(Gorgeous)_Music Video",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=ByLrmZJ7VdI",
+  "artists": [
+    "vav"
+  ],
+  "type": "mv",
+  "channel": "A team",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "hangar-bazar-2",
+      "screenshots": [
+        {
+          "image": "dff85bbb4910.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Hangar bazar!11"
+      ]
+    }
+  ]
+}

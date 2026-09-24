@@ -1,0 +1,25 @@
+{
+  "title": "Xdinary Heroes \"Beautiful Life\" M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=9iV-RmWapk8",
+  "artists": [
+    "xdinary-heroes"
+  ],
+  "song": "Beautiful Life",
+  "type": "mv",
+  "channel": "JYP Entertainment",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "hangar-bazar-5",
+      "screenshots": [
+        {
+          "image": "375463be489f.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Hangar bazar!40"
+      ]
+    }
+  ]
+}

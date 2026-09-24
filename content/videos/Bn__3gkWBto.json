@@ -1,0 +1,34 @@
+{
+  "title": "남우현(Nam Woo Hyun) ‘냉정과 열정 사이’ MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=Bn__3gkWBto",
+  "artists": [
+    "nam-woo-hyun"
+  ],
+  "song": "냉정과 열정 사이",
+  "type": "mv",
+  "channel": "woolliment",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "provoke-seoul",
+      "screenshots": [
+        {
+          "image": "812b599bb2be.webp",
+          "set": "outside"
+        },
+        {
+          "image": "9affa4229240.webp",
+          "set": "hangar"
+        },
+        {
+          "image": "9898f37b21ee.webp",
+          "set": "hangar-2"
+        }
+      ],
+      "sheet_rows": [
+        "provoke Seoul!23"
+      ]
+    }
+  ]
+}

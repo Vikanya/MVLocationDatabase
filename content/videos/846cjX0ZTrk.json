@@ -1,0 +1,36 @@
+{
+  "title": "[MV] 이달의 소녀 (LOONA) \"Hi High\"",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=846cjX0ZTrk",
+  "artists": [
+    "loona"
+  ],
+  "song": "Hi High",
+  "type": "mv",
+  "channel": "loonatheworld",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "docks-1",
+      "screenshots": [
+        {
+          "image": "d9357ffa5777.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Docks!7"
+      ]
+    },
+    {
+      "location": "nomad-one-room-tel",
+      "screenshots": [
+        {
+          "image": "303647994fba.webp"
+        }
+      ],
+      "sheet_rows": [
+        "꽂!4"
+      ]
+    }
+  ]
+}

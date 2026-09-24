@@ -1,0 +1,37 @@
+{
+  "title": "Jang Wooyoung \"Think Too Much (Feat. DAMINI)\" M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=mIy4ACKR1Ag",
+  "artists": [
+    "jang-wooyoung"
+  ],
+  "song": "Think Too Much (Feat. DAMINI)",
+  "type": "mv",
+  "channel": "JYP Entertainment",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "forest-of-wisdom",
+      "screenshots": [
+        {
+          "image": "f2aba44cd6ec.webp",
+          "set": "spot-2"
+        }
+      ],
+      "sheet_rows": [
+        "Forest of Wisdom!6"
+      ]
+    },
+    {
+      "location": "streets-1",
+      "screenshots": [
+        {
+          "image": "7fe677689385.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Streets!9"
+      ]
+    }
+  ]
+}

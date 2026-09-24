@@ -1,0 +1,30 @@
+{
+  "title": "DXMON(다이몬) '찍찍찍 (Zip Zip Zip)' Official MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=ZiuIL_krh8Q",
+  "artists": [
+    "dxmon"
+  ],
+  "song": "찍찍찍 (Zip Zip Zip)",
+  "type": "mv",
+  "channel": "DXMON (다이몬)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "acres-space-gas-station",
+      "screenshots": [
+        {
+          "image": "8e2e0dea3d55.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "2d51fd477157.webp",
+          "set": "spot-2"
+        }
+      ],
+      "sheet_rows": [
+        "Carwash/Gas Station!23"
+      ]
+    }
+  ]
+}

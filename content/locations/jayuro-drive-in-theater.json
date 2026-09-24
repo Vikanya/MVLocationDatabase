@@ -1,0 +1,26 @@
+{
+  "name": "자유로자동차극장",
+  "status": "identified",
+  "coordinates": {
+    "lat": 37.834671,
+    "lng": 126.735057
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/hXeyy9u7PLPiUMpB6"
+    ],
+    "naver_map": [
+      "https://naver.me/Fwn7kG2N"
+    ],
+    "website": [
+      "https://www.carmovie.co.kr/gallery"
+    ]
+  },
+  "tags": [
+    "Carwash/Gas Station"
+  ],
+  "sheet_rows": [
+    "Carwash/Gas Station!5"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "title": "GOT7 “Fly” M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=Q4vFviZ4qw0",
+  "artists": [
+    "got7"
+  ],
+  "song": "Fly",
+  "type": "mv",
+  "channel": "JYP Entertainment",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "the-sharp-central-park-1st-condominium-complex",
+      "screenshots": [
+        {
+          "image": "9481de62c7cc.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Helipads!8"
+      ]
+    }
+  ]
+}

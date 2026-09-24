@@ -1,0 +1,26 @@
+{
+  "title": "IRRIS (아이리스) 'Stay W!th Me' Official MV (Performance ver.)",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=I6qb3zTlyJA",
+  "artists": [
+    "irris"
+  ],
+  "song": "Stay W!th Me",
+  "type": "mv",
+  "channel": "IRRISㆍ아이리스",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "eb6122361e4e.webp",
+          "set": "diner"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!32"
+      ]
+    }
+  ]
+}

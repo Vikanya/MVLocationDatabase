@@ -1,0 +1,16 @@
+{
+  "name": "Carwash/Gas Station #1",
+  "status": "identified",
+  "address": "630-1 Sinwon-dong, Deogyang-gu, Goyang-si, Gyeonggi-do, Corée du Sud",
+  "coordinates": {
+    "lat": 37.670476,
+    "lng": 126.882058
+  },
+  "coordinates_source": "address lookup (approximate)",
+  "tags": [
+    "Carwash/Gas Station"
+  ],
+  "sheet_rows": [
+    "Carwash/Gas Station!1"
+  ]
+}

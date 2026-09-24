@@ -1,0 +1,53 @@
+{
+  "title": "핫이슈 (HOT ISSUE) - 'ICONS' Official MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=Vbne6s0e0rI",
+  "artists": [
+    "hot-issue"
+  ],
+  "song": "ICONS",
+  "type": "mv",
+  "channel": "핫이슈 HOT ISSUE",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "samyeong-gihoek",
+      "screenshots": [
+        {
+          "image": "9d1d7bd8bd8c.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Parkings/Rooftops!6"
+      ]
+    },
+    {
+      "location": "provoke-seoul",
+      "screenshots": [
+        {
+          "image": "48a104dfb425.webp",
+          "set": "outside"
+        },
+        {
+          "image": "1248cf961931.webp",
+          "set": "outside"
+        },
+        {
+          "image": "abf636df1b94.webp",
+          "set": "hallway"
+        },
+        {
+          "image": "64938b03ec03.webp",
+          "set": "hangar-2"
+        },
+        {
+          "image": "8b7e480d22ee.webp",
+          "set": "bath"
+        }
+      ],
+      "sheet_rows": [
+        "provoke Seoul!24"
+      ]
+    }
+  ]
+}

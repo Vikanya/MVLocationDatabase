@@ -1,0 +1,24 @@
+{
+  "title": "[MV] 마마무 (MAMAMOO) - Where Are We Now",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=zzk09ESX7e0",
+  "artists": [
+    "mamamoo"
+  ],
+  "type": "mv",
+  "channel": "MAMAMOO",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "geobugseom",
+      "screenshots": [
+        {
+          "image": "ba9fc8c5fcd0.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Geobug Island!10"
+      ]
+    }
+  ]
+}

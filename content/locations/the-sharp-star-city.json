@@ -1,0 +1,24 @@
+{
+  "name": "더샵스타시티 The Sharp Star City",
+  "status": "identified",
+  "address": "262 Achasan-ro, Gwangjin-gu, Seoul, Corée du Sud",
+  "coordinates": {
+    "lat": 37.537559,
+    "lng": 127.07257
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/VvALASkVkmmr89Ad9"
+    ]
+  },
+  "reference_videos": [
+    "https://youtu.be/o8F8anlwyk4"
+  ],
+  "tags": [
+    "Helipads"
+  ],
+  "sheet_rows": [
+    "Helipads!1"
+  ]
+}

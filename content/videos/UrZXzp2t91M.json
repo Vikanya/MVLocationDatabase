@@ -1,0 +1,38 @@
+{
+  "title": "김재중(KIM JAE JOONG) 'ROCK STAR' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=UrZXzp2t91M",
+  "artists": [
+    "kim-jae-joong"
+  ],
+  "song": "ROCK STAR",
+  "type": "mv",
+  "channel": "iNKODE Official",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "taean-european-resort",
+      "screenshots": [
+        {
+          "image": "b1cb4ae8d299.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "1a45798d4aee.webp",
+          "set": "spot-2"
+        },
+        {
+          "image": "1a292cd29772.webp",
+          "set": "spot-4"
+        },
+        {
+          "image": "4646cb1d5dfd.webp",
+          "set": "spot-5"
+        }
+      ],
+      "sheet_rows": [
+        "Abandoned Park!10"
+      ]
+    }
+  ]
+}

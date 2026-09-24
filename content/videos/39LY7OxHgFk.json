@@ -1,0 +1,25 @@
+{
+  "title": "JUNIEL(주니엘) '혜성' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=39LY7OxHgFk",
+  "artists": [
+    "juniel"
+  ],
+  "song": "혜성",
+  "type": "mv",
+  "channel": "JUNIEL OFFICIAL",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "mamago-pyramid",
+      "screenshots": [
+        {
+          "image": "2bb00bd6f346.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Mamago!6"
+      ]
+    }
+  ]
+}

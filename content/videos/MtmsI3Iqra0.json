@@ -1,0 +1,24 @@
+{
+  "title": "SORN - crazy stupid lovers (ft. Hong Seok) (Official Music Video)",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=MtmsI3Iqra0",
+  "artists": [
+    "sorn"
+  ],
+  "type": "mv",
+  "channel": "SORN",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "interiors-1",
+      "screenshots": [
+        {
+          "image": "0caf21798e55.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Interiors!3"
+      ]
+    }
+  ]
+}

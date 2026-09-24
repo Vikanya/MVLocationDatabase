@@ -1,0 +1,26 @@
+{
+  "title": "KAI 카이 '음 (Mmmh)' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=Fc-fa6cAe2c",
+  "artists": [
+    "kai"
+  ],
+  "song": "음 (Mmmh)",
+  "type": "mv",
+  "channel": "SMTOWN",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "taean-european-resort",
+      "screenshots": [
+        {
+          "image": "19ba7026ad16.webp",
+          "set": "spot-2"
+        }
+      ],
+      "sheet_rows": [
+        "Abandoned Park!8"
+      ]
+    }
+  ]
+}

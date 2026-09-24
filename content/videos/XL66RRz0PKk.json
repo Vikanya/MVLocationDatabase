@@ -1,0 +1,25 @@
+{
+  "title": "Cover by EPEX 금동현&백승&에이든&제프 l NCT U - Misfit",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=XL66RRz0PKk",
+  "artists": [
+    "epex"
+  ],
+  "type": "cover",
+  "channel": "EPEX",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "aac64f512fe3.webp",
+          "set": "diner"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!35"
+      ]
+    }
+  ]
+}

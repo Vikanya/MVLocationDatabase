@@ -1,0 +1,24 @@
+{
+  "name": "노매드원룸텔",
+  "status": "identified",
+  "address": "South Korea, Seoul, Jung District, Toegye-ro, 217 진양상가 17층",
+  "coordinates": {
+    "lat": 37.561921,
+    "lng": 126.995909
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/zQX9bX6VstH8utXc7"
+    ]
+  },
+  "photos": [
+    "735c1be073c4.webp"
+  ],
+  "tags": [
+    "꽂"
+  ],
+  "sheet_rows": [
+    "꽂!1"
+  ]
+}

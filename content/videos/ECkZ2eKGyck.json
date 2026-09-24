@@ -1,0 +1,27 @@
+{
+  "title": "레인즈 (RAINZ) - Turn it up Official M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=ECkZ2eKGyck",
+  "artists": [
+    "rainz"
+  ],
+  "type": "mv",
+  "channel": "GENIE MUSIC",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "hangar-bazar-3",
+      "screenshots": [
+        {
+          "image": "e51eab9c4392.webp"
+        },
+        {
+          "image": "135139a59cdb.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Hangar bazar!26"
+      ]
+    }
+  ]
+}

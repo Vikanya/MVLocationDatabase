@@ -1,0 +1,36 @@
+{
+  "title": "izna 'SIGN' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=88GkYKvnvvI",
+  "artists": [
+    "izna"
+  ],
+  "song": "SIGN",
+  "type": "mv",
+  "channel": "izna (이즈나)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "jongno-geonguk-building-parking-tower",
+      "screenshots": [
+        {
+          "image": "e59a1d17031a.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Mamago!11"
+      ]
+    },
+    {
+      "location": "streets-2",
+      "screenshots": [
+        {
+          "image": "ccc6bccf3ec3.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Streets!11"
+      ]
+    }
+  ]
+}

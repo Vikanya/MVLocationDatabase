@@ -1,0 +1,37 @@
+{
+  "title": "TXT (투모로우바이투게더) 'Can't Stop' Official MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=sswmsnPigDc",
+  "artists": [
+    "txt"
+  ],
+  "song": "Can",
+  "type": "mv",
+  "channel": "HYBE LABELS",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "hangar-bazar-5",
+      "screenshots": [
+        {
+          "image": "2eac659cff50.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Hangar bazar!42"
+      ]
+    },
+    {
+      "location": "royal-x",
+      "screenshots": [
+        {
+          "image": "b009dd2b378f.webp",
+          "set": "spot-1"
+        }
+      ],
+      "sheet_rows": [
+        "Royal X!2"
+      ]
+    }
+  ]
+}

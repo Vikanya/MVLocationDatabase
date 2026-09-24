@@ -1,0 +1,26 @@
+{
+  "title": "어센트(ASC2NT) 1ST MINI ALBUM ‘Still Rose’ MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=n7AChRJK7tc",
+  "artists": [
+    "asc2nt"
+  ],
+  "song": "Still Rose",
+  "type": "mv",
+  "channel": "ASC2NT(어센트)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "mamago-waikiki",
+      "screenshots": [
+        {
+          "image": "da65bb607601.webp",
+          "set": "spot-1"
+        }
+      ],
+      "sheet_rows": [
+        "Mamago!22"
+      ]
+    }
+  ]
+}

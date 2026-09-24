@@ -1,0 +1,24 @@
+{
+  "title": "[EXID(이엑스아이디)] 내일해(LADY) 뮤직 비디오 (Official Music Video)",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=Q1JiptOTxno",
+  "artists": [
+    "exid"
+  ],
+  "type": "mv",
+  "channel": "EXID_OFFICIAL",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "hangar-bazar-5",
+      "screenshots": [
+        {
+          "image": "2c4eab879371.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Hangar bazar!43"
+      ]
+    }
+  ]
+}

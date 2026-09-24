@@ -1,0 +1,24 @@
+{
+  "title": "[MV] 자우림(Jaurim) - STAY WITH ME",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=p7Yc0kaz_hY",
+  "artists": [
+    "jaurim"
+  ],
+  "type": "mv",
+  "channel": "Jaurim",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "columbus-spacerental-11",
+      "screenshots": [
+        {
+          "image": "92e9a629d6ff.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Columbus!46"
+      ]
+    }
+  ]
+}

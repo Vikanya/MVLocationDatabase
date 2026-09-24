@@ -1,0 +1,29 @@
+{
+  "title": "[Official M/V] 키드밀리 (Kid Milli) - Do What Moves You with BACARDI",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=aJA8NgptOSw",
+  "artists": [
+    "kid-milli"
+  ],
+  "type": "mv",
+  "channel": "AP Alchemy",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "acres-space-gas-station",
+      "screenshots": [
+        {
+          "image": "a8554ac7cb4c.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "11f92d7ea4ad.webp",
+          "set": "spot-2"
+        }
+      ],
+      "sheet_rows": [
+        "Carwash/Gas Station!24"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "title": "[M/V] SOYA(소야) - Artist",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=rjCzp_mMkVE",
+  "artists": [
+    "soya"
+  ],
+  "type": "mv",
+  "channel": "SUPER SOUND Bugs!",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "abandoned-gimcheon-medical-school",
+      "screenshots": [
+        {
+          "image": "867b8f30a04c.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Gimcheon campus!10"
+      ]
+    }
+  ]
+}

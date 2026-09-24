@@ -1,0 +1,26 @@
+{
+  "name": "성수 생각공장 데시앙플렉스",
+  "status": "identified",
+  "coordinates": {
+    "lat": 37.546486,
+    "lng": 127.065362
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/pntsnnjGt85VZius5"
+    ],
+    "naver_map": [
+      "https://naver.me/GVAW2zPM"
+    ],
+    "website": [
+      "https://blog.naver.com/redmee2/223119207115"
+    ]
+  },
+  "tags": [
+    "Helipads"
+  ],
+  "sheet_rows": [
+    "Helipads!51"
+  ]
+}

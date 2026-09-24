@@ -1,0 +1,25 @@
+{
+  "title": "(여자)아이들((G)I-DLE) - 'Allergy' Official Music Video",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=XZaBkbvteBc",
+  "artists": [
+    "g-i-dle"
+  ],
+  "song": "Allergy",
+  "type": "mv",
+  "channel": "i-dle (아이들)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "columbus-studio-4th",
+      "screenshots": [
+        {
+          "image": "8378f6e9a51f.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Columbus!15"
+      ]
+    }
+  ]
+}

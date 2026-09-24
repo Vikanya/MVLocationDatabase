@@ -1,0 +1,25 @@
+{
+  "title": "BADA[바다] '소란스런 이별'  MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=OrlkRhaVnhk",
+  "artists": [
+    "bada-바다"
+  ],
+  "song": "소란스런 이별",
+  "type": "mv",
+  "channel": "바다 BADA",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "abandoned-gimcheon-medical-school",
+      "screenshots": [
+        {
+          "image": "6f11068f516d.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Gimcheon campus!26"
+      ]
+    }
+  ]
+}

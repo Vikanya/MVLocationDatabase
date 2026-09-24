@@ -1,0 +1,20 @@
+{
+  "title": "위아이(WEi) 'Spray' M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=oZQ-guD9BD8",
+  "artists": [
+    "wei"
+  ],
+  "song": "Spray",
+  "type": "mv",
+  "channel": "WEi",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "grangar",
+      "sheet_rows": [
+        "Grangar!14"
+      ]
+    }
+  ]
+}

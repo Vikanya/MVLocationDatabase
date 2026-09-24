@@ -1,0 +1,30 @@
+{
+  "title": "수엔(Suen) - 'My Prada (feat. 식케이 (Sik-K))' Official MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=lfTaY8qBHOg",
+  "artists": [
+    "suen"
+  ],
+  "song": "My Prada (feat. 식케이 (Sik-K))",
+  "type": "mv",
+  "channel": "GROOVL1N",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "a05037beddaf.webp",
+          "set": "gas-station"
+        },
+        {
+          "image": "4c60de164f18.webp",
+          "set": "motel"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!39"
+      ]
+    }
+  ]
+}

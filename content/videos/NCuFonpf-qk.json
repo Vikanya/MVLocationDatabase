@@ -1,0 +1,25 @@
+{
+  "title": "XLOV 엑스러브 'Rizz' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=NCuFonpf-qk",
+  "artists": [
+    "xlov"
+  ],
+  "song": "Rizz",
+  "type": "mv",
+  "channel": "XLOV",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "abandoned-gimcheon-medical-school",
+      "screenshots": [
+        {
+          "image": "de52409588b1.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Gimcheon campus!25"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "title": "니콜(Nicole) - Mysterious MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=FtU_D67tl64",
+  "artists": [
+    "nicole"
+  ],
+  "type": "mv",
+  "channel": "JWK Entertainment",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "660e9354799e.webp",
+          "set": "diner"
+        },
+        {
+          "image": "84f07df764d6.webp",
+          "set": "lobby"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!15"
+      ]
+    }
+  ]
+}

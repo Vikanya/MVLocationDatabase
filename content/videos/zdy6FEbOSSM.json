@@ -1,0 +1,41 @@
+{
+  "title": "瑪菲司 Mavis feat. KIM NAM JOO (APINK) & OTWO【MARTINI】- Official Music Video",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=zdy6FEbOSSM",
+  "artists": [
+    "mavis"
+  ],
+  "type": "mv",
+  "channel": "HALO MAVIS國際連線",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "3b55939ed02c.webp",
+          "set": "gas-station"
+        },
+        {
+          "image": "a5db1bbc5904.webp",
+          "set": "motel"
+        },
+        {
+          "image": "424fe95ae02e.webp",
+          "set": "carpe-diem"
+        },
+        {
+          "image": "186f0aa65f5a.webp",
+          "set": "subway-station"
+        },
+        {
+          "image": "79304db457ef.webp",
+          "set": "train-station"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!82"
+      ]
+    }
+  ]
+}

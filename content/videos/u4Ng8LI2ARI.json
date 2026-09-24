@@ -1,0 +1,29 @@
+{
+  "title": "[MV] Izykite(이지카이트) _ HEY",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=u4Ng8LI2ARI",
+  "artists": [
+    "izykite"
+  ],
+  "type": "mv",
+  "channel": "1theK (원더케이)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "f4d0853762e3.webp",
+          "set": "gas-station"
+        },
+        {
+          "image": "3d42fdb135e6.webp",
+          "set": "motel"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!6"
+      ]
+    }
+  ]
+}

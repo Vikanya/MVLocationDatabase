@@ -1,0 +1,25 @@
+{
+  "title": "xikers(싸이커스) - 'Up All Night' Official MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=Iy8-qPT8rQE",
+  "artists": [
+    "xikers"
+  ],
+  "song": "Up All Night",
+  "type": "mv",
+  "channel": "KQ ENTERTAINMENT",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "parkings-rooftops-2",
+      "screenshots": [
+        {
+          "image": "6962fb99eef3.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Parkings/Rooftops!24"
+      ]
+    }
+  ]
+}

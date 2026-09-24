@@ -1,0 +1,25 @@
+{
+  "title": "[fl▶ylist] ‘ZICO - 너는 나 나는 너 (I Am You, You Are Me)’ cover by 서연",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=qNeq0aRGk9I",
+  "artists": [
+    "zico"
+  ],
+  "type": "cover",
+  "channel": "Official fromis_9",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "parkings-rooftops-7",
+      "screenshots": [
+        {
+          "image": "51347370c15c.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Parkings/Rooftops!43",
+        "Studio Heal!2"
+      ]
+    }
+  ]
+}

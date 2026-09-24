@@ -1,0 +1,30 @@
+{
+  "title": "TXT (투모로우바이투게더) 'Beautiful Strangers' Official MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=IcwHopeT5gY",
+  "artists": [
+    "txt"
+  ],
+  "song": "Beautiful Strangers",
+  "type": "mv",
+  "channel": "HYBE LABELS",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "mamago-waikiki",
+      "screenshots": [
+        {
+          "image": "a7f4215771eb.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "1aabf2f1c169.webp",
+          "set": "spot-4"
+        }
+      ],
+      "sheet_rows": [
+        "Mamago!20"
+      ]
+    }
+  ]
+}

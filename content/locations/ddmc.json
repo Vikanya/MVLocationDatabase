@@ -1,0 +1,23 @@
+{
+  "name": "DDMC",
+  "status": "identified",
+  "coordinates": {
+    "lat": 37.578311,
+    "lng": 126.893228
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/LTkfmxuTuFA4E4uG8"
+    ],
+    "naver_map": [
+      "https://naver.me/xfaRaFed"
+    ]
+  },
+  "tags": [
+    "Helipads"
+  ],
+  "sheet_rows": [
+    "Helipads!29"
+  ]
+}

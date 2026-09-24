@@ -1,0 +1,26 @@
+{
+  "title": "서아는 수민이만의 꾹꾹이 #tripleS #트리플에스 #トリプルS#トリプルエス #トエス#SooMin #수민 #スミン#SeoAh #서아 #ソア",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=msDAoECVMUM",
+  "type": "other",
+  "channel": "tripleS official",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "b44c0d9ff423.webp",
+          "set": "lobby"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!73"
+      ]
+    }
+  ],
+  "review": [
+    "Shared one sheet cell with another video (Ametage!73) — check the title and screenshots",
+    "Artist not recognised from the title — add the artist(s)"
+  ]
+}

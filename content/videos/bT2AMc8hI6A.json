@@ -1,0 +1,27 @@
+{
+  "title": "Weki Meki 위키미키 - Crush M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=bT2AMc8hI6A",
+  "artists": [
+    "weki-meki"
+  ],
+  "type": "mv",
+  "channel": "Weki Meki 위키미키",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "hangar-bazar-2",
+      "screenshots": [
+        {
+          "image": "586da19e87b3.webp"
+        },
+        {
+          "image": "7844a1c4fd5f.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Hangar bazar!7"
+      ]
+    }
+  ]
+}

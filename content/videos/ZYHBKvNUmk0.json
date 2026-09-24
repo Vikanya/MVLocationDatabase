@@ -1,0 +1,25 @@
+{
+  "title": "KEY 키 'Good & Great' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=ZYHBKvNUmk0",
+  "artists": [
+    "key"
+  ],
+  "song": "Good & Great",
+  "type": "mv",
+  "channel": "SMTOWN",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "streets-1",
+      "screenshots": [
+        {
+          "image": "946e8c4f9102.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Streets!3"
+      ]
+    }
+  ]
+}

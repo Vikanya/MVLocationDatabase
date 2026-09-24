@@ -1,0 +1,20 @@
+{
+  "title": "VERNON 'Black Eye' Official MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=vPQasPdd6fI",
+  "artists": [
+    "vernon"
+  ],
+  "song": "Black Eye",
+  "type": "mv",
+  "channel": "HYBE LABELS",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "grangar",
+      "sheet_rows": [
+        "Grangar!12"
+      ]
+    }
+  ]
+}

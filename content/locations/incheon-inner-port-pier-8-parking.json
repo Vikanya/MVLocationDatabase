@@ -1,0 +1,23 @@
+{
+  "name": "인천내항 제8부두 주차장",
+  "status": "identified",
+  "coordinates": {
+    "lat": 37.476439,
+    "lng": 126.613536
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/uxRRuSXU66fGK1wj9"
+    ],
+    "naver_map": [
+      "https://naver.me/FcautWSW"
+    ]
+  },
+  "tags": [
+    "Docks"
+  ],
+  "sheet_rows": [
+    "Docks!1"
+  ]
+}

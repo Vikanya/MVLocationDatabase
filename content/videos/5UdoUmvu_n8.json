@@ -1,0 +1,19 @@
+{
+  "title": "TRI.BE - KISS",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=5UdoUmvu_n8",
+  "artists": [
+    "tri-be"
+  ],
+  "type": "other",
+  "channel": "TriBeVEVO",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "grangar",
+      "sheet_rows": [
+        "Grangar!16"
+      ]
+    }
+  ]
+}

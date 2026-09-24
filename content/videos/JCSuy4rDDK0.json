@@ -1,0 +1,25 @@
+{
+  "title": "fromis_9(프로미스나인) - Supersonic | DANCE PERFORMANCE (4K) | ISSUE CLUB",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=JCSuy4rDDK0",
+  "artists": [
+    "fromis-9"
+  ],
+  "type": "performance",
+  "channel": "스튜디오 오와",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "a8becd40c1fc.webp",
+          "set": "subway-station"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!72"
+      ]
+    }
+  ]
+}

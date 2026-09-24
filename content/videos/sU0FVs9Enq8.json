@@ -1,0 +1,25 @@
+{
+  "title": "aespa 에스파 'Licorice' Universe",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=sU0FVs9Enq8",
+  "artists": [
+    "aespa"
+  ],
+  "song": "Licorice",
+  "type": "other",
+  "channel": "aespa",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "mamago-pyramid",
+      "screenshots": [
+        {
+          "image": "1ec3767f59d6.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Mamago!5"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "title": "LUN8 루네이트 - SUPER POWER M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=pgxBMYqZ92s",
+  "artists": [
+    "lun8"
+  ],
+  "type": "mv",
+  "channel": "fantagio 판타지오",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "grangar",
+      "sheet_rows": [
+        "Grangar!9"
+      ]
+    }
+  ]
+}

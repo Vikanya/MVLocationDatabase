@@ -1,0 +1,34 @@
+{
+  "title": "다혜(Dahye) ‘Lemon Cherry Bomb’ MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=zExqitQRRkM",
+  "artists": [
+    "dahye"
+  ],
+  "song": "Lemon Cherry Bomb",
+  "type": "mv",
+  "channel": "다혜가다했다DAHYE",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "d4e101f774be.webp",
+          "set": "diner"
+        },
+        {
+          "image": "24b71b38b6ab.webp",
+          "set": "gas-station"
+        },
+        {
+          "image": "b5e8bd91abb3.webp",
+          "set": "motel"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!80"
+      ]
+    }
+  ]
+}

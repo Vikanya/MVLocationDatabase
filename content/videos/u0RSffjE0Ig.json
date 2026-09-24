@@ -1,0 +1,30 @@
+{
+  "title": "NOWADAYS(나우어데이즈) '렛츠기릿 (Let's get it)' Official Music Video",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=u0RSffjE0Ig",
+  "artists": [
+    "nowadays"
+  ],
+  "song": "렛츠기릿 (Let",
+  "type": "mv",
+  "channel": "NOWZ 나우즈 (Official YouTube Channel)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "acres-space-gas-station",
+      "screenshots": [
+        {
+          "image": "0ffdaeb9d771.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "0992931a7956.webp",
+          "set": "spot-2"
+        }
+      ],
+      "sheet_rows": [
+        "Carwash/Gas Station!29"
+      ]
+    }
+  ]
+}

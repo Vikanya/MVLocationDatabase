@@ -1,0 +1,24 @@
+{
+  "title": "[In The Studio] [4K] EVERGLOW (에버글로우) - SLAY｜인더스튜디오,  Stone PERFORMANCE",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=8vcvnECNxSU",
+  "artists": [
+    "everglow"
+  ],
+  "type": "performance",
+  "channel": "STONE MUSIC",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "columbus-studio-4th",
+      "screenshots": [
+        {
+          "image": "395af0d89601.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Columbus!8"
+      ]
+    }
+  ]
+}

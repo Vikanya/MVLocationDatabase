@@ -1,0 +1,21 @@
+{
+  "name": "Kyung Hee University Grand Peace Palace",
+  "status": "identified",
+  "address": "Hoegi-dong, Dongdaemun District, Seoul, South Korea",
+  "coordinates": {
+    "lat": 37.598647,
+    "lng": 127.052752
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/aJVidmKGiYmRxGTC9"
+    ]
+  },
+  "tags": [
+    "Church Roof"
+  ],
+  "sheet_rows": [
+    "Church Roof!1"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "title": "CAMO - Only You (feat. Leellamarz) [Official Music Video]",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=V3g_eVyvl8w",
+  "artists": [
+    "camo"
+  ],
+  "song": "Official Music Video",
+  "type": "mv",
+  "channel": "502",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "acres-space-gas-station",
+      "screenshots": [
+        {
+          "image": "15882e25d60e.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "8f224ceed5cc.webp",
+          "set": "spot-2"
+        }
+      ],
+      "sheet_rows": [
+        "Carwash/Gas Station!19"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "title": "RESCENE(리센느) - 'Glow up' + 'LOVE ATTACK' (4K) perfomance l 1+1원플원",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=QS3wqBNQ-pw",
+  "artists": [
+    "rescene"
+  ],
+  "song": "Glow up",
+  "type": "other",
+  "channel": "컴백홈",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "e6b27a64a1ef.webp",
+          "set": "diner"
+        },
+        {
+          "image": "922bb2e827c9.webp",
+          "set": "gas-station"
+        },
+        {
+          "image": "72b61d561754.webp",
+          "set": "lobby"
+        },
+        {
+          "image": "0a640578526a.webp",
+          "set": "motel"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!79"
+      ]
+    }
+  ]
+}

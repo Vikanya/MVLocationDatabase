@@ -1,0 +1,20 @@
+{
+  "name": "Docks #1",
+  "status": "identified",
+  "coordinates": {
+    "lat": 37.562186,
+    "lng": 126.598767
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/EJvZpxRrMKwM6PjM7"
+    ]
+  },
+  "tags": [
+    "Docks"
+  ],
+  "sheet_rows": [
+    "Docks!6"
+  ]
+}

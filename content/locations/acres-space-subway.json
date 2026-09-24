@@ -1,0 +1,39 @@
+{
+  "name": "Acres Space – Subway",
+  "status": "identified",
+  "coordinates": {
+    "lat": 37.697729,
+    "lng": 126.570402
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/PWHQDLhbswSk9x3P7"
+    ],
+    "website": [
+      "https://www.acres-space.co.kr/SUBWAY"
+    ]
+  },
+  "tags": [
+    "Subway",
+    "Acres Space",
+    "Columbus"
+  ],
+  "sets": [
+    {
+      "id": "spot-1",
+      "name": "Spot 1"
+    },
+    {
+      "id": "spot-2",
+      "name": "Spot 2"
+    },
+    {
+      "id": "spot-3",
+      "name": "Spot 3"
+    }
+  ],
+  "sheet_rows": [
+    "Subway!1"
+  ]
+}

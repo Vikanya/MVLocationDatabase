@@ -1,0 +1,25 @@
+{
+  "title": "프로미스나인 (fromis_9) 'WE GO' M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=HM6UpQZvbhY",
+  "artists": [
+    "fromis-9"
+  ],
+  "song": "WE GO",
+  "type": "mv",
+  "channel": "Official fromis_9",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "geobugseom",
+      "screenshots": [
+        {
+          "image": "7b3d2c4ec52f.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Geobug Island!6"
+      ]
+    }
+  ]
+}

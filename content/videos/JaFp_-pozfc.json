@@ -1,0 +1,30 @@
+{
+  "title": "윤서빈(Yoon Seobin) - 'Rizz' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=JaFp_-pozfc",
+  "artists": [
+    "yoon-seobin"
+  ],
+  "song": "Rizz",
+  "type": "mv",
+  "channel": "윤서빈 (Yoon Seobin)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "4c981d9017c8.webp",
+          "set": "gas-station"
+        },
+        {
+          "image": "19544100c9c9.webp",
+          "set": "motel"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!74"
+      ]
+    }
+  ]
+}

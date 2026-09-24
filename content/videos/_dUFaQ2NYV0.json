@@ -1,0 +1,25 @@
+{
+  "title": "BeatBurger 비트버거 'VAGABOND' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=_dUFaQ2NYV0",
+  "artists": [
+    "beatburger"
+  ],
+  "song": "VAGABOND",
+  "type": "mv",
+  "channel": "SMTOWN",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "abandoned-gimcheon-medical-school",
+      "screenshots": [
+        {
+          "image": "26a594b44283.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Gimcheon campus!7"
+      ]
+    }
+  ]
+}

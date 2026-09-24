@@ -1,0 +1,29 @@
+{
+  "title": "We;Na (위나)-Baby Step",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=teb_bmNN1xQ",
+  "artists": [
+    "we-na"
+  ],
+  "type": "other",
+  "channel": "OGAM Entertainment",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "6ded0712c9ec.webp",
+          "set": "diner"
+        },
+        {
+          "image": "76358b1e9637.webp",
+          "set": "lobby"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!61"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "title": "LE SSERAFIM (르세라핌) 'ANTIFRAGILE' OFFICIAL M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=pyf8cbqyfPs",
+  "artists": [
+    "le-sserafim"
+  ],
+  "song": "ANTIFRAGILE",
+  "type": "mv",
+  "channel": "HYBE LABELS",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "taean-european-resort",
+      "screenshots": [
+        {
+          "image": "277867041df9.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "4bc7611b76d6.webp",
+          "set": "spot-2"
+        },
+        {
+          "image": "bcdd3b5ca6a4.webp",
+          "set": "spot-3"
+        },
+        {
+          "image": "623805660178.webp",
+          "set": "spot-4"
+        },
+        {
+          "image": "6c3bf36ce8f5.webp",
+          "set": "spot-5"
+        }
+      ],
+      "sheet_rows": [
+        "Abandoned Park!4"
+      ]
+    }
+  ]
+}

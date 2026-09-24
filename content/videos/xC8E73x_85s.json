@@ -1,0 +1,25 @@
+{
+  "title": "ONE PACT 원팩트 'G.O.A.T' PERFORMANCE VIDEO",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=xC8E73x_85s",
+  "artists": [
+    "one-pact"
+  ],
+  "song": "G.O.A.T",
+  "type": "performance",
+  "channel": "ONE PACT",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "parkings-rooftops-1",
+      "screenshots": [
+        {
+          "image": "421fd3e038dd.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Parkings/Rooftops!14"
+      ]
+    }
+  ]
+}

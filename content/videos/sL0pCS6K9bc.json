@@ -1,0 +1,25 @@
+{
+  "title": "MEOVV(미야오) - ‘HANDS UP’ M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=sL0pCS6K9bc",
+  "artists": [
+    "meovv"
+  ],
+  "song": "HANDS UP",
+  "type": "mv",
+  "channel": "THEBLACKLABEL",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "wave",
+      "screenshots": [
+        {
+          "image": "e9de3875711e.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Wave!4"
+      ]
+    }
+  ]
+}

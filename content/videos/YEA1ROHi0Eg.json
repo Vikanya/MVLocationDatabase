@@ -1,0 +1,26 @@
+{
+  "title": "aespa 에스파 'Live My Life' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=YEA1ROHi0Eg",
+  "artists": [
+    "aespa"
+  ],
+  "song": "Live My Life",
+  "type": "mv",
+  "channel": "SMTOWN",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "mamago-waikiki",
+      "screenshots": [
+        {
+          "image": "d0ad99ea3096.webp",
+          "set": "spot-1"
+        }
+      ],
+      "sheet_rows": [
+        "Mamago!17"
+      ]
+    }
+  ]
+}

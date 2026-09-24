@@ -1,0 +1,21 @@
+{
+  "name": "MBC Dream Center",
+  "status": "identified",
+  "address": "596 Hosu-ro, Ilsandong-gu, Goyang-si, Gyeonggi-do, South Korea",
+  "coordinates": {
+    "lat": 37.655471,
+    "lng": 126.770649
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/RkfMKz675Sw9yELZA"
+    ]
+  },
+  "tags": [
+    "Helipads"
+  ],
+  "sheet_rows": [
+    "Helipads!32"
+  ]
+}

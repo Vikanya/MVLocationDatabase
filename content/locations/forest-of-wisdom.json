@@ -1,0 +1,25 @@
+{
+  "name": "Forest of Wisdom",
+  "status": "unknown",
+  "links": {
+    "website": [
+      "https://bookcity.or.kr/en/sub_03_1.php"
+    ]
+  },
+  "sets": [
+    {
+      "id": "spot-1",
+      "name": "Spot 1"
+    },
+    {
+      "id": "spot-2",
+      "name": "Spot 2"
+    }
+  ],
+  "review": [
+    "Location not identified yet"
+  ],
+  "sheet_rows": [
+    "Forest of Wisdom!1"
+  ]
+}

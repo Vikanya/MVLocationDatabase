@@ -1,0 +1,39 @@
+{
+  "title": "김뭉먕 (Moong myang) '부아앙~~' Official MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=5G7Y7Yraq5I",
+  "artists": [
+    "moong-myang"
+  ],
+  "song": "부아앙~~",
+  "type": "mv",
+  "channel": "MAJOR9 메이저나인",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "geobug-island-1",
+      "screenshots": [
+        {
+          "image": "70ed4382f314.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Geobug Island!25"
+      ]
+    },
+    {
+      "location": "hyundai-greenery-campus-byeolgaram",
+      "screenshots": [
+        {
+          "image": "4ca4e1a4b3f2.webp"
+        },
+        {
+          "image": "d2d98f16f7b1.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Parkings/Rooftops!50"
+      ]
+    }
+  ]
+}

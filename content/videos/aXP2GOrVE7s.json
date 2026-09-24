@@ -1,0 +1,30 @@
+{
+  "title": "【MIYA】\"MIYAO\" OFFICIAL MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=aXP2GOrVE7s",
+  "artists": [
+    "miya"
+  ],
+  "song": "MIYAO",
+  "type": "mv",
+  "channel": "MASTER LIGHTS",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "e309af308809.webp",
+          "set": "gas-station"
+        },
+        {
+          "image": "73533216974c.webp",
+          "set": "motel"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!59"
+      ]
+    }
+  ]
+}

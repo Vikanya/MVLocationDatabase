@@ -1,0 +1,37 @@
+{
+  "title": "XIUMIN 시우민 'Brand New' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=pU8Gu5aOWZ0",
+  "artists": [
+    "xiumin"
+  ],
+  "song": "Brand New",
+  "type": "mv",
+  "channel": "SMTOWN",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "61e21f0c3ced.webp",
+          "set": "diner"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!7"
+      ]
+    },
+    {
+      "location": "geobugseom",
+      "screenshots": [
+        {
+          "image": "89ca165c432d.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Geobug Island!11"
+      ]
+    }
+  ]
+}

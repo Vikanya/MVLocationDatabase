@@ -1,0 +1,30 @@
+{
+  "title": "포레스텔라(Forestella) 'KOOL' M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=4xij_3JKs_c",
+  "artists": [
+    "forestella"
+  ],
+  "song": "KOOL",
+  "type": "mv",
+  "channel": "포레스텔라 Forestella  ",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "60e53db71315.webp",
+          "set": "diner"
+        },
+        {
+          "image": "a9fb29c6e6a7.webp",
+          "set": "lobby"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!37"
+      ]
+    }
+  ]
+}

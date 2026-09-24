@@ -1,0 +1,25 @@
+{
+  "title": "CRAVITY 크래비티 'C'est La Vie' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=A7gXSXm1Vvs",
+  "artists": [
+    "cravity"
+  ],
+  "song": "C",
+  "type": "mv",
+  "channel": "STARSHIP",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "grangar",
+      "screenshots": [
+        {
+          "image": "f1443a57c6ed.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Grangar!3"
+      ]
+    }
+  ]
+}

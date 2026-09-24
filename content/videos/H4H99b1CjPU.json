@@ -1,0 +1,25 @@
+{
+  "title": "ATEEZ(에이티즈) - 'Lemon Drop' Official MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=H4H99b1CjPU",
+  "artists": [
+    "ateez"
+  ],
+  "song": "Lemon Drop",
+  "type": "mv",
+  "channel": "KQ ENTERTAINMENT",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "samyeong-gihoek",
+      "screenshots": [
+        {
+          "image": "8381d0810414.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Parkings/Rooftops!10"
+      ]
+    }
+  ]
+}

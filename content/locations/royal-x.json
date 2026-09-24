@@ -1,0 +1,37 @@
+{
+  "name": "ROYAL X",
+  "status": "identified",
+  "coordinates": {
+    "lat": 37.171317,
+    "lng": 126.887725
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/jAGdvEZXf9TAdBDL6"
+    ],
+    "naver_map": [
+      "https://naver.me/xyTaVmvn"
+    ]
+  },
+  "tags": [
+    "Royal X"
+  ],
+  "sets": [
+    {
+      "id": "spot-1",
+      "name": "Spot 1"
+    },
+    {
+      "id": "spot-2",
+      "name": "Spot 2"
+    },
+    {
+      "id": "spot-3",
+      "name": "Spot 3"
+    }
+  ],
+  "sheet_rows": [
+    "Royal X!1"
+  ]
+}

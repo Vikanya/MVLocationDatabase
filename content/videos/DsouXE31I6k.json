@@ -1,0 +1,27 @@
+{
+  "title": "[M/V] 박봄(PARK BOM) - 봄(Spring) (feat. 산다라박(sandara park))",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=DsouXE31I6k",
+  "artists": [
+    "park-bom"
+  ],
+  "type": "mv",
+  "channel": "D-NATION",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "hangar-bazar-2",
+      "screenshots": [
+        {
+          "image": "16df6b43c221.webp"
+        },
+        {
+          "image": "5b38b96c8c6f.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Hangar bazar!19"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "title": "ZEROBASEONE (제로베이스원) 'Back to ZEROBASE' Film",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=i0Bk73OEYq8",
+  "artists": [
+    "zerobaseone"
+  ],
+  "song": "Back to ZEROBASE",
+  "type": "clip",
+  "channel": "ZEROBASEONE",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "jayuro-drive-in-theater",
+      "screenshots": [
+        {
+          "image": "b0396889f3d0.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Carwash/Gas Station!8"
+      ]
+    }
+  ]
+}

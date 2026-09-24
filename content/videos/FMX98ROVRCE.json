@@ -1,0 +1,25 @@
+{
+  "title": "LISA - DREAM feat. Kentaro Sakaguchi (Official Short Film MV)",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=FMX98ROVRCE",
+  "artists": [
+    "lisa"
+  ],
+  "type": "mv",
+  "channel": "LLOUD Official",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "acres-space-gas-station",
+      "screenshots": [
+        {
+          "image": "25d414ed11f1.webp",
+          "set": "spot-1"
+        }
+      ],
+      "sheet_rows": [
+        "Carwash/Gas Station!36"
+      ]
+    }
+  ]
+}

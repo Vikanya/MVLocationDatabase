@@ -1,0 +1,34 @@
+{
+  "title": "ONEUS(원어스) 'TRICKSTER' - EP.1 Trickster : The Choice is Ours",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=flzPgFZlHTg",
+  "artists": [
+    "oneus"
+  ],
+  "song": "TRICKSTER",
+  "type": "other",
+  "channel": "ONEUS",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "provoke-seoul",
+      "screenshots": [
+        {
+          "image": "3254ff50a707.webp",
+          "set": "outside"
+        },
+        {
+          "image": "26522795674d.webp",
+          "set": "outside"
+        },
+        {
+          "image": "ca763b37efe5.webp",
+          "set": "hallway"
+        }
+      ],
+      "sheet_rows": [
+        "provoke Seoul!13"
+      ]
+    }
+  ]
+}

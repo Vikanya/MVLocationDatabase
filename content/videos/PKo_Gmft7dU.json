@@ -1,0 +1,25 @@
+{
+  "title": "미래소년 (MIRAE) - Snow Prince",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=PKo_Gmft7dU",
+  "artists": [
+    "mirae"
+  ],
+  "type": "other",
+  "channel": "MIRAE",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "2bd9db35ef97.webp",
+          "set": "diner"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!17"
+      ]
+    }
+  ]
+}

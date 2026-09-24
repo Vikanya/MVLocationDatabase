@@ -1,0 +1,24 @@
+{
+  "title": "TEMPEST(템페스트) - LIGHTHOUSE M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=v6WIePs7U4g",
+  "artists": [
+    "tempest"
+  ],
+  "type": "mv",
+  "channel": "TEMPEST",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "columbus-spacerental-09",
+      "screenshots": [
+        {
+          "image": "c0813d454f6f.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Columbus!38"
+      ]
+    }
+  ]
+}

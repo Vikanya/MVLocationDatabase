@@ -1,0 +1,24 @@
+{
+  "title": "구만 (qman) (9.10000) - Supercar MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=A9jy1Nr0AIE",
+  "artists": [
+    "qman"
+  ],
+  "type": "mv",
+  "embeddable": false,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "24ba3d79f160.webp",
+          "set": "diner"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!14"
+      ]
+    }
+  ]
+}

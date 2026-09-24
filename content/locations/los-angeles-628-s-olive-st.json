@@ -1,0 +1,20 @@
+{
+  "name": "628 S Olive St, Los Angeles, CA 90014, USA",
+  "status": "identified",
+  "coordinates": {
+    "lat": 34.047213,
+    "lng": -118.254733
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/ju2UdK1BLyMk5KeF6"
+    ]
+  },
+  "tags": [
+    "Parkings/Rooftops"
+  ],
+  "sheet_rows": [
+    "Parkings/Rooftops!16"
+  ]
+}

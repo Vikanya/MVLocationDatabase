@@ -1,0 +1,26 @@
+{
+  "title": "NEXZ(넥스지) \"O-RLY?\" M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=624NpugNTi4",
+  "artists": [
+    "nexz"
+  ],
+  "song": "O-RLY?",
+  "type": "mv",
+  "channel": "JYP Entertainment",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "acres-space-gas-station",
+      "screenshots": [
+        {
+          "image": "0ec951ceca8e.webp",
+          "set": "spot-2"
+        }
+      ],
+      "sheet_rows": [
+        "Carwash/Gas Station!35"
+      ]
+    }
+  ]
+}

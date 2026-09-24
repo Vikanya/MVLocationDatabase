@@ -1,0 +1,25 @@
+{
+  "title": "전소연(JEON SOYEON) - '삠삠 (BEAM BEAM)' Official Music Video",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=MqzX9JAZ08U",
+  "artists": [
+    "jeon-soyeon"
+  ],
+  "song": "삠삠 (BEAM BEAM)",
+  "type": "mv",
+  "channel": "i-dle (아이들)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "incheon-inner-port-pier-8-parking",
+      "screenshots": [
+        {
+          "image": "6fc0035eb77e.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Docks!2"
+      ]
+    }
+  ]
+}

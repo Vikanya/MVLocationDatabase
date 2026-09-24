@@ -1,0 +1,19 @@
+{
+  "title": "iKON - 딴따라 Tantara MV Performance Ver",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=KRgbVo4OTKQ",
+  "artists": [
+    "ikon"
+  ],
+  "type": "mv",
+  "channel": "iKON",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "grangar",
+      "sheet_rows": [
+        "Grangar!6"
+      ]
+    }
+  ]
+}

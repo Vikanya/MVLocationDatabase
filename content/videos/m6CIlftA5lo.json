@@ -1,0 +1,30 @@
+{
+  "title": "[SUB] 허성현(Huh) - 'EXS' M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=m6CIlftA5lo",
+  "artists": [
+    "sub"
+  ],
+  "song": "EXS",
+  "type": "mv",
+  "channel": "Amoeba Culture (아메바컬쳐)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "5825dae7aafb.webp",
+          "set": "diner"
+        },
+        {
+          "image": "5922ccc653fe.webp",
+          "set": "lobby"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!21"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "title": "[Queenz Eye] 'UN-NORMAL' M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=C3HDIYnQnkw",
+  "artists": [
+    "queenz-eye"
+  ],
+  "song": "UN-NORMAL",
+  "type": "mv",
+  "channel": "Queenz Eye (퀸즈아이)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "7801c02f4879.webp",
+          "set": "diner"
+        },
+        {
+          "image": "0e686c43074c.webp",
+          "set": "hospital"
+        },
+        {
+          "image": "400af340bc7e.webp",
+          "set": "gas-station"
+        },
+        {
+          "image": "9bbed5d0353e.webp",
+          "set": "motel"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!3"
+      ]
+    }
+  ]
+}

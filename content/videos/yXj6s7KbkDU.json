@@ -1,0 +1,33 @@
+{
+  "title": "[MV] BAE173 _ Fifty-Fifty",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=yXj6s7KbkDU",
+  "artists": [
+    "bae173"
+  ],
+  "type": "mv",
+  "channel": "1theK (원더케이)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "provoke-seoul",
+      "screenshots": [
+        {
+          "image": "c19ce99cf662.webp",
+          "set": "hallway"
+        },
+        {
+          "image": "104b740e03c5.webp",
+          "set": "hangar"
+        },
+        {
+          "image": "9671a1cc8664.webp",
+          "set": "stairs"
+        }
+      ],
+      "sheet_rows": [
+        "provoke Seoul!3"
+      ]
+    }
+  ]
+}

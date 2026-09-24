@@ -1,0 +1,33 @@
+{
+  "title": "[Chil Label] 칠레이블 - Chil ! (Feat. MEMI & 24Hours)",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=t20LtL4dJQs",
+  "artists": [
+    "chil-label"
+  ],
+  "type": "other",
+  "channel": "칠성레이블",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "bfd0b5805604.webp",
+          "set": "diner"
+        },
+        {
+          "image": "a2e6db0d928c.webp",
+          "set": "hospital"
+        },
+        {
+          "image": "4af5178b76e2.webp",
+          "set": "lobby"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!25"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "title": "Stray Kids \"땡(FREEZE)\" Video",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=etjQd0wgUTo",
+  "artists": [
+    "stray-kids"
+  ],
+  "song": "땡(FREEZE)",
+  "type": "other",
+  "channel": "Stray Kids",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "provoke-seoul",
+      "screenshots": [
+        {
+          "image": "ac3a1d0e66e3.webp",
+          "set": "outside"
+        },
+        {
+          "image": "27977110fb23.webp",
+          "set": "outside"
+        },
+        {
+          "image": "38587feb8c28.webp",
+          "set": "hallway"
+        },
+        {
+          "image": "b39e9ead1f77.webp",
+          "set": "hangar-2"
+        }
+      ],
+      "sheet_rows": [
+        "provoke Seoul!17"
+      ]
+    }
+  ]
+}

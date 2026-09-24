@@ -1,0 +1,24 @@
+{
+  "title": "VICTON 빅톤 Mayday (메이데이) MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=PMLPefdwM00",
+  "type": "mv",
+  "channel": "VICTON 빅톤",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "abandoned-gimcheon-medical-school",
+      "screenshots": [
+        {
+          "image": "3e313c1920c3.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Gimcheon campus!16"
+      ]
+    }
+  ],
+  "review": [
+    "Artist not recognised from the title — add the artist(s)"
+  ]
+}

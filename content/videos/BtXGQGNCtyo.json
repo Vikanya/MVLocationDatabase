@@ -1,0 +1,25 @@
+{
+  "title": "[MV] VIVIZ(비비지) _ MANIAC",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=BtXGQGNCtyo",
+  "artists": [
+    "viviz"
+  ],
+  "type": "mv",
+  "channel": "1theK (원더케이)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "2a18791129bd.webp",
+          "set": "gas-station"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!54"
+      ]
+    }
+  ]
+}

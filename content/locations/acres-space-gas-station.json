@@ -1,0 +1,44 @@
+{
+  "name": "Acres Space – Gas Station",
+  "status": "identified",
+  "coordinates": {
+    "lat": 37.814318,
+    "lng": 126.818106
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/8PKZ9vs2edN2t3Pe7"
+    ],
+    "website": [
+      "https://www.acres-space.co.kr/gasstation_a",
+      "https://www.acres-space.co.kr/GASSTATION_B"
+    ]
+  },
+  "tags": [
+    "Carwash/Gas Station",
+    "Acres Space",
+    "Columbus"
+  ],
+  "sets": [
+    {
+      "id": "spot-1",
+      "name": "Spot 1"
+    },
+    {
+      "id": "spot-2",
+      "name": "Spot 2"
+    },
+    {
+      "id": "spot-3",
+      "name": "Spot 3"
+    },
+    {
+      "id": "spot-4",
+      "name": "Spot 4"
+    }
+  ],
+  "sheet_rows": [
+    "Carwash/Gas Station!14"
+  ]
+}

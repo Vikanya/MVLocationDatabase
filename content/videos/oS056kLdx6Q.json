@@ -1,0 +1,25 @@
+{
+  "title": "[MV] YERIN(예린) _ Wavy",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=oS056kLdx6Q",
+  "artists": [
+    "yerin"
+  ],
+  "type": "mv",
+  "channel": "1theK (원더케이)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "d42c0100eedc.webp",
+          "set": "gas-station"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!66"
+      ]
+    }
+  ]
+}

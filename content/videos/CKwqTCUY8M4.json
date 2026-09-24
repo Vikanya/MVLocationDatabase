@@ -1,0 +1,25 @@
+{
+  "title": "아이묭(あいみょん) - Marigold (マリーゴールド) Cover by 미리듣기MiRi",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=CKwqTCUY8M4",
+  "artists": [
+    "아이묭"
+  ],
+  "type": "cover",
+  "channel": "싱어송라이터 미리 MIRI",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "parkings-rooftops-7",
+      "screenshots": [
+        {
+          "image": "006052d47a5f.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Parkings/Rooftops!45",
+        "Studio Heal!4"
+      ]
+    }
+  ]
+}

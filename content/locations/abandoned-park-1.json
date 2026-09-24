@@ -1,0 +1,23 @@
+{
+  "name": "Abandoned Park #1",
+  "status": "unknown",
+  "tags": [
+    "Abandoned Park"
+  ],
+  "sets": [
+    {
+      "id": "spot-1",
+      "name": "Spot 1"
+    },
+    {
+      "id": "spot-2",
+      "name": "Spot 2"
+    }
+  ],
+  "review": [
+    "Location not identified yet"
+  ],
+  "sheet_rows": [
+    "Abandoned Park!16"
+  ]
+}

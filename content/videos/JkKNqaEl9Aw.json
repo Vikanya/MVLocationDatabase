@@ -1,0 +1,25 @@
+{
+  "title": "NEXZ(넥스지) \"Legacy\" Performance Video",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=JkKNqaEl9Aw",
+  "artists": [
+    "nexz"
+  ],
+  "song": "Legacy",
+  "type": "performance",
+  "channel": "JYP Entertainment",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "quarries-1",
+      "screenshots": [
+        {
+          "image": "351afcb27d4e.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Quarries!3"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "title": "MAKAMAKA - I AM (Official Music Video)",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=wvCb4HtUCZQ",
+  "artists": [
+    "makamaka"
+  ],
+  "type": "mv",
+  "channel": "MAKAMAKA",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "7720846ad1f2.webp",
+          "set": "diner"
+        },
+        {
+          "image": "903802fbd0e7.webp",
+          "set": "hospital"
+        },
+        {
+          "image": "1d161a66f3a8.webp",
+          "set": "lobby"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!18"
+      ]
+    }
+  ]
+}

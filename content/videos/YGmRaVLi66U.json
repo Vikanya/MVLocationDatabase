@@ -1,0 +1,25 @@
+{
+  "title": "유하 (YOUHA) - \"Break Free\" Official M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=YGmRaVLi66U",
+  "artists": [
+    "youha"
+  ],
+  "song": "Break Free",
+  "type": "mv",
+  "channel": "YOUHA 유하",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "columbus-spacerental-09",
+      "screenshots": [
+        {
+          "image": "d1cb0f8cbadf.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Columbus!41"
+      ]
+    }
+  ]
+}

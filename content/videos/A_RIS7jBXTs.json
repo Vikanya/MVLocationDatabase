@@ -1,0 +1,30 @@
+{
+  "title": "TRENDZ(트렌드지) '위로위로 (Go Up)' Official Video",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=A_RIS7jBXTs",
+  "artists": [
+    "trendz"
+  ],
+  "song": "위로위로 (Go Up)",
+  "type": "mv",
+  "channel": "TRENDZ(트렌드지)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "0a3eff73b035.webp",
+          "set": "gas-station"
+        },
+        {
+          "image": "2eed5350676f.webp",
+          "set": "motel"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!58"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "title": "EVNNE (이븐) - UGLY MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=DaSCu7kap0Y",
+  "artists": [
+    "evnne"
+  ],
+  "type": "mv",
+  "channel": "STONE MUSIC",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "columbus-studio-4th",
+      "screenshots": [
+        {
+          "image": "1298fa941f5a.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Columbus!27"
+      ]
+    }
+  ]
+}

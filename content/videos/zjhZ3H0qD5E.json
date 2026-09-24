@@ -1,0 +1,24 @@
+{
+  "title": "[LIVE] 빌리(Billlie) _ EUNOIA | dancEAR | 댄스이어 | 듣포먼스 | 라이브 퍼포먼스 | Live Performance | 4K",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=zjhZ3H0qD5E",
+  "artists": [
+    "billlie"
+  ],
+  "type": "performance",
+  "channel": "1theK Originals - 원더케이 오리지널",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "columbus-studio-4th",
+      "screenshots": [
+        {
+          "image": "c7c708eff41b.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Columbus!17"
+      ]
+    }
+  ]
+}

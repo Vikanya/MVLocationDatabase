@@ -1,0 +1,25 @@
+{
+  "title": "NEXZ(넥스지) \"NALLINA\" M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=WlsTyEGK9I8",
+  "artists": [
+    "nexz"
+  ],
+  "song": "NALLINA",
+  "type": "mv",
+  "channel": "JYP Entertainment",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "columbus-spacerental-01",
+      "screenshots": [
+        {
+          "image": "d89936126788.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Columbus!56"
+      ]
+    }
+  ]
+}

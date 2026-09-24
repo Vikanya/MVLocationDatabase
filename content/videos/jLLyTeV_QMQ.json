@@ -1,0 +1,25 @@
+{
+  "title": "SECRET NUMBER \"STARLIGHT\" M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=jLLyTeV_QMQ",
+  "artists": [
+    "secret-number"
+  ],
+  "song": "STARLIGHT",
+  "type": "mv",
+  "channel": "SECRET NUMBER",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "geobugseom",
+      "screenshots": [
+        {
+          "image": "c16276dfb84f.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Geobug Island!7"
+      ]
+    }
+  ]
+}

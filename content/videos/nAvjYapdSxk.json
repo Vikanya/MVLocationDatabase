@@ -1,0 +1,34 @@
+{
+  "title": "NCT 2021 엔시티 2021 'Beautiful' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=nAvjYapdSxk",
+  "artists": [
+    "nct-2021"
+  ],
+  "song": "Beautiful",
+  "type": "mv",
+  "channel": "SMTOWN",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "royal-x",
+      "screenshots": [
+        {
+          "image": "110a6931d4b4.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "6bd040feb0a7.webp",
+          "set": "spot-2"
+        },
+        {
+          "image": "6455170aabf6.webp",
+          "set": "spot-3"
+        }
+      ],
+      "sheet_rows": [
+        "Royal X!3"
+      ]
+    }
+  ]
+}

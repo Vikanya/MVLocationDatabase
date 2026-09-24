@@ -1,0 +1,36 @@
+{
+  "title": "tripleS(트리플에스) Visionary Vision ‘Hit the Floor’ Official MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=aKyt6Ahxwss",
+  "artists": [
+    "triples-visionary-vision"
+  ],
+  "song": "Hit the Floor",
+  "type": "mv",
+  "channel": "tripleS official",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "columbus-spacerental-01",
+      "screenshots": [
+        {
+          "image": "695aedb204a9.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Columbus!55"
+      ]
+    },
+    {
+      "location": "hangar-bazar-5",
+      "screenshots": [
+        {
+          "image": "793c9aafa57d.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Hangar bazar!38"
+      ]
+    }
+  ]
+}

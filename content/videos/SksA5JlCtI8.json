@@ -1,0 +1,46 @@
+{
+  "title": "CRAVITY 크래비티 'Lemonade Fever' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=SksA5JlCtI8",
+  "artists": [
+    "cravity"
+  ],
+  "song": "Lemonade Fever",
+  "type": "mv",
+  "channel": "STARSHIP",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "acres-space-gas-station",
+      "screenshots": [
+        {
+          "image": "9f5b8f62e7ca.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "33a0b5f73880.webp",
+          "set": "spot-2"
+        }
+      ],
+      "sheet_rows": [
+        "Carwash/Gas Station!39"
+      ]
+    },
+    {
+      "location": "acres-space-subway",
+      "screenshots": [
+        {
+          "image": "15f068a6e366.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "0648bab1cb35.webp",
+          "set": "spot-2"
+        }
+      ],
+      "sheet_rows": [
+        "Subway!6"
+      ]
+    }
+  ]
+}

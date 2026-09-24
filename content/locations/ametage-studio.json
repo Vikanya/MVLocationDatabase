@@ -1,0 +1,87 @@
+{
+  "name": "아메티지 스튜디오",
+  "status": "identified",
+  "address": "South Korea, Gyeonggi-do, Yangju-si, Eunhyeon-myeon, Yongam-ri, 842-6 아메티지 스튜디오",
+  "coordinates": {
+    "lat": 37.853467,
+    "lng": 127.033355
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/ufonXKitY133kHSZ7"
+    ],
+    "website": [
+      "https://www.ametage.com/space1.html"
+    ],
+    "instagram": [
+      "https://www.instagram.com/studio_ametage/"
+    ]
+  },
+  "reference_videos": [
+    "https://youtu.be/CojVB1aUDQw"
+  ],
+  "photos": [
+    "ec22d8445c54.webp"
+  ],
+  "tags": [
+    "Ametage"
+  ],
+  "sets": [
+    {
+      "id": "diner",
+      "name": "DINER"
+    },
+    {
+      "id": "hospital",
+      "name": "HOSPITAL"
+    },
+    {
+      "id": "gas-station",
+      "name": "GAS STATION"
+    },
+    {
+      "id": "lobby",
+      "name": "LOBBY"
+    },
+    {
+      "id": "motel",
+      "name": "MOTEL"
+    },
+    {
+      "id": "house",
+      "name": "HOUSE"
+    },
+    {
+      "id": "carpe-diem",
+      "name": "CARPE DIEM"
+    },
+    {
+      "id": "subway-station",
+      "name": "SUBWAY STATION"
+    },
+    {
+      "id": "space-station",
+      "name": "SPACE STATION"
+    },
+    {
+      "id": "train-station",
+      "name": "TRAIN STATION"
+    },
+    {
+      "id": "prison",
+      "name": "PRISON"
+    },
+    {
+      "id": "movie-box",
+      "name": "MOVIE BOX"
+    },
+    {
+      "id": "street",
+      "name": "STREET"
+    }
+  ],
+  "sheet_rows": [
+    "Ametage!1"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "title": "NCT DREAM 엔시티 드림 'ISTJ' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=XDnGdcgd3Pc",
+  "artists": [
+    "nct-dream"
+  ],
+  "song": "ISTJ",
+  "type": "mv",
+  "channel": "SMTOWN",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "8a8c67a8269c.webp",
+          "set": "gas-station"
+        },
+        {
+          "image": "00899ffb24a3.webp",
+          "set": "motel"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!45"
+      ]
+    }
+  ]
+}

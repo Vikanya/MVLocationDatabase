@@ -1,0 +1,25 @@
+{
+  "title": "[Live] 프로미스나인(fromis_9) - My Night Routine │ #왓플 라이브 │ SEOUL MUSIC ORIGINALS",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=ydkpS5c6eAY",
+  "artists": [
+    "fromis-9"
+  ],
+  "type": "live",
+  "channel": "SEOUL MUSIC / 서울뮤직",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "ef9b731a6fc0.webp",
+          "set": "lobby"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!47"
+      ]
+    }
+  ]
+}

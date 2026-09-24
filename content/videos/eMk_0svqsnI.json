@@ -1,0 +1,25 @@
+{
+  "title": "ITZY \"GOLD\" M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=eMk_0svqsnI",
+  "artists": [
+    "itzy"
+  ],
+  "song": "GOLD",
+  "type": "mv",
+  "channel": "JYP Entertainment",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "geobugseom",
+      "screenshots": [
+        {
+          "image": "d6e5dab3d4aa.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Geobug Island!14"
+      ]
+    }
+  ]
+}

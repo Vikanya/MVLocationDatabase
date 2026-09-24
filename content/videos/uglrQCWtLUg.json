@@ -1,0 +1,26 @@
+{
+  "title": "NAYEON “ABCD\" Performance Video",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=uglrQCWtLUg",
+  "artists": [
+    "nayeon"
+  ],
+  "song": "ABCD",
+  "type": "performance",
+  "channel": "TWICE",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "mamago-waikiki",
+      "screenshots": [
+        {
+          "image": "e9666f53d224.webp",
+          "set": "spot-1"
+        }
+      ],
+      "sheet_rows": [
+        "Mamago!16"
+      ]
+    }
+  ]
+}

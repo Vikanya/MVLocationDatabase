@@ -1,0 +1,33 @@
+{
+  "title": "KAVE - Stone M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=LVi-wK28xWw",
+  "artists": [
+    "kave"
+  ],
+  "type": "mv",
+  "channel": "KAVE",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "a795b2767f4b.webp",
+          "set": "gas-station"
+        },
+        {
+          "image": "2a56d22d40eb.webp",
+          "set": "house"
+        },
+        {
+          "image": "5a48b213b56e.webp",
+          "set": "carpe-diem"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!76"
+      ]
+    }
+  ]
+}

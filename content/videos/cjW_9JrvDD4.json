@@ -1,0 +1,25 @@
+{
+  "title": "[LIVE CLIP] 라포엠 (LA POEM)  LOVE DIVE - IVE (아이브)",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=cjW_9JrvDD4",
+  "artists": [
+    "la-poem"
+  ],
+  "type": "live",
+  "channel": "라포엠 LA POEM",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "a74a06febc1b.webp",
+          "set": "diner"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!33"
+      ]
+    }
+  ]
+}

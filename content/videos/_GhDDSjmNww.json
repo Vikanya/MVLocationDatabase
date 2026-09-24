@@ -1,0 +1,25 @@
+{
+  "title": "STAYC(스테이씨) '1 Thing' Performance Video",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=_GhDDSjmNww",
+  "artists": [
+    "stayc"
+  ],
+  "song": "1 Thing",
+  "type": "performance",
+  "channel": "STAYC",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "jayuro-drive-in-theater",
+      "screenshots": [
+        {
+          "image": "41b5f0f0307a.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Carwash/Gas Station!12"
+      ]
+    }
+  ]
+}

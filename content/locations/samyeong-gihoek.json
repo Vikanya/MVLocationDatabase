@@ -1,0 +1,23 @@
+{
+  "name": "사명기획",
+  "status": "identified",
+  "coordinates": {
+    "lat": 37.447997,
+    "lng": 126.622136
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/fqYJh7zy1xCt5LucA"
+    ],
+    "naver_map": [
+      "https://naver.me/FLezHtxR"
+    ]
+  },
+  "tags": [
+    "Parkings/Rooftops"
+  ],
+  "sheet_rows": [
+    "Parkings/Rooftops!1"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "title": "[MV] PRISTIN V(프리스틴 V) _ Get It(네 멋대로)",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=-z3iyydFevQ",
+  "artists": [
+    "pristin-v"
+  ],
+  "type": "mv",
+  "channel": "1theK (원더케이)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "abandoned-park-1",
+      "screenshots": [
+        {
+          "image": "7b5dd0f65ddc.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "f2caac8345bf.webp",
+          "set": "spot-2"
+        }
+      ],
+      "sheet_rows": [
+        "Abandoned Park!19"
+      ]
+    }
+  ]
+}

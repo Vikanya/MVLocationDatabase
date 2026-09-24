@@ -1,0 +1,25 @@
+{
+  "title": "퍼플키스(PURPLE KISS) 'Sweet Juice' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=WFqGKa6p1V8",
+  "artists": [
+    "purple-kiss"
+  ],
+  "song": "Sweet Juice",
+  "type": "mv",
+  "channel": "PURPLE KISS",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "swimming-pools-3",
+      "screenshots": [
+        {
+          "image": "1def2cfb01bc.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Swimming Pools!8"
+      ]
+    }
+  ]
+}

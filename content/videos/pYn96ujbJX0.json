@@ -1,0 +1,25 @@
+{
+  "title": "KISS OF LIFE (키스오브라이프) 'Te Quiero' Performance Video",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=pYn96ujbJX0",
+  "artists": [
+    "kiss-of-life"
+  ],
+  "song": "Te Quiero",
+  "type": "performance",
+  "channel": "KISS OF LIFE",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "columbus-spacerental-11",
+      "screenshots": [
+        {
+          "image": "588fa86cb655.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Columbus!49"
+      ]
+    }
+  ]
+}

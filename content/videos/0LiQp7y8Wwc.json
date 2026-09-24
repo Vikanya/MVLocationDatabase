@@ -1,0 +1,41 @@
+{
+  "title": "fromis_9 (프로미스나인) 'Supersonic' Official MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=0LiQp7y8Wwc",
+  "artists": [
+    "fromis-9"
+  ],
+  "song": "Supersonic",
+  "type": "mv",
+  "channel": "HYBE LABELS",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "acres-space-gas-station",
+      "screenshots": [
+        {
+          "image": "8414071676b7.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "9c2f55e422b4.webp",
+          "set": "spot-2"
+        }
+      ],
+      "sheet_rows": [
+        "Carwash/Gas Station!15"
+      ]
+    },
+    {
+      "location": "gunsan-container-terminal",
+      "screenshots": [
+        {
+          "image": "ce1a79c999ac.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Docks!10"
+      ]
+    }
+  ]
+}

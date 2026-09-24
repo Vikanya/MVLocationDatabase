@@ -1,0 +1,38 @@
+{
+  "title": "이다혜 (Lee Dahye) ‘NEVERTHELESS’ Performance Video💙",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=lCfNaN1uXCE",
+  "artists": [
+    "lee-dahye"
+  ],
+  "song": "NEVERTHELESS",
+  "type": "performance",
+  "channel": "이다혜 李多慧",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "0cab4046efca.webp",
+          "set": "diner"
+        },
+        {
+          "image": "09867948af1f.webp",
+          "set": "gas-station"
+        },
+        {
+          "image": "480503406ebc.webp",
+          "set": "lobby"
+        },
+        {
+          "image": "a21a6f0dbb32.webp",
+          "set": "motel"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!64"
+      ]
+    }
+  ]
+}

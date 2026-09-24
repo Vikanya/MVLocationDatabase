@@ -1,0 +1,26 @@
+{
+  "title": "FEARLESS TRAILER 'The World Is My Oyster' - LE SSERAFIM",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=Qr6HmcxI2s0",
+  "artists": [
+    "fearless-trailer"
+  ],
+  "song": "The World Is My Oyster",
+  "type": "clip",
+  "channel": "HYBE LABELS",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "provoke-seoul",
+      "screenshots": [
+        {
+          "image": "ed0a5fd95053.webp",
+          "set": "outside"
+        }
+      ],
+      "sheet_rows": [
+        "provoke Seoul!15"
+      ]
+    }
+  ]
+}

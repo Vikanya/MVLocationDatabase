@@ -1,0 +1,25 @@
+{
+  "title": "KISS OF LIFE (키스오브라이프) | 'Nobody Knows' Live Clip",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=Nq7GZ6MAUP4",
+  "artists": [
+    "kiss-of-life"
+  ],
+  "song": "Nobody Knows",
+  "type": "live",
+  "channel": "KISS OF LIFE",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "concrete",
+      "screenshots": [
+        {
+          "image": "a77c3f6e2e79.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Concrete!4"
+      ]
+    }
+  ]
+}

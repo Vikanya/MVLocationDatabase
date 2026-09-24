@@ -1,0 +1,41 @@
+{
+  "title": "ALL(H)OURS (올아워즈) ‘DEAD MAN WALKING’ Official M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=4-ba6z64nlQ",
+  "artists": [
+    "all-h-ours"
+  ],
+  "song": "DEAD MAN WALKING",
+  "type": "mv",
+  "channel": "올아워즈 ALL(H)OURS ",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "hangar-bazar-3",
+      "screenshots": [
+        {
+          "image": "8f6108d5caa1.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Hangar bazar!29"
+      ]
+    },
+    {
+      "location": "acres-space-subway",
+      "screenshots": [
+        {
+          "image": "142f325cd55e.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "a61547ea58eb.webp",
+          "set": "spot-2"
+        }
+      ],
+      "sheet_rows": [
+        "Subway!11"
+      ]
+    }
+  ]
+}

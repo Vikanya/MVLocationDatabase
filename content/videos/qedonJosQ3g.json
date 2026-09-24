@@ -1,0 +1,25 @@
+{
+  "title": "ENHYPEN (엔하이픈) 'Sweet Venom' Official MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=qedonJosQ3g",
+  "artists": [
+    "enhypen"
+  ],
+  "song": "Sweet Venom",
+  "type": "mv",
+  "channel": "HYBE LABELS",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "grangar",
+      "screenshots": [
+        {
+          "image": "6a410fe4f897.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Grangar!2"
+      ]
+    }
+  ]
+}

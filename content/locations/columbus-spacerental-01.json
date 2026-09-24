@@ -1,0 +1,18 @@
+{
+  "name": "Columbus – spacerental_01",
+  "status": "identified",
+  "links": {
+    "website": [
+      "https://www.columbus-studio.kr/spacerental_01"
+    ]
+  },
+  "tags": [
+    "Columbus"
+  ],
+  "review": [
+    "No coordinates — add a Google Maps link or lat/lng"
+  ],
+  "sheet_rows": [
+    "Columbus!53"
+  ]
+}

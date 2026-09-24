@@ -1,0 +1,27 @@
+{
+  "title": "[MV] 몬스타엑스(MONSTA X) - JEALOUSY",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=TSA9VZduuZ4",
+  "artists": [
+    "monsta-x"
+  ],
+  "type": "mv",
+  "channel": "STARSHIP",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "hangar-bazar-2",
+      "screenshots": [
+        {
+          "image": "e4dd4a80fe27.webp"
+        },
+        {
+          "image": "de93f0124824.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Hangar bazar!9"
+      ]
+    }
+  ]
+}

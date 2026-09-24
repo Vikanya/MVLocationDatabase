@@ -1,0 +1,23 @@
+{
+  "name": "영남공영주차장",
+  "status": "identified",
+  "coordinates": {
+    "lat": 37.519428,
+    "lng": 126.902617
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/GRfuK2F849LW3HKdA"
+    ],
+    "naver_map": [
+      "https://naver.me/5ch7yZTH"
+    ]
+  },
+  "tags": [
+    "Parkings/Rooftops"
+  ],
+  "sheet_rows": [
+    "Parkings/Rooftops!56"
+  ]
+}

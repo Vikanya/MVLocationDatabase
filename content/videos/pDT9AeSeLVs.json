@@ -1,0 +1,25 @@
+{
+  "title": "Billlie | 'flipp!ng a coin' Performance Video",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=pDT9AeSeLVs",
+  "artists": [
+    "billlie"
+  ],
+  "song": "flipp!ng a coin",
+  "type": "performance",
+  "channel": "Billlie",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "hangar-bazar-5",
+      "screenshots": [
+        {
+          "image": "369b6e70ae72.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Hangar bazar!36"
+      ]
+    }
+  ]
+}

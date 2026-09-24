@@ -1,0 +1,29 @@
+{
+  "title": "CLASS:y(클라씨) “Psycho and Beautiful“ M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=t1jU35Xwi3Y",
+  "artists": [
+    "class-y"
+  ],
+  "type": "mv",
+  "channel": "CLASSy(클라씨)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "acres-space-gas-station",
+      "screenshots": [
+        {
+          "image": "1d597d91aeb1.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "ff37a4fea93f.webp",
+          "set": "spot-2"
+        }
+      ],
+      "sheet_rows": [
+        "Carwash/Gas Station!20"
+      ]
+    }
+  ]
+}

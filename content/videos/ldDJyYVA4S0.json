@@ -1,0 +1,26 @@
+{
+  "title": "BURVEY - 'CLAP' Dance Practice (Moving ver.)",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=ldDJyYVA4S0",
+  "artists": [
+    "burvey"
+  ],
+  "song": "CLAP",
+  "type": "performance",
+  "channel": "BURVEY",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "acres-space-gas-station",
+      "screenshots": [
+        {
+          "image": "d6305e1a3621.webp",
+          "set": "spot-1"
+        }
+      ],
+      "sheet_rows": [
+        "Carwash/Gas Station!30"
+      ]
+    }
+  ]
+}

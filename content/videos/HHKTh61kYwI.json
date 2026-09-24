@@ -1,0 +1,29 @@
+{
+  "title": "Aylah - 'Stupid Cupid' Official MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=HHKTh61kYwI",
+  "artists": [
+    "aylah"
+  ],
+  "song": "Stupid Cupid",
+  "type": "mv",
+  "embeddable": false,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "74afa2356b37.webp",
+          "set": "diner"
+        },
+        {
+          "image": "559b0f7007df.webp",
+          "set": "hospital"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!40"
+      ]
+    }
+  ]
+}

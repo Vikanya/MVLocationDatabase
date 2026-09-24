@@ -1,0 +1,23 @@
+{
+  "name": "Helipads #2",
+  "status": "identified",
+  "coordinates": {
+    "lat": 37.491233,
+    "lng": 126.923378
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/B9kV7np5R6QAZRK27"
+    ],
+    "naver_map": [
+      "https://naver.me/FVPBBIW3"
+    ]
+  },
+  "tags": [
+    "Helipads"
+  ],
+  "sheet_rows": [
+    "Helipads!41"
+  ]
+}

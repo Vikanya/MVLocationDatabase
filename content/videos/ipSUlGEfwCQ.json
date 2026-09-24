@@ -1,0 +1,20 @@
+{
+  "title": "TIOT(티아이오티) 'ROCK THANG' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=ipSUlGEfwCQ",
+  "artists": [
+    "tiot"
+  ],
+  "song": "ROCK THANG",
+  "type": "mv",
+  "channel": "TIOT 티아이오티",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "grangar",
+      "sheet_rows": [
+        "Grangar!26"
+      ]
+    }
+  ]
+}

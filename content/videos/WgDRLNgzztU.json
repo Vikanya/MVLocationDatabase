@@ -1,0 +1,24 @@
+{
+  "title": "RESCENE (리센느) - Heart Dropㅣ오픈 캔버스ㅣ4KㅣThe Artist Canvas",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=WgDRLNgzztU",
+  "artists": [
+    "rescene"
+  ],
+  "type": "other",
+  "channel": "The Artist Canvas",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "hangar-bazar-3",
+      "screenshots": [
+        {
+          "image": "2f87fca47d2a.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Hangar bazar!28"
+      ]
+    }
+  ]
+}

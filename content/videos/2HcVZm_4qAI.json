@@ -1,0 +1,28 @@
+{
+  "title": "ATEEZ(에이티즈) - ‘Guerrilla’ Official MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=2HcVZm_4qAI",
+  "artists": [
+    "ateez"
+  ],
+  "song": "Guerrilla",
+  "type": "mv",
+  "channel": "KQ ENTERTAINMENT",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "parkings-rooftops-2",
+      "screenshots": [
+        {
+          "image": "35b96d705b94.webp"
+        },
+        {
+          "image": "07e5a7335b7a.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Parkings/Rooftops!20"
+      ]
+    }
+  ]
+}

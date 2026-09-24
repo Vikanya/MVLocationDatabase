@@ -1,0 +1,25 @@
+{
+  "title": "(여자)아이들((G)I-DLE) - '퀸카 (Queencard)' Official Music Video",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=7HDeem-JaSY",
+  "artists": [
+    "g-i-dle"
+  ],
+  "song": "퀸카 (Queencard)",
+  "type": "mv",
+  "channel": "i-dle (아이들)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "columbus-studio-4th",
+      "screenshots": [
+        {
+          "image": "fa166eae4ea0.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Columbus!14"
+      ]
+    }
+  ]
+}

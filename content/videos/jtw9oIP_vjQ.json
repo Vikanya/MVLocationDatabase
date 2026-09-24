@@ -1,0 +1,41 @@
+{
+  "title": "[MV] CATCH THE YOUNG(캐치더영) _ Dream It",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=jtw9oIP_vjQ",
+  "artists": [
+    "catch-the-young"
+  ],
+  "type": "mv",
+  "channel": "1theK (원더케이)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "9ce49cb0c1cc.webp",
+          "set": "diner"
+        },
+        {
+          "image": "d636f4ba6ce6.webp",
+          "set": "lobby"
+        },
+        {
+          "image": "ca9f5018a71f.webp",
+          "set": "motel"
+        },
+        {
+          "image": "134a74335384.webp",
+          "set": "house"
+        },
+        {
+          "image": "2dfa63bee07d.webp",
+          "set": "subway-station"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!65"
+      ]
+    }
+  ]
+}

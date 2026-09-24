@@ -1,0 +1,23 @@
+{
+  "platform": "imgur",
+  "url": "https://imgur.com/a/Pqcj3tf",
+  "type": "other",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "acres-space-gas-station",
+      "screenshots": [
+        {
+          "image": "15833a8a0628.webp",
+          "set": "spot-1"
+        }
+      ],
+      "sheet_rows": [
+        "Carwash/Gas Station!34"
+      ]
+    }
+  ],
+  "review": [
+    "Artist not recognised from the title — add the artist(s)"
+  ]
+}

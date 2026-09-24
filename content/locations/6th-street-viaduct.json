@@ -1,0 +1,20 @@
+{
+  "name": "6th Street Viaduct",
+  "status": "identified",
+  "coordinates": {
+    "lat": 34.038533,
+    "lng": -118.228127
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/wYsPwSrYJGJE5ZWn8"
+    ]
+  },
+  "tags": [
+    "Bridges"
+  ],
+  "sheet_rows": [
+    "Bridges!7"
+  ]
+}

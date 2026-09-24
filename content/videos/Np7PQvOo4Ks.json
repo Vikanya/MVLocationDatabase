@@ -1,0 +1,30 @@
+{
+  "title": "[이현우] 'Brand New Christmas (feat. 김광민)' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=Np7PQvOo4Ks",
+  "artists": [
+    "이현우"
+  ],
+  "song": "Brand New Christmas (feat. 김광민)",
+  "type": "mv",
+  "channel": "Uzurocks Entertainment",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "8c9a4d1808c8.webp",
+          "set": "diner"
+        },
+        {
+          "image": "53dfd3dcdf7a.webp",
+          "set": "lobby"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!19"
+      ]
+    }
+  ]
+}

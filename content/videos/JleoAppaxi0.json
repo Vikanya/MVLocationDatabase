@@ -1,0 +1,25 @@
+{
+  "title": "IU 'Love wins all' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=JleoAppaxi0",
+  "artists": [
+    "iu"
+  ],
+  "song": "Love wins all",
+  "type": "mv",
+  "channel": "이지금 [IU Official]",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "columbus-spacerental-11",
+      "screenshots": [
+        {
+          "image": "4a85e336c7fe.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Columbus!47"
+      ]
+    }
+  ]
+}

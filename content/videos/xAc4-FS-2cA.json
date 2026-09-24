@@ -1,0 +1,25 @@
+{
+  "title": "MCND(엠씨엔디) 'Devil Youth Club' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=xAc4-FS-2cA",
+  "artists": [
+    "mcnd"
+  ],
+  "song": "Devil Youth Club",
+  "type": "mv",
+  "channel": "TOP MEDIA",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "kintex-1",
+      "screenshots": [
+        {
+          "image": "cf8d9f2954c3.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Parkings/Rooftops!54"
+      ]
+    }
+  ]
+}

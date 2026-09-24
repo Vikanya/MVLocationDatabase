@@ -1,0 +1,28 @@
+{
+  "title": "찬현 (CHANHYUN) - 쉿 (Shhh) (Feat. Leellamarz) (Prod. by GRAY) MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=vvJqDdGnMqI",
+  "artists": [
+    "chanhyun"
+  ],
+  "type": "mv",
+  "embeddable": false,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "dd225c0cc833.webp",
+          "set": "diner"
+        },
+        {
+          "image": "2d598ae2b34c.webp",
+          "set": "lobby"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!26"
+      ]
+    }
+  ]
+}

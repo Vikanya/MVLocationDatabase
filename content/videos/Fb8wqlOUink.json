@@ -1,0 +1,30 @@
+{
+  "title": "ZEROBASEONE (제로베이스원) 'イグジステンス' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=Fb8wqlOUink",
+  "artists": [
+    "zerobaseone"
+  ],
+  "song": "イグジステンス",
+  "type": "mv",
+  "channel": "ZEROBASEONE",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "acres-space-subway",
+      "screenshots": [
+        {
+          "image": "6a5a2af24926.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "78bbbb654d40.webp",
+          "set": "spot-2"
+        }
+      ],
+      "sheet_rows": [
+        "Subway!17"
+      ]
+    }
+  ]
+}

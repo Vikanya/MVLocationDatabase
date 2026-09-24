@@ -1,0 +1,29 @@
+{
+  "title": "[Special Clip] 후이 (펜타곤) - Whale 🐬",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=maY8n18akp4",
+  "artists": [
+    "후이"
+  ],
+  "type": "clip",
+  "channel": "+ 기억 프로젝트",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "977adfb71427.webp",
+          "set": "gas-station"
+        },
+        {
+          "image": "2a7da10bae68.webp",
+          "set": "motel"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!44"
+      ]
+    }
+  ]
+}

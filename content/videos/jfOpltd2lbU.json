@@ -1,0 +1,24 @@
+{
+  "title": "ICHILLIN'(아이칠린) KICK-START MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=jfOpltd2lbU",
+  "type": "mv",
+  "channel": "ICHILLIN' 아이칠린",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "columbus-studio-4th",
+      "screenshots": [
+        {
+          "image": "986eb21fe147.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Columbus!12"
+      ]
+    }
+  ],
+  "review": [
+    "Artist not recognised from the title — add the artist(s)"
+  ]
+}

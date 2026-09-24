@@ -1,0 +1,30 @@
+{
+  "title": "[FIX OFF] Desire Project : ORIGIN 'Dinero' | ATEEZ(에이티즈) 민기",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=uD0yLUVtAvk",
+  "artists": [
+    "desire-project-origin"
+  ],
+  "song": "Dinero",
+  "type": "other",
+  "channel": "ATEEZ",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "abandoned-park-1",
+      "screenshots": [
+        {
+          "image": "d4439142c9e6.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "0b61febeda74.webp",
+          "set": "spot-2"
+        }
+      ],
+      "sheet_rows": [
+        "Abandoned Park!20"
+      ]
+    }
+  ]
+}

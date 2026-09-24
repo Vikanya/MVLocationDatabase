@@ -1,0 +1,25 @@
+{
+  "title": "BABYMONSTER - '춤 (CHOOM)' M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=x3eqqoZPV_E",
+  "artists": [
+    "babymonster"
+  ],
+  "song": "춤 (CHOOM)",
+  "type": "mv",
+  "channel": "BABYMONSTER",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "docks-2",
+      "screenshots": [
+        {
+          "image": "4eee42a7ec0c.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Docks!13"
+      ]
+    }
+  ]
+}

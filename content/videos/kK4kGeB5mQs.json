@@ -1,0 +1,30 @@
+{
+  "title": "MODYSSEY 모디세이 'HOOK(훜)' Official MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=kK4kGeB5mQs",
+  "artists": [
+    "modyssey"
+  ],
+  "song": "HOOK(훜)",
+  "type": "mv",
+  "channel": "MODYSSEY",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "royal-x",
+      "screenshots": [
+        {
+          "image": "9586de7fd0a7.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "252f83594b67.webp",
+          "set": "spot-3"
+        }
+      ],
+      "sheet_rows": [
+        "Royal X!5"
+      ]
+    }
+  ]
+}

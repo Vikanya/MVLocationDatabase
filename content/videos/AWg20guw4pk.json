@@ -1,0 +1,20 @@
+{
+  "title": "AB6IX (에이비식스) 'SAVIOR' M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=AWg20guw4pk",
+  "artists": [
+    "ab6ix"
+  ],
+  "song": "SAVIOR",
+  "type": "mv",
+  "channel": "BRANDNEW MUSIC",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "grangar",
+      "sheet_rows": [
+        "Grangar!18"
+      ]
+    }
+  ]
+}

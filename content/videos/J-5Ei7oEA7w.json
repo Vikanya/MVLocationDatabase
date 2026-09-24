@@ -1,0 +1,20 @@
+{
+  "title": "TNX - 'FUEGO' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=J-5Ei7oEA7w",
+  "artists": [
+    "tnx"
+  ],
+  "song": "FUEGO",
+  "type": "mv",
+  "channel": "TNX",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "tunnels",
+      "sheet_rows": [
+        "Tunnels!3"
+      ]
+    }
+  ]
+}

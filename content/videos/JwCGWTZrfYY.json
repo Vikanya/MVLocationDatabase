@@ -1,0 +1,31 @@
+{
+  "title": "MXM (BRANDNEWBOYS) – ‘식어버린 온도 (GONE COLD)’ Official M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=JwCGWTZrfYY",
+  "artists": [
+    "mxm"
+  ],
+  "song": "식어버린 온도 (GONE COLD)",
+  "type": "mv",
+  "channel": "MXM",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "hangar-bazar-2",
+      "screenshots": [
+        {
+          "image": "29f29d10bb7b.webp"
+        },
+        {
+          "image": "c713b2ba222b.webp"
+        },
+        {
+          "image": "1f83d3cdebf3.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Hangar bazar!18"
+      ]
+    }
+  ]
+}

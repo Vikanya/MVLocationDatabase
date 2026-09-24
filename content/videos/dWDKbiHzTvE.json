@@ -1,0 +1,25 @@
+{
+  "title": "Kep1er 케플러 | 'Giddy' Choreography Video",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=dWDKbiHzTvE",
+  "artists": [
+    "kep1er"
+  ],
+  "song": "Giddy",
+  "type": "performance",
+  "channel": "Kep1er",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "columbus-studio-4th",
+      "screenshots": [
+        {
+          "image": "0951444209ab.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Columbus!16"
+      ]
+    }
+  ]
+}

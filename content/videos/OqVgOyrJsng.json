@@ -1,0 +1,20 @@
+{
+  "title": "VICTON 빅톤 'Stupid O'clock' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=OqVgOyrJsng",
+  "artists": [
+    "victon"
+  ],
+  "song": "Stupid O",
+  "type": "mv",
+  "channel": "VICTON 빅톤",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "grangar",
+      "sheet_rows": [
+        "Grangar!17"
+      ]
+    }
+  ]
+}

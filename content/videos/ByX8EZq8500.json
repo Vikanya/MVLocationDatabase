@@ -1,0 +1,35 @@
+{
+  "title": "RESCENE (리센느) 'Heart Drop' Official MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=ByX8EZq8500",
+  "artists": [
+    "rescene"
+  ],
+  "song": "Heart Drop",
+  "type": "mv",
+  "channel": "RESCENE",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "d9cc196f20d7.webp",
+          "set": "gas-station"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!83"
+      ]
+    },
+    {
+      "location": "acres-space-gas-station",
+      "sheet_rows": [
+        "Carwash/Gas Station!40"
+      ]
+    }
+  ],
+  "review": [
+    "Every set at '' was marked X — which set was it filmed in?"
+  ]
+}

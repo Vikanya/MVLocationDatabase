@@ -1,0 +1,25 @@
+{
+  "title": "위아이(WEi) 'HOME' M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=V9iN-Yj0VTI",
+  "artists": [
+    "wei"
+  ],
+  "song": "HOME",
+  "type": "mv",
+  "channel": "WEi",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "columbus-spacerental-01",
+      "screenshots": [
+        {
+          "image": "87f5f3edbfb2.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Columbus!57"
+      ]
+    }
+  ]
+}

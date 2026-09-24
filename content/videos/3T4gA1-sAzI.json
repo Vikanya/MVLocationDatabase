@@ -1,0 +1,45 @@
+{
+  "title": "THE BOYZ(더보이즈) 'TRIGGER (導火線)' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=3T4gA1-sAzI",
+  "artists": [
+    "the-boyz"
+  ],
+  "song": "TRIGGER (導火線)",
+  "type": "mv",
+  "channel": "THE BOYZ",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "columbus-spacerental-09",
+      "screenshots": [
+        {
+          "image": "785d631c5735.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Columbus!39"
+      ]
+    },
+    {
+      "location": "taean-european-resort",
+      "screenshots": [
+        {
+          "image": "9ea6039ed071.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "9f0d1fc652f3.webp",
+          "set": "spot-2"
+        },
+        {
+          "image": "a167c3453fef.webp",
+          "set": "spot-4"
+        }
+      ],
+      "sheet_rows": [
+        "Abandoned Park!9"
+      ]
+    }
+  ]
+}

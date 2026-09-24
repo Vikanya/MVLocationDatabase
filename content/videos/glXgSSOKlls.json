@@ -1,0 +1,25 @@
+{
+  "title": "Red Velvet 레드벨벳 'Ice Cream Cake' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=glXgSSOKlls",
+  "artists": [
+    "red-velvet"
+  ],
+  "song": "Ice Cream Cake",
+  "type": "mv",
+  "channel": "SMTOWN",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "four-aces-movie-ranch",
+      "screenshots": [
+        {
+          "image": "85a08bdf7231.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Carwash/Gas Station!48"
+      ]
+    }
+  ]
+}

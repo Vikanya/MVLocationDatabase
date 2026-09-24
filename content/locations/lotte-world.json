@@ -1,0 +1,21 @@
+{
+  "name": "Lotte World",
+  "status": "identified",
+  "address": "240 Olympic-ro, Songpa-gu, Seoul, South Korea",
+  "coordinates": {
+    "lat": 37.511116,
+    "lng": 127.098167
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/p4vvLDjoBHqbFbsb6"
+    ]
+  },
+  "reference_videos": [
+    "https://youtu.be/OAJFSodkYGQ"
+  ],
+  "sheet_rows": [
+    "Lotte World!5"
+  ]
+}

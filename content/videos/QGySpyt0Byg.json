@@ -1,0 +1,25 @@
+{
+  "title": "[STATION : NCT LAB] TEN 텐 'Birthday' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=QGySpyt0Byg",
+  "artists": [
+    "ten"
+  ],
+  "song": "Birthday",
+  "type": "mv",
+  "channel": "SMTOWN",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "columbus-studio-4th",
+      "screenshots": [
+        {
+          "image": "a981ec2e777a.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Columbus!23"
+      ]
+    }
+  ]
+}

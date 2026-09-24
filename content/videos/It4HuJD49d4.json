@@ -1,0 +1,25 @@
+{
+  "title": "NATURE (네이처) - 'RICA RICA' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=It4HuJD49d4",
+  "artists": [
+    "nature"
+  ],
+  "song": "RICA RICA",
+  "type": "mv",
+  "channel": "STONE MUSIC",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "arena",
+      "screenshots": [
+        {
+          "image": "c13da8fe1d63.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Arena!3"
+      ]
+    }
+  ]
+}

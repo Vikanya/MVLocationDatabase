@@ -1,0 +1,25 @@
+{
+  "title": "TREASURE - '직진 (JIKJIN)' M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=ZJaKdBBzUYk",
+  "artists": [
+    "treasure"
+  ],
+  "song": "직진 (JIKJIN)",
+  "type": "mv",
+  "channel": "TREASURE (트레저)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "abandoned-gimcheon-medical-school",
+      "screenshots": [
+        {
+          "image": "333d27259c47.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Gimcheon campus!21"
+      ]
+    }
+  ]
+}

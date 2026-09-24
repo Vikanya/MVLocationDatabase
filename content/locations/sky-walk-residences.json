@@ -1,0 +1,20 @@
+{
+  "name": "Sky Walk Residences",
+  "status": "identified",
+  "coordinates": {
+    "lat": 13.714481,
+    "lng": 100.593494
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/n4J4HaXnXMPZDhQf8"
+    ]
+  },
+  "tags": [
+    "Helipads"
+  ],
+  "sheet_rows": [
+    "Helipads!44"
+  ]
+}

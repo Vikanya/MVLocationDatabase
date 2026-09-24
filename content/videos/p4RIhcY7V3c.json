@@ -1,0 +1,31 @@
+{
+  "title": "(여자)아이들((G)I-DLE) - 'LATATA' Official Music Video",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=p4RIhcY7V3c",
+  "artists": [
+    "g-i-dle"
+  ],
+  "song": "LATATA",
+  "type": "mv",
+  "channel": "i-dle (아이들)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "hangar-bazar-2",
+      "screenshots": [
+        {
+          "image": "6db0994254af.webp"
+        },
+        {
+          "image": "16380792d634.webp"
+        },
+        {
+          "image": "28ccd7ef4db8.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Hangar bazar!12"
+      ]
+    }
+  ]
+}

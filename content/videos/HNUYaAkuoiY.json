@@ -1,0 +1,37 @@
+{
+  "title": "BLITZERS(블리처스) - Breathe Again Official MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=HNUYaAkuoiY",
+  "artists": [
+    "blitzers"
+  ],
+  "type": "mv",
+  "channel": "BLITZERS OFFICIAL",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "provoke-seoul",
+      "screenshots": [
+        {
+          "image": "4f8ed10d7f15.webp",
+          "set": "outside"
+        },
+        {
+          "image": "dcd80b936712.webp",
+          "set": "hallway"
+        },
+        {
+          "image": "975a2e54a4f4.webp",
+          "set": "hangar-2"
+        },
+        {
+          "image": "f5e363a9e02a.webp",
+          "set": "stairs"
+        }
+      ],
+      "sheet_rows": [
+        "provoke Seoul!7"
+      ]
+    }
+  ]
+}

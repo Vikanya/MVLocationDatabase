@@ -1,0 +1,25 @@
+{
+  "title": "woo!ah! (우아!) - 'Rollercoaster' M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=KkyUE7TcBcs",
+  "artists": [
+    "woo-ah"
+  ],
+  "song": "Rollercoaster",
+  "type": "mv",
+  "channel": "WOOAH 우아",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "lotte-world",
+      "screenshots": [
+        {
+          "image": "c5ff95f48ba0.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Lotte World!6"
+      ]
+    }
+  ]
+}

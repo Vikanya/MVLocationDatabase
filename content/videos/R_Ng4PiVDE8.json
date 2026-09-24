@@ -1,0 +1,30 @@
+{
+  "title": "키코 (Kik5o) 'Pretty Revenge' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=R_Ng4PiVDE8",
+  "artists": [
+    "kik5o"
+  ],
+  "song": "Pretty Revenge",
+  "type": "mv",
+  "channel": "키코(Kik5o)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "a2dd55ba0d83.webp",
+          "set": "gas-station"
+        },
+        {
+          "image": "c24c9154177f.webp",
+          "set": "motel"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!60"
+      ]
+    }
+  ]
+}

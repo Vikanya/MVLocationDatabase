@@ -1,0 +1,30 @@
+{
+  "title": "NCT DREAM 엔시티 드림 'Graduation' Special Video",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=Sa_NeCgekzs",
+  "artists": [
+    "nct-dream"
+  ],
+  "song": "Graduation",
+  "type": "clip",
+  "channel": "NCT DREAM",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "aa64b8d9a3d0.webp",
+          "set": "hospital"
+        },
+        {
+          "image": "07fbbdd68af9.webp",
+          "set": "lobby"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!56"
+      ]
+    }
+  ]
+}

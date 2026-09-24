@@ -1,0 +1,25 @@
+{
+  "title": "Stray Kids \"Back Door\" M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=X-uJtV8ScYk",
+  "artists": [
+    "stray-kids"
+  ],
+  "song": "Back Door",
+  "type": "mv",
+  "channel": "JYP Entertainment",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "copy-of-columbus",
+      "screenshots": [
+        {
+          "image": "599ad1847f8a.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Copy of Columbus!3"
+      ]
+    }
+  ]
+}

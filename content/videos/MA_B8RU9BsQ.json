@@ -1,0 +1,30 @@
+{
+  "title": "NCT 127 엔시티 127 '삐그덕 (Walk)' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=MA_B8RU9BsQ",
+  "artists": [
+    "nct-127"
+  ],
+  "song": "삐그덕 (Walk)",
+  "type": "mv",
+  "channel": "SMTOWN",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "acres-space-gas-station",
+      "screenshots": [
+        {
+          "image": "428ce3d35803.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "67c2de76a33c.webp",
+          "set": "spot-2"
+        }
+      ],
+      "sheet_rows": [
+        "Carwash/Gas Station!16"
+      ]
+    }
+  ]
+}

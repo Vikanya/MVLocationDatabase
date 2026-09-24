@@ -1,0 +1,29 @@
+{
+  "title": "[스우파2] 레이디바운스(LADYBOUNCE) l 크루곡 퍼포먼스 대중 투표 (Crew Song Performance) #스트릿우먼파이터2",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=ueaMRwH0o_0",
+  "artists": [
+    "ladybounce"
+  ],
+  "type": "performance",
+  "channel": "The CHOOM (더 춤)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "d8308753cf7a.webp",
+          "set": "gas-station"
+        },
+        {
+          "image": "8fac5ccfb6c4.webp",
+          "set": "motel"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!41"
+      ]
+    }
+  ]
+}

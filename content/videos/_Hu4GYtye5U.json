@@ -1,0 +1,25 @@
+{
+  "title": "IVE 아이브 'Either Way’ MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=_Hu4GYtye5U",
+  "artists": [
+    "ive"
+  ],
+  "song": "Either Way",
+  "type": "mv",
+  "channel": "STARSHIP",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "columbus-studio-4th",
+      "screenshots": [
+        {
+          "image": "35c204001d22.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Columbus!5"
+      ]
+    }
+  ]
+}

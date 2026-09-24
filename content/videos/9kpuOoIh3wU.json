@@ -1,0 +1,25 @@
+{
+  "title": "SEVENTEEN (세븐틴) 'F*ck My Life' Official MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=9kpuOoIh3wU",
+  "artists": [
+    "seventeen"
+  ],
+  "song": "F*ck My Life",
+  "type": "mv",
+  "channel": "HYBE LABELS",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "streets-1",
+      "screenshots": [
+        {
+          "image": "72301a8c9aea.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Streets!5"
+      ]
+    }
+  ]
+}

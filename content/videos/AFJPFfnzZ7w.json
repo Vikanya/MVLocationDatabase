@@ -1,0 +1,25 @@
+{
+  "title": "[MV] 이달의 소녀 (LOONA) \"favOriTe\"",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=AFJPFfnzZ7w",
+  "artists": [
+    "loona"
+  ],
+  "song": "favOriTe",
+  "type": "mv",
+  "channel": "loonatheworld",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "hangar-bazar-2",
+      "screenshots": [
+        {
+          "image": "92aa8a8ce947.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Hangar bazar!8"
+      ]
+    }
+  ]
+}

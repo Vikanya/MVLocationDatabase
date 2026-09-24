@@ -1,0 +1,25 @@
+{
+  "title": "IRENE 아이린 'Like A Flower' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=KdOF5-h4qpw",
+  "artists": [
+    "irene"
+  ],
+  "song": "Like A Flower",
+  "type": "mv",
+  "channel": "SMTOWN",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "streets-1",
+      "screenshots": [
+        {
+          "image": "ca63af7d289c.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Streets!6"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "title": "비비 (BIBI) - 가면무도회 (Animal Farm) Official M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=hVLRky1hGfk",
+  "artists": [
+    "bibi"
+  ],
+  "type": "mv",
+  "channel": "BIBI",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "columbus-spacerental-11",
+      "screenshots": [
+        {
+          "image": "cb5ae15c5b64.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Columbus!51"
+      ]
+    }
+  ]
+}

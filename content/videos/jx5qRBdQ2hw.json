@@ -1,0 +1,34 @@
+{
+  "title": "CSR(첫사랑) 'Higher' OFFICIAL MV | 1st JAPAN MINI ALBUM",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=jx5qRBdQ2hw",
+  "artists": [
+    "csr"
+  ],
+  "song": "Higher",
+  "type": "mv",
+  "channel": "첫사랑(CSR)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "provoke-seoul",
+      "screenshots": [
+        {
+          "image": "515cbfb16c97.webp",
+          "set": "outside"
+        },
+        {
+          "image": "6b025552cf61.webp",
+          "set": "outside"
+        },
+        {
+          "image": "9daa360f43a8.webp",
+          "set": "stairs"
+        }
+      ],
+      "sheet_rows": [
+        "provoke Seoul!31"
+      ]
+    }
+  ]
+}

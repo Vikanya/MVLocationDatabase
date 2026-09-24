@@ -1,0 +1,26 @@
+{
+  "title": "STAYC(스테이씨) 'BEAUTIFUL MONSTER' Performance POWER Ver.",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=i079STRbUBU",
+  "artists": [
+    "stayc"
+  ],
+  "song": "BEAUTIFUL MONSTER",
+  "type": "performance",
+  "channel": "STAYC",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "3ed0034b7aa0.webp",
+          "set": "diner"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!10"
+      ]
+    }
+  ]
+}

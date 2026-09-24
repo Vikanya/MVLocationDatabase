@@ -1,0 +1,31 @@
+{
+  "title": "AB6IX (에이비식스) 'BREATHE' M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=RMJFEvHvmD0",
+  "artists": [
+    "ab6ix"
+  ],
+  "song": "BREATHE",
+  "type": "mv",
+  "channel": "BRANDNEW MUSIC",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "hangar-bazar-3",
+      "screenshots": [
+        {
+          "image": "a968ab12b269.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Hangar bazar!23"
+      ]
+    },
+    {
+      "location": "tunnels",
+      "sheet_rows": [
+        "Tunnels!4"
+      ]
+    }
+  ]
+}

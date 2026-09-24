@@ -1,0 +1,50 @@
+{
+  "title": "펜타곤(PENTAGON) - ‘겁쟁이’ Official Music Video",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=ZEjlls0-4Ag",
+  "artists": [
+    "pentagon"
+  ],
+  "song": "겁쟁이",
+  "type": "mv",
+  "channel": "PENTAGON 펜타곤 (Official YouTube Channel)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "acres-space-gas-station",
+      "screenshots": [
+        {
+          "image": "32d526b26c1f.webp",
+          "set": "spot-2"
+        },
+        {
+          "image": "4eb8f0d3d149.webp",
+          "set": "spot-4"
+        }
+      ],
+      "sheet_rows": [
+        "Carwash/Gas Station!44"
+      ]
+    },
+    {
+      "location": "acres-space-subway",
+      "screenshots": [
+        {
+          "image": "c3eb07bf145d.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "f5a55b9006e5.webp",
+          "set": "spot-2"
+        },
+        {
+          "image": "ddc04db3c499.webp",
+          "set": "spot-3"
+        }
+      ],
+      "sheet_rows": [
+        "Subway!20"
+      ]
+    }
+  ]
+}

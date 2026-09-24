@@ -1,0 +1,25 @@
+{
+  "title": "[SPECIAL PERFORMANCE] TAN (티에이엔) - 'Fix YOU' (Fix Ver.)",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=Zuy6BIpi_zo",
+  "artists": [
+    "tan"
+  ],
+  "song": "Fix YOU",
+  "type": "performance",
+  "channel": "TAN-Official",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "columbus-studio-4th",
+      "screenshots": [
+        {
+          "image": "dff92f44092f.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Columbus!24"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "title": "NOWZ (나우즈) 'EVERGLOW' Official Music Video",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=U-o6bmvH7R4",
+  "artists": [
+    "nowz"
+  ],
+  "song": "EVERGLOW",
+  "type": "mv",
+  "channel": "NOWZ 나우즈 (Official YouTube Channel)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "mamago-waikiki",
+      "screenshots": [
+        {
+          "image": "9f8469de0162.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "3424d0cdf8c4.webp",
+          "set": "spot-2"
+        },
+        {
+          "image": "ca597afbd338.webp",
+          "set": "spot-3"
+        },
+        {
+          "image": "c1fef197b764.webp",
+          "set": "spot-4"
+        },
+        {
+          "image": "20ee3cfa0517.webp",
+          "set": "spot-5"
+        },
+        {
+          "image": "6ed7b8dfd363.webp",
+          "set": "spot-6"
+        }
+      ],
+      "sheet_rows": [
+        "Mamago!19"
+      ]
+    }
+  ]
+}

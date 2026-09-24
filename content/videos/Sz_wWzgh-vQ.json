@@ -1,0 +1,48 @@
+{
+  "title": "TWICE “Strategy (feat. Megan Thee Stallion)” M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=Sz_wWzgh-vQ",
+  "artists": [
+    "twice"
+  ],
+  "song": "Strategy (feat. Megan Thee Stallion)",
+  "type": "mv",
+  "channel": "JYP Entertainment",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "jongno-geonguk-building-parking-tower",
+      "screenshots": [
+        {
+          "image": "03e90b4dd71b.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Mamago!10"
+      ]
+    },
+    {
+      "location": "acres-space-gas-station",
+      "screenshots": [
+        {
+          "image": "029c3074110c.webp",
+          "set": "spot-2"
+        }
+      ],
+      "sheet_rows": [
+        "Carwash/Gas Station!31"
+      ]
+    },
+    {
+      "location": "streets-1",
+      "screenshots": [
+        {
+          "image": "af7efda4bbfa.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Streets!7"
+      ]
+    }
+  ]
+}

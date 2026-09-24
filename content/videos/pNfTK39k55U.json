@@ -1,0 +1,31 @@
+{
+  "title": "ITZY \"달라달라(DALLA DALLA)\" M/V @ITZY",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=pNfTK39k55U",
+  "artists": [
+    "itzy"
+  ],
+  "song": "달라달라(DALLA DALLA)",
+  "type": "mv",
+  "channel": "JYP Entertainment",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "hangar-bazar-5",
+      "screenshots": [
+        {
+          "image": "b847877de4d4.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Hangar bazar!37"
+      ]
+    },
+    {
+      "location": "tunnels",
+      "sheet_rows": [
+        "Tunnels!6"
+      ]
+    }
+  ]
+}

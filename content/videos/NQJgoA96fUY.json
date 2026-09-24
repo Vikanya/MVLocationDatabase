@@ -1,0 +1,25 @@
+{
+  "title": "BVNDIT(밴디트) - \"JUNGLE\" Music Video",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=NQJgoA96fUY",
+  "artists": [
+    "bvndit"
+  ],
+  "song": "JUNGLE",
+  "type": "mv",
+  "channel": "BVNDIT_Official",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "kyung-hee-university-grand-peace-palace",
+      "screenshots": [
+        {
+          "image": "1e49e7ff671d.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Church Roof!5"
+      ]
+    }
+  ]
+}

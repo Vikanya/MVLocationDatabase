@@ -1,0 +1,46 @@
+{
+  "title": "82MAJOR(82메이저) 'Like Fire' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=L7HhTKJx0gU",
+  "artists": [
+    "82major"
+  ],
+  "song": "Like Fire",
+  "type": "mv",
+  "channel": "82MAJOR",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "abandoned-park-1",
+      "screenshots": [
+        {
+          "image": "a74e8b243adc.webp",
+          "set": "spot-1"
+        }
+      ],
+      "sheet_rows": [
+        "Abandoned Park!21"
+      ]
+    },
+    {
+      "location": "acres-space-subway",
+      "screenshots": [
+        {
+          "image": "c59764c212cf.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "e0a481508109.webp",
+          "set": "spot-2"
+        },
+        {
+          "image": "45c8232d52e0.webp",
+          "set": "spot-3"
+        }
+      ],
+      "sheet_rows": [
+        "Subway!19"
+      ]
+    }
+  ]
+}

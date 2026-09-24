@@ -1,0 +1,25 @@
+{
+  "title": "ARTMS ‘Pre4 : Air' Official Track Video",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=ZSkzF0ucsLI",
+  "artists": [
+    "artms"
+  ],
+  "song": "Pre4 : Air",
+  "type": "other",
+  "channel": "Official ARTMS",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "maison-2",
+      "screenshots": [
+        {
+          "image": "834a89600f8b.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Maison!4"
+      ]
+    }
+  ]
+}

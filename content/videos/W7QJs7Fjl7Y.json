@@ -1,0 +1,25 @@
+{
+  "title": "[MV] Jade - No more (feat. CHE) / Official Music Video",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=W7QJs7Fjl7Y",
+  "artists": [
+    "jade"
+  ],
+  "type": "mv",
+  "channel": "POCLANOS",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "provoke-seoul",
+      "screenshots": [
+        {
+          "image": "93fc337cd4e3.webp",
+          "set": "hangar-2"
+        }
+      ],
+      "sheet_rows": [
+        "provoke Seoul!30"
+      ]
+    }
+  ]
+}

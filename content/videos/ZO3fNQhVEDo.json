@@ -1,0 +1,27 @@
+{
+  "title": "[#퀸덤퍼즐] ♬Charismatic - PICK on the top | PERFORMANCE VIDEO (4K) #QUEENDOMPUZZLE",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=ZO3fNQhVEDo",
+  "artists": [
+    "charismatic"
+  ],
+  "type": "performance",
+  "channel": "Mnet K-POP",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "quatro-box",
+      "screenshots": [
+        {
+          "image": "d2409a4f4595.webp"
+        },
+        {
+          "image": "78b34089d5d5.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Quatro Box!3"
+      ]
+    }
+  ]
+}

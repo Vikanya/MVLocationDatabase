@@ -1,0 +1,36 @@
+{
+  "title": "GreatGuys(멋진녀석들)-[Touch By Touch] MV  ENG ver.",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=8zT_ZXrsUVY",
+  "artists": [
+    "greatguys"
+  ],
+  "song": "Touch By Touch",
+  "type": "mv",
+  "channel": "DNA ENTERTAINMENT",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "lotte-world-2",
+      "screenshots": [
+        {
+          "image": "1c9fca78bf6f.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Lotte World!13"
+      ]
+    },
+    {
+      "location": "wave",
+      "screenshots": [
+        {
+          "image": "b0e09ff723e3.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Wave!2"
+      ]
+    }
+  ]
+}

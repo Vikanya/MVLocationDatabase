@@ -1,0 +1,24 @@
+{
+  "title": "STAYC (스테이씨) _ RUN2U (런투유) | 스페셜클립 | Special Clip | 퍼포먼스 | Performance | 4K",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=KT2eWLnKkkg",
+  "artists": [
+    "stayc"
+  ],
+  "type": "performance",
+  "channel": "1theK Originals - 원더케이 오리지널",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "4x4",
+      "screenshots": [
+        {
+          "image": "918e5660ab28.webp"
+        }
+      ],
+      "sheet_rows": [
+        "4x4!3"
+      ]
+    }
+  ]
+}

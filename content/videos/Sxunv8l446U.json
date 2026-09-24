@@ -1,0 +1,34 @@
+{
+  "title": "X:IN (엑신) 'KEEPING THE FIRE' M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=Sxunv8l446U",
+  "artists": [
+    "x-in"
+  ],
+  "song": "KEEPING THE FIRE",
+  "type": "mv",
+  "channel": "X:IN",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "provoke-seoul",
+      "screenshots": [
+        {
+          "image": "804b009bd9d7.webp",
+          "set": "hallway"
+        },
+        {
+          "image": "264bf5ef48f9.webp",
+          "set": "hangar"
+        },
+        {
+          "image": "2c4d02785523.webp",
+          "set": "bath"
+        }
+      ],
+      "sheet_rows": [
+        "provoke Seoul!6"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "title": "BOY STORY \"Z.I.P (Zero Is the only Passion)\" M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=1BROMl-k28k",
+  "artists": [
+    "boy-story"
+  ],
+  "song": "Z.I.P (Zero Is the only Passion)",
+  "type": "mv",
+  "channel": "JYP Entertainment",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "provoke-seoul",
+      "screenshots": [
+        {
+          "image": "a17456080297.webp",
+          "set": "outside"
+        },
+        {
+          "image": "33a392018d69.webp",
+          "set": "hallway"
+        },
+        {
+          "image": "f8b5bb61e027.webp",
+          "set": "hangar-2"
+        },
+        {
+          "image": "b7117c25a6ae.webp",
+          "set": "chimneys"
+        }
+      ],
+      "sheet_rows": [
+        "provoke Seoul!4"
+      ]
+    }
+  ]
+}

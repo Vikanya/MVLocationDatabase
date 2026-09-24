@@ -1,0 +1,25 @@
+{
+  "title": "Stray Kids \"Double Knot\" M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=UWoyeuwj9c0",
+  "artists": [
+    "stray-kids"
+  ],
+  "song": "Double Knot",
+  "type": "mv",
+  "channel": "JYP Entertainment",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "hangar-bazar-2",
+      "screenshots": [
+        {
+          "image": "f68af13cf190.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Hangar bazar!6"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "title": "HWASA [FOMO] VISUAL VIDEO",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=IY3EflLx_9s",
+  "artists": [
+    "hwasa"
+  ],
+  "song": "FOMO",
+  "type": "other",
+  "channel": "HWASA",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "provoke-seoul",
+      "screenshots": [
+        {
+          "image": "7ef8dcfc5c07.webp",
+          "set": "outside"
+        },
+        {
+          "image": "02a5adbf9260.webp",
+          "set": "hallway"
+        },
+        {
+          "image": "a5da8976979a.webp",
+          "set": "hangar"
+        },
+        {
+          "image": "d5e06f915314.webp",
+          "set": "hangar-2"
+        }
+      ],
+      "sheet_rows": [
+        "provoke Seoul!22"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "title": "CocaNButter - 'Mi Deh Yah' M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=ieAyyfD6l7w",
+  "artists": [
+    "cocanbutter"
+  ],
+  "song": "Mi Deh Yah",
+  "type": "mv",
+  "channel": "MLD ENTERTAINMENT",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "4770047d9a45.webp",
+          "set": "diner"
+        },
+        {
+          "image": "8d29ff4ab5ba.webp",
+          "set": "hospital"
+        },
+        {
+          "image": "d2e8d242eb33.webp",
+          "set": "lobby"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!24"
+      ]
+    },
+    {
+      "location": "hangar-bazar-1",
+      "screenshots": [
+        {
+          "image": "c153e3fad484.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Hangar bazar!2"
+      ]
+    }
+  ]
+}

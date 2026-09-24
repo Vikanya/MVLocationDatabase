@@ -1,0 +1,34 @@
+{
+  "title": "U-KNOW 유노윤호 'Time's Tickin'' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=2CsQyB-Psys",
+  "artists": [
+    "u-know"
+  ],
+  "song": "Time",
+  "type": "mv",
+  "channel": "SMTOWN",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "acres-space-subway",
+      "screenshots": [
+        {
+          "image": "c4ddbee463e2.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "9d32e8078d01.webp",
+          "set": "spot-2"
+        },
+        {
+          "image": "5bce41d3b133.webp",
+          "set": "spot-3"
+        }
+      ],
+      "sheet_rows": [
+        "Subway!16"
+      ]
+    }
+  ]
+}

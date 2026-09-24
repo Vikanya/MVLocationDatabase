@@ -1,0 +1,27 @@
+{
+  "title": "[문별] ‘DARK ROMANCE’ Performance Video",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=aRBV86glZzE",
+  "artists": [
+    "문별"
+  ],
+  "song": "DARK ROMANCE",
+  "type": "performance",
+  "channel": "MAMAMOO",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "4x4",
+      "screenshots": [
+        {
+          "image": "abe4d43e8174.webp"
+        }
+      ],
+      "confidence": "unsure",
+      "notes": "franchement pas sur du tout",
+      "sheet_rows": [
+        "4x4!2"
+      ]
+    }
+  ]
+}

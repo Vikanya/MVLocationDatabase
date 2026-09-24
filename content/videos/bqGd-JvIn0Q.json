@@ -1,0 +1,28 @@
+{
+  "title": "xikers(싸이커스) - 'HOMEBOY' Official MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=bqGd-JvIn0Q",
+  "artists": [
+    "xikers"
+  ],
+  "song": "HOMEBOY",
+  "type": "mv",
+  "channel": "KQ ENTERTAINMENT",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "geobug-island-1",
+      "screenshots": [
+        {
+          "image": "fbdc92c7bdbd.webp"
+        },
+        {
+          "image": "bb0cbb1e97b5.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Geobug Island!22"
+      ]
+    }
+  ]
+}

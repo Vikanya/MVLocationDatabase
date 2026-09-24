@@ -1,0 +1,25 @@
+{
+  "title": "MISAMO「Marshmallow」Music Video",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=gAFgaI5D3Gc",
+  "artists": [
+    "misamo"
+  ],
+  "song": "Marshmallow",
+  "type": "mv",
+  "channel": "TWICE JAPAN OFFICIAL YouTube Channel",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "copy-of-columbus",
+      "screenshots": [
+        {
+          "image": "84b1b022390b.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Copy of Columbus!4"
+      ]
+    }
+  ]
+}

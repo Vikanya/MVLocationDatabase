@@ -1,0 +1,25 @@
+{
+  "title": "𝗩𝟴 'singasong' Official MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=pBpr9TnhhkE",
+  "song": "singasong",
+  "type": "mv",
+  "channel": "HYBE LABELS",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "quarries-4",
+      "screenshots": [
+        {
+          "image": "52bbdb2fcc47.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Quarries!16"
+      ]
+    }
+  ],
+  "review": [
+    "Artist not recognised from the title — add the artist(s)"
+  ]
+}

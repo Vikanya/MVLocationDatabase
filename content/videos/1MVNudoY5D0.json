@@ -1,0 +1,29 @@
+{
+  "title": "LIMELIGHT - Cha Cha Special Clip",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=1MVNudoY5D0",
+  "artists": [
+    "limelight"
+  ],
+  "type": "clip",
+  "channel": "MADEIN",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "f581adb64530.webp",
+          "set": "diner"
+        },
+        {
+          "image": "b5665e0166dc.webp",
+          "set": "house"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!30"
+      ]
+    }
+  ]
+}

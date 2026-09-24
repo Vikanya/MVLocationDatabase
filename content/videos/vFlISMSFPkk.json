@@ -1,0 +1,30 @@
+{
+  "title": "[와우퍼포먼스] Loossemble (루셈블) 'TTYL'",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=vFlISMSFPkk",
+  "artists": [
+    "loossemble"
+  ],
+  "song": "TTYL",
+  "type": "performance",
+  "channel": "와우스튜디오",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "9d8abb91397d.webp",
+          "set": "subway-station"
+        },
+        {
+          "image": "8a93e22a587d.webp",
+          "set": "train-station"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!71"
+      ]
+    }
+  ]
+}

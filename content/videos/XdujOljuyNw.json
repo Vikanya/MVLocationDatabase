@@ -1,0 +1,43 @@
+{
+  "title": "Jay Park & LNGSHOT - 'YEAH! YEAH!' Official Music Video",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=XdujOljuyNw",
+  "artists": [
+    "jay-park",
+    "lngshot"
+  ],
+  "song": "YEAH! YEAH!",
+  "type": "mv",
+  "channel": "MORE VISION",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "mamago-waikiki",
+      "screenshots": [
+        {
+          "image": "da5c33a8b5f7.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "2f7425bc0d90.webp",
+          "set": "spot-2"
+        },
+        {
+          "image": "9bfff9882139.webp",
+          "set": "spot-3"
+        },
+        {
+          "image": "8a4d2ca130c8.webp",
+          "set": "spot-4"
+        },
+        {
+          "image": "50fba357be2b.webp",
+          "set": "spot-5"
+        }
+      ],
+      "sheet_rows": [
+        "Mamago!23"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "title": "구공탄 (90TAN) '탕탕탕(TANG TANG TANG)' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=9KRzvGfbqZg",
+  "artists": [
+    "90tan"
+  ],
+  "song": "탕탕탕(TANG TANG TANG)",
+  "type": "mv",
+  "channel": "비투비 컴퍼니 (BTOB COMPANY)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "abandoned-park-1",
+      "screenshots": [
+        {
+          "image": "39951f6303d6.webp",
+          "set": "spot-1"
+        }
+      ],
+      "sheet_rows": [
+        "Abandoned Park!18"
+      ]
+    }
+  ]
+}

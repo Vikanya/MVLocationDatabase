@@ -1,0 +1,25 @@
+{
+  "title": "STAYC(스테이씨) 'ASAP' Live Clip",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=mqOf0x8H6wY",
+  "artists": [
+    "stayc"
+  ],
+  "song": "ASAP",
+  "type": "live",
+  "channel": "STAYC",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "interiors-3",
+      "screenshots": [
+        {
+          "image": "3950f4192b75.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Interiors!10"
+      ]
+    }
+  ]
+}

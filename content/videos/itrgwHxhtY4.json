@@ -1,0 +1,33 @@
+{
+  "title": "유세윤 (Yoo Se-Yoon) - Love Ya (Feat. 디핵 (D-Hack)) MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=itrgwHxhtY4",
+  "artists": [
+    "yoo-se-yoon"
+  ],
+  "type": "mv",
+  "channel": "STONE MUSIC",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "368ff797fc65.webp",
+          "set": "gas-station"
+        },
+        {
+          "image": "17d9d9001097.webp",
+          "set": "motel"
+        },
+        {
+          "image": "5efb433eab5c.webp",
+          "set": "house"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!43"
+      ]
+    }
+  ]
+}

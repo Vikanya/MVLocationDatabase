@@ -1,0 +1,34 @@
+{
+  "title": "xikers(싸이커스) - 'SUPERPOWER (Peak)' Official MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=26TTuFQXEW4",
+  "artists": [
+    "xikers"
+  ],
+  "song": "SUPERPOWER (Peak)",
+  "type": "mv",
+  "channel": "KQ ENTERTAINMENT",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "acres-space-subway",
+      "screenshots": [
+        {
+          "image": "4449041c3609.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "dc5741a5dc5f.webp",
+          "set": "spot-2"
+        },
+        {
+          "image": "7abc4eab8f7e.webp",
+          "set": "spot-3"
+        }
+      ],
+      "sheet_rows": [
+        "Subway!4"
+      ]
+    }
+  ]
+}

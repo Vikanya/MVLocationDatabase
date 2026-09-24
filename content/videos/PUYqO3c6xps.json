@@ -1,0 +1,50 @@
+{
+  "title": "TRENDZ(트렌드지) 'GLOW' Official MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=PUYqO3c6xps",
+  "artists": [
+    "trendz"
+  ],
+  "song": "GLOW",
+  "type": "mv",
+  "channel": "TRENDZ(트렌드지)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "b92ac690b9a4.webp",
+          "set": "carpe-diem"
+        },
+        {
+          "image": "537ab1233832.webp",
+          "set": "space-station"
+        },
+        {
+          "image": "252ae69b87ed.webp",
+          "set": "prison"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!68"
+      ]
+    },
+    {
+      "location": "acres-space-gas-station",
+      "screenshots": [
+        {
+          "image": "45a8e466031f.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "edfae6f9ee0d.webp",
+          "set": "spot-2"
+        }
+      ],
+      "sheet_rows": [
+        "Carwash/Gas Station!27"
+      ]
+    }
+  ]
+}

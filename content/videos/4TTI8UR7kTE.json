@@ -1,0 +1,28 @@
+{
+  "title": "8TURN(에잇턴) ‘Electric Heart’ M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=4TTI8UR7kTE",
+  "artists": [
+    "8turn"
+  ],
+  "song": "Electric Heart",
+  "type": "mv",
+  "channel": "8TURN",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "geobug-island-1",
+      "screenshots": [
+        {
+          "image": "36b84f5fa24e.webp"
+        },
+        {
+          "image": "b1c04209012a.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Geobug Island!24"
+      ]
+    }
+  ]
+}

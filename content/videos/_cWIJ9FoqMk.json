@@ -1,0 +1,46 @@
+{
+  "title": "화사(HWASA) X SWF2 - Chili MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=_cWIJ9FoqMk",
+  "artists": [
+    "hwasa",
+    "swf2"
+  ],
+  "type": "mv",
+  "channel": "The CHOOM (더 춤)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "provoke-seoul",
+      "screenshots": [
+        {
+          "image": "f55b45d2b468.webp",
+          "set": "outside"
+        },
+        {
+          "image": "47b84348a476.webp",
+          "set": "hallway"
+        },
+        {
+          "image": "0ff29d7ed17c.webp",
+          "set": "hangar"
+        },
+        {
+          "image": "2a9cf9eccdf6.webp",
+          "set": "hangar-2"
+        },
+        {
+          "image": "efde144938b0.webp",
+          "set": "bath"
+        },
+        {
+          "image": "7515f32c054d.webp",
+          "set": "chimneys"
+        }
+      ],
+      "sheet_rows": [
+        "provoke Seoul!12"
+      ]
+    }
+  ]
+}

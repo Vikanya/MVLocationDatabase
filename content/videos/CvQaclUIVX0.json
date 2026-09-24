@@ -1,0 +1,25 @@
+{
+  "title": "CRAXY (크랙시) - 'Poison Rose'  M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=CvQaclUIVX0",
+  "artists": [
+    "craxy"
+  ],
+  "song": "Poison Rose",
+  "type": "mv",
+  "channel": "CRAXY",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "columbus-studio-4th",
+      "screenshots": [
+        {
+          "image": "5e530a70c592.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Columbus!21"
+      ]
+    }
+  ]
+}

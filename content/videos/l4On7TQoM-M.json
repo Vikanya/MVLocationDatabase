@@ -1,0 +1,25 @@
+{
+  "title": "MEOVV(미야오) - ‘DROP TOP’ M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=l4On7TQoM-M",
+  "artists": [
+    "meovv"
+  ],
+  "song": "DROP TOP",
+  "type": "mv",
+  "channel": "THEBLACKLABEL",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "parkings-rooftops-2",
+      "screenshots": [
+        {
+          "image": "ac44a7eefb0b.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Parkings/Rooftops!23"
+      ]
+    }
+  ]
+}

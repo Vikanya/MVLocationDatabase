@@ -1,0 +1,25 @@
+{
+  "title": "&TEAM 'War Cry' Official MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=UJaW2Z5DxS8",
+  "artists": [
+    "team"
+  ],
+  "song": "War Cry",
+  "type": "mv",
+  "channel": "HYBE LABELS",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "columbus-spacerental-09",
+      "screenshots": [
+        {
+          "image": "59096eb5374e.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Columbus!35"
+      ]
+    }
+  ]
+}

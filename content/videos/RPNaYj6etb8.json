@@ -1,0 +1,34 @@
+{
+  "title": "Dreamcatcher(드림캐쳐) 'BONVOYAGE' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=RPNaYj6etb8",
+  "artists": [
+    "dreamcatcher"
+  ],
+  "song": "BONVOYAGE",
+  "type": "mv",
+  "channel": "Dreamcatcher official",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "taean-european-resort",
+      "screenshots": [
+        {
+          "image": "ab0d74d0772c.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "dcd836d0362e.webp",
+          "set": "spot-3"
+        },
+        {
+          "image": "ab8c2ee532ca.webp",
+          "set": "spot-4"
+        }
+      ],
+      "sheet_rows": [
+        "Abandoned Park!2"
+      ]
+    }
+  ]
+}

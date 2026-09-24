@@ -1,0 +1,24 @@
+{
+  "name": "Abandoned Gimcheon Medical School",
+  "status": "identified",
+  "address": "Ogyul-ri, Eomo-myeon, Gimcheon-si, Gyeongsangbuk-do, South Korea",
+  "coordinates": {
+    "lat": 36.174353,
+    "lng": 128.109546
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://goo.gl/maps/audesupCrsxAitC2A"
+    ]
+  },
+  "reference_videos": [
+    "https://youtu.be/GZec5w7yvrQ"
+  ],
+  "tags": [
+    "Gimcheon campus"
+  ],
+  "sheet_rows": [
+    "Gimcheon campus!1"
+  ]
+}

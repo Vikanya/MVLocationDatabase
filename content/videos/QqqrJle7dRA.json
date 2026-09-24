@@ -1,0 +1,26 @@
+{
+  "title": "MONSTA X 몬스타엑스 'MAGIC' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=QqqrJle7dRA",
+  "artists": [
+    "monsta-x"
+  ],
+  "song": "MAGIC",
+  "type": "mv",
+  "channel": "STARSHIP",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "acres-space-subway",
+      "screenshots": [
+        {
+          "image": "65b9fe016960.webp",
+          "set": "spot-3"
+        }
+      ],
+      "sheet_rows": [
+        "Subway!18"
+      ]
+    }
+  ]
+}

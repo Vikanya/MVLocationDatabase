@@ -1,0 +1,25 @@
+{
+  "title": "AIMERS 에이머스 'Starry Night' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=nJNR51KfaPE",
+  "artists": [
+    "aimers"
+  ],
+  "song": "Starry Night",
+  "type": "mv",
+  "channel": "AIMERS",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "parkings-rooftops-6",
+      "screenshots": [
+        {
+          "image": "6e5ff34f6722.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Parkings/Rooftops!40"
+      ]
+    }
+  ]
+}

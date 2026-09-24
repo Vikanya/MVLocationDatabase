@@ -1,0 +1,42 @@
+{
+  "title": "ONEWE(원위) '추억의 소각장 (Beautiful Ashes)' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=zuMam6-0NFc",
+  "artists": [
+    "onewe"
+  ],
+  "song": "추억의 소각장 (Beautiful Ashes)",
+  "type": "mv",
+  "channel": "ONEWE",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "provoke-seoul",
+      "screenshots": [
+        {
+          "image": "f191e4a9ac19.webp",
+          "set": "outside"
+        },
+        {
+          "image": "8d26adf05454.webp",
+          "set": "outside"
+        },
+        {
+          "image": "0189d69c9642.webp",
+          "set": "hangar-2"
+        },
+        {
+          "image": "cdccf7fff9a1.webp",
+          "set": "bath"
+        },
+        {
+          "image": "3a809dcf0579.webp",
+          "set": "chimneys"
+        }
+      ],
+      "sheet_rows": [
+        "provoke Seoul!16"
+      ]
+    }
+  ]
+}

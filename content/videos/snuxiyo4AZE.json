@@ -1,0 +1,24 @@
+{
+  "title": "[스우파2] 원밀리언(1MILLION) l 크루곡 퍼포먼스 대중 투표 (Crew Song Performance) #스트릿우먼파이터2",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=snuxiyo4AZE",
+  "artists": [
+    "1million"
+  ],
+  "type": "performance",
+  "channel": "The CHOOM (더 춤)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "concrete",
+      "screenshots": [
+        {
+          "image": "09e28ff1f4da.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Concrete!3"
+      ]
+    }
+  ]
+}

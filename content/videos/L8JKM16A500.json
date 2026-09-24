@@ -1,0 +1,33 @@
+{
+  "title": "[MV] MIRAE(미래소년) _ JUMP!",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=L8JKM16A500",
+  "artists": [
+    "mirae"
+  ],
+  "type": "mv",
+  "channel": "1theK (원더케이)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "royal-x",
+      "screenshots": [
+        {
+          "image": "d4c3b1f0929e.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "03b69a54c130.webp",
+          "set": "spot-2"
+        },
+        {
+          "image": "2b19a2563493.webp",
+          "set": "spot-3"
+        }
+      ],
+      "sheet_rows": [
+        "Royal X!4"
+      ]
+    }
+  ]
+}

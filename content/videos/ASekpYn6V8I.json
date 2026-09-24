@@ -1,0 +1,27 @@
+{
+  "title": "3YE(써드아이) - YESSIR | M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=ASekpYn6V8I",
+  "artists": [
+    "3ye"
+  ],
+  "type": "mv",
+  "channel": "3YE OFFICIAL",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "hangar-bazar-2",
+      "screenshots": [
+        {
+          "image": "eb1103b137ce.webp"
+        },
+        {
+          "image": "85b2b0016b18.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Hangar bazar!13"
+      ]
+    }
+  ]
+}

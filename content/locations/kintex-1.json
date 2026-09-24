@@ -1,0 +1,20 @@
+{
+  "name": "KINTEX 1",
+  "status": "identified",
+  "coordinates": {
+    "lat": 37.668986,
+    "lng": 126.745887
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/JriQgEMvV3pcPkm87"
+    ]
+  },
+  "tags": [
+    "Parkings/Rooftops"
+  ],
+  "sheet_rows": [
+    "Parkings/Rooftops!52"
+  ]
+}

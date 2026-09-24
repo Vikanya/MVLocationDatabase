@@ -1,0 +1,28 @@
+{
+  "title": "8TURN (에잇턴) 'TIC TAC' Official MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=x1U5koYxTYM",
+  "artists": [
+    "8turn"
+  ],
+  "song": "TIC TAC",
+  "type": "mv",
+  "channel": "8TURN",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "quatro-box",
+      "screenshots": [
+        {
+          "image": "9705bf73e2db.webp"
+        },
+        {
+          "image": "ab0a923112c7.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Quatro Box!4"
+      ]
+    }
+  ]
+}

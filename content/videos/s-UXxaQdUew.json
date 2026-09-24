@@ -1,0 +1,25 @@
+{
+  "title": "STAYC(스테이씨) 'Cheeky Icy Thang' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=s-UXxaQdUew",
+  "artists": [
+    "stayc"
+  ],
+  "song": "Cheeky Icy Thang",
+  "type": "mv",
+  "channel": "STAYC",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "streets-1",
+      "screenshots": [
+        {
+          "image": "dbc2d363c4b4.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Streets!2"
+      ]
+    }
+  ]
+}

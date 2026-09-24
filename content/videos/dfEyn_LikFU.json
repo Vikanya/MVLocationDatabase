@@ -1,0 +1,25 @@
+{
+  "title": "2PM \"Promise (I'll be)\" M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=dfEyn_LikFU",
+  "artists": [
+    "2pm"
+  ],
+  "song": "Promise (I",
+  "type": "mv",
+  "channel": "JYP Entertainment",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "kyung-hee-university-grand-peace-palace",
+      "screenshots": [
+        {
+          "image": "a98c88103c6f.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Church Roof!4"
+      ]
+    }
+  ]
+}

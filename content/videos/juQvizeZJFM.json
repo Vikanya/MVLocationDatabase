@@ -1,0 +1,25 @@
+{
+  "title": "STAYC(스테이씨) 'BEAUTIFUL MONSTER' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=juQvizeZJFM",
+  "artists": [
+    "stayc"
+  ],
+  "song": "BEAUTIFUL MONSTER",
+  "type": "mv",
+  "channel": "STAYC",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "geobugseom",
+      "screenshots": [
+        {
+          "image": "f5e66a06eff4.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Geobug Island!4"
+      ]
+    }
+  ]
+}

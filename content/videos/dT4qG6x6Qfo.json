@@ -1,0 +1,30 @@
+{
+  "title": "INI | 'Walkie Talkie' Performance Video",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=dT4qG6x6Qfo",
+  "artists": [
+    "ini"
+  ],
+  "song": "Walkie Talkie",
+  "type": "performance",
+  "channel": "INI",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "acres-space-gas-station",
+      "screenshots": [
+        {
+          "image": "e0bb99b330a2.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "b6cc43cda97f.webp",
+          "set": "spot-2"
+        }
+      ],
+      "sheet_rows": [
+        "Carwash/Gas Station!26"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "title": "[PLAY MUSIC GROUND] #MCND_rive 'Pop Star'",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=lJNySp1QUwc",
+  "artists": [
+    "mcnd-rive"
+  ],
+  "song": "Pop Star",
+  "type": "other",
+  "channel": "MCND Official",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "b33b17ab0f41.webp",
+          "set": "gas-station"
+        },
+        {
+          "image": "54dbfd8b1ca7.webp",
+          "set": "motel"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!49"
+      ]
+    }
+  ]
+}

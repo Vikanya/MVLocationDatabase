@@ -1,0 +1,25 @@
+{
+  "title": "IVE 아이브 'REBEL HEART' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=g36q0ZLvygQ",
+  "artists": [
+    "ive"
+  ],
+  "song": "REBEL HEART",
+  "type": "mv",
+  "channel": "STARSHIP",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "swimming-pools-2",
+      "screenshots": [
+        {
+          "image": "99d1f51c2fdb.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Swimming Pools!5"
+      ]
+    }
+  ]
+}

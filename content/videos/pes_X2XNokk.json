@@ -1,0 +1,33 @@
+{
+  "title": "SKYLE(스카이리) - Bye Bye Bye M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=pes_X2XNokk",
+  "artists": [
+    "skyle"
+  ],
+  "type": "mv",
+  "channel": "SKYLE  ",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "75c239c0a38d.webp",
+          "set": "diner"
+        },
+        {
+          "image": "405f7ed58ff3.webp",
+          "set": "hospital"
+        },
+        {
+          "image": "9a8dac4e4838.webp",
+          "set": "lobby"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!11"
+      ]
+    }
+  ]
+}

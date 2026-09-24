@@ -1,0 +1,34 @@
+{
+  "title": "모모랜드 (MOMOLAND) - RODEO [Music Video]",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=f8mkCg5T2gE",
+  "artists": [
+    "momoland"
+  ],
+  "song": "Music Video",
+  "type": "mv",
+  "channel": "MOMOLAND (모모랜드)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "acres-space-gas-station",
+      "screenshots": [
+        {
+          "image": "f4d7b0e2104e.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "81194e00b1da.webp",
+          "set": "spot-2"
+        },
+        {
+          "image": "40667412eaf2.webp",
+          "set": "spot-3"
+        }
+      ],
+      "sheet_rows": [
+        "Carwash/Gas Station!37"
+      ]
+    }
+  ]
+}

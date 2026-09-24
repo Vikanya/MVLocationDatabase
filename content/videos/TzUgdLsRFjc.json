@@ -1,0 +1,25 @@
+{
+  "title": "AIMERS 에이머스 'Somebody' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=TzUgdLsRFjc",
+  "artists": [
+    "aimers"
+  ],
+  "song": "Somebody",
+  "type": "mv",
+  "channel": "AIMERS",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "sky-walk-residences",
+      "screenshots": [
+        {
+          "image": "7dfa5cd8ea62.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Helipads!45"
+      ]
+    }
+  ]
+}

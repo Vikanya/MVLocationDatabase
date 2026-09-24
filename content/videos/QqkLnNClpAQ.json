@@ -1,0 +1,25 @@
+{
+  "title": "KAI 카이 'Adult Swim' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=QqkLnNClpAQ",
+  "artists": [
+    "kai"
+  ],
+  "song": "Adult Swim",
+  "type": "mv",
+  "channel": "SMTOWN",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "swimming-pools-4",
+      "screenshots": [
+        {
+          "image": "3d814d6a9b72.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Swimming Pools!13"
+      ]
+    }
+  ]
+}

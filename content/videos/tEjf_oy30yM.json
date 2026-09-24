@@ -1,0 +1,29 @@
+{
+  "title": "[MV] Rolling Quartz(롤링쿼츠) - NAZABABARA",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=tEjf_oy30yM",
+  "artists": [
+    "rolling-quartz"
+  ],
+  "type": "mv",
+  "channel": "미러볼 뮤직 - Mirrorball Music",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "85dd41131a9f.webp",
+          "set": "diner"
+        },
+        {
+          "image": "e6089d9ffb95.webp",
+          "set": "lobby"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!12"
+      ]
+    }
+  ]
+}

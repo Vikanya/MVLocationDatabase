@@ -1,0 +1,25 @@
+{
+  "title": "ONEUS(원어스) 'TO BE OR NOT TO BE' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=XLV--CXZzxM",
+  "artists": [
+    "oneus"
+  ],
+  "song": "TO BE OR NOT TO BE",
+  "type": "mv",
+  "channel": "ONEUS",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "abandoned-gimcheon-medical-school",
+      "screenshots": [
+        {
+          "image": "2710c8ffd685.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Gimcheon campus!17"
+      ]
+    }
+  ]
+}

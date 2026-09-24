@@ -1,0 +1,21 @@
+{
+  "name": "Everland #2",
+  "status": "identified",
+  "address": "Corée du Sud, Gyeonggi-do, Yongin-si, Pogok-eup, Everland-ro, 199 KR",
+  "coordinates": {
+    "lat": 37.292674,
+    "lng": 127.201622
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/EJ2ch8KgXKUuozBe8"
+    ]
+  },
+  "tags": [
+    "Everland"
+  ],
+  "sheet_rows": [
+    "Everland!8"
+  ]
+}

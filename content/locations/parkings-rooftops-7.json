@@ -1,0 +1,28 @@
+{
+  "name": "Parkings/Rooftops #7",
+  "status": "identified",
+  "coordinates": {
+    "lat": 37.543277,
+    "lng": 126.986832
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/49ucNqzDsAXDv8ti8"
+    ],
+    "naver_map": [
+      "https://naver.me/GItGEgg8"
+    ],
+    "instagram": [
+      "https://www.instagram.com/studioheal_/?img_index=1"
+    ]
+  },
+  "tags": [
+    "Parkings/Rooftops",
+    "Studio Heal"
+  ],
+  "sheet_rows": [
+    "Parkings/Rooftops!42",
+    "Studio Heal!1"
+  ]
+}

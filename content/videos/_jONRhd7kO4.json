@@ -1,0 +1,29 @@
+{
+  "title": "BLITZERS(블리처스) - 마카레나(Macarena) Official MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=_jONRhd7kO4",
+  "artists": [
+    "blitzers"
+  ],
+  "type": "mv",
+  "channel": "BLITZERS OFFICIAL",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "bc3dbe27c7cc.webp",
+          "set": "diner"
+        },
+        {
+          "image": "1867a62ac405.webp",
+          "set": "lobby"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!5"
+      ]
+    }
+  ]
+}

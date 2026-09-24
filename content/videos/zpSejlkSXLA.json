@@ -1,0 +1,31 @@
+{
+  "title": "RESCENE (리센느) ‘UhUh’ MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=zpSejlkSXLA",
+  "artists": [
+    "rescene"
+  ],
+  "song": "UhUh",
+  "type": "mv",
+  "channel": "RESCENE",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "arena",
+      "screenshots": [
+        {
+          "image": "a3a6192969d8.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Arena!5"
+      ]
+    },
+    {
+      "location": "balcon",
+      "sheet_rows": [
+        "Balcon!2"
+      ]
+    }
+  ]
+}

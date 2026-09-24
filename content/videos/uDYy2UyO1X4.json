@@ -1,0 +1,25 @@
+{
+  "title": "RESCENE (리센느) ‘YoYo’ MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=uDYy2UyO1X4",
+  "artists": [
+    "rescene"
+  ],
+  "song": "YoYo",
+  "type": "mv",
+  "channel": "RESCENE",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "columbus-studio-4th",
+      "screenshots": [
+        {
+          "image": "3fdda0594685.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Columbus!28"
+      ]
+    }
+  ]
+}

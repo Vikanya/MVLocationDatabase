@@ -1,0 +1,25 @@
+{
+  "title": "VIVIZ (비비지) - 'La La Love Me' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=gjHcbWTXqEY",
+  "artists": [
+    "viviz"
+  ],
+  "song": "La La Love Me",
+  "type": "mv",
+  "channel": "BPM Entertainment",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "geobugseom",
+      "screenshots": [
+        {
+          "image": "bc8d04da3d79.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Geobug Island!18"
+      ]
+    }
+  ]
+}

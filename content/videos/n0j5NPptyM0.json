@@ -1,0 +1,34 @@
+{
+  "title": "Kep1er 케플러 | ‘WA DA DA’ M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=n0j5NPptyM0",
+  "artists": [
+    "kep1er"
+  ],
+  "song": "WA DA DA",
+  "type": "mv",
+  "channel": "Kep1er",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "provoke-seoul",
+      "screenshots": [
+        {
+          "image": "b8d278b88a4e.webp",
+          "set": "outside"
+        },
+        {
+          "image": "b1e3836599c4.webp",
+          "set": "outside"
+        },
+        {
+          "image": "cedb095dd09f.webp",
+          "set": "hangar-2"
+        }
+      ],
+      "sheet_rows": [
+        "provoke Seoul!18"
+      ]
+    }
+  ]
+}

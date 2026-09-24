@@ -1,0 +1,31 @@
+{
+  "title": "[MV] 코드 쿤스트,잔나비 최정훈,사이먼 도미닉 _ 사라진 모든 것들에게(with ELLE KOREA)",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=3iA5uHLF9xk",
+  "artists": [
+    "코드-쿤스트",
+    "잔나비-최정훈",
+    "사이먼-도미닉"
+  ],
+  "type": "mv",
+  "channel": "1theK (원더케이)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "provoke-seoul",
+      "screenshots": [
+        {
+          "image": "e7d195a35838.webp",
+          "set": "outside"
+        },
+        {
+          "image": "dd5c4f608a52.webp",
+          "set": "hangar-2"
+        }
+      ],
+      "sheet_rows": [
+        "provoke Seoul!28"
+      ]
+    }
+  ]
+}

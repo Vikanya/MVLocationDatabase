@@ -1,0 +1,34 @@
+{
+  "title": "더보이즈 (THE BOYZ) – ‘Drink It’ Official Music Video",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=ZYi4lmmKRrY",
+  "artists": [
+    "the-boyz"
+  ],
+  "song": "Drink It",
+  "type": "mv",
+  "channel": "GENIE MUSIC",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "provoke-seoul",
+      "screenshots": [
+        {
+          "image": "537bfa4ef097.webp",
+          "set": "hallway"
+        },
+        {
+          "image": "77911c62d69a.webp",
+          "set": "hangar-2"
+        },
+        {
+          "image": "910133112cf7.webp",
+          "set": "bath"
+        }
+      ],
+      "sheet_rows": [
+        "provoke Seoul!9"
+      ]
+    }
+  ]
+}

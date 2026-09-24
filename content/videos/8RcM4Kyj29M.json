@@ -1,0 +1,29 @@
+{
+  "title": "DXTEEN｜’Come Over’ Performance Video",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=8RcM4Kyj29M",
+  "artists": [
+    "dxteen"
+  ],
+  "type": "performance",
+  "channel": "DXTEEN",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "b69cfb890aa2.webp",
+          "set": "diner"
+        },
+        {
+          "image": "ea1d7f282144.webp",
+          "set": "lobby"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!51"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "title": "퍼플키스(PURPLE KISS) '7HEAVEN' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=dVeuGA5KtAY",
+  "artists": [
+    "purple-kiss"
+  ],
+  "song": "7HEAVEN",
+  "type": "mv",
+  "channel": "PURPLE KISS",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "royal-jubilee-carousel",
+      "screenshots": [
+        {
+          "image": "90ee183d3a9d.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Everland!5"
+      ]
+    },
+    {
+      "location": "everland-2",
+      "screenshots": [
+        {
+          "image": "b2c9221a1629.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Everland!9"
+      ]
+    },
+    {
+      "location": "carwash-gas-station-1",
+      "screenshots": [
+        {
+          "image": "5014832b2f98.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Carwash/Gas Station!2"
+      ]
+    },
+    {
+      "location": "jayuro-drive-in-theater",
+      "screenshots": [
+        {
+          "image": "20853b5c2b57.webp"
+        },
+        {
+          "image": "bfdd707db1f3.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Carwash/Gas Station!6"
+      ]
+    }
+  ]
+}

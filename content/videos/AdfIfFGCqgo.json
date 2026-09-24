@@ -1,0 +1,25 @@
+{
+  "title": "Stray Kids \"Hellevator\" M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=AdfIfFGCqgo",
+  "artists": [
+    "stray-kids"
+  ],
+  "song": "Hellevator",
+  "type": "mv",
+  "channel": "JYP Entertainment",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "abandoned-gimcheon-medical-school",
+      "screenshots": [
+        {
+          "image": "f8ac7dcf905f.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Gimcheon campus!5"
+      ]
+    }
+  ]
+}

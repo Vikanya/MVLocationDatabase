@@ -1,0 +1,25 @@
+{
+  "title": "Red Velvet 레드벨벳 'Power Up' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=aiHSVQy9xN8",
+  "artists": [
+    "red-velvet"
+  ],
+  "song": "Power Up",
+  "type": "mv",
+  "channel": "SMTOWN",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "geobugseom",
+      "screenshots": [
+        {
+          "image": "eb33ff6ee1ed.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Geobug Island!9"
+      ]
+    }
+  ]
+}

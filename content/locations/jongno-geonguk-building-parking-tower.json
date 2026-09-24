@@ -1,0 +1,27 @@
+{
+  "name": "종로 낙원동 건국빌딩 주차타워",
+  "status": "identified",
+  "coordinates": {
+    "lat": 37.573718,
+    "lng": 126.987022
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/a2j6UUyHwHDtBM2x9"
+    ],
+    "naver_map": [
+      "https://naver.me/5FeGRvV0"
+    ],
+    "website": [
+      "https://www.mamago-info.com/%EB%B3%B5%EC%A0%9C-%EC%82%BC%EC%84%B1%EB%8F%99-%ED%8D%BC%EC%8A%A4%ED%8A%B8-%EC%A3%BC%EC%B0%A8%ED%83%80%EC%9B%8C"
+    ]
+  },
+  "tags": [
+    "Mamago",
+    "Parkings/Rooftops"
+  ],
+  "sheet_rows": [
+    "Mamago!8"
+  ]
+}

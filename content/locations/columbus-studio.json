@@ -1,0 +1,29 @@
+{
+  "name": "콜롬버스 스튜디오",
+  "status": "identified",
+  "coordinates": {
+    "lat": 37.697729,
+    "lng": 126.570402
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/th9o3HH71NLHgscFA"
+    ],
+    "website": [
+      "https://www.columbus-studio.kr/HOME"
+    ],
+    "instagram": [
+      "https://www.instagram.com/columbus.studio/"
+    ]
+  },
+  "tags": [
+    "Columbus"
+  ],
+  "review": [
+    "No videos are linked to this location"
+  ],
+  "sheet_rows": [
+    "Columbus!1"
+  ]
+}

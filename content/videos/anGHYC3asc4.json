@@ -1,0 +1,28 @@
+{
+  "title": "3piece 쓰리피스 '피어올라(Light up)' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=anGHYC3asc4",
+  "artists": [
+    "3piece"
+  ],
+  "song": "피어올라(Light up)",
+  "type": "mv",
+  "channel": "3piece Ι 쓰리피스",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "quatro-box",
+      "screenshots": [
+        {
+          "image": "76b7382698fd.webp"
+        },
+        {
+          "image": "73ad3eed7ce9.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Quatro Box!5"
+      ]
+    }
+  ]
+}

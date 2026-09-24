@@ -1,0 +1,38 @@
+{
+  "title": "TAN (티에이엔) 'Beautiful LIE' Official MV [ENG]",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=OOBpREhRE8U",
+  "artists": [
+    "tan"
+  ],
+  "song": "Beautiful LIE",
+  "type": "mv",
+  "channel": "TAN-Official",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "40673c677491.webp",
+          "set": "diner"
+        },
+        {
+          "image": "e5a2d39c63f3.webp",
+          "set": "hospital"
+        },
+        {
+          "image": "36972e9c2e91.webp",
+          "set": "lobby"
+        },
+        {
+          "image": "e190082319fd.webp",
+          "set": "house"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!9"
+      ]
+    }
+  ]
+}

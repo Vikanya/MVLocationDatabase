@@ -1,0 +1,24 @@
+{
+  "title": "송소희 Song Sohee - 공중무용 (GANGGANGSULLAE)",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=r53kfcRT-oQ",
+  "artists": [
+    "song-sohee"
+  ],
+  "type": "other",
+  "channel": "송소희 Song Sohee",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "hangar-bazar-3",
+      "screenshots": [
+        {
+          "image": "f5e308191c15.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Hangar bazar!27"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "title": "[MV] GFRIEND(여자친구) _ Summer Rain(여름비)",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=ZsYwEV_ge4Y",
+  "artists": [
+    "gfriend"
+  ],
+  "type": "mv",
+  "channel": "1theK (원더케이)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "interiors-2",
+      "screenshots": [
+        {
+          "image": "36d72121a387.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Interiors!6"
+      ]
+    }
+  ]
+}

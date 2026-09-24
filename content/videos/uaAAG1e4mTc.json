@@ -1,0 +1,24 @@
+{
+  "title": "[M/V] 박봄(PARK BOM) - 4시44분 (feat. 휘인 of 마마무(Wheein of MAMAMOO))",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=uaAAG1e4mTc",
+  "artists": [
+    "park-bom"
+  ],
+  "type": "mv",
+  "channel": "D-NATION",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "yeongnam-public-parking",
+      "screenshots": [
+        {
+          "image": "8170beb0487f.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Parkings/Rooftops!57"
+      ]
+    }
+  ]
+}

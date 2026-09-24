@@ -1,0 +1,25 @@
+{
+  "title": "Hearts2Hearts 하츠투하츠 'Pretty Please' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=ufwB9Uja_wM",
+  "artists": [
+    "hearts2hearts"
+  ],
+  "song": "Pretty Please",
+  "type": "mv",
+  "channel": "SMTOWN",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "parkings-rooftops-2",
+      "screenshots": [
+        {
+          "image": "0c81f4e39298.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Parkings/Rooftops!25"
+      ]
+    }
+  ]
+}

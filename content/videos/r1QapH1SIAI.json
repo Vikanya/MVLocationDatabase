@@ -1,0 +1,25 @@
+{
+  "title": "fromis_9 (프로미스나인) 'LIKE YOU BETTER' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=r1QapH1SIAI",
+  "artists": [
+    "fromis-9"
+  ],
+  "song": "LIKE YOU BETTER",
+  "type": "mv",
+  "channel": "fromis_9",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "sky-walk-residences",
+      "screenshots": [
+        {
+          "image": "5b6679786549.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Helipads!46"
+      ]
+    }
+  ]
+}

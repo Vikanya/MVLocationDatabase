@@ -1,0 +1,24 @@
+{
+  "title": "XG - TGIF (Official Music Video)",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=IPxDgf-g9Kw",
+  "artists": [
+    "xg"
+  ],
+  "type": "mv",
+  "channel": "XG",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "parkings-rooftops-4",
+      "screenshots": [
+        {
+          "image": "bef36ebd17e2.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Parkings/Rooftops!33"
+      ]
+    }
+  ]
+}

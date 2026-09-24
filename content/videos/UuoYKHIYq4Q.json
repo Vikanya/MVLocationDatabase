@@ -1,0 +1,34 @@
+{
+  "title": "ALL(H)OURS (올아워즈) ‘DANG DANG’ Official M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=UuoYKHIYq4Q",
+  "artists": [
+    "all-h-ours"
+  ],
+  "song": "DANG DANG",
+  "type": "mv",
+  "channel": "올아워즈 ALL(H)OURS ",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "mamago-waikiki",
+      "screenshots": [
+        {
+          "image": "eb5944c958da.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "dd4c2e314115.webp",
+          "set": "spot-2"
+        },
+        {
+          "image": "21a4ccd20b32.webp",
+          "set": "spot-4"
+        }
+      ],
+      "sheet_rows": [
+        "Mamago!25"
+      ]
+    }
+  ]
+}

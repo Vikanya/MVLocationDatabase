@@ -1,0 +1,30 @@
+{
+  "title": "ILLIT (아일릿) 'jellyous’ Official MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=GkG60kISnfc",
+  "artists": [
+    "illit"
+  ],
+  "song": "jellyous",
+  "type": "mv",
+  "channel": "HYBE LABELS",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "acres-space-subway",
+      "screenshots": [
+        {
+          "image": "ed5f14500507.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "92b87c20f70f.webp",
+          "set": "spot-3"
+        }
+      ],
+      "sheet_rows": [
+        "Subway!7"
+      ]
+    }
+  ]
+}

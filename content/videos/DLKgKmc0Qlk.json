@@ -1,0 +1,25 @@
+{
+  "title": "NEXZ \"Keep on Moving\" M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=DLKgKmc0Qlk",
+  "artists": [
+    "nexz"
+  ],
+  "song": "Keep on Moving",
+  "type": "mv",
+  "channel": "JYP Entertainment",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "samyeong-gihoek",
+      "screenshots": [
+        {
+          "image": "9bcbcbf9af6d.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Parkings/Rooftops!7"
+      ]
+    }
+  ]
+}

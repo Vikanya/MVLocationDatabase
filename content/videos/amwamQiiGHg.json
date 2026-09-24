@@ -1,0 +1,24 @@
+{
+  "title": "JINI (지니) - C'mon (Feat. Aminé) M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=amwamQiiGHg",
+  "artists": [
+    "jini"
+  ],
+  "type": "mv",
+  "channel": "ATOC",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "columbus-studio-4th",
+      "screenshots": [
+        {
+          "image": "6b65277557f8.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Columbus!6"
+      ]
+    }
+  ]
+}

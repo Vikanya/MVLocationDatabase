@@ -1,0 +1,21 @@
+{
+  "name": "The Sharp Central Park 1st Condominium Complex",
+  "status": "identified",
+  "coordinates": {
+    "lat": 37.396786,
+    "lng": 126.637707
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/rMy3vnniye94x8Xi6",
+      "https://maps.app.goo.gl/WHXZfncyK1Nr1JSH7"
+    ]
+  },
+  "tags": [
+    "Helipads"
+  ],
+  "sheet_rows": [
+    "Helipads!7"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "title": "[Special Clip] Dreamcatcher(드림캐쳐) 수아, 시연, 유현 '어쩌나'",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=hpYjRaGwOKE",
+  "artists": [
+    "dreamcatcher",
+    "시연",
+    "유현"
+  ],
+  "song": "어쩌나",
+  "type": "clip",
+  "channel": "Dreamcatcher official",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "interiors-3",
+      "screenshots": [
+        {
+          "image": "3e5fe5843581.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Interiors!9"
+      ]
+    }
+  ]
+}

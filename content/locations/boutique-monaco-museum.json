@@ -1,0 +1,21 @@
+{
+  "name": "부띠크모나코뮤지엄 | Boutique Monaco Museum",
+  "status": "identified",
+  "coordinates": {
+    "lat": 37.497344,
+    "lng": 127.0247
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/jFqASkZNh1e8bsvy7",
+      "https://maps.app.goo.gl/Hz7vn66J7gaur7Ym9"
+    ]
+  },
+  "tags": [
+    "Helipads"
+  ],
+  "sheet_rows": [
+    "Helipads!24"
+  ]
+}

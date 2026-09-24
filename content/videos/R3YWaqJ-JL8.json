@@ -1,0 +1,25 @@
+{
+  "title": "온유 ONEW 'KAKERA -運命のピース-' M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=R3YWaqJ-JL8",
+  "artists": [
+    "onew"
+  ],
+  "song": "KAKERA -運命のピース-",
+  "type": "mv",
+  "channel": "온유 ONEW",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "interiors-1",
+      "screenshots": [
+        {
+          "image": "87c85e52ac46.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Interiors!4"
+      ]
+    }
+  ]
+}

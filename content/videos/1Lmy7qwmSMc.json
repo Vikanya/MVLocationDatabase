@@ -1,0 +1,25 @@
+{
+  "title": "IVE 아이브 'BLACKHOLE' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=1Lmy7qwmSMc",
+  "artists": [
+    "ive"
+  ],
+  "song": "BLACKHOLE",
+  "type": "mv",
+  "channel": "STARSHIP",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "lotte-world-tower",
+      "screenshots": [
+        {
+          "image": "8ac8f6ed37fc.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Lotte World!2"
+      ]
+    }
+  ]
+}

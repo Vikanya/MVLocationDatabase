@@ -1,0 +1,25 @@
+{
+  "title": "Cover by EPEX 금동현&백승&에이든&제프 l Sik-K, 김하온(HAON), pH-1, Woodie Gochild, 박재범 - GIDDY UP",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=sp1_PCipaqY",
+  "artists": [
+    "epex"
+  ],
+  "type": "cover",
+  "channel": "EPEX",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "f2438deebc6c.webp",
+          "set": "gas-station"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!34"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "title": "NMIXX “DASH” Performance Video",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=JM88m7SY8FE",
+  "artists": [
+    "nmixx"
+  ],
+  "song": "DASH",
+  "type": "performance",
+  "channel": "NMIXX",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "columbus-spacerental-09",
+      "screenshots": [
+        {
+          "image": "830e7eea6f19.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Columbus!37"
+      ]
+    }
+  ]
+}

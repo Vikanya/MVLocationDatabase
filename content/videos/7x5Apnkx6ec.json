@@ -1,0 +1,26 @@
+{
+  "title": "TUNEXX 'BLUE MODE' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=7x5Apnkx6ec",
+  "artists": [
+    "tunexx"
+  ],
+  "song": "BLUE MODE",
+  "type": "mv",
+  "channel": "TUNEXX ",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "acres-space-gas-station",
+      "screenshots": [
+        {
+          "image": "2b296568d536.webp",
+          "set": "spot-3"
+        }
+      ],
+      "sheet_rows": [
+        "Carwash/Gas Station!43"
+      ]
+    }
+  ]
+}

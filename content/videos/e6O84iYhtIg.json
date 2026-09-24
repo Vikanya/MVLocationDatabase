@@ -1,0 +1,25 @@
+{
+  "title": "ATEEZ (에이티즈) - ‘HALA HALA (Hearts Awakened, Live Alive)’ Official MV (Performance ver.)",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=e6O84iYhtIg",
+  "artists": [
+    "ateez"
+  ],
+  "song": "HALA HALA (Hearts Awakened, Live Alive)",
+  "type": "mv",
+  "channel": "STONE MUSIC",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "hangar-bazar-2",
+      "screenshots": [
+        {
+          "image": "c84cb6823644.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Hangar bazar!5"
+      ]
+    }
+  ]
+}

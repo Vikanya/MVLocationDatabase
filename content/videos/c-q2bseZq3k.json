@@ -1,0 +1,34 @@
+{
+  "title": "로시(Rothy) - 'Something Casual' Official MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=c-q2bseZq3k",
+  "artists": [
+    "rothy"
+  ],
+  "song": "Something Casual",
+  "type": "mv",
+  "channel": "Dorothy Company",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "7960d1ba0a15.webp",
+          "set": "gas-station"
+        },
+        {
+          "image": "5eecd8028226.webp",
+          "set": "motel"
+        },
+        {
+          "image": "c112d8efbaef.webp",
+          "set": "house"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!53"
+      ]
+    }
+  ]
+}

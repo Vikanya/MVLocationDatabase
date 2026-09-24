@@ -1,0 +1,25 @@
+{
+  "title": "HYO 효연 'DEEP' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=4DTkTJPtDZI",
+  "artists": [
+    "hyo"
+  ],
+  "song": "DEEP",
+  "type": "mv",
+  "channel": "SMTOWN",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "columbus-spacerental-09",
+      "screenshots": [
+        {
+          "image": "61e0edeb9258.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Columbus!34"
+      ]
+    }
+  ]
+}

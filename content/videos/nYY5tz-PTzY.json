@@ -1,0 +1,33 @@
+{
+  "title": "[THE 8 Contemporary ART] THE 8 - 深渊 (Abyss)",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=nYY5tz-PTzY",
+  "artists": [
+    "the-8"
+  ],
+  "type": "other",
+  "channel": "SEVENTEEN",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "provoke-seoul",
+      "screenshots": [
+        {
+          "image": "cc03751e01cf.webp",
+          "set": "hallway"
+        },
+        {
+          "image": "81268064deb3.webp",
+          "set": "hangar"
+        },
+        {
+          "image": "d34f83a95155.webp",
+          "set": "hangar-2"
+        }
+      ],
+      "sheet_rows": [
+        "provoke Seoul!14"
+      ]
+    }
+  ]
+}

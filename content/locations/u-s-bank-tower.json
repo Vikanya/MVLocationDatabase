@@ -1,0 +1,21 @@
+{
+  "name": "U.S. Bank Tower",
+  "status": "identified",
+  "address": "Los Angeles, CA 90071, USA",
+  "coordinates": {
+    "lat": 34.05108,
+    "lng": -118.254353
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/RoTY2HgNpdUeLZyN6"
+    ]
+  },
+  "tags": [
+    "Helipads"
+  ],
+  "sheet_rows": [
+    "Helipads!35"
+  ]
+}

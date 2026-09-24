@@ -1,0 +1,27 @@
+{
+  "name": "Geobugseom",
+  "status": "identified",
+  "address": "330-5 Daesim-ri, Yangseo-myeon, Yangpyeong-gun, Gyeonggi-do, South Korea",
+  "coordinates": {
+    "lat": 37.506241,
+    "lng": 127.383608
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://goo.gl/maps/hKn2rpbL9QNNYDHL6"
+    ],
+    "instagram": [
+      "https://www.instagram.com/p/C2M1ravLORd/?img_index=1"
+    ]
+  },
+  "reference_videos": [
+    "https://youtu.be/mULdzUBMHmw?list=PL8gB2L04hwPa8QAzKQqFaa1mDxqXbRj3c&t=191"
+  ],
+  "tags": [
+    "Geobug Island"
+  ],
+  "sheet_rows": [
+    "Geobug Island!1"
+  ]
+}

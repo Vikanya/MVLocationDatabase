@@ -1,0 +1,38 @@
+{
+  "title": "GHOST9(고스트나인) 'RUCKUS' Official M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=l8g_fKXpSNU",
+  "artists": [
+    "ghost9"
+  ],
+  "song": "RUCKUS",
+  "type": "mv",
+  "channel": "GHOST9 Official",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "taean-european-resort",
+      "screenshots": [
+        {
+          "image": "b44f2a77cc33.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "aacde8bc5ae6.webp",
+          "set": "spot-2"
+        },
+        {
+          "image": "e810f696f4b4.webp",
+          "set": "spot-3"
+        },
+        {
+          "image": "b4663dbbfa10.webp",
+          "set": "spot-5"
+        }
+      ],
+      "sheet_rows": [
+        "Abandoned Park!6"
+      ]
+    }
+  ]
+}

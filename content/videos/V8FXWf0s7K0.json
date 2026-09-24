@@ -1,0 +1,27 @@
+{
+  "title": "[MV] 솔라(SOLAR) - 뱉어(Spit it out)",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=V8FXWf0s7K0",
+  "artists": [
+    "solar"
+  ],
+  "type": "mv",
+  "channel": "MAMAMOO",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "hangar-bazar-3",
+      "screenshots": [
+        {
+          "image": "26a63996327e.webp"
+        },
+        {
+          "image": "cfc82a338cdb.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Hangar bazar!24"
+      ]
+    }
+  ]
+}

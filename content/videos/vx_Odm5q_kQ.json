@@ -1,0 +1,34 @@
+{
+  "title": "JinSoul ‘Ring of Chaos’ Official MV | ARTMS",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=vx_Odm5q_kQ",
+  "artists": [
+    "jinsoul"
+  ],
+  "song": "Ring of Chaos",
+  "type": "mv",
+  "channel": "Official ARTMS",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "acres-space-subway",
+      "screenshots": [
+        {
+          "image": "b6ec0778c9cf.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "525b8ac9b1d5.webp",
+          "set": "spot-2"
+        },
+        {
+          "image": "9e544570d86d.webp",
+          "set": "spot-3"
+        }
+      ],
+      "sheet_rows": [
+        "Subway!3"
+      ]
+    }
+  ]
+}

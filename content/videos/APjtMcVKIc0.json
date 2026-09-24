@@ -1,0 +1,48 @@
+{
+  "title": "LUN8 루네이트 - Lost M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=APjtMcVKIc0",
+  "artists": [
+    "lun8"
+  ],
+  "type": "mv",
+  "channel": "fantagio 판타지오",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "mamago-waikiki",
+      "screenshots": [
+        {
+          "image": "7c6de7bf7ed6.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "11c45fccc610.webp",
+          "set": "spot-3"
+        },
+        {
+          "image": "bf4d39b02aea.webp",
+          "set": "spot-4"
+        },
+        {
+          "image": "68b87fcf2aca.webp",
+          "set": "spot-5"
+        }
+      ],
+      "sheet_rows": [
+        "Mamago!21"
+      ]
+    },
+    {
+      "location": "tunnels",
+      "screenshots": [
+        {
+          "image": "bbce000f6a1d.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Tunnels!8"
+      ]
+    }
+  ]
+}

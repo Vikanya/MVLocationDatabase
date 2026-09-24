@@ -1,0 +1,36 @@
+{
+  "title": "AleXa (알렉사) – \"Xtra\" Official MV (with BM of KARD)",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=c9pgKj9OF18",
+  "artists": [
+    "alexa"
+  ],
+  "song": "Xtra",
+  "type": "mv",
+  "channel": "AleXa • ZB Label",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "samyeong-gihoek",
+      "screenshots": [
+        {
+          "image": "8c6a3f6a12a6.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Parkings/Rooftops!5"
+      ]
+    },
+    {
+      "location": "incheon-inner-port-pier-8-parking",
+      "screenshots": [
+        {
+          "image": "df1dbc774bdd.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Docks!4"
+      ]
+    }
+  ]
+}

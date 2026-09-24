@@ -1,0 +1,20 @@
+{
+  "name": "Parkings/Rooftops #3",
+  "status": "identified",
+  "coordinates": {
+    "lat": 37.530616,
+    "lng": 126.966195
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/4ofr187QqByKY1RH7"
+    ]
+  },
+  "tags": [
+    "Parkings/Rooftops"
+  ],
+  "sheet_rows": [
+    "Parkings/Rooftops!28"
+  ]
+}

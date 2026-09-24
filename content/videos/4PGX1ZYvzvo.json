@@ -1,0 +1,25 @@
+{
+  "title": "MONSTA X 몬스타엑스 'Do What I Want' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=4PGX1ZYvzvo",
+  "artists": [
+    "monsta-x"
+  ],
+  "song": "Do What I Want",
+  "type": "mv",
+  "channel": "STARSHIP",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "abandoned-park-2",
+      "screenshots": [
+        {
+          "image": "94ea956941d5.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Abandoned Park!26"
+      ]
+    }
+  ]
+}

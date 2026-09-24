@@ -1,0 +1,26 @@
+{
+  "title": "YAOCHEN(야오천) - \"ROLL THE DICE\" M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=cwgA7QerOC0",
+  "artists": [
+    "yaochen"
+  ],
+  "song": "ROLL THE DICE",
+  "type": "mv",
+  "channel": "JYP Entertainment",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "acres-space-gas-station",
+      "screenshots": [
+        {
+          "image": "19687d35f657.webp",
+          "set": "spot-1"
+        }
+      ],
+      "sheet_rows": [
+        "Carwash/Gas Station!41"
+      ]
+    }
+  ]
+}

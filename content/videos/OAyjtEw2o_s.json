@@ -1,0 +1,33 @@
+{
+  "title": "[MV] ALICE(앨리스) _ DANCE ON",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=OAyjtEw2o_s",
+  "artists": [
+    "alice"
+  ],
+  "type": "mv",
+  "channel": "1theK (원더케이)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "af2df98e0458.webp",
+          "set": "diner"
+        },
+        {
+          "image": "0b2be10958cf.webp",
+          "set": "lobby"
+        },
+        {
+          "image": "896ec82f3770.webp",
+          "set": "house"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!27"
+      ]
+    }
+  ]
+}

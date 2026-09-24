@@ -1,0 +1,23 @@
+{
+  "name": "현대 그리너리캠퍼스 별가람역 지식산업센터",
+  "status": "identified",
+  "coordinates": {
+    "lat": 37.663547,
+    "lng": 127.122688
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/Mbc2qUHES1dCe4Lp7"
+    ],
+    "naver_map": [
+      "https://naver.me/IxsqpvU0"
+    ]
+  },
+  "tags": [
+    "Parkings/Rooftops"
+  ],
+  "sheet_rows": [
+    "Parkings/Rooftops!49"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Namsan Central Xi",
+  "status": "identified",
+  "address": "235 Toegye-ro, Jung-gu, Seoul, Corée du Sud",
+  "coordinates": {
+    "lat": 37.562497,
+    "lng": 126.997828
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/rKg39V29voi1Nvac8"
+    ]
+  },
+  "tags": [
+    "Helipads"
+  ],
+  "sheet_rows": [
+    "Helipads!10"
+  ]
+}

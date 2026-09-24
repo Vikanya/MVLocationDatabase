@@ -1,0 +1,24 @@
+{
+  "title": "스위치(Switch) - 피에스타로카(Fiestaloca)",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=ETiRQ2_75MQ",
+  "artists": [
+    "switch"
+  ],
+  "type": "other",
+  "channel": "OGAM Entertainment",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "abandoned-gimcheon-medical-school",
+      "screenshots": [
+        {
+          "image": "a76e746c94bd.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Gimcheon campus!11"
+      ]
+    }
+  ]
+}

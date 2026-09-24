@@ -1,0 +1,38 @@
+{
+  "title": "[#퀸덤퍼즐] ♬Charismatic - DROP The Beat | PERFORMANCE VIDEO (4K) #QUEENDOMPUZZLE",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=4QZu2LyemL4",
+  "artists": [
+    "charismatic"
+  ],
+  "type": "performance",
+  "channel": "Mnet K-POP",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "carwash-gas-station-1",
+      "screenshots": [
+        {
+          "image": "e40eff6a9341.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Carwash/Gas Station!3"
+      ]
+    },
+    {
+      "location": "quatro-box",
+      "screenshots": [
+        {
+          "image": "98dfef655e60.webp"
+        },
+        {
+          "image": "a0e26a39f502.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Quatro Box!2"
+      ]
+    }
+  ]
+}

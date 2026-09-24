@@ -1,0 +1,30 @@
+{
+  "title": "SANA MELODY PROJECT \"Mood Indigo (CHEEZE)\" Cover by SANA",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=7123DLSc9FA",
+  "artists": [
+    "sana-melody-project"
+  ],
+  "song": "Mood Indigo (CHEEZE)",
+  "type": "cover",
+  "channel": "TWICE",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "ee152869285c.webp",
+          "set": "lobby"
+        },
+        {
+          "image": "45ed5eaa16d4.webp",
+          "set": "house"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!52"
+      ]
+    }
+  ]
+}

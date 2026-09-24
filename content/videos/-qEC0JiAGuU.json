@@ -1,0 +1,29 @@
+{
+  "title": "[M/V] 허찬조 (HEOCHANZO) - Lonely Boy (Feat. BIGONE)",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=-qEC0JiAGuU",
+  "artists": [
+    "heochanzo"
+  ],
+  "type": "mv",
+  "channel": "STONESHIP",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "provoke-seoul",
+      "screenshots": [
+        {
+          "image": "698263a67ce1.webp",
+          "set": "outside"
+        },
+        {
+          "image": "ead2b60ed672.webp",
+          "set": "hangar"
+        }
+      ],
+      "sheet_rows": [
+        "provoke Seoul!27"
+      ]
+    }
+  ]
+}

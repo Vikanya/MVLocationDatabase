@@ -1,0 +1,25 @@
+{
+  "title": "THE ROSE 'She's In The Rain' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=mF1faBr77sg",
+  "artists": [
+    "the-rose"
+  ],
+  "song": "She",
+  "type": "mv",
+  "channel": "ida minardi",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "abandoned-gimcheon-medical-school",
+      "screenshots": [
+        {
+          "image": "beafbe757b99.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Gimcheon campus!9"
+      ]
+    }
+  ]
+}

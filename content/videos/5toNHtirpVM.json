@@ -1,0 +1,38 @@
+{
+  "title": "iii 'Forbidden Midnight (Real ver.)' M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=5toNHtirpVM",
+  "artists": [
+    "iii"
+  ],
+  "song": "Forbidden Midnight (Real ver.)",
+  "type": "mv",
+  "channel": "iii Official",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "af0bd1ee6b07.webp",
+          "set": "hospital"
+        },
+        {
+          "image": "8bf9b82eb7f6.webp",
+          "set": "lobby"
+        },
+        {
+          "image": "455ae28306df.webp",
+          "set": "space-station"
+        },
+        {
+          "image": "6f268c61f36d.webp",
+          "set": "prison"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!81"
+      ]
+    }
+  ]
+}

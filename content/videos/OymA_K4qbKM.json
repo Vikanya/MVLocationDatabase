@@ -1,0 +1,46 @@
+{
+  "title": "VANNER(배너) - 'Automatic' M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=OymA_K4qbKM",
+  "artists": [
+    "vanner"
+  ],
+  "song": "Automatic",
+  "type": "mv",
+  "channel": "KLAP ENTERTAINMENT",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "parkings-rooftops-2",
+      "screenshots": [
+        {
+          "image": "dafaf0cad39f.webp"
+        },
+        {
+          "image": "0b554362e716.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Parkings/Rooftops!21"
+      ]
+    },
+    {
+      "location": "acres-space-gas-station",
+      "screenshots": [
+        {
+          "image": "6b6932818191.webp",
+          "set": "spot-1"
+        }
+      ],
+      "sheet_rows": [
+        "Carwash/Gas Station!18"
+      ]
+    },
+    {
+      "location": "tunnels",
+      "sheet_rows": [
+        "Tunnels!5"
+      ]
+    }
+  ]
+}

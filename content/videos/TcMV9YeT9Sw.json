@@ -1,0 +1,46 @@
+{
+  "title": "QWER 'SHOW DOWN' Official MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=TcMV9YeT9Sw",
+  "artists": [
+    "qwer"
+  ],
+  "song": "SHOW DOWN",
+  "type": "mv",
+  "channel": "QWER",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "mamago-waikiki",
+      "screenshots": [
+        {
+          "image": "27f0559575e8.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "b0c577343cab.webp",
+          "set": "spot-2"
+        },
+        {
+          "image": "fe85b68a9fbf.webp",
+          "set": "spot-3"
+        },
+        {
+          "image": "9a11aea31dc9.webp",
+          "set": "spot-4"
+        },
+        {
+          "image": "53191fc1dba7.webp",
+          "set": "spot-5"
+        },
+        {
+          "image": "2fbd631e21a0.webp",
+          "set": "spot-6"
+        }
+      ],
+      "sheet_rows": [
+        "Mamago!24"
+      ]
+    }
+  ]
+}

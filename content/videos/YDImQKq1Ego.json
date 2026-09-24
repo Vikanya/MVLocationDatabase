@@ -1,0 +1,25 @@
+{
+  "title": "tripleS(트리플에스) 'Touch' Official Performance (DaHyun, Mayu, ShiOn, SeoAh Ver.)",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=YDImQKq1Ego",
+  "artists": [
+    "triples"
+  ],
+  "song": "Touch",
+  "type": "performance",
+  "channel": "tripleS official",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "interiors-4",
+      "screenshots": [
+        {
+          "image": "df0169e78e51.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Interiors!12"
+      ]
+    }
+  ]
+}

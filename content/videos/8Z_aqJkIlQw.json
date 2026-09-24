@@ -1,0 +1,29 @@
+{
+  "title": "(MV)LEE CHAE YEON(이채연)_LET'S DANCE",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=8Z_aqJkIlQw",
+  "artists": [
+    "lee-chae-yeon"
+  ],
+  "type": "mv",
+  "channel": "LEE CHAEYEON",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "bf12e3c567fd.webp",
+          "set": "gas-station"
+        },
+        {
+          "image": "0574b01e337c.webp",
+          "set": "motel"
+        }
+      ],
+      "sheet_rows": [
+        "Ametage!4"
+      ]
+    }
+  ]
+}

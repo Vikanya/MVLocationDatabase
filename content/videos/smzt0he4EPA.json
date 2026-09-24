@@ -1,0 +1,28 @@
+{
+  "title": "RYEOWOOK 려욱 'Runaway' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=smzt0he4EPA",
+  "artists": [
+    "ryeowook"
+  ],
+  "song": "Runaway",
+  "type": "mv",
+  "channel": "SMTOWN",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "geobug-island-1",
+      "screenshots": [
+        {
+          "image": "18f9622ff450.webp"
+        },
+        {
+          "image": "abf6a9062cd4.webp"
+        }
+      ],
+      "sheet_rows": [
+        "Geobug Island!26"
+      ]
+    }
+  ]
+}

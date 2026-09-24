@@ -1,0 +1,24 @@
+---
+/** A panel framed like a Windows 2000 window: gradient title bar + decorative buttons. */
+interface Props {
+  title: string;
+  tone?: 'blue' | 'pink' | 'chrome';
+  heading?: 'h1' | 'h2' | 'div';
+  flush?: boolean;
+  id?: string;
+  class?: string;
+}
+const { title, tone = 'blue', heading = 'h2', flush = false, id, class: className } = Astro.props;
+const Heading = heading;
+---
+
+<section class:list={['win', className]} data-tone={tone} id={id}>
+  <div class="win-title">
+    <span class="win-icon" aria-hidden="true" data-pagefind-ignore>✦</span>
+    <Heading class="win-heading">{title}</Heading>
+    <span class="win-btns" aria-hidden="true" data-pagefind-ignore><i>_</i><i>□</i><i>×</i></span>
+  </div>
+  <div class:list={['win-body', { flush }]}>
+    <slot />
+  </div>
+</section>

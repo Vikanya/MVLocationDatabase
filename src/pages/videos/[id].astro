@@ -1,0 +1,77 @@
+---
+import Base from '../../layouts/Base.astro';
+import Window from '../../components/Window.astro';
+import MapView from '../../components/MapView.astro';
+import Player from '../../components/Player.astro';
+import Shots from '../../components/Shots.astro';
+import { db, href, pinsFor, TYPE_LABEL, videoLabel, type Video } from '../../lib/data';
+
+export async function getStaticPaths() {
+  const data = await db();
+  return data.videos.map((video) => ({ params: { id: video.id }, props: { video } }));
+}
+
+const { video } = Astro.props as { video: Video };
+const data = await db();
+const artists = data.videoArtists(video);
+const appearances = data.ofVideo(video.id);
+const pins = pinsFor(appearances.map((a) => a.location), () => 1);
+const kind = video.data.type ?? 'other';
+const who = artists.map((a) => a.data.name).join(', ');
+---
+
+<Base
+  title={`${videoLabel(video)}${who ? ` — ${who}` : ''}`}
+  description={`Where "${video.data.title}" was filmed: ${appearances.map((a) => a.location.data.name).join(', ')}.`}
+  searchable
+>
+  <header class="page-head">
+    <span class="kicker"><span class="badge" data-kind={kind}>{TYPE_LABEL[kind]}</span></span>
+    <h1>{video.data.title}</h1>
+    <p class="sub">
+      {
+        artists.length > 0
+          ? artists.map((a, i) => (
+              <>
+                {i > 0 && ', '}
+                <a href={href.artist(a.id)}>{a.data.name}</a>
+              </>
+            ))
+          : video.data.channel
+      }
+      {video.data.channel && artists.length > 0 && <span class="muted"> · channel: {video.data.channel}</span>}
+    </p>
+  </header>
+
+  <div class="split">
+    <Window title="Watch">
+      <Player video={video} />
+    </Window>
+    <Window title={`Filmed at ${appearances.length} place${appearances.length === 1 ? '' : 's'}`} tone="chrome" flush>
+      <MapView pins={pins} height={260} label="Map of this video's filming locations" />
+    </Window>
+  </div>
+
+  <Window title="Filming locations" tone="pink">
+    {
+      appearances.map((a) => (
+        <article class="appearance">
+          <div class="appearance-head">
+            <h3>
+              <a href={href.location(a.location.id)}>{a.location.data.name}</a>
+            </h3>
+            {a.location.data.status === 'unknown' && <span class="badge" data-kind="unknown">??? NOT IDENTIFIED YET</span>}
+            {a.confidence === 'unsure' && <span class="badge" data-kind="unsure">NOT SURE</span>}
+            {a.location.data.address && <span class="muted">{a.location.data.address}</span>}
+          </div>
+          {a.notes && <p class="muted">{a.notes}</p>}
+          {a.shots.length > 0 ? (
+            <Shots shots={a.shots} context={`${videoLabel(video)} at ${a.location.data.name}`} />
+          ) : (
+            <p class="muted">No screenshot yet.</p>
+          )}
+        </article>
+      ))
+    }
+  </Window>
+</Base>

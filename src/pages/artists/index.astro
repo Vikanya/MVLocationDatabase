@@ -1,0 +1,48 @@
+---
+import Base from '../../layouts/Base.astro';
+import Window from '../../components/Window.astro';
+import { db, href } from '../../lib/data';
+
+const data = await db();
+const initial = (name: string) => {
+  const c = name.trim()[0]?.toUpperCase() ?? '#';
+  if (/[A-Z]/.test(c)) return c;
+  if (/[가-힣]/.test(c)) return '가';
+  return '#';
+};
+const groups = new Map<string, typeof data.artists>();
+for (const a of data.artists) {
+  const k = initial(a.data.name);
+  if (!groups.has(k)) groups.set(k, []);
+  groups.get(k)!.push(a);
+}
+const order = [...groups.keys()].sort((a, b) => (a === '#' ? -1 : b === '#' ? 1 : a === '가' ? 1 : b === '가' ? -1 : a.localeCompare(b)));
+---
+
+<Base title="Artists" description="Every artist in the database, A to Z.">
+  <header class="page-head">
+    <span class="kicker">INDEX</span>
+    <h1>Artists</h1>
+    <p class="sub">{data.artists.length} artists, sorted A–Z. Numbers show how many videos each one has here.</p>
+  </header>
+
+  <Window title="A–Z" tone="chrome">
+    <ul class="az">{order.map((k) => <li><a href={`#letter-${k}`}>{k}</a></li>)}</ul>
+    {
+      order.map((k) => (
+        <section id={`letter-${k}`}>
+          <h2 class="az-letter">{k}</h2>
+          <ul class="dotlist columns">
+            {groups.get(k)!.map((a) => (
+              <li>
+                <a href={href.artist(a.id)}>{a.data.name}</a>
+                {a.data.name_ko && <span class="muted" lang="ko"> {a.data.name_ko}</span>}
+                <span class="muted"> · {data.byArtist(a.id).length}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+  </Window>
+</Base>

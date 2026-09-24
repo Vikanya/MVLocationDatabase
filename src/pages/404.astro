@@ -1,0 +1,13 @@
+---
+import Base from '../layouts/Base.astro';
+import Window from '../components/Window.astro';
+import { url } from '../lib/data';
+---
+
+<Base title="Page not found">
+  <Window title="Error" tone="pink" heading="h1">
+    <p class="pixel" style="font-size:16px">404 — THIS PAGE WAS NOT FOUND <span class="blink">_</span></p>
+    <p>The link may be old, or the location may have been renamed.</p>
+    <p><a class="btn" href={url()}>◀ BACK HOME</a></p>
+  </Window>
+</Base>

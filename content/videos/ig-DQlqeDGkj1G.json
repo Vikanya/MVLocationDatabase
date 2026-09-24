@@ -1,4 +1,5 @@
 {
+  "title": "Instagram post",
   "platform": "instagram_post",
   "url": "https://www.instagram.com/p/DQlqeDGkj1G",
   "type": "other",
@@ -18,6 +19,7 @@
     }
   ],
   "review": [
-    "Artist not recognised from the title — add the artist(s)"
+    "Artist not recognised from the title — add the artist(s)",
+    "No title in the sheet — replace the placeholder title"
   ]
 }

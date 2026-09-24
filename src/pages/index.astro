@@ -1,0 +1,76 @@
+---
+import Base from '../layouts/Base.astro';
+import Window from '../components/Window.astro';
+import MapView from '../components/MapView.astro';
+import VideoCard from '../components/VideoCard.astro';
+import LocationCard from '../components/LocationCard.astro';
+import { db, href, pinsFor, stableShuffle, url } from '../lib/data';
+
+const data = await db();
+const count = (id: string) => data.atLocation(id).length;
+const pins = pinsFor(data.locations, (l) => count(l.id));
+const busiest = data.locations
+  .filter((l) => l.data.status === 'identified')
+  .sort((a, b) => count(b.id) - count(a.id))
+  .slice(0, 8);
+const picks = stableShuffle(data.videos.filter((v) => v.data.platform === 'youtube'), 'home').slice(0, 8);
+const unknown = data.locations.filter((l) => l.data.status === 'unknown').length;
+const topArtists = [...data.artists].sort((a, b) => data.byArtist(b.id).length - data.byArtist(a.id).length).slice(0, 14);
+---
+
+<Base>
+  <div class="split">
+    <Window title="Welcome!!" heading="h1">
+      <div class="welcome">
+        <p>
+          Hi! This is a fan-made list of the places where K-pop music videos were filmed: studios, rooftops, parking towers,
+          abandoned parks, gas stations…
+        </p>
+        <p>
+          Each entry has the screenshot where the place shows up. Look things up by <a href={url('artists/')}>artist</a>,{' '}
+          by <a href={url('locations/')}>location</a>, or on the <a href={url('map/')}>map</a>.
+        </p>
+        <p class="welcome-note">
+          <b>{unknown} spots are still unidentified.</b> They're marked <span class="badge" data-kind="unknown">???</span> — if you
+          recognise one, a suggestion form is coming soon.
+        </p>
+      </div>
+    </Window>
+
+    <Window title="Tags" tone="chrome">
+      <ul class="chips">
+        {data.tags.map((t) => <li><a class="chip" href={href.tag(t.slug)}>{t.name}<b>{t.count}</b></a></li>)}
+      </ul>
+    </Window>
+  </div>
+
+  <Window title="World map" flush>
+    <MapView pins={pins} height={380} />
+  </Window>
+
+  <Window title="Busiest spots" tone="pink">
+    <ul class="cards">{busiest.map((l) => <li><LocationCard location={l} /></li>)}</ul>
+    <p class="more"><a href={url('locations/')}>ALL LOCATIONS ▸</a></p>
+  </Window>
+
+  <div class="split">
+    <Window title="Random picks">
+      <ul class="cards">{picks.map((v) => <li><VideoCard video={v} /></li>)}</ul>
+      <p class="more"><a href={url('videos/')}>ALL VIDEOS ▸</a></p>
+    </Window>
+    <Window title="Most seen artists" tone="chrome">
+      <ol class="dotlist">
+        {
+          topArtists.map((a) => (
+            <li>
+              <a href={href.artist(a.id)}>{a.data.name}</a>
+              {a.data.name_ko && <span class="muted" lang="ko"> {a.data.name_ko}</span>}
+              <span class="muted"> · {data.byArtist(a.id).length}</span>
+            </li>
+          ))
+        }
+      </ol>
+      <p class="more"><a href={url('artists/')}>ALL ARTISTS ▸</a></p>
+    </Window>
+  </div>
+</Base>

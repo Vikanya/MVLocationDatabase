@@ -1,0 +1,51 @@
+---
+import { youtubeThumb, type Video } from '../lib/data';
+
+interface Props {
+  video: Video;
+}
+const { video } = Astro.props;
+const { platform, url, embeddable, start, title } = video.data;
+const canEmbed = platform === 'youtube' && embeddable !== false;
+const embed = `https://www.youtube-nocookie.com/embed/${video.id}?autoplay=1${start ? `&start=${start}` : ''}`;
+const label = platform === 'youtube' ? 'YouTube' : platform === 'imgur' ? 'Imgur' : 'Instagram';
+---
+
+{
+  platform === 'youtube' ? (
+    <div class="player" style={`background-image:url(${youtubeThumb(video.id, 'hq')})`}>
+      {canEmbed ? (
+        <button class="player-play" type="button" data-embed={embed} data-title={title}>
+          <span>▶ PLAY</span>
+        </button>
+      ) : (
+        <a class="player-play" href={url} target="_blank" rel="noopener">
+          <span>▶ WATCH ON YOUTUBE</span>
+        </a>
+      )}
+    </div>
+  ) : null
+}
+<p class="player-note" data-pagefind-ignore>
+  {
+    canEmbed
+      ? 'The player loads from YouTube only when you press play.'
+      : platform === 'youtube'
+        ? 'This video can only be played on YouTube.'
+        : `This one isn’t a YouTube video.`
+  }{' '}
+  <a class="aqua" href={url} target="_blank" rel="noopener">Open on {label} ↗</a>
+</p>
+
+<script>
+  document.addEventListener('click', (event) => {
+    const button = (event.target as Element).closest<HTMLButtonElement>('button[data-embed]');
+    if (!button) return;
+    const frame = document.createElement('iframe');
+    frame.src = button.dataset.embed!;
+    frame.title = button.dataset.title || 'YouTube video';
+    frame.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+    frame.allowFullscreen = true;
+    button.replaceWith(frame);
+  });
+</script>

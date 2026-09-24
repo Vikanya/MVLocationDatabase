@@ -1,0 +1,193 @@
+---
+import Base from '../../layouts/Base.astro';
+import Window from '../../components/Window.astro';
+import MapView from '../../components/MapView.astro';
+import Shots from '../../components/Shots.astro';
+import { db, href, pinsFor, slugify, videoLabel, type Location } from '../../lib/data';
+
+export async function getStaticPaths() {
+  const data = await db();
+  return data.locations.map((location) => ({ params: { id: location.id }, props: { location } }));
+}
+
+const { location } = Astro.props as { location: Location };
+const data = await db();
+// Sorted by artist; videos whose artist isn't known yet go last.
+const artistOf = (a: (typeof data.appearances)[number]) => data.videoArtists(a.video)[0]?.data.name ?? '￿';
+const here = [...data.atLocation(location.id)].sort(
+  (a, b) => artistOf(a).localeCompare(artistOf(b)) || videoLabel(a.video).localeCompare(videoLabel(b.video)),
+);
+const l = location.data;
+const unknown = l.status === 'unknown';
+const pins = pinsFor([location], () => here.length);
+const setCount = (id: string) => here.filter((a) => a.shots.some((s) => s.set?.id === id)).length;
+const links = [
+  ...(l.links?.google_maps ?? []).map((u) => ({ label: 'Google Maps', u })),
+  ...(l.links?.naver_map ?? []).map((u) => ({ label: 'Naver Map', u })),
+  ...(l.links?.website ?? []).map((u) => ({ label: new URL(u).hostname.replace(/^www\./, ''), u })),
+  ...(l.links?.instagram ?? []).map((u) => ({ label: 'Instagram', u })),
+];
+const nearby = l.tags?.length
+  ? data.locations.filter((o) => o.id !== location.id && o.data.tags?.some((t) => l.tags!.includes(t))).slice(0, 12)
+  : [];
+---
+
+<Base title={l.name} description={`${here.length} music videos filmed at ${l.name}${l.address ? `, ${l.address}` : ''}.`} searchable>
+  <header class="page-head">
+    <span class="kicker">
+      LOCATION {unknown && <span class="badge" data-kind="unknown">??? NOT IDENTIFIED YET</span>}
+    </span>
+    <h1>{l.name}</h1>
+    <p class="sub">{here.length} video{here.length === 1 ? '' : 's'} filmed here{l.sets?.length ? ` · ${l.sets.length} sets` : ''}</p>
+  </header>
+
+  <div class="split">
+    <Window title="Info" tone="chrome">
+      <dl class="facts">
+        {l.address && (<><dt>ADDRESS</dt><dd>{l.address}</dd></>)}
+        {
+          l.coordinates && (
+            <>
+              <dt>GPS</dt>
+              <dd>
+                {l.coordinates.lat.toFixed(5)}, {l.coordinates.lng.toFixed(5)}
+                {l.coordinates_source?.includes('approximate') && <span class="muted"> (approximate)</span>}
+              </dd>
+            </>
+          )
+        }
+        {
+          links.length > 0 && (
+            <>
+              <dt>LINKS</dt>
+              <dd>
+                {links.map((x, i) => (
+                  <>
+                    {i > 0 && ' · '}
+                    <a href={x.u} target="_blank" rel="noopener">{x.label} ↗</a>
+                  </>
+                ))}
+              </dd>
+            </>
+          )
+        }
+        {
+          l.tags?.length ? (
+            <>
+              <dt>TAGS</dt>
+              <dd>
+                <ul class="chips">
+                  {l.tags.map((t) => <li><a class="chip" href={href.tag(slugify(t))}>{t}</a></li>)}
+                </ul>
+              </dd>
+            </>
+          ) : null
+        }
+        {
+          l.reference_videos?.length ? (
+            <>
+              <dt>SEE ALSO</dt>
+              <dd>
+                {l.reference_videos.map((u, i) => (
+                  <>
+                    {i > 0 && ' · '}
+                    <a href={u} target="_blank" rel="noopener">Reference video {l.reference_videos!.length > 1 ? i + 1 : ''} ↗</a>
+                  </>
+                ))}
+              </dd>
+            </>
+          ) : null
+        }
+        {l.notes && (<><dt>NOTES</dt><dd>{l.notes}</dd></>)}
+        {unknown && (<><dt>HELP!</dt><dd>We don't know where this is yet. Recognise it? A suggestion form is coming soon.</dd></>)}
+      </dl>
+    </Window>
+    <Window title="Map" flush>
+      <MapView pins={pins} height={280} label={`Map of ${l.name}`} />
+    </Window>
+  </div>
+
+  {
+    l.photos?.length ? (
+      <Window title="Photos of the place" tone="chrome">
+        <Shots shots={l.photos.map((image) => ({ image }))} caption={l.name} />
+      </Window>
+    ) : null
+  }
+
+  <Window title="Filmed here" tone="pink">
+    {
+      l.sets?.length ? (
+        <div class="chips" role="group" aria-label="Filter by set" id="set-filter" style="margin-bottom:16px">
+          <button class="btn" type="button" data-set="" aria-pressed="true">ALL SETS</button>
+          {l.sets.map((s) => (
+            <button class="btn" type="button" data-set={s.id} aria-pressed="false">
+              {s.name} ({setCount(s.id)})
+            </button>
+          ))}
+        </div>
+      ) : null
+    }
+    {
+      here.map((a) => {
+        const artists = data.videoArtists(a.video);
+        return (
+          <article class="appearance" data-sets={a.shots.map((s) => s.set?.id ?? '').join(' ')}>
+            <div class="appearance-head">
+              <h3>
+                <a href={href.video(a.video.id)}>{videoLabel(a.video)}</a>
+              </h3>
+              <span class="muted">
+                {artists.length ? artists.map((x) => x.data.name).join(', ') : a.video.data.channel}
+              </span>
+              {a.confidence === 'unsure' && <span class="badge" data-kind="unsure">NOT SURE</span>}
+            </div>
+            {a.notes && <p class="muted">{a.notes}</p>}
+            {a.shots.length > 0 ? (
+              <Shots shots={a.shots} context={`${videoLabel(a.video)} at ${l.name}`} />
+            ) : (
+              <p class="muted">No screenshot yet.</p>
+            )}
+          </article>
+        );
+      })
+    }
+  </Window>
+
+  {
+    nearby.length > 0 && (
+      <Window title="Similar places" tone="chrome">
+        <ul class="dotlist columns">
+          {nearby.map((o) => (
+            <li>
+              <a href={href.location(o.id)}>{o.data.name}</a>
+              {o.data.status === 'unknown' && <span class="badge" data-kind="unknown">???</span>}
+            </li>
+          ))}
+        </ul>
+      </Window>
+    )
+  }
+</Base>
+
+<script>
+  const buttons = document.querySelectorAll<HTMLButtonElement>('#set-filter button');
+  const items = document.querySelectorAll<HTMLElement>('article.appearance[data-sets]');
+  buttons.forEach((button) =>
+    button.addEventListener('click', () => {
+      const set = button.dataset.set;
+      buttons.forEach((b) => b.setAttribute('aria-pressed', String(b === button)));
+      items.forEach((item) => {
+        item.hidden = !!set && !item.dataset.sets!.split(' ').includes(set);
+        item.querySelectorAll<HTMLElement>('.shots > li').forEach((li) => (li.hidden = !!set && li.dataset.set !== set));
+      });
+    }),
+  );
+</script>
+
+<style>
+  #set-filter button[aria-pressed='true'] {
+    color: #fff;
+    background: var(--electric);
+  }
+</style>

@@ -959,8 +959,12 @@ def write_content(db, artists, video_artists, media, force=False):
             entry["confidence"] = entry["confidence"] or a.confidence
             entry["notes"] += [n for n in a.notes if n not in entry["notes"]]
             entry["sheet_rows"] += [r for r in a.rows if r not in entry["sheet_rows"]]
+        title = video.title or video.title_sheet
+        if not title:
+            title = {"instagram_post": "Instagram post", "imgur": "Imgur album"}.get(video.platform, "Video")
+            review.setdefault(id(video), []).append("No title in the sheet — replace the placeholder title")
         files[f"videos/{video.key}.json"] = compact({
-            "title": video.title or video.title_sheet,
+            "title": title,
             "platform": video.platform,
             "url": video.url,
             "artists": ids,

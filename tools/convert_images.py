@@ -4,12 +4,12 @@
     python tools/convert_images.py
 
 Input:  source/export/images/<gid>_r<row>_c<col>.png   (from tools/export-sheet.gs)
-Output: media/full/<id>.webp    full resolution, WebP quality 85
-        media/thumb/<id>.webp   480 px wide, WebP quality 80
+Output: public/media/full/<id>.webp    full resolution, WebP quality 85
+        public/media/thumb/<id>.webp   480 px wide, WebP quality 80
         source/export/image-map.json   export name -> id (read by tools/convert_export.py)
 
 <id> is the first 12 hex characters of the PNG's SHA-1: identical screenshots are stored once, and
-re-running only converts files that aren't in media/ yet.
+re-running only converts files that aren't in public/media/ yet.
 """
 from __future__ import annotations
 
@@ -23,8 +23,8 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parent.parent
 SOURCE = ROOT / "source" / "export" / "images"
 MAP_FILE = ROOT / "source" / "export" / "image-map.json"
-FULL = ROOT / "media" / "full"
-THUMB = ROOT / "media" / "thumb"
+FULL = ROOT / "public" / "media" / "full"
+THUMB = ROOT / "public" / "media" / "thumb"
 
 FULL_QUALITY = 85
 THUMB_WIDTH = 480

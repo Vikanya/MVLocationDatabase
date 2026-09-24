@@ -1,0 +1,58 @@
+---
+import Base from '../../layouts/Base.astro';
+import Window from '../../components/Window.astro';
+import MapView from '../../components/MapView.astro';
+import VideoCard from '../../components/VideoCard.astro';
+import { db, href, pinsFor, type Artist, type Location } from '../../lib/data';
+
+export async function getStaticPaths() {
+  const data = await db();
+  return data.artists.map((artist) => ({ params: { id: artist.id }, props: { artist } }));
+}
+
+const { artist } = Astro.props as { artist: Artist };
+const data = await db();
+const videos = data.byArtist(artist.id);
+const visits = new Map<string, { location: Location; videos: number }>();
+for (const v of videos) {
+  for (const a of data.ofVideo(v.id)) {
+    const entry = visits.get(a.location.id) ?? { location: a.location, videos: 0 };
+    entry.videos += 1;
+    visits.set(a.location.id, entry);
+  }
+}
+const places = [...visits.values()].sort((a, b) => b.videos - a.videos || a.location.data.name.localeCompare(b.location.data.name));
+const pins = pinsFor(places.map((p) => p.location), (l) => visits.get(l.id)!.videos);
+const { name, name_ko } = artist.data;
+---
+
+<Base title={name} description={`Filming locations of ${name}'s music videos.`} searchable>
+  <header class="page-head">
+    <span class="kicker">ARTIST</span>
+    <h1>{name}{name_ko && <span class="muted" lang="ko"> {name_ko}</span>}</h1>
+    <p class="sub">{videos.length} video{videos.length === 1 ? '' : 's'} · {places.length} location{places.length === 1 ? '' : 's'}</p>
+  </header>
+
+  <Window title="Videos">
+    <ul class="cards">{videos.map((v) => <li><VideoCard video={v} /></li>)}</ul>
+  </Window>
+
+  <div class="split">
+    <Window title="Where they filmed" flush>
+      <MapView pins={pins} height={320} label={`Map of ${name}'s filming locations`} />
+    </Window>
+    <Window title="Locations" tone="chrome">
+      <ul class="dotlist">
+        {
+          places.map((p) => (
+            <li>
+              <a href={href.location(p.location.id)}>{p.location.data.name}</a>
+              {p.location.data.status === 'unknown' && <span class="badge" data-kind="unknown">???</span>}
+              <span class="muted"> · {p.videos}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </Window>
+  </div>
+</Base>

@@ -1,0 +1,21 @@
+---
+import { db, href, media, type Location } from '../lib/data';
+
+interface Props {
+  location: Location;
+}
+const { location } = Astro.props;
+const data = await db();
+const here = data.atLocation(location.id);
+const cover = location.data.photos?.[0] ?? here.flatMap((a) => a.shots)[0]?.image;
+const unknown = location.data.status === 'unknown';
+---
+
+<a class="card" href={href.location(location.id)}>
+  <div class="card-img">
+    {cover && <img src={media.thumb(cover)} alt="" loading="lazy" decoding="async" width="480" height="270" />}
+    {unknown ? <span class="badge" data-kind="unknown">??? UNKNOWN</span> : <span class="badge">{here.length} MV</span>}
+  </div>
+  <p class="card-title">{location.data.name}</p>
+  <p class="card-meta">{location.data.address ?? (location.data.tags ?? []).join(' · ')}</p>
+</a>

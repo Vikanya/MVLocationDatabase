@@ -1,0 +1,33 @@
+---
+import { db, href, media, youtubeThumb, TYPE_LABEL, videoLabel, type Video } from '../lib/data';
+
+interface Props {
+  video: Video;
+  /** Show this screenshot instead of the YouTube thumbnail (e.g. on a location page). */
+  image?: string;
+  /** Extra line under the artist names. */
+  note?: string;
+}
+const { video, image, note } = Astro.props;
+const data = await db();
+const artists = data.videoArtists(video).map((a) => a.data.name).join(', ');
+const firstShot = data.ofVideo(video.id).flatMap((a) => a.shots)[0]?.image;
+const src = image
+  ? media.thumb(image)
+  : video.data.platform === 'youtube'
+    ? youtubeThumb(video.id)
+    : firstShot
+      ? media.thumb(firstShot)
+      : undefined;
+const kind = video.data.type ?? 'other';
+---
+
+<a class="card" href={href.video(video.id)}>
+  <div class="card-img">
+    {src && <img src={src} alt="" loading="lazy" decoding="async" width="480" height="270" />}
+    <span class="badge" data-kind={kind}>{TYPE_LABEL[kind]}</span>
+  </div>
+  <p class="card-title">{videoLabel(video)}</p>
+  <p class="card-meta">{artists || video.data.channel || ' '}</p>
+  {note && <p class="card-meta">{note}</p>}
+</a>

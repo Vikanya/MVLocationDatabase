@@ -1,0 +1,67 @@
+---
+import Base from '../../layouts/Base.astro';
+import Window from '../../components/Window.astro';
+import MapView from '../../components/MapView.astro';
+import LocationCard from '../../components/LocationCard.astro';
+import { db, href, pinsFor, slugify } from '../../lib/data';
+
+const data = await db();
+const count = (id: string) => data.atLocation(id).length;
+const identified = data.locations.filter((l) => l.data.status === 'identified');
+const unknown = data.locations.filter((l) => l.data.status === 'unknown');
+const pins = pinsFor(identified, (l) => count(l.id));
+---
+
+<Base title="Locations" description="All known K-pop MV filming locations, with a map.">
+  <header class="page-head">
+    <span class="kicker">INDEX</span>
+    <h1>Locations</h1>
+    <p class="sub">{identified.length} identified places · {unknown.length} still unknown</p>
+  </header>
+
+  <Window title="Map" flush>
+    <MapView pins={pins} height={360} />
+  </Window>
+
+  <Window title="Tags" tone="chrome">
+    <ul class="chips">
+      {data.tags.map((t) => <li><a class="chip" href={href.tag(t.slug)}>{t.name}<b>{t.count}</b></a></li>)}
+    </ul>
+  </Window>
+
+  <Window title="Identified places" flush>
+    <div class="table-scroll">
+      <table class="table">
+        <thead>
+          <tr><th scope="col">NAME</th><th scope="col">TAGS</th><th scope="col" class="num">VIDEOS</th></tr>
+        </thead>
+        <tbody>
+          {
+            identified.map((l) => (
+              <tr>
+                <td>
+                  <a href={href.location(l.id)}>{l.data.name}</a>
+                  {!l.data.coordinates && <span class="muted"> (no map pin yet)</span>}
+                </td>
+                <td>
+                  {(l.data.tags ?? []).map((t, i) => (
+                    <>
+                      {i > 0 && ', '}
+                      <a href={href.tag(slugify(t))}>{t}</a>
+                    </>
+                  ))}
+                </td>
+                <td class="num">{count(l.id)}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+  </Window>
+
+  <Window title="Not identified yet" tone="pink">
+    <p class="muted">These places appear in videos, but nobody has pinned them down yet.</p>
+    <ul class="cards">{unknown.map((l) => <li><LocationCard location={l} /></li>)}</ul>
+  </Window>
+</Base>

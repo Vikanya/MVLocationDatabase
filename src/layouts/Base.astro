@@ -1,0 +1,122 @@
+---
+import '../styles/global.css';
+import Window from '../components/Window.astro';
+import { db, href, url, stableShuffle, videoLabel } from '../lib/data';
+
+interface Props {
+  title?: string;
+  description?: string;
+  /** Mark the page body for the search index (detail pages only). */
+  searchable?: boolean;
+}
+const { title, description, searchable = false } = Astro.props;
+const SITE = 'MV Location DB';
+const pageTitle = title ? `${title} · ${SITE}` : `${SITE} — where was that K-pop MV filmed?`;
+const desc = description ?? 'A fan-made database of K-pop music video filming locations, with screenshots and a map.';
+
+const data = await db();
+const path = Astro.url.pathname.replace(import.meta.env.BASE_URL.replace(/\/$/, ''), '') || '/';
+const nav = [
+  { label: 'HOME', path: '/' },
+  { label: 'MAP', path: '/map/' },
+  { label: 'LOCATIONS', path: '/locations/' },
+  { label: 'ARTISTS', path: '/artists/' },
+  { label: 'VIDEOS', path: '/videos/' },
+  { label: 'SEARCH', path: '/search/' },
+];
+const current = (p: string) => (p === '/' ? path === '/' : path.startsWith(p));
+
+const ticker = stableShuffle(data.appearances.filter((a) => a.location.data.status === 'identified').map((a) => ({ ...a, id: a.video.id + a.location.id })))
+  .slice(0, 14)
+  .map((a) => ({
+    text: `${data.videoArtists(a.video).map((x) => x.data.name).join(', ') || a.video.data.channel} — ${videoLabel(a.video)} @ ${a.location.data.name}`,
+    href: href.video(a.video.id),
+  }));
+const pad = (n: number) => String(n).padStart(5, '0');
+const shots = data.appearances.reduce((n, a) => n + a.shots.length, 0);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={desc} />
+    <meta property="og:title" content={title ?? SITE} />
+    <meta property="og:description" content={desc} />
+    <link rel="icon" href={url('favicon.svg')} type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Michroma&family=Nanum+Gothic:wght@400;700;800&family=Silkscreen&display=swap"
+    />
+  </head>
+  <body>
+    <div class="desktop">
+      <header class="masthead">
+        <a class="wordmark" href={url()}>
+          <span class="wordmark-main">MV Location <span class="wordmark-star">✦</span> DB</span>
+          <span class="wordmark-sub" lang="ko">뮤비 촬영지 데이터베이스 · where was that MV filmed?</span>
+        </a>
+        <span class="masthead-tag">FAN-MADE · SINCE 2023</span>
+      </header>
+
+      <div class="ticker" aria-label="Random filming spots">
+        <span class="ticker-label">NOW PLAYING</span>
+        <span class="ticker-window">
+          <span class="ticker-track">
+            {ticker.map((t) => <a href={t.href}>▶ {t.text}</a>)}
+            <span aria-hidden="true">{ticker.map((t) => <a href={t.href} tabindex="-1">▶ {t.text}</a>)}</span>
+          </span>
+        </span>
+      </div>
+
+      <div class="shell">
+        <aside class="sidebar">
+          <Window title="Menu" tone="chrome">
+            <nav aria-label="Main">
+              <ul class="nav">
+                {
+                  nav.map((item) => (
+                    <li>
+                      <a href={url(item.path)} aria-current={current(item.path) ? 'page' : undefined}>
+                        {item.label}
+                      </a>
+                    </li>
+                  ))
+                }
+              </ul>
+            </nav>
+            <form class="search-box" action={url('search/')} method="get" role="search">
+              <label class="visually-hidden" for="q">Search</label>
+              <input id="q" name="q" type="search" placeholder="artist, song, place…" />
+              <button class="btn" type="submit">GO</button>
+            </form>
+          </Window>
+          <Window title="Counter" tone="pink" class="counter-win">
+            <dl class="counter">
+              <div><dt>MV</dt><dd>{pad(data.videos.length)}</dd></div>
+              <div><dt>SPOTS</dt><dd>{pad(data.locations.length)}</dd></div>
+              <div><dt>ARTISTS</dt><dd>{pad(data.artists.length)}</dd></div>
+              <div><dt>SCREENS</dt><dd>{pad(shots)}</dd></div>
+            </dl>
+          </Window>
+        </aside>
+
+        <main id="main" data-pagefind-body={searchable ? '' : undefined}>
+          <slot />
+        </main>
+      </div>
+
+      <footer class="footer">
+        <p>
+          ✦ FAN-MADE, NOT AFFILIATED WITH ANY ARTIST OR LABEL ✦ VIDEOS &amp; SCREENSHOTS BELONG TO THEIR OWNERS ✦<br />
+          MAP DATA © <a href="https://www.openstreetmap.org/copyright">OPENSTREETMAP</a> CONTRIBUTORS ✦ BEST VIEWED IN ANY
+          BROWSER AT ANY SIZE <span class="blink">_</span>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

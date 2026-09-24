@@ -1,0 +1,51 @@
+---
+import Base from '../../layouts/Base.astro';
+import Window from '../../components/Window.astro';
+import VideoCard from '../../components/VideoCard.astro';
+import { db, TYPE_LABEL, videoLabel } from '../../lib/data';
+
+const data = await db();
+const collator = new Intl.Collator(['en', 'ko'], { sensitivity: 'base', numeric: true });
+const artistName = (v: (typeof data.videos)[number]) => data.videoArtists(v)[0]?.data.name ?? v.data.channel ?? '';
+const videos = [...data.videos].sort(
+  (a, b) => collator.compare(artistName(a), artistName(b)) || collator.compare(videoLabel(a), videoLabel(b)),
+);
+const types = Object.keys(TYPE_LABEL).filter((t) => videos.some((v) => (v.data.type ?? 'other') === t));
+---
+
+<Base title="Videos" description="All music videos, performances and clips in the database.">
+  <header class="page-head">
+    <span class="kicker">INDEX</span>
+    <h1>Videos</h1>
+    <p class="sub">{videos.length} videos, sorted by artist.</p>
+  </header>
+
+  <Window title="All videos">
+    <div class="chips" role="group" aria-label="Filter by type" id="type-filter">
+      <button class="btn" type="button" data-type="" aria-pressed="true">ALL</button>
+      {types.map((t) => <button class="btn" type="button" data-type={t} aria-pressed="false">{TYPE_LABEL[t]}</button>)}
+    </div>
+    <ul class="cards" id="video-list" style="margin-top:14px">
+      {videos.map((v) => <li data-type={v.data.type ?? 'other'}><VideoCard video={v} /></li>)}
+    </ul>
+  </Window>
+</Base>
+
+<script>
+  const buttons = document.querySelectorAll<HTMLButtonElement>('#type-filter button');
+  const items = document.querySelectorAll<HTMLElement>('#video-list > li');
+  buttons.forEach((button) =>
+    button.addEventListener('click', () => {
+      const type = button.dataset.type;
+      buttons.forEach((b) => b.setAttribute('aria-pressed', String(b === button)));
+      items.forEach((li) => (li.hidden = !!type && li.dataset.type !== type));
+    }),
+  );
+</script>
+
+<style>
+  #type-filter button[aria-pressed='true'] {
+    color: #fff;
+    background: var(--electric);
+  }
+</style>

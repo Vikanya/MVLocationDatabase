@@ -1,0 +1,20 @@
+---
+import Base from '../layouts/Base.astro';
+import Window from '../components/Window.astro';
+import MapView from '../components/MapView.astro';
+import { db, pinsFor } from '../lib/data';
+
+const data = await db();
+const pins = pinsFor(data.locations, (l) => data.atLocation(l.id).length);
+---
+
+<Base title="Map" description="Every located K-pop MV filming spot on one map.">
+  <header class="page-head">
+    <span class="kicker">MAP</span>
+    <h1>Every spot on the map</h1>
+    <p class="sub">{pins.length} places with coordinates. Click a ✦ to open it — click the map first to zoom with the scroll wheel.</p>
+  </header>
+  <Window title="Map" flush>
+    <MapView pins={pins} height={640} />
+  </Window>
+</Base>

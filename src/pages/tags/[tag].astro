@@ -1,0 +1,38 @@
+---
+import Base from '../../layouts/Base.astro';
+import Window from '../../components/Window.astro';
+import MapView from '../../components/MapView.astro';
+import LocationCard from '../../components/LocationCard.astro';
+import { db, pinsFor } from '../../lib/data';
+
+export async function getStaticPaths() {
+  const data = await db();
+  return data.tags.map((tag) => ({ params: { tag: tag.slug }, props: { name: tag.name } }));
+}
+
+const { name } = Astro.props as { name: string };
+const data = await db();
+const locations = data.locations.filter((l) => l.data.tags?.includes(name));
+const pins = pinsFor(locations, (l) => data.atLocation(l.id).length);
+const videos = new Set(locations.flatMap((l) => data.atLocation(l.id).map((a) => a.video.id))).size;
+---
+
+<Base title={name} description={`K-pop MV filming locations tagged “${name}”.`}>
+  <header class="page-head">
+    <span class="kicker">TAG</span>
+    <h1>{name}</h1>
+    <p class="sub">{locations.length} place{locations.length === 1 ? '' : 's'} · {videos} video{videos === 1 ? '' : 's'}</p>
+  </header>
+
+  {
+    pins.length > 0 && (
+      <Window title="Map" flush>
+        <MapView pins={pins} height={320} />
+      </Window>
+    )
+  }
+
+  <Window title="Places">
+    <ul class="cards">{locations.map((l) => <li><LocationCard location={l} /></li>)}</ul>
+  </Window>
+</Base>

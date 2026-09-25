@@ -14,10 +14,10 @@
       "location": "parkings-rooftops-2",
       "screenshots": [
         {
-          "image": "dafaf0cad39f.webp"
+          "image": "/media/full/dafaf0cad39f.webp"
         },
         {
-          "image": "0b554362e716.webp"
+          "image": "/media/full/0b554362e716.webp"
         }
       ],
       "sheet_rows": [
@@ -28,7 +28,7 @@
       "location": "acres-space-gas-station",
       "screenshots": [
         {
-          "image": "6b6932818191.webp",
+          "image": "/media/full/6b6932818191.webp",
           "set": "spot-1"
         }
       ],

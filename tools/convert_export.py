@@ -939,7 +939,7 @@ def write_content(db, artists, video_artists, media, force=False):
             "links": compact({"google_maps": loc.maps_urls, "naver_map": loc.naver_urls,
                               "website": loc.websites, "instagram": loc.instagram}),
             "reference_videos": loc.reference_videos,
-            "photos": [f"{m}.webp" for m in media(loc.photos)],
+            "photos": [f"/media/full/{m}.webp" for m in media(loc.photos)],
             "tags": loc.tags,
             "sets": [{"id": s.id, "name": s.name} for s in sets],
             "notes": "\n".join(loc.notes),
@@ -955,7 +955,7 @@ def write_content(db, artists, video_artists, media, force=False):
             entry = appearances.setdefault(a.location.id, {"location": a.location.id, "screenshots": [],
                                                            "confidence": "", "notes": [], "sheet_rows": []})
             for m in media(a.screenshots):
-                entry["screenshots"].append(compact({"image": f"{m}.webp", "set": a.set.id if a.set else ""}))
+                entry["screenshots"].append(compact({"image": f"/media/full/{m}.webp", "set": a.set.id if a.set else ""}))
             entry["confidence"] = entry["confidence"] or a.confidence
             entry["notes"] += [n for n in a.notes if n not in entry["notes"]]
             entry["sheet_rows"] += [r for r in a.rows if r not in entry["sheet_rows"]]

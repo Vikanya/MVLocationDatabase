@@ -15,7 +15,7 @@
       "location": "namsan-central-xi",
       "screenshots": [
         {
-          "image": "2484a5dde96f.webp"
+          "image": "/media/full/2484a5dde96f.webp"
         }
       ],
       "sheet_rows": [
@@ -26,15 +26,15 @@
       "location": "provoke-seoul",
       "screenshots": [
         {
-          "image": "74ada83510eb.webp",
+          "image": "/media/full/74ada83510eb.webp",
           "set": "outside"
         },
         {
-          "image": "063a24bd9db3.webp",
+          "image": "/media/full/063a24bd9db3.webp",
           "set": "outside"
         },
         {
-          "image": "8a244d4f1de6.webp",
+          "image": "/media/full/8a244d4f1de6.webp",
           "set": "stairs"
         }
       ],

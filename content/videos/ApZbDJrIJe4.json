@@ -13,11 +13,11 @@
       "location": "ametage-studio",
       "screenshots": [
         {
-          "image": "dc249478aef3.webp",
+          "image": "/media/full/dc249478aef3.webp",
           "set": "gas-station"
         },
         {
-          "image": "cf04701d52f0.webp",
+          "image": "/media/full/cf04701d52f0.webp",
           "set": "motel"
         }
       ],
@@ -29,7 +29,7 @@
       "location": "ddmc",
       "screenshots": [
         {
-          "image": "9339639bf6bf.webp"
+          "image": "/media/full/9339639bf6bf.webp"
         }
       ],
       "sheet_rows": [

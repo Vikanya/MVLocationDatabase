@@ -14,7 +14,7 @@
       "location": "hangar-bazar-3",
       "screenshots": [
         {
-          "image": "8f6108d5caa1.webp"
+          "image": "/media/full/8f6108d5caa1.webp"
         }
       ],
       "sheet_rows": [
@@ -25,11 +25,11 @@
       "location": "acres-space-subway",
       "screenshots": [
         {
-          "image": "142f325cd55e.webp",
+          "image": "/media/full/142f325cd55e.webp",
           "set": "spot-1"
         },
         {
-          "image": "a61547ea58eb.webp",
+          "image": "/media/full/a61547ea58eb.webp",
           "set": "spot-2"
         }
       ],

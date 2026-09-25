@@ -110,9 +110,12 @@ const BASE = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 /** Site-relative link that works under the GitHub Pages sub-path. */
 export const url = (path = '') => BASE + path.replace(/^\//, '');
 
+// Images are stored as the CMS writes them ("/media/full/abc.webp"); only the file name matters here.
+// Thumbnails for newly uploaded screenshots are generated at build time (scripts/thumbnails.mjs).
+const fileName = (image: string) => image.split('/').pop()!;
 export const media = {
-  full: (image: string) => url(`media/full/${image}`),
-  thumb: (image: string) => url(`media/thumb/${image}`),
+  full: (image: string) => url(`media/full/${fileName(image)}`),
+  thumb: (image: string) => url(`media/thumb/${fileName(image)}`),
 };
 
 export const youtubeThumb = (id: string, size: 'hq' | 'maxres' = 'hq') =>

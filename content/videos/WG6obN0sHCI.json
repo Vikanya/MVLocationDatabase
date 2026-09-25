@@ -13,23 +13,23 @@
       "location": "provoke-seoul",
       "screenshots": [
         {
-          "image": "af5ddd8e778f.webp",
+          "image": "/media/full/af5ddd8e778f.webp",
           "set": "outside"
         },
         {
-          "image": "c97e61be5cb4.webp",
+          "image": "/media/full/c97e61be5cb4.webp",
           "set": "hallway"
         },
         {
-          "image": "ce2bbd81301f.webp",
+          "image": "/media/full/ce2bbd81301f.webp",
           "set": "hangar"
         },
         {
-          "image": "9cc692994e74.webp",
+          "image": "/media/full/9cc692994e74.webp",
           "set": "stairs"
         },
         {
-          "image": "ab01dc7471e3.webp",
+          "image": "/media/full/ab01dc7471e3.webp",
           "set": "bath"
         }
       ],

@@ -14,15 +14,15 @@
       "location": "ametage-studio",
       "screenshots": [
         {
-          "image": "b92ac690b9a4.webp",
+          "image": "/media/full/b92ac690b9a4.webp",
           "set": "carpe-diem"
         },
         {
-          "image": "537ab1233832.webp",
+          "image": "/media/full/537ab1233832.webp",
           "set": "space-station"
         },
         {
-          "image": "252ae69b87ed.webp",
+          "image": "/media/full/252ae69b87ed.webp",
           "set": "prison"
         }
       ],
@@ -34,11 +34,11 @@
       "location": "acres-space-gas-station",
       "screenshots": [
         {
-          "image": "45a8e466031f.webp",
+          "image": "/media/full/45a8e466031f.webp",
           "set": "spot-1"
         },
         {
-          "image": "edfae6f9ee0d.webp",
+          "image": "/media/full/edfae6f9ee0d.webp",
           "set": "spot-2"
         }
       ],

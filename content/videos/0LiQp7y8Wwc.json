@@ -14,11 +14,11 @@
       "location": "acres-space-gas-station",
       "screenshots": [
         {
-          "image": "8414071676b7.webp",
+          "image": "/media/full/8414071676b7.webp",
           "set": "spot-1"
         },
         {
-          "image": "9c2f55e422b4.webp",
+          "image": "/media/full/9c2f55e422b4.webp",
           "set": "spot-2"
         }
       ],
@@ -30,7 +30,7 @@
       "location": "gunsan-container-terminal",
       "screenshots": [
         {
-          "image": "ce1a79c999ac.webp"
+          "image": "/media/full/ce1a79c999ac.webp"
         }
       ],
       "sheet_rows": [

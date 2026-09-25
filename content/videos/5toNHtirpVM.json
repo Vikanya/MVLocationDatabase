@@ -14,19 +14,19 @@
       "location": "ametage-studio",
       "screenshots": [
         {
-          "image": "af0bd1ee6b07.webp",
+          "image": "/media/full/af0bd1ee6b07.webp",
           "set": "hospital"
         },
         {
-          "image": "8bf9b82eb7f6.webp",
+          "image": "/media/full/8bf9b82eb7f6.webp",
           "set": "lobby"
         },
         {
-          "image": "455ae28306df.webp",
+          "image": "/media/full/455ae28306df.webp",
           "set": "space-station"
         },
         {
-          "image": "6f268c61f36d.webp",
+          "image": "/media/full/6f268c61f36d.webp",
           "set": "prison"
         }
       ],

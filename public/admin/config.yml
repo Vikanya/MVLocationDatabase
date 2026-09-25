@@ -1,0 +1,254 @@
+# Admin page (Sveltia CMS) — edits the JSON files in content/ through GitHub.
+# Every save is a commit to main, which redeploys the site. Field names must match src/content.config.ts.
+
+backend:
+  name: github
+  repo: Vikanya/MVLocationDatabase
+  branch: main
+  commit_messages:
+    create: 'Add {{collection}} {{slug}}'
+    update: 'Update {{collection}} {{slug}}'
+    delete: 'Delete {{collection}} {{slug}}'
+    uploadMedia: 'Upload {{path}}'
+    deleteMedia: 'Delete {{path}}'
+
+site_url: https://vikanya.github.io/MVLocationDatabase/
+display_url: https://vikanya.github.io/MVLocationDatabase/
+
+# Screenshots and photos. Uploads are converted to WebP (same quality as the migrated ones);
+# thumbnails are made automatically when the site builds.
+media_folder: /public/media/full
+public_folder: /media/full
+media_libraries:
+  default:
+    config:
+      max_file_size: 15000000
+      slugify_filename: true
+      transformations:
+        raster_image:
+          format: webp
+          quality: 85
+          width: 2560
+          height: 2560
+
+# Keep capital letters in file names: YouTube IDs are case-sensitive.
+slug:
+  encoding: unicode
+  clean_accents: false
+  lowercase: false
+
+# Write files like the rest of content/: no empty fields, 2-space JSON.
+output:
+  omit_empty_optional_fields: true
+  json:
+    indent_style: space
+    indent_size: 2
+
+collections:
+  # ------------------------------------------------------------------ videos
+  - name: videos
+    label: Videos
+    label_singular: Video
+    description: One file per video, named after its YouTube ID. Where it was filmed goes under "Filming locations".
+    folder: /content/videos
+    format: json
+    extension: json
+    identifier_field: title
+    summary: '{{title}}'
+    sortable_fields: [title, channel]
+    slug:
+      editable: [create]
+      hint: >-
+        The YouTube video ID: the 11 characters after "v=" or "youtu.be/", e.g. C3HDIYnQnkw.
+        For Instagram use ig-<code>, for Imgur imgur-<id>. It can't be changed later.
+      pattern:
+        - '^([A-Za-z0-9_-]{11}|ig-[A-Za-z0-9_-]+|imgur-[A-Za-z0-9]+)$'
+        - 'Use the 11-character YouTube ID, or ig-… / imgur-…'
+    view_filters:
+      - { label: Has to-do items, field: review, pattern: '.' }
+      - { label: MVs, field: type, pattern: '^mv$' }
+      - { label: Performances, field: type, pattern: '^performance$' }
+    fields:
+      - name: review
+        label: To-do
+        hint: Things to check from the migration. Delete an item once it's fixed.
+        widget: list
+        required: false
+      - { name: title, label: Title, widget: string, hint: The video title as shown on YouTube }
+      - name: platform
+        label: Platform
+        widget: select
+        options: [youtube, instagram_post, imgur]
+        default: youtube
+      - { name: url, label: Link, widget: string, hint: 'e.g. https://www.youtube.com/watch?v=C3HDIYnQnkw' }
+      - name: artists
+        label: Artists
+        widget: relation
+        collection: artists
+        value_field: '{{slug}}'
+        search_fields: [name, name_ko]
+        display_fields: ['{{name}} {{name_ko}}']
+        multiple: true
+        required: false
+      - { name: song, label: Song, widget: string, required: false, hint: 'Short song name, shown on cards' }
+      - name: type
+        label: Type
+        widget: select
+        options:
+          - { label: MV, value: mv }
+          - { label: Performance, value: performance }
+          - { label: Live, value: live }
+          - { label: Cover, value: cover }
+          - { label: Clip / special, value: clip }
+          - { label: Other, value: other }
+        default: mv
+        required: false
+      - { name: channel, label: YouTube channel, widget: string, required: false }
+      - name: embeddable
+        label: Can be played on the site
+        hint: Turn off if YouTube blocks embedding for this video (the site then links to YouTube).
+        widget: boolean
+        default: true
+        required: false
+      - { name: start, label: Start at (seconds), widget: number, value_type: int, required: false }
+      - name: appearances
+        label: Filming locations
+        label_singular: Filming location
+        widget: list
+        required: false
+        summary: '{{fields.location}}'
+        fields:
+          - name: location
+            label: Location
+            widget: relation
+            collection: locations
+            value_field: '{{slug}}'
+            search_fields: [name, address, tags]
+            display_fields: ['{{name}}']
+          - name: screenshots
+            label: Screenshots
+            label_singular: Screenshot
+            widget: list
+            required: false
+            summary: '{{fields.set}}'
+            fields:
+              - { name: image, label: Screenshot, widget: image }
+              - name: set
+                label: Set / spot
+                hint: Only for locations with several sets (pick one of this location's sets).
+                widget: relation
+                collection: locations
+                value_field: '{{sets.*.id}}'
+                search_fields: ['sets.*.name', name]
+                display_fields: ['{{name}} → {{sets.*.name}}']
+                required: false
+          - name: confidence
+            label: Confidence
+            widget: select
+            options: [{ label: Not sure, value: unsure }]
+            required: false
+          - { name: notes, label: Notes, widget: text, required: false }
+          - { name: sheet_rows, label: Rows in the old sheet, widget: list, required: false, hint: Reference only }
+
+  # ------------------------------------------------------------------ locations
+  - name: locations
+    label: Locations
+    label_singular: Location
+    description: One file per place. Sets (rooms / spots of a studio) are listed inside the location.
+    folder: /content/locations
+    format: json
+    extension: json
+    identifier_field: name
+    summary: '{{name}}'
+    sortable_fields: [name]
+    slug:
+      template: '{{name | lower}}'
+      editable: true
+      hint: >-
+        Becomes the page address (…/locations/<id>/). Lowercase letters, numbers and hyphens.
+        Renaming it moves the file and updates the videos that point to it.
+      pattern:
+        - '^[a-z0-9가-힣]+(-[a-z0-9가-힣]+)*$'
+        - 'Lowercase letters, numbers and hyphens only'
+    view_filters:
+      - { label: Has to-do items, field: review, pattern: '.' }
+      - { label: Not identified yet, field: status, pattern: '^unknown$' }
+    fields:
+      - name: review
+        label: To-do
+        hint: Things to check from the migration. Delete an item once it's fixed.
+        widget: list
+        required: false
+      - { name: name, label: Name, widget: string }
+      - name: status
+        label: Status
+        widget: select
+        options:
+          - { label: Identified, value: identified }
+          - { label: Not identified yet, value: unknown }
+        default: identified
+      - { name: address, label: Address, widget: string, required: false }
+      - name: coordinates
+        label: Coordinates
+        hint: 'From Google Maps: right-click the place, click the numbers to copy them (latitude, longitude).'
+        widget: object
+        required: false
+        fields:
+          - { name: lat, label: Latitude, widget: number, value_type: float }
+          - { name: lng, label: Longitude, widget: number, value_type: float }
+      - { name: coordinates_source, label: Where the coordinates come from, widget: string, required: false }
+      - name: links
+        label: Links
+        widget: object
+        required: false
+        fields:
+          - { name: google_maps, label: Google Maps, widget: list, required: false }
+          - { name: naver_map, label: Naver Map, widget: list, required: false }
+          - { name: website, label: Websites, widget: list, required: false }
+          - { name: instagram, label: Instagram, widget: list, required: false }
+      - { name: reference_videos, label: Reference videos (tours of the place), widget: list, required: false }
+      - { name: photos, label: Photos of the place, widget: image, multiple: true, required: false }
+      - name: tags
+        label: Tags
+        hint: Kind of place or operator, e.g. Helipads, Parkings/Rooftops, Columbus
+        widget: list
+        required: false
+      - name: sets
+        label: Sets / spots
+        label_singular: Set
+        hint: For studios with several sets. The id can't change once screenshots use it.
+        widget: list
+        required: false
+        summary: '{{fields.name}}'
+        fields:
+          - { name: id, label: Id, widget: string, pattern: ['^[a-z0-9]+(-[a-z0-9]+)*$', 'Lowercase, numbers, hyphens'] }
+          - { name: name, label: Name, widget: string }
+      - { name: notes, label: Notes, widget: text, required: false }
+      - { name: sheet_rows, label: Rows in the old sheet, widget: list, required: false, hint: Reference only }
+
+  # ------------------------------------------------------------------ artists
+  - name: artists
+    label: Artists
+    label_singular: Artist
+    folder: /content/artists
+    format: json
+    extension: json
+    identifier_field: name
+    summary: '{{name}} {{name_ko}}'
+    sortable_fields: [name]
+    slug:
+      template: '{{name | lower}}'
+      editable: true
+      hint: >-
+        Becomes the page address (…/artists/<id>/). Lowercase letters, numbers and hyphens.
+        Renaming it moves the file and updates the videos that point to it.
+      pattern:
+        - '^[a-z0-9가-힣]+(-[a-z0-9가-힣]+)*$'
+        - 'Lowercase letters, numbers and hyphens only'
+    fields:
+      - { name: name, label: Name (Latin), widget: string }
+      - { name: name_ko, label: Name (Korean), widget: string, required: false }
+      - name: review
+        label: To-do
+        widget: list
+        required: false

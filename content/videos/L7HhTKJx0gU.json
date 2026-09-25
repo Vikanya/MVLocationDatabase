@@ -14,7 +14,7 @@
       "location": "abandoned-park-1",
       "screenshots": [
         {
-          "image": "a74e8b243adc.webp",
+          "image": "/media/full/a74e8b243adc.webp",
           "set": "spot-1"
         }
       ],
@@ -26,15 +26,15 @@
       "location": "acres-space-subway",
       "screenshots": [
         {
-          "image": "c59764c212cf.webp",
+          "image": "/media/full/c59764c212cf.webp",
           "set": "spot-1"
         },
         {
-          "image": "e0a481508109.webp",
+          "image": "/media/full/e0a481508109.webp",
           "set": "spot-2"
         },
         {
-          "image": "45c8232d52e0.webp",
+          "image": "/media/full/45c8232d52e0.webp",
           "set": "spot-3"
         }
       ],

@@ -13,19 +13,19 @@
       "location": "mamago-waikiki",
       "screenshots": [
         {
-          "image": "7c6de7bf7ed6.webp",
+          "image": "/media/full/7c6de7bf7ed6.webp",
           "set": "spot-1"
         },
         {
-          "image": "11c45fccc610.webp",
+          "image": "/media/full/11c45fccc610.webp",
           "set": "spot-3"
         },
         {
-          "image": "bf4d39b02aea.webp",
+          "image": "/media/full/bf4d39b02aea.webp",
           "set": "spot-4"
         },
         {
-          "image": "68b87fcf2aca.webp",
+          "image": "/media/full/68b87fcf2aca.webp",
           "set": "spot-5"
         }
       ],
@@ -37,7 +37,7 @@
       "location": "tunnels",
       "screenshots": [
         {
-          "image": "bbce000f6a1d.webp"
+          "image": "/media/full/bbce000f6a1d.webp"
         }
       ],
       "sheet_rows": [

@@ -14,11 +14,11 @@
       "location": "acres-space-gas-station",
       "screenshots": [
         {
-          "image": "9f5b8f62e7ca.webp",
+          "image": "/media/full/9f5b8f62e7ca.webp",
           "set": "spot-1"
         },
         {
-          "image": "33a0b5f73880.webp",
+          "image": "/media/full/33a0b5f73880.webp",
           "set": "spot-2"
         }
       ],
@@ -30,11 +30,11 @@
       "location": "acres-space-subway",
       "screenshots": [
         {
-          "image": "15f068a6e366.webp",
+          "image": "/media/full/15f068a6e366.webp",
           "set": "spot-1"
         },
         {
-          "image": "0648bab1cb35.webp",
+          "image": "/media/full/0648bab1cb35.webp",
           "set": "spot-2"
         }
       ],

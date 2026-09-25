@@ -3,7 +3,8 @@
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=cf4-NaLmqN4",
   "artists": [
-    "billlie"
+    "moon-sua",
+    "lady-gaga"
   ],
   "songs": [
     {
@@ -26,8 +27,5 @@
         "Studio Heal!5"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

@@ -11,7 +11,7 @@
     }
   ],
   "type": "mv",
-  "channel": "SKYLE  ",
+  "channel": "SKYLE",
   "embeddable": true,
   "appearances": [
     {
@@ -34,8 +34,5 @@
         "Ametage!11"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

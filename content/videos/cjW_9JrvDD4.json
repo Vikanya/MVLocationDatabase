@@ -3,7 +3,8 @@
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=cjW_9JrvDD4",
   "artists": [
-    "la-poem"
+    "la-poem",
+    "ive"
   ],
   "songs": [
     {
@@ -11,7 +12,7 @@
       "title_ko": "아이브"
     }
   ],
-  "type": "live",
+  "type": "cover",
   "channel": "라포엠 LA POEM",
   "embeddable": true,
   "appearances": [
@@ -27,8 +28,5 @@
         "Ametage!33"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

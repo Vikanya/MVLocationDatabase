@@ -1,4 +1,7 @@
 {
   "name": "PARK BOM",
-  "name_ko": "박봄"
+  "name_ko": "박봄",
+  "part_of": [
+    "2ne1"
+  ]
 }

@@ -2,6 +2,9 @@
   "title": "[M/V] 'The One' 드리핀(DRIPPIN)",
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=XjkTVx9V5dE",
+  "artists": [
+    "drippin"
+  ],
   "songs": [
     {
       "title": "The One"
@@ -17,8 +20,5 @@
         "Grangar!13"
       ]
     }
-  ],
-  "review": [
-    "Artist not recognised from the title — add the artist(s)"
   ]
 }

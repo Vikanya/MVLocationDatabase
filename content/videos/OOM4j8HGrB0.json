@@ -3,7 +3,8 @@
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=OOM4j8HGrB0",
   "artists": [
-    "ramengvrl"
+    "ramengvrl",
+    "ph-1"
   ],
   "songs": [
     {
@@ -26,8 +27,5 @@
         "provoke Seoul!25"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

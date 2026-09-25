@@ -1,7 +1,7 @@
 {
   "title": "구만 (qman) (9.10000) - 파란만장 (WWAVE) MV",
   "platform": "youtube",
-  "url": "https://www.youtube.com/watch?v=EErqrVZwAfk",
+  "url": "https://www.youtube.com/watch?v=THgP8rJb9Hk",
   "artists": [
     "qman"
   ],
@@ -12,7 +12,7 @@
     }
   ],
   "type": "mv",
-  "embeddable": false,
+  "embeddable": true,
   "appearances": [
     {
       "location": "ametage-studio",
@@ -26,8 +26,5 @@
         "Ametage!13"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

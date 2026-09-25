@@ -3,12 +3,7 @@
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=EFBBDwPNpWk",
   "artists": [
-    "djb-esim"
-  ],
-  "songs": [
-    {
-      "title": "NICE TO MIXX YOU"
-    }
+    "nmixx"
   ],
   "type": "other",
   "channel": "DJB",
@@ -46,8 +41,5 @@
         "Ametage!78"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

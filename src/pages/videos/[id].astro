@@ -4,6 +4,7 @@ import Window from '../../components/Window.astro';
 import MapView from '../../components/MapView.astro';
 import Player from '../../components/Player.astro';
 import Shots from '../../components/Shots.astro';
+import VideoCard from '../../components/VideoCard.astro';
 import { db, href, pinsFor, TYPE_LABEL, videoLabel, type Video } from '../../lib/data';
 
 export async function getStaticPaths() {
@@ -18,6 +19,7 @@ const appearances = data.ofVideo(video.id);
 const pins = pinsFor(appearances.map((a) => a.location), () => 1);
 const kind = video.data.type ?? 'other';
 const who = artists.map((a) => a.data.name).join(', ');
+const related = data.relatedTo(video.id);
 ---
 
 <Base
@@ -93,4 +95,12 @@ const who = artists.map((a) => a.data.name).join(', ');
       ))
     }
   </Window>
+
+  {
+    related.length > 0 && (
+      <Window title="Filmed together with" tone="chrome">
+        <ul class="cards">{related.map((v) => <li><VideoCard video={v} /></li>)}</ul>
+      </Window>
+    )
+  }
 </Base>

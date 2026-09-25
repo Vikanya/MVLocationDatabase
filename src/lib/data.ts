@@ -79,6 +79,18 @@ async function load() {
     }),
   );
 
+  // "Filmed together with" works both ways: listing it on one video is enough.
+  const videoById = new Map(videos.map((v) => [v.id, v]));
+  const relatedIds = new Map<string, Set<string>>();
+  for (const v of videos) {
+    for (const r of v.data.related ?? []) {
+      for (const [a, b] of [[v.id, r.id], [r.id, v.id]]) {
+        if (!relatedIds.has(a)) relatedIds.set(a, new Set());
+        relatedIds.get(a)!.add(b);
+      }
+    }
+  }
+
   const appearancesByLocation = group(appearances, (a) => [a.location.id]);
   const appearancesByVideo = group(appearances, (a) => [a.video.id]);
   const videosByArtist = group(videos, (v) => (v.data.artists ?? []).map((a) => a.id));
@@ -107,6 +119,8 @@ async function load() {
     /** Members and sub-units of a group, at any depth. */
     membersOf,
     directMembers: (id: string) => directMembers.get(id) ?? [],
+    /** Videos filmed together with this one (either side of the link). */
+    relatedTo: (id: string) => [...(relatedIds.get(id) ?? [])].map((r) => videoById.get(r)!).filter(Boolean),
   };
 }
 
@@ -122,7 +136,12 @@ function checkReferences(
   locationById: Map<string, Location>,
 ) {
   const problems: string[] = [];
+  const videoIds = new Set(videos.map((v) => v.id));
   for (const v of videos) {
+    for (const r of v.data.related ?? []) {
+      if (!videoIds.has(r.id)) problems.push(`video "${v.id}" is filmed together with "${r.id}", which doesn't exist`);
+      if (r.id === v.id) problems.push(`video "${v.id}" is marked as filmed together with itself`);
+    }
     for (const a of v.data.artists ?? [])
       if (!artistById.has(a.id)) problems.push(`video "${v.id}" uses artist "${a.id}", which doesn't exist`);
     for (const ap of v.data.appearances ?? []) {

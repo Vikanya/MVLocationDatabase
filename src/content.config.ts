@@ -78,6 +78,8 @@ const videos = defineCollection({
         }),
       )
       .optional(),
+    /** Other videos shot together with this one (same shoot / scene). Shown on both videos' pages. */
+    related: z.array(reference('videos')).optional(),
     review: z.array(z.string()).optional(),
   }),
 });

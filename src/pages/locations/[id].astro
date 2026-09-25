@@ -131,6 +131,8 @@ const nearby = l.tags?.length
     {
       here.map((a) => {
         const artists = data.videoArtists(a.video);
+        // videos filmed together with this one that were also shot here
+        const together = data.relatedTo(a.video.id).filter((v) => here.some((b) => b.video.id === v.id));
         return (
           <article class="appearance" data-sets={a.shots.map((s) => s.set?.id ?? '').join(' ')}>
             <div class="appearance-head">
@@ -143,6 +145,19 @@ const nearby = l.tags?.length
               </span>
               {a.confidence === 'unsure' && <span class="badge" data-kind="unsure">NOT SURE</span>}
             </div>
+            {
+              together.length > 0 && (
+                <p class="muted">
+                  ↔ Filmed together with{' '}
+                  {together.map((v, i) => (
+                    <>
+                      {i > 0 && ', '}
+                      <a href={href.video(v.id)}>{videoLabel(v)}</a>
+                    </>
+                  ))}
+                </p>
+              )
+            }
             {a.notes && <p class="muted">{a.notes}</p>}
             {a.shots.length > 0 ? (
               <Shots shots={a.shots} context={`${videoLabel(a.video)} at ${l.name}`} />

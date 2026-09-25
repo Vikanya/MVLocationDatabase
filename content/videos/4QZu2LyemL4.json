@@ -1,11 +1,14 @@
 {
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
+  ],
   "title": "[#퀸덤퍼즐] ♬Charismatic - DROP The Beat | PERFORMANCE VIDEO (4K) #QUEENDOMPUZZLE",
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=4QZu2LyemL4",
   "artists": [
-    "charismatic"
+    "drop-the-beat"
   ],
-  "song": "DROP The Beat",
+  "song": "Charismatic",
   "type": "performance",
   "channel": "Mnet K-POP",
   "embeddable": true,
@@ -35,8 +38,5 @@
         "Quatro Box!2"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

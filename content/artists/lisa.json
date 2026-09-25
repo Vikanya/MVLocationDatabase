@@ -1,3 +1,7 @@
 {
-  "name": "LISA"
+  "name": "LISA",
+  "name_ko": "리사",
+  "part_of": [
+    "blackpink"
+  ]
 }

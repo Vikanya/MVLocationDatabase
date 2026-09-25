@@ -115,6 +115,20 @@ collections:
             hint: The title in Hangul (e.g. 위로위로). Leave empty for songs without one.
             widget: string
             required: false
+      - name: related
+        label: Filmed together with
+        hint: >-
+          Other videos shot at the same time or place (e.g. two Shorts from one shoot, an MV and its performance
+          version). The link shows on both videos' pages, so add it on one of them only.
+        widget: relation
+        collection: videos
+        value_field: '{{slug}}'
+        search_fields: [title, channel, 'songs.*.title', 'songs.*.title_ko']
+        display_fields: ['{{title}}']
+        filters:
+          - { field: slug, values: ['{{slug}}'], exclude: true }
+        multiple: true
+        required: false
       - name: type
         label: Type
         widget: select
@@ -179,20 +193,6 @@ collections:
         widget: entry-links
         collection: locations
         source: appearances.*.location
-        required: false
-      - name: related
-        label: Filmed together with
-        hint: >-
-          Other videos shot at the same time or place (e.g. two Shorts from one shoot, an MV and its performance
-          version). The link shows on both videos' pages, so add it on one of them only.
-        widget: relation
-        collection: videos
-        value_field: '{{slug}}'
-        search_fields: [title, channel, 'songs.*.title', 'songs.*.title_ko']
-        display_fields: ['{{title}}']
-        filters:
-          - { field: slug, values: ['{{slug}}'], exclude: true }
-        multiple: true
         required: false
 
   # ------------------------------------------------------------------ locations

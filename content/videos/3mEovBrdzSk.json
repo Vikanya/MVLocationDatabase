@@ -3,19 +3,23 @@
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=3mEovBrdzSk",
   "artists": [
-    "j-y-park"
+    "j-y-park",
+    "anderson-.paak"
   ],
   "songs": [
     {
+      "title": "Don't Leave Me",
       "title_ko": "날 떠나지마"
     },
     {
+      "title": "She Was Pretty",
       "title_ko": "그녀는 예뻤다"
     },
     {
       "title": "Honey"
     },
     {
+      "title": "Who's Your Mama?",
       "title_ko": "어머님이 누구니"
     },
     {
@@ -39,8 +43,5 @@
         "Ametage!75"
       ]
     }
-  ],
-  "review": [
-    "Several songs were split out of the video title — check the titles (and add Latin titles if official ones exist)"
   ]
 }

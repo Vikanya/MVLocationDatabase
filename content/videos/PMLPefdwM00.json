@@ -2,6 +2,15 @@
   "title": "VICTON 빅톤 Mayday (메이데이) MV",
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=PMLPefdwM00",
+  "artists": [
+    "victon"
+  ],
+  "songs": [
+    {
+      "title": "Mayday",
+      "title_ko": "메이데이"
+    }
+  ],
   "type": "mv",
   "channel": "VICTON 빅톤",
   "embeddable": true,
@@ -17,8 +26,5 @@
         "Gimcheon campus!16"
       ]
     }
-  ],
-  "review": [
-    "Artist not recognised from the title — add the artist(s)"
   ]
 }

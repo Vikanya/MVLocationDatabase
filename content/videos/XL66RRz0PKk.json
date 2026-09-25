@@ -3,7 +3,8 @@
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=XL66RRz0PKk",
   "artists": [
-    "epex"
+    "epex",
+    "nct-u"
   ],
   "songs": [
     {
@@ -26,8 +27,5 @@
         "Ametage!35"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

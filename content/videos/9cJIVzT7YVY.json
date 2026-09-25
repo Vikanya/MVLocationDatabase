@@ -2,6 +2,9 @@
   "title": "[무슈스 x 리센느] 무슈스 함 무 보이소_사투리 ver.",
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=9cJIVzT7YVY",
+  "artists": [
+    "rescene"
+  ],
   "type": "other",
   "channel": "도미노피자",
   "embeddable": true,
@@ -26,8 +29,5 @@
         "Carwash/Gas Station!45"
       ]
     }
-  ],
-  "review": [
-    "Artist not recognised from the title — add the artist(s)"
   ]
 }

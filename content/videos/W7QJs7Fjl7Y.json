@@ -3,7 +3,8 @@
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=W7QJs7Fjl7Y",
   "artists": [
-    "jade"
+    "jade",
+    "che"
   ],
   "songs": [
     {
@@ -26,8 +27,5 @@
         "provoke Seoul!30"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

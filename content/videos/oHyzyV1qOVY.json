@@ -3,7 +3,8 @@
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=oHyzyV1qOVY",
   "artists": [
-    "ovan"
+    "ovan",
+    "bobby"
   ],
   "songs": [
     {
@@ -35,8 +36,5 @@
         "Ametage!77"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

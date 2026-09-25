@@ -1,4 +1,7 @@
 {
   "name": "Lil Moshpit",
-  "name_ko": "이휘민"
+  "name_ko": "이휘민",
+  "part_of": [
+    "groovyroom"
+  ]
 }

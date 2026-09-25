@@ -7,6 +7,7 @@
   ],
   "songs": [
     {
+      "title": "It's Okay",
       "title_ko": "아무것도 하지 않아도 돼"
     }
   ],
@@ -25,8 +26,5 @@
         "Church Roof!2"
       ]
     }
-  ],
-  "review": [
-    "Only a Korean song title is known — add the official Latin title if there is one"
   ]
 }

@@ -5,14 +5,17 @@
   "artists": [
     "dreamcatcher",
     "시연",
-    "유현"
+    "유현",
+    "sua",
+    "seventeen"
   ],
   "songs": [
     {
+      "title": "Oh My!",
       "title_ko": "어쩌나"
     }
   ],
-  "type": "clip",
+  "type": "cover",
   "channel": "Dreamcatcher official",
   "embeddable": true,
   "appearances": [
@@ -27,8 +30,5 @@
         "Interiors!9"
       ]
     }
-  ],
-  "review": [
-    "Only a Korean song title is known — add the official Latin title if there is one"
   ]
 }

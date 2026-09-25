@@ -3,7 +3,8 @@
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=SA4V3TE4j3c",
   "artists": [
-    "moonbyul"
+    "moonbyul",
+    "mirani"
   ],
   "songs": [
     {
@@ -25,8 +26,5 @@
         "Copy of Columbus!6"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

@@ -10,7 +10,7 @@
       "title": "Heart Drop"
     }
   ],
-  "type": "other",
+  "type": "performance",
   "channel": "The Artist Canvas",
   "embeddable": true,
   "appearances": [
@@ -25,8 +25,5 @@
         "Hangar bazar!28"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

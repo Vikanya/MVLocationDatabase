@@ -1,4 +1,7 @@
 {
   "name": "JESSICA",
-  "name_ko": "제시카"
+  "name_ko": "제시카",
+  "part_of": [
+    "girls-generation"
+  ]
 }

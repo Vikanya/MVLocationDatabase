@@ -3,7 +3,12 @@
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=sp1_PCipaqY",
   "artists": [
-    "epex"
+    "epex",
+    "sik-k",
+    "haon",
+    "ph-1",
+    "woodie-gochild",
+    "jay-park"
   ],
   "songs": [
     {
@@ -26,8 +31,5 @@
         "Ametage!34"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

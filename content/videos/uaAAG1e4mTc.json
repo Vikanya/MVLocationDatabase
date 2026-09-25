@@ -3,7 +3,8 @@
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=uaAAG1e4mTc",
   "artists": [
-    "park-bom"
+    "park-bom",
+    "whee-in"
   ],
   "songs": [
     {
@@ -25,8 +26,5 @@
         "Parkings/Rooftops!57"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

@@ -3,7 +3,9 @@
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=t20LtL4dJQs",
   "artists": [
-    "chil-label"
+    "chil-label",
+    "memi",
+    "24hours"
   ],
   "songs": [
     {
@@ -34,8 +36,5 @@
         "Ametage!25"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

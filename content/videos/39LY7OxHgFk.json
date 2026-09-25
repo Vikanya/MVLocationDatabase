@@ -7,6 +7,7 @@
   ],
   "songs": [
     {
+      "title": "Eternal Comet",
       "title_ko": "혜성"
     }
   ],
@@ -25,8 +26,5 @@
         "Mamago!6"
       ]
     }
-  ],
-  "review": [
-    "Only a Korean song title is known — add the official Latin title if there is one"
   ]
 }

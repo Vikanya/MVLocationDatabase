@@ -1,4 +1,7 @@
 {
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
+  ],
   "title": "[MV] BAE173 _ Fifty-Fifty",
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=yXj6s7KbkDU",
@@ -34,8 +37,5 @@
         "provoke Seoul!3"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

@@ -3,7 +3,8 @@
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=MtmsI3Iqra0",
   "artists": [
-    "sorn"
+    "sorn",
+    "hongseok"
   ],
   "songs": [
     {
@@ -25,8 +26,5 @@
         "Interiors!3"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

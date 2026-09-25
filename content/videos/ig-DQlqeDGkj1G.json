@@ -1,7 +1,10 @@
 {
-  "title": "Instagram post",
+  "title": "𝐓𝐡𝐞 𝐌𝐮𝐬𝐞 𝐨𝐟 𝐁𝐄𝐈𝐃𝐄𝐋𝐋𝐈, 𝐊𝐘𝐔𝐉𝐈𝐍",
   "platform": "instagram_post",
   "url": "https://www.instagram.com/p/DQlqeDGkj1G",
+  "artists": [
+    "kyujin"
+  ],
   "type": "other",
   "embeddable": true,
   "appearances": [
@@ -17,9 +20,5 @@
         "Carwash/Gas Station!38"
       ]
     }
-  ],
-  "review": [
-    "Artist not recognised from the title — add the artist(s)",
-    "No title in the sheet — replace the placeholder title"
   ]
 }

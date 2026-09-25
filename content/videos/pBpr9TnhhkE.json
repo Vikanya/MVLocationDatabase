@@ -2,6 +2,9 @@
   "title": "𝗩𝟴 'singasong' Official MV",
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=pBpr9TnhhkE",
+  "artists": [
+    "v8"
+  ],
   "songs": [
     {
       "title": "singasong"
@@ -22,8 +25,5 @@
         "Quarries!16"
       ]
     }
-  ],
-  "review": [
-    "Artist not recognised from the title — add the artist(s)"
   ]
 }

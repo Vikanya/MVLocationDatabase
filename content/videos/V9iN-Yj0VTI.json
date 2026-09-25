@@ -5,7 +5,11 @@
   "artists": [
     "wei"
   ],
-  "song": "HOME",
+  "songs": [
+    {
+      "title": "HOME"
+    }
+  ],
   "type": "mv",
   "channel": "WEi",
   "embeddable": true,

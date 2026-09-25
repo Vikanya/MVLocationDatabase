@@ -5,7 +5,11 @@
   "artists": [
     "halo"
   ],
-  "song": "O.M.G.",
+  "songs": [
+    {
+      "title": "O.M.G."
+    }
+  ],
   "type": "mv",
   "embeddable": false,
   "appearances": [

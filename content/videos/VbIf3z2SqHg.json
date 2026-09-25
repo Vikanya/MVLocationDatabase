@@ -5,7 +5,11 @@
   "artists": [
     "mark"
   ],
-  "song": "Child",
+  "songs": [
+    {
+      "title": "Child"
+    }
+  ],
   "type": "mv",
   "channel": "SMTOWN",
   "embeddable": true,

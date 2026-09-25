@@ -5,7 +5,11 @@
   "artists": [
     "g-i-dle"
   ],
-  "song": "LATATA",
+  "songs": [
+    {
+      "title": "LATATA"
+    }
+  ],
   "type": "mv",
   "channel": "i-dle (아이들)",
   "embeddable": true,

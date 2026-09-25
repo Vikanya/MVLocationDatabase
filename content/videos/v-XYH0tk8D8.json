@@ -5,7 +5,11 @@
   "artists": [
     "hyunjun"
   ],
-  "song": "Backseat",
+  "songs": [
+    {
+      "title": "Backseat"
+    }
+  ],
   "type": "mv",
   "channel": "Blossom Entertainment",
   "embeddable": true,

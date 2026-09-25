@@ -5,7 +5,11 @@
   "artists": [
     "stayc"
   ],
-  "song": "1 Thing",
+  "songs": [
+    {
+      "title": "1 Thing"
+    }
+  ],
   "type": "performance",
   "channel": "STAYC",
   "embeddable": true,

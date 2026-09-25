@@ -5,7 +5,11 @@
   "artists": [
     "soojin"
   ],
-  "song": "BADITUDE",
+  "songs": [
+    {
+      "title": "BADITUDE"
+    }
+  ],
   "type": "mv",
   "channel": "SOOJIN",
   "embeddable": true,

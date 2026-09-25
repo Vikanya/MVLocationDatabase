@@ -5,7 +5,11 @@
   "artists": [
     "qwer"
   ],
-  "song": "SHOW DOWN",
+  "songs": [
+    {
+      "title": "SHOW DOWN"
+    }
+  ],
   "type": "mv",
   "channel": "QWER",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "cravity"
   ],
-  "song": "SET NET G0?!",
+  "songs": [
+    {
+      "title": "SET NET G0?!"
+    }
+  ],
   "type": "mv",
   "channel": "STARSHIP",
   "embeddable": true,

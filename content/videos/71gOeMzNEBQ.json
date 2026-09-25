@@ -5,7 +5,11 @@
   "artists": [
     "verivery"
   ],
-  "song": "TRIGGER",
+  "songs": [
+    {
+      "title": "TRIGGER"
+    }
+  ],
   "type": "mv",
   "channel": "VERIVERY",
   "embeddable": true,

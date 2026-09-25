@@ -5,8 +5,12 @@
   "artists": [
     "stray-kids"
   ],
-  "song": "FREEZE",
-  "song_ko": "땡",
+  "songs": [
+    {
+      "title": "FREEZE",
+      "title_ko": "땡"
+    }
+  ],
   "type": "other",
   "channel": "Stray Kids",
   "embeddable": true,

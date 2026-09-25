@@ -5,7 +5,11 @@
   "artists": [
     "nct-dream"
   ],
-  "song": "Quiet Down",
+  "songs": [
+    {
+      "title": "Quiet Down"
+    }
+  ],
   "type": "other",
   "channel": "NCT DREAM",
   "embeddable": true,

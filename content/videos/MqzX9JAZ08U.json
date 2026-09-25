@@ -5,8 +5,12 @@
   "artists": [
     "jeon-soyeon"
   ],
-  "song": "BEAM BEAM",
-  "song_ko": "삠삠",
+  "songs": [
+    {
+      "title": "BEAM BEAM",
+      "title_ko": "삠삠"
+    }
+  ],
   "type": "mv",
   "channel": "i-dle (아이들)",
   "embeddable": true,

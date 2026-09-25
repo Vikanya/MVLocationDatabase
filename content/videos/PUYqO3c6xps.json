@@ -5,7 +5,11 @@
   "artists": [
     "trendz"
   ],
-  "song": "GLOW",
+  "songs": [
+    {
+      "title": "GLOW"
+    }
+  ],
   "type": "mv",
   "channel": "TRENDZ(트렌드지)",
   "embeddable": true,

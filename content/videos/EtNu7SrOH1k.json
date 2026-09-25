@@ -5,7 +5,11 @@
   "artists": [
     "fantasy-boys"
   ],
-  "song": "Undeniable",
+  "songs": [
+    {
+      "title": "Undeniable"
+    }
+  ],
   "type": "mv",
   "channel": "Fantasy Boys_Official",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "ryeowook"
   ],
-  "song": "Runaway",
+  "songs": [
+    {
+      "title": "Runaway"
+    }
+  ],
   "type": "mv",
   "channel": "SMTOWN",
   "embeddable": true,

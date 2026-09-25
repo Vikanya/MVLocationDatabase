@@ -5,7 +5,11 @@
   "artists": [
     "triples"
   ],
-  "song": "Rolex",
+  "songs": [
+    {
+      "title": "Rolex"
+    }
+  ],
   "type": "performance",
   "channel": "tripleS official",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "fromis-9"
   ],
-  "song": "WE GO",
+  "songs": [
+    {
+      "title": "WE GO"
+    }
+  ],
   "type": "mv",
   "channel": "Official fromis_9",
   "embeddable": true,

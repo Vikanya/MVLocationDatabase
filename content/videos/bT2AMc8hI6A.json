@@ -5,7 +5,11 @@
   "artists": [
     "weki-meki"
   ],
-  "song": "Crush",
+  "songs": [
+    {
+      "title": "Crush"
+    }
+  ],
   "type": "mv",
   "channel": "Weki Meki 위키미키",
   "embeddable": true,

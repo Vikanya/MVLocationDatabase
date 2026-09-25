@@ -5,7 +5,11 @@
   "artists": [
     "jessica"
   ],
-  "song": "Get it? Got it? Good",
+  "songs": [
+    {
+      "title": "Get it? Got it? Good"
+    }
+  ],
   "type": "mv",
   "channel": "CORIDEL ENTERTAINMENT",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "young-posse"
   ],
-  "song": "we don",
+  "songs": [
+    {
+      "title": "we don"
+    }
+  ],
   "type": "mv",
   "channel": "YOUNG POSSE • 영파씨",
   "embeddable": true,

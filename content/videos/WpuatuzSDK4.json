@@ -5,7 +5,11 @@
   "artists": [
     "seventeen"
   ],
-  "song": "Rock with you",
+  "songs": [
+    {
+      "title": "Rock with you"
+    }
+  ],
   "type": "mv",
   "channel": "HYBE LABELS",
   "embeddable": true,

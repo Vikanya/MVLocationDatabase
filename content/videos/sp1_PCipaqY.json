@@ -5,7 +5,11 @@
   "artists": [
     "epex"
   ],
-  "song": "GIDDY UP",
+  "songs": [
+    {
+      "title": "GIDDY UP"
+    }
+  ],
   "type": "cover",
   "channel": "EPEX",
   "embeddable": true,

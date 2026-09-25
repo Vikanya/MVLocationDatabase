@@ -5,7 +5,11 @@
   "artists": [
     "stray-kids"
   ],
-  "song": "Back Door",
+  "songs": [
+    {
+      "title": "Back Door"
+    }
+  ],
   "type": "mv",
   "channel": "JYP Entertainment",
   "embeddable": true,

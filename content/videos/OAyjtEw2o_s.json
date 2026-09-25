@@ -5,7 +5,11 @@
   "artists": [
     "alice"
   ],
-  "song": "DANCE ON",
+  "songs": [
+    {
+      "title": "DANCE ON"
+    }
+  ],
   "type": "mv",
   "channel": "1theK (원더케이)",
   "embeddable": true,

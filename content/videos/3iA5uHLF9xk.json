@@ -7,7 +7,11 @@
     "잔나비-최정훈",
     "사이먼-도미닉"
   ],
-  "song_ko": "사라진 모든 것들에게",
+  "songs": [
+    {
+      "title_ko": "사라진 모든 것들에게"
+    }
+  ],
   "type": "mv",
   "channel": "1theK (원더케이)",
   "embeddable": true,

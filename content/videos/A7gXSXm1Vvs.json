@@ -5,7 +5,11 @@
   "artists": [
     "cravity"
   ],
-  "song": "C",
+  "songs": [
+    {
+      "title": "C"
+    }
+  ],
   "type": "mv",
   "channel": "STARSHIP",
   "embeddable": true,

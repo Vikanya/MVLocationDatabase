@@ -5,7 +5,11 @@
   "artists": [
     "lun8"
   ],
-  "song": "Lost",
+  "songs": [
+    {
+      "title": "Lost"
+    }
+  ],
   "type": "mv",
   "channel": "fantagio 판타지오",
   "embeddable": true,

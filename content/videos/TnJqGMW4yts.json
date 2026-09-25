@@ -5,7 +5,11 @@
   "artists": [
     "bvndit"
   ],
-  "song": "Hocus Pocus",
+  "songs": [
+    {
+      "title": "Hocus Pocus"
+    }
+  ],
   "type": "mv",
   "channel": "STONE MUSIC",
   "embeddable": true,

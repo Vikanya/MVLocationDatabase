@@ -5,8 +5,12 @@
   "artists": [
     "vav"
   ],
-  "song": "Gorgeous",
-  "song_ko": "예쁘다고",
+  "songs": [
+    {
+      "title": "Gorgeous",
+      "title_ko": "예쁘다고"
+    }
+  ],
   "type": "mv",
   "channel": "A team",
   "embeddable": true,

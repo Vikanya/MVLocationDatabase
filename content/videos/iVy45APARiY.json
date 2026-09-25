@@ -5,7 +5,11 @@
   "artists": [
     "eite"
   ],
-  "song": "INDEPENDENT WOMAN",
+  "songs": [
+    {
+      "title": "INDEPENDENT WOMAN"
+    }
+  ],
   "type": "mv",
   "channel": "EVA.ENTERTAINMENT",
   "embeddable": true,

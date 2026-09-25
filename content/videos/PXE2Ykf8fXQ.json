@@ -5,7 +5,11 @@
   "artists": [
     "refund-sisters"
   ],
-  "song": "DON'T TOUCH ME",
+  "songs": [
+    {
+      "title": "DON'T TOUCH ME"
+    }
+  ],
   "type": "mv",
   "channel": "SUPER SOUND Bugs!",
   "embeddable": true,

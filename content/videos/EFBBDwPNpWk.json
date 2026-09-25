@@ -5,7 +5,11 @@
   "artists": [
     "djb-esim"
   ],
-  "song": "NICE TO MIXX YOU",
+  "songs": [
+    {
+      "title": "NICE TO MIXX YOU"
+    }
+  ],
   "type": "other",
   "channel": "DJB",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "xdinary-heroes"
   ],
-  "song": "Beautiful Life",
+  "songs": [
+    {
+      "title": "Beautiful Life"
+    }
+  ],
   "type": "mv",
   "channel": "JYP Entertainment",
   "embeddable": true,

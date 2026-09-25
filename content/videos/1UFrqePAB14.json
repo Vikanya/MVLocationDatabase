@@ -5,7 +5,11 @@
   "artists": [
     "kiiras"
   ],
-  "song": "KILL MA BO$$",
+  "songs": [
+    {
+      "title": "KILL MA BO$$"
+    }
+  ],
   "type": "mv",
   "channel": "1theK (원더케이)",
   "embeddable": true,

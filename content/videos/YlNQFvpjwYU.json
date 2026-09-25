@@ -5,7 +5,11 @@
   "artists": [
     "시연"
   ],
-  "song_ko": "시작",
+  "songs": [
+    {
+      "title_ko": "시작"
+    }
+  ],
   "type": "mv",
   "channel": "Dreamcatcher official",
   "embeddable": true,

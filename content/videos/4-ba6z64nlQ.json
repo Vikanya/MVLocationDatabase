@@ -5,7 +5,11 @@
   "artists": [
     "all-h-ours"
   ],
-  "song": "DEAD MAN WALKING",
+  "songs": [
+    {
+      "title": "DEAD MAN WALKING"
+    }
+  ],
   "type": "mv",
   "channel": "올아워즈 ALL(H)OURS ",
   "embeddable": true,

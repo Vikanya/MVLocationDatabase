@@ -5,8 +5,12 @@
   "artists": [
     "onewe"
   ],
-  "song": "Beautiful Ashes",
-  "song_ko": "추억의 소각장",
+  "songs": [
+    {
+      "title": "Beautiful Ashes",
+      "title_ko": "추억의 소각장"
+    }
+  ],
   "type": "mv",
   "channel": "ONEWE",
   "embeddable": true,

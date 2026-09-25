@@ -5,7 +5,11 @@
   "artists": [
     "ateez"
   ],
-  "song": "Guerrilla",
+  "songs": [
+    {
+      "title": "Guerrilla"
+    }
+  ],
   "type": "mv",
   "channel": "KQ ENTERTAINMENT",
   "embeddable": true,

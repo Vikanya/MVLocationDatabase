@@ -5,7 +5,11 @@
   "artists": [
     "yoon-seobin"
   ],
-  "song": "Rizz",
+  "songs": [
+    {
+      "title": "Rizz"
+    }
+  ],
   "type": "mv",
   "channel": "윤서빈 (Yoon Seobin)",
   "embeddable": true,

@@ -5,8 +5,12 @@
   "artists": [
     "bibi"
   ],
-  "song": "Animal Farm",
-  "song_ko": "가면무도회",
+  "songs": [
+    {
+      "title": "Animal Farm",
+      "title_ko": "가면무도회"
+    }
+  ],
   "type": "mv",
   "channel": "BIBI",
   "embeddable": true,

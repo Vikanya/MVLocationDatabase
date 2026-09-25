@@ -5,7 +5,11 @@
   "artists": [
     "wonjeong-department-store"
   ],
-  "song": "PURE HYMN",
+  "songs": [
+    {
+      "title": "PURE HYMN"
+    }
+  ],
   "type": "mv",
   "channel": "원정백화점 WONJEONG DEPARTMENT STORE",
   "embeddable": true,

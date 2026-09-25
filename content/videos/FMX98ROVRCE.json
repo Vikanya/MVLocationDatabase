@@ -5,7 +5,11 @@
   "artists": [
     "lisa"
   ],
-  "song": "DREAM",
+  "songs": [
+    {
+      "title": "DREAM"
+    }
+  ],
   "type": "mv",
   "channel": "LLOUD Official",
   "embeddable": true,

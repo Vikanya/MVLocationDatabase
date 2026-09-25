@@ -5,7 +5,11 @@
   "artists": [
     "fifty-fifty"
   ],
-  "song": "SOS",
+  "songs": [
+    {
+      "title": "SOS"
+    }
+  ],
   "type": "mv",
   "channel": "FIFTY FIFTY Official",
   "embeddable": true,

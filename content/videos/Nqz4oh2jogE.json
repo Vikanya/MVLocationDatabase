@@ -5,7 +5,11 @@
   "artists": [
     "moonbyul"
   ],
-  "song_ko": "머리에서 발끝까지",
+  "songs": [
+    {
+      "title_ko": "머리에서 발끝까지"
+    }
+  ],
   "type": "clip",
   "channel": "MAMAMOO",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "onf"
   ],
-  "song": "Why",
+  "songs": [
+    {
+      "title": "Why"
+    }
+  ],
   "type": "mv",
   "embeddable": true,
   "appearances": [

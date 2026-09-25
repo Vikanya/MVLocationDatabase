@@ -5,7 +5,11 @@
   "artists": [
     "le-sserafim"
   ],
-  "song": "Impurities",
+  "songs": [
+    {
+      "title": "Impurities"
+    }
+  ],
   "type": "mv",
   "channel": "HYBE LABELS",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "nowz"
   ],
-  "song": "EVERGLOW",
+  "songs": [
+    {
+      "title": "EVERGLOW"
+    }
+  ],
   "type": "mv",
   "channel": "NOWZ 나우즈 (Official YouTube Channel)",
   "embeddable": true,

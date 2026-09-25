@@ -5,7 +5,11 @@
   "artists": [
     "stayc"
   ],
-  "song": "ASAP",
+  "songs": [
+    {
+      "title": "ASAP"
+    }
+  ],
   "type": "live",
   "channel": "STAYC",
   "embeddable": true,

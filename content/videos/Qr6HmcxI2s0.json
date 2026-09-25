@@ -5,7 +5,11 @@
   "artists": [
     "fearless-trailer"
   ],
-  "song": "The World Is My Oyster",
+  "songs": [
+    {
+      "title": "The World Is My Oyster"
+    }
+  ],
   "type": "clip",
   "channel": "HYBE LABELS",
   "embeddable": true,

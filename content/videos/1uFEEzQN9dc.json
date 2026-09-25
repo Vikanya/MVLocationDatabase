@@ -5,7 +5,11 @@
   "artists": [
     "bol4"
   ],
-  "song": "Bloom",
+  "songs": [
+    {
+      "title": "Bloom"
+    }
+  ],
   "type": "mv",
   "channel": "SUPER SOUND Bugs!",
   "embeddable": true,

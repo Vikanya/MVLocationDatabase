@@ -5,7 +5,11 @@
   "artists": [
     "skyle"
   ],
-  "song": "Bye Bye Bye",
+  "songs": [
+    {
+      "title": "Bye Bye Bye"
+    }
+  ],
   "type": "mv",
   "channel": "SKYLE  ",
   "embeddable": true,

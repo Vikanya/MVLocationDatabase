@@ -5,7 +5,11 @@
   "artists": [
     "rocket-punch-japan-1st-single"
   ],
-  "song": "Fiore",
+  "songs": [
+    {
+      "title": "Fiore"
+    }
+  ],
   "type": "mv",
   "channel": "Rocket Punch Japan Official Channel",
   "embeddable": true,

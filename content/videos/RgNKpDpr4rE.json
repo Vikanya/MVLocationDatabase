@@ -5,8 +5,12 @@
   "artists": [
     "kcm"
   ],
-  "song": "Dawn",
-  "song_ko": "새벽길",
+  "songs": [
+    {
+      "title": "Dawn",
+      "title_ko": "새벽길"
+    }
+  ],
   "type": "mv",
   "channel": "1theK (원더케이)",
   "embeddable": true,

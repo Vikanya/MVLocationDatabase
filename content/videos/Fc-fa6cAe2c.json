@@ -5,8 +5,12 @@
   "artists": [
     "kai"
   ],
-  "song": "Mmmh",
-  "song_ko": "음",
+  "songs": [
+    {
+      "title": "Mmmh",
+      "title_ko": "음"
+    }
+  ],
   "type": "mv",
   "channel": "SMTOWN",
   "embeddable": true,

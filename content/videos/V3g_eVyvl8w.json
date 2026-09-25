@@ -5,7 +5,11 @@
   "artists": [
     "camo"
   ],
-  "song": "Official Music Video",
+  "songs": [
+    {
+      "title": "Official Music Video"
+    }
+  ],
   "type": "mv",
   "channel": "502",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "key"
   ],
-  "song": "Tongue Tied",
+  "songs": [
+    {
+      "title": "Tongue Tied"
+    }
+  ],
   "type": "mv",
   "channel": "SMTOWN",
   "embeddable": true,

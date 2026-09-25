@@ -5,7 +5,11 @@
   "artists": [
     "jay-park"
   ],
-  "song": "Gimme A Minute",
+  "songs": [
+    {
+      "title": "Gimme A Minute"
+    }
+  ],
   "type": "mv",
   "channel": "JAY PARK",
   "embeddable": true,

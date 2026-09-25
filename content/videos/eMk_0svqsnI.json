@@ -5,7 +5,11 @@
   "artists": [
     "itzy"
   ],
-  "song": "GOLD",
+  "songs": [
+    {
+      "title": "GOLD"
+    }
+  ],
   "type": "mv",
   "channel": "JYP Entertainment",
   "embeddable": true,

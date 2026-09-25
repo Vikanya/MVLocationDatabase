@@ -5,7 +5,11 @@
   "artists": [
     "mcnd"
   ],
-  "song": "Devil Youth Club",
+  "songs": [
+    {
+      "title": "Devil Youth Club"
+    }
+  ],
   "type": "mv",
   "channel": "TOP MEDIA",
   "embeddable": true,

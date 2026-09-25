@@ -5,7 +5,11 @@
   "artists": [
     "tempest"
   ],
-  "song": "LIGHTHOUSE",
+  "songs": [
+    {
+      "title": "LIGHTHOUSE"
+    }
+  ],
   "type": "mv",
   "channel": "TEMPEST",
   "embeddable": true,

@@ -5,8 +5,12 @@
   "artists": [
     "onf"
   ],
-  "song": "Love Effect",
-  "song_ko": "바람이 분다",
+  "songs": [
+    {
+      "title": "Love Effect",
+      "title_ko": "바람이 분다"
+    }
+  ],
   "type": "clip",
   "channel": "ONF OFFICIAL",
   "embeddable": true,

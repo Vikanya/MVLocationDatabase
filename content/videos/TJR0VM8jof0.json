@@ -5,7 +5,11 @@
   "artists": [
     "all-h-ours"
   ],
-  "song": "READY 2 RUMBLE",
+  "songs": [
+    {
+      "title": "READY 2 RUMBLE"
+    }
+  ],
   "type": "mv",
   "channel": "올아워즈 ALL(H)OURS ",
   "embeddable": true,

@@ -5,8 +5,12 @@
   "artists": [
     "oneus"
   ],
-  "song": "Say Yes!",
-  "song_ko": "눈을 돌리지마",
+  "songs": [
+    {
+      "title": "Say Yes!",
+      "title_ko": "눈을 돌리지마"
+    }
+  ],
   "type": "mv",
   "channel": "ONEUS",
   "embeddable": true,

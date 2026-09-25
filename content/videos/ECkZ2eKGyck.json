@@ -5,7 +5,11 @@
   "artists": [
     "rainz"
   ],
-  "song": "Turn it up",
+  "songs": [
+    {
+      "title": "Turn it up"
+    }
+  ],
   "type": "mv",
   "channel": "GENIE MUSIC",
   "embeddable": true,

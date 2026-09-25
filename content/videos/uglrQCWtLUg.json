@@ -5,7 +5,11 @@
   "artists": [
     "nayeon"
   ],
-  "song": "ABCD",
+  "songs": [
+    {
+      "title": "ABCD"
+    }
+  ],
   "type": "performance",
   "channel": "TWICE",
   "embeddable": true,

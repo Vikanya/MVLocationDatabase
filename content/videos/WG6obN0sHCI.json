@@ -5,7 +5,11 @@
   "artists": [
     "epex"
   ],
-  "song": "Lock Down",
+  "songs": [
+    {
+      "title": "Lock Down"
+    }
+  ],
   "type": "mv",
   "channel": "EPEX",
   "embeddable": true,

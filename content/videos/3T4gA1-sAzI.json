@@ -5,7 +5,11 @@
   "artists": [
     "the-boyz"
   ],
-  "song": "TRIGGER (導火線)",
+  "songs": [
+    {
+      "title": "TRIGGER (導火線)"
+    }
+  ],
   "type": "mv",
   "channel": "THE BOYZ",
   "embeddable": true,

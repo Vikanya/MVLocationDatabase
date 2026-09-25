@@ -5,7 +5,11 @@
   "artists": [
     "rothy"
   ],
-  "song": "Rain Drive 🚘",
+  "songs": [
+    {
+      "title": "Rain Drive 🚘"
+    }
+  ],
   "type": "clip",
   "channel": "+ 기억 프로젝트",
   "embeddable": true,

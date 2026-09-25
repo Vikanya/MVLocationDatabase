@@ -5,7 +5,11 @@
   "artists": [
     "8turn"
   ],
-  "song": "Electric Heart",
+  "songs": [
+    {
+      "title": "Electric Heart"
+    }
+  ],
   "type": "mv",
   "channel": "8TURN",
   "embeddable": true,

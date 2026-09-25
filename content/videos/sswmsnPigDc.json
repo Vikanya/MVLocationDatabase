@@ -5,7 +5,11 @@
   "artists": [
     "txt"
   ],
-  "song": "Can",
+  "songs": [
+    {
+      "title": "Can"
+    }
+  ],
   "type": "mv",
   "channel": "HYBE LABELS",
   "embeddable": true,

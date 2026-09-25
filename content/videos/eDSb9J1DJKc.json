@@ -5,7 +5,11 @@
   "artists": [
     "joohoney"
   ],
-  "song": "Push",
+  "songs": [
+    {
+      "title": "Push"
+    }
+  ],
   "type": "mv",
   "channel": "STARSHIP",
   "embeddable": true,

@@ -5,7 +5,14 @@
   "artists": [
     "아슬x김완선"
   ],
-  "song_ko": "오늘밤 + 리듬속의 그 춤을",
+  "songs": [
+    {
+      "title_ko": "오늘밤"
+    },
+    {
+      "title_ko": "리듬속의 그 춤을"
+    }
+  ],
   "type": "mv",
   "channel": "SMTOWN Friends",
   "embeddable": true,
@@ -23,6 +30,6 @@
     }
   ],
   "review": [
-    "Only a Korean song title is known — add the official Latin title if there is one"
+    "Several songs were split out of the video title — check the titles (and add Latin titles if official ones exist)"
   ]
 }

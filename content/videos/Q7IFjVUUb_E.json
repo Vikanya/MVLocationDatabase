@@ -5,7 +5,11 @@
   "artists": [
     "stray-kids"
   ],
-  "song": "RUN IT",
+  "songs": [
+    {
+      "title": "RUN IT"
+    }
+  ],
   "type": "mv",
   "channel": "JYP Entertainment",
   "embeddable": true,

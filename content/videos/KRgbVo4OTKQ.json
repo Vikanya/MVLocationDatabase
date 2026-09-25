@@ -5,7 +5,11 @@
   "artists": [
     "ikon"
   ],
-  "song": "딴따라 Tantara",
+  "songs": [
+    {
+      "title": "딴따라 Tantara"
+    }
+  ],
   "type": "mv",
   "channel": "iKON",
   "embeddable": true,

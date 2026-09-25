@@ -5,7 +5,11 @@
   "artists": [
     "aespa"
   ],
-  "song": "Get Goin’",
+  "songs": [
+    {
+      "title": "Get Goin’"
+    }
+  ],
   "type": "mv",
   "channel": "Apple TV",
   "embeddable": true,

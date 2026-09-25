@@ -5,7 +5,11 @@
   "artists": [
     "stayc"
   ],
-  "song": "Cheeky Icy Thang",
+  "songs": [
+    {
+      "title": "Cheeky Icy Thang"
+    }
+  ],
   "type": "mv",
   "channel": "STAYC",
   "embeddable": true,

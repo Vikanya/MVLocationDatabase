@@ -5,7 +5,11 @@
   "artists": [
     "yoon-san-ha"
   ],
-  "song": "BLEEDING",
+  "songs": [
+    {
+      "title": "BLEEDING"
+    }
+  ],
   "type": "performance",
   "channel": "fantagio 판타지오",
   "embeddable": true,

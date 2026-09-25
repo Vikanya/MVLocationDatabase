@@ -5,8 +5,12 @@
   "artists": [
     "zico"
   ],
-  "song": "I Am You, You Are Me",
-  "song_ko": "너는 나 나는 너",
+  "songs": [
+    {
+      "title": "I Am You, You Are Me",
+      "title_ko": "너는 나 나는 너"
+    }
+  ],
   "type": "cover",
   "channel": "Official fromis_9",
   "embeddable": true,

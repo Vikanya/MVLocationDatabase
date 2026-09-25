@@ -5,7 +5,11 @@
   "artists": [
     "waker"
   ],
-  "song": "Vanilla Choco Shake",
+  "songs": [
+    {
+      "title": "Vanilla Choco Shake"
+    }
+  ],
   "type": "mv",
   "channel": "WAKER (웨이커)",
   "embeddable": true,

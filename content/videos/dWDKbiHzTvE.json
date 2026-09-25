@@ -5,7 +5,11 @@
   "artists": [
     "kep1er"
   ],
-  "song": "Giddy",
+  "songs": [
+    {
+      "title": "Giddy"
+    }
+  ],
   "type": "performance",
   "channel": "Kep1er",
   "embeddable": true,

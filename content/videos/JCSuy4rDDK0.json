@@ -5,7 +5,11 @@
   "artists": [
     "fromis-9"
   ],
-  "song": "Supersonic",
+  "songs": [
+    {
+      "title": "Supersonic"
+    }
+  ],
   "type": "performance",
   "channel": "스튜디오 오와",
   "embeddable": true,

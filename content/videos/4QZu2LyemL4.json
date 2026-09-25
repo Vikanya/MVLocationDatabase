@@ -11,7 +11,11 @@
     "yeonhee",
     "zoa"
   ],
-  "song": "Charismatic",
+  "songs": [
+    {
+      "title": "Charismatic"
+    }
+  ],
   "type": "performance",
   "channel": "Mnet K-POP",
   "embeddable": true,

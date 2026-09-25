@@ -5,8 +5,12 @@
   "artists": [
     "bewhy"
   ],
-  "song": "Newly",
-  "song_ko": "새로이",
+  "songs": [
+    {
+      "title": "Newly",
+      "title_ko": "새로이"
+    }
+  ],
   "type": "mv",
   "channel": "1theK (원더케이)",
   "embeddable": true,

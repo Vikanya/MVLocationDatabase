@@ -5,7 +5,11 @@
   "artists": [
     "evnne"
   ],
-  "song": "UGLY",
+  "songs": [
+    {
+      "title": "UGLY"
+    }
+  ],
   "type": "mv",
   "channel": "STONE MUSIC",
   "embeddable": true,

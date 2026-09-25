@@ -5,7 +5,11 @@
   "artists": [
     "epex"
   ],
-  "song": "Misfit",
+  "songs": [
+    {
+      "title": "Misfit"
+    }
+  ],
   "type": "cover",
   "channel": "EPEX",
   "embeddable": true,

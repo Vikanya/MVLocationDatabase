@@ -5,7 +5,11 @@
   "artists": [
     "bbe-yana"
   ],
-  "song": "SPACE MULAN",
+  "songs": [
+    {
+      "title": "SPACE MULAN"
+    }
+  ],
   "type": "mv",
   "channel": "BÉBE YANA",
   "embeddable": true,

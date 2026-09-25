@@ -5,7 +5,11 @@
   "artists": [
     "stray-kids"
   ],
-  "song": "TOPLINE",
+  "songs": [
+    {
+      "title": "TOPLINE"
+    }
+  ],
   "type": "other",
   "channel": "Stray Kids",
   "embeddable": true,

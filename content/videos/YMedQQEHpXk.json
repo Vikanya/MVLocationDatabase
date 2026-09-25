@@ -5,7 +5,11 @@
   "artists": [
     "epex"
   ],
-  "song_ko": "같은 시간 같은 자리",
+  "songs": [
+    {
+      "title_ko": "같은 시간 같은 자리"
+    }
+  ],
   "type": "cover",
   "channel": "EPEX",
   "embeddable": true,

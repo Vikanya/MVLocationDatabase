@@ -5,7 +5,11 @@
   "artists": [
     "tnx"
   ],
-  "song": "FUEGO",
+  "songs": [
+    {
+      "title": "FUEGO"
+    }
+  ],
   "type": "mv",
   "channel": "TNX",
   "embeddable": true,

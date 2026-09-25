@@ -5,7 +5,11 @@
   "artists": [
     "one-pact"
   ],
-  "song": "G.O.A.T",
+  "songs": [
+    {
+      "title": "G.O.A.T"
+    }
+  ],
   "type": "performance",
   "channel": "ONE PACT",
   "embeddable": true,

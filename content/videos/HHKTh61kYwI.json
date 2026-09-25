@@ -5,7 +5,11 @@
   "artists": [
     "aylah"
   ],
-  "song": "Stupid Cupid",
+  "songs": [
+    {
+      "title": "Stupid Cupid"
+    }
+  ],
   "type": "mv",
   "embeddable": false,
   "appearances": [

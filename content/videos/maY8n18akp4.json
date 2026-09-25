@@ -5,7 +5,11 @@
   "artists": [
     "후이"
   ],
-  "song": "Whale 🐬",
+  "songs": [
+    {
+      "title": "Whale 🐬"
+    }
+  ],
   "type": "clip",
   "channel": "+ 기억 프로젝트",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "young-k"
   ],
-  "song": "let it be summer",
+  "songs": [
+    {
+      "title": "let it be summer"
+    }
+  ],
   "type": "live",
   "channel": "DAY6",
   "embeddable": true,

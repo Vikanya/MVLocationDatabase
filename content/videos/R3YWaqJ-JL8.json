@@ -5,7 +5,11 @@
   "artists": [
     "onew"
   ],
-  "song": "KAKERA -運命のピース",
+  "songs": [
+    {
+      "title": "KAKERA -運命のピース"
+    }
+  ],
   "type": "mv",
   "channel": "온유 ONEW",
   "embeddable": true,

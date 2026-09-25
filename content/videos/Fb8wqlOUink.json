@@ -5,7 +5,11 @@
   "artists": [
     "zerobaseone"
   ],
-  "song": "イグジステンス",
+  "songs": [
+    {
+      "title": "イグジステンス"
+    }
+  ],
   "type": "mv",
   "channel": "ZEROBASEONE",
   "embeddable": true,

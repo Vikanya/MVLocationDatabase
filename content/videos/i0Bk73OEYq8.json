@@ -5,7 +5,11 @@
   "artists": [
     "zerobaseone"
   ],
-  "song": "Back to ZEROBASE",
+  "songs": [
+    {
+      "title": "Back to ZEROBASE"
+    }
+  ],
   "type": "clip",
   "channel": "ZEROBASEONE",
   "embeddable": true,

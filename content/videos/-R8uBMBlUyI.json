@@ -5,7 +5,11 @@
   "artists": [
     "kim-sejeong"
   ],
-  "song": "Top or Cliff",
+  "songs": [
+    {
+      "title": "Top or Cliff"
+    }
+  ],
   "type": "mv",
   "channel": "OFFICIAL KIMSEJEONG",
   "embeddable": true,

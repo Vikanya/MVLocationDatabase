@@ -5,7 +5,11 @@
   "artists": [
     "loona-yves"
   ],
-  "song": "new",
+  "songs": [
+    {
+      "title": "new"
+    }
+  ],
   "type": "mv",
   "channel": "loonatheworld",
   "embeddable": true,

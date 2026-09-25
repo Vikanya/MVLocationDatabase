@@ -6,7 +6,12 @@
     "lucy",
     "seola"
   ],
-  "song": "All Ages",
+  "songs": [
+    {
+      "title": "All Ages",
+      "title_ko": "전체관람가"
+    }
+  ],
   "type": "other",
   "channel": "LUCY ISLAND",
   "embeddable": true,
@@ -22,6 +27,5 @@
         "Parkings/Rooftops!47"
       ]
     }
-  ],
-  "song_ko": "전체관람가"
+  ]
 }

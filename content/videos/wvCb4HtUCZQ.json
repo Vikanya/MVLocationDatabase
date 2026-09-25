@@ -5,7 +5,11 @@
   "artists": [
     "makamaka"
   ],
-  "song": "I AM",
+  "songs": [
+    {
+      "title": "I AM"
+    }
+  ],
   "type": "mv",
   "channel": "MAKAMAKA",
   "embeddable": true,

@@ -5,8 +5,12 @@
   "artists": [
     "just-b"
   ],
-  "song": "ME=",
-  "song_ko": "나는",
+  "songs": [
+    {
+      "title": "ME=",
+      "title_ko": "나는"
+    }
+  ],
   "type": "mv",
   "channel": "JUST B",
   "embeddable": true,

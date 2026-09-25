@@ -5,7 +5,11 @@
   "artists": [
     "jade"
   ],
-  "song": "No more",
+  "songs": [
+    {
+      "title": "No more"
+    }
+  ],
   "type": "mv",
   "channel": "POCLANOS",
   "embeddable": true,

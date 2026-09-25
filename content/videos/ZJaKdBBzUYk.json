@@ -5,8 +5,12 @@
   "artists": [
     "treasure"
   ],
-  "song": "JIKJIN",
-  "song_ko": "직진",
+  "songs": [
+    {
+      "title": "JIKJIN",
+      "title_ko": "직진"
+    }
+  ],
   "type": "mv",
   "channel": "TREASURE (트레저)",
   "embeddable": true,

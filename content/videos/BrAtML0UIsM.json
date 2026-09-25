@@ -5,7 +5,11 @@
   "artists": [
     "mc-hansai"
   ],
-  "song": "ALCOHOLIC",
+  "songs": [
+    {
+      "title": "ALCOHOLIC"
+    }
+  ],
   "type": "mv",
   "channel": "MC한새 MC haNsAi",
   "embeddable": true,

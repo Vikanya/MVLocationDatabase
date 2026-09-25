@@ -5,7 +5,11 @@
   "artists": [
     "youha"
   ],
-  "song": "Break Free",
+  "songs": [
+    {
+      "title": "Break Free"
+    }
+  ],
   "type": "mv",
   "channel": "YOUHA 유하",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "silica-gel"
   ],
-  "song": "M/V",
+  "songs": [
+    {
+      "title": "M/V"
+    }
+  ],
   "type": "mv",
   "channel": "Silica Gel 실리카겔",
   "embeddable": true,

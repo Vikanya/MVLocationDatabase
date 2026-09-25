@@ -5,7 +5,11 @@
   "artists": [
     "nmixx"
   ],
-  "song": "Love Me Like This",
+  "songs": [
+    {
+      "title": "Love Me Like This"
+    }
+  ],
   "type": "live",
   "channel": "MUPLY 뮤플리",
   "embeddable": true,

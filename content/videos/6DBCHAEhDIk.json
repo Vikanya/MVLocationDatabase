@@ -5,7 +5,11 @@
   "artists": [
     "official-mv"
   ],
-  "song": "UNB",
+  "songs": [
+    {
+      "title": "UNB"
+    }
+  ],
   "type": "mv",
   "channel": "PocketDol Studio",
   "embeddable": true,

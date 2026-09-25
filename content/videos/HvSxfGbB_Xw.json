@@ -5,7 +5,11 @@
   "artists": [
     "ntx"
   ],
-  "song": "OVER N OVER",
+  "songs": [
+    {
+      "title": "OVER N OVER"
+    }
+  ],
   "type": "mv",
   "channel": "NTX",
   "embeddable": true,

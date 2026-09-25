@@ -5,7 +5,11 @@
   "artists": [
     "nexz"
   ],
-  "song": "Legacy",
+  "songs": [
+    {
+      "title": "Legacy"
+    }
+  ],
   "type": "performance",
   "channel": "JYP Entertainment",
   "embeddable": true,

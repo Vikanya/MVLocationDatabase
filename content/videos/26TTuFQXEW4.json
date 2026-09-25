@@ -5,7 +5,11 @@
   "artists": [
     "xikers"
   ],
-  "song": "SUPERPOWER (Peak)",
+  "songs": [
+    {
+      "title": "SUPERPOWER (Peak)"
+    }
+  ],
   "type": "mv",
   "channel": "KQ ENTERTAINMENT",
   "embeddable": true,

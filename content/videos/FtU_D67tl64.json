@@ -5,7 +5,11 @@
   "artists": [
     "nicole"
   ],
-  "song": "Mysterious",
+  "songs": [
+    {
+      "title": "Mysterious"
+    }
+  ],
   "type": "mv",
   "channel": "JWK Entertainment",
   "embeddable": true,

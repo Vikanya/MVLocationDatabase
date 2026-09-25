@@ -5,8 +5,12 @@
   "artists": [
     "3piece"
   ],
-  "song": "Light up",
-  "song_ko": "피어올라",
+  "songs": [
+    {
+      "title": "Light up",
+      "title_ko": "피어올라"
+    }
+  ],
   "type": "mv",
   "channel": "3piece Ι 쓰리피스",
   "embeddable": true,

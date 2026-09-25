@@ -5,7 +5,11 @@
   "artists": [
     "zico"
   ],
-  "song": "SPOT!",
+  "songs": [
+    {
+      "title": "SPOT!"
+    }
+  ],
   "type": "mv",
   "channel": "HYBE LABELS",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "nmixx"
   ],
-  "song": "DASH",
+  "songs": [
+    {
+      "title": "DASH"
+    }
+  ],
   "type": "mv",
   "channel": "JYP Entertainment",
   "embeddable": true,

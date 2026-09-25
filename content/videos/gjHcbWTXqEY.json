@@ -5,7 +5,11 @@
   "artists": [
     "viviz"
   ],
-  "song": "La La Love Me",
+  "songs": [
+    {
+      "title": "La La Love Me"
+    }
+  ],
   "type": "mv",
   "channel": "BPM Entertainment",
   "embeddable": true,

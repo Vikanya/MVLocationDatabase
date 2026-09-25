@@ -5,7 +5,11 @@
   "artists": [
     "evnne"
   ],
-  "song": "How Can I Do",
+  "songs": [
+    {
+      "title": "How Can I Do"
+    }
+  ],
   "type": "mv",
   "channel": "EVNNE",
   "embeddable": true,

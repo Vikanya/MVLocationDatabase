@@ -5,7 +5,11 @@
   "artists": [
     "red-velvet"
   ],
-  "song": "Power Up",
+  "songs": [
+    {
+      "title": "Power Up"
+    }
+  ],
   "type": "mv",
   "channel": "SMTOWN",
   "embeddable": true,

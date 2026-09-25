@@ -5,7 +5,11 @@
   "artists": [
     "song-sohee"
   ],
-  "song": "Infodemics",
+  "songs": [
+    {
+      "title": "Infodemics"
+    }
+  ],
   "type": "live",
   "channel": "송소희 Song Sohee",
   "embeddable": true,

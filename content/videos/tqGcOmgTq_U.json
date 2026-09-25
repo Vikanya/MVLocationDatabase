@@ -5,7 +5,11 @@
   "artists": [
     "queenz-eye"
   ],
-  "song": "PRISM EP.02",
+  "songs": [
+    {
+      "title": "PRISM EP.02"
+    }
+  ],
   "type": "mv",
   "channel": "Queenz Eye",
   "embeddable": true,

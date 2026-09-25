@@ -5,7 +5,11 @@
   "artists": [
     "triples-visionary-vision"
   ],
-  "song": "Hit the Floor",
+  "songs": [
+    {
+      "title": "Hit the Floor"
+    }
+  ],
   "type": "mv",
   "channel": "tripleS official",
   "embeddable": true,

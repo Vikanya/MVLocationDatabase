@@ -5,7 +5,11 @@
   "artists": [
     "boa"
   ],
-  "song": "Woman",
+  "songs": [
+    {
+      "title": "Woman"
+    }
+  ],
   "type": "mv",
   "channel": "SMTOWN",
   "embeddable": true,

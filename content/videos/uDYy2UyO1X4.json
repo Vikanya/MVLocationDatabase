@@ -5,7 +5,11 @@
   "artists": [
     "rescene"
   ],
-  "song": "YoYo",
+  "songs": [
+    {
+      "title": "YoYo"
+    }
+  ],
   "type": "mv",
   "channel": "RESCENE",
   "embeddable": true,

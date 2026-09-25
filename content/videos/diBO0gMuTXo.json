@@ -5,7 +5,11 @@
   "artists": [
     "bts"
   ],
-  "song": "Hooligan",
+  "songs": [
+    {
+      "title": "Hooligan"
+    }
+  ],
   "type": "mv",
   "channel": "HYBE LABELS",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "kep1er"
   ],
-  "song": "WA DA DA",
+  "songs": [
+    {
+      "title": "WA DA DA"
+    }
+  ],
   "type": "mv",
   "channel": "Kep1er",
   "embeddable": true,

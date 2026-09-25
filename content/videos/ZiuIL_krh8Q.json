@@ -5,8 +5,12 @@
   "artists": [
     "dxmon"
   ],
-  "song": "Zip Zip Zip",
-  "song_ko": "찍찍찍",
+  "songs": [
+    {
+      "title": "Zip Zip Zip",
+      "title_ko": "찍찍찍"
+    }
+  ],
   "type": "mv",
   "channel": "DXMON (다이몬)",
   "embeddable": true,

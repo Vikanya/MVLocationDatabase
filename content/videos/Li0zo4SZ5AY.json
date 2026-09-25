@@ -5,7 +5,11 @@
   "artists": [
     "close-your-eyes"
   ],
-  "song": "Snowy Summer",
+  "songs": [
+    {
+      "title": "Snowy Summer"
+    }
+  ],
   "type": "mv",
   "channel": "CLOSE YOUR EYES",
   "embeddable": true,

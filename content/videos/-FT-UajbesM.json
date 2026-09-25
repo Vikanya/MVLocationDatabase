@@ -5,7 +5,11 @@
   "artists": [
     "n-ssign"
   ],
-  "song": "Tiger (New Flavour)",
+  "songs": [
+    {
+      "title": "Tiger (New Flavour)"
+    }
+  ],
   "type": "mv",
   "channel": "nSSign",
   "embeddable": true,

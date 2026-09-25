@@ -5,7 +5,11 @@
   "artists": [
     "exo"
   ],
-  "song": "Ko Ko Bop",
+  "songs": [
+    {
+      "title": "Ko Ko Bop"
+    }
+  ],
   "type": "mv",
   "channel": "SMTOWN",
   "embeddable": true,

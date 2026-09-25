@@ -5,7 +5,11 @@
   "artists": [
     "primrose"
   ],
-  "song": "Cosmic",
+  "songs": [
+    {
+      "title": "Cosmic"
+    }
+  ],
   "type": "mv",
   "channel": "프림로즈 PRIMROSE",
   "embeddable": true,

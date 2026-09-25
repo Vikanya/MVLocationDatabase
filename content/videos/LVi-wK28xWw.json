@@ -5,7 +5,11 @@
   "artists": [
     "kave"
   ],
-  "song": "Stone",
+  "songs": [
+    {
+      "title": "Stone"
+    }
+  ],
   "type": "mv",
   "channel": "KAVE",
   "embeddable": true,

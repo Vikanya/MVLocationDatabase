@@ -5,7 +5,11 @@
   "artists": [
     "beatburger"
   ],
-  "song": "VAGABOND",
+  "songs": [
+    {
+      "title": "VAGABOND"
+    }
+  ],
   "type": "mv",
   "channel": "SMTOWN",
   "embeddable": true,

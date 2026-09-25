@@ -5,7 +5,11 @@
   "artists": [
     "ab6ix"
   ],
-  "song": "SAVIOR",
+  "songs": [
+    {
+      "title": "SAVIOR"
+    }
+  ],
   "type": "mv",
   "channel": "BRANDNEW MUSIC",
   "embeddable": true,

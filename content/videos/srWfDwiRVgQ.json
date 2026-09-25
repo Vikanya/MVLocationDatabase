@@ -5,7 +5,11 @@
   "artists": [
     "rain"
   ],
-  "song": "WHY DON’T WE",
+  "songs": [
+    {
+      "title": "WHY DON’T WE"
+    }
+  ],
   "type": "mv",
   "channel": "RAIN's Official Channel",
   "embeddable": true,

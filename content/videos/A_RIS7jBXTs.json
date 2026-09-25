@@ -5,8 +5,12 @@
   "artists": [
     "trendz"
   ],
-  "song": "Go Up",
-  "song_ko": "위로위로",
+  "songs": [
+    {
+      "title": "Go Up",
+      "title_ko": "위로위로"
+    }
+  ],
   "type": "mv",
   "channel": "TRENDZ(트렌드지)",
   "embeddable": true,

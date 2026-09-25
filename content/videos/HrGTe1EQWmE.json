@@ -5,8 +5,12 @@
   "artists": [
     "jerastar"
   ],
-  "song": "ENTROPY",
-  "song_ko": "예측불허",
+  "songs": [
+    {
+      "title": "ENTROPY",
+      "title_ko": "예측불허"
+    }
+  ],
   "type": "mv",
   "channel": "1theK (원더케이)",
   "embeddable": true,

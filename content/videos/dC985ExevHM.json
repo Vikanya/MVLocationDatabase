@@ -5,7 +5,11 @@
   "artists": [
     "narin"
   ],
-  "song": "R.P.G Shine",
+  "songs": [
+    {
+      "title": "R.P.G Shine"
+    }
+  ],
   "type": "other",
   "channel": "아카펠라 나린_Narin",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "smorz"
   ],
-  "song": "I want you to",
+  "songs": [
+    {
+      "title": "I want you to"
+    }
+  ],
   "type": "mv",
   "channel": "SMORZ",
   "embeddable": true,

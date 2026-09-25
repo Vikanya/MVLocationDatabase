@@ -5,8 +5,12 @@
   "artists": [
     "park-bom"
   ],
-  "song": "Spring",
-  "song_ko": "봄",
+  "songs": [
+    {
+      "title": "Spring",
+      "title_ko": "봄"
+    }
+  ],
   "type": "mv",
   "channel": "D-NATION",
   "embeddable": true,

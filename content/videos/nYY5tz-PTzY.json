@@ -5,7 +5,11 @@
   "artists": [
     "the-8"
   ],
-  "song": "深渊 (Abyss)",
+  "songs": [
+    {
+      "title": "深渊 (Abyss)"
+    }
+  ],
   "type": "other",
   "channel": "SEVENTEEN",
   "embeddable": true,

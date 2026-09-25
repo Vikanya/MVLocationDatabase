@@ -5,7 +5,11 @@
   "artists": [
     "이현우"
   ],
-  "song": "Brand New Christmas",
+  "songs": [
+    {
+      "title": "Brand New Christmas"
+    }
+  ],
   "type": "mv",
   "channel": "Uzurocks Entertainment",
   "embeddable": true,

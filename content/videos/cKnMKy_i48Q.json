@@ -5,7 +5,11 @@
   "artists": [
     "keyveatz"
   ],
-  "song": "Catch My Breath",
+  "songs": [
+    {
+      "title": "Catch My Breath"
+    }
+  ],
   "type": "mv",
   "channel": "Keyveatz",
   "embeddable": true,

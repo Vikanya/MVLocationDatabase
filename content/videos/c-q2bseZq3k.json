@@ -5,7 +5,11 @@
   "artists": [
     "rothy"
   ],
-  "song": "Something Casual",
+  "songs": [
+    {
+      "title": "Something Casual"
+    }
+  ],
   "type": "mv",
   "channel": "Dorothy Company",
   "embeddable": true,

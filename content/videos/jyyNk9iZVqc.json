@@ -5,7 +5,11 @@
   "artists": [
     "the-kingdom"
   ],
-  "song": "Flip that Coin",
+  "songs": [
+    {
+      "title": "Flip that Coin"
+    }
+  ],
   "type": "mv",
   "channel": "The KingDom (더킹덤)",
   "embeddable": true,

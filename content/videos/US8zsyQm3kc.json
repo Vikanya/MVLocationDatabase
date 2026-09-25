@@ -5,8 +5,12 @@
   "artists": [
     "p1harmony"
   ],
-  "song": "Scared",
-  "song_ko": "겁나니",
+  "songs": [
+    {
+      "title": "Scared",
+      "title_ko": "겁나니"
+    }
+  ],
   "type": "mv",
   "channel": "FNCEnt",
   "embeddable": true,

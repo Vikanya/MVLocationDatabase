@@ -5,7 +5,11 @@
   "artists": [
     "mamamoo"
   ],
-  "song": "Where Are We Now",
+  "songs": [
+    {
+      "title": "Where Are We Now"
+    }
+  ],
   "type": "mv",
   "channel": "MAMAMOO",
   "embeddable": true,

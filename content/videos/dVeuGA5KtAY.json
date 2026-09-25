@@ -5,7 +5,11 @@
   "artists": [
     "purple-kiss"
   ],
-  "song": "7HEAVEN",
+  "songs": [
+    {
+      "title": "7HEAVEN"
+    }
+  ],
   "type": "mv",
   "channel": "PURPLE KISS",
   "embeddable": true,

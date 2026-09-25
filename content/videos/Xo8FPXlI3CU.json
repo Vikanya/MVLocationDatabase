@@ -5,8 +5,12 @@
   "artists": [
     "stray-kids"
   ],
-  "song": "Spread My Wings",
-  "song_ko": "어린 날개",
+  "songs": [
+    {
+      "title": "Spread My Wings",
+      "title_ko": "어린 날개"
+    }
+  ],
   "type": "performance",
   "channel": "JYP Entertainment",
   "embeddable": true,

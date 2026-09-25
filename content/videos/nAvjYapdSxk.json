@@ -5,7 +5,11 @@
   "artists": [
     "nct-2021"
   ],
-  "song": "Beautiful",
+  "songs": [
+    {
+      "title": "Beautiful"
+    }
+  ],
   "type": "mv",
   "channel": "SMTOWN",
   "embeddable": true,

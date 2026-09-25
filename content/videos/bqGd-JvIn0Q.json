@@ -5,7 +5,11 @@
   "artists": [
     "xikers"
   ],
-  "song": "HOMEBOY",
+  "songs": [
+    {
+      "title": "HOMEBOY"
+    }
+  ],
   "type": "mv",
   "channel": "KQ ENTERTAINMENT",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "gracie"
   ],
-  "song": "Conquest",
+  "songs": [
+    {
+      "title": "Conquest"
+    }
+  ],
   "type": "mv",
   "channel": "DanalEntertainment",
   "embeddable": true,

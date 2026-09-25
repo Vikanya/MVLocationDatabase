@@ -5,7 +5,11 @@
   "artists": [
     "hot-issue"
   ],
-  "song": "ICONS",
+  "songs": [
+    {
+      "title": "ICONS"
+    }
+  ],
   "type": "mv",
   "channel": "핫이슈 HOT ISSUE",
   "embeddable": true,

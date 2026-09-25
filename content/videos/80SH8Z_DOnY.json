@@ -5,7 +5,11 @@
   "artists": [
     "txt"
   ],
-  "song": "Over The Moon",
+  "songs": [
+    {
+      "title": "Over The Moon"
+    }
+  ],
   "type": "mv",
   "channel": "HYBE LABELS",
   "embeddable": true,

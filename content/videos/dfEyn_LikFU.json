@@ -5,7 +5,11 @@
   "artists": [
     "2pm"
   ],
-  "song": "Promise",
+  "songs": [
+    {
+      "title": "Promise"
+    }
+  ],
   "type": "mv",
   "channel": "JYP Entertainment",
   "embeddable": true,

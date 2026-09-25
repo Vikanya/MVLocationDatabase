@@ -5,7 +5,11 @@
   "artists": [
     "tan"
   ],
-  "song": "Beautiful LIE",
+  "songs": [
+    {
+      "title": "Beautiful LIE"
+    }
+  ],
   "type": "mv",
   "channel": "TAN-Official",
   "embeddable": true,

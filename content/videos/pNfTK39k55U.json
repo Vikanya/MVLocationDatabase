@@ -5,8 +5,12 @@
   "artists": [
     "itzy"
   ],
-  "song": "DALLA DALLA",
-  "song_ko": "달라달라",
+  "songs": [
+    {
+      "title": "DALLA DALLA",
+      "title_ko": "달라달라"
+    }
+  ],
   "type": "mv",
   "channel": "JYP Entertainment",
   "embeddable": true,

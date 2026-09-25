@@ -5,7 +5,11 @@
   "artists": [
     "vixx"
   ],
-  "song": "The Closer",
+  "songs": [
+    {
+      "title": "The Closer"
+    }
+  ],
   "type": "mv",
   "channel": "RealVIXX",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "irris"
   ],
-  "song": "Stay W!th Me",
+  "songs": [
+    {
+      "title": "Stay W!th Me"
+    }
+  ],
   "type": "mv",
   "channel": "IRRISㆍ아이리스",
   "embeddable": true,

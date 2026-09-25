@@ -6,7 +6,11 @@
     "lil-moshpit",
     "fleeky-bang"
   ],
-  "song": "How We Came",
+  "songs": [
+    {
+      "title": "How We Came"
+    }
+  ],
   "type": "mv",
   "channel": "H1GHR MUSIC",
   "embeddable": true,

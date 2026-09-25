@@ -5,7 +5,11 @@
   "artists": [
     "b1a4"
   ],
-  "song": "SOLO DAY",
+  "songs": [
+    {
+      "title": "SOLO DAY"
+    }
+  ],
   "type": "other",
   "channel": "B1A4 OFFICIAL +",
   "embeddable": true,

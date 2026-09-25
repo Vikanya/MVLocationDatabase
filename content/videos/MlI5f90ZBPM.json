@@ -5,7 +5,11 @@
   "artists": [
     "kim-lip"
   ],
-  "song": "Can You Entertain?",
+  "songs": [
+    {
+      "title": "Can You Entertain?"
+    }
+  ],
   "type": "mv",
   "channel": "Official ARTMS",
   "embeddable": true,

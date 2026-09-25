@@ -5,7 +5,11 @@
   "artists": [
     "odd-youth"
   ],
-  "song": "can′t go back",
+  "songs": [
+    {
+      "title": "can′t go back"
+    }
+  ],
   "type": "mv",
   "channel": "STONE MUSIC",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "craxy"
   ],
-  "song": "Poison Rose",
+  "songs": [
+    {
+      "title": "Poison Rose"
+    }
+  ],
   "type": "mv",
   "channel": "CRAXY",
   "embeddable": true,

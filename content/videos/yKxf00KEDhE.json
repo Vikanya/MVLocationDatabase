@@ -5,7 +5,11 @@
   "artists": [
     "안예은"
   ],
-  "song_ko": "우리, 여기",
+  "songs": [
+    {
+      "title_ko": "우리, 여기"
+    }
+  ],
   "type": "mv",
   "channel": " 더블엑스엔터테인먼트 xxentertainment",
   "embeddable": true,

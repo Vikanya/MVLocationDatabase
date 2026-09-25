@@ -5,7 +5,11 @@
   "artists": [
     "아이묭"
   ],
-  "song": "Marigold (マリーゴールド)",
+  "songs": [
+    {
+      "title": "Marigold (マリーゴールド)"
+    }
+  ],
   "type": "cover",
   "channel": "싱어송라이터 미리 MIRI",
   "embeddable": true,

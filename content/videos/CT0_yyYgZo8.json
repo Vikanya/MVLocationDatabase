@@ -5,7 +5,11 @@
   "artists": [
     "minho"
   ],
-  "song": "TEMPO",
+  "songs": [
+    {
+      "title": "TEMPO"
+    }
+  ],
   "type": "mv",
   "channel": "SMTOWN",
   "embeddable": true,

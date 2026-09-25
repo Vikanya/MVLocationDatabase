@@ -5,8 +5,12 @@
   "artists": [
     "stray-kids"
   ],
-  "song": "TA",
-  "song_ko": "타",
+  "songs": [
+    {
+      "title": "TA",
+      "title_ko": "타"
+    }
+  ],
   "type": "performance",
   "channel": "Stray Kids",
   "embeddable": true,

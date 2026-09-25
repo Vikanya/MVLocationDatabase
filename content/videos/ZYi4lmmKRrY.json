@@ -5,7 +5,11 @@
   "artists": [
     "the-boyz"
   ],
-  "song": "Drink It",
+  "songs": [
+    {
+      "title": "Drink It"
+    }
+  ],
   "type": "mv",
   "channel": "GENIE MUSIC",
   "embeddable": true,

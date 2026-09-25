@@ -5,7 +5,11 @@
   "artists": [
     "tunexx"
   ],
-  "song": "BLUE MODE",
+  "songs": [
+    {
+      "title": "BLUE MODE"
+    }
+  ],
   "type": "mv",
   "channel": "TUNEXX ",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "nmixx"
   ],
-  "song": "DASH",
+  "songs": [
+    {
+      "title": "DASH"
+    }
+  ],
   "type": "performance",
   "channel": "NMIXX",
   "embeddable": true,

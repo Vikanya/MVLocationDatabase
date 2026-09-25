@@ -5,7 +5,11 @@
   "artists": [
     "billlie"
   ],
-  "song": "flipp!ng a coin",
+  "songs": [
+    {
+      "title": "flipp!ng a coin"
+    }
+  ],
   "type": "performance",
   "channel": "Billlie",
   "embeddable": true,

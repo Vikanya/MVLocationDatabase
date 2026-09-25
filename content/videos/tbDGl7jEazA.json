@@ -5,7 +5,11 @@
   "artists": [
     "illit"
   ],
-  "song": "Cherish (My Love)",
+  "songs": [
+    {
+      "title": "Cherish (My Love)"
+    }
+  ],
   "type": "mv",
   "channel": "HYBE LABELS",
   "embeddable": true,

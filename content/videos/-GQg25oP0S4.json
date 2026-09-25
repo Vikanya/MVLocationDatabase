@@ -5,7 +5,11 @@
   "artists": [
     "seventeen"
   ],
-  "song_ko": "손오공",
+  "songs": [
+    {
+      "title_ko": "손오공"
+    }
+  ],
   "type": "mv",
   "channel": "HYBE LABELS",
   "embeddable": true,

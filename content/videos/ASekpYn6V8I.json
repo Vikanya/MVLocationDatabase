@@ -5,7 +5,11 @@
   "artists": [
     "3ye"
   ],
-  "song": "YESSIR",
+  "songs": [
+    {
+      "title": "YESSIR"
+    }
+  ],
   "type": "mv",
   "channel": "3YE OFFICIAL",
   "embeddable": true,

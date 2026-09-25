@@ -5,7 +5,11 @@
   "artists": [
     "loona"
   ],
-  "song": "Hi High",
+  "songs": [
+    {
+      "title": "Hi High"
+    }
+  ],
   "type": "mv",
   "channel": "loonatheworld",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "hyo"
   ],
-  "song": "DEEP",
+  "songs": [
+    {
+      "title": "DEEP"
+    }
+  ],
   "type": "mv",
   "channel": "SMTOWN",
   "embeddable": true,

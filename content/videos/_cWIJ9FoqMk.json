@@ -6,7 +6,11 @@
     "hwasa",
     "swf2"
   ],
-  "song": "Chili",
+  "songs": [
+    {
+      "title": "Chili"
+    }
+  ],
   "type": "mv",
   "channel": "The CHOOM (더 춤)",
   "embeddable": true,

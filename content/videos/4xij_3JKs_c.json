@@ -5,7 +5,11 @@
   "artists": [
     "forestella"
   ],
-  "song": "KOOL",
+  "songs": [
+    {
+      "title": "KOOL"
+    }
+  ],
   "type": "mv",
   "channel": "포레스텔라 Forestella  ",
   "embeddable": true,

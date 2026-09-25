@@ -5,8 +5,12 @@
   "artists": [
     "2pm"
   ],
-  "song": "Comeback When You Hear This Song",
-  "song_ko": "이 노래를 듣고 돌아와",
+  "songs": [
+    {
+      "title": "Comeback When You Hear This Song",
+      "title_ko": "이 노래를 듣고 돌아와"
+    }
+  ],
   "type": "mv",
   "channel": "JYP Entertainment",
   "embeddable": true,

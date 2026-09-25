@@ -5,7 +5,11 @@
   "artists": [
     "kik5o"
   ],
-  "song": "Pretty Revenge",
+  "songs": [
+    {
+      "title": "Pretty Revenge"
+    }
+  ],
   "type": "mv",
   "channel": "키코(Kik5o)",
   "embeddable": true,

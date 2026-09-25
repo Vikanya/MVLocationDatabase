@@ -5,7 +5,11 @@
   "artists": [
     "billlie"
   ],
-  "song": "Always Remember Us This Way",
+  "songs": [
+    {
+      "title": "Always Remember Us This Way"
+    }
+  ],
   "type": "cover",
   "channel": "Billlie",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "아-마음대로-다-된다"
   ],
-  "song": "RUN RUN RUN",
+  "songs": [
+    {
+      "title": "RUN RUN RUN"
+    }
+  ],
   "type": "mv",
   "channel": "안테나 Antenna",
   "embeddable": true,

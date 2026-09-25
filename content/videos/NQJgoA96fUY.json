@@ -5,7 +5,11 @@
   "artists": [
     "bvndit"
   ],
-  "song": "JUNGLE",
+  "songs": [
+    {
+      "title": "JUNGLE"
+    }
+  ],
   "type": "mv",
   "channel": "BVNDIT_Official",
   "embeddable": true,

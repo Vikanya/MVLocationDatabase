@@ -5,7 +5,11 @@
   "artists": [
     "weeekly"
   ],
-  "song": "Backwards",
+  "songs": [
+    {
+      "title": "Backwards"
+    }
+  ],
   "type": "performance",
   "channel": "Weeekly 위클리",
   "embeddable": true,

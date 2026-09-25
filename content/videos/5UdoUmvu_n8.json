@@ -5,7 +5,11 @@
   "artists": [
     "tri-be"
   ],
-  "song": "KISS",
+  "songs": [
+    {
+      "title": "KISS"
+    }
+  ],
   "type": "other",
   "channel": "TriBeVEVO",
   "embeddable": true,

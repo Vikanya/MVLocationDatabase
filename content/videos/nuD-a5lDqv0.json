@@ -5,7 +5,11 @@
   "artists": [
     "gaho"
   ],
-  "song": "Love Me",
+  "songs": [
+    {
+      "title": "Love Me"
+    }
+  ],
   "type": "mv",
   "channel": "Gaho",
   "embeddable": true,

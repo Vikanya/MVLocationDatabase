@@ -5,7 +5,11 @@
   "artists": [
     "sana-melody-project"
   ],
-  "song": "Mood Indigo (CHEEZE)",
+  "songs": [
+    {
+      "title": "Mood Indigo (CHEEZE)"
+    }
+  ],
   "type": "cover",
   "channel": "TWICE",
   "embeddable": true,

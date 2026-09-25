@@ -5,7 +5,11 @@
   "artists": [
     "ab6ix"
   ],
-  "song": "GRAB ME",
+  "songs": [
+    {
+      "title": "GRAB ME"
+    }
+  ],
   "type": "mv",
   "channel": "BRANDNEW MUSIC",
   "embeddable": true,

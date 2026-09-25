@@ -5,7 +5,11 @@
   "artists": [
     "dignity"
   ],
-  "song": "SLIPSHOT",
+  "songs": [
+    {
+      "title": "SLIPSHOT"
+    }
+  ],
   "type": "mv",
   "channel": "디그니티 (DIGNITY)",
   "embeddable": true,

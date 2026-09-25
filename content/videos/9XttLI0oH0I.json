@@ -5,7 +5,11 @@
   "artists": [
     "rescene"
   ],
-  "song": "LOVE ATTACK",
+  "songs": [
+    {
+      "title": "LOVE ATTACK"
+    }
+  ],
   "type": "mv",
   "channel": "RESCENE",
   "embeddable": true,

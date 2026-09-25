@@ -6,7 +6,11 @@
     "1million",
     "free-fire"
   ],
-  "song": "All in",
+  "songs": [
+    {
+      "title": "All in"
+    }
+  ],
   "type": "other",
   "channel": "1MILLION Dance Studio",
   "embeddable": true,

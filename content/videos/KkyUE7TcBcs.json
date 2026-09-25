@@ -5,7 +5,11 @@
   "artists": [
     "woo-ah"
   ],
-  "song": "Rollercoaster",
+  "songs": [
+    {
+      "title": "Rollercoaster"
+    }
+  ],
   "type": "mv",
   "channel": "WOOAH 우아",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "csr"
   ],
-  "song": "Pretty mob",
+  "songs": [
+    {
+      "title": "Pretty mob"
+    }
+  ],
   "type": "mv",
   "channel": "첫사랑(CSR)",
   "embeddable": true,

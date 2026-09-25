@@ -50,10 +50,19 @@ const videos = defineCollection({
     platform: z.enum(['youtube', 'instagram_post', 'imgur']),
     url: z.string(),
     artists: z.array(reference('artists')).optional(),
-    /** Official Latin title of the song (empty if it only has a Korean title). */
-    song: z.string().optional(),
-    /** Korean (Hangul) title of the song. */
-    song_ko: z.string().optional(),
+    /** Songs in the video (usually one; several for medleys / multi-song performances). */
+    songs: z
+      .array(
+        z
+          .object({
+            /** Official Latin title (empty if the song only has a Korean title). */
+            title: z.string().optional(),
+            /** Korean (Hangul) title. */
+            title_ko: z.string().optional(),
+          })
+          .refine((s) => s.title || s.title_ko, 'A song needs a Latin or a Korean title'),
+      )
+      .optional(),
     type: z.enum(['mv', 'performance', 'live', 'cover', 'clip', 'other']).optional(),
     channel: z.string().optional(),
     embeddable: z.boolean().optional(),

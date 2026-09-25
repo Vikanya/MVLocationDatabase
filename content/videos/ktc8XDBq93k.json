@@ -5,7 +5,11 @@
   "artists": [
     "got7"
   ],
-  "song": "You Are",
+  "songs": [
+    {
+      "title": "You Are"
+    }
+  ],
   "type": "mv",
   "channel": "JYP Entertainment",
   "embeddable": true,

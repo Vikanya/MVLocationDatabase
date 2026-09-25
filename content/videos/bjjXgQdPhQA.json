@@ -5,7 +5,11 @@
   "artists": [
     "toz"
   ],
-  "song": "Music Video",
+  "songs": [
+    {
+      "title": "Music Video"
+    }
+  ],
   "type": "mv",
   "channel": "워너뮤직코리아 (Warner Music Korea)",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "new-id"
   ],
-  "song": "E.R",
+  "songs": [
+    {
+      "title": "E.R"
+    }
+  ],
   "type": "mv",
   "channel": "MLD ENTERTAINMENT",
   "embeddable": true,

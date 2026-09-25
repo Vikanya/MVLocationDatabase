@@ -5,7 +5,11 @@
   "artists": [
     "1verse"
   ],
-  "song": "Shattered",
+  "songs": [
+    {
+      "title": "Shattered"
+    }
+  ],
   "type": "mv",
   "channel": "1VERSE",
   "embeddable": true,

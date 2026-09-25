@@ -5,7 +5,11 @@
   "artists": [
     "ateez"
   ],
-  "song": "ROCKY",
+  "songs": [
+    {
+      "title": "ROCKY"
+    }
+  ],
   "type": "mv",
   "channel": "日本コロムビア 公式YouTubeチャンネル",
   "embeddable": true,

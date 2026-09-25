@@ -5,7 +5,11 @@
   "artists": [
     "stray-kids"
   ],
-  "song": "Hellevator",
+  "songs": [
+    {
+      "title": "Hellevator"
+    }
+  ],
   "type": "mv",
   "channel": "JYP Entertainment",
   "embeddable": true,

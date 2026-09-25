@@ -5,8 +5,12 @@
   "artists": [
     "ab6ix"
   ],
-  "song": "CLOSE",
-  "song_ko": "감아",
+  "songs": [
+    {
+      "title": "CLOSE",
+      "title_ko": "감아"
+    }
+  ],
   "type": "mv",
   "channel": "BRANDNEW MUSIC",
   "embeddable": true,

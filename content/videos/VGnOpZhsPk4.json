@@ -5,7 +5,11 @@
   "artists": [
     "ateez"
   ],
-  "song": "WORK",
+  "songs": [
+    {
+      "title": "WORK"
+    }
+  ],
   "type": "mv",
   "channel": "KQ ENTERTAINMENT",
   "embeddable": true,

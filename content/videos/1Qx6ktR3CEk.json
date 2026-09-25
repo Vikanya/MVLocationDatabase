@@ -5,7 +5,11 @@
   "artists": [
     "allday-project"
   ],
-  "song": "TALK",
+  "songs": [
+    {
+      "title": "TALK"
+    }
+  ],
   "type": "mv",
   "channel": "THEBLACKLABEL",
   "embeddable": true,

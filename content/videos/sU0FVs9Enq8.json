@@ -5,7 +5,11 @@
   "artists": [
     "aespa"
   ],
-  "song": "Licorice",
+  "songs": [
+    {
+      "title": "Licorice"
+    }
+  ],
   "type": "other",
   "channel": "aespa",
   "embeddable": true,

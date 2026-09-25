@@ -5,7 +5,11 @@
   "artists": [
     "seventeen"
   ],
-  "song": "F*ck My Life",
+  "songs": [
+    {
+      "title": "F*ck My Life"
+    }
+  ],
   "type": "mv",
   "channel": "HYBE LABELS",
   "embeddable": true,

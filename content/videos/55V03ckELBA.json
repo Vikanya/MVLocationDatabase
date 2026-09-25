@@ -5,7 +5,11 @@
   "artists": [
     "sf9"
   ],
-  "song": "Don't Worry, Be Happy",
+  "songs": [
+    {
+      "title": "Don't Worry, Be Happy"
+    }
+  ],
   "type": "performance",
   "channel": "스튜디오 오와",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "lun8"
   ],
-  "song": "SUPER POWER",
+  "songs": [
+    {
+      "title": "SUPER POWER"
+    }
+  ],
   "type": "mv",
   "channel": "fantagio 판타지오",
   "embeddable": true,

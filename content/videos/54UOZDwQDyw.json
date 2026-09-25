@@ -5,8 +5,12 @@
   "artists": [
     "tiger-jk"
   ],
-  "song": "Love Peace",
-  "song_ko": "호심술",
+  "songs": [
+    {
+      "title": "Love Peace",
+      "title_ko": "호심술"
+    }
+  ],
   "type": "mv",
   "channel": "Feel Ghood Music [필굿뮤직]",
   "embeddable": true,

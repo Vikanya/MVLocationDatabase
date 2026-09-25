@@ -5,8 +5,12 @@
   "artists": [
     "apink"
   ],
-  "song": "Only one",
-  "song_ko": "내가 설렐 수 있게",
+  "songs": [
+    {
+      "title": "Only one",
+      "title_ko": "내가 설렐 수 있게"
+    }
+  ],
   "type": "mv",
   "channel": "1theK (원더케이)",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "ten"
   ],
-  "song": "Birthday",
+  "songs": [
+    {
+      "title": "Birthday"
+    }
+  ],
   "type": "mv",
   "channel": "SMTOWN",
   "embeddable": true,

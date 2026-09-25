@@ -5,8 +5,12 @@
   "artists": [
     "be-o"
   ],
-  "song": "MAD",
-  "song_ko": "미쳐버리겠다",
+  "songs": [
+    {
+      "title": "MAD",
+      "title_ko": "미쳐버리겠다"
+    }
+  ],
   "type": "mv",
   "channel": "1theK (원더케이)",
   "embeddable": true,

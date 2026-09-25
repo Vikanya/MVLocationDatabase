@@ -5,7 +5,11 @@
   "artists": [
     "xlov"
   ],
-  "song": "Rizz",
+  "songs": [
+    {
+      "title": "Rizz"
+    }
+  ],
   "type": "mv",
   "channel": "XLOV",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "verivery"
   ],
-  "song": "Thunder",
+  "songs": [
+    {
+      "title": "Thunder"
+    }
+  ],
   "type": "mv",
   "channel": "VERIVERY",
   "embeddable": true,

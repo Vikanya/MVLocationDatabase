@@ -5,7 +5,11 @@
   "artists": [
     "ive"
   ],
-  "song": "Off The Record",
+  "songs": [
+    {
+      "title": "Off The Record"
+    }
+  ],
   "type": "mv",
   "channel": "STARSHIP",
   "embeddable": true,

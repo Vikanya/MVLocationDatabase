@@ -2,7 +2,11 @@
   "title": "𝗩𝟴 'singasong' Official MV",
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=pBpr9TnhhkE",
-  "song": "singasong",
+  "songs": [
+    {
+      "title": "singasong"
+    }
+  ],
   "type": "mv",
   "channel": "HYBE LABELS",
   "embeddable": true,

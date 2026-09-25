@@ -5,7 +5,11 @@
   "artists": [
     "desire-project-origin"
   ],
-  "song": "Dinero",
+  "songs": [
+    {
+      "title": "Dinero"
+    }
+  ],
   "type": "other",
   "channel": "ATEEZ",
   "embeddable": true,

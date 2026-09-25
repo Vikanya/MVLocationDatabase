@@ -5,7 +5,11 @@
   "artists": [
     "nexz"
   ],
-  "song": "O-RLY?",
+  "songs": [
+    {
+      "title": "O-RLY?"
+    }
+  ],
   "type": "mv",
   "channel": "JYP Entertainment",
   "embeddable": true,

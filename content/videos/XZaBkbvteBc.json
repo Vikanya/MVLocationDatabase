@@ -5,7 +5,11 @@
   "artists": [
     "g-i-dle"
   ],
-  "song": "Allergy",
+  "songs": [
+    {
+      "title": "Allergy"
+    }
+  ],
   "type": "mv",
   "channel": "i-dle (아이들)",
   "embeddable": true,

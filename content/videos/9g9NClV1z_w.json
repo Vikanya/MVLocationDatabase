@@ -5,7 +5,11 @@
   "artists": [
     "miyeon"
   ],
-  "song": "Say My Name",
+  "songs": [
+    {
+      "title": "Say My Name"
+    }
+  ],
   "type": "mv",
   "channel": "i-dle (아이들)",
   "embeddable": true,

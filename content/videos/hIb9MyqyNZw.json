@@ -5,7 +5,11 @@
   "artists": [
     "boy-story"
   ],
-  "song": "Pump !t Up",
+  "songs": [
+    {
+      "title": "Pump !t Up"
+    }
+  ],
   "type": "mv",
   "channel": "JYP Entertainment",
   "embeddable": true,

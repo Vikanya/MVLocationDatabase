@@ -5,7 +5,11 @@
   "artists": [
     "lee-chae-yeon"
   ],
-  "song": "LET'S DANCE",
+  "songs": [
+    {
+      "title": "LET'S DANCE"
+    }
+  ],
   "type": "mv",
   "channel": "LEE CHAEYEON",
   "embeddable": true,

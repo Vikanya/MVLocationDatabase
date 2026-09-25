@@ -5,7 +5,11 @@
   "artists": [
     "chung-ha"
   ],
-  "song": "México",
+  "songs": [
+    {
+      "title": "México"
+    }
+  ],
   "type": "mv",
   "channel": "CHUNG HA 청하",
   "embeddable": true,

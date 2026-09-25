@@ -5,7 +5,11 @@
   "artists": [
     "taeyong"
   ],
-  "song": "Storm",
+  "songs": [
+    {
+      "title": "Storm"
+    }
+  ],
   "type": "performance",
   "channel": "NCT",
   "embeddable": true,

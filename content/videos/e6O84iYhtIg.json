@@ -5,7 +5,11 @@
   "artists": [
     "ateez"
   ],
-  "song": "HALA HALA (Hearts Awakened, Live Alive)",
+  "songs": [
+    {
+      "title": "HALA HALA (Hearts Awakened, Live Alive)"
+    }
+  ],
   "type": "mv",
   "channel": "STONE MUSIC",
   "embeddable": true,

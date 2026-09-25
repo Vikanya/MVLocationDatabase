@@ -5,7 +5,11 @@
   "artists": [
     "x-in"
   ],
-  "song": "KEEPING THE FIRE",
+  "songs": [
+    {
+      "title": "KEEPING THE FIRE"
+    }
+  ],
   "type": "mv",
   "channel": "X:IN",
   "embeddable": true,

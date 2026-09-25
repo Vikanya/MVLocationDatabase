@@ -5,7 +5,11 @@
   "artists": [
     "moonbyul"
   ],
-  "song": "G999",
+  "songs": [
+    {
+      "title": "G999"
+    }
+  ],
   "type": "clip",
   "channel": "MAMAMOO",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "bada-바다"
   ],
-  "song_ko": "소란스런 이별",
+  "songs": [
+    {
+      "title_ko": "소란스런 이별"
+    }
+  ],
   "type": "mv",
   "channel": "바다 BADA",
   "embeddable": true,

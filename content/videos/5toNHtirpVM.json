@@ -5,7 +5,11 @@
   "artists": [
     "iii"
   ],
-  "song": "Forbidden Midnight",
+  "songs": [
+    {
+      "title": "Forbidden Midnight"
+    }
+  ],
   "type": "mv",
   "channel": "iii Official",
   "embeddable": true,

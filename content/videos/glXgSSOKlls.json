@@ -5,7 +5,11 @@
   "artists": [
     "red-velvet"
   ],
-  "song": "Ice Cream Cake",
+  "songs": [
+    {
+      "title": "Ice Cream Cake"
+    }
+  ],
   "type": "mv",
   "channel": "SMTOWN",
   "embeddable": true,

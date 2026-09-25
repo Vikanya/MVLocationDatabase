@@ -5,7 +5,11 @@
   "artists": [
     "madein"
   ],
-  "song": "SATURN",
+  "songs": [
+    {
+      "title": "SATURN"
+    }
+  ],
   "type": "mv",
   "channel": "MADEIN",
   "embeddable": true,

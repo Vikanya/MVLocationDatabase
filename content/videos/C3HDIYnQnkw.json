@@ -5,7 +5,11 @@
   "artists": [
     "queenz-eye"
   ],
-  "song": "UN-NORMAL",
+  "songs": [
+    {
+      "title": "UN-NORMAL"
+    }
+  ],
   "type": "mv",
   "channel": "Queenz Eye (퀸즈아이)",
   "embeddable": true,

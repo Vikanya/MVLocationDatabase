@@ -90,16 +90,24 @@ collections:
         display_fields: ['{{name}} {{name_ko}}']
         multiple: true
         required: false
-      - name: song
-        label: Song (Latin)
-        hint: The official Latin title, as the label writes it (e.g. Go Up). Leave empty if there is only a Korean title.
-        widget: string
+      - name: songs
+        label: Songs
+        label_singular: Song
+        hint: Usually one. Add several for medleys or performances of more than one song, in the order they appear.
+        widget: list
         required: false
-      - name: song_ko
-        label: Song (Korean)
-        hint: The Korean title in Hangul (e.g. 위로위로). Leave empty for songs without one.
-        widget: string
-        required: false
+        summary: '{{fields.title}} {{fields.title_ko}}'
+        fields:
+          - name: title
+            label: Latin title
+            hint: The official Latin title, as the label writes it (e.g. Go Up). Leave empty if there is only a Korean title.
+            widget: string
+            required: false
+          - name: title_ko
+            label: Korean title
+            hint: The title in Hangul (e.g. 위로위로). Leave empty for songs without one.
+            widget: string
+            required: false
       - name: type
         label: Type
         widget: select

@@ -5,7 +5,11 @@
   "artists": [
     "loona-kim-lip"
   ],
-  "song": "Eclipse",
+  "songs": [
+    {
+      "title": "Eclipse"
+    }
+  ],
   "type": "mv",
   "channel": "loonatheworld",
   "embeddable": true,

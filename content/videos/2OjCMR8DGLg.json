@@ -5,7 +5,11 @@
   "artists": [
     "alexa"
   ],
-  "song": "Bomb",
+  "songs": [
+    {
+      "title": "Bomb"
+    }
+  ],
   "type": "mv",
   "channel": "AleXa • ZB Label",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "alexa"
   ],
-  "song": "Xtra",
+  "songs": [
+    {
+      "title": "Xtra"
+    }
+  ],
   "type": "mv",
   "channel": "AleXa • ZB Label",
   "embeddable": true,

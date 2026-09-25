@@ -5,7 +5,11 @@
   "artists": [
     "nct-u"
   ],
-  "song": "coNEXTion (Age of Light)",
+  "songs": [
+    {
+      "title": "coNEXTion (Age of Light)"
+    }
+  ],
   "type": "performance",
   "channel": "SMTOWN",
   "embeddable": true,

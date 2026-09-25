@@ -5,8 +5,12 @@
   "artists": [
     "qman"
   ],
-  "song": "WWAVE",
-  "song_ko": "파란만장",
+  "songs": [
+    {
+      "title": "WWAVE",
+      "title_ko": "파란만장"
+    }
+  ],
   "type": "mv",
   "embeddable": false,
   "appearances": [

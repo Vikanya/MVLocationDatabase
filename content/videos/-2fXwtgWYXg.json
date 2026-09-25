@@ -5,7 +5,11 @@
   "artists": [
     "wayv"
   ],
-  "song": "HIGH FIVE",
+  "songs": [
+    {
+      "title": "HIGH FIVE"
+    }
+  ],
   "type": "mv",
   "channel": "SMTOWN",
   "embeddable": true,

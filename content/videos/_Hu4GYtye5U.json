@@ -5,7 +5,11 @@
   "artists": [
     "ive"
   ],
-  "song": "Either Way",
+  "songs": [
+    {
+      "title": "Either Way"
+    }
+  ],
   "type": "mv",
   "channel": "STARSHIP",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "kiss-of-life"
   ],
-  "song": "Nobody Knows",
+  "songs": [
+    {
+      "title": "Nobody Knows"
+    }
+  ],
   "type": "live",
   "channel": "KISS OF LIFE",
   "embeddable": true,

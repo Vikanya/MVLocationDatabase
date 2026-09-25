@@ -5,7 +5,11 @@
   "artists": [
     "babymonster"
   ],
-  "song": "CLIK CLAK",
+  "songs": [
+    {
+      "title": "CLIK CLAK"
+    }
+  ],
   "type": "mv",
   "channel": "BABYMONSTER",
   "embeddable": true,

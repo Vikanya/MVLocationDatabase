@@ -5,7 +5,11 @@
   "artists": [
     "8turn"
   ],
-  "song": "TIC TAC",
+  "songs": [
+    {
+      "title": "TIC TAC"
+    }
+  ],
   "type": "mv",
   "channel": "8TURN",
   "embeddable": true,

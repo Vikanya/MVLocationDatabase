@@ -5,7 +5,11 @@
   "artists": [
     "hwasa"
   ],
-  "song": "FOMO",
+  "songs": [
+    {
+      "title": "FOMO"
+    }
+  ],
   "type": "other",
   "channel": "HWASA",
   "embeddable": true,

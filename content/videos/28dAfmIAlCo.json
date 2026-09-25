@@ -5,7 +5,11 @@
   "artists": [
     "nct-wish"
   ],
-  "song": "COLOR",
+  "songs": [
+    {
+      "title": "COLOR"
+    }
+  ],
   "type": "mv",
   "channel": "SMTOWN",
   "embeddable": true,

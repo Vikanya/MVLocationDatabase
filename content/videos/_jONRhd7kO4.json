@@ -5,8 +5,12 @@
   "artists": [
     "blitzers"
   ],
-  "song": "Macarena",
-  "song_ko": "마카레나",
+  "songs": [
+    {
+      "title": "Macarena",
+      "title_ko": "마카레나"
+    }
+  ],
   "type": "mv",
   "channel": "BLITZERS OFFICIAL",
   "embeddable": true,

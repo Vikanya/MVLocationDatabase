@@ -5,7 +5,11 @@
   "artists": [
     "oneus"
   ],
-  "song": "TRICKSTER",
+  "songs": [
+    {
+      "title": "TRICKSTER"
+    }
+  ],
   "type": "other",
   "channel": "ONEUS",
   "embeddable": true,

@@ -6,7 +6,11 @@
     "yng",
     "rich-records"
   ],
-  "song": "Official Music Video",
+  "songs": [
+    {
+      "title": "Official Music Video"
+    }
+  ],
   "type": "mv",
   "channel": "Yng & Rich Records",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "txt"
   ],
-  "song": "Beautiful Strangers",
+  "songs": [
+    {
+      "title": "Beautiful Strangers"
+    }
+  ],
   "type": "mv",
   "channel": "HYBE LABELS",
   "embeddable": true,

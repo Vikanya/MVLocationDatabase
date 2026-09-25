@@ -5,7 +5,11 @@
   "artists": [
     "meovv"
   ],
-  "song": "HANDS UP",
+  "songs": [
+    {
+      "title": "HANDS UP"
+    }
+  ],
   "type": "mv",
   "channel": "THEBLACKLABEL",
   "embeddable": true,

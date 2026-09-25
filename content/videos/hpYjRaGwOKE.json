@@ -7,7 +7,11 @@
     "시연",
     "유현"
   ],
-  "song_ko": "어쩌나",
+  "songs": [
+    {
+      "title_ko": "어쩌나"
+    }
+  ],
   "type": "clip",
   "channel": "Dreamcatcher official",
   "embeddable": true,

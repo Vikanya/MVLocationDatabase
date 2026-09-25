@@ -2,7 +2,11 @@
   "title": "[M/V] 'The One' 드리핀(DRIPPIN)",
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=XjkTVx9V5dE",
-  "song": "The One",
+  "songs": [
+    {
+      "title": "The One"
+    }
+  ],
   "type": "mv",
   "channel": "woolliment",
   "embeddable": true,

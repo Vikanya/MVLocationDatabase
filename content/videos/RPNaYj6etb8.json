@@ -5,7 +5,11 @@
   "artists": [
     "dreamcatcher"
   ],
-  "song": "BONVOYAGE",
+  "songs": [
+    {
+      "title": "BONVOYAGE"
+    }
+  ],
   "type": "mv",
   "channel": "Dreamcatcher official",
   "embeddable": true,

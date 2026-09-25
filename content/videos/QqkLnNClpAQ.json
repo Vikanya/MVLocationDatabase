@@ -5,7 +5,11 @@
   "artists": [
     "kai"
   ],
-  "song": "Adult Swim",
+  "songs": [
+    {
+      "title": "Adult Swim"
+    }
+  ],
   "type": "mv",
   "channel": "SMTOWN",
   "embeddable": true,

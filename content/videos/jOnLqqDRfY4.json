@@ -5,8 +5,12 @@
   "artists": [
     "txt"
   ],
-  "song": "Stick With You",
-  "song_ko": "하루에 하루만 더",
+  "songs": [
+    {
+      "title": "Stick With You",
+      "title_ko": "하루에 하루만 더"
+    }
+  ],
   "type": "mv",
   "channel": "HYBE LABELS",
   "embeddable": true,

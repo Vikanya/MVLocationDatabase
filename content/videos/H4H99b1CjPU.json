@@ -5,7 +5,11 @@
   "artists": [
     "ateez"
   ],
-  "song": "Lemon Drop",
+  "songs": [
+    {
+      "title": "Lemon Drop"
+    }
+  ],
   "type": "mv",
   "channel": "KQ ENTERTAINMENT",
   "embeddable": true,

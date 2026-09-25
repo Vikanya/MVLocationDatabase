@@ -5,7 +5,11 @@
   "artists": [
     "aespa"
   ],
-  "song": "Live My Life",
+  "songs": [
+    {
+      "title": "Live My Life"
+    }
+  ],
   "type": "mv",
   "channel": "SMTOWN",
   "embeddable": true,

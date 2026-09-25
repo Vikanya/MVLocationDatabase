@@ -5,8 +5,12 @@
   "artists": [
     "solar"
   ],
-  "song": "Spit it out",
-  "song_ko": "뱉어",
+  "songs": [
+    {
+      "title": "Spit it out",
+      "title_ko": "뱉어"
+    }
+  ],
   "type": "mv",
   "channel": "MAMAMOO",
   "embeddable": true,

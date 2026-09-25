@@ -5,7 +5,11 @@
   "artists": [
     "meovv"
   ],
-  "song": "TOXIC",
+  "songs": [
+    {
+      "title": "TOXIC"
+    }
+  ],
   "type": "mv",
   "channel": "THEBLACKLABEL",
   "embeddable": true,

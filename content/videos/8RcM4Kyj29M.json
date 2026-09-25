@@ -5,7 +5,11 @@
   "artists": [
     "dxteen"
   ],
-  "song": "Come Over",
+  "songs": [
+    {
+      "title": "Come Over"
+    }
+  ],
   "type": "performance",
   "channel": "DXTEEN",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "twice"
   ],
-  "song": "Strategy",
+  "songs": [
+    {
+      "title": "Strategy"
+    }
+  ],
   "type": "mv",
   "channel": "JYP Entertainment",
   "embeddable": true,

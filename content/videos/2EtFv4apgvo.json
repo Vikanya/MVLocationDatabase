@@ -5,7 +5,11 @@
   "artists": [
     "triples"
   ],
-  "song": "アンタイトル (Untitled)",
+  "songs": [
+    {
+      "title": "アンタイトル (Untitled)"
+    }
+  ],
   "type": "mv",
   "channel": "tripleS",
   "embeddable": true,

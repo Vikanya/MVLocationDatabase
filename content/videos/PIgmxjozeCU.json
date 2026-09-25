@@ -5,7 +5,11 @@
   "artists": [
     "nexz"
   ],
-  "song": "Mmchk",
+  "songs": [
+    {
+      "title": "Mmchk"
+    }
+  ],
   "type": "mv",
   "channel": "JYP Entertainment",
   "embeddable": true,

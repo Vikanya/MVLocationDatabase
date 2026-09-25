@@ -5,7 +5,11 @@
   "artists": [
     "jini"
   ],
-  "song": "C'mon",
+  "songs": [
+    {
+      "title": "C'mon"
+    }
+  ],
   "type": "mv",
   "channel": "ATOC",
   "embeddable": true,

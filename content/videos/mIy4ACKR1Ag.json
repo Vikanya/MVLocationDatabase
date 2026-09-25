@@ -5,7 +5,11 @@
   "artists": [
     "jang-wooyoung"
   ],
-  "song": "Think Too Much",
+  "songs": [
+    {
+      "title": "Think Too Much"
+    }
+  ],
   "type": "mv",
   "channel": "JYP Entertainment",
   "embeddable": true,

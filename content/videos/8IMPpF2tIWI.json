@@ -5,7 +5,11 @@
   "artists": [
     "qwer"
   ],
-  "song": "PLAY, WE, DEW",
+  "songs": [
+    {
+      "title": "PLAY, WE, DEW"
+    }
+  ],
   "type": "mv",
   "channel": "QWER",
   "embeddable": true,

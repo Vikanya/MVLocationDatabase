@@ -5,7 +5,11 @@
   "artists": [
     "cix"
   ],
-  "song": "Save me, Kill me",
+  "songs": [
+    {
+      "title": "Save me, Kill me"
+    }
+  ],
   "type": "performance",
   "channel": "STONE MUSIC",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "82major"
   ],
-  "song": "Like Fire",
+  "songs": [
+    {
+      "title": "Like Fire"
+    }
+  ],
   "type": "mv",
   "channel": "82MAJOR",
   "embeddable": true,

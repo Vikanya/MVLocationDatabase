@@ -5,7 +5,11 @@
   "artists": [
     "red-velvet"
   ],
-  "song": "Cosmic",
+  "songs": [
+    {
+      "title": "Cosmic"
+    }
+  ],
   "type": "mv",
   "channel": "SMTOWN",
   "embeddable": true,

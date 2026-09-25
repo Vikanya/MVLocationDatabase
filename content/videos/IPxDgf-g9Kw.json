@@ -5,7 +5,11 @@
   "artists": [
     "xg"
   ],
-  "song": "TGIF",
+  "songs": [
+    {
+      "title": "TGIF"
+    }
+  ],
   "type": "mv",
   "channel": "XG",
   "embeddable": true,

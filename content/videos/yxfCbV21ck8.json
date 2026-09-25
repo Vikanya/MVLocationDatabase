@@ -5,8 +5,12 @@
   "artists": [
     "ateez"
   ],
-  "song": "The Real",
-  "song_ko": "멋",
+  "songs": [
+    {
+      "title": "The Real",
+      "title_ko": "멋"
+    }
+  ],
   "type": "mv",
   "channel": "KQ ENTERTAINMENT",
   "embeddable": true,

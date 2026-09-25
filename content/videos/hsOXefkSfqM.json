@@ -5,7 +5,11 @@
   "artists": [
     "whee-in"
   ],
-  "song": "In The Mood",
+  "songs": [
+    {
+      "title": "In The Mood"
+    }
+  ],
   "type": "live",
   "channel": "THEL1VE",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "jine"
   ],
-  "song": "m Ruined, I",
+  "songs": [
+    {
+      "title": "m Ruined, I"
+    }
+  ],
   "type": "mv",
   "channel": "SEOUL MUSIC / 서울뮤직",
   "embeddable": true,

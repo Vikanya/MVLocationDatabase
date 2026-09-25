@@ -5,7 +5,11 @@
   "artists": [
     "ichillin"
   ],
-  "song": "Alarm",
+  "songs": [
+    {
+      "title": "Alarm"
+    }
+  ],
   "type": "mv",
   "channel": "ICHILLIN' 아이칠린",
   "embeddable": true,

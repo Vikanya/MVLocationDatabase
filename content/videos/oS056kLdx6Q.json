@@ -5,7 +5,11 @@
   "artists": [
     "yerin"
   ],
-  "song": "Wavy",
+  "songs": [
+    {
+      "title": "Wavy"
+    }
+  ],
   "type": "mv",
   "channel": "1theK (원더케이)",
   "embeddable": true,

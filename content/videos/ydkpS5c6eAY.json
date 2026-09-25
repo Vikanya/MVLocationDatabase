@@ -5,7 +5,11 @@
   "artists": [
     "fromis-9"
   ],
-  "song": "My Night Routine",
+  "songs": [
+    {
+      "title": "My Night Routine"
+    }
+  ],
   "type": "live",
   "channel": "SEOUL MUSIC / 서울뮤직",
   "embeddable": true,

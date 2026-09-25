@@ -5,7 +5,11 @@
   "artists": [
     "izna"
   ],
-  "song": "SIGN",
+  "songs": [
+    {
+      "title": "SIGN"
+    }
+  ],
   "type": "mv",
   "channel": "izna (이즈나)",
   "embeddable": true,

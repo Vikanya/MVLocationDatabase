@@ -5,7 +5,11 @@
   "artists": [
     "miya"
   ],
-  "song": "MIYAO",
+  "songs": [
+    {
+      "title": "MIYAO"
+    }
+  ],
   "type": "mv",
   "channel": "MASTER LIGHTS",
   "embeddable": true,

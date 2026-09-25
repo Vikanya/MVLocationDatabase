@@ -5,7 +5,11 @@
   "artists": [
     "yaochen"
   ],
-  "song": "ROLL THE DICE",
+  "songs": [
+    {
+      "title": "ROLL THE DICE"
+    }
+  ],
   "type": "mv",
   "channel": "JYP Entertainment",
   "embeddable": true,

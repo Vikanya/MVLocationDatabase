@@ -5,7 +5,11 @@
   "artists": [
     "asc2nt"
   ],
-  "song": "Still Rose",
+  "songs": [
+    {
+      "title": "Still Rose"
+    }
+  ],
   "type": "mv",
   "channel": "ASC2NT(어센트)",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "tan"
   ],
-  "song": "Fix YOU",
+  "songs": [
+    {
+      "title": "Fix YOU"
+    }
+  ],
   "type": "performance",
   "channel": "TAN-Official",
   "embeddable": true,

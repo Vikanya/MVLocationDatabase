@@ -5,8 +5,12 @@
   "artists": [
     "chanhyun"
   ],
-  "song": "Shhh",
-  "song_ko": "쉿",
+  "songs": [
+    {
+      "title": "Shhh",
+      "title_ko": "쉿"
+    }
+  ],
   "type": "mv",
   "embeddable": false,
   "appearances": [

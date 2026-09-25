@@ -5,7 +5,11 @@
   "artists": [
     "xg"
   ],
-  "song": "IS THIS LOVE",
+  "songs": [
+    {
+      "title": "IS THIS LOVE"
+    }
+  ],
   "type": "mv",
   "channel": "XG",
   "embeddable": true,

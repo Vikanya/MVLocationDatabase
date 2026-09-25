@@ -5,7 +5,11 @@
   "artists": [
     "wayv"
   ],
-  "song": "FREQUENCY",
+  "songs": [
+    {
+      "title": "FREQUENCY"
+    }
+  ],
   "type": "mv",
   "channel": "SMTOWN",
   "embeddable": true,

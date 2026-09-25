@@ -5,7 +5,11 @@
   "artists": [
     "park-bom"
   ],
-  "song_ko": "4시44분",
+  "songs": [
+    {
+      "title_ko": "4시44분"
+    }
+  ],
   "type": "mv",
   "channel": "D-NATION",
   "embeddable": true,

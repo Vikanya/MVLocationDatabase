@@ -5,7 +5,11 @@
   "artists": [
     "juniel"
   ],
-  "song_ko": "혜성",
+  "songs": [
+    {
+      "title_ko": "혜성"
+    }
+  ],
   "type": "mv",
   "channel": "JUNIEL OFFICIAL",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "izykite"
   ],
-  "song": "HEY",
+  "songs": [
+    {
+      "title": "HEY"
+    }
+  ],
   "type": "mv",
   "channel": "1theK (원더케이)",
   "embeddable": true,

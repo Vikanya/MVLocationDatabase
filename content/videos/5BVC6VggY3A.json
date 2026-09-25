@@ -5,7 +5,11 @@
   "artists": [
     "txt"
   ],
-  "song": "We",
+  "songs": [
+    {
+      "title": "We"
+    }
+  ],
   "type": "mv",
   "channel": "HYBE LABELS",
   "embeddable": true,

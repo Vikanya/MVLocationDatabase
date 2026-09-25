@@ -968,7 +968,8 @@ def write_content(db, artists, video_artists, media, force=False):
             "platform": video.platform,
             "url": video.url,
             "artists": ids,
-            "song": song,
+            # the site's format since 2026-09-25 (Latin/Korean titles were split by hand-run migrations after this)
+            "songs": [{"title": song}] if song else [],
             "type": kind,
             "channel": video.channel,
             "embeddable": video.status in ("", "ok"),

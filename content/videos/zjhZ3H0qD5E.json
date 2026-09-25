@@ -5,7 +5,11 @@
   "artists": [
     "billlie"
   ],
-  "song": "EUNOIA",
+  "songs": [
+    {
+      "title": "EUNOIA"
+    }
+  ],
   "type": "performance",
   "channel": "1theK Originals - 원더케이 오리지널",
   "embeddable": true,

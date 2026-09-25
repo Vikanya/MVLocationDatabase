@@ -5,7 +5,11 @@
   "artists": [
     "monsta-x"
   ],
-  "song": "MAGIC",
+  "songs": [
+    {
+      "title": "MAGIC"
+    }
+  ],
   "type": "mv",
   "channel": "STARSHIP",
   "embeddable": true,

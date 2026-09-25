@@ -5,7 +5,11 @@
   "artists": [
     "newjeans"
   ],
-  "song": "How Sweet",
+  "songs": [
+    {
+      "title": "How Sweet"
+    }
+  ],
   "type": "performance",
   "channel": "NewJeans",
   "embeddable": true,

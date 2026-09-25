@@ -5,7 +5,11 @@
   "artists": [
     "dahye"
   ],
-  "song": "Lemon Cherry Bomb",
+  "songs": [
+    {
+      "title": "Lemon Cherry Bomb"
+    }
+  ],
   "type": "mv",
   "channel": "다혜가다했다DAHYE",
   "embeddable": true,

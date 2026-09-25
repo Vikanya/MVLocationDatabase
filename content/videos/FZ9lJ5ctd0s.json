@@ -5,8 +5,12 @@
   "artists": [
     "monstax"
   ],
-  "song": "HERO",
-  "song_ko": "히어로",
+  "songs": [
+    {
+      "title": "HERO",
+      "title_ko": "히어로"
+    }
+  ],
   "type": "clip",
   "channel": "STARSHIP",
   "embeddable": true,

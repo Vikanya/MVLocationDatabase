@@ -5,7 +5,11 @@
   "artists": [
     "drunken-tiger"
   ],
-  "song": "YET",
+  "songs": [
+    {
+      "title": "YET"
+    }
+  ],
   "type": "mv",
   "channel": "Feel Ghood Music [필굿뮤직]",
   "embeddable": true,

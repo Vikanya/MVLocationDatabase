@@ -5,7 +5,11 @@
   "artists": [
     "cocanbutter"
   ],
-  "song": "Mi Deh Yah",
+  "songs": [
+    {
+      "title": "Mi Deh Yah"
+    }
+  ],
   "type": "mv",
   "channel": "MLD ENTERTAINMENT",
   "embeddable": true,

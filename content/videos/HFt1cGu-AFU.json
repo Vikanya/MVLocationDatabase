@@ -5,7 +5,11 @@
   "artists": [
     "izykite"
   ],
-  "song": "Lyric Video",
+  "songs": [
+    {
+      "title": "Lyric Video"
+    }
+  ],
   "type": "other",
   "channel": "뉴런뮤직 neuron music",
   "embeddable": true,

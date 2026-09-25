@@ -5,7 +5,12 @@
   "artists": [
     "girls-generation"
   ],
-  "song": "Genie, 소녀시대",
+  "songs": [
+    {
+      "title": "Genie",
+      "title_ko": "소원을 말해봐"
+    }
+  ],
   "type": "other",
   "channel": "MBCkpop",
   "embeddable": true,
@@ -21,8 +26,5 @@
         "Helipads!33"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

@@ -5,8 +5,12 @@
   "artists": [
     "day6"
   ],
-  "song": "I like you",
-  "song_ko": "좋아합니다",
+  "songs": [
+    {
+      "title": "I like you",
+      "title_ko": "좋아합니다"
+    }
+  ],
   "type": "mv",
   "channel": "JYP Entertainment",
   "embeddable": true,

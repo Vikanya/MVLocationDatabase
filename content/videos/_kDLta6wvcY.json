@@ -5,7 +5,11 @@
   "artists": [
     "chancellor"
   ],
-  "song": "Angel",
+  "songs": [
+    {
+      "title": "Angel"
+    }
+  ],
   "type": "mv",
   "channel": "MILLION MARKET (밀리언마켓)",
   "embeddable": true,

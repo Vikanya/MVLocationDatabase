@@ -5,7 +5,11 @@
   "artists": [
     "stayc"
   ],
-  "song": "BEAUTIFUL MONSTER",
+  "songs": [
+    {
+      "title": "BEAUTIFUL MONSTER"
+    }
+  ],
   "type": "performance",
   "channel": "STAYC",
   "embeddable": true,

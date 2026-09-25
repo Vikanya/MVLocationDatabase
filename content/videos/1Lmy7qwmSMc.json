@@ -5,7 +5,11 @@
   "artists": [
     "ive"
   ],
-  "song": "BLACKHOLE",
+  "songs": [
+    {
+      "title": "BLACKHOLE"
+    }
+  ],
   "type": "mv",
   "channel": "STARSHIP",
   "embeddable": true,

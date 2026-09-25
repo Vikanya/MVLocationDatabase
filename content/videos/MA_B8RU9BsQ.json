@@ -5,8 +5,12 @@
   "artists": [
     "nct-127"
   ],
-  "song": "Walk",
-  "song_ko": "삐그덕",
+  "songs": [
+    {
+      "title": "Walk",
+      "title_ko": "삐그덕"
+    }
+  ],
   "type": "mv",
   "channel": "SMTOWN",
   "embeddable": true,

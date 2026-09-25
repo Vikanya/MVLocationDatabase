@@ -5,7 +5,11 @@
   "artists": [
     "kiss-of-life"
   ],
-  "song": "Te Quiero",
+  "songs": [
+    {
+      "title": "Te Quiero"
+    }
+  ],
   "type": "performance",
   "channel": "KISS OF LIFE",
   "embeddable": true,

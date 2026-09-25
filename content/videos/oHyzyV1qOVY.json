@@ -5,8 +5,12 @@
   "artists": [
     "ovan"
   ],
-  "song": "Church OPPA",
-  "song_ko": "교회오빠",
+  "songs": [
+    {
+      "title": "Church OPPA",
+      "title_ko": "교회오빠"
+    }
+  ],
   "type": "mv",
   "channel": "1theK (원더케이)",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "weki-meki"
   ],
-  "song": "Siesta",
+  "songs": [
+    {
+      "title": "Siesta"
+    }
+  ],
   "type": "mv",
   "channel": "fantagio 판타지오",
   "embeddable": true,

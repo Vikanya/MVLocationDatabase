@@ -5,7 +5,11 @@
   "artists": [
     "irene"
   ],
-  "song": "Biggest Fan",
+  "songs": [
+    {
+      "title": "Biggest Fan"
+    }
+  ],
   "type": "mv",
   "channel": "SMTOWN",
   "embeddable": true,

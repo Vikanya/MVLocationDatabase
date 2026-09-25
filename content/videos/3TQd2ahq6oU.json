@@ -5,7 +5,11 @@
   "artists": [
     "triples"
   ],
-  "song": "Rising",
+  "songs": [
+    {
+      "title": "Rising"
+    }
+  ],
   "type": "mv",
   "channel": "tripleS official",
   "embeddable": true,

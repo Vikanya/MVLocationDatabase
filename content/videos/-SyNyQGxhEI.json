@@ -5,7 +5,11 @@
   "artists": [
     "ten"
   ],
-  "song": "Lie With You",
+  "songs": [
+    {
+      "title": "Lie With You"
+    }
+  ],
   "type": "other",
   "channel": "NCT",
   "embeddable": true,

@@ -5,8 +5,12 @@
   "artists": [
     "lun8"
   ],
-  "song": "Butterfly",
-  "song_ko": "나비",
+  "songs": [
+    {
+      "title": "Butterfly",
+      "title_ko": "나비"
+    }
+  ],
   "type": "mv",
   "channel": "fantagio 판타지오",
   "embeddable": true,

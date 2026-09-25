@@ -5,7 +5,11 @@
   "artists": [
     "heochanzo"
   ],
-  "song": "Lonely Boy",
+  "songs": [
+    {
+      "title": "Lonely Boy"
+    }
+  ],
   "type": "mv",
   "channel": "STONESHIP",
   "embeddable": true,

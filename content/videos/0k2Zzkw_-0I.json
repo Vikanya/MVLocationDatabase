@@ -5,8 +5,12 @@
   "artists": [
     "girls-generation"
   ],
-  "song": "Into The New World",
-  "song_ko": "다시 만난 세계",
+  "songs": [
+    {
+      "title": "Into The New World",
+      "title_ko": "다시 만난 세계"
+    }
+  ],
   "type": "mv",
   "channel": "SMTOWN",
   "embeddable": true,

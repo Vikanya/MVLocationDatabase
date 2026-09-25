@@ -5,7 +5,11 @@
   "artists": [
     "kep1er"
   ],
-  "song": "We Fresh",
+  "songs": [
+    {
+      "title": "We Fresh"
+    }
+  ],
   "type": "performance",
   "channel": "네이버 NOW.",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "irene"
   ],
-  "song": "Like A Flower",
+  "songs": [
+    {
+      "title": "Like A Flower"
+    }
+  ],
   "type": "mv",
   "channel": "SMTOWN",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "ive"
   ],
-  "song": "REBEL HEART",
+  "songs": [
+    {
+      "title": "REBEL HEART"
+    }
+  ],
   "type": "mv",
   "channel": "STARSHIP",
   "embeddable": true,

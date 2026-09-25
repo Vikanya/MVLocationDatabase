@@ -5,7 +5,11 @@
   "artists": [
     "yoo-se-yoon"
   ],
-  "song": "Love Ya",
+  "songs": [
+    {
+      "title": "Love Ya"
+    }
+  ],
   "type": "mv",
   "channel": "STONE MUSIC",
   "embeddable": true,

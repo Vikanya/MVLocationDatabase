@@ -5,7 +5,11 @@
   "artists": [
     "blitzers"
   ],
-  "song": "Breathe Again",
+  "songs": [
+    {
+      "title": "Breathe Again"
+    }
+  ],
   "type": "mv",
   "channel": "BLITZERS OFFICIAL",
   "embeddable": true,

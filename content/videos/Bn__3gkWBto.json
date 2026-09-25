@@ -5,7 +5,11 @@
   "artists": [
     "nam-woo-hyun"
   ],
-  "song_ko": "냉정과 열정 사이",
+  "songs": [
+    {
+      "title_ko": "냉정과 열정 사이"
+    }
+  ],
   "type": "mv",
   "channel": "woolliment",
   "embeddable": true,

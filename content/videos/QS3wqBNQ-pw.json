@@ -5,7 +5,14 @@
   "artists": [
     "rescene"
   ],
-  "song": "Glow up",
+  "songs": [
+    {
+      "title": "Glow up"
+    },
+    {
+      "title": "LOVE ATTACK"
+    }
+  ],
   "type": "other",
   "channel": "컴백홈",
   "embeddable": true,
@@ -34,5 +41,8 @@
         "Ametage!79"
       ]
     }
+  ],
+  "review": [
+    "Several songs were split out of the video title — check the titles (and add Latin titles if official ones exist)"
   ]
 }

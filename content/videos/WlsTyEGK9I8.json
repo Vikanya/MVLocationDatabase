@@ -5,7 +5,11 @@
   "artists": [
     "nexz"
   ],
-  "song": "NALLINA",
+  "songs": [
+    {
+      "title": "NALLINA"
+    }
+  ],
   "type": "mv",
   "channel": "JYP Entertainment",
   "embeddable": true,

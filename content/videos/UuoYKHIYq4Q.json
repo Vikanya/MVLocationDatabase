@@ -5,7 +5,11 @@
   "artists": [
     "all-h-ours"
   ],
-  "song": "DANG DANG",
+  "songs": [
+    {
+      "title": "DANG DANG"
+    }
+  ],
   "type": "mv",
   "channel": "올아워즈 ALL(H)OURS ",
   "embeddable": true,

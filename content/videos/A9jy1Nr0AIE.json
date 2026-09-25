@@ -5,7 +5,11 @@
   "artists": [
     "qman"
   ],
-  "song": "Supercar",
+  "songs": [
+    {
+      "title": "Supercar"
+    }
+  ],
   "type": "mv",
   "embeddable": false,
   "appearances": [

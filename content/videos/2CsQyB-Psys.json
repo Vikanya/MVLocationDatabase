@@ -5,7 +5,11 @@
   "artists": [
     "u-know"
   ],
-  "song": "Time",
+  "songs": [
+    {
+      "title": "Time"
+    }
+  ],
   "type": "mv",
   "channel": "SMTOWN",
   "embeddable": true,

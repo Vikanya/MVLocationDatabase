@@ -5,7 +5,11 @@
   "artists": [
     "drippin"
   ],
-  "song": "ZERO",
+  "songs": [
+    {
+      "title": "ZERO"
+    }
+  ],
   "type": "performance",
   "channel": "DRIPPIN",
   "embeddable": true,

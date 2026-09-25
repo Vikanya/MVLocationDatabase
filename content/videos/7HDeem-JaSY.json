@@ -5,8 +5,12 @@
   "artists": [
     "g-i-dle"
   ],
-  "song": "Queencard",
-  "song_ko": "퀸카",
+  "songs": [
+    {
+      "title": "Queencard",
+      "title_ko": "퀸카"
+    }
+  ],
   "type": "mv",
   "channel": "i-dle (아이들)",
   "embeddable": true,

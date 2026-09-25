@@ -5,8 +5,12 @@
   "artists": [
     "mxm"
   ],
-  "song": "GONE COLD",
-  "song_ko": "식어버린 온도",
+  "songs": [
+    {
+      "title": "GONE COLD",
+      "title_ko": "식어버린 온도"
+    }
+  ],
   "type": "mv",
   "channel": "MXM",
   "embeddable": true,

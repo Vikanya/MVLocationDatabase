@@ -5,7 +5,11 @@
   "artists": [
     "fifty-fifty"
   ],
-  "song": "Log in",
+  "songs": [
+    {
+      "title": "Log in"
+    }
+  ],
   "type": "performance",
   "channel": "FIFTY FIFTY Official",
   "embeddable": true,

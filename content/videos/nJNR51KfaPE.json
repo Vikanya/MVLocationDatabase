@@ -5,7 +5,11 @@
   "artists": [
     "aimers"
   ],
-  "song": "Starry Night",
+  "songs": [
+    {
+      "title": "Starry Night"
+    }
+  ],
   "type": "mv",
   "channel": "AIMERS",
   "embeddable": true,

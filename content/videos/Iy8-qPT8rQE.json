@@ -5,7 +5,11 @@
   "artists": [
     "xikers"
   ],
-  "song": "Up All Night",
+  "songs": [
+    {
+      "title": "Up All Night"
+    }
+  ],
   "type": "mv",
   "channel": "KQ ENTERTAINMENT",
   "embeddable": true,

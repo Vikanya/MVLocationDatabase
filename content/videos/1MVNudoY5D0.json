@@ -5,7 +5,11 @@
   "artists": [
     "limelight"
   ],
-  "song": "Cha Cha",
+  "songs": [
+    {
+      "title": "Cha Cha"
+    }
+  ],
   "type": "clip",
   "channel": "MADEIN",
   "embeddable": true,

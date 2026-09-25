@@ -5,7 +5,11 @@
   "artists": [
     "monsta-x"
   ],
-  "song": "Do What I Want",
+  "songs": [
+    {
+      "title": "Do What I Want"
+    }
+  ],
   "type": "mv",
   "channel": "STARSHIP",
   "embeddable": true,

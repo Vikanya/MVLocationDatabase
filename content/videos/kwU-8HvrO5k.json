@@ -5,7 +5,11 @@
   "artists": [
     "b-i"
   ],
-  "song": "Tasty",
+  "songs": [
+    {
+      "title": "Tasty"
+    }
+  ],
   "type": "mv",
   "channel": "131online",
   "embeddable": true,

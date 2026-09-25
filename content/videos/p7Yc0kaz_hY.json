@@ -5,7 +5,11 @@
   "artists": [
     "jaurim"
   ],
-  "song": "STAY WITH ME",
+  "songs": [
+    {
+      "title": "STAY WITH ME"
+    }
+  ],
   "type": "mv",
   "channel": "Jaurim",
   "embeddable": true,

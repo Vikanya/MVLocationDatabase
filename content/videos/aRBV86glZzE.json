@@ -5,7 +5,11 @@
   "artists": [
     "문별"
   ],
-  "song": "DARK ROMANCE",
+  "songs": [
+    {
+      "title": "DARK ROMANCE"
+    }
+  ],
   "type": "performance",
   "channel": "MAMAMOO",
   "embeddable": true,

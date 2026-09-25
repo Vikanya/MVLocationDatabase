@@ -5,7 +5,11 @@
   "artists": [
     "loona"
   ],
-  "song": "favOriTe",
+  "songs": [
+    {
+      "title": "favOriTe"
+    }
+  ],
   "type": "mv",
   "channel": "loonatheworld",
   "embeddable": true,

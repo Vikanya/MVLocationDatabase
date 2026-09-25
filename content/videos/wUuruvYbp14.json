@@ -5,7 +5,11 @@
   "artists": [
     "purple-kiss"
   ],
-  "song": "Pretty Psycho",
+  "songs": [
+    {
+      "title": "Pretty Psycho"
+    }
+  ],
   "type": "performance",
   "channel": "PURPLE KISS",
   "embeddable": true,

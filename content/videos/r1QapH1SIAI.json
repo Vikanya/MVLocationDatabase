@@ -5,7 +5,11 @@
   "artists": [
     "fromis-9"
   ],
-  "song": "LIKE YOU BETTER",
+  "songs": [
+    {
+      "title": "LIKE YOU BETTER"
+    }
+  ],
   "type": "mv",
   "channel": "fromis_9",
   "embeddable": true,

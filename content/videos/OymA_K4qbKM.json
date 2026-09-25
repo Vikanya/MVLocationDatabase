@@ -5,7 +5,11 @@
   "artists": [
     "vanner"
   ],
-  "song": "Automatic",
+  "songs": [
+    {
+      "title": "Automatic"
+    }
+  ],
   "type": "mv",
   "channel": "KLAP ENTERTAINMENT",
   "embeddable": true,

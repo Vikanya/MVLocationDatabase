@@ -5,7 +5,11 @@
   "artists": [
     "jinsoul"
   ],
-  "song": "Ring of Chaos",
+  "songs": [
+    {
+      "title": "Ring of Chaos"
+    }
+  ],
   "type": "mv",
   "channel": "Official ARTMS",
   "embeddable": true,

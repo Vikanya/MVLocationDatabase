@@ -5,7 +5,11 @@
   "artists": [
     "limelight"
   ],
-  "song": "Paradise",
+  "songs": [
+    {
+      "title": "Paradise"
+    }
+  ],
   "type": "clip",
   "channel": "MADEIN",
   "embeddable": true,

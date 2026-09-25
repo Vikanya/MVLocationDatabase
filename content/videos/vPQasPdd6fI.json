@@ -5,7 +5,11 @@
   "artists": [
     "vernon"
   ],
-  "song": "Black Eye",
+  "songs": [
+    {
+      "title": "Black Eye"
+    }
+  ],
   "type": "mv",
   "channel": "HYBE LABELS",
   "embeddable": true,

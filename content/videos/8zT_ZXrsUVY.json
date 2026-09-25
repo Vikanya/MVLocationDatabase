@@ -5,7 +5,11 @@
   "artists": [
     "greatguys"
   ],
-  "song": "Touch By Touch",
+  "songs": [
+    {
+      "title": "Touch By Touch"
+    }
+  ],
   "type": "mv",
   "channel": "DNA ENTERTAINMENT",
   "embeddable": true,

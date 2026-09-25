@@ -5,7 +5,11 @@
   "artists": [
     "taeyang"
   ],
-  "song": "DARLING",
+  "songs": [
+    {
+      "title": "DARLING"
+    }
+  ],
   "type": "mv",
   "channel": "BIGBANG",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "kim-jae-joong"
   ],
-  "song": "ROCK STAR",
+  "songs": [
+    {
+      "title": "ROCK STAR"
+    }
+  ],
   "type": "mv",
   "channel": "iNKODE Official",
   "embeddable": true,

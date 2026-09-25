@@ -5,7 +5,11 @@
   "artists": [
     "moong-myang"
   ],
-  "song_ko": "부아앙~~",
+  "songs": [
+    {
+      "title_ko": "부아앙~~"
+    }
+  ],
   "type": "mv",
   "channel": "MAJOR9 메이저나인",
   "embeddable": true,

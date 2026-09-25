@@ -5,7 +5,11 @@
   "artists": [
     "enhypen"
   ],
-  "song": "Sweet Venom",
+  "songs": [
+    {
+      "title": "Sweet Venom"
+    }
+  ],
   "type": "mv",
   "channel": "HYBE LABELS",
   "embeddable": true,

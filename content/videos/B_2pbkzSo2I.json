@@ -5,7 +5,11 @@
   "artists": [
     "asc2nt"
   ],
-  "song": "LOVE ME DO",
+  "songs": [
+    {
+      "title": "LOVE ME DO"
+    }
+  ],
   "type": "mv",
   "channel": "DanalEntertainment",
   "embeddable": true,

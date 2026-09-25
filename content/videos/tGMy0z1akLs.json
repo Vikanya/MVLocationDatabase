@@ -5,7 +5,11 @@
   "artists": [
     "ifeye"
   ],
-  "song": "r u ok?",
+  "songs": [
+    {
+      "title": "r u ok?"
+    }
+  ],
   "type": "mv",
   "channel": "ifeye 이프아이",
   "embeddable": true,

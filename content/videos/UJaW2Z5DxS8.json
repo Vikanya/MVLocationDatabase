@@ -5,7 +5,11 @@
   "artists": [
     "team"
   ],
-  "song": "War Cry",
+  "songs": [
+    {
+      "title": "War Cry"
+    }
+  ],
   "type": "mv",
   "channel": "HYBE LABELS",
   "embeddable": true,

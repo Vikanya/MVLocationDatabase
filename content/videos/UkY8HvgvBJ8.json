@@ -5,7 +5,11 @@
   "artists": [
     "hye"
   ],
-  "song": "Egoist",
+  "songs": [
+    {
+      "title": "Egoist"
+    }
+  ],
   "type": "mv",
   "channel": "loonatheworld",
   "embeddable": true,

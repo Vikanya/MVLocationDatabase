@@ -5,7 +5,11 @@
   "artists": [
     "bae173"
   ],
-  "song": "Fifty-Fifty",
+  "songs": [
+    {
+      "title": "Fifty-Fifty"
+    }
+  ],
   "type": "mv",
   "channel": "1theK (원더케이)",
   "embeddable": true,

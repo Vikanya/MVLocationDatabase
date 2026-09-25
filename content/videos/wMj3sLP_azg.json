@@ -5,7 +5,11 @@
   "artists": [
     "gwsn"
   ],
-  "song": "BAZOOKA!",
+  "songs": [
+    {
+      "title": "BAZOOKA!"
+    }
+  ],
   "type": "mv",
   "channel": "공원소녀 GWSN OFFICIAL",
   "embeddable": true,

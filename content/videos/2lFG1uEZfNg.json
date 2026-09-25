@@ -5,7 +5,11 @@
   "artists": [
     "mirae"
   ],
-  "song": "RUNNING UP",
+  "songs": [
+    {
+      "title": "RUNNING UP"
+    }
+  ],
   "type": "other",
   "channel": "MIRAE JAPAN OFFICIAL",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "dkb"
   ],
-  "song": "I Need Love",
+  "songs": [
+    {
+      "title": "I Need Love"
+    }
+  ],
   "type": "mv",
   "channel": "Brave Entertainment",
   "embeddable": true,

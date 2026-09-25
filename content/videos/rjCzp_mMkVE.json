@@ -5,7 +5,11 @@
   "artists": [
     "soya"
   ],
-  "song": "Artist",
+  "songs": [
+    {
+      "title": "Artist"
+    }
+  ],
   "type": "mv",
   "channel": "SUPER SOUND Bugs!",
   "embeddable": true,

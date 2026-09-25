@@ -5,7 +5,11 @@
   "artists": [
     "seulgi"
   ],
-  "song": "28 Reasons",
+  "songs": [
+    {
+      "title": "28 Reasons"
+    }
+  ],
   "type": "mv",
   "channel": "SMTOWN",
   "embeddable": true,

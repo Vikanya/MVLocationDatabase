@@ -5,7 +5,11 @@
   "artists": [
     "nayeon"
   ],
-  "song": "POP!",
+  "songs": [
+    {
+      "title": "POP!"
+    }
+  ],
   "type": "performance",
   "channel": "TWICE",
   "embeddable": true,

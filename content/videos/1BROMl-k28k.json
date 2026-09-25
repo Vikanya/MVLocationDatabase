@@ -5,7 +5,11 @@
   "artists": [
     "boy-story"
   ],
-  "song": "Z.I.P (Zero Is the only Passion)",
+  "songs": [
+    {
+      "title": "Z.I.P (Zero Is the only Passion)"
+    }
+  ],
   "type": "mv",
   "channel": "JYP Entertainment",
   "embeddable": true,

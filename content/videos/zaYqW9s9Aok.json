@@ -5,7 +5,11 @@
   "artists": [
     "jessi"
   ],
-  "song": "Who Dat B",
+  "songs": [
+    {
+      "title": "Who Dat B"
+    }
+  ],
   "type": "mv",
   "channel": "Jessi",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "suen"
   ],
-  "song": "My Prada",
+  "songs": [
+    {
+      "title": "My Prada"
+    }
+  ],
   "type": "mv",
   "channel": "GROOVL1N",
   "embeddable": true,

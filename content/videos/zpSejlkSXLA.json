@@ -5,7 +5,11 @@
   "artists": [
     "rescene"
   ],
-  "song": "UhUh",
+  "songs": [
+    {
+      "title": "UhUh"
+    }
+  ],
   "type": "mv",
   "channel": "RESCENE",
   "embeddable": true,

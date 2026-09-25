@@ -5,7 +5,11 @@
   "artists": [
     "ramengvrl"
   ],
-  "song": "Ain’t No MF",
+  "songs": [
+    {
+      "title": "Ain’t No MF"
+    }
+  ],
   "type": "mv",
   "channel": "RAMENGVRL",
   "embeddable": true,

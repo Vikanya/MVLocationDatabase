@@ -5,8 +5,12 @@
   "artists": [
     "babymonster"
   ],
-  "song": "CHOOM",
-  "song_ko": "춤",
+  "songs": [
+    {
+      "title": "CHOOM",
+      "title_ko": "춤"
+    }
+  ],
   "type": "mv",
   "channel": "BABYMONSTER",
   "embeddable": true,

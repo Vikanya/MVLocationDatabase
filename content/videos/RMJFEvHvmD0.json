@@ -5,7 +5,11 @@
   "artists": [
     "ab6ix"
   ],
-  "song": "BREATHE",
+  "songs": [
+    {
+      "title": "BREATHE"
+    }
+  ],
   "type": "mv",
   "channel": "BRANDNEW MUSIC",
   "embeddable": true,

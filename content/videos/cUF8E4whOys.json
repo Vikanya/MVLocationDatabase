@@ -5,7 +5,11 @@
   "artists": [
     "ryu-sujeong"
   ],
-  "song": "Diamond",
+  "songs": [
+    {
+      "title": "Diamond"
+    }
+  ],
   "type": "mv",
   "channel": "all my anecdotes",
   "embeddable": true,

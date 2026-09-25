@@ -5,7 +5,11 @@
   "artists": [
     "oneus"
   ],
-  "song": "TO BE OR NOT TO BE",
+  "songs": [
+    {
+      "title": "TO BE OR NOT TO BE"
+    }
+  ],
   "type": "mv",
   "channel": "ONEUS",
   "embeddable": true,

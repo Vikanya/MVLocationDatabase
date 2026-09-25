@@ -5,7 +5,11 @@
   "artists": [
     "monsta-x"
   ],
-  "song": "JEALOUSY",
+  "songs": [
+    {
+      "title": "JEALOUSY"
+    }
+  ],
   "type": "mv",
   "channel": "STARSHIP",
   "embeddable": true,

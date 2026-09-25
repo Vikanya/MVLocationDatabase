@@ -5,7 +5,11 @@
   "artists": [
     "misamo"
   ],
-  "song": "Marshmallow",
+  "songs": [
+    {
+      "title": "Marshmallow"
+    }
+  ],
   "type": "mv",
   "channel": "TWICE JAPAN OFFICIAL YouTube Channel",
   "embeddable": true,

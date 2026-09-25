@@ -5,7 +5,11 @@
   "artists": [
     "illit"
   ],
-  "song": "jellyous",
+  "songs": [
+    {
+      "title": "jellyous"
+    }
+  ],
   "type": "mv",
   "channel": "HYBE LABELS",
   "embeddable": true,

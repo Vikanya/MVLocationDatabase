@@ -5,7 +5,11 @@
   "artists": [
     "ash-b"
   ],
-  "song": "Official M/V",
+  "songs": [
+    {
+      "title": "Official M/V"
+    }
+  ],
   "type": "mv",
   "channel": "Ash-B",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "hearts2hearts"
   ],
-  "song": "Butterflies",
+  "songs": [
+    {
+      "title": "Butterflies"
+    }
+  ],
   "type": "mv",
   "channel": "SMTOWN",
   "embeddable": true,

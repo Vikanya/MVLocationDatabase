@@ -5,7 +5,11 @@
   "artists": [
     "billlie"
   ],
-  "song": "RING ma Bell (what a wonderful world)",
+  "songs": [
+    {
+      "title": "RING ma Bell (what a wonderful world)"
+    }
+  ],
   "type": "mv",
   "channel": "Billlie",
   "embeddable": true,

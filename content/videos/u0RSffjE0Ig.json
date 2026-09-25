@@ -5,7 +5,11 @@
   "artists": [
     "nowadays"
   ],
-  "song_ko": "렛츠기릿",
+  "songs": [
+    {
+      "title_ko": "렛츠기릿"
+    }
+  ],
   "type": "mv",
   "channel": "NOWZ 나우즈 (Official YouTube Channel)",
   "embeddable": true,

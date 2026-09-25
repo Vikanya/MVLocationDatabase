@@ -5,7 +5,11 @@
   "artists": [
     "genblue"
   ],
-  "song": "COCOCO",
+  "songs": [
+    {
+      "title": "COCOCO"
+    }
+  ],
   "type": "mv",
   "channel": "GENBLUE幻藍小熊",
   "embeddable": true,

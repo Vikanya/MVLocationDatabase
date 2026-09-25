@@ -5,7 +5,11 @@
   "artists": [
     "lee-dahye"
   ],
-  "song": "NEVERTHELESS",
+  "songs": [
+    {
+      "title": "NEVERTHELESS"
+    }
+  ],
   "type": "performance",
   "channel": "이다혜 李多慧",
   "embeddable": true,

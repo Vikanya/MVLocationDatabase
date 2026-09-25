@@ -5,7 +5,11 @@
   "artists": [
     "chung-ha"
   ],
-  "song": "PLAY",
+  "songs": [
+    {
+      "title": "PLAY"
+    }
+  ],
   "type": "mv",
   "channel": "CHUNG HA_Official",
   "embeddable": true,

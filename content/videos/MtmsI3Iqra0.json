@@ -5,7 +5,11 @@
   "artists": [
     "sorn"
   ],
-  "song": "crazy stupid lovers",
+  "songs": [
+    {
+      "title": "crazy stupid lovers"
+    }
+  ],
   "type": "mv",
   "channel": "SORN",
   "embeddable": true,

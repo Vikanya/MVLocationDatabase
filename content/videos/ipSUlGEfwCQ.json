@@ -5,7 +5,11 @@
   "artists": [
     "tiot"
   ],
-  "song": "ROCK THANG",
+  "songs": [
+    {
+      "title": "ROCK THANG"
+    }
+  ],
   "type": "mv",
   "channel": "TIOT 티아이오티",
   "embeddable": true,

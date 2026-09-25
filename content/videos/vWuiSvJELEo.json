@@ -6,7 +6,11 @@
     "kid-milli",
     "dress"
   ],
-  "song": "Bankroll",
+  "songs": [
+    {
+      "title": "Bankroll"
+    }
+  ],
   "type": "mv",
   "channel": "1theK (원더케이)",
   "embeddable": true,

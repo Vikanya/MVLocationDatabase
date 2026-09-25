@@ -5,7 +5,11 @@
   "artists": [
     "ablume"
   ],
-  "song": "Echo",
+  "songs": [
+    {
+      "title": "Echo"
+    }
+  ],
   "type": "mv",
   "channel": "ablume",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "the-rose"
   ],
-  "song": "She",
+  "songs": [
+    {
+      "title": "She"
+    }
+  ],
   "type": "mv",
   "channel": "ida minardi",
   "embeddable": true,

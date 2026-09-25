@@ -5,8 +5,12 @@
   "artists": [
     "90tan"
   ],
-  "song": "TANG TANG TANG",
-  "song_ko": "탕탕탕",
+  "songs": [
+    {
+      "title": "TANG TANG TANG",
+      "title_ko": "탕탕탕"
+    }
+  ],
   "type": "mv",
   "channel": "비투비 컴퍼니 (BTOB COMPANY)",
   "embeddable": true,

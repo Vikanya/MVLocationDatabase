@@ -5,7 +5,11 @@
   "artists": [
     "momoland"
   ],
-  "song": "Music Video",
+  "songs": [
+    {
+      "title": "Music Video"
+    }
+  ],
   "type": "mv",
   "channel": "MOMOLAND (모모랜드)",
   "embeddable": true,

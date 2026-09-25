@@ -5,7 +5,11 @@
   "artists": [
     "이영지"
   ],
-  "song": "Small girl",
+  "songs": [
+    {
+      "title": "Small girl"
+    }
+  ],
   "type": "mv",
   "channel": "이영지",
   "embeddable": true,

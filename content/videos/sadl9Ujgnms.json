@@ -5,8 +5,12 @@
   "artists": [
     "evnne"
   ],
-  "song": "Backtalk",
-  "song_ko": "뱉어",
+  "songs": [
+    {
+      "title": "Backtalk",
+      "title_ko": "뱉어"
+    }
+  ],
   "type": "mv",
   "channel": "EVNNE",
   "embeddable": true,

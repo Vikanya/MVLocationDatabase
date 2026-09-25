@@ -5,7 +5,11 @@
   "artists": [
     "allday-project"
   ],
-  "song": "ONE MORE TIME",
+  "songs": [
+    {
+      "title": "ONE MORE TIME"
+    }
+  ],
   "type": "mv",
   "channel": "THEBLACKLABEL",
   "embeddable": true,

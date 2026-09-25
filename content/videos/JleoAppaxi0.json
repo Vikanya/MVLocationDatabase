@@ -5,7 +5,11 @@
   "artists": [
     "iu"
   ],
-  "song": "Love wins all",
+  "songs": [
+    {
+      "title": "Love wins all"
+    }
+  ],
   "type": "mv",
   "channel": "이지금 [IU Official]",
   "embeddable": true,

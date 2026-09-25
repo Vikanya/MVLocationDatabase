@@ -5,7 +5,11 @@
   "artists": [
     "artms"
   ],
-  "song": "Pre4 : Air",
+  "songs": [
+    {
+      "title": "Pre4 : Air"
+    }
+  ],
   "type": "other",
   "channel": "Official ARTMS",
   "embeddable": true,

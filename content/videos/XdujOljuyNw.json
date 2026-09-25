@@ -6,7 +6,11 @@
     "jay-park",
     "lngshot"
   ],
-  "song": "YEAH! YEAH!",
+  "songs": [
+    {
+      "title": "YEAH! YEAH!"
+    }
+  ],
   "type": "mv",
   "channel": "MORE VISION",
   "embeddable": true,

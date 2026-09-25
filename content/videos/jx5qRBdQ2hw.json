@@ -5,7 +5,11 @@
   "artists": [
     "csr"
   ],
-  "song": "Higher",
+  "songs": [
+    {
+      "title": "Higher"
+    }
+  ],
   "type": "mv",
   "channel": "첫사랑(CSR)",
   "embeddable": true,

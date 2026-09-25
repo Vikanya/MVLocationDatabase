@@ -5,7 +5,11 @@
   "artists": [
     "cravity"
   ],
-  "song": "Lemonade Fever",
+  "songs": [
+    {
+      "title": "Lemonade Fever"
+    }
+  ],
   "type": "mv",
   "channel": "STARSHIP",
   "embeddable": true,

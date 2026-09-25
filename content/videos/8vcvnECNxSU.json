@@ -5,7 +5,11 @@
   "artists": [
     "everglow"
   ],
-  "song": "SLAY",
+  "songs": [
+    {
+      "title": "SLAY"
+    }
+  ],
   "type": "performance",
   "channel": "STONE MUSIC",
   "embeddable": true,

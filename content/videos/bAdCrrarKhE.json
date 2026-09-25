@@ -5,7 +5,11 @@
   "artists": [
     "loco"
   ],
-  "song": "INEEDYOURLOVE",
+  "songs": [
+    {
+      "title": "INEEDYOURLOVE"
+    }
+  ],
   "type": "mv",
   "channel": "AOMGOFFICIAL",
   "embeddable": true,

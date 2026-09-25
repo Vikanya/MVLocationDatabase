@@ -5,8 +5,12 @@
   "artists": [
     "sf9"
   ],
-  "song": "Fanfare",
-  "song_ko": "팡파레",
+  "songs": [
+    {
+      "title": "Fanfare",
+      "title_ko": "팡파레"
+    }
+  ],
   "type": "mv",
   "channel": "1theK (원더케이)",
   "embeddable": true,

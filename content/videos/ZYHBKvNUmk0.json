@@ -5,7 +5,11 @@
   "artists": [
     "key"
   ],
-  "song": "Good & Great",
+  "songs": [
+    {
+      "title": "Good & Great"
+    }
+  ],
   "type": "mv",
   "channel": "SMTOWN",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "mirae"
   ],
-  "song": "Snow Prince",
+  "songs": [
+    {
+      "title": "Snow Prince"
+    }
+  ],
   "type": "other",
   "channel": "MIRAE",
   "embeddable": true,

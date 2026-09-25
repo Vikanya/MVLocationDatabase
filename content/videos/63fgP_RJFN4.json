@@ -5,7 +5,11 @@
   "artists": [
     "drippin"
   ],
-  "song": "Villain",
+  "songs": [
+    {
+      "title": "Villain"
+    }
+  ],
   "type": "mv",
   "channel": "woolliment",
   "embeddable": true,

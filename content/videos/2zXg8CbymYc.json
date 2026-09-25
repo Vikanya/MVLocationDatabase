@@ -5,7 +5,11 @@
   "artists": [
     "monsta-x"
   ],
-  "song": "Beautiful Liar",
+  "songs": [
+    {
+      "title": "Beautiful Liar"
+    }
+  ],
   "type": "mv",
   "channel": "STARSHIP",
   "embeddable": true,

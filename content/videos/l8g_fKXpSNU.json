@@ -5,7 +5,11 @@
   "artists": [
     "ghost9"
   ],
-  "song": "RUCKUS",
+  "songs": [
+    {
+      "title": "RUCKUS"
+    }
+  ],
   "type": "mv",
   "channel": "GHOST9 Official",
   "embeddable": true,

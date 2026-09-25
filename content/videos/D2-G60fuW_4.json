@@ -5,8 +5,12 @@
   "artists": [
     "ahof"
   ],
-  "song": "Rendezvous",
-  "song_ko": "그곳에서 다시 만나기로 해",
+  "songs": [
+    {
+      "title": "Rendezvous",
+      "title_ko": "그곳에서 다시 만나기로 해"
+    }
+  ],
   "type": "mv",
   "channel": "AHOF",
   "embeddable": true,

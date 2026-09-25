@@ -5,7 +5,11 @@
   "artists": [
     "hearts2hearts"
   ],
-  "song": "Pretty Please",
+  "songs": [
+    {
+      "title": "Pretty Please"
+    }
+  ],
   "type": "mv",
   "channel": "SMTOWN",
   "embeddable": true,

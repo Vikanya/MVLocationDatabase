@@ -5,7 +5,11 @@
   "artists": [
     "epex"
   ],
-  "song_ko": "사랑歌",
+  "songs": [
+    {
+      "title_ko": "사랑歌"
+    }
+  ],
   "type": "mv",
   "channel": "EPEX",
   "embeddable": true,

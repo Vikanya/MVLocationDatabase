@@ -5,7 +5,11 @@
   "artists": [
     "whee-in"
   ],
-  "song": "water color",
+  "songs": [
+    {
+      "title": "water color"
+    }
+  ],
   "type": "performance",
   "channel": "딩고 뮤직 / dingo music",
   "embeddable": true,

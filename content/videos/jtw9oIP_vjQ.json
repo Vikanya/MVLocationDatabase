@@ -5,7 +5,11 @@
   "artists": [
     "catch-the-young"
   ],
-  "song": "Dream It",
+  "songs": [
+    {
+      "title": "Dream It"
+    }
+  ],
   "type": "mv",
   "channel": "1theK (원더케이)",
   "embeddable": true,

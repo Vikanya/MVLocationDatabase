@@ -5,7 +5,11 @@
   "artists": [
     "nature"
   ],
-  "song": "RICA RICA",
+  "songs": [
+    {
+      "title": "RICA RICA"
+    }
+  ],
   "type": "mv",
   "channel": "STONE MUSIC",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "rolling-quartz"
   ],
-  "song": "NAZABABARA",
+  "songs": [
+    {
+      "title": "NAZABABARA"
+    }
+  ],
   "type": "mv",
   "channel": "미러볼 뮤직 - Mirrorball Music",
   "embeddable": true,

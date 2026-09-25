@@ -5,7 +5,11 @@
   "artists": [
     "mcnd-rive"
   ],
-  "song": "Pop Star",
+  "songs": [
+    {
+      "title": "Pop Star"
+    }
+  ],
   "type": "other",
   "channel": "MCND Official",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "mimiirose"
   ],
-  "song": "FLIRTING",
+  "songs": [
+    {
+      "title": "FLIRTING"
+    }
+  ],
   "type": "mv",
   "channel": "MIMIIROSE(미미로즈)",
   "embeddable": true,

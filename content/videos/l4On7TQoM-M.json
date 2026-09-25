@@ -5,7 +5,11 @@
   "artists": [
     "meovv"
   ],
-  "song": "DROP TOP",
+  "songs": [
+    {
+      "title": "DROP TOP"
+    }
+  ],
   "type": "mv",
   "channel": "THEBLACKLABEL",
   "embeddable": true,

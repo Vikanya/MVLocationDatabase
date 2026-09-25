@@ -5,7 +5,11 @@
   "artists": [
     "chil-label"
   ],
-  "song": "Chil !",
+  "songs": [
+    {
+      "title": "Chil !"
+    }
+  ],
   "type": "other",
   "channel": "칠성레이블",
   "embeddable": true,

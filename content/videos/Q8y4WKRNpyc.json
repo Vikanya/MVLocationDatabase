@@ -5,8 +5,12 @@
   "artists": [
     "jo-yuri"
   ],
-  "song": "Farewell for now!",
-  "song_ko": "이제 안녕!",
+  "songs": [
+    {
+      "title": "Farewell for now!",
+      "title_ko": "이제 안녕!"
+    }
+  ],
   "type": "mv",
   "channel": "조유리 JO YURI",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "wei"
   ],
-  "song": "Spray",
+  "songs": [
+    {
+      "title": "Spray"
+    }
+  ],
   "type": "mv",
   "channel": "WEi",
   "embeddable": true,

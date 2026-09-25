@@ -5,7 +5,11 @@
   "artists": [
     "trendz"
   ],
-  "song": "NEW DAYZ",
+  "songs": [
+    {
+      "title": "NEW DAYZ"
+    }
+  ],
   "type": "mv",
   "channel": "TRENDZ(트렌드지)",
   "embeddable": true,

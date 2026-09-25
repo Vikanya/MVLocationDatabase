@@ -5,7 +5,11 @@
   "artists": [
     "lee-chaeyeon"
   ],
-  "song": "No Tears On The Dancefloor",
+  "songs": [
+    {
+      "title": "No Tears On The Dancefloor"
+    }
+  ],
   "type": "mv",
   "channel": "LEE CHAEYEON",
   "embeddable": true,

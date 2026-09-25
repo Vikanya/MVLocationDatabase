@@ -5,7 +5,11 @@
   "artists": [
     "burvey"
   ],
-  "song": "CLAP",
+  "songs": [
+    {
+      "title": "CLAP"
+    }
+  ],
   "type": "performance",
   "channel": "BURVEY",
   "embeddable": true,

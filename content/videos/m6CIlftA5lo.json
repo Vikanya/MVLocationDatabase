@@ -5,7 +5,11 @@
   "artists": [
     "sub"
   ],
-  "song": "EXS",
+  "songs": [
+    {
+      "title": "EXS"
+    }
+  ],
   "type": "mv",
   "channel": "Amoeba Culture (아메바컬쳐)",
   "embeddable": true,

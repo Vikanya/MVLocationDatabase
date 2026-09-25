@@ -5,7 +5,11 @@
   "artists": [
     "limelight"
   ],
-  "song": "Eye To Eye",
+  "songs": [
+    {
+      "title": "Eye To Eye"
+    }
+  ],
   "type": "clip",
   "channel": "MADEIN",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "billlie"
   ],
-  "song": "DANG! (hocus pocus)",
+  "songs": [
+    {
+      "title": "DANG! (hocus pocus)"
+    }
+  ],
   "type": "mv",
   "channel": "Billlie",
   "embeddable": true,

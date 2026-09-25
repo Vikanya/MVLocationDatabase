@@ -5,7 +5,11 @@
   "artists": [
     "pixy"
   ],
-  "song": "Wings",
+  "songs": [
+    {
+      "title": "Wings"
+    }
+  ],
   "type": "mv",
   "channel": "PIXY",
   "embeddable": true,

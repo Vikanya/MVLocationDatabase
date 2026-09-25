@@ -5,7 +5,11 @@
   "artists": [
     "secret-number"
   ],
-  "song": "STARLIGHT",
+  "songs": [
+    {
+      "title": "STARLIGHT"
+    }
+  ],
   "type": "mv",
   "channel": "SECRET NUMBER",
   "embeddable": true,

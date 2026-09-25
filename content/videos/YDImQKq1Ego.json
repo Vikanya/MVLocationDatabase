@@ -5,7 +5,11 @@
   "artists": [
     "triples"
   ],
-  "song": "Touch",
+  "songs": [
+    {
+      "title": "Touch"
+    }
+  ],
   "type": "performance",
   "channel": "tripleS official",
   "embeddable": true,

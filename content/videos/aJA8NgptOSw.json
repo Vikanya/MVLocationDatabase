@@ -5,7 +5,11 @@
   "artists": [
     "kid-milli"
   ],
-  "song": "Do What Moves You with BACARDI",
+  "songs": [
+    {
+      "title": "Do What Moves You with BACARDI"
+    }
+  ],
   "type": "mv",
   "channel": "AP Alchemy",
   "embeddable": true,

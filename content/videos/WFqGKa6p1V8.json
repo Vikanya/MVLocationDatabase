@@ -5,7 +5,11 @@
   "artists": [
     "purple-kiss"
   ],
-  "song": "Sweet Juice",
+  "songs": [
+    {
+      "title": "Sweet Juice"
+    }
+  ],
   "type": "mv",
   "channel": "PURPLE KISS",
   "embeddable": true,

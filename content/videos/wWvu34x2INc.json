@@ -5,7 +5,11 @@
   "artists": [
     "unchild"
   ],
-  "song": "UNCHILD",
+  "songs": [
+    {
+      "title": "UNCHILD"
+    }
+  ],
   "type": "mv",
   "channel": "High Up Ent",
   "embeddable": true,

@@ -5,7 +5,11 @@
   "artists": [
     "aimers"
   ],
-  "song": "Somebody",
+  "songs": [
+    {
+      "title": "Somebody"
+    }
+  ],
   "type": "mv",
   "channel": "AIMERS",
   "embeddable": true,

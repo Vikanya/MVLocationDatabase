@@ -5,8 +5,12 @@
   "artists": [
     "dkz"
   ],
-  "song": "Uh-Heung",
-  "song_ko": "호랑이가 쫓아온다",
+  "songs": [
+    {
+      "title": "Uh-Heung",
+      "title_ko": "호랑이가 쫓아온다"
+    }
+  ],
   "type": "mv",
   "channel": "DKZ",
   "embeddable": true,

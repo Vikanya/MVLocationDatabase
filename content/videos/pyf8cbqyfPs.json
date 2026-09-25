@@ -5,7 +5,11 @@
   "artists": [
     "le-sserafim"
   ],
-  "song": "ANTIFRAGILE",
+  "songs": [
+    {
+      "title": "ANTIFRAGILE"
+    }
+  ],
   "type": "mv",
   "channel": "HYBE LABELS",
   "embeddable": true,

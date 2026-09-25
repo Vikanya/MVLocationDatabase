@@ -5,7 +5,11 @@
   "artists": [
     "got7"
   ],
-  "song": "Fly",
+  "songs": [
+    {
+      "title": "Fly"
+    }
+  ],
   "type": "mv",
   "channel": "JYP Entertainment",
   "embeddable": true,

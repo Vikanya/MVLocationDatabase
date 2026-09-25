@@ -5,7 +5,11 @@
   "artists": [
     "we-na"
   ],
-  "song": "Baby Step",
+  "songs": [
+    {
+      "title": "Baby Step"
+    }
+  ],
   "type": "other",
   "channel": "OGAM Entertainment",
   "embeddable": true,

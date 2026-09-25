@@ -5,7 +5,11 @@
   "artists": [
     "ini"
   ],
-  "song": "Walkie Talkie",
+  "songs": [
+    {
+      "title": "Walkie Talkie"
+    }
+  ],
   "type": "performance",
   "channel": "INI",
   "embeddable": true,

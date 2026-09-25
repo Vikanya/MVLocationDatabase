@@ -5,7 +5,11 @@
   "artists": [
     "stray-kids"
   ],
-  "song": "Double Knot",
+  "songs": [
+    {
+      "title": "Double Knot"
+    }
+  ],
   "type": "mv",
   "channel": "JYP Entertainment",
   "embeddable": true,

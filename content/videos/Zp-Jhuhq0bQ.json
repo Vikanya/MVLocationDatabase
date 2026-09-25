@@ -5,7 +5,11 @@
   "artists": [
     "babymonster"
   ],
-  "song": "DRIP",
+  "songs": [
+    {
+      "title": "DRIP"
+    }
+  ],
   "type": "mv",
   "channel": "BABYMONSTER",
   "embeddable": true,

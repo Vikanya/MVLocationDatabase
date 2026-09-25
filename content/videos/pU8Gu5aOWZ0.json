@@ -5,7 +5,11 @@
   "artists": [
     "xiumin"
   ],
-  "song": "Brand New",
+  "songs": [
+    {
+      "title": "Brand New"
+    }
+  ],
   "type": "mv",
   "channel": "SMTOWN",
   "embeddable": true,

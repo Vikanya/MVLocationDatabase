@@ -5,7 +5,11 @@
   "artists": [
     "le-sserafim"
   ],
-  "song": "BOOMPALA",
+  "songs": [
+    {
+      "title": "BOOMPALA"
+    }
+  ],
   "type": "performance",
   "channel": "HYBE LABELS",
   "embeddable": true,

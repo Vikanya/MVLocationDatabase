@@ -5,6 +5,7 @@
   "artists": [
     "epex"
   ],
+  "song_ko": "같은 시간 같은 자리",
   "type": "cover",
   "channel": "EPEX",
   "embeddable": true,
@@ -21,5 +22,8 @@
         "Ametage!48"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

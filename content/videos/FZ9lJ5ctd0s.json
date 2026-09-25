@@ -5,6 +5,8 @@
   "artists": [
     "monstax"
   ],
+  "song": "HERO",
+  "song_ko": "히어로",
   "type": "clip",
   "channel": "STARSHIP",
   "embeddable": true,
@@ -20,5 +22,8 @@
         "Helipads!2"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

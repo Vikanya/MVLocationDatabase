@@ -1,5 +1,5 @@
 ---
-import { db, href, media, youtubeThumb, TYPE_LABEL, videoLabel, type Video } from '../lib/data';
+import { db, href, media, youtubeThumb, TYPE_LABEL, videoLabel, videoLabelKo, type Video } from '../lib/data';
 
 interface Props {
   video: Video;
@@ -27,7 +27,9 @@ const kind = video.data.type ?? 'other';
     {src && <img src={src} alt="" loading="lazy" decoding="async" width="480" height="270" />}
     <span class="badge" data-kind={kind}>{TYPE_LABEL[kind]}</span>
   </div>
-  <p class="card-title">{videoLabel(video)}</p>
+  <p class="card-title">
+    {videoLabel(video)}{videoLabelKo(video) && <span class="muted" lang="ko"> {videoLabelKo(video)}</span>}
+  </p>
   <p class="card-meta">{artists || video.data.channel || ' '}</p>
   {note && <p class="card-meta">{note}</p>}
 </a>

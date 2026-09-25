@@ -5,6 +5,7 @@
   "artists": [
     "epex"
   ],
+  "song": "Lock Down",
   "type": "mv",
   "channel": "EPEX",
   "embeddable": true,
@@ -37,5 +38,8 @@
         "provoke Seoul!10"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

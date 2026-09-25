@@ -5,6 +5,7 @@
   "artists": [
     "monsta-x"
   ],
+  "song": "JEALOUSY",
   "type": "mv",
   "channel": "STARSHIP",
   "embeddable": true,
@@ -23,5 +24,8 @@
         "Hangar bazar!9"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

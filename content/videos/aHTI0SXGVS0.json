@@ -5,6 +5,7 @@
   "artists": [
     "xg"
   ],
+  "song": "IS THIS LOVE",
   "type": "mv",
   "channel": "XG",
   "embeddable": true,
@@ -20,5 +21,8 @@
         "Abandoned Park!24"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

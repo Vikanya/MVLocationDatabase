@@ -5,6 +5,8 @@
   "artists": [
     "pentagon"
   ],
+  "song": "Shine",
+  "song_ko": "빛나리",
   "type": "mv",
   "channel": "1theK (원더케이)",
   "embeddable": true,
@@ -31,5 +33,8 @@
         "Interiors!7"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

@@ -5,6 +5,7 @@
   "artists": [
     "b1a4"
   ],
+  "song": "SOLO DAY",
   "type": "other",
   "channel": "B1A4 OFFICIAL +",
   "embeddable": true,
@@ -20,5 +21,8 @@
         "Carwash/Gas Station!50"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

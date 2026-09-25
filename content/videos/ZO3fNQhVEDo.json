@@ -5,6 +5,7 @@
   "artists": [
     "charismatic"
   ],
+  "song": "PICK on the top",
   "type": "performance",
   "channel": "Mnet K-POP",
   "embeddable": true,
@@ -23,5 +24,8 @@
         "Quatro Box!3"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

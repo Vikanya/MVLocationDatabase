@@ -5,6 +5,7 @@
   "artists": [
     "evnne"
   ],
+  "song": "UGLY",
   "type": "mv",
   "channel": "STONE MUSIC",
   "embeddable": true,
@@ -20,5 +21,8 @@
         "Columbus!27"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

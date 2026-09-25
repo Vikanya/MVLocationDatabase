@@ -5,6 +5,8 @@
   "artists": [
     "chanhyun"
   ],
+  "song": "Shhh",
+  "song_ko": "쉿",
   "type": "mv",
   "embeddable": false,
   "appearances": [
@@ -24,5 +26,8 @@
         "Ametage!26"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

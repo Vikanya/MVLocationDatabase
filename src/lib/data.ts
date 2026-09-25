@@ -198,8 +198,10 @@ export const TYPE_LABEL: Record<string, string> = {
   other: 'VIDEO',
 };
 
-/** Short label for a video: the song name when known, else the full title. */
-export const videoLabel = (v: Video) => v.data.song || v.data.title;
+/** Short label for a video: the Latin song title, else the Korean one, else the full video title. */
+export const videoLabel = (v: Video) => v.data.song || v.data.song_ko || v.data.title;
+/** The Korean song title when it's shown next to a Latin one (empty otherwise). */
+export const videoLabelKo = (v: Video) => (v.data.song && v.data.song_ko) || '';
 
 export function pinsFor(locations: Location[], count: (l: Location) => number): Pin[] {
   return locations

@@ -5,6 +5,7 @@
   "artists": [
     "we-na"
   ],
+  "song": "Baby Step",
   "type": "other",
   "channel": "OGAM Entertainment",
   "embeddable": true,
@@ -25,5 +26,8 @@
         "Ametage!61"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

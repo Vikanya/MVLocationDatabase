@@ -5,6 +5,7 @@
   "artists": [
     "aespa"
   ],
+  "song": "Get Goin’",
   "type": "mv",
   "channel": "Apple TV",
   "embeddable": true,
@@ -20,5 +21,8 @@
         "Helipads!19"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

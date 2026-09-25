@@ -7,6 +7,7 @@
     "잔나비-최정훈",
     "사이먼-도미닉"
   ],
+  "song_ko": "사라진 모든 것들에게",
   "type": "mv",
   "channel": "1theK (원더케이)",
   "embeddable": true,
@@ -27,5 +28,8 @@
         "provoke Seoul!28"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

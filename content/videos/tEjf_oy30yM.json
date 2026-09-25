@@ -5,6 +5,7 @@
   "artists": [
     "rolling-quartz"
   ],
+  "song": "NAZABABARA",
   "type": "mv",
   "channel": "미러볼 뮤직 - Mirrorball Music",
   "embeddable": true,
@@ -25,5 +26,8 @@
         "Ametage!12"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

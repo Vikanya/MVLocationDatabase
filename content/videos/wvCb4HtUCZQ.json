@@ -5,6 +5,7 @@
   "artists": [
     "makamaka"
   ],
+  "song": "I AM",
   "type": "mv",
   "channel": "MAKAMAKA",
   "embeddable": true,
@@ -29,5 +30,8 @@
         "Ametage!18"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

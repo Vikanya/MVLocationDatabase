@@ -5,6 +5,8 @@
   "artists": [
     "youngtak"
   ],
+  "song": "SuperSuper",
+  "song_ko": "슈퍼슈퍼",
   "type": "mv",
   "channel": "1theK (원더케이)",
   "embeddable": true,
@@ -20,5 +22,8 @@
         "Parkings/Rooftops!8"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

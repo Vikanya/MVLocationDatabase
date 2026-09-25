@@ -5,7 +5,7 @@
   "artists": [
     "시연"
   ],
-  "song": "시작",
+  "song_ko": "시작",
   "type": "mv",
   "channel": "Dreamcatcher official",
   "embeddable": true,
@@ -21,5 +21,8 @@
         "Helipads!13"
       ]
     }
+  ],
+  "review": [
+    "Only a Korean song title is known — add the official Latin title if there is one"
   ]
 }

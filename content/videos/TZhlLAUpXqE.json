@@ -5,6 +5,7 @@
   "artists": [
     "epex"
   ],
+  "song_ko": "잃어버린 것들에 대하여",
   "type": "mv",
   "channel": "EPEX",
   "embeddable": true,
@@ -20,5 +21,8 @@
         "Geobug Island!16"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

@@ -5,6 +5,7 @@
   "artists": [
     "whee-in"
   ],
+  "song": "water color",
   "type": "performance",
   "channel": "딩고 뮤직 / dingo music",
   "embeddable": true,
@@ -20,5 +21,8 @@
         "Wave!3"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

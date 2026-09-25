@@ -5,7 +5,7 @@
   "artists": [
     "nowadays"
   ],
-  "song": "렛츠기릿 (Let",
+  "song_ko": "렛츠기릿",
   "type": "mv",
   "channel": "NOWZ 나우즈 (Official YouTube Channel)",
   "embeddable": true,
@@ -26,5 +26,8 @@
         "Carwash/Gas Station!29"
       ]
     }
+  ],
+  "review": [
+    "Only a Korean song title is known — add the official Latin title if there is one"
   ]
 }

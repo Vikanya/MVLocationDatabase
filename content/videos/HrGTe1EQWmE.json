@@ -5,6 +5,8 @@
   "artists": [
     "jerastar"
   ],
+  "song": "ENTROPY",
+  "song_ko": "예측불허",
   "type": "mv",
   "channel": "1theK (원더케이)",
   "embeddable": true,
@@ -20,5 +22,8 @@
         "Gimcheon campus!12"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

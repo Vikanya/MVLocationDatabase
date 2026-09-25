@@ -7,7 +7,7 @@
     "시연",
     "유현"
   ],
-  "song": "어쩌나",
+  "song_ko": "어쩌나",
   "type": "clip",
   "channel": "Dreamcatcher official",
   "embeddable": true,
@@ -23,5 +23,8 @@
         "Interiors!9"
       ]
     }
+  ],
+  "review": [
+    "Only a Korean song title is known — add the official Latin title if there is one"
   ]
 }

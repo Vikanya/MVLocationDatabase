@@ -5,6 +5,7 @@
   "artists": [
     "djb-esim"
   ],
+  "song": "NICE TO MIXX YOU",
   "type": "other",
   "channel": "DJB",
   "embeddable": true,
@@ -41,5 +42,8 @@
         "Ametage!78"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

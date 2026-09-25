@@ -5,6 +5,7 @@
   "artists": [
     "dxteen"
   ],
+  "song": "Come Over",
   "type": "performance",
   "channel": "DXTEEN",
   "embeddable": true,
@@ -25,5 +26,8 @@
         "Ametage!51"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

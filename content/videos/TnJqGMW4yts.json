@@ -5,6 +5,7 @@
   "artists": [
     "bvndit"
   ],
+  "song": "Hocus Pocus",
   "type": "mv",
   "channel": "STONE MUSIC",
   "embeddable": true,
@@ -20,5 +21,8 @@
         "Helipads!42"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

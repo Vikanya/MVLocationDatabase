@@ -5,6 +5,8 @@
   "artists": [
     "ovan"
   ],
+  "song": "Church OPPA",
+  "song_ko": "교회오빠",
   "type": "mv",
   "channel": "1theK (원더케이)",
   "embeddable": true,
@@ -29,5 +31,8 @@
         "Ametage!77"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

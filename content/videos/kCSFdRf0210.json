@@ -5,6 +5,8 @@
   "artists": [
     "apink"
   ],
+  "song": "Only one",
+  "song_ko": "내가 설렐 수 있게",
   "type": "mv",
   "channel": "1theK (원더케이)",
   "embeddable": true,
@@ -20,5 +22,8 @@
         "Church Roof!6"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

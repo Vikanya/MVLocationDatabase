@@ -5,6 +5,7 @@
   "artists": [
     "3ye"
   ],
+  "song": "YESSIR",
   "type": "mv",
   "channel": "3YE OFFICIAL",
   "embeddable": true,
@@ -23,5 +24,8 @@
         "Hangar bazar!13"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

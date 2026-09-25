@@ -5,6 +5,7 @@
   "artists": [
     "ateez"
   ],
+  "song": "ROCKY",
   "type": "mv",
   "channel": "日本コロムビア 公式YouTubeチャンネル",
   "embeddable": true,
@@ -15,5 +16,8 @@
         "Grangar!24"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

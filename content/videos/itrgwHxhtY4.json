@@ -5,6 +5,7 @@
   "artists": [
     "yoo-se-yoon"
   ],
+  "song": "Love Ya",
   "type": "mv",
   "channel": "STONE MUSIC",
   "embeddable": true,
@@ -29,5 +30,8 @@
         "Ametage!43"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

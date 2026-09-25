@@ -5,6 +5,7 @@
   "artists": [
     "rain"
   ],
+  "song": "WHY DON’T WE",
   "type": "mv",
   "channel": "RAIN's Official Channel",
   "embeddable": true,
@@ -20,5 +21,8 @@
         "Hangar bazar!16"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

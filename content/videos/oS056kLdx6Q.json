@@ -5,6 +5,7 @@
   "artists": [
     "yerin"
   ],
+  "song": "Wavy",
   "type": "mv",
   "channel": "1theK (원더케이)",
   "embeddable": true,
@@ -21,5 +22,8 @@
         "Ametage!66"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

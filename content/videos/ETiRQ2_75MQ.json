@@ -5,6 +5,8 @@
   "artists": [
     "switch"
   ],
+  "song": "Fiestaloca",
+  "song_ko": "피에스타로카",
   "type": "other",
   "channel": "OGAM Entertainment",
   "embeddable": true,
@@ -20,5 +22,8 @@
         "Gimcheon campus!11"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

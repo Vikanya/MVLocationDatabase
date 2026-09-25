@@ -5,6 +5,7 @@
   "artists": [
     "vixx"
   ],
+  "song": "The Closer",
   "type": "mv",
   "channel": "RealVIXX",
   "embeddable": true,
@@ -20,5 +21,8 @@
         "Gimcheon campus!6"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

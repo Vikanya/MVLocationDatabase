@@ -5,6 +5,7 @@
   "artists": [
     "skyle"
   ],
+  "song": "Bye Bye Bye",
   "type": "mv",
   "channel": "SKYLE  ",
   "embeddable": true,
@@ -29,5 +30,8 @@
         "Ametage!11"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

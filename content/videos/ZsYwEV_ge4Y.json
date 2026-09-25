@@ -5,6 +5,8 @@
   "artists": [
     "gfriend"
   ],
+  "song": "Summer Rain",
+  "song_ko": "여름비",
   "type": "mv",
   "channel": "1theK (원더케이)",
   "embeddable": true,
@@ -20,5 +22,8 @@
         "Interiors!6"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

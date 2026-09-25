@@ -5,6 +5,7 @@
   "artists": [
     "weki-meki"
   ],
+  "song": "Crush",
   "type": "mv",
   "channel": "Weki Meki 위키미키",
   "embeddable": true,
@@ -23,5 +24,8 @@
         "Hangar bazar!7"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

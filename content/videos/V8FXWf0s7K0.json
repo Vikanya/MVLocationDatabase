@@ -5,6 +5,8 @@
   "artists": [
     "solar"
   ],
+  "song": "Spit it out",
+  "song_ko": "뱉어",
   "type": "mv",
   "channel": "MAMAMOO",
   "embeddable": true,
@@ -23,5 +25,8 @@
         "Hangar bazar!24"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

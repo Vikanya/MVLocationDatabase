@@ -90,7 +90,16 @@ collections:
         display_fields: ['{{name}} {{name_ko}}']
         multiple: true
         required: false
-      - { name: song, label: Song, widget: string, required: false, hint: 'Short song name, shown on cards' }
+      - name: song
+        label: Song (Latin)
+        hint: The official Latin title, as the label writes it (e.g. Go Up). Leave empty if there is only a Korean title.
+        widget: string
+        required: false
+      - name: song_ko
+        label: Song (Korean)
+        hint: The Korean title in Hangul (e.g. 위로위로). Leave empty for songs without one.
+        widget: string
+        required: false
       - name: type
         label: Type
         widget: select

@@ -5,6 +5,7 @@
   "artists": [
     "kiiras"
   ],
+  "song": "KILL MA BO$$",
   "type": "mv",
   "channel": "1theK (원더케이)",
   "embeddable": true,
@@ -20,5 +21,8 @@
         "Arena!6"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

@@ -6,6 +6,7 @@
     "hwasa",
     "swf2"
   ],
+  "song": "Chili",
   "type": "mv",
   "channel": "The CHOOM (더 춤)",
   "embeddable": true,
@@ -42,5 +43,8 @@
         "provoke Seoul!12"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

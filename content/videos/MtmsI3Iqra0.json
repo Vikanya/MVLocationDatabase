@@ -5,6 +5,7 @@
   "artists": [
     "sorn"
   ],
+  "song": "crazy stupid lovers",
   "type": "mv",
   "channel": "SORN",
   "embeddable": true,
@@ -20,5 +21,8 @@
         "Interiors!3"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

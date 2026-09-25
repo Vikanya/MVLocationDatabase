@@ -5,6 +5,7 @@
   "artists": [
     "park-bom"
   ],
+  "song_ko": "4시44분",
   "type": "mv",
   "channel": "D-NATION",
   "embeddable": true,
@@ -20,5 +21,8 @@
         "Parkings/Rooftops!57"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

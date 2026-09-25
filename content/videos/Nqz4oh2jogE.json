@@ -5,6 +5,7 @@
   "artists": [
     "moonbyul"
   ],
+  "song_ko": "머리에서 발끝까지",
   "type": "clip",
   "channel": "MAMAMOO",
   "embeddable": true,
@@ -20,5 +21,8 @@
         "Interiors!2"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

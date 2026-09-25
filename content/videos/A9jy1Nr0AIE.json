@@ -5,6 +5,7 @@
   "artists": [
     "qman"
   ],
+  "song": "Supercar",
   "type": "mv",
   "embeddable": false,
   "appearances": [
@@ -20,5 +21,8 @@
         "Ametage!14"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

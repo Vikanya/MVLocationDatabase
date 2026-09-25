@@ -5,7 +5,7 @@
   "artists": [
     "moong-myang"
   ],
-  "song": "부아앙~~",
+  "song_ko": "부아앙~~",
   "type": "mv",
   "channel": "MAJOR9 메이저나인",
   "embeddable": true,
@@ -35,5 +35,8 @@
         "Parkings/Rooftops!50"
       ]
     }
+  ],
+  "review": [
+    "Only a Korean song title is known — add the official Latin title if there is one"
   ]
 }

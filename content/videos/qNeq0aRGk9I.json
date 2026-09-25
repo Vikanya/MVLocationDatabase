@@ -5,6 +5,8 @@
   "artists": [
     "zico"
   ],
+  "song": "I Am You, You Are Me",
+  "song_ko": "너는 나 나는 너",
   "type": "cover",
   "channel": "Official fromis_9",
   "embeddable": true,
@@ -21,5 +23,8 @@
         "Studio Heal!2"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

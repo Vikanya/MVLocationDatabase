@@ -5,6 +5,8 @@
   "artists": [
     "park-bom"
   ],
+  "song": "Spring",
+  "song_ko": "봄",
   "type": "mv",
   "channel": "D-NATION",
   "embeddable": true,
@@ -23,5 +25,8 @@
         "Hangar bazar!19"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

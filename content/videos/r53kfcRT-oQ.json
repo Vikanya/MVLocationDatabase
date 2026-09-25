@@ -5,6 +5,8 @@
   "artists": [
     "song-sohee"
   ],
+  "song": "GANGGANGSULLAE",
+  "song_ko": "공중무용",
   "type": "other",
   "channel": "송소희 Song Sohee",
   "embeddable": true,
@@ -20,5 +22,8 @@
         "Hangar bazar!27"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

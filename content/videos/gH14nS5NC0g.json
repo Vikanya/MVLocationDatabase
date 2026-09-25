@@ -5,6 +5,7 @@
   "artists": [
     "onf"
   ],
+  "song": "Why",
   "type": "mv",
   "embeddable": false,
   "appearances": [
@@ -19,5 +20,8 @@
         "Gimcheon campus!3"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

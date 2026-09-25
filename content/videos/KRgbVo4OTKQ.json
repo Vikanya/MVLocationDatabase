@@ -5,6 +5,7 @@
   "artists": [
     "ikon"
   ],
+  "song": "딴따라 Tantara",
   "type": "mv",
   "channel": "iKON",
   "embeddable": true,
@@ -15,5 +16,8 @@
         "Grangar!6"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

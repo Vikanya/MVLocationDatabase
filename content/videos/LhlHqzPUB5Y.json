@@ -5,6 +5,7 @@
   "artists": [
     "odd-youth"
   ],
+  "song": "can′t go back",
   "type": "mv",
   "channel": "STONE MUSIC",
   "embeddable": true,
@@ -20,5 +21,8 @@
         "Arena!8"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

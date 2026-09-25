@@ -6,6 +6,7 @@
     "lil-moshpit",
     "fleeky-bang"
   ],
+  "song": "How We Came",
   "type": "mv",
   "channel": "H1GHR MUSIC",
   "embeddable": true,
@@ -16,5 +17,8 @@
         "Grangar!5"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

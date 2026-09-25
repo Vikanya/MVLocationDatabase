@@ -5,6 +5,7 @@
   "artists": [
     "fromis-9"
   ],
+  "song": "My Night Routine",
   "type": "live",
   "channel": "SEOUL MUSIC / 서울뮤직",
   "embeddable": true,
@@ -21,5 +22,8 @@
         "Ametage!47"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

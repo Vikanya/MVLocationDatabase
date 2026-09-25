@@ -5,6 +5,7 @@
   "artists": [
     "soya"
   ],
+  "song": "Artist",
   "type": "mv",
   "channel": "SUPER SOUND Bugs!",
   "embeddable": true,
@@ -20,5 +21,8 @@
         "Gimcheon campus!10"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

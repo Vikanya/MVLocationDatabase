@@ -5,6 +5,7 @@
   "artists": [
     "ramengvrl"
   ],
+  "song": "Ain’t No MF",
   "type": "mv",
   "channel": "RAMENGVRL",
   "embeddable": true,
@@ -21,5 +22,8 @@
         "provoke Seoul!25"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

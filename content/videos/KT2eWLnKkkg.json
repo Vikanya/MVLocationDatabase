@@ -5,6 +5,8 @@
   "artists": [
     "stayc"
   ],
+  "song": "RUN2U",
+  "song_ko": "런투유",
   "type": "performance",
   "channel": "1theK Originals - 원더케이 오리지널",
   "embeddable": true,
@@ -20,5 +22,8 @@
         "4x4!3"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

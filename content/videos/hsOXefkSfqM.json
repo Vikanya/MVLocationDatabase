@@ -5,6 +5,7 @@
   "artists": [
     "whee-in"
   ],
+  "song": "In The Mood",
   "type": "live",
   "channel": "THEL1VE",
   "embeddable": true,
@@ -20,5 +21,8 @@
         "Concrete!2"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

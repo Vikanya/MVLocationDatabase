@@ -5,6 +5,7 @@
   "artists": [
     "blitzers"
   ],
+  "song": "Breathe Again",
   "type": "mv",
   "channel": "BLITZERS OFFICIAL",
   "embeddable": true,
@@ -33,5 +34,8 @@
         "provoke Seoul!7"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

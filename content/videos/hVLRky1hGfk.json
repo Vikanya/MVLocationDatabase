@@ -5,6 +5,8 @@
   "artists": [
     "bibi"
   ],
+  "song": "Animal Farm",
+  "song_ko": "가면무도회",
   "type": "mv",
   "channel": "BIBI",
   "embeddable": true,
@@ -20,5 +22,8 @@
         "Columbus!51"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

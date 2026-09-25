@@ -5,6 +5,7 @@
   "artists": [
     "wonjeong-department-store"
   ],
+  "song": "PURE HYMN",
   "type": "mv",
   "channel": "원정백화점 WONJEONG DEPARTMENT STORE",
   "embeddable": true,
@@ -20,5 +21,8 @@
         "Columbus!29"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

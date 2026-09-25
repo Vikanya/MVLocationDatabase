@@ -5,6 +5,7 @@
   "artists": [
     "halo"
   ],
+  "song": "O.M.G.",
   "type": "mv",
   "embeddable": false,
   "appearances": [
@@ -19,5 +20,8 @@
         "Helipads!5"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

@@ -5,6 +5,8 @@
   "artists": [
     "bewhy"
   ],
+  "song": "Newly",
+  "song_ko": "새로이",
   "type": "mv",
   "channel": "1theK (원더케이)",
   "embeddable": true,
@@ -20,5 +22,8 @@
         "Hangar bazar!17"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

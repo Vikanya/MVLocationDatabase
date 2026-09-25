@@ -5,6 +5,7 @@
   "artists": [
     "asc2nt"
   ],
+  "song": "LOVE ME DO",
   "type": "mv",
   "channel": "DanalEntertainment",
   "embeddable": true,
@@ -20,5 +21,8 @@
         "Maison!2"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

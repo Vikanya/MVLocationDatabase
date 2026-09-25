@@ -5,6 +5,7 @@
   "artists": [
     "lun8"
   ],
+  "song": "Lost",
   "type": "mv",
   "channel": "fantagio 판타지오",
   "embeddable": true,
@@ -44,5 +45,8 @@
         "Tunnels!8"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

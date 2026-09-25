@@ -5,6 +5,8 @@
   "artists": [
     "be-o"
   ],
+  "song": "MAD",
+  "song_ko": "미쳐버리겠다",
   "type": "mv",
   "channel": "1theK (원더케이)",
   "embeddable": true,
@@ -20,5 +22,8 @@
         "Bridges!8"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

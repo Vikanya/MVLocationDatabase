@@ -5,6 +5,7 @@
   "artists": [
     "아이묭"
   ],
+  "song": "Marigold (マリーゴールド)",
   "type": "cover",
   "channel": "싱어송라이터 미리 MIRI",
   "embeddable": true,
@@ -21,5 +22,8 @@
         "Studio Heal!4"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

@@ -5,6 +5,7 @@
   "artists": [
     "weki-meki"
   ],
+  "song": "Siesta",
   "type": "mv",
   "channel": "fantagio 판타지오",
   "embeddable": true,
@@ -20,5 +21,8 @@
         "Geobug Island!3"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

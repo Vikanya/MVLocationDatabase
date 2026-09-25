@@ -5,6 +5,7 @@
   "artists": [
     "the-8"
   ],
+  "song": "深渊 (Abyss)",
   "type": "other",
   "channel": "SEVENTEEN",
   "embeddable": true,
@@ -29,5 +30,8 @@
         "provoke Seoul!14"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

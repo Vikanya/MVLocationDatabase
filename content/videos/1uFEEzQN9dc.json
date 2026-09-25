@@ -5,6 +5,7 @@
   "artists": [
     "bol4"
   ],
+  "song": "Bloom",
   "type": "mv",
   "channel": "SUPER SOUND Bugs!",
   "embeddable": true,
@@ -25,5 +26,8 @@
         "Carwash/Gas Station!22"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

@@ -5,6 +5,7 @@
   "artists": [
     "rainz"
   ],
+  "song": "Turn it up",
   "type": "mv",
   "channel": "GENIE MUSIC",
   "embeddable": true,
@@ -23,5 +24,8 @@
         "Hangar bazar!26"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

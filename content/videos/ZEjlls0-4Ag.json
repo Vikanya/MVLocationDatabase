@@ -5,7 +5,7 @@
   "artists": [
     "pentagon"
   ],
-  "song": "겁쟁이",
+  "song_ko": "겁쟁이",
   "type": "mv",
   "channel": "PENTAGON 펜타곤 (Official YouTube Channel)",
   "embeddable": true,
@@ -46,5 +46,8 @@
         "Subway!20"
       ]
     }
+  ],
+  "review": [
+    "Only a Korean song title is known — add the official Latin title if there is one"
   ]
 }

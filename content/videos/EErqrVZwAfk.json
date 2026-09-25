@@ -5,6 +5,8 @@
   "artists": [
     "qman"
   ],
+  "song": "WWAVE",
+  "song_ko": "파란만장",
   "type": "mv",
   "embeddable": false,
   "appearances": [
@@ -20,5 +22,8 @@
         "Ametage!13"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

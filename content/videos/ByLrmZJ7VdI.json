@@ -5,6 +5,8 @@
   "artists": [
     "vav"
   ],
+  "song": "Gorgeous",
+  "song_ko": "예쁘다고",
   "type": "mv",
   "channel": "A team",
   "embeddable": true,
@@ -20,5 +22,8 @@
         "Hangar bazar!11"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

@@ -5,6 +5,7 @@
   "artists": [
     "mirae"
   ],
+  "song": "RUNNING UP",
   "type": "other",
   "channel": "MIRAE JAPAN OFFICIAL",
   "embeddable": true,
@@ -33,5 +34,8 @@
         "Mamago!18"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

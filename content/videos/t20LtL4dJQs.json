@@ -5,6 +5,7 @@
   "artists": [
     "chil-label"
   ],
+  "song": "Chil !",
   "type": "other",
   "channel": "칠성레이블",
   "embeddable": true,
@@ -29,5 +30,8 @@
         "Ametage!25"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

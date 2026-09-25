@@ -5,6 +5,7 @@
   "artists": [
     "이영지"
   ],
+  "song": "Small girl",
   "type": "mv",
   "channel": "이영지",
   "embeddable": true,
@@ -25,5 +26,8 @@
         "Carwash/Gas Station!17"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

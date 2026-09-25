@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import Window from '../../components/Window.astro';
 import MapView from '../../components/MapView.astro';
 import Shots from '../../components/Shots.astro';
-import { db, href, pinsFor, slugify, videoLabel, type Location } from '../../lib/data';
+import { db, href, pinsFor, slugify, videoLabel, videoLabelKo, type Location } from '../../lib/data';
 
 export async function getStaticPaths() {
   const data = await db();
@@ -136,6 +136,7 @@ const nearby = l.tags?.length
             <div class="appearance-head">
               <h3>
                 <a href={href.video(a.video.id)}>{videoLabel(a.video)}</a>
+                {videoLabelKo(a.video) && <span class="muted" lang="ko"> {videoLabelKo(a.video)}</span>}
               </h3>
               <span class="muted">
                 {artists.length ? artists.map((x) => x.data.name).join(', ') : a.video.data.channel}

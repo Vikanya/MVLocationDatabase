@@ -5,6 +5,7 @@
   "artists": [
     "jade"
   ],
+  "song": "No more",
   "type": "mv",
   "channel": "POCLANOS",
   "embeddable": true,
@@ -21,5 +22,8 @@
         "provoke Seoul!30"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

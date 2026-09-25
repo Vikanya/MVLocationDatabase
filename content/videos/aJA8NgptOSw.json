@@ -5,6 +5,7 @@
   "artists": [
     "kid-milli"
   ],
+  "song": "Do What Moves You with BACARDI",
   "type": "mv",
   "channel": "AP Alchemy",
   "embeddable": true,
@@ -25,5 +26,8 @@
         "Carwash/Gas Station!24"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

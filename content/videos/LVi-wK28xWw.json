@@ -5,6 +5,7 @@
   "artists": [
     "kave"
   ],
+  "song": "Stone",
   "type": "mv",
   "channel": "KAVE",
   "embeddable": true,
@@ -29,5 +30,8 @@
         "Ametage!76"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

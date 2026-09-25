@@ -9,7 +9,8 @@
     "lucy",
     "seola"
   ],
-  "song": "전체관람가 / All Ages",
+  "song": "All Ages",
+  "song_ko": "전체관람가",
   "type": "other",
   "channel": "LUCY ISLAND",
   "embeddable": true,

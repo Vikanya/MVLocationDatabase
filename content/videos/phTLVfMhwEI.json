@@ -5,6 +5,8 @@
   "artists": [
     "lun8"
   ],
+  "song": "Butterfly",
+  "song_ko": "나비",
   "type": "mv",
   "channel": "fantagio 판타지오",
   "embeddable": true,
@@ -20,5 +22,8 @@
         "Gimcheon campus!23"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

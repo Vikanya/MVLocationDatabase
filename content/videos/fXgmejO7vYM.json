@@ -5,6 +5,7 @@
   "artists": [
     "bbe-yana"
   ],
+  "song": "SPACE MULAN",
   "type": "mv",
   "channel": "BÉBE YANA",
   "embeddable": true,
@@ -29,5 +30,8 @@
         "Abandoned Park!29"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

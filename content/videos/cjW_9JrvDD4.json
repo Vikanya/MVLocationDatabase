@@ -5,6 +5,8 @@
   "artists": [
     "la-poem"
   ],
+  "song": "IVE",
+  "song_ko": "아이브",
   "type": "live",
   "channel": "라포엠 LA POEM",
   "embeddable": true,
@@ -21,5 +23,8 @@
         "Ametage!33"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

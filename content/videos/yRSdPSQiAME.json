@@ -5,6 +5,7 @@
   "artists": [
     "epex"
   ],
+  "song_ko": "사랑歌",
   "type": "mv",
   "channel": "EPEX",
   "embeddable": true,
@@ -25,5 +26,8 @@
         "Ametage!22"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

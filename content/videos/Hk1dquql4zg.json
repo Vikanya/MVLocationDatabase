@@ -5,7 +5,7 @@
   "artists": [
     "shinee"
   ],
-  "song": "Sherlock•셜록 (Clue + Note) (Band Ver.)",
+  "song": "Sherlock•셜록 (Clue + Note)",
   "type": "other",
   "channel": "SHINee",
   "embeddable": true,
@@ -21,5 +21,8 @@
         "Grangar!29"
       ]
     }
+  ],
+  "review": [
+    "Split the song name into its Latin and Korean titles"
   ]
 }

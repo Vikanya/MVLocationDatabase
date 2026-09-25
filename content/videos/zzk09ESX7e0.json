@@ -5,6 +5,7 @@
   "artists": [
     "mamamoo"
   ],
+  "song": "Where Are We Now",
   "type": "mv",
   "channel": "MAMAMOO",
   "embeddable": true,
@@ -20,5 +21,8 @@
         "Geobug Island!10"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

@@ -5,6 +5,7 @@
   "artists": [
     "heart-of-woman"
   ],
+  "song_ko": "$.$)(달라)",
   "type": "mv",
   "channel": "1theK (원더케이)",
   "embeddable": true,
@@ -23,5 +24,8 @@
         "Parkings/Rooftops!26"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

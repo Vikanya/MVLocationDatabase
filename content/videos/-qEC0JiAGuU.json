@@ -5,6 +5,7 @@
   "artists": [
     "heochanzo"
   ],
+  "song": "Lonely Boy",
   "type": "mv",
   "channel": "STONESHIP",
   "embeddable": true,
@@ -25,5 +26,8 @@
         "provoke Seoul!27"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

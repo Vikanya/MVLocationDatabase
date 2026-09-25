@@ -5,6 +5,7 @@
   "artists": [
     "lee-chae-yeon"
   ],
+  "song": "LET'S DANCE",
   "type": "mv",
   "channel": "LEE CHAEYEON",
   "embeddable": true,
@@ -25,5 +26,8 @@
         "Ametage!4"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

@@ -28,6 +28,15 @@ const who = artists.map((a) => a.data.name).join(', ');
   <header class="page-head">
     <span class="kicker"><span class="badge" data-kind={kind}>{TYPE_LABEL[kind]}</span></span>
     <h1>{video.data.title}</h1>
+    {
+      (video.data.song || video.data.song_ko) && (
+        <p class="sub">
+          ♪ {video.data.song && <b>{video.data.song}</b>}
+          {video.data.song && video.data.song_ko && ' · '}
+          {video.data.song_ko && <span lang="ko">{video.data.song_ko}</span>}
+        </p>
+      )
+    }
     <p class="sub">
       {
         artists.length > 0

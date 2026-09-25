@@ -5,6 +5,7 @@
   "artists": [
     "lun8"
   ],
+  "song": "SUPER POWER",
   "type": "mv",
   "channel": "fantagio 판타지오",
   "embeddable": true,
@@ -15,5 +16,8 @@
         "Grangar!9"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

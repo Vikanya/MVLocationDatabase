@@ -5,6 +5,7 @@
   "artists": [
     "sf9"
   ],
+  "song": "Don't Worry, Be Happy",
   "type": "performance",
   "channel": "스튜디오 오와",
   "embeddable": true,
@@ -21,5 +22,8 @@
         "Ametage!69"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

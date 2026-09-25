@@ -5,6 +5,7 @@
   "artists": [
     "tri-be"
   ],
+  "song": "KISS",
   "type": "other",
   "channel": "TriBeVEVO",
   "embeddable": true,
@@ -15,5 +16,8 @@
         "Grangar!16"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

@@ -5,6 +5,7 @@
   "artists": [
     "dreamcatcher"
   ],
+  "song": "JUSTICE",
   "type": "performance",
   "channel": "1theK Originals - 원더케이 오리지널",
   "embeddable": true,
@@ -21,5 +22,8 @@
         "Abandoned Park!17"
       ]
     }
+  ],
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
   ]
 }

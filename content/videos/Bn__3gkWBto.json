@@ -5,7 +5,7 @@
   "artists": [
     "nam-woo-hyun"
   ],
-  "song": "냉정과 열정 사이",
+  "song_ko": "냉정과 열정 사이",
   "type": "mv",
   "channel": "woolliment",
   "embeddable": true,
@@ -30,5 +30,8 @@
         "provoke Seoul!23"
       ]
     }
+  ],
+  "review": [
+    "Only a Korean song title is known — add the official Latin title if there is one"
   ]
 }

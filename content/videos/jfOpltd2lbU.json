@@ -2,6 +2,14 @@
   "title": "ICHILLIN'(아이칠린) KICK-START MV",
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=jfOpltd2lbU",
+  "artists": [
+    "ichillin"
+  ],
+  "songs": [
+    {
+      "title": "KICK-START"
+    }
+  ],
   "type": "mv",
   "channel": "ICHILLIN' 아이칠린",
   "embeddable": true,
@@ -17,8 +25,5 @@
         "Columbus!12"
       ]
     }
-  ],
-  "review": [
-    "Artist not recognised from the title — add the artist(s)"
   ]
 }

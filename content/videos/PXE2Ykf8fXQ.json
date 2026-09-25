@@ -1,9 +1,16 @@
 {
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
+  ],
   "title": "[M/V] REFUND SISTERS(환불원정대) - DON'T TOUCH ME",
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=PXE2Ykf8fXQ",
   "artists": [
-    "refund-sisters"
+    "refund-sisters",
+    "uhm-jung-hwa",
+    "lee-hyori",
+    "jessi",
+    "hwasa"
   ],
   "songs": [
     {
@@ -25,8 +32,5 @@
         "Hangar bazar!25"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

@@ -3,7 +3,8 @@
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=-qEC0JiAGuU",
   "artists": [
-    "heochanzo"
+    "heochanzo",
+    "bigone"
   ],
   "songs": [
     {
@@ -30,8 +31,5 @@
         "provoke Seoul!27"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

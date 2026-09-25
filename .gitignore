@@ -5,3 +5,7 @@ source/
 node_modules/
 dist/
 .astro/
+
+# Python bytecode
+__pycache__/
+*.pyc

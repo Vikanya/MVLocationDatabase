@@ -1,9 +1,12 @@
 {
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
+  ],
   "title": "[Special Clip] 몬스타엑스 (MONSTAX) - 히어로 (HERO) Rooftop Ver.",
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=FZ9lJ5ctd0s",
   "artists": [
-    "monstax"
+    "monsta-x"
   ],
   "songs": [
     {
@@ -26,8 +29,5 @@
         "Helipads!2"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

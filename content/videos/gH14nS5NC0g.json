@@ -1,13 +1,16 @@
 {
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
+  ],
   "title": "(MV)온앤오프 (ONF)_Why",
   "platform": "youtube",
-  "url": "https://www.youtube.com/watch?v=gH14nS5NC0g",
+  "url": "https://www.youtube.com/watch?v=OJanxGul-ys",
   "artists": [
     "onf"
   ],
   "song": "Why",
   "type": "mv",
-  "embeddable": false,
+  "embeddable": true,
   "appearances": [
     {
       "location": "abandoned-gimcheon-medical-school",
@@ -20,8 +23,5 @@
         "Gimcheon campus!3"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

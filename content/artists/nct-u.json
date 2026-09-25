@@ -1,4 +1,7 @@
 {
   "name": "NCT U",
-  "name_ko": "엔시티 유"
+  "name_ko": "엔시티 유",
+  "part_of": [
+    "nct-2022"
+  ]
 }

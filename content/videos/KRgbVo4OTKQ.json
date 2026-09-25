@@ -7,10 +7,11 @@
   ],
   "songs": [
     {
-      "title": "딴따라 Tantara"
+      "title": "Tantara",
+      "title_ko": "딴따라"
     }
   ],
-  "type": "mv",
+  "type": "performance",
   "channel": "iKON",
   "embeddable": true,
   "appearances": [
@@ -20,8 +21,5 @@
         "Grangar!6"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

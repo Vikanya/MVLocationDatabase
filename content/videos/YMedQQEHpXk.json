@@ -3,10 +3,12 @@
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=YMedQQEHpXk",
   "artists": [
-    "epex"
+    "epex",
+    "nct-dream"
   ],
   "songs": [
     {
+      "title": "Walk You Home",
       "title_ko": "같은 시간 같은 자리"
     }
   ],
@@ -26,8 +28,5 @@
         "Ametage!48"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

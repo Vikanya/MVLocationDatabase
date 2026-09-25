@@ -3,7 +3,8 @@
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=11iZcYbq_is",
   "artists": [
-    "이영지"
+    "이영지",
+    "d.o."
   ],
   "songs": [
     {
@@ -30,8 +31,5 @@
         "Carwash/Gas Station!17"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

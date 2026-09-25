@@ -2,6 +2,15 @@
   "title": "H1-KEY(하이키) 뜨거워지자(Let It Burn) Official M/V",
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=GRgUK0JGoNg",
+  "artists": [
+    "h1-key"
+  ],
+  "songs": [
+    {
+      "title": "Let It Burn",
+      "title_ko": "뜨거워지자"
+    }
+  ],
   "type": "mv",
   "channel": "H1-KEY",
   "embeddable": true,
@@ -17,8 +26,5 @@
         "Columbus!48"
       ]
     }
-  ],
-  "review": [
-    "Artist not recognised from the title — add the artist(s)"
   ]
 }

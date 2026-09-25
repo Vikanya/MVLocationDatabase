@@ -3,7 +3,8 @@
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=FeKWYTW8kj8",
   "artists": [
-    "han-yo-han"
+    "han-yo-han",
+    "changmo"
   ],
   "songs": [
     {
@@ -20,8 +21,5 @@
         "Grangar!25"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

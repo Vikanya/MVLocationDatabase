@@ -1,7 +1,10 @@
 {
-  "title": "Imgur album",
+  "title": "LE SSERAFIM - The 5th Mini Album: HOT (Concept Photo Vol. 1 - TANNED GUAIAC)",
   "platform": "imgur",
   "url": "https://imgur.com/a/Pqcj3tf",
+  "artists": [
+    "le-sserafim"
+  ],
   "type": "other",
   "embeddable": true,
   "appearances": [
@@ -17,9 +20,5 @@
         "Carwash/Gas Station!34"
       ]
     }
-  ],
-  "review": [
-    "Artist not recognised from the title — add the artist(s)",
-    "No title in the sheet — replace the placeholder title"
   ]
 }

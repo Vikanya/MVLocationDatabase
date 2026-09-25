@@ -3,9 +3,15 @@
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=ZO3fNQhVEDo",
   "artists": [
-    "charismatic"
+    "pick-on-the-top",
+    "jihan",
+    "jiwon",
+    "jiwoo",
+    "nana",
+    "soeun",
+    "wooyeon"
   ],
-  "song": "PICK on the top",
+  "song": "Charismatic",
   "type": "performance",
   "channel": "Mnet K-POP",
   "embeddable": true,
@@ -24,8 +30,5 @@
         "Quatro Box!3"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

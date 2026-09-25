@@ -1,4 +1,7 @@
 {
   "name": "JINI",
-  "name_ko": "지니"
+  "name_ko": "지니",
+  "part_of": [
+    "nmixx"
+  ]
 }

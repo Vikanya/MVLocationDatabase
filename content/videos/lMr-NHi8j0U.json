@@ -1,15 +1,21 @@
 {
+  "review": [
+    "Several songs were split out of the video title — check the titles (and add Latin titles if official ones exist)"
+  ],
   "title": "[📹하이라이트] 아슬x김완선 - '오늘밤  + 리듬속의 그 춤을' 콜라보 MV | 레벨업 아슬한 프로젝트",
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=lMr-NHi8j0U",
   "artists": [
-    "아슬x김완선"
+    "irene-seulgi",
+    "kim-wan-sun"
   ],
   "songs": [
     {
+      "title": "Tonight",
       "title_ko": "오늘밤"
     },
     {
+      "title": "Dance in the Rhythm",
       "title_ko": "리듬속의 그 춤을"
     }
   ],
@@ -28,8 +34,5 @@
         "Lotte World!7"
       ]
     }
-  ],
-  "review": [
-    "Several songs were split out of the video title — check the titles (and add Latin titles if official ones exist)"
   ]
 }

@@ -3,7 +3,8 @@
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=FMX98ROVRCE",
   "artists": [
-    "lisa"
+    "lisa",
+    "kentaro-sakaguchi"
   ],
   "songs": [
     {
@@ -26,8 +27,5 @@
         "Carwash/Gas Station!36"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

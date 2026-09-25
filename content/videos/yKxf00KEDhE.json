@@ -1,4 +1,7 @@
 {
+  "review": [
+    "Song name was filled in automatically from the video title — check it"
+  ],
   "title": "[MV] 안예은 - 우리, 여기 (AHN YEEUN - We Are Here)",
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=yKxf00KEDhE",
@@ -7,11 +10,12 @@
   ],
   "songs": [
     {
+      "title": "We Are Here",
       "title_ko": "우리, 여기"
     }
   ],
   "type": "mv",
-  "channel": " 더블엑스엔터테인먼트 xxentertainment",
+  "channel": "더블엑스엔터테인먼트 xxentertainment",
   "embeddable": true,
   "appearances": [
     {
@@ -25,8 +29,5 @@
         "Columbus!22"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

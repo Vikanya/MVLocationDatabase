@@ -1,17 +1,18 @@
 {
   "title": "[M/V] 헤일로 (HALO) - O.M.G.",
   "platform": "youtube",
-  "url": "https://www.youtube.com/watch?v=hwWgRzRu22c",
+  "url": "https://www.youtube.com/watch?v=xcRGqKHBcEU",
   "artists": [
     "halo"
   ],
   "songs": [
     {
-      "title": "O.M.G."
+      "title": "O.M.G.",
+      "title_ko": "오마이갓"
     }
   ],
   "type": "mv",
-  "embeddable": false,
+  "embeddable": true,
   "appearances": [
     {
       "location": "meet-you-all-tower-incheon",
@@ -24,8 +25,5 @@
         "Helipads!5"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

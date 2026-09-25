@@ -1,30 +1,71 @@
 /* MV Location DB — early-2000s fan-site look: chrome, bevels, title bars, hard shadows, pixel labels. */
 
+/* Theme: light by default; dark when <html data-theme="dark"> (set before paint by the script in Base.astro,
+   from the visitor's choice or their system setting). Accents are shared; only surfaces, text and lines change. */
 :root {
-  --ink: #13153a;
-  --ink-soft: #4b5079;
-  --paper: #ffffff;
-  --desk: #e3e9f6;
-  --grid: #cfd8ee;
-  --chrome: #d6dce8;
-  --chrome-lo: #8d96ab;
-  --electric: #2340ff;
-  --electric-lo: #1427b8;
+  color-scheme: light;
+  --ink: #13153a; /* the navy used for lines, shadows and text on bright accents */
   --pink: #ff2d95;
   --lime: #c8ff1e;
   --cyan: #18cfff;
   --orange: #ff6b00;
-  --visited: #7a1fd6;
+  --electric: #2340ff;
+  --electric-lo: #1427b8;
+
+  --text: var(--ink);
+  --ink-soft: #4b5079;
+  --on-accent: #13153a; /* text on lime / yellow / chrome buttons being hovered */
+  --line: var(--ink);
+  --shadow: var(--ink);
+  --paper: #ffffff;
+  --desk: #e3e9f6;
+  --grid: #cfd8ee;
   --zebra: #f2f5ff;
+  --field: #ffffff;
+  --screen: #13153a; /* ticker, counter, empty image frames */
+  --screen-edge: #2a2f6b;
+  --link: #2340ff;
+  --visited: #7a1fd6;
+  --note: #fffbe0;
+  --unsure: #fff3a8;
+  --map-bg: #cfe3f7;
+  --chrome: #d6dce8;
+  --chrome-lo: #8d96ab;
+  --bevel-hi: #ffffff;
+  --metal: linear-gradient(180deg, #ffffff 0%, #e6eaf2 44%, #bfc7d8 50%, #dfe4ee 100%);
 
   --f-display: 'Michroma', 'Nanum Gothic', sans-serif;
   --f-pixel: 'Silkscreen', 'Courier New', monospace;
   --f-body: 'Nanum Gothic', 'Malgun Gothic', 'Apple SD Gothic Neo', Verdana, sans-serif;
 
-  --hard: 4px 4px 0 var(--ink);
-  --hard-sm: 3px 3px 0 var(--ink);
-  --bevel: inset 1px 1px 0 #fff, inset -1px -1px 0 var(--chrome-lo);
-  --metal: linear-gradient(180deg, #ffffff 0%, #e6eaf2 44%, #bfc7d8 50%, #dfe4ee 100%);
+  --hard: 4px 4px 0 var(--shadow);
+  --hard-sm: 3px 3px 0 var(--shadow);
+  --bevel: inset 1px 1px 0 var(--bevel-hi), inset -1px -1px 0 var(--chrome-lo);
+}
+
+/* Dark: a Winamp-era skin — navy desk, gunmetal chrome, the same electric title bars and lime/pink accents. */
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --text: #e8ebff;
+  --ink-soft: #a3a9d6;
+  --line: #03040c;
+  --shadow: #000000;
+  --paper: #161937;
+  --desk: #0b0d22;
+  --grid: #171b3f;
+  --zebra: #1c2045;
+  --field: #0e1130;
+  --screen: #05061a;
+  --screen-edge: #262b63;
+  --link: #93a6ff;
+  --visited: #d2a0ff;
+  --note: #2a2410;
+  --unsure: #fff3a8;
+  --map-bg: #1b2140;
+  --chrome: #2d3260;
+  --chrome-lo: #05061a;
+  --bevel-hi: rgba(255, 255, 255, 0.22);
+  --metal: linear-gradient(180deg, #555d8c 0%, #343a6a 44%, #1d2148 50%, #2a2f5c 100%);
 }
 
 *,
@@ -39,7 +80,7 @@ html {
 
 body {
   margin: 0;
-  color: var(--ink);
+  color: var(--text);
   font: 14px/1.6 var(--f-body);
   background-color: var(--desk);
   background-image:
@@ -54,7 +95,7 @@ img {
 }
 
 a {
-  color: var(--electric);
+  color: var(--link);
   text-decoration: underline;
   text-decoration-style: dotted;
   text-underline-offset: 2px;
@@ -112,7 +153,7 @@ h3 {
   gap: 8px 24px;
   padding: 14px 18px 12px;
   background: var(--metal);
-  border: 1px solid var(--ink);
+  border: 1px solid var(--line);
   box-shadow: var(--hard), var(--bevel);
 }
 
@@ -133,7 +174,7 @@ h3 {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  -webkit-text-stroke: 1px var(--ink);
+  -webkit-text-stroke: 1px var(--line);
   filter: drop-shadow(2px 2px 0 var(--pink));
 }
 .wordmark-star {
@@ -152,20 +193,20 @@ h3 {
 .masthead-tag {
   font-family: var(--f-pixel);
   font-size: 11px;
-  color: var(--ink);
+  color: var(--on-accent);
   background: var(--lime);
-  border: 1px solid var(--ink);
+  border: 1px solid var(--line);
   padding: 2px 6px;
   transform: rotate(-2deg);
-  box-shadow: 2px 2px 0 var(--ink);
+  box-shadow: 2px 2px 0 var(--line);
 }
 
 /* ticker */
 .ticker {
   display: flex;
   margin: 10px 0 14px;
-  border: 1px solid var(--ink);
-  background: var(--ink);
+  border: 1px solid var(--line);
+  background: var(--screen);
   color: var(--lime);
   white-space: nowrap;
   box-shadow: var(--hard-sm);
@@ -240,7 +281,7 @@ main {
 
 .win {
   background: var(--paper);
-  border: 1px solid var(--ink);
+  border: 1px solid var(--line);
   box-shadow: var(--hard);
   margin-bottom: 16px;
 }
@@ -252,13 +293,13 @@ main {
   padding: 3px 4px 3px 8px;
   color: #fff;
   background: linear-gradient(90deg, var(--electric-lo) 0%, var(--electric) 45%, var(--cyan) 100%);
-  border-bottom: 1px solid var(--ink);
+  border-bottom: 1px solid var(--line);
 }
 .win[data-tone='pink'] .win-title {
   background: linear-gradient(90deg, #b8005f 0%, var(--pink) 50%, #ffa3d2 100%);
 }
 .win[data-tone='chrome'] .win-title {
-  color: var(--ink);
+  color: var(--text);
   background: var(--metal);
 }
 .win-title h2,
@@ -287,9 +328,9 @@ main {
   width: 16px;
   height: 14px;
   font: normal 9px/1 var(--f-pixel);
-  color: var(--ink);
+  color: var(--text);
   background: var(--chrome);
-  border: 1px solid var(--ink);
+  border: 1px solid var(--line);
   box-shadow: var(--bevel);
 }
 .win-body {
@@ -320,20 +361,20 @@ main {
   gap: 6px;
   padding: 6px 9px;
   font: 11px var(--f-pixel);
-  color: var(--ink);
+  color: var(--text);
   text-decoration: none;
   background: var(--metal);
-  border: 1px solid var(--ink);
+  border: 1px solid var(--line);
   box-shadow: var(--bevel);
   cursor: pointer;
 }
 .nav a:visited {
-  color: var(--ink);
+  color: var(--text);
 }
 .nav a:hover,
 .btn:hover {
   background: var(--lime);
-  color: var(--ink);
+  color: var(--on-accent);
 }
 .nav a[aria-current='page'] {
   color: #fff;
@@ -350,7 +391,7 @@ main {
 }
 .btn:active,
 .nav a:active {
-  box-shadow: inset -1px -1px 0 #fff, inset 1px 1px 0 var(--chrome-lo);
+  box-shadow: inset -1px -1px 0 var(--bevel-hi), inset 1px 1px 0 var(--chrome-lo);
   transform: translate(1px, 1px);
 }
 
@@ -377,9 +418,9 @@ main {
   min-width: 0;
   padding: 5px 6px;
   font: 13px var(--f-body);
-  color: var(--ink);
-  background: #fff;
-  border: 1px solid var(--ink);
+  color: var(--text);
+  background: var(--field);
+  border: 1px solid var(--line);
   box-shadow: inset 1px 1px 0 var(--chrome-lo);
 }
 
@@ -403,10 +444,10 @@ main {
   padding: 1px 6px;
   font: 13px var(--f-pixel);
   color: var(--lime);
-  background: var(--ink);
+  background: var(--screen);
   letter-spacing: 0.12em;
-  border: 1px solid var(--ink);
-  box-shadow: inset 0 0 0 1px #2a2f6b;
+  border: 1px solid var(--line);
+  box-shadow: inset 0 0 0 1px var(--screen-edge);
 }
 
 /* ------------------------------------------------------------ page headings */
@@ -415,7 +456,7 @@ main {
   margin: 0 0 16px;
   padding: 14px 16px;
   background: var(--paper);
-  border: 1px solid var(--ink);
+  border: 1px solid var(--line);
   box-shadow: var(--hard);
 }
 .page-head h1 {
@@ -446,9 +487,9 @@ main {
   display: inline-block;
   padding: 0 5px;
   font: 9px/16px var(--f-pixel);
-  color: var(--ink);
+  color: var(--on-accent);
   background: var(--lime);
-  border: 1px solid var(--ink);
+  border: 1px solid var(--line);
   vertical-align: middle;
   white-space: nowrap;
 }
@@ -465,14 +506,15 @@ main {
 }
 .badge[data-kind='clip'],
 .badge[data-kind='other'] {
+  color: var(--text);
   background: var(--chrome);
 }
 .badge[data-kind='unknown'] {
-  background: var(--ink);
+  background: var(--screen);
   color: var(--lime);
 }
 .badge[data-kind='unsure'] {
-  background: #fff3a8;
+  background: var(--unsure);
 }
 
 .chips {
@@ -489,18 +531,18 @@ main {
   gap: 6px;
   padding: 2px 4px 2px 10px;
   font-size: 12px;
-  color: var(--ink);
+  color: var(--text);
   text-decoration: none;
   background: var(--metal);
-  border: 1px solid var(--ink);
+  border: 1px solid var(--line);
   border-radius: 999px;
 }
 .chip:visited {
-  color: var(--ink);
+  color: var(--text);
 }
 .chip:hover {
   background: var(--lime);
-  color: var(--ink);
+  color: var(--on-accent);
 }
 .chip b {
   min-width: 20px;
@@ -526,26 +568,26 @@ main {
   display: block;
   height: 100%;
   padding: 4px 4px 8px;
-  color: var(--ink);
+  color: var(--text);
   text-decoration: none;
   background: var(--paper);
-  border: 1px solid var(--ink);
+  border: 1px solid var(--line);
   box-shadow: var(--hard-sm);
   transition: transform 0.08s steps(2), box-shadow 0.08s steps(2);
 }
 .card:visited {
-  color: var(--ink);
+  color: var(--text);
 }
 .card:hover {
-  color: var(--ink);
+  color: var(--text);
   transform: translate(-2px, -2px);
   box-shadow: 5px 5px 0 var(--pink);
 }
 .card-img {
   position: relative;
   aspect-ratio: 16 / 9;
-  background: var(--ink);
-  border: 1px solid var(--ink);
+  background: var(--screen);
+  border: 1px solid var(--line);
   overflow: hidden;
 }
 .card-img img {
@@ -589,7 +631,7 @@ main {
   text-align: left;
   font: 10px var(--f-pixel);
   background: var(--metal);
-  border: 1px solid var(--ink);
+  border: 1px solid var(--line);
   box-shadow: var(--bevel);
 }
 .table td {
@@ -657,14 +699,15 @@ main {
   height: 24px;
   padding: 0 4px;
   font: 11px var(--f-pixel);
-  color: var(--ink);
+  color: var(--text);
   text-decoration: none;
   background: var(--metal);
-  border: 1px solid var(--ink);
+  border: 1px solid var(--line);
   box-shadow: var(--bevel);
 }
 .az a:hover {
   background: var(--lime);
+  color: var(--on-accent);
 }
 .az-letter {
   margin: 18px 0 8px;
@@ -672,7 +715,7 @@ main {
   display: inline-block;
   font: 12px var(--f-pixel);
   color: #fff;
-  background: var(--ink);
+  background: var(--screen);
 }
 .columns {
   columns: 3 200px;
@@ -696,13 +739,13 @@ main {
   margin: 0;
   padding: 3px;
   background: var(--paper);
-  border: 1px solid var(--ink);
+  border: 1px solid var(--line);
   box-shadow: var(--hard-sm);
 }
 .shot a {
   display: block;
   aspect-ratio: 16 / 9;
-  background: var(--ink);
+  background: var(--screen);
   overflow: hidden;
 }
 .shot img {
@@ -720,8 +763,9 @@ main {
 .set-label {
   font: 9px/16px var(--f-pixel);
   padding: 0 5px;
+  color: var(--on-accent);
   background: var(--lime);
-  border: 1px solid var(--ink);
+  border: 1px solid var(--line);
   white-space: nowrap;
 }
 
@@ -746,7 +790,7 @@ main {
 .lightbox {
   max-width: min(96vw, 1400px);
   padding: 0;
-  border: 1px solid var(--ink);
+  border: 1px solid var(--line);
   background: var(--paper);
   box-shadow: 6px 6px 0 var(--pink);
 }
@@ -774,8 +818,8 @@ main {
 .player {
   position: relative;
   aspect-ratio: 16 / 9;
-  background: var(--ink) center / cover no-repeat;
-  border: 1px solid var(--ink);
+  background: var(--screen) center / cover no-repeat;
+  border: 1px solid var(--line);
 }
 .player iframe {
   position: absolute;
@@ -797,10 +841,10 @@ main {
 .player-play span {
   padding: 10px 18px;
   font: 14px var(--f-pixel);
-  color: var(--ink);
+  color: var(--on-accent);
   background: var(--lime);
-  border: 2px solid var(--ink);
-  box-shadow: 4px 4px 0 var(--ink);
+  border: 2px solid var(--line);
+  box-shadow: 4px 4px 0 var(--line);
 }
 .player-play:hover span {
   background: var(--pink);
@@ -824,7 +868,7 @@ main {
   background: linear-gradient(180deg, #b9ddff 0%, #4a8dff 48%, #1a55e6 52%, #6db4ff 100%);
   border: 1px solid #0a2a8a;
   border-radius: 14px;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), 2px 2px 0 var(--ink);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), 2px 2px 0 var(--line);
 }
 .aqua:hover {
   filter: hue-rotate(95deg) saturate(1.3);
@@ -834,8 +878,8 @@ main {
 
 .map {
   width: 100%;
-  border: 1px solid var(--ink);
-  background: #cfe3f7;
+  border: 1px solid var(--line);
+  background: var(--map-bg);
   z-index: 0;
 }
 .map .leaflet-tile-pane {
@@ -849,16 +893,16 @@ main {
   font: 12px/1 var(--f-body);
   color: #fff;
   background: var(--pink);
-  border: 2px solid var(--ink);
-  box-shadow: 2px 2px 0 var(--ink);
+  border: 2px solid var(--line);
+  box-shadow: 2px 2px 0 var(--line);
 }
 .pin:hover {
   background: var(--lime);
-  color: var(--ink);
+  color: var(--on-accent);
 }
 .leaflet-popup-content-wrapper {
   border-radius: 0 !important;
-  border: 1px solid var(--ink);
+  border: 1px solid var(--line);
   box-shadow: var(--hard-sm) !important;
 }
 .leaflet-popup-content {
@@ -866,14 +910,14 @@ main {
   font: 13px/1.45 var(--f-body);
 }
 .leaflet-popup-tip {
-  border: 1px solid var(--ink);
+  border: 1px solid var(--line);
 }
 .leaflet-container a.leaflet-popup-close-button {
-  color: var(--ink);
+  color: var(--text);
 }
 .leaflet-bar a {
   border-radius: 0 !important;
-  color: var(--ink) !important;
+  color: var(--text) !important;
   background: var(--metal) !important;
 }
 
@@ -897,7 +941,7 @@ main {
 .welcome-note {
   padding: 8px 10px;
   font-size: 13px;
-  background: #fffbe0;
+  background: var(--note);
   border: 1px dashed var(--orange);
 }
 
@@ -937,4 +981,36 @@ main {
   .card {
     transition: none;
   }
+}
+
+/* ------------------------------------------------------------ dark theme extras */
+
+/* OpenStreetMap only has light tiles: invert them into a night map (roads stay readable, water turns navy). */
+:root[data-theme='dark'] .map .leaflet-tile-pane {
+  filter: invert(1) hue-rotate(185deg) brightness(0.85) contrast(0.9) saturate(0.55);
+}
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  color: var(--text);
+  background: var(--paper);
+}
+.leaflet-container .leaflet-control-attribution {
+  color: var(--ink-soft);
+  background: var(--paper);
+}
+.leaflet-container .leaflet-control-attribution a {
+  color: var(--link);
+}
+
+.theme-toggle {
+  width: 100%;
+  margin-top: 8px;
+}
+.theme-toggle .theme-dark,
+:root[data-theme='dark'] .theme-toggle .theme-light {
+  display: inline;
+}
+.theme-toggle .theme-light,
+:root[data-theme='dark'] .theme-toggle .theme-dark {
+  display: none;
 }

@@ -41,6 +41,17 @@ const shots = data.appearances.reduce((n, a) => n + a.shots.length, 0);
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script is:inline>
+      // Before the first paint: the visitor's saved theme, else their system setting (no white flash in dark mode).
+      (() => {
+        let theme;
+        try {
+          theme = localStorage.getItem('theme');
+        } catch {}
+        if (theme !== 'light' && theme !== 'dark') theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
     <title>{pageTitle}</title>
     <meta name="description" content={desc} />
     <meta property="og:title" content={title ?? SITE} />
@@ -94,6 +105,9 @@ const shots = data.appearances.reduce((n, a) => n + a.shots.length, 0);
               <input id="q" name="q" type="search" placeholder="artist, song, place…" />
               <button class="btn" type="submit">GO</button>
             </form>
+            <button class="btn theme-toggle" type="button" id="theme-toggle">
+              <span class="theme-dark">☾ DARK MODE</span><span class="theme-light">☀ LIGHT MODE</span>
+            </button>
           </Window>
           <Window title="Counter" tone="pink" class="counter-win">
             <dl class="counter">
@@ -118,5 +132,31 @@ const shots = data.appearances.reduce((n, a) => n + a.shots.length, 0);
         </p>
       </footer>
     </div>
+
+    <script>
+      const root = document.documentElement;
+      const button = document.getElementById('theme-toggle')!;
+      const label = () =>
+        button.setAttribute('aria-label', root.dataset.theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+      label();
+      button.addEventListener('click', () => {
+        root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+        try {
+          localStorage.setItem('theme', root.dataset.theme);
+        } catch {}
+        label();
+      });
+      // Follow the system setting live, until the visitor picks a theme themselves.
+      matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+        let saved;
+        try {
+          saved = localStorage.getItem('theme');
+        } catch {}
+        if (!saved) {
+          root.dataset.theme = e.matches ? 'dark' : 'light';
+          label();
+        }
+      });
+    </script>
   </body>
 </html>

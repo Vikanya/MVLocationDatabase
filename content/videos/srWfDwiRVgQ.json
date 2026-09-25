@@ -3,7 +3,8 @@
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=srWfDwiRVgQ",
   "artists": [
-    "rain"
+    "rain",
+    "chung-ha"
   ],
   "songs": [
     {
@@ -25,8 +26,5 @@
         "Hangar bazar!16"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

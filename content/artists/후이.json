@@ -1,7 +1,7 @@
 {
-  "name": "후이",
+  "name": "Hui",
   "name_ko": "후이",
-  "review": [
-    "This is Hui of PENTAGON: add the Latin name \"Hui\" and set \"Part of\" → \"pentagon\""
+  "part_of": [
+    "pentagon"
   ]
 }

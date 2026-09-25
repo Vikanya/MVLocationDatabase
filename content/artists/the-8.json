@@ -1,6 +1,7 @@
 {
   "name": "THE 8",
-  "review": [
-    "Member or unit of \"seventeen\"? If so, set \"Part of\""
+  "name_ko": "디에잇",
+  "part_of": [
+    "seventeen"
   ]
 }

@@ -37,6 +37,7 @@ const order = [...groups.keys()].sort((a, b) => (a === '#' ? -1 : b === '#' ? 1 
               <li>
                 <a href={href.artist(a.id)}>{a.data.name}</a>
                 {a.data.name_ko && <span class="muted" lang="ko"> {a.data.name_ko}</span>}
+                {data.groupsOf(a.id).length > 0 && <span class="muted"> ({data.groupsOf(a.id).map((g) => g.data.name).join(', ')})</span>}
                 <span class="muted"> · {data.byArtist(a.id).length}</span>
               </li>
             ))}

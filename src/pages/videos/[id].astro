@@ -35,6 +35,11 @@ const who = artists.map((a) => a.data.name).join(', ');
               <>
                 {i > 0 && ', '}
                 <a href={href.artist(a.id)}>{a.data.name}</a>
+                {data.groupsOf(a.id)[0] && (
+                  <span class="muted">
+                    {' '}(<a href={href.artist(data.groupsOf(a.id)[0].id)}>{data.groupsOf(a.id)[0].data.name}</a>)
+                  </span>
+                )}
               </>
             ))
           : video.data.channel

@@ -245,10 +245,25 @@ collections:
       pattern:
         - '^[a-z0-9가-힣]+(-[a-z0-9가-힣]+)*$'
         - 'Lowercase letters, numbers and hyphens only'
+    view_filters:
+      - { label: Has to-do items, field: review, pattern: '.' }
     fields:
-      - { name: name, label: Name (Latin), widget: string }
-      - { name: name_ko, label: Name (Korean), widget: string, required: false }
       - name: review
         label: To-do
+        hint: Things to check from the migration. Delete an item once it's fixed.
         widget: list
+        required: false
+      - { name: name, label: Name (Latin), widget: string }
+      - { name: name_ko, label: Name (Korean), widget: string, required: false }
+      - name: part_of
+        label: Part of
+        hint: >-
+          For a member or sub-unit: the group(s) they belong to (e.g. Kim Lip → LOONA). Tag videos with the most
+          precise artist only; the group's page includes its members' and units' videos automatically.
+        widget: relation
+        collection: artists
+        value_field: '{{slug}}'
+        search_fields: [name, name_ko]
+        display_fields: ['{{name}} {{name_ko}}']
+        multiple: true
         required: false

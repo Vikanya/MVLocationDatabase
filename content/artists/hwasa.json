@@ -1,4 +1,7 @@
 {
   "name": "HWASA",
-  "name_ko": "화사"
+  "name_ko": "화사",
+  "review": [
+    "Member or unit of \"mamamoo\"? If so, set \"Part of\""
+  ]
 }

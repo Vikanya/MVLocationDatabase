@@ -11,6 +11,8 @@ const artists = defineCollection({
   schema: z.object({
     name: z.string(),
     name_ko: z.string().optional(),
+    /** Groups this artist belongs to (member → group, sub-unit → group). Videos use the most precise artist. */
+    part_of: z.array(reference('artists')).optional(),
     review: z.array(z.string()).optional(),
   }),
 });

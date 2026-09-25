@@ -1,4 +1,7 @@
 {
   "name": "TEN",
-  "name_ko": "텐"
+  "name_ko": "텐",
+  "review": [
+    "Member or unit of NCT (not in the list yet — create it)? If so, set \"Part of\" (also WayV)"
+  ]
 }

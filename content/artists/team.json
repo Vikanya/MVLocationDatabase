@@ -1,3 +1,6 @@
 {
-  "name": "TEAM"
+  "name": "TEAM",
+  "review": [
+    "Name lost its \"&\": should be \"&TEAM\""
+  ]
 }

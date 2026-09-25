@@ -52,6 +52,18 @@ async function load() {
 
   const artistById = new Map(artists.map((a) => [a.id, a]));
   const locationById = new Map(locations.map((l) => [l.id, l]));
+  checkReferences(artists, locations, videos, artistById, locationById);
+
+  // Groups ↔ members / sub-units ("part_of"), followed through several levels.
+  const directMembers = group(artists, (a) => (a.data.part_of ?? []).map((g) => g.id));
+  const walk = (id: string, next: (id: string) => string[], seen = new Set<string>()): string[] => {
+    for (const n of next(id)) if (!seen.has(n)) (seen.add(n), walk(n, next, seen));
+    return [...seen];
+  };
+  const groupsOf = (id: string) =>
+    walk(id, (x) => (artistById.get(x)?.data.part_of ?? []).map((g) => g.id)).map((x) => artistById.get(x)!);
+  const membersOf = (id: string) =>
+    walk(id, (x) => (directMembers.get(x) ?? []).map((m) => m.id)).map((x) => artistById.get(x)!);
 
   const appearances: Appearance[] = videos.flatMap((video) =>
     (video.data.appearances ?? []).map((a) => {
@@ -88,8 +100,57 @@ async function load() {
     videoArtists: (v: Video) => (v.data.artists ?? []).map((a) => artistById.get(a.id)!).filter(Boolean),
     atLocation: (id: string) => appearancesByLocation.get(id) ?? [],
     ofVideo: (id: string) => appearancesByVideo.get(id) ?? [],
+    /** Videos tagged with exactly this artist. */
     byArtist: (id: string) => videosByArtist.get(id) ?? [],
+    /** Groups the artist is part of, nearest first (member → unit → group). */
+    groupsOf,
+    /** Members and sub-units of a group, at any depth. */
+    membersOf,
+    directMembers: (id: string) => directMembers.get(id) ?? [],
   };
+}
+
+/**
+ * Fail the build with a readable list when a record points to something that doesn't exist
+ * (e.g. an artist deleted in the admin while videos still use it). The live site then stays as it was.
+ */
+function checkReferences(
+  artists: Artist[],
+  locations: Location[],
+  videos: Video[],
+  artistById: Map<string, Artist>,
+  locationById: Map<string, Location>,
+) {
+  const problems: string[] = [];
+  for (const v of videos) {
+    for (const a of v.data.artists ?? [])
+      if (!artistById.has(a.id)) problems.push(`video "${v.id}" uses artist "${a.id}", which doesn't exist`);
+    for (const ap of v.data.appearances ?? []) {
+      const location = locationById.get(ap.location.id);
+      if (!location) {
+        problems.push(`video "${v.id}" uses location "${ap.location.id}", which doesn't exist`);
+        continue;
+      }
+      const sets = new Set((location.data.sets ?? []).map((s) => s.id));
+      for (const s of ap.screenshots ?? [])
+        if (s.set && !sets.has(s.set))
+          problems.push(`video "${v.id}": set "${s.set}" isn't one of the sets of location "${location.id}"`);
+    }
+  }
+  for (const a of artists) {
+    for (const g of a.data.part_of ?? []) {
+      if (!artistById.has(g.id)) problems.push(`artist "${a.id}" is part of "${g.id}", which doesn't exist`);
+      if (g.id === a.id) problems.push(`artist "${a.id}" is marked as part of itself`);
+    }
+  }
+  for (const l of locations) {
+    const ids = (l.data.sets ?? []).map((s) => s.id);
+    const dup = ids.filter((id, i) => ids.indexOf(id) !== i);
+    if (dup.length) problems.push(`location "${l.id}" has the set id "${dup[0]}" twice`);
+  }
+  if (problems.length) {
+    throw new Error(`Broken references in content/ (fix them in the admin page):\n  - ${problems.join('\n  - ')}`);
+  }
 }
 
 let cached: ReturnType<typeof load> | undefined;

@@ -1,3 +1,7 @@
 {
-  "name": "SORN"
+  "name": "SORN",
+  "name_ko": "손",
+  "part_of": [
+    "clc"
+  ]
 }

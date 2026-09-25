@@ -1,7 +1,7 @@
 {
-  "name": "잔나비 최정훈",
-  "name_ko": "잔나비 최정훈",
-  "review": [
-    "This is Choi Jung-hoon of JANNABI: add the Latin name, maybe set \"Part of\" JANNABI"
+  "name": "Choi Jung-hoon",
+  "name_ko": "최정훈",
+  "part_of": [
+    "jannabi"
   ]
 }

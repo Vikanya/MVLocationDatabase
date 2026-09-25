@@ -1,7 +1,7 @@
 {
-  "name": "BADA[바다]",
-  "name_ko": "BADA[바다]",
-  "review": [
-    "Clean the name: \"BADA\", Korean name 바다"
+  "name": "BADA",
+  "name_ko": "바다",
+  "part_of": [
+    "s.e.s."
   ]
 }

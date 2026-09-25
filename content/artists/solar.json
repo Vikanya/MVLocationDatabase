@@ -1,7 +1,7 @@
 {
   "name": "SOLAR",
   "name_ko": "솔라",
-  "review": [
-    "Member or unit of \"mamamoo\"? If so, set \"Part of\""
+  "part_of": [
+    "mamamoo"
   ]
 }

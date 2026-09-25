@@ -1,7 +1,7 @@
 {
   "title": "구만 (qman) (9.10000) - Supercar MV",
   "platform": "youtube",
-  "url": "https://www.youtube.com/watch?v=A9jy1Nr0AIE",
+  "url": "https://www.youtube.com/watch?v=t5fANF7T1v8",
   "artists": [
     "qman"
   ],
@@ -11,7 +11,7 @@
     }
   ],
   "type": "mv",
-  "embeddable": false,
+  "embeddable": true,
   "appearances": [
     {
       "location": "ametage-studio",
@@ -25,8 +25,5 @@
         "Ametage!14"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

@@ -90,6 +90,13 @@ collections:
         display_fields: ['{{name}} {{name_ko}}']
         multiple: true
         required: false
+      - name: edit_artists
+        label: Edit these artists
+        hint: Opens the artist's form in a new tab. Save it there, close the tab, and carry on here.
+        widget: entry-links
+        collection: artists
+        source: artists
+        required: false
       - name: songs
         label: Songs
         label_singular: Song
@@ -166,6 +173,13 @@ collections:
             required: false
           - { name: notes, label: Notes, widget: text, required: false }
           - { name: sheet_rows, label: Rows in the old sheet, widget: list, required: false, hint: Reference only }
+      - name: edit_locations
+        label: Edit these locations
+        hint: Opens the location's form in a new tab (address, sets, coordinates…). Save it there, close the tab, and carry on here.
+        widget: entry-links
+        collection: locations
+        source: appearances.*.location
+        required: false
 
   # ------------------------------------------------------------------ locations
   - name: locations

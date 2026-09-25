@@ -7,6 +7,7 @@
   ],
   "songs": [
     {
+      "title": "Hymn to Love",
       "title_ko": "사랑歌"
     }
   ],
@@ -30,8 +31,5 @@
         "Ametage!22"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

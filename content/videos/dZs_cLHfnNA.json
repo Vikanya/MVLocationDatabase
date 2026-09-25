@@ -7,6 +7,7 @@
   ],
   "songs": [
     {
+      "title": "Eve, Psyche and the Bluebeard's wife",
       "title_ko": "이브, 프시케 그리고 푸른 수염의 아내"
     }
   ],
@@ -25,8 +26,5 @@
         "Columbus!45"
       ]
     }
-  ],
-  "review": [
-    "Only a Korean song title is known — add the official Latin title if there is one"
   ]
 }

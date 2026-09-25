@@ -3,10 +3,12 @@
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=Nqz4oh2jogE",
   "artists": [
-    "moonbyul"
+    "moonbyul",
+    "seori"
   ],
   "songs": [
     {
+      "title": "Shutdown",
       "title_ko": "머리에서 발끝까지"
     }
   ],
@@ -25,8 +27,5 @@
         "Interiors!2"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

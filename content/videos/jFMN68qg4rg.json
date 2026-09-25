@@ -3,8 +3,7 @@
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=jFMN68qg4rg",
   "artists": [
-    "1million",
-    "free-fire"
+    "1million"
   ],
   "songs": [
     {
@@ -26,8 +25,5 @@
         "Hangar bazar!15"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

@@ -3,6 +3,7 @@
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=CKwqTCUY8M4",
   "artists": [
+    "miri",
     "아이묭"
   ],
   "songs": [
@@ -26,8 +27,5 @@
         "Studio Heal!4"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

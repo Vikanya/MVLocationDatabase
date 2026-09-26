@@ -1,0 +1,19 @@
+{
+  "name": "Cathedral of Learning",
+  "status": "identified",
+  "address": "JR6Q+P3Q, Bang Sao Thong, Bang Sao Thong District, Samut Prakan 10540, Thailand",
+  "coordinates": {
+    "lat": 13.611827801392305,
+    "lng": 100.83774713861473
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/nDFbaKhSE1yYgpg2A"
+    ]
+  },
+  "reference_videos": [
+    "https://www.youtube.com/watch?v=aMlacSAqp_o",
+    "https://www.youtube.com/watch?v=XmY7uvpJ7p8"
+  ]
+}

@@ -1,3 +1,7 @@
 {
-  "name": "WayV"
+  "name": "WayV",
+  "name_ko": "웨이션브이",
+  "part_of": [
+    "nct-2022"
+  ]
 }

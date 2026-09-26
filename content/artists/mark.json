@@ -1,7 +1,10 @@
 {
   "name": "MARK",
   "name_ko": "마크",
-  "review": [
-    "Member or unit of NCT (not in the list yet — create it)? If so, set \"Part of\""
+  "part_of": [
+    "nct-2022",
+    "nct-u",
+    "nct-127",
+    "nct-dream"
   ]
 }

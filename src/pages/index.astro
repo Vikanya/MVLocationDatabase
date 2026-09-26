@@ -55,8 +55,11 @@ const topArtists = [...data.artists].sort((a, b) => data.byArtist(b.id).length -
 
   <div class="split">
     <Window title="Random picks">
-      <ul class="cards">{picks.map((v) => <li><VideoCard video={v} /></li>)}</ul>
-      <p class="more"><a href={url('videos/')}>ALL VIDEOS ▸</a></p>
+      <ul class="cards" id="picks" data-src={url('picks.json')}>{picks.map((v) => <li><VideoCard video={v} /></li>)}</ul>
+      <p class="more">
+        <button class="btn" type="button" id="reshuffle" hidden>↻ SHUFFLE</button>
+        <a href={url('videos/')}>ALL VIDEOS ▸</a>
+      </p>
     </Window>
     <Window title="Most seen artists" tone="chrome">
       <ol class="dotlist">
@@ -74,3 +77,49 @@ const topArtists = [...data.artists].sort((a, b) => data.byArtist(b.id).length -
     </Window>
   </div>
 </Base>
+
+<script>
+  // "Random picks" are built as a fixed set; replace them with a fresh random draw on every visit.
+  interface Card { href: string; img: string; kind: string; badge: string; label: string; ko: string; meta: string }
+  const list = document.querySelector<HTMLUListElement>('#picks');
+  const button = document.querySelector<HTMLButtonElement>('#reshuffle');
+
+  const el = <K extends keyof HTMLElementTagNameMap>(tag: K, props: Record<string, string> = {}, ...kids: (Node | string)[]) => {
+    const node = document.createElement(tag);
+    for (const [k, v] of Object.entries(props)) node.setAttribute(k, v);
+    node.append(...kids);
+    return node;
+  };
+  // Same markup as VideoCard.astro.
+  const card = (c: Card) => {
+    const img = el('img', { src: c.img, alt: '', loading: 'lazy', decoding: 'async', width: '480', height: '270' });
+    const title = el('p', { class: 'card-title' }, c.label);
+    if (c.ko) title.append(el('span', { class: 'muted', lang: 'ko' }, ` ${c.ko}`));
+    return el('li', {}, el('a', { class: 'card', href: c.href },
+      el('div', { class: 'card-img' }, img, el('span', { class: 'badge', 'data-kind': c.kind }, c.badge)),
+      title,
+      el('p', { class: 'card-meta' }, c.meta),
+    ));
+  };
+  const draw = (cards: Card[], n: number) => {
+    const pool = [...cards];
+    for (let i = 0; i < Math.min(n, pool.length); i++) {
+      const j = i + Math.floor(Math.random() * (pool.length - i));
+      [pool[i], pool[j]] = [pool[j], pool[i]];
+    }
+    return pool.slice(0, n);
+  };
+
+  if (list && button) {
+    const n = list.children.length;
+    fetch(list.dataset.src!)
+      .then((res) => (res.ok ? res.json() : Promise.reject(res.status)))
+      .then((cards: Card[]) => {
+        const shuffle = () => list.replaceChildren(...draw(cards, n).map(card));
+        shuffle();
+        button.hidden = false;
+        button.addEventListener('click', shuffle);
+      })
+      .catch(() => {}); // keep the built-in picks
+  }
+</script>

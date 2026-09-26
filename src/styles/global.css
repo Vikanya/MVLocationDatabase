@@ -955,6 +955,9 @@ main {
   text-align: right;
   font: 11px var(--f-pixel);
 }
+.more .btn {
+  margin-right: 12px;
+}
 
 .footer {
   margin-top: 8px;

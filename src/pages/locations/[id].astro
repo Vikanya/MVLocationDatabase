@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import Window from '../../components/Window.astro';
 import MapView from '../../components/MapView.astro';
 import Shots from '../../components/Shots.astro';
+import SpaceList from '../../components/SpaceList.astro';
 import { db, href, pinsFor, slugify, videoLabel, videoLabelKo, type Location } from '../../lib/data';
 
 export async function getStaticPaths() {
@@ -19,16 +20,27 @@ const here = [...data.atLocation(location.id)].sort(
 );
 const l = location.data;
 const unknown = l.status === 'unknown';
-const pins = pinsFor([location], () => here.length);
+// Studios: this place's spaces (and theirs), and the studios this place is part of.
+const studios = data.studiosOf(location.id);
+const spaces = data.spacesOf(location.id);
+const total = data.videoCount(location.id);
+const pins = pinsFor([location, ...spaces], (x) => data.videoCount(x.id));
 const setCount = (id: string) => here.filter((a) => a.shots.some((s) => s.set?.id === id)).length;
-const links = [
-  ...(l.links?.google_maps ?? []).map((u) => ({ label: 'Google Maps', u })),
-  ...(l.links?.naver_map ?? []).map((u) => ({ label: 'Naver Map', u })),
-  ...(l.links?.website ?? []).map((u) => ({ label: new URL(u).hostname.replace(/^www\./, ''), u })),
-  ...(l.links?.instagram ?? []).map((u) => ({ label: 'Instagram', u })),
+const linksOf = (x: Location['data']['links']) => [
+  ...(x?.google_maps ?? []).map((u) => ({ label: 'Google Maps', u })),
+  ...(x?.naver_map ?? []).map((u) => ({ label: 'Naver Map', u })),
+  ...(x?.website ?? []).map((u) => ({ label: new URL(u).hostname.replace(/^www\./, ''), u })),
+  ...(x?.instagram ?? []).map((u) => ({ label: 'Instagram', u })),
 ];
+const links = linksOf(l.links);
+// Spaces that aren't studios themselves (Acres Space is both a space of Columbus and a studio).
+const rooms = spaces.filter((s) => data.directSpaces(s.id).length === 0);
+// A space shows its (nearest) studio's website / Instagram.
+const studio = studios.find((s) => s.data.links?.website?.length || s.data.links?.instagram?.length) ?? studios[0];
+const studioLinks = studio ? linksOf({ website: studio.data.links?.website, instagram: studio.data.links?.instagram }) : [];
+const family = new Set([location.id, ...spaces.map((s) => s.id), ...studios.map((s) => s.id)]);
 const nearby = l.tags?.length
-  ? data.locations.filter((o) => o.id !== location.id && o.data.tags?.some((t) => l.tags!.includes(t))).slice(0, 12)
+  ? data.locations.filter((o) => !family.has(o.id) && o.data.tags?.some((t) => l.tags!.includes(t))).slice(0, 12)
   : [];
 ---
 
@@ -38,7 +50,27 @@ const nearby = l.tags?.length
       LOCATION {unknown && <span class="badge" data-kind="unknown">??? NOT IDENTIFIED YET</span>}
     </span>
     <h1>{l.name}</h1>
-    <p class="sub">{here.length} video{here.length === 1 ? '' : 's'} filmed here{l.sets?.length ? ` · ${l.sets.length} sets` : ''}</p>
+    {
+      studios.length > 0 && (
+        <p class="sub">
+          Part of{' '}
+          {studios.map((s, i) => (
+            <>
+              {i > 0 && ' › '}
+              <a href={href.location(s.id)}>{s.data.name}</a>
+            </>
+          ))}
+        </p>
+      )
+    }
+    <p class="sub">
+      {
+        spaces.length > 0
+          ? `${total} video${total === 1 ? '' : 's'} across ${rooms.length} space${rooms.length === 1 ? '' : 's'}`
+          : `${here.length} video${here.length === 1 ? '' : 's'} filmed here`
+      }
+      {l.sets?.length ? ` · ${l.sets.length} sets` : ''}
+    </p>
   </header>
 
   <div class="split">
@@ -64,6 +96,22 @@ const nearby = l.tags?.length
                 {links.map((x, i) => (
                   <>
                     {i > 0 && ' · '}
+                    <a href={x.u} target="_blank" rel="noopener">{x.label} ↗</a>
+                  </>
+                ))}
+              </dd>
+            </>
+          )
+        }
+        {
+          studio && (
+            <>
+              <dt>STUDIO</dt>
+              <dd>
+                <a href={href.location(studio.id)}>{studio.data.name}</a>
+                {studioLinks.map((x) => (
+                  <>
+                    {' · '}
                     <a href={x.u} target="_blank" rel="noopener">{x.label} ↗</a>
                   </>
                 ))}
@@ -102,10 +150,18 @@ const nearby = l.tags?.length
         {unknown && (<><dt>HELP!</dt><dd>We don't know where this is yet. Recognise it? A suggestion form is coming soon.</dd></>)}
       </dl>
     </Window>
-    <Window title="Map" flush>
+    <Window title={spaces.length ? 'Map of its spaces' : 'Map'} flush>
       <MapView pins={pins} height={280} label={`Map of ${l.name}`} />
     </Window>
   </div>
+
+  {
+    spaces.length > 0 && (
+      <Window title={`Spaces (${rooms.length})`} tone="chrome">
+        <SpaceList parent={location.id} />
+      </Window>
+    )
+  }
 
   {
     l.photos?.length ? (
@@ -115,6 +171,7 @@ const nearby = l.tags?.length
     ) : null
   }
 
+  {(here.length > 0 || spaces.length === 0) && (
   <Window title="Filmed here" tone="pink">
     {
       l.sets?.length ? (
@@ -169,6 +226,7 @@ const nearby = l.tags?.length
       })
     }
   </Window>
+  )}
 
   {
     nearby.length > 0 && (

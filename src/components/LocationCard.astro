@@ -14,7 +14,7 @@ const unknown = location.data.status === 'unknown';
 <a class="card" href={href.location(location.id)}>
   <div class="card-img">
     {cover && <img src={media.thumb(cover)} alt="" loading="lazy" decoding="async" width="480" height="270" />}
-    {unknown ? <span class="badge" data-kind="unknown">??? UNKNOWN</span> : <span class="badge">{here.length} MV</span>}
+    {unknown ? <span class="badge" data-kind="unknown">??? UNKNOWN</span> : <span class="badge">{data.videoCount(location.id)} MV</span>}
   </div>
   <p class="card-title">{location.data.name}</p>
   <p class="card-meta">{location.data.address ?? (location.data.tags ?? []).join(' · ')}</p>

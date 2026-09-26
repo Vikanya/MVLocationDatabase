@@ -235,6 +235,19 @@ collections:
           - { label: Identified, value: identified }
           - { label: Not identified yet, value: unknown }
         default: identified
+      - name: part_of
+        label: Part of (studio)
+        hint: >-
+          For a space of a studio or rental company (e.g. a Columbus room → Columbus Studio). The studio's page lists
+          its spaces and counts their videos; each space links back to the studio and its website / Instagram.
+        widget: relation
+        collection: locations
+        value_field: '{{slug}}'
+        search_fields: [name, address, tags]
+        display_fields: ['{{name}}']
+        filters:
+          - { field: slug, values: ['{{slug}}'], exclude: true }
+        required: false
       - { name: address, label: Address, widget: string, required: false }
       - name: coordinates
         label: Coordinates

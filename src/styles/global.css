@@ -668,6 +668,11 @@ main {
   content: '▸ ';
   color: var(--pink);
 }
+/* nested list (a studio's spaces that have spaces of their own) */
+.dotlist .dotlist {
+  margin: 5px 0 -5px 18px;
+  border-top: 1px dotted var(--chrome-lo);
+}
 
 .facts {
   display: grid;

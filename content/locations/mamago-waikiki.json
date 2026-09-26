@@ -1,6 +1,7 @@
 {
   "name": "Mamago – 와이키키S 와이키키H",
   "status": "identified",
+  "part_of": "mamago",
   "links": {
     "website": [
       "https://www.mamago-info.com/%EB%B3%B5%EC%A0%9C-%EC%B6%A9%EC%A3%BC-%ED%8F%90%EC%88%98%EC%98%81%EC%9E%A5-1",

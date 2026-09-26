@@ -1,6 +1,7 @@
 {
   "name": "Columbus – spacerental_01",
   "status": "identified",
+  "part_of": "columbus-studio",
   "links": {
     "website": [
       "https://www.columbus-studio.kr/spacerental_01"

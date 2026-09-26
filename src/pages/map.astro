@@ -5,7 +5,7 @@ import MapView from '../components/MapView.astro';
 import { db, pinsFor } from '../lib/data';
 
 const data = await db();
-const pins = pinsFor(data.locations, (l) => data.atLocation(l.id).length);
+const pins = pinsFor(data.locations, (l) => data.videoCount(l.id));
 ---
 
 <Base title="Map" description="Every located K-pop MV filming spot on one map.">

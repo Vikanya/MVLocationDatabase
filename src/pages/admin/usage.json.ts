@@ -8,6 +8,8 @@ export async function GET() {
     data.artists.map((artist) => [
       artist.id,
       {
+        name: artist.data.name,
+        name_ko: artist.data.name_ko,
         videos: data.byArtist(artist.id).map((v) => ({
           id: v.id,
           title: v.data.title,

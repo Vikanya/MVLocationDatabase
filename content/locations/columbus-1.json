@@ -1,6 +1,7 @@
 {
   "name": "Columbus #1",
   "status": "unknown",
+  "part_of": "columbus-studio",
   "tags": [
     "Columbus"
   ],

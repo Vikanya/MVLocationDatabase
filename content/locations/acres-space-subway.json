@@ -1,6 +1,7 @@
 {
   "name": "Acres Space – Subway",
   "status": "identified",
+  "part_of": "acres-space",
   "coordinates": {
     "lat": 37.697729,
     "lng": 126.570402

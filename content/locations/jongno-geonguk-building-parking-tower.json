@@ -1,6 +1,7 @@
 {
   "name": "종로 낙원동 건국빌딩 주차타워",
   "status": "identified",
+  "part_of": "mamago",
   "coordinates": {
     "lat": 37.573718,
     "lng": 126.987022

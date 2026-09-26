@@ -5,6 +5,8 @@
 //   - name: videos_info
 //     widget: artist-videos
 //     required: false
+//
+// Also: anywhere in the admin, hovering an artist's name (chips, dropdowns, lists) shows its group(s) or members.
 /* global CMS, createClass, h */
 (function () {
   const base = `${window.location.origin}${window.location.pathname}`;
@@ -13,6 +15,43 @@
     (usage = fetch(new URL('usage.json', base), { cache: 'no-store' })
       .then((res) => (res.ok ? res.json() : null))
       .catch(() => null));
+
+  // ---- hover tooltips: Sveltia draws artist names as plain text ("{{name}} {{name_ko}}"), so match the text.
+  const norm = (text) => text.replace(/^✎\s*/, '').replace(/\s+/g, ' ').trim();
+  const tips = new Map(); // "Kim Lip 김립" / "Kim Lip" -> "Part of LOONA"
+  const tip = (text) => {
+    const el = text.parentElement;
+    const value = el && el.childElementCount === 0 && tips.get(norm(el.textContent));
+    if (value && el.title !== value) el.title = value;
+  };
+  const scan = (node) => {
+    if (node.nodeType === Node.TEXT_NODE) return tip(node);
+    if (node.nodeType !== Node.ELEMENT_NODE) return;
+    const walker = document.createTreeWalker(node, NodeFilter.SHOW_TEXT);
+    while (walker.nextNode()) tip(walker.currentNode);
+  };
+  (usage || fetchUsage()).then((data) => {
+    if (!data) return;
+    const names = (list) => list.map((a) => a.name);
+    for (const a of Object.values(data.artists)) {
+      const lines = [];
+      if (a.groups.length) lines.push(`Part of ${names(a.groups).join(', ')}`);
+      if (a.members.length) {
+        const shown = names(a.members).slice(0, 8);
+        lines.push(`Members & units: ${shown.join(', ')}${a.members.length > shown.length ? ', …' : ''}`);
+      }
+      if (!lines.length) continue;
+      tips.set(norm(a.name), lines.join('\n'));
+      if (a.name_ko) tips.set(norm(`${a.name} ${a.name_ko}`), lines.join('\n'));
+    }
+    scan(document.body);
+    new MutationObserver((mutations) => {
+      for (const m of mutations) {
+        if (m.type === 'characterData') tip(m.target);
+        else m.addedNodes.forEach(scan);
+      }
+    }).observe(document.body, { childList: true, subtree: true, characterData: true });
+  });
 
   const read = (obj, key) => (obj && typeof obj.get === 'function' ? obj.get(key) : obj && obj[key]);
   const editor = (collection, id) => `${base}#/collections/${collection}/entries/${encodeURIComponent(id)}`;

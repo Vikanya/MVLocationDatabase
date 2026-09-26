@@ -6,7 +6,8 @@ import LocationCard from '../../components/LocationCard.astro';
 import { db, href, pinsFor, slugify } from '../../lib/data';
 
 const data = await db();
-const count = (id: string) => data.atLocation(id).length;
+// A studio counts the videos of all its spaces.
+const count = (id: string) => data.videoCount(id);
 const identified = data.locations.filter((l) => l.data.status === 'identified');
 const unknown = data.locations.filter((l) => l.data.status === 'unknown');
 const pins = pinsFor(identified, (l) => count(l.id));
@@ -41,6 +42,8 @@ const pins = pinsFor(identified, (l) => count(l.id));
               <tr>
                 <td>
                   <a href={href.location(l.id)}>{l.data.name}</a>
+                  {l.data.part_of && <span class="muted"> · part of {data.location(l.data.part_of.id)?.data.name}</span>}
+                  {data.directSpaces(l.id).length > 0 && <span class="muted"> · {data.directSpaces(l.id).length} spaces</span>}
                   {!l.data.coordinates && <span class="muted"> (no map pin yet)</span>}
                 </td>
                 <td>

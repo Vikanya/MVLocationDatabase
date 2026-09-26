@@ -1,0 +1,33 @@
+---
+// The spaces of a studio (locations whose "part_of" is it), with their own spaces nested below.
+import { db, href } from '../lib/data';
+
+interface Props {
+  parent: string;
+}
+const { parent } = Astro.props;
+const data = await db();
+const spaces = data.directSpaces(parent);
+---
+
+<ul class="dotlist">
+  {
+    spaces.map((s) => {
+      const count = data.videoCount(s.id);
+      const own = data.spacesOf(s.id).filter((x) => data.directSpaces(x.id).length === 0).length;
+      return (
+        <li>
+          <a href={href.location(s.id)}>{s.data.name}</a>
+          {s.data.status === 'unknown' && <span class="badge" data-kind="unknown">???</span>}
+          <span class="muted">
+            {' '}· {count} video{count === 1 ? '' : 's'}
+            {own > 0 && ` in ${own} space${own === 1 ? '' : 's'}`}
+            {s.data.sets?.length ? ` · ${s.data.sets.length} sets` : ''}
+            {!s.data.coordinates && ' · no map pin yet'}
+          </span>
+          {own > 0 && <Astro.self parent={s.id} />}
+        </li>
+      );
+    })
+  }
+</ul>

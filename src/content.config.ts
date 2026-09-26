@@ -22,6 +22,8 @@ const locations = defineCollection({
   schema: z.object({
     name: z.string(),
     status: z.enum(['identified', 'unknown']),
+    /** The studio / rental company this space belongs to (a space → Acres Space → Columbus Studio). */
+    part_of: reference('locations').optional(),
     address: z.string().optional(),
     coordinates: z.object({ lat: z.number(), lng: z.number() }).optional(),
     coordinates_source: z.string().optional(),

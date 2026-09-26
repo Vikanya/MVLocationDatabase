@@ -1,6 +1,7 @@
 {
   "name": "29 Jiyeong-ro 100beon-gil, Ilsandong-gu, Goyang-si, Gyeonggi-do, South Korea",
   "status": "identified",
+  "part_of": "columbus-studio",
   "address": "29 Jiyeong-ro 100beon-gil",
   "coordinates": {
     "lat": 37.710247,

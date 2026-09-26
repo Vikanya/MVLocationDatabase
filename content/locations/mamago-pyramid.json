@@ -1,6 +1,7 @@
 {
   "name": "Mamago – 피라미드",
   "status": "identified",
+  "part_of": "mamago",
   "links": {
     "website": [
       "https://www.mamago-info.com/%ED%99%8D%EC%B2%9C-%ED%94%BC%EB%9D%BC%EB%AF%B8%EB%93%9C"

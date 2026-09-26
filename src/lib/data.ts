@@ -65,6 +65,15 @@ async function load() {
   const membersOf = (id: string) =>
     walk(id, (x) => (directMembers.get(x) ?? []).map((m) => m.id)).map((x) => artistById.get(x)!);
 
+  // Studios ↔ their spaces (location "part_of"), also through several levels (Acres Space → Columbus Studio).
+  const directSpaces = group(locations, (l) => (l.data.part_of ? [l.data.part_of.id] : []));
+  const studiosOf = (id: string) =>
+    walk(id, (x) => (locationById.get(x)?.data.part_of ? [locationById.get(x)!.data.part_of!.id] : [])).map(
+      (x) => locationById.get(x)!,
+    );
+  const spacesOf = (id: string) =>
+    walk(id, (x) => (directSpaces.get(x) ?? []).map((l) => l.id)).map((x) => locationById.get(x)!);
+
   const appearances: Appearance[] = videos.flatMap((video) =>
     (video.data.appearances ?? []).map((a) => {
       const location = locationById.get(a.location.id)!;
@@ -119,6 +128,15 @@ async function load() {
     /** Members and sub-units of a group, at any depth. */
     membersOf,
     directMembers: (id: string) => directMembers.get(id) ?? [],
+    /** Studios a location is part of, nearest first (space → Acres Space → Columbus Studio). */
+    studiosOf,
+    /** Spaces of a studio, at any depth. */
+    spacesOf,
+    directSpaces: (id: string) => directSpaces.get(id) ?? [],
+    /** Videos filmed at this location or any of its spaces. */
+    videoCount: (id: string) =>
+      new Set([id, ...spacesOf(id).map((l) => l.id)].flatMap((x) => (appearancesByLocation.get(x) ?? []).map((a) => a.video.id)))
+        .size,
     /** Videos filmed together with this one (either side of the link). */
     relatedTo: (id: string) => [...(relatedIds.get(id) ?? [])].map((r) => videoById.get(r)!).filter(Boolean),
   };
@@ -165,6 +183,15 @@ function checkReferences(
     }
   }
   for (const l of locations) {
+    const parent = l.data.part_of?.id;
+    if (parent && !locationById.has(parent)) problems.push(`location "${l.id}" is part of "${parent}", which doesn't exist`);
+    // Follow the "part of" chain upwards: coming back to the start means a loop (A part of B part of A).
+    for (let x = parent, steps = 0; x && steps <= locations.length; x = locationById.get(x)?.data.part_of?.id, steps++) {
+      if (x === l.id) {
+        problems.push(`location "${l.id}" is (indirectly) part of itself`);
+        break;
+      }
+    }
     const ids = (l.data.sets ?? []).map((s) => s.id);
     const dup = ids.filter((id, i) => ids.indexOf(id) !== i);
     if (dup.length) problems.push(`location "${l.id}" has the set id "${dup[0]}" twice`);

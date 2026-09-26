@@ -1,6 +1,7 @@
 {
   "name": "Acres Space – Gas Station",
   "status": "identified",
+  "part_of": "acres-space",
   "coordinates": {
     "lat": 37.814318,
     "lng": 126.818106

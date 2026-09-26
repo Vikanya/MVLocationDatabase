@@ -13,7 +13,7 @@ export async function getStaticPaths() {
 const { name } = Astro.props as { name: string };
 const data = await db();
 const locations = data.locations.filter((l) => l.data.tags?.includes(name));
-const pins = pinsFor(locations, (l) => data.atLocation(l.id).length);
+const pins = pinsFor(locations, (l) => data.videoCount(l.id));
 const videos = new Set(locations.flatMap((l) => data.atLocation(l.id).map((a) => a.video.id))).size;
 ---
 

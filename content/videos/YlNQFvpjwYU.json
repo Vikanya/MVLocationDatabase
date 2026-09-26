@@ -7,6 +7,7 @@
   ],
   "songs": [
     {
+      "title": "Start Over",
       "title_ko": "시작"
     }
   ],
@@ -25,8 +26,5 @@
         "Helipads!13"
       ]
     }
-  ],
-  "review": [
-    "Only a Korean song title is known — add the official Latin title if there is one"
   ]
 }

@@ -1,0 +1,18 @@
+{
+  "name": "Mahatun Plaza",
+  "status": "identified",
+  "address": "888 Phloen Chit Rd, Lumphini, Pathum Wan, Bangkok 10330, Thailand",
+  "coordinates": {
+    "lat": 13.742638087500007,
+    "lng": 100.54876262222425
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/CjGF5rM3KBLsbr6o9"
+    ]
+  },
+  "tags": [
+    "Rooftop"
+  ]
+}

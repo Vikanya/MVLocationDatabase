@@ -2,6 +2,13 @@
   "title": "서아는 수민이만의 꾹꾹이 #tripleS #트리플에스 #トリプルS#トリプルエス #トエス#SooMin #수민 #スミン#SeoAh #서아 #ソア",
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=msDAoECVMUM",
+  "artists": [
+    "kim-soomin",
+    "seoah"
+  ],
+  "related": [
+    "vi048osrhgw"
+  ],
   "type": "other",
   "channel": "tripleS official",
   "embeddable": true,
@@ -18,8 +25,5 @@
         "Ametage!73"
       ]
     }
-  ],
-  "review": [
-    "Artist not recognised from the title — add the artist(s)"
   ]
 }

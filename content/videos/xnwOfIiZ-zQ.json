@@ -2,6 +2,14 @@
   "title": "휘인(Whee In) The Symphony of Fxxkboys MV",
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=xnwOfIiZ-zQ",
+  "artists": [
+    "whee-in"
+  ],
+  "songs": [
+    {
+      "title": "The Symphony of Fxxkboys"
+    }
+  ],
   "type": "mv",
   "channel": "휘인 offwheecial",
   "embeddable": true,
@@ -17,8 +25,5 @@
         "Bridges!5"
       ]
     }
-  ],
-  "review": [
-    "Artist not recognised from the title — add the artist(s)"
   ]
 }

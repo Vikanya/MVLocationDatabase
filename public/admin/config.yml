@@ -123,7 +123,8 @@ collections:
         widget: relation
         collection: videos
         value_field: '{{slug}}'
-        search_fields: [title, channel, 'songs.*.title', 'songs.*.title_ko']
+        # No 'songs.*' paths here: a list path makes one option per song, and a video listed twice crashes the form.
+        search_fields: [title, channel]
         display_fields: ['{{title}}']
         filters:
           - { field: slug, values: ['{{slug}}'], exclude: true }

@@ -3,7 +3,8 @@
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=79UVUxjLC5M",
   "artists": [
-    "song-sohee"
+    "song-sohee",
+    "lee-il-woo"
   ],
   "songs": [
     {
@@ -25,8 +26,5 @@
         "Columbus!13"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

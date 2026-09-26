@@ -1,3 +1,7 @@
 {
-  "name": "MISAMO"
+  "name": "MISAMO",
+  "name_ko": "미사모",
+  "part_of": [
+    "twice"
+  ]
 }

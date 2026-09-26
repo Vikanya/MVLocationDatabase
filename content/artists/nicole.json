@@ -1,4 +1,7 @@
 {
   "name": "Nicole",
-  "name_ko": "니콜"
+  "name_ko": "니콜",
+  "part_of": [
+    "kara"
+  ]
 }

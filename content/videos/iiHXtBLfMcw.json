@@ -3,11 +3,12 @@
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=iiHXtBLfMcw",
   "artists": [
-    "아-마음대로-다-된다"
+    "dragon-pony"
   ],
   "songs": [
     {
-      "title": "RUN RUN RUN"
+      "title": "Oh Perfect!",
+      "title_ko": "아 마음대로 다 된다!"
     }
   ],
   "type": "mv",

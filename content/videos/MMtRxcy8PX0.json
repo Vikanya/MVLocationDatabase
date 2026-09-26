@@ -1,0 +1,25 @@
+{
+  "title": "NMIXX “Soñar (Breaker)” M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=MMtRxcy8PX0",
+  "artists": [
+    "nmixx"
+  ],
+  "songs": [
+    {
+      "title": "Soñar (Breaker)"
+    }
+  ],
+  "type": "mv",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "quarries-5",
+      "screenshots": [
+        {
+          "image": "/media/full/pasted-image-1790418268537.webp"
+        }
+      ]
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
-  "name": "LOONA/Yves",
-  "name_ko": "이달의 소녀/이브",
-  "review": [
-    "This is Yves (member of LOONA): rename to \"Yves\", Korean name 이브, and set \"Part of\" → \"loona\""
+  "name": "Yves",
+  "name_ko": "이브",
+  "part_of": [
+    "loona"
   ]
 }

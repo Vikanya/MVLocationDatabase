@@ -1,6 +1,7 @@
 {
   "name": "Young K",
-  "review": [
-    "Member or unit of \"day6\"? If so, set \"Part of\""
+  "name_ko": "영케이",
+  "part_of": [
+    "day6"
   ]
 }

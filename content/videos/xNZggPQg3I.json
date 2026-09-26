@@ -1,0 +1,38 @@
+{
+  "title": "[MV] PARK JINYOUNG(박진영) _ EVERLOVE",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=-xNZggPQg3I",
+  "artists": [
+    "park-jinyoung"
+  ],
+  "songs": [
+    {
+      "title": "EVERLOVE"
+    }
+  ],
+  "type": "mv",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "songdo-ibs-tower",
+      "screenshots": [
+        {
+          "image": "/media/full/pasted-image-1790433742616.webp"
+        }
+      ]
+    },
+    {
+      "location": "acres-space-subway",
+      "screenshots": [
+        {
+          "image": "/media/full/pasted-image-1790434325753.webp",
+          "set": "spot-2"
+        },
+        {
+          "image": "/media/full/pasted-image-1790434357324.webp",
+          "set": "spot-3"
+        }
+      ]
+    }
+  ]
+}

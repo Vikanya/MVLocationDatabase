@@ -1,0 +1,16 @@
+{
+  "name": "Songdo IBS Tower",
+  "status": "identified",
+  "address": "263 Central-ro, Yeonsu-gu, Incheon, South Korea",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/M8c6TNGeydXWQvZ29"
+    ],
+    "naver_map": [
+      "https://naver.me/5r9xRhBg"
+    ],
+    "website": [
+      "http://songdo-ibs.com/ibs-feature.do"
+    ]
+  }
+}

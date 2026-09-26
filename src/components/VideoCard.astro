@@ -15,7 +15,7 @@ const firstShot = data.ofVideo(video.id).flatMap((a) => a.shots)[0]?.image;
 const src = image
   ? media.thumb(image)
   : video.data.platform === 'youtube'
-    ? youtubeThumb(video.id)
+    ? youtubeThumb(video)
     : firstShot
       ? media.thumb(firstShot)
       : undefined;

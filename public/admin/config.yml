@@ -60,7 +60,8 @@ collections:
       editable: [create]
       hint: >-
         The YouTube video ID: the 11 characters after "v=" or "youtu.be/", e.g. C3HDIYnQnkw.
-        For Instagram use ig-<code>, for Imgur imgur-<id>. It can't be changed later.
+        For Instagram use ig-<code>, for Imgur imgur-<id>. It can't be changed later — that's fine: if the video
+        is re-uploaded, just change the Link, the site plays whatever the Link points to.
       pattern:
         - '^([A-Za-z0-9_-]{11}|ig-[A-Za-z0-9_-]+|imgur-[A-Za-z0-9]+)$'
         - 'Use the 11-character YouTube ID, or ig-… / imgur-…'
@@ -80,7 +81,12 @@ collections:
         widget: select
         options: [youtube, instagram_post, imgur]
         default: youtube
-      - { name: url, label: Link, widget: string, hint: 'e.g. https://www.youtube.com/watch?v=C3HDIYnQnkw' }
+      - name: url
+        label: Link
+        widget: string
+        hint: >-
+          e.g. https://www.youtube.com/watch?v=C3HDIYnQnkw. The site plays and shows the thumbnail of this link, so if
+          the video died and was re-uploaded, paste the new link here (the entry keeps its id and page address).
       - name: artists
         label: Artists
         widget: relation
@@ -272,6 +278,7 @@ collections:
   - name: artists
     label: Artists
     label_singular: Artist
+    description: "Obsolete entries: the [unused artists](unused/) list (no videos, no members). Each artist shows its videos at the bottom of its form."
     folder: /content/artists
     format: json
     extension: json
@@ -308,4 +315,10 @@ collections:
         search_fields: [name, name_ko]
         display_fields: ['{{name}} {{name_ko}}']
         multiple: true
+        required: false
+      - name: videos_info
+        label: Videos with this artist
+        hint: >-
+          Read-only, from the last site update. Each ✎ opens that video / location in a new tab.
+        widget: artist-videos # public/admin/artist-videos.js
         required: false

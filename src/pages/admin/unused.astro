@@ -1,0 +1,54 @@
+---
+// Admin helper: artists nothing points to (no videos, no members or units), to clean up obsolete entries.
+import { db, url } from '../../lib/data';
+
+const data = await db();
+const unused = data.artists.filter((a) => data.byArtist(a.id).length === 0 && data.directMembers(a.id).length === 0);
+const edit = (id: string) => `${url('admin/')}#/collections/artists/entries/${encodeURIComponent(id)}`;
+const built = new Date().toISOString().slice(0, 16).replace('T', ' ');
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Unused artists · Admin</title>
+    <style>
+      :root { color-scheme: light dark; font-family: system-ui, sans-serif; line-height: 1.5; }
+      body { max-width: 760px; margin: 0 auto; padding: 24px 16px; }
+      li { margin: 4px 0; }
+      a { text-decoration: none; }
+      .muted { opacity: 0.7; }
+      .ko { margin-left: 4px; }
+    </style>
+  </head>
+  <body>
+    <p><a href={url('admin/#/collections/artists')}>← Back to the admin</a></p>
+    <h1>Unused artists ({unused.length})</h1>
+    <p class="muted">
+      Artists that no video uses and that have no members or units, as of the last site update ({built} UTC).
+      Recently fixed ones disappear from this list a minute or two after the site redeploys. Open one, check it's
+      really obsolete, and delete it with the ⋮ menu at the top right of its form.
+    </p>
+    {
+      unused.length === 0 ? (
+        <p>Nothing to clean up.</p>
+      ) : (
+        <ul>
+          {unused.map((a) => (
+            <li>
+              <a href={edit(a.id)} target="_blank" rel="noopener">✎ {a.data.name}</a>
+              {a.data.name_ko && <span class="ko muted" lang="ko">{a.data.name_ko}</span>}
+              <span class="muted"> · {a.id}</span>
+              {a.data.part_of?.length ? (
+                <span class="muted"> · part of {a.data.part_of.map((g) => data.artist(g.id)?.data.name ?? g.id).join(', ')}</span>
+              ) : null}
+            </li>
+          ))}
+        </ul>
+      )
+    }
+  </body>
+</html>

@@ -1,5 +1,5 @@
 ---
-import { youtubeThumb, type Video } from '../lib/data';
+import { youtubeId, youtubeThumb, type Video } from '../lib/data';
 
 interface Props {
   video: Video;
@@ -7,13 +7,13 @@ interface Props {
 const { video } = Astro.props;
 const { platform, url, embeddable, start, title } = video.data;
 const canEmbed = platform === 'youtube' && embeddable !== false;
-const embed = `https://www.youtube-nocookie.com/embed/${video.id}?autoplay=1${start ? `&start=${start}` : ''}`;
+const embed = `https://www.youtube-nocookie.com/embed/${youtubeId(video)}?autoplay=1${start ? `&start=${start}` : ''}`;
 const label = platform === 'youtube' ? 'YouTube' : platform === 'imgur' ? 'Imgur' : 'Instagram';
 ---
 
 {
   platform === 'youtube' ? (
-    <div class="player" style={`background-image:url(${youtubeThumb(video.id, 'hq')})`}>
+    <div class="player" style={`background-image:url(${youtubeThumb(video, 'hq')})`}>
       {canEmbed ? (
         <button class="player-play" type="button" data-embed={embed} data-title={title}>
           <span>▶ PLAY</span>

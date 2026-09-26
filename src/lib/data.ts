@@ -138,6 +138,8 @@ function checkReferences(
   const problems: string[] = [];
   const videoIds = new Set(videos.map((v) => v.id));
   for (const v of videos) {
+    if (v.data.platform === 'youtube' && !youtubeId(v))
+      problems.push(`video "${v.id}": the Link "${v.data.url}" isn't a YouTube video address`);
     for (const r of v.data.related ?? []) {
       if (!videoIds.has(r.id)) problems.push(`video "${v.id}" is filmed together with "${r.id}", which doesn't exist`);
       if (r.id === v.id) problems.push(`video "${v.id}" is marked as filmed together with itself`);
@@ -198,8 +200,15 @@ export const media = {
   thumb: (image: string) => url(`media/thumb/${fileName(image)}`),
 };
 
-export const youtubeThumb = (id: string, size: 'hq' | 'maxres' = 'hq') =>
-  `https://i.ytimg.com/vi/${id}/${size}default.jpg`;
+/**
+ * The YouTube ID to play, read from the Link. The file name (video.id) is only the permanent page id:
+ * when a video dies and is re-uploaded, the owner changes the Link and the page keeps its address.
+ */
+const YOUTUBE_ID = /(?:[?&]v=|youtu\.be\/|\/shorts\/|\/embed\/|\/live\/)([A-Za-z0-9_-]{11})(?![A-Za-z0-9_-])/;
+export const youtubeId = (v: Video) => v.data.url.match(YOUTUBE_ID)?.[1];
+
+export const youtubeThumb = (v: Video, size: 'hq' | 'maxres' = 'hq') =>
+  `https://i.ytimg.com/vi/${youtubeId(v)}/${size}default.jpg`;
 
 export const href = {
   artist: (id: string) => url(`artists/${id}/`),

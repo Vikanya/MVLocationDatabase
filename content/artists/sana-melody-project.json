@@ -1,6 +1,8 @@
 {
-  "name": "SANA MELODY PROJECT",
-  "review": [
-    "\"SANA MELODY PROJECT\" is a series by SANA (TWICE): use an artist \"SANA\" with \"Part of\" → \"twice\""
+  "name": "SANA",
+  "name_ko": "사나",
+  "part_of": [
+    "twice",
+    "misamo"
   ]
 }

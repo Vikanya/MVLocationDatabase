@@ -1,6 +1,8 @@
 {
   "name": "Kim Lip",
-  "review": [
-    "Member or unit of \"loona\"? If so, set \"Part of\" (also ARTMS)"
+  "name_ko": "김립",
+  "part_of": [
+    "loona",
+    "artms"
   ]
 }

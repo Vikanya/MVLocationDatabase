@@ -174,25 +174,8 @@ collections:
               - { name: image, label: Screenshot, widget: image }
               - name: set
                 label: Set / spot
-                hint: Only for locations with several sets (pick one of this location's sets).
-                widget: relation
-                collection: locations
-                value_field: '{{sets.*.id}}'
-                search_fields: ['sets.*.name', name]
-                display_fields: ['{{name}} → {{sets.*.name}}']
-                # Only the spots of this video's locations. Sveltia can't point at "this appearance's location",
-                # only at fixed positions, so list them (videos have at most 4 locations today).
-                filters:
-                  - field: slug
-                    values:
-                      - '{{fields.appearances.0.location}}'
-                      - '{{fields.appearances.1.location}}'
-                      - '{{fields.appearances.2.location}}'
-                      - '{{fields.appearances.3.location}}'
-                      - '{{fields.appearances.4.location}}'
-                      - '{{fields.appearances.5.location}}'
-                      - '{{fields.appearances.6.location}}'
-                      - '{{fields.appearances.7.location}}'
+                hint: Only for locations with several sets. Shows the sets of the location this screenshot is under.
+                widget: set-picker # public/admin/set-picker.js
                 required: false
           - name: confidence
             label: Confidence

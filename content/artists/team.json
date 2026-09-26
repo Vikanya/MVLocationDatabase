@@ -1,6 +1,4 @@
 {
-  "name": "TEAM",
-  "review": [
-    "Name lost its \"&\": should be \"&TEAM\""
-  ]
+  "name": "&TEAM",
+  "name_ko": "앤팀"
 }

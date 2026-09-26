@@ -1,7 +1,7 @@
 {
-  "name": "Hye",
-  "name_ko": "이달의 소녀/Olivia",
-  "review": [
-    "This is Olivia Hye (member of LOONA): rename to \"Olivia Hye\", Korean name 올리비아 혜, set \"Part of\" → \"loona\""
+  "name": "Olivia Hye/Son Hyeju",
+  "name_ko": "올리비아 혜/손혜주",
+  "part_of": [
+    "loona"
   ]
 }

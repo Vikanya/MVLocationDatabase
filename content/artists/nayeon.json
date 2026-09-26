@@ -1,6 +1,7 @@
 {
   "name": "NAYEON",
-  "review": [
-    "Member or unit of \"twice\"? If so, set \"Part of\""
+  "name_ko": "나연",
+  "part_of": [
+    "twice"
   ]
 }

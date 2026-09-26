@@ -3,11 +3,12 @@
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=LH0fh-JHQe0",
   "artists": [
-    "여자친구"
+    "gfriend"
   ],
   "songs": [
     {
-      "title": "Labyrinth"
+      "title": "Labyrinth",
+      "title_ko": "래버린스"
     }
   ],
   "type": "performance",
@@ -26,8 +27,5 @@
         "Abandoned Park!16"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

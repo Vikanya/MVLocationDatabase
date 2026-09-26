@@ -3,7 +3,8 @@
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=itrgwHxhtY4",
   "artists": [
-    "yoo-se-yoon"
+    "yoo-se-yoon",
+    "d-hack"
   ],
   "songs": [
     {
@@ -34,8 +35,5 @@
         "Ametage!43"
       ]
     }
-  ],
-  "review": [
-    "Song name was filled in automatically from the video title — check it"
   ]
 }

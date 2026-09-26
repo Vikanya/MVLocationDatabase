@@ -2,6 +2,20 @@
   "title": "The Purge (Official Video) - Jay Park, pH-1, BIG Naughty , Woodie Gochild, HAON, TRADE L, Sik-K",
   "platform": "youtube",
   "url": "https://www.youtube.com/watch?v=tE4PviEbSgA",
+  "artists": [
+    "jay-park",
+    "ph-1",
+    "big-naughty",
+    "woodie-gochild",
+    "haon",
+    "trade-l",
+    "sik-k"
+  ],
+  "songs": [
+    {
+      "title": "The Purge"
+    }
+  ],
   "type": "mv",
   "channel": "H1GHR MUSIC",
   "embeddable": true,

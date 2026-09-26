@@ -1,0 +1,18 @@
+{
+  "name": "Mahatun Plaza Parking",
+  "status": "identified",
+  "coordinates": {
+    "lat": 13.74195,
+    "lng": 100.548812
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/yfwxqWZHhtYteePX7"
+    ]
+  },
+  "tags": [
+    "Parking",
+    "Rooftop"
+  ]
+}

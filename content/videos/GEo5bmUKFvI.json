@@ -1,0 +1,26 @@
+{
+  "title": "[MV] 이달의 소녀 (LOONA) \"So What\"",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=GEo5bmUKFvI",
+  "artists": [
+    "loona"
+  ],
+  "songs": [
+    {
+      "title": "So What"
+    }
+  ],
+  "type": "mv",
+  "channel": "loonatheworld",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "mahatun-plaza",
+      "screenshots": [
+        {
+          "image": "/media/full/pasted-image-1790426740444.webp"
+        }
+      ]
+    }
+  ]
+}

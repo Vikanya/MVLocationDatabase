@@ -1,7 +1,7 @@
 {
   "name": "HYO",
   "name_ko": "효연",
-  "review": [
-    "Member or unit of \"girls-generation\"? If so, set \"Part of\""
+  "part_of": [
+    "girls-generation"
   ]
 }

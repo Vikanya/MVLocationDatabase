@@ -15,7 +15,12 @@
   "embeddable": true,
   "appearances": [
     {
-      "location": "mahatun-plaza"
+      "location": "mahatun-plaza",
+      "screenshots": [
+        {
+          "image": "/media/full/pasted-image-1790426917582.webp"
+        }
+      ]
     }
   ]
 }

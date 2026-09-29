@@ -5,6 +5,11 @@
   "artists": [
     "class-y"
   ],
+  "songs": [
+    {
+      "title": "Psycho and Beautiful"
+    }
+  ],
   "type": "mv",
   "channel": "CLASSy(클라씨)",
   "embeddable": true,

@@ -1,6 +1,6 @@
 // Custom admin field "artist-videos": on an artist's form, lists the videos tagged with this artist (with their
 // songs, locations and to-dos) and its members / units, each opening its editor in a new tab. Read-only, stores
-// nothing. The data is admin/usage.json, written by the site build, so it reflects the last deploy.
+// nothing. The data is admin/usage.json (loaded by usage.js), written by the site build: it reflects the last deploy.
 //
 //   - name: videos_info
 //     widget: artist-videos
@@ -10,11 +10,6 @@
 /* global CMS, createClass, h */
 (function () {
   const base = `${window.location.origin}${window.location.pathname}`;
-  let usage; // Promise of admin/usage.json, fetched once per admin session (↻ fetches it again)
-  const fetchUsage = () =>
-    (usage = fetch(new URL('usage.json', base), { cache: 'no-store' })
-      .then((res) => (res.ok ? res.json() : null))
-      .catch(() => null));
 
   // ---- hover tooltips: Sveltia draws artist names as plain text ("{{name}} {{name_ko}}"), so match the text.
   const norm = (text) => text.replace(/^✎\s*/, '').replace(/\s+/g, ' ').trim();
@@ -30,7 +25,7 @@
     const walker = document.createTreeWalker(node, NodeFilter.SHOW_TEXT);
     while (walker.nextNode()) tip(walker.currentNode);
   };
-  (usage || fetchUsage()).then((data) => {
+  window.mvUsage().then((data) => {
     if (!data) return;
     const names = (list) => list.map((a) => a.name);
     for (const a of Object.values(data.artists)) {
@@ -73,9 +68,8 @@
       this.unmounted = true;
     },
     load(force) {
-      if (force || !usage) fetchUsage();
       this.setState({ data: undefined });
-      usage.then((data) => !this.unmounted && this.setState({ data }));
+      window.mvUsage(force).then((data) => !this.unmounted && this.setState({ data }));
     },
     render() {
       const slug = read(this.props.entry, 'slug');

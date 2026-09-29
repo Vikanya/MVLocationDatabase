@@ -1,4 +1,5 @@
-// For the admin page: who uses what, as of this build. Read by public/admin/artist-videos.js and admin/unused.
+// For the admin page: who uses what, as of this build. Read by public/admin/usage.js (artist-videos.js,
+// location-counts.js).
 import { db, videoLabel } from '../../lib/data';
 
 export async function GET() {
@@ -23,5 +24,7 @@ export async function GET() {
       },
     ]),
   );
-  return new Response(JSON.stringify({ built: new Date().toISOString(), artists }));
+  // Videos per location, by name (the admin's location list only knows the names). Studios count their spaces'.
+  const locations = Object.fromEntries(data.locations.map((l) => [l.data.name, data.videoCount(l.id)]));
+  return new Response(JSON.stringify({ built: new Date().toISOString(), artists, locations }));
 }

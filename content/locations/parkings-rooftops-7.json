@@ -1,5 +1,5 @@
 {
-  "name": "Parkings/Rooftops #7",
+  "name": "Studio Heal",
   "status": "identified",
   "coordinates": {
     "lat": 37.543277,
@@ -18,8 +18,7 @@
     ]
   },
   "tags": [
-    "Parkings/Rooftops",
-    "Studio Heal"
+    "Rooftop"
   ],
   "sheet_rows": [
     "Parkings/Rooftops!42",

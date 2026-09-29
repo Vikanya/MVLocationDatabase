@@ -2,10 +2,14 @@
 // Sveltia can't compute that, so this reads admin/usage.json (last deploy; a studio counts its spaces' videos)
 // and matches each row by the location name at the start of its summary ("{{name}} · {{tags}}").
 // Only an attribute is set on Sveltia's empty "status" cell; the text comes from CSS, so its DOM is untouched.
+// Also fades the tags part of each row (it's in <em>, from the Markdown in the collection summary).
 (function () {
   const style = document.createElement('style');
-  style.textContent =
-    '[data-mv-count]::after { content: attr(data-mv-count); white-space: nowrap; font-size: 12px; opacity: 0.7; padding: 0 8px; }';
+  style.textContent = [
+    '[data-mv-count]::after { content: attr(data-mv-count); white-space: nowrap; font-size: 12px; opacity: 0.7; padding: 0 8px; }',
+    // the tags in a location row's summary ("{{name}} _· {{tags}}_")
+    '.grid-cell.title em { font-style: normal; font-size: 0.85em; opacity: 0.5; }',
+  ].join('\n');
   document.head.append(style);
 
   const onList = () => /^#\/collections\/locations\/?(\?.*)?$/.test(window.location.hash);

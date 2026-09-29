@@ -208,7 +208,8 @@ collections:
     extension: json
     identifier_field: name
     # The MV count at the end of each row is added by public/admin/location-counts.js (it matches the name).
-    summary: "{{name}} · {{tags | default('no tag')}}"
+    # _…_ renders as <em>, which location-counts.js styles faded so the tags don't read as part of the name.
+    summary: "{{name}} _· {{tags | default('no tag')}}_"
     sortable_fields: [name, tags]
     view_groups:
       - { label: Studio, field: part_of }

@@ -1,11 +1,12 @@
 {
+  "review": [
+    "Location not identified yet"
+  ],
   "name": "Parkings/Rooftops #6",
   "status": "unknown",
   "tags": [
-    "Parkings/Rooftops"
-  ],
-  "review": [
-    "Location not identified yet"
+    "Parking",
+    "Rooftop"
   ],
   "sheet_rows": [
     "Parkings/Rooftops!40"

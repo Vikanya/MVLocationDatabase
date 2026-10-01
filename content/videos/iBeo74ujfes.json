@@ -1,0 +1,21 @@
+{
+  "title": "IVE THEATER ｜ NOW SHOWING",
+  "platform": "youtube",
+  "url": "https://youtu.be/iBeo74ujfes",
+  "artists": [
+    "ive"
+  ],
+  "type": "other",
+  "channel": "IVE",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "jayuro-drive-in-theater",
+      "screenshots": [
+        {
+          "image": "/media/full/pasted-image-1790895622828.webp"
+        }
+      ]
+    }
+  ]
+}

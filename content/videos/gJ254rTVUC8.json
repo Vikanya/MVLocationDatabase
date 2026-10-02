@@ -1,0 +1,26 @@
+{
+  "title": "CHANYEOL 찬열 'Song For You' MV",
+  "platform": "youtube",
+  "url": "https://youtu.be/gJ254rTVUC8",
+  "artists": [
+    "chanyeol"
+  ],
+  "songs": [
+    {
+      "title": "Song For You"
+    }
+  ],
+  "type": "mv",
+  "channel": "EXO",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "minatomirai-grand-central-tower",
+      "screenshots": [
+        {
+          "image": "/media/full/pasted-image-1790942779285.webp"
+        }
+      ]
+    }
+  ]
+}

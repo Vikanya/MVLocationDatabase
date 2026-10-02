@@ -1,0 +1,32 @@
+{
+  "name": "Minatomirai Grand Central Tower",
+  "status": "identified",
+  "part_of": "hamaloca",
+  "address": "4 Chome-6-2 Minatomirai, Nishi Ward, Yokohama, Kanagawa 220-0012, Japan",
+  "coordinates": {
+    "lat": 35.458961216355725,
+    "lng": 139.62964138182602
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/i4o6c9tjcYBK6UXr9"
+    ],
+    "website": [
+      "https://www.hamaloca.com/location/%e5%b1%8b%e4%b8%8aa.html"
+    ]
+  },
+  "photos": [
+    "/media/full/pasted-image-1790941816879.webp",
+    "/media/full/pasted-image-1790941835421.webp",
+    "/media/full/pasted-image-1790941839329.webp",
+    "/media/full/pasted-image-1790941844586.webp",
+    "/media/full/pasted-image-1790941849413.webp",
+    "/media/full/pasted-image-1790941853422.webp",
+    "/media/full/pasted-image-1790941858065.webp"
+  ],
+  "tags": [
+    "Helipad",
+    "Rooftop"
+  ]
+}

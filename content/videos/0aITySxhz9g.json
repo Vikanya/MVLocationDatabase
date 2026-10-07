@@ -1,0 +1,29 @@
+{
+  "title": "KickFlip(킥플립) \"Kick Off The Wall (Feat. iann dior)\" M/V",
+  "platform": "youtube",
+  "url": "https://youtu.be/0aITySxhz9g",
+  "artists": [
+    "kickflip"
+  ],
+  "songs": [
+    {
+      "title": "Kick Off The Wall"
+    }
+  ],
+  "type": "mv",
+  "channel": "JYP Entertainment",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "the-bloc-garage",
+      "screenshots": [
+        {
+          "image": "/media/full/pasted-image-1791379610441.webp"
+        },
+        {
+          "image": "/media/full/pasted-image-1791379618373.webp"
+        }
+      ]
+    }
+  ]
+}

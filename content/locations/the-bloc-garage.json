@@ -1,0 +1,19 @@
+{
+  "name": "The BLOC Garage",
+  "status": "identified",
+  "address": "700 Flower St, Los Angeles, CA 90017, United States",
+  "coordinates": {
+    "lat": 34.047462447347364,
+    "lng": -118.25965658760494
+  },
+  "coordinates_source": "google maps link",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/HgQQd1U8GWaj6N8B8"
+    ]
+  },
+  "tags": [
+    "Rooftop",
+    "Parking"
+  ]
+}

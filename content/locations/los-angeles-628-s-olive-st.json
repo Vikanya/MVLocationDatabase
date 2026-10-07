@@ -1,18 +1,20 @@
 {
-  "name": "628 S Olive St, Los Angeles, CA 90014, USA",
+  "name": "Parking, Los Angeles Athletic Club (LAAC)",
   "status": "identified",
+  "address": "646 S Olive St, Los Angeles, CA 90014, United States",
   "coordinates": {
-    "lat": 34.047213,
-    "lng": -118.254733
+    "lat": 34.04701717441453,
+    "lng": -118.2549740472394
   },
   "coordinates_source": "google maps link",
   "links": {
     "google_maps": [
-      "https://maps.app.goo.gl/ju2UdK1BLyMk5KeF6"
+      "https://maps.app.goo.gl/ngke6bamA5n6ncwRA"
     ]
   },
   "tags": [
-    "Parkings/Rooftops"
+    "Parking",
+    "Rooftop"
   ],
   "sheet_rows": [
     "Parkings/Rooftops!16"

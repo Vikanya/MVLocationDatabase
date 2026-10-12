@@ -2,8 +2,20 @@
   "review": [
     "Location not identified yet"
   ],
-  "name": "Parkings/Rooftops #2",
-  "status": "unknown",
+  "name": "Universal Logistics Incorporated Dongtan Logistics Center",
+  "status": "identified",
+  "address": "South Korea, Gyeonggi-do, Hwaseong-si, Dongtansandan 3-gil, 20-31 KR",
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/TgjePXBRqK8WnuCS6"
+    ],
+    "naver_map": [
+      "https://naver.me/xeAksUAD"
+    ]
+  },
+  "reference_videos": [
+    "https://youtu.be/XFGX1Vm24tU"
+  ],
   "tags": [
     "Parking",
     "Rooftop"

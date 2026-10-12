@@ -11,8 +11,8 @@ interface Props {
 }
 const { title, description, searchable = false } = Astro.props;
 const SITE = 'MV Location DB';
-const pageTitle = title ? `${title} · ${SITE}` : `${SITE} — where was that K-pop MV filmed?`;
-const desc = description ?? 'A fan-made database of K-pop music video filming locations, with screenshots and a map.';
+const pageTitle = title ? `${title} · ${SITE}` : `${SITE} — K-pop music video filming locations`;
+const desc = description ?? 'K-pop music video filming locations, with screenshots and a map.';
 
 const data = await db();
 const path = Astro.url.pathname.replace(import.meta.env.BASE_URL.replace(/\/$/, ''), '') || '/';
@@ -69,9 +69,8 @@ const shots = data.appearances.reduce((n, a) => n + a.shots.length, 0);
       <header class="masthead">
         <a class="wordmark" href={url()}>
           <span class="wordmark-main">MV Location <span class="wordmark-star">✦</span> DB</span>
-          <span class="wordmark-sub" lang="ko">뮤비 촬영지 데이터베이스 · where was that MV filmed?</span>
+          <span class="wordmark-sub" lang="ko">뮤비 촬영지 데이터베이스</span>
         </a>
-        <span class="masthead-tag">FAN-MADE · SINCE 2023</span>
       </header>
 
       <div class="ticker" aria-label="Random filming spots">
@@ -124,13 +123,6 @@ const shots = data.appearances.reduce((n, a) => n + a.shots.length, 0);
         </main>
       </div>
 
-      <footer class="footer">
-        <p>
-          ✦ FAN-MADE, NOT AFFILIATED WITH ANY ARTIST OR LABEL ✦ VIDEOS &amp; SCREENSHOTS BELONG TO THEIR OWNERS ✦<br />
-          MAP DATA © <a href="https://www.openstreetmap.org/copyright">OPENSTREETMAP</a> CONTRIBUTORS ✦ BEST VIEWED IN ANY
-          BROWSER AT ANY SIZE <span class="blink">_</span>
-        </p>
-      </footer>
     </div>
 
     <script>

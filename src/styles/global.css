@@ -141,7 +141,7 @@ h3 {
 .desktop {
   max-width: 1140px;
   margin: 0 auto;
-  padding: 16px;
+  padding: 16px 16px 40px;
 }
 
 .masthead {
@@ -189,16 +189,6 @@ h3 {
   font: 12px var(--f-body);
   font-weight: 700;
   color: var(--ink-soft);
-}
-.masthead-tag {
-  font-family: var(--f-pixel);
-  font-size: 11px;
-  color: var(--on-accent);
-  background: var(--lime);
-  border: 1px solid var(--line);
-  padding: 2px 6px;
-  transform: rotate(-2deg);
-  box-shadow: 2px 2px 0 var(--line);
 }
 
 /* ticker */
@@ -959,31 +949,8 @@ main {
   margin-right: 12px;
 }
 
-.footer {
-  margin-top: 8px;
-  padding: 12px 0 24px;
-  text-align: center;
-  font: 10px/1.9 var(--f-pixel);
-  color: var(--ink-soft);
-}
-.footer a,
-.footer a:visited {
-  color: var(--ink-soft);
-}
-.blink {
-  animation: blink 1.2s steps(1) infinite;
-}
-@keyframes blink {
-  50% {
-    visibility: hidden;
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   .ticker-track {
-    animation: none;
-  }
-  .blink {
     animation: none;
   }
   .card {

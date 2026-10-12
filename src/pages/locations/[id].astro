@@ -147,7 +147,7 @@ const nearby = l.tags?.length
           ) : null
         }
         {l.notes && (<><dt>NOTES</dt><dd>{l.notes}</dd></>)}
-        {unknown && (<><dt>HELP!</dt><dd>We don't know where this is yet. Recognise it? A suggestion form is coming soon.</dd></>)}
+        {unknown && (<><dt>STATUS</dt><dd>Not identified yet.</dd></>)}
       </dl>
     </Window>
     <Window title={spaces.length ? 'Map of its spaces' : 'Map'} flush>

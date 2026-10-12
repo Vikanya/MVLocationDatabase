@@ -64,7 +64,7 @@ const pins = pinsFor(identified, (l) => count(l.id));
   </Window>
 
   <Window title="Not identified yet" tone="pink">
-    <p class="muted">These places appear in videos, but nobody has pinned them down yet.</p>
+    <p class="muted">Seen in videos, but not located yet.</p>
     <ul class="cards">{unknown.map((l) => <li><LocationCard location={l} /></li>)}</ul>
   </Window>
 </Base>

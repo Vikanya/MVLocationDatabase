@@ -12,7 +12,7 @@ const pins = pinsFor(data.locations, (l) => data.videoCount(l.id));
   <header class="page-head">
     <span class="kicker">MAP</span>
     <h1>Every spot on the map</h1>
-    <p class="sub">{pins.length} places with coordinates. Click a ✦ to open it — click the map first to zoom with the scroll wheel.</p>
+    <p class="sub">{pins.length} places. Click the map to zoom with the scroll wheel.</p>
   </header>
   <Window title="Map" flush>
     <MapView pins={pins} height={640} />

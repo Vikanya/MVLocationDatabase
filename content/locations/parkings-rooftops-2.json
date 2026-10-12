@@ -1,7 +1,4 @@
 {
-  "review": [
-    "Location not identified yet"
-  ],
   "name": "Universal Logistics Incorporated Dongtan Logistics Center",
   "status": "identified",
   "address": "South Korea, Gyeonggi-do, Hwaseong-si, Dongtansandan 3-gil, 20-31 KR",
@@ -19,6 +16,9 @@
   },
   "reference_videos": [
     "https://youtu.be/XFGX1Vm24tU"
+  ],
+  "photos": [
+    "/media/full/pasted-image-1791843900634.webp"
   ],
   "tags": [
     "Parking",

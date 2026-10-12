@@ -1,0 +1,25 @@
+{
+  "title": "MEOVV(미야오) - ‘GO HARD’ M/V",
+  "platform": "youtube",
+  "url": "https://youtu.be/8aKR2Ho--5k",
+  "artists": [
+    "meovv"
+  ],
+  "songs": [
+    {
+      "title": "GO HARD"
+    }
+  ],
+  "type": "mv",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "parkings-rooftops-2",
+      "screenshots": [
+        {
+          "image": "/media/full/pasted-image-1791814672485.webp"
+        }
+      ]
+    }
+  ]
+}

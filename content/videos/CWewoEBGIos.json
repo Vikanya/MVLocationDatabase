@@ -1,0 +1,26 @@
+{
+  "title": "성한빈(SUNGHANBIN) - 'UNDEAD' M/V",
+  "platform": "youtube",
+  "url": "https://youtu.be/CWewoEBGIos",
+  "artists": [
+    "sunghanbin"
+  ],
+  "songs": [
+    {
+      "title": "UNDEAD"
+    }
+  ],
+  "type": "mv",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "taean-european-resort",
+      "screenshots": [
+        {
+          "image": "/media/full/pasted-image-1791968441986.webp",
+          "set": "spot-4"
+        }
+      ]
+    }
+  ]
+}

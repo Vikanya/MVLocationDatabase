@@ -1,0 +1,26 @@
+{
+  "title": "LE SSERAFIM (르세라핌) 'Made My Night' OFFICIAL PERFORMANCE FILM @ THE LOBBY",
+  "platform": "youtube",
+  "url": "https://youtu.be/ZdgVpnHq70o",
+  "artists": [
+    "le-sserafim"
+  ],
+  "songs": [
+    {
+      "title": "Made My Night"
+    }
+  ],
+  "type": "performance",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "ametage-studio",
+      "screenshots": [
+        {
+          "image": "/media/full/pasted-image-1792099239548.webp",
+          "set": "lobby"
+        }
+      ]
+    }
+  ]
+}

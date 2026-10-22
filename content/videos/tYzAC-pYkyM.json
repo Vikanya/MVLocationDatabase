@@ -1,0 +1,39 @@
+{
+  "title": "A2O MAY ‘BAD HABITS TONITE’ Official Video",
+  "platform": "youtube",
+  "url": "https://youtu.be/tYzAC-pYkyM",
+  "artists": [
+    "a2o-may"
+  ],
+  "songs": [
+    {
+      "title": "BAD HABITS TONITE"
+    }
+  ],
+  "type": "mv",
+  "channel": "A2O WORLD A2O WORLD",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "acres-space-subway",
+      "screenshots": [
+        {
+          "image": "/media/full/pasted-image-1792703551302.webp",
+          "set": "spot-2"
+        },
+        {
+          "image": "/media/full/pasted-image-1792703587485.webp",
+          "set": "spot-3"
+        }
+      ]
+    },
+    {
+      "location": "parkings-rooftops-5",
+      "screenshots": [
+        {
+          "image": "/media/full/pasted-image-1792703666101.webp"
+        }
+      ]
+    }
+  ]
+}

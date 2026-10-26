@@ -1,0 +1,32 @@
+{
+  "title": "ATEEZ(에이티즈) - 'Drip' Official MV",
+  "platform": "youtube",
+  "url": "https://youtu.be/iqQWCYMlMw0",
+  "artists": [
+    "ateez"
+  ],
+  "songs": [
+    {
+      "title": "Drip"
+    }
+  ],
+  "type": "mv",
+  "channel": "KQ ENTERTAINMENT",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "royal-x"
+    },
+    {
+      "location": "parkings-rooftops-2",
+      "screenshots": [
+        {
+          "image": "/media/full/pasted-image-1793016049008.webp"
+        },
+        {
+          "image": "/media/full/pasted-image-1793016028363.webp"
+        }
+      ]
+    }
+  ]
+}

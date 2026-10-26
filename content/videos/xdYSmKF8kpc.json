@@ -1,0 +1,27 @@
+{
+  "title": "BOL4 - 'Golden Age' MV",
+  "platform": "youtube",
+  "url": "https://youtu.be/xdYSmKF8kpc",
+  "artists": [
+    "bol4"
+  ],
+  "songs": [
+    {
+      "title": "Golden Age",
+      "title_ko": "황금기"
+    }
+  ],
+  "type": "mv",
+  "channel": "볼빨간사춘기 BOL4",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "quarries-1",
+      "screenshots": [
+        {
+          "image": "/media/full/pasted-image-1793020283793.webp"
+        }
+      ]
+    }
+  ]
+}

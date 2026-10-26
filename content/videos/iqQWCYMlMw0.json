@@ -15,7 +15,17 @@
   "embeddable": true,
   "appearances": [
     {
-      "location": "royal-x"
+      "location": "royal-x",
+      "screenshots": [
+        {
+          "image": "/media/full/pasted-image-1793016366287.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "/media/full/pasted-image-1793016344712.webp",
+          "set": "spot-3"
+        }
+      ]
     },
     {
       "location": "parkings-rooftops-2",

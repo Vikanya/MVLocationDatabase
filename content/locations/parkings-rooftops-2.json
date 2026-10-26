@@ -2,6 +2,10 @@
   "name": "Universal Logistics Incorporated Dongtan Logistics Center",
   "status": "identified",
   "address": "South Korea, Gyeonggi-do, Hwaseong-si, Dongtansandan 3-gil, 20-31 KR",
+  "coordinates": {
+    "lat": 37.16727244551028,
+    "lng": 127.08521034456763
+  },
   "links": {
     "google_maps": [
       "https://maps.app.goo.gl/TgjePXBRqK8WnuCS6"

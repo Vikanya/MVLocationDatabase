@@ -1,0 +1,22 @@
+{
+  "name": "Abandoned Factory",
+  "status": "unknown",
+  "sets": [
+    {
+      "id": "spot-1",
+      "name": "Spot 1"
+    },
+    {
+      "id": "spot-2",
+      "name": "Spot 2"
+    },
+    {
+      "id": "spot-3",
+      "name": "Spot 3"
+    },
+    {
+      "id": "spot-4",
+      "name": "Spot 4"
+    }
+  ]
+}

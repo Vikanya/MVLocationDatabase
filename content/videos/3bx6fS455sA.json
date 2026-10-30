@@ -1,0 +1,32 @@
+{
+  "title": "MODYSSEY 'Ridin' (CAN YOU HEAR THAT)' Official MV",
+  "platform": "youtube",
+  "url": "https://youtu.be/3bx6fS455sA",
+  "artists": [
+    "modyssey"
+  ],
+  "songs": [
+    {
+      "title": "Ridin'",
+      "title_ko": "타!"
+    }
+  ],
+  "type": "mv",
+  "channel": "MODYSSEY",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "abandoned-factory",
+      "screenshots": [
+        {
+          "image": "/media/full/pasted-image-1793361340397.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "/media/full/pasted-image-1793361354042.webp",
+          "set": "spot-2"
+        }
+      ]
+    }
+  ]
+}

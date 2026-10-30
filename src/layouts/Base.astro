@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import Window from '../components/Window.astro';
+import ThemeInit from '../components/ThemeInit.astro';
 import { db, href, url, stableShuffle, videoLabel, TYPE_LABEL } from '../lib/data';
 
 interface Props {
@@ -44,17 +45,7 @@ const shots = data.appearances.reduce((n, a) => n + a.shots.length, 0);
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script is:inline>
-      // Before the first paint: the visitor's saved theme, else their system setting (no white flash in dark mode).
-      (() => {
-        let theme;
-        try {
-          theme = localStorage.getItem('theme');
-        } catch {}
-        if (theme !== 'light' && theme !== 'dark') theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-        document.documentElement.dataset.theme = theme;
-      })();
-    </script>
+    <ThemeInit />
     <noscript><style>.random { display: none; }</style></noscript>
     <title>{pageTitle}</title>
     <meta name="description" content={desc} />

@@ -1,0 +1,110 @@
+---
+// Admin helper: every open to-do item (the records' "review" lists) plus gaps found in the data, with links to
+// the forms. Built with the site, so it reflects the last deploy.
+import Admin from '../../layouts/Admin.astro';
+import Window from '../../components/Window.astro';
+import { db, url, videoLabel } from '../../lib/data';
+
+const data = await db();
+type Row = { collection: 'videos' | 'locations' | 'artists'; id: string; name: string; note?: string };
+type Group = { label: string; rows: Row[] };
+
+const videoName = (v: (typeof data.videos)[number]) =>
+  [data.videoArtists(v).map((a) => a.data.name).join(', ') || v.data.channel, videoLabel(v)].filter(Boolean).join(' – ');
+const row = {
+  video: (v: (typeof data.videos)[number], note?: string): Row => ({ collection: 'videos', id: v.id, name: videoName(v), note }),
+  location: (l: (typeof data.locations)[number], note?: string): Row => ({ collection: 'locations', id: l.id, name: l.data.name, note }),
+  artist: (a: (typeof data.artists)[number]): Row => ({ collection: 'artists', id: a.id, name: a.data.name }),
+};
+
+// Written to-dos, grouped by identical text (most are the same migration message).
+const written = new Map<string, Row[]>();
+const add = (text: string, r: Row) => written.set(text, [...(written.get(text) ?? []), r]);
+for (const v of data.videos) for (const t of v.data.review ?? []) add(t, row.video(v));
+for (const l of data.locations) for (const t of l.data.review ?? []) add(t, row.location(l));
+for (const a of data.artists) for (const t of a.data.review ?? []) add(t, row.artist(a));
+const writtenGroups: Group[] = [...written.entries()]
+  .map(([label, rows]) => ({ label, rows }))
+  .sort((a, b) => b.rows.length - a.rows.length || a.label.localeCompare(b.label));
+
+// Gaps found in the data. A record whose written to-do already says the same thing isn't listed twice.
+const mentions = (review: string[] | undefined, word: RegExp) => (review ?? []).some((t) => word.test(t));
+const found: Group[] = [
+  {
+    label: 'YouTube video without a published date',
+    rows: data.videos
+      .filter((v) => v.data.platform === 'youtube' && !v.data.published && !mentions(v.data.review, /published/i))
+      .map((v) => row.video(v)),
+  },
+  {
+    label: 'Video without an artist',
+    rows: data.videos.filter((v) => !v.data.artists?.length && !mentions(v.data.review, /artist/i)).map((v) => row.video(v)),
+  },
+  {
+    label: 'Video without a song',
+    rows: data.videos.filter((v) => !v.data.songs?.length && !mentions(v.data.review, /song/i)).map((v) => row.video(v)),
+  },
+  {
+    label: 'Identified location without coordinates',
+    rows: data.locations
+      .filter((l) => l.data.status === 'identified' && !l.data.coordinates && !mentions(l.data.review, /coordinates/i))
+      .map((l) => row.location(l)),
+  },
+  {
+    label: 'Screenshot without a set (the location has sets)',
+    rows: data.appearances
+      .filter((a) => a.location.data.sets?.length && a.shots.some((s) => !s.set))
+      .map((a) => row.video(a.video, `${a.shots.filter((s) => !s.set).length} at ${a.location.data.name}`)),
+  },
+].filter((g) => g.rows.length);
+
+const count = (groups: Group[]) => groups.reduce((n, g) => n + g.rows.length, 0);
+const edit = (r: Row) => `${url('admin/')}#/collections/${r.collection}/entries/${encodeURIComponent(r.id)}`;
+const KIND = { videos: 'VIDEO', locations: 'PLACE', artists: 'ARTIST' } as const;
+const built = new Date().toISOString().slice(0, 16).replace('T', ' ');
+const sections = [
+  { title: `Written to-dos (${count(writtenGroups)})`, groups: writtenGroups, empty: 'No written to-do items left.' },
+  { title: `Found in the data (${count(found)})`, groups: found, empty: 'Nothing missing.' },
+];
+---
+
+<Admin title="To-do">
+  <div class="page-head">
+    <h1>To-do ({count(writtenGroups) + count(found)})</h1>
+    <p class="sub">
+      As of the last site update ({built} UTC); fixed items disappear a minute or two after the site redeploys. ✎ opens
+      the form in a new tab.
+    </p>
+  </div>
+  {
+    sections.map((s) => (
+      <Window title={s.title}>
+        {s.groups.length === 0 ? (
+          <p class="muted">{s.empty}</p>
+        ) : (
+          s.groups.map((g) => (
+            <details class="todo-group" open={g.rows.length <= 12}>
+              <summary>
+                <b>{g.label}</b> <span class="badge">{g.rows.length}</span>
+              </summary>
+              <ul class="todo-list">
+                {g.rows.map((r) => (
+                  <li>
+                    <span class="badge" data-kind={r.collection === 'artists' ? 'artist' : r.collection === 'locations' ? 'other' : undefined}>
+                      {KIND[r.collection]}
+                    </span>
+                    <a href={edit(r)} target="_blank" rel="noopener">
+                      ✎ {r.name}
+                    </a>
+                    {r.note && <span class="muted"> · {r.note}</span>}
+                    <span class="muted"> · {r.id}</span>
+                  </li>
+                ))}
+              </ul>
+            </details>
+          ))
+        )}
+      </Window>
+    ))
+  }
+</Admin>

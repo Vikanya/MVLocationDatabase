@@ -1,6 +1,7 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import { execFileSync } from 'node:child_process';
 import { existsSync } from 'node:fs';
+import { parseYoutubeId, slugify } from './ids';
 
 export type Artist = CollectionEntry<'artists'>;
 export type Location = CollectionEntry<'locations'>;
@@ -272,13 +273,7 @@ export async function recentlyAdded(): Promise<Addition[]> {
 
 // ------------------------------------------------------------------ helpers
 
-export function slugify(text: string) {
-  return text
-    .normalize('NFKC')
-    .toLowerCase()
-    .replace(/[^0-9a-z가-힣]+/g, '-')
-    .replace(/^-|-$/g, '');
-}
+export { slugify };
 
 const BASE = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 /** Site-relative link that works under the GitHub Pages sub-path. */
@@ -296,8 +291,7 @@ export const media = {
  * The YouTube ID to play, read from the Link. The file name (video.id) is only the permanent page id:
  * when a video dies and is re-uploaded, the owner changes the Link and the page keeps its address.
  */
-const YOUTUBE_ID = /(?:[?&]v=|youtu\.be\/|\/shorts\/|\/embed\/|\/live\/)([A-Za-z0-9_-]{11})(?![A-Za-z0-9_-])/;
-export const youtubeId = (v: Video) => v.data.url.match(YOUTUBE_ID)?.[1];
+export const youtubeId = (v: Video) => parseYoutubeId(v.data.url);
 
 export const youtubeThumb = (v: Video, size: 'hq' | 'maxres' = 'hq') =>
   `https://i.ytimg.com/vi/${youtubeId(v)}/${size}default.jpg`;

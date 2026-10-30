@@ -1,0 +1,91 @@
+---
+// Quick add: a new video from its YouTube link (or more screenshots for one already in the database), with new
+// artists / locations inline. Screenshots upload one by one while the form is filled in; Save is one commit.
+// The logic is in src/scripts/quick-add/; the form order and kinds of place come from public/admin/config.yml.
+import { readdirSync, readFileSync } from 'node:fs';
+import Admin from '../../layouts/Admin.astro';
+import Window from '../../components/Window.astro';
+import { adminConfig } from '../../lib/admin-config';
+import { db, url, youtubeId } from '../../lib/data';
+
+const config = adminConfig();
+const data = await db();
+// Videos whose Link no longer matches their file name (re-uploaded): link ID → file ID, for the duplicate check.
+const linkIds = Object.fromEntries(
+  data.videos.flatMap((v) => {
+    const y = youtubeId(v);
+    return y && y !== v.id ? [[y, v.id]] : [];
+  }),
+);
+
+// `astro dev`, or a build with QUICK_ADD_MOCK=1, only: the local content/, so ?mock can stand in for GitHub
+// without signing in (never in the deployed site).
+const files = (dir: string, text = true) =>
+  readdirSync(dir).map((name) => ({ name, text: text ? readFileSync(`${dir}/${name}`, 'utf8').replace(/\r\n/g, '\n') : '' }));
+const mock = import.meta.env.DEV || process.env.QUICK_ADD_MOCK
+  ? {
+      snapshot: {
+        head: 'mock',
+        artists: files('content/artists'),
+        locations: files('content/locations'),
+        videos: readdirSync('content/videos'),
+        media: readdirSync('public/media/full'),
+      },
+      videos: Object.fromEntries(files('content/videos').map((f) => [f.name, f.text])),
+    }
+  : undefined;
+
+const page = {
+  repo: config.repo,
+  branch: config.branch,
+  order: config.order,
+  tags: config.tags,
+  linkIds,
+  youtubeKey: import.meta.env.PUBLIC_YOUTUBE_API_KEY ?? '',
+  admin: url('admin/'),
+  site: url(),
+  mock,
+};
+---
+
+<Admin title="Quick add">
+  <script is:inline type="application/json" id="qa-config" set:html={JSON.stringify(page).replace(/</g, '\\u003c')} />
+
+  <div class="qa" id="qa">
+    <p class="qa-status" id="qa-account">Checking the sign-in…</p>
+    <div id="qa-draft"></div>
+
+    <Window title="Video">
+      <label class="qa-field">
+        <span>YouTube link</span>
+        <input id="qa-link" type="url" placeholder="https://youtu.be/… or https://www.youtube.com/watch?v=…" autocomplete="off" />
+      </label>
+      <p class="qa-note" id="qa-link-status"></p>
+      <div id="qa-video"></div>
+    </Window>
+
+    <div id="qa-rest" hidden>
+      <Window title="Artists" id="qa-artists-win">
+        <div id="qa-artists"></div>
+      </Window>
+      <Window title="Filming locations & screenshots">
+        <p class="qa-note">
+          Paste screenshots with <kbd>Ctrl</kbd>+<kbd>V</kbd> (into the highlighted location), drop them, or pick files. They
+          upload in the background while you carry on.
+        </p>
+        <div id="qa-locations"></div>
+      </Window>
+    </div>
+
+    <div class="qa-savebar" id="qa-savebar" hidden>
+      <p id="qa-save-status" class="qa-note"></p>
+      <button class="btn qa-save" id="qa-save" type="button" disabled>SAVE</button>
+    </div>
+    <div id="qa-result"></div>
+  </div>
+</Admin>
+
+<script>
+  import { start } from '../../scripts/quick-add/main.ts';
+  start();
+</script>

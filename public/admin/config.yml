@@ -49,7 +49,10 @@ collections:
   - name: videos
     label: Videos
     label_singular: Video
-    description: One file per video, named after its YouTube ID. Where it was filmed goes under "Filming locations".
+    description: >-
+      One file per video, named after its YouTube ID. Where it was filmed goes under "Filming locations".
+      New video or more screenshots? [Quick add](add/) fills in the details from YouTube and uploads screenshots
+      one by one. Open items: [to-do list](todo/).
     folder: /content/videos
     format: json
     extension: json
@@ -156,7 +159,9 @@ collections:
           - { label: Other, value: other }
         default: mv
         required: false
-      - { name: channel, label: YouTube channel, widget: string, required: false }
+      # Filled from YouTube by the quick-add page (admin/add/); kept on save but not shown. The site uses it only
+      # when a video has no artist.
+      - { name: channel, label: YouTube channel, widget: hidden }
       - name: embeddable
         label: Can be played on the site
         hint: Turn off if YouTube blocks embedding for this video (the site then links to YouTube).
@@ -210,7 +215,9 @@ collections:
   - name: locations
     label: Locations
     label_singular: Location
-    description: One file per place. Sets (rooms / spots of a studio) are listed inside the location.
+    description: >-
+      One file per place. Sets (rooms / spots of a studio) are listed inside the location.
+      Open items: [to-do list](todo/).
     folder: /content/locations
     format: json
     extension: json
@@ -330,7 +337,7 @@ collections:
   - name: artists
     label: Artists
     label_singular: Artist
-    description: "Obsolete entries: the [unused artists](unused/) list (no videos, no members). Each artist shows its videos at the bottom of its form."
+    description: "Obsolete entries: the [unused artists](unused/) list (no videos, no members). Each artist shows its videos at the bottom of its form. Open items: [to-do list](todo/)."
     folder: /content/artists
     format: json
     extension: json

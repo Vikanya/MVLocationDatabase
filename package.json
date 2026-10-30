@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build && node scripts/thumbnails.mjs && pagefind --site dist",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "test": "node --test src/scripts/quick-add/quick-add.test.ts"
   },
   "dependencies": {
     "astro": "^7.3.5",
@@ -13,7 +14,9 @@
     "sharp": "^0.35.4"
   },
   "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
     "@types/leaflet": "^1.9.22",
+    "js-yaml": "^4.3.2",
     "pagefind": "^1.5.2"
   },
   "allowScripts": {

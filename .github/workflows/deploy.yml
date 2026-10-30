@@ -40,6 +40,8 @@ jobs:
         env:
           SITE_URL: ${{ steps.pages.outputs.origin }}
           BASE_PATH: ${{ steps.pages.outputs.base_path }}/
+          # Browser key for the quick-add page (repository variable; restricted to the site in Google Cloud).
+          PUBLIC_YOUTUBE_API_KEY: ${{ vars.YOUTUBE_API_KEY }}
 
       - uses: actions/upload-pages-artifact@v3
         with:

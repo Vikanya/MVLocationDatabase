@@ -24,6 +24,27 @@
       "sheet_rows": [
         "Helipads!12"
       ]
+    },
+    {
+      "location": "abandoned-factory",
+      "screenshots": [
+        {
+          "image": "/media/full/pasted-image-1793360971800.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "/media/full/pasted-image-1793361013061.webp",
+          "set": "spot-2"
+        },
+        {
+          "image": "/media/full/pasted-image-1793361036087.webp",
+          "set": "spot-3"
+        },
+        {
+          "image": "/media/full/pasted-image-1793361045660.webp",
+          "set": "spot-4"
+        }
+      ]
     }
   ]
 }

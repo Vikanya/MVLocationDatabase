@@ -33,7 +33,7 @@ const topArtists = [...data.artists].sort((a, b) => data.byArtist(b.id).length -
       </div>
     </Window>
 
-    <Window title="Tags" tone="chrome">
+    <Window title="Kinds of place" tone="chrome">
       <ul class="chips">
         {data.tags.map((t) => <li><a class="chip" href={href.tag(t.slug)}>{t.name}<b>{t.count}</b></a></li>)}
       </ul>

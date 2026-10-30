@@ -1,8 +1,9 @@
 {
   "name": "Lotte World #2",
   "status": "unknown",
+  "part_of": "lotte-world",
   "tags": [
-    "Lotte World"
+    "Theme park"
   ],
   "review": [
     "Location not identified yet"

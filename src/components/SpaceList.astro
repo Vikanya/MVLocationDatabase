@@ -21,7 +21,7 @@ const spaces = data.directSpaces(parent);
           {s.data.status === 'unknown' && <span class="badge" data-kind="unknown">???</span>}
           <span class="muted">
             {' '}· {count} video{count === 1 ? '' : 's'}
-            {own > 0 && ` in ${own} space${own === 1 ? '' : 's'}`}
+            {own > 0 && ` in ${own} place${own === 1 ? '' : 's'}`}
             {s.data.sets?.length ? ` · ${s.data.sets.length} sets` : ''}
             {!s.data.coordinates && ' · no map pin yet'}
           </span>

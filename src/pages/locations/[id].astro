@@ -4,7 +4,7 @@ import Window from '../../components/Window.astro';
 import MapView from '../../components/MapView.astro';
 import Shots from '../../components/Shots.astro';
 import SpaceList from '../../components/SpaceList.astro';
-import { db, href, pinsFor, slugify, videoLabel, videoLabelKo, type Location } from '../../lib/data';
+import { db, href, pinsFor, slugify, url, videoLabel, videoLabelKo, type Location } from '../../lib/data';
 
 export async function getStaticPaths() {
   const data = await db();
@@ -26,6 +26,8 @@ const spaces = data.spacesOf(location.id);
 const total = data.videoCount(location.id);
 const pins = pinsFor([location, ...spaces], (x) => data.videoCount(x.id));
 const setCount = (id: string) => here.filter((a) => a.shots.some((s) => s.set?.id === id)).length;
+// Its own screenshots / photos are on the screenshot wall, filtered to this place.
+const hasTiles = here.some((a) => a.shots.length > 0) || (l.photos?.length ?? 0) > 0;
 const linksOf = (x: Location['data']['links']) => [
   ...(x?.google_maps ?? []).map((u) => ({ label: 'Google Maps', u })),
   ...(x?.naver_map ?? []).map((u) => ({ label: 'Naver Map', u })),
@@ -76,7 +78,7 @@ const nearby = l.tags?.length
     <p class="sub">
       {
         spaces.length > 0
-          ? `${total} video${total === 1 ? '' : 's'} across ${rooms.length} space${rooms.length === 1 ? '' : 's'}`
+          ? `${total} video${total === 1 ? '' : 's'} across ${rooms.length} place${rooms.length === 1 ? '' : 's'}`
           : `${here.length} video${here.length === 1 ? '' : 's'} filmed here`
       }
       {l.sets?.length ? ` · ${l.sets.length} sets` : ''}
@@ -116,7 +118,7 @@ const nearby = l.tags?.length
         {
           studio && (
             <>
-              <dt>STUDIO</dt>
+              <dt>PART OF</dt>
               <dd>
                 <a href={href.location(studio.id)}>{studio.data.name}</a>
                 {studioLinks.map((x) => (
@@ -160,7 +162,7 @@ const nearby = l.tags?.length
         {unknown && (<><dt>STATUS</dt><dd>Not identified yet.</dd></>)}
       </dl>
     </Window>
-    <Window title={spaces.length ? 'Map of its spaces' : 'Map'} flush>
+    <Window title={spaces.length ? 'Map of its places' : 'Map'} flush>
       <MapView pins={pins} height={280} label={`Map of ${l.name}`} />
     </Window>
   </div>
@@ -184,7 +186,7 @@ const nearby = l.tags?.length
 
   {
     spaces.length > 0 && (
-      <Window title={`Spaces (${rooms.length})`} tone="chrome">
+      <Window title={`Places here (${rooms.length})`} tone="chrome">
         <SpaceList parent={location.id} />
       </Window>
     )
@@ -213,6 +215,13 @@ const nearby = l.tags?.length
           ))}
         </div>
       ) : null
+    }
+    {
+      hasTiles && (
+        <p class="more compare">
+          <a id="compare" href={`${url('shots/')}?location=${location.id}`}>COMPARE ALL SCREENSHOTS ▸</a>
+        </p>
+      )
     }
     <div data-lightbox-group>
     {
@@ -285,10 +294,17 @@ const nearby = l.tags?.length
 <script>
   const buttons = document.querySelectorAll<HTMLButtonElement>('#set-filter button');
   const items = document.querySelectorAll<HTMLElement>('article.appearance[data-sets]');
+  const compare = document.querySelector<HTMLAnchorElement>('#compare');
   buttons.forEach((button) =>
     button.addEventListener('click', () => {
       const set = button.dataset.set;
       buttons.forEach((b) => b.setAttribute('aria-pressed', String(b === button)));
+      if (compare) {
+        const target = new URL(compare.href);
+        if (set) target.searchParams.set('set', set);
+        else target.searchParams.delete('set');
+        compare.href = target.href;
+      }
       items.forEach((item) => {
         item.hidden = !!set && !item.dataset.sets!.split(' ').includes(set);
         item.querySelectorAll<HTMLElement>('.shots > li').forEach((li) => (li.hidden = !!set && li.dataset.set !== set));
@@ -298,6 +314,9 @@ const nearby = l.tags?.length
 </script>
 
 <style>
+  .compare {
+    margin: 0 0 14px;
+  }
   #set-filter button[aria-pressed='true'] {
     color: #fff;
     background: var(--electric);

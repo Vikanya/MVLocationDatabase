@@ -1,0 +1,248 @@
+---
+import Base from '../../layouts/Base.astro';
+import Window from '../../components/Window.astro';
+import { byName, db, href, media, slugify, videoLabel, type Location } from '../../lib/data';
+
+const data = await db();
+// A space also carries the tags of the studio / area it is part of.
+const tagsOf = (l: Location) => [...new Set([l, ...data.studiosOf(l.id)].flatMap((x) => x.data.tags ?? []))];
+
+interface Tile {
+  image: string;
+  location: Location;
+  videoId?: string;
+  label?: string;
+  set?: { id: string; name: string };
+}
+// Build order: location A–Z; its place photos first, then its screenshots by video.
+const tiles: Tile[] = data.locations.flatMap((location) => [
+  ...(location.data.photos ?? []).map((image) => ({ image, location })),
+  ...[...data.atLocation(location.id)]
+    .sort((a, b) => videoLabel(a.video).localeCompare(videoLabel(b.video)))
+    .flatMap((a) => a.shots.map((s) => ({ image: s.image, location, videoId: a.video.id, label: videoLabel(a.video), set: s.set }))),
+]);
+
+const places = [...new Map(tiles.map((t) => [t.location.id, t.location])).values()].sort(byName);
+const tags = data.tags.filter((t) => tiles.some((x) => tagsOf(x.location).includes(t.name)));
+// Sets per location, for the set menu (only sets that have screenshots).
+const sets = Object.fromEntries(
+  places.map((l) => [l.id, (l.data.sets ?? []).filter((s) => tiles.some((t) => t.location.id === l.id && t.set?.id === s.id))]),
+);
+---
+
+<Base title="Screenshots" description="Every screenshot in the database, by kind of place, location and set.">
+  <header class="page-head">
+    <span class="kicker">SCREENS</span>
+    <h1>Screenshots</h1>
+    <p class="sub"><span id="wall-count">{tiles.length}</span> screenshots</p>
+  </header>
+
+  <Window title="All screenshots">
+    <div class="wall-filters" id="wall-filters" hidden>
+      <div class="chips" role="group" aria-label="Filter by kind of place" id="wall-tags">
+        <button class="btn" type="button" data-tag="" aria-pressed="true">ALL</button>
+        {tags.map((t) => <button class="btn" type="button" data-tag={t.slug} aria-pressed="false">{t.name}</button>)}
+      </div>
+      <div class="wall-selects">
+        <label>
+          <span class="kicker">LOCATION</span>
+          <select id="wall-location" data-sets={JSON.stringify(sets)}>
+            <option value="">All locations</option>
+            {places.map((l) => <option value={l.id}>{l.data.name}</option>)}
+          </select>
+        </label>
+        <label id="wall-set-label" hidden>
+          <span class="kicker">SET</span>
+          <select id="wall-set"><option value="">All sets</option></select>
+        </label>
+        <button class="btn" type="button" id="wall-shuffle">↻ SHUFFLE</button>
+      </div>
+    </div>
+
+    <ul class="shots" id="wall" data-lightbox-group>
+      {
+        tiles.map((t, i) => (
+          <li
+            data-i={i}
+            data-tags={tagsOf(t.location).map(slugify).join(' ')}
+            data-location-id={t.location.id}
+            data-set-id={t.set?.id ?? ''}
+            data-video-id={t.videoId ?? ''}
+          >
+            <figure class="shot">
+              <a
+                href={media.full(t.image)}
+                data-lightbox
+                data-caption={`${t.location.data.name} · Photo of the place`}
+                data-video-label={t.label ?? 'Photo of the place'}
+                data-video-href={t.videoId && href.video(t.videoId)}
+                data-location-label={t.location.data.name}
+                data-location-href={href.location(t.location.id)}
+                data-set-name={t.set?.name}
+              >
+                <img src={media.thumb(t.image)} alt={`Screenshot: ${t.label ?? 'photo'} at ${t.location.data.name}`} loading="lazy" decoding="async" width="480" height="270" />
+              </a>
+              <figcaption>
+                <span class="wall-cap">
+                  {t.label ?? 'Photo of the place'} <span class="muted">· {t.location.data.name}</span>
+                </span>
+                {t.set && <span class="set-label">{t.set.name}</span>}
+              </figcaption>
+            </figure>
+          </li>
+        ))
+      }
+    </ul>
+  </Window>
+</Base>
+
+<script>
+  import '../../scripts/lightbox';
+
+  const list = document.getElementById('wall')!;
+  const items = [...list.querySelectorAll<HTMLLIElement>(':scope > li')];
+  const tagButtons = [...document.querySelectorAll<HTMLButtonElement>('#wall-tags button')];
+  const locSelect = document.getElementById('wall-location') as HTMLSelectElement;
+  const setSelect = document.getElementById('wall-set') as HTMLSelectElement;
+  const setLabel = document.getElementById('wall-set-label')!;
+  const shuffleButton = document.getElementById('wall-shuffle')!;
+  const count = document.getElementById('wall-count')!;
+  const setsOf: Record<string, { id: string; name: string }[]> = JSON.parse(locSelect.dataset.sets!);
+  const tags = new Set(tagButtons.map((b) => b.dataset.tag!).filter(Boolean));
+
+  // Two modes: a kind of place (shuffled), or one location (optionally one set) in build order, grouped by video.
+  const state = { tag: '', location: '', set: '' };
+
+  const shuffle = () => {
+    for (let i = items.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [items[i], items[j]] = [items[j], items[i]];
+    }
+    list.append(...items);
+  };
+  const buildOrder = () => list.append(...[...items].sort((a, b) => Number(a.dataset.i) - Number(b.dataset.i)));
+
+  function fillSets() {
+    const sets = setsOf[state.location] ?? [];
+    setSelect.replaceChildren(new Option('All sets', ''), ...sets.map((s) => new Option(s.name, s.id)));
+    setSelect.value = state.set;
+    setLabel.hidden = sets.length === 0;
+  }
+
+  function apply() {
+    let shown = 0;
+    for (const li of items) {
+      const d = li.dataset;
+      const visible = state.location
+        ? d.locationId === state.location && (!state.set || d.setId === state.set)
+        : !state.tag || d.tags!.split(' ').includes(state.tag);
+      li.hidden = !visible;
+      if (visible) shown++;
+    }
+    tagButtons.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.tag === state.tag && !state.location)));
+    locSelect.value = state.location;
+    shuffleButton.hidden = !!state.location;
+    count.textContent = String(shown);
+    const params = new URLSearchParams();
+    if (state.location) {
+      params.set('location', state.location);
+      if (state.set) params.set('set', state.set);
+    } else if (state.tag) params.set('tag', state.tag);
+    history.replaceState(null, '', params.size ? `?${params}` : location.pathname);
+  }
+
+  // Read the URL; anything unknown is ignored (and dropped from the URL by apply()). A location wins over a tag.
+  const params = new URLSearchParams(location.search);
+  const loc = params.get('location') ?? '';
+  if (Object.hasOwn(setsOf, loc)) {
+    state.location = loc;
+    const set = params.get('set') ?? '';
+    if (setsOf[loc].some((s) => s.id === set)) state.set = set;
+  } else if (tags.has(params.get('tag') ?? '')) state.tag = params.get('tag')!;
+
+  document.getElementById('wall-filters')!.hidden = false;
+  fillSets();
+  if (!state.location) shuffle();
+  apply();
+
+  tagButtons.forEach((b) =>
+    b.addEventListener('click', () => {
+      const wasLocation = !!state.location;
+      Object.assign(state, { tag: b.dataset.tag!, location: '', set: '' });
+      fillSets();
+      if (wasLocation) shuffle();
+      apply();
+    }),
+  );
+  locSelect.addEventListener('change', () => {
+    Object.assign(state, { tag: '', location: locSelect.value, set: '' });
+    fillSets();
+    if (state.location) buildOrder();
+    else shuffle();
+    apply();
+  });
+  setSelect.addEventListener('change', () => {
+    state.set = setSelect.value;
+    apply();
+  });
+  shuffleButton.addEventListener('click', () => {
+    shuffle();
+    apply();
+  });
+</script>
+
+<style>
+  .wall-filters {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+  .wall-filters[hidden] {
+    display: none;
+  }
+  /* Long location names (some are still street addresses) must not widen the page. */
+  .wall-filters > * {
+    min-width: 0;
+  }
+  .wall-selects {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    gap: 8px 12px;
+  }
+  .wall-selects label {
+    display: grid;
+    gap: 3px;
+    min-width: 0;
+    max-width: 100%;
+  }
+  .wall-selects label[hidden] {
+    display: none;
+  }
+  .wall-selects .kicker {
+    font: 10px var(--f-pixel);
+    color: var(--ink-soft);
+  }
+  .wall-selects select {
+    width: 100%;
+    max-width: 28em;
+    padding: 4px 6px;
+    font: 13px var(--f-body);
+    color: var(--text);
+    background: var(--field);
+    border: 1px solid var(--line);
+  }
+  #wall-tags button[aria-pressed='true'] {
+    color: #fff;
+    background: var(--electric);
+  }
+  #wall-shuffle[hidden] {
+    display: none;
+  }
+  .wall-cap {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+</style>

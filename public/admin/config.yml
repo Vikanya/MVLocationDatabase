@@ -212,7 +212,7 @@ collections:
     summary: "{{name}} _· {{tags | default('no tag')}}_"
     sortable_fields: [name, tags]
     view_groups:
-      - { label: Studio, field: part_of }
+      - { label: Part of, field: part_of }
     slug:
       template: '{{name | lower}}'
       editable: true
@@ -240,10 +240,11 @@ collections:
           - { label: Not identified yet, value: unknown }
         default: identified
       - name: part_of
-        label: Part of (studio)
+        label: Part of (studio or area)
         hint: >-
-          For a space of a studio or rental company (e.g. a Columbus room → Columbus Studio). The studio's page lists
-          its spaces and counts their videos; each space links back to the studio and its website / Instagram.
+          For a space of a studio or rental company (e.g. a Columbus room → Columbus Studio), or a spot inside a
+          bigger place (Lotte World #1 → Lotte World). That page lists its places and counts their videos; each place
+          links back to it and shows its website / Instagram.
         widget: relation
         collection: locations
         value_field: '{{slug}}'
@@ -273,11 +274,37 @@ collections:
           - { name: instagram, label: Instagram, widget: list, required: false }
       - { name: reference_videos, label: Reference videos (tours of the place), widget: list, required: false }
       - { name: photos, label: Photos of the place, widget: image, multiple: true, required: false }
+      # Kinds of place only (studios / areas are "Part of"). The list is fixed so tags don't drift
+      # (Helipad / Helipads); to add one, add it here — the site makes a /tags/<name>/ page for it.
       - name: tags
-        label: Tags
-        hint: Kind of place or operator, e.g. Helipads, Parkings/Rooftops, Columbus
-        widget: list
+        label: Kinds of place
+        hint: What kind of place it is. Several are fine (e.g. Parking + Rooftop).
+        widget: select
+        multiple: true
         required: false
+        options:
+          - Helipad
+          - Rooftop
+          - Parking
+          - Street
+          - Bridge
+          - Docks
+          - Quarry
+          - Tunnel
+          - Garden / Park
+          - Studio
+          - Hangar
+          - Warehouse
+          - House
+          - Office
+          - School / Campus
+          - Church
+          - Arena / Hall
+          - Theme park
+          - Swimming pool
+          - Gas station
+          - Subway
+          - Abandoned place
       - name: sets
         label: Sets / spots
         label_singular: Set

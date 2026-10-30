@@ -24,7 +24,7 @@ const pins = pinsFor(identified, (l) => count(l.id));
     <MapView pins={pins} height={360} />
   </Window>
 
-  <Window title="Tags" tone="chrome">
+  <Window title="Kinds of place" tone="chrome">
     <ul class="chips">
       {data.tags.map((t) => <li><a class="chip" href={href.tag(t.slug)}>{t.name}<b>{t.count}</b></a></li>)}
     </ul>
@@ -43,7 +43,7 @@ const pins = pinsFor(identified, (l) => count(l.id));
                 <td>
                   <a href={href.location(l.id)}>{l.data.name}</a>
                   {l.data.part_of && <span class="muted"> · part of {data.location(l.data.part_of.id)?.data.name}</span>}
-                  {data.directSpaces(l.id).length > 0 && <span class="muted"> · {data.directSpaces(l.id).length} spaces</span>}
+                  {data.directSpaces(l.id).length > 0 && <span class="muted"> · {data.directSpaces(l.id).length} places</span>}
                   {!l.data.coordinates && <span class="muted"> (no map pin yet)</span>}
                 </td>
                 <td>

@@ -1,6 +1,10 @@
 {
   "name": "Abandoned Factory",
   "status": "unknown",
+  "tags": [
+    "Abandoned place",
+    "Warehouse"
+  ],
   "sets": [
     {
       "id": "spot-1",

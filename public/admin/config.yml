@@ -87,6 +87,14 @@ collections:
         hint: >-
           e.g. https://www.youtube.com/watch?v=C3HDIYnQnkw. The site plays and shows the thumbnail of this link, so if
           the video died and was re-uploaded, paste the new link here (the entry keeps its id and page address).
+      - name: published
+        label: Published
+        hint: Upload date on YouTube (under the video, e.g. "10 May 2023"). Puts the video on its year page.
+        widget: datetime
+        type: date
+        format: YYYY-MM-DD
+        picker_utc: true
+        required: false
       - name: artists
         label: Artists
         widget: relation

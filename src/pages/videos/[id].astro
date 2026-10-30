@@ -90,6 +90,13 @@ const moreBy = artists
       }
       {video.data.channel && artists.length > 0 && <span class="muted"> · channel: {video.data.channel}</span>}
     </p>
+    {
+      video.data.published && (
+        <p class="sub">
+          Published <a href={href.year(video.data.published.slice(0, 4))}>{video.data.published}</a>
+        </p>
+      )
+    }
   </header>
 
   <div class="split">

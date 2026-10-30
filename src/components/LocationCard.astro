@@ -3,8 +3,10 @@ import { db, href, media, type Location } from '../lib/data';
 
 interface Props {
   location: Location;
+  /** Extra line under the address. */
+  note?: string;
 }
-const { location } = Astro.props;
+const { location, note } = Astro.props;
 const data = await db();
 const here = data.atLocation(location.id);
 const cover = location.data.photos?.[0] ?? here.flatMap((a) => a.shots)[0]?.image;
@@ -18,4 +20,5 @@ const unknown = location.data.status === 'unknown';
   </div>
   <p class="card-title">{location.data.name}</p>
   <p class="card-meta">{location.data.address ?? (location.data.tags ?? []).join(' · ')}</p>
+  {note && <p class="card-meta">{note}</p>}
 </a>

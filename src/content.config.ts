@@ -51,6 +51,11 @@ const videos = defineCollection({
     title: z.string(),
     platform: z.enum(['youtube', 'instagram_post', 'imgur']),
     url: z.string(),
+    /** Upload date on YouTube (YYYY-MM-DD); drives the year pages. */
+    published: z
+      .string()
+      .regex(/^\d{4}-\d{2}-\d{2}$/, 'Published must be a date like 2023-05-10')
+      .optional(),
     artists: z.array(reference('artists')).optional(),
     /** Songs in the video (usually one; several for medleys / multi-song performances). */
     songs: z

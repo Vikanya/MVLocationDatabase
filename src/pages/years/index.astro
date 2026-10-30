@@ -1,0 +1,115 @@
+---
+import Base from '../../layouts/Base.astro';
+import Window from '../../components/Window.astro';
+import { db, href, media, stableShuffle, videoYear } from '../../lib/data';
+
+const data = await db();
+const byYear = new Map<string, typeof data.videos>();
+for (const v of data.videos) {
+  const y = videoYear(v);
+  if (!y) continue;
+  if (!byYear.has(y)) byYear.set(y, []);
+  byYear.get(y)!.push(v);
+}
+const years = [...byYear.keys()].sort().reverse();
+const max = Math.max(1, ...[...byYear.values()].map((v) => v.length));
+const undated = data.videos.filter((v) => !videoYear(v)).length;
+// A few screenshots of each year, the same ones on every build.
+const shotsOf = (year: string) =>
+  stableShuffle(
+    byYear.get(year)!.flatMap((v) => data.ofVideo(v.id).flatMap((a) => a.shots.map((s, i) => ({ id: `${v.id}-${a.location.id}-${i}`, image: s.image })))),
+    year,
+  ).slice(0, 3);
+---
+
+<Base title="Years" description="K-pop MV filming locations by the year the video came out.">
+  <header class="page-head">
+    <span class="kicker">YEARS</span>
+    <h1>By year</h1>
+    <p class="sub">Videos by the year they were published on YouTube.</p>
+  </header>
+
+  <Window title="Years">
+    {
+      years.length > 0 ? (
+        <ol class="years">
+          {years.map((y) => (
+            <li>
+              <a class="years-year" href={href.year(y)}>{y}</a>
+              <span class="years-bar" style={`--share:${byYear.get(y)!.length / max}`}>
+                <span class="years-count">{byYear.get(y)!.length}</span>
+              </span>
+              <span class="years-shots" aria-hidden="true">
+                {shotsOf(y).map((s) => <img src={media.thumb(s.image)} alt="" loading="lazy" decoding="async" width="96" height="54" />)}
+              </span>
+            </li>
+          ))}
+        </ol>
+      ) : (
+        <p class="muted">No dates yet.</p>
+      )
+    }
+    {undated > 0 && <p class="muted years-undated">Undated: {undated}</p>}
+  </Window>
+</Base>
+
+<style>
+  .years {
+    display: grid;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .years li {
+    display: grid;
+    grid-template-columns: 4.5em 1fr auto;
+    align-items: center;
+    gap: 10px;
+  }
+  .years-year {
+    font: 13px var(--f-pixel);
+  }
+  .years-bar {
+    position: relative;
+    height: 22px;
+    background: var(--zebra);
+    border: 1px solid var(--line);
+  }
+  .years-bar::before {
+    content: '';
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: calc(var(--share) * 100%);
+    background: var(--electric);
+  }
+  .years-count {
+    position: relative;
+    padding: 0 6px;
+    font: 11px/20px var(--f-pixel);
+    color: var(--text);
+    background: var(--paper);
+    border-right: 1px solid var(--line);
+  }
+  .years-shots {
+    display: flex;
+    gap: 3px;
+  }
+  .years-shots img {
+    width: 64px;
+    height: 36px;
+    object-fit: cover;
+    border: 1px solid var(--line);
+  }
+  .years-undated {
+    margin: 12px 0 0;
+  }
+  @media (max-width: 760px) {
+    .years-shots {
+      display: none;
+    }
+    .years li {
+      grid-template-columns: 4em 1fr;
+    }
+  }
+</style>

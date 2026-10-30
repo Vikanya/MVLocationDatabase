@@ -4,7 +4,7 @@ import Window from '../components/Window.astro';
 import MapView from '../components/MapView.astro';
 import VideoCard from '../components/VideoCard.astro';
 import LocationCard from '../components/LocationCard.astro';
-import { db, href, pinsFor, stableShuffle, url } from '../lib/data';
+import { db, href, pinsFor, recentlyAdded, stableShuffle, url } from '../lib/data';
 
 const data = await db();
 const count = (id: string) => data.atLocation(id).length;
@@ -15,7 +15,8 @@ const busiest = data.locations
   .slice(0, 8);
 const picks = stableShuffle(data.videos.filter((v) => v.data.platform === 'youtube'), 'home').slice(0, 8);
 const unknown = data.locations.filter((l) => l.data.status === 'unknown').length;
-const topArtists = [...data.artists].sort((a, b) => data.byArtist(b.id).length - data.byArtist(a.id).length).slice(0, 14);
+const recent = (await recentlyAdded()).slice(0, 8);
+const topArtists =[...data.artists].sort((a, b) => data.byArtist(b.id).length - data.byArtist(a.id).length).slice(0, 14);
 ---
 
 <Base>
@@ -39,6 +40,21 @@ const topArtists = [...data.artists].sort((a, b) => data.byArtist(b.id).length -
       </ul>
     </Window>
   </div>
+
+  {
+    recent.length > 0 && (
+      <Window title="Recently added">
+        <ul class="cards">
+          {recent.map((a) => (
+            <li>
+              {a.video ? <VideoCard video={a.video} note={`Added ${a.date}`} /> : <LocationCard location={a.location} note={`Added ${a.date}`} />}
+            </li>
+          ))}
+        </ul>
+        <p class="more"><a href={url('new/')}>ALL NEW ▸</a></p>
+      </Window>
+    )
+  }
 
   <Window title="World map" flush>
     <MapView pins={pins} height={380} />

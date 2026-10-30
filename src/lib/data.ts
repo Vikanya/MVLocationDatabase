@@ -1,4 +1,6 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
+import { execFileSync } from 'node:child_process';
+import { existsSync } from 'node:fs';
 
 export type Artist = CollectionEntry<'artists'>;
 export type Location = CollectionEntry<'locations'>;
@@ -215,6 +217,59 @@ let cached: ReturnType<typeof load> | undefined;
 /** The whole database, loaded once per build. */
 export const db = () => (cached ??= load());
 
+// Everything in content/ was created on this day by the one-shot migration; only later additions count as "new".
+const MIGRATION_DATE = '2026-09-25';
+let added: Map<string, string> | undefined;
+
+/**
+ * When each record was added ('content/videos/<id>.json' → 'YYYY-MM-DD'), from the git history: the admin
+ * commits every new entry. A renamed id keeps its original date. Empty without git or in a shallow clone
+ * (there every file would look added by the one commit there is) — the "new" lists then stay empty.
+ */
+export function addedDates(): Map<string, string> {
+  if (added) return added;
+  added = new Map();
+  try {
+    const git = (...args: string[]) =>
+      execFileSync('git', ['-c', 'core.quotepath=false', ...args], { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 });
+    if (git('rev-parse', '--is-shallow-repository').trim() !== 'false') return added;
+    const log = git('log', '--reverse', '-M', '--diff-filter=AR', '--name-status', '--format=%as', '--', 'content/videos', 'content/locations');
+    let date = '';
+    for (const line of log.split('\n')) {
+      const [status, from, to] = line.trim().split('\t');
+      if (/^\d{4}-\d{2}-\d{2}$/.test(status)) date = status;
+      else if (status === 'A') added.set(from, date);
+      else if (status?.startsWith('R') && to) {
+        added.set(to, added.get(from) ?? date);
+        added.delete(from);
+      }
+    }
+  } catch {
+    added.clear();
+  }
+  for (const [path, date] of added) if (date <= MIGRATION_DATE || !existsSync(path)) added.delete(path);
+  return added;
+}
+
+export type Addition = { date: string } & ({ video: Video; location?: never } | { location: Location; video?: never });
+
+/** Videos and locations added since the migration, newest first. */
+export async function recentlyAdded(): Promise<Addition[]> {
+  const data = await db();
+  const dates = addedDates();
+  const name = (a: Addition) => (a.video ? videoLabel(a.video) : a.location!.data.name);
+  return [
+    ...data.videos.flatMap((video) => {
+      const date = dates.get(`content/videos/${video.id}.json`);
+      return date ? [{ date, video }] : [];
+    }),
+    ...data.locations.flatMap((location) => {
+      const date = dates.get(`content/locations/${location.id}.json`);
+      return date ? [{ date, location }] : [];
+    }),
+  ].sort((a, b) => b.date.localeCompare(a.date) || collator.compare(name(a), name(b)));
+}
+
 // ------------------------------------------------------------------ helpers
 
 export function slugify(text: string) {
@@ -252,7 +307,15 @@ export const href = {
   location: (id: string) => url(`locations/${id}/`),
   video: (id: string) => url(`videos/${id}/`),
   tag: (slug: string) => url(`tags/${slug}/`),
+  year: (year: string | number) => url(`years/${year}/`),
 };
+
+/** Year of the YouTube upload ("2023"), or '' when the video has no date yet. */
+export const videoYear = (v: Video) => v.data.published?.slice(0, 4) ?? '';
+
+/** The grey line under a video card: its artists (else the channel), then the year if known. */
+export const cardMeta = (v: Video, artistNames: string) =>
+  [artistNames || v.data.channel, videoYear(v)].filter(Boolean).join(' · ') || ' ';
 
 export const TYPE_LABEL: Record<string, string> = {
   mv: 'MV',

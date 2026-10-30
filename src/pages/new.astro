@@ -1,0 +1,52 @@
+---
+import Base from '../layouts/Base.astro';
+import Window from '../components/Window.astro';
+import VideoCard from '../components/VideoCard.astro';
+import LocationCard from '../components/LocationCard.astro';
+import { recentlyAdded, type Addition } from '../lib/data';
+
+const DAYS = 60;
+const day = (d: Date) => d.toISOString().slice(0, 10);
+const since = day(new Date(Date.now() - DAYS * 86400000));
+const items = (await recentlyAdded()).filter((a) => a.date >= since);
+
+// Group by week, Monday first: "Week of 2026-10-26".
+const monday = (date: string) => {
+  const d = new Date(`${date}T00:00:00Z`);
+  d.setUTCDate(d.getUTCDate() - ((d.getUTCDay() + 6) % 7));
+  return day(d);
+};
+const weeks = new Map<string, Addition[]>();
+for (const a of items) {
+  const w = monday(a.date);
+  if (!weeks.has(w)) weeks.set(w, []);
+  weeks.get(w)!.push(a);
+}
+const plural = (n: number, word: string) => `${n} ${word}${n === 1 ? '' : 's'}`;
+---
+
+<Base title="New" description="Videos and filming locations added recently.">
+  <header class="page-head">
+    <span class="kicker">NEW</span>
+    <h1>Recently added</h1>
+    <p class="sub">
+      {
+        items.length
+          ? `${plural(items.filter((a) => a.video).length, 'video')} and ${plural(items.filter((a) => a.location).length, 'location')} in the last ${DAYS} days.`
+          : `Nothing new in the last ${DAYS} days.`
+      }
+    </p>
+  </header>
+
+  {
+    [...weeks].map(([week, list]) => (
+      <Window title={`Week of ${week}`}>
+        <ul class="cards">
+          {list.map((a) => (
+            <li>{a.video ? <VideoCard video={a.video} note={`Added ${a.date}`} /> : <LocationCard location={a.location} note={`Added ${a.date}`} />}</li>
+          ))}
+        </ul>
+      </Window>
+    ))
+  }
+</Base>

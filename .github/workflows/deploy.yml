@@ -19,7 +19,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # Full history (without old file contents) so the build can date additions for "Recently added".
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          filter: blob:none
 
       - uses: actions/setup-node@v4
         with:

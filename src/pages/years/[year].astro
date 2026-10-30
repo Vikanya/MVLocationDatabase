@@ -1,0 +1,70 @@
+---
+import Base from '../../layouts/Base.astro';
+import Window from '../../components/Window.astro';
+import MapView from '../../components/MapView.astro';
+import VideoCard from '../../components/VideoCard.astro';
+import { db, href, pinsFor, url, videoLabel, videoYear, type Location } from '../../lib/data';
+
+export async function getStaticPaths() {
+  const data = await db();
+  const years = [...new Set(data.videos.map(videoYear).filter(Boolean))].sort();
+  return years.map((year, i) => ({ params: { year }, props: { prev: years[i - 1], next: years[i + 1] } }));
+}
+
+const { year } = Astro.params as { year: string };
+const { prev, next } = Astro.props as { prev?: string; next?: string };
+const data = await db();
+// Oldest first within the year.
+const videos = data.videos
+  .filter((v) => videoYear(v) === year)
+  .sort((a, b) => a.data.published!.localeCompare(b.data.published!) || videoLabel(a).localeCompare(videoLabel(b)));
+
+const used = new Map<string, { location: Location; videos: number }>();
+for (const v of videos)
+  for (const a of data.ofVideo(v.id)) {
+    const entry = used.get(a.location.id) ?? { location: a.location, videos: 0 };
+    entry.videos += 1;
+    used.set(a.location.id, entry);
+  }
+const places = [...used.values()].sort((a, b) => b.videos - a.videos || a.location.data.name.localeCompare(b.location.data.name));
+const pins = pinsFor(places.map((p) => p.location), (l) => used.get(l.id)!.videos);
+const plural = (n: number, word: string) => `${n} ${word}${n === 1 ? '' : 's'}`;
+---
+
+<Base title={year} description={`Filming locations of K-pop videos published in ${year}.`}>
+  <header class="page-head">
+    <span class="kicker">YEAR</span>
+    <h1>{year}</h1>
+    <p class="sub">{plural(videos.length, 'video')} · {plural(places.length, 'place')}</p>
+    <p class="sub">
+      {prev && <a href={href.year(prev)}>◀ {prev}</a>}
+      {prev && ' · '}
+      <a href={url('years/')}>ALL YEARS</a>
+      {next && ' · '}
+      {next && <a href={href.year(next)}>{next} ▶</a>}
+    </p>
+  </header>
+
+  <Window title={`Videos (${videos.length})`}>
+    <ul class="cards">{videos.map((v) => <li><VideoCard video={v} /></li>)}</ul>
+  </Window>
+
+  <div class="split">
+    <Window title="Places used" tone="chrome">
+      <ul class="dotlist">
+        {
+          places.map((p) => (
+            <li>
+              <a href={href.location(p.location.id)}>{p.location.data.name}</a>
+              {p.location.data.status === 'unknown' && <span class="badge" data-kind="unknown">???</span>}
+              <span class="muted"> · {p.videos}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </Window>
+    <Window title="Map" flush>
+      <MapView pins={pins} height={320} label={`Map of the places used in ${year}`} />
+    </Window>
+  </div>
+</Base>

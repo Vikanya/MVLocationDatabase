@@ -21,7 +21,7 @@ const seen = new Set(own.map((v) => v.id));
 const memberVideos = members
   .map((m) => ({ member: m, videos: data.byArtist(m.id).filter((v) => !seen.has(v.id) && (seen.add(v.id), true)) }))
   .filter((m) => m.videos.length > 0);
-const allVideos = [...own, ...memberVideos.flatMap((m) => m.videos)];
+const allVideos = data.withMembers(artist.id);
 
 const visits = new Map<string, { location: Location; videos: number }>();
 for (const v of allVideos) {

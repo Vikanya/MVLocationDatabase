@@ -5,7 +5,7 @@ import MapView from '../../components/MapView.astro';
 import Player from '../../components/Player.astro';
 import Shots from '../../components/Shots.astro';
 import VideoCard from '../../components/VideoCard.astro';
-import { db, href, pinsFor, TYPE_LABEL, videoLabel, type Video } from '../../lib/data';
+import { db, href, pinsFor, stableShuffle, TYPE_LABEL, videoLabel, type Video } from '../../lib/data';
 
 export async function getStaticPaths() {
   const data = await db();
@@ -20,6 +20,34 @@ const pins = pinsFor(appearances.map((a) => a.location), () => 1);
 const kind = video.data.type ?? 'other';
 const who = artists.map((a) => a.data.name).join(', ');
 const related = data.relatedTo(video.id);
+
+// Where to go next: other videos at each of its places, then more by its artists. Each video is shown once.
+const STRIP = 8;
+const shown = new Set([video.id, ...related.map((v) => v.id)]);
+const take = (videos: Video[]) => {
+  const picked = stableShuffle(videos.filter((v) => !shown.has(v.id)), video.id).slice(0, STRIP);
+  picked.forEach((v) => shown.add(v.id));
+  return picked;
+};
+const alsoHere = appearances
+  .map((a) => {
+    const here = data.atLocation(a.location.id);
+    const cards = take(here.map((b) => b.video)).map((v) => ({ video: v, image: here.find((b) => b.video.id === v.id)?.shots[0]?.image }));
+    return { location: a.location, total: here.length, cards };
+  })
+  .filter((s) => s.cards.length > 0);
+const moreBy = artists
+  .map((a) => {
+    let cards = take(data.byArtist(a.id));
+    let who = a;
+    const group = data.groupsOf(a.id)[0];
+    if (cards.length === 0 && group) {
+      cards = take(data.withMembers(group.id));
+      who = group;
+    }
+    return { artist: who, cards };
+  })
+  .filter((m) => m.cards.length > 0);
 ---
 
 <Base
@@ -74,6 +102,7 @@ const related = data.relatedTo(video.id);
   </div>
 
   <Window title="Filming locations" tone="pink">
+    <div data-lightbox-group>
     {
       appearances.map((a) => (
         <article class="appearance">
@@ -87,13 +116,21 @@ const related = data.relatedTo(video.id);
           </div>
           {a.notes && <p class="muted">{a.notes}</p>}
           {a.shots.length > 0 ? (
-            <Shots shots={a.shots} context={`${videoLabel(video)} at ${a.location.data.name}`} />
+            <Shots
+              shots={a.shots.map((s) => ({
+                ...s,
+                video: { label: videoLabel(video) },
+                location: { name: a.location.data.name, href: href.location(a.location.id) },
+              }))}
+              context={`${videoLabel(video)} at ${a.location.data.name}`}
+            />
           ) : (
             <p class="muted">No screenshot yet.</p>
           )}
         </article>
       ))
     }
+    </div>
   </Window>
 
   {
@@ -102,5 +139,25 @@ const related = data.relatedTo(video.id);
         <ul class="cards">{related.map((v) => <li><VideoCard video={v} /></li>)}</ul>
       </Window>
     )
+  }
+
+  {
+    alsoHere.map((s) => (
+      <Window title={`Also filmed at ${s.location.data.name}`}>
+        <ul class="cards">{s.cards.map((c) => <li><VideoCard video={c.video} image={c.image} /></li>)}</ul>
+        {s.total > STRIP + 1 && (
+          <p class="more"><a href={href.location(s.location.id)}>ALL {s.total} ▸</a></p>
+        )}
+      </Window>
+    ))
+  }
+
+  {
+    moreBy.map((m) => (
+      <Window title={`More by ${m.artist.data.name}`} tone="chrome">
+        <ul class="cards">{m.cards.map((v) => <li><VideoCard video={v} /></li>)}</ul>
+        <p class="more"><a href={href.artist(m.artist.id)}>{m.artist.data.name.toUpperCase()} PAGE ▸</a></p>
+      </Window>
+    ))
   }
 </Base>

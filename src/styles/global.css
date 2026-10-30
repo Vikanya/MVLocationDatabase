@@ -403,6 +403,77 @@ main {
   gap: 4px;
   margin-top: 10px;
 }
+.find {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  display: flex;
+}
+.find-list {
+  position: absolute;
+  z-index: 1000;
+  top: calc(100% + 2px);
+  left: 0;
+  width: max(100%, 260px);
+  margin: 0;
+  padding: 2px;
+  list-style: none;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  box-shadow: var(--hard-sm);
+}
+.find-list a {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0 6px;
+  align-items: baseline;
+  padding: 4px 5px;
+  color: var(--text);
+  text-decoration: none;
+}
+.find-list .badge {
+  grid-row: span 2;
+}
+.find-name {
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+.find-meta {
+  grid-column: 2;
+  font-size: 11px;
+  overflow-wrap: anywhere;
+}
+.find-meta:empty {
+  display: none;
+}
+.find-list a:hover,
+.find-list [aria-selected='true'] a {
+  background: var(--lime);
+  color: var(--on-accent);
+}
+.find-list a:hover .muted,
+.find-list [aria-selected='true'] .muted {
+  color: var(--on-accent);
+}
+
+.random {
+  display: grid;
+  gap: 4px;
+  margin-top: 6px;
+}
+/* Space is kept while the index loads so nothing below jumps; without JS or if loading fails it collapses. */
+.random[data-pending] {
+  visibility: hidden;
+}
+.random[hidden] {
+  display: none;
+}
+@media (max-width: 760px) {
+  .random {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .search-box input {
   flex: 1;
   min-width: 0;
@@ -498,6 +569,10 @@ main {
 .badge[data-kind='other'] {
   color: var(--text);
   background: var(--chrome);
+}
+.badge[data-kind='artist'] {
+  background: var(--electric);
+  color: #fff;
 }
 .badge[data-kind='unknown'] {
   background: var(--screen);
@@ -806,6 +881,27 @@ main {
   color: #fff;
   background: linear-gradient(90deg, var(--electric-lo), var(--electric) 45%, var(--cyan));
   font: 11px var(--f-pixel);
+}
+.lightbox-caption {
+  flex: 1;
+  min-width: 0;
+}
+.lightbox-caption a,
+.lightbox-caption a:visited {
+  color: var(--lime);
+}
+.lightbox-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+.lightbox-nav[hidden] {
+  display: none;
+}
+.lightbox-count {
+  min-width: 52px;
+  text-align: center;
 }
 
 /* ------------------------------------------------------------ video player */

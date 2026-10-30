@@ -7,6 +7,9 @@ export type Video = CollectionEntry<'videos'>;
 export interface Shot {
   image: string;
   set?: { id: string; name: string };
+  /** For the lightbox caption; without href the name is shown as plain text (e.g. the page's own video). */
+  video?: { label: string; href?: string };
+  location?: { name: string; href?: string };
 }
 
 /** A video filmed at a location (one per video × location). */
@@ -127,6 +130,13 @@ async function load() {
     groupsOf,
     /** Members and sub-units of a group, at any depth. */
     membersOf,
+    /** The artist's own videos, then its members' and units' videos — each video once. */
+    withMembers: (id: string) => {
+      const seen = new Set<string>();
+      return [id, ...membersOf(id).map((m) => m.id)]
+        .flatMap((x) => videosByArtist.get(x) ?? [])
+        .filter((v) => !seen.has(v.id) && (seen.add(v.id), true));
+    },
     directMembers: (id: string) => directMembers.get(id) ?? [],
     /** Studios a location is part of, nearest first (space → Acres Space → Columbus Studio). */
     studiosOf,

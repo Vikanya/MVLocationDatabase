@@ -16,7 +16,16 @@ const { shots, caption, context } = Astro.props;
     shots.map((shot) => (
       <li data-set={shot.set?.id ?? ''}>
         <figure class="shot">
-          <a href={media.full(shot.image)} data-lightbox data-caption={[context ?? caption, shot.set?.name].filter(Boolean).join(' · ')}>
+          <a
+            href={media.full(shot.image)}
+            data-lightbox
+            data-caption={[context ?? caption, shot.set?.name].filter(Boolean).join(' · ')}
+            data-video-label={shot.video?.label}
+            data-video-href={shot.video?.href}
+            data-location-label={shot.location?.name}
+            data-location-href={shot.location?.href}
+            data-set-name={shot.set?.name}
+          >
             <img src={media.thumb(shot.image)} alt={caption ? `Screenshot: ${caption}` : 'Screenshot'} loading="lazy" decoding="async" width="480" height="270" />
           </a>
           {(caption || shot.set) && (
@@ -32,28 +41,5 @@ const { shots, caption, context } = Astro.props;
 </ul>
 
 <script>
-  // One shared <dialog> that shows the full-resolution screenshot; links still work without JS.
-  function lightbox() {
-    let dialog = document.querySelector<HTMLDialogElement>('dialog.lightbox');
-    if (!dialog) {
-      dialog = document.createElement('dialog');
-      dialog.className = 'lightbox';
-      dialog.innerHTML =
-        '<div class="lightbox-bar"><span></span><form method="dialog"><button class="btn" aria-label="Close">×</button></form></div><img alt="">';
-      dialog.addEventListener('click', (e) => e.target === dialog && dialog!.close());
-      document.body.append(dialog);
-    }
-    return dialog;
-  }
-  document.addEventListener('click', (event) => {
-    const link = (event.target as Element).closest<HTMLAnchorElement>('a[data-lightbox]');
-    if (!link || event.ctrlKey || event.metaKey || event.shiftKey) return;
-    event.preventDefault();
-    const dialog = lightbox();
-    dialog.querySelector('span')!.textContent = link.dataset.caption || 'Screenshot';
-    const img = dialog.querySelector('img')!;
-    img.src = link.href;
-    img.alt = link.dataset.caption || 'Screenshot';
-    dialog.showModal();
-  });
+  import '../scripts/lightbox';
 </script>

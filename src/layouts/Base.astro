@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
 import Window from '../components/Window.astro';
-import { db, href, url, stableShuffle, videoLabel } from '../lib/data';
+import { db, href, url, stableShuffle, videoLabel, TYPE_LABEL } from '../lib/data';
 
 interface Props {
   title?: string;
@@ -52,6 +52,7 @@ const shots = data.appearances.reduce((n, a) => n + a.shots.length, 0);
         document.documentElement.dataset.theme = theme;
       })();
     </script>
+    <noscript><style>.random { display: none; }</style></noscript>
     <title>{pageTitle}</title>
     <meta name="description" content={desc} />
     <meta property="og:title" content={title ?? SITE} />
@@ -101,9 +102,26 @@ const shots = data.appearances.reduce((n, a) => n + a.shots.length, 0);
             </nav>
             <form class="search-box" action={url('search/')} method="get" role="search">
               <label class="visually-hidden" for="q">Search</label>
-              <input id="q" name="q" type="search" placeholder="artist, song, place…" />
+              <div class="find" id="find" data-src={url('find.json')} data-types={JSON.stringify(TYPE_LABEL)}>
+                <input
+                  id="q"
+                  name="q"
+                  type="search"
+                  placeholder="artist, song, place…"
+                  autocomplete="off"
+                  role="combobox"
+                  aria-autocomplete="list"
+                  aria-expanded="false"
+                  aria-controls="find-list"
+                />
+                <ul class="find-list" id="find-list" role="listbox" aria-label="Suggestions" hidden></ul>
+              </div>
               <button class="btn" type="submit">GO</button>
             </form>
+            <div class="random" id="random" data-pending>
+              <button class="btn" type="button" data-random="v">? RANDOM MV</button>
+              <button class="btn" type="button" data-random="l">? RANDOM SPOT</button>
+            </div>
             <button class="btn theme-toggle" type="button" id="theme-toggle">
               <span class="theme-dark">☾ DARK MODE</span><span class="theme-light">☀ LIGHT MODE</span>
             </button>
@@ -138,6 +156,108 @@ const shots = data.appearances.reduce((n, a) => n + a.shots.length, 0);
         } catch {}
         label();
       });
+      // Quick-find (type-ahead on the search box) and the random buttons share one small index (find.json),
+      // loaded shortly after the page, or as soon as the search box gets focus.
+      interface Entry { t: 'l' | 'a' | 'v'; n: string; ko?: string; x?: string; h: string; k?: string; m?: string; s?: number; c?: number }
+      const find = document.getElementById('find')!;
+      const input = document.getElementById('q') as HTMLInputElement;
+      const list = document.getElementById('find-list')!;
+      const random = document.getElementById('random')!;
+      const types: Record<string, string> = JSON.parse(find.dataset.types!);
+      const norm = (s = '') => s.normalize('NFKC').toLowerCase();
+      let entries: (Entry & { key: [string, string, string] })[] | undefined;
+      let loading: Promise<void> | undefined;
+      let results: Entry[] = [];
+      let active = -1;
+
+      const load = () =>
+        (loading ??= fetch(find.dataset.src!)
+          .then((res) => (res.ok ? res.json() : Promise.reject(res.status)))
+          .then((all: Entry[]) => {
+            entries = all.map((e) => ({ ...e, key: [norm(e.n), norm(e.ko), norm(e.x)] }));
+            random.removeAttribute('data-pending');
+            if (document.activeElement === input) render();
+          })
+          .catch(() => (random.hidden = true))); // no suggestions, no random buttons; the plain search still works
+
+      const el = <K extends keyof HTMLElementTagNameMap>(tag: K, props: Record<string, string> = {}, ...kids: (Node | string)[]) => {
+        const node = document.createElement(tag);
+        for (const [k, v] of Object.entries(props)) node.setAttribute(k, v);
+        node.append(...kids);
+        return node;
+      };
+      const badge = (e: Entry) =>
+        e.t === 'a'
+          ? el('span', { class: 'badge', 'data-kind': 'artist' }, 'ARTIST')
+          : e.t === 'l'
+            ? el('span', { class: 'badge' }, 'PLACE')
+            : el('span', { class: 'badge', 'data-kind': e.k! }, types[e.k!] ?? 'VIDEO');
+      const meta = (e: Entry) =>
+        e.t === 'l' ? `${e.c} MV` : [e.ko, e.t === 'a' ? e.x : e.m].filter(Boolean).join(' · ');
+
+      const close = () => {
+        list.hidden = true;
+        input.setAttribute('aria-expanded', 'false');
+        input.removeAttribute('aria-activedescendant');
+        active = -1;
+      };
+      const highlight = (i: number) => {
+        active = i;
+        list.querySelectorAll('[role=option]').forEach((li, j) => li.setAttribute('aria-selected', String(j === i)));
+        if (i >= 0) input.setAttribute('aria-activedescendant', `find-opt-${i}`);
+        else input.removeAttribute('aria-activedescendant');
+      };
+      // Prefix matches on the name (or Korean name) first, then any other match; entries are already in display order.
+      function render() {
+        const q = norm(input.value.trim());
+        if (!q || !entries) return close();
+        const first: Entry[] = [];
+        const rest: Entry[] = [];
+        for (const e of entries) {
+          const [n, ko, x] = e.key;
+          if (n.startsWith(q) || (ko && ko.startsWith(q))) first.push(e);
+          else if (rest.length < 8 && (n.includes(q) || ko.includes(q) || x.includes(q))) rest.push(e);
+          if (first.length >= 8) break;
+        }
+        results = [...first, ...rest].slice(0, 8);
+        if (!results.length) return close();
+        list.replaceChildren(
+          ...results.map((e, i) =>
+            el('li', { role: 'option', id: `find-opt-${i}`, 'aria-selected': 'false' },
+              el('a', { href: e.h, tabindex: '-1' }, badge(e), ' ', el('span', { class: 'find-name' }, e.n), el('span', { class: 'find-meta muted' }, meta(e))),
+            ),
+          ),
+        );
+        list.hidden = false;
+        input.setAttribute('aria-expanded', 'true');
+        highlight(-1);
+      }
+
+      input.addEventListener('focus', load);
+      input.addEventListener('input', render);
+      input.addEventListener('blur', close);
+      // Keep the focus in the box while a suggestion is clicked, so the click reaches its link.
+      list.addEventListener('pointerdown', (e) => e.preventDefault());
+      input.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') return close();
+        if (list.hidden) return;
+        if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+          e.preventDefault();
+          const n = results.length;
+          highlight(e.key === 'ArrowDown' ? (active + 1) % n : (active - 1 + n) % n);
+        } else if (e.key === 'Enter' && active >= 0) {
+          e.preventDefault();
+          window.location.href = results[active].h;
+        }
+      });
+      random.addEventListener('click', (e) => {
+        const type = (e.target as Element).closest<HTMLElement>('[data-random]')?.dataset.random;
+        const pool = entries?.filter((x) => x.t === type && (type !== 'l' || x.s));
+        if (pool?.length) window.location.href = pool[Math.floor(Math.random() * pool.length)].h;
+      });
+      if (document.readyState === 'complete') setTimeout(load, 1000);
+      else window.addEventListener('load', () => setTimeout(load, 1000));
+
       // Follow the system setting live, until the visitor picks a theme themselves.
       matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
         let saved;

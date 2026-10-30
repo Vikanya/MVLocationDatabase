@@ -39,6 +39,16 @@ const rooms = spaces.filter((s) => data.directSpaces(s.id).length === 0);
 const studio = studios.find((s) => s.data.links?.website?.length || s.data.links?.instagram?.length) ?? studios[0];
 const studioLinks = studio ? linksOf({ website: studio.data.links?.website, instagram: studio.data.links?.instagram }) : [];
 const family = new Set([location.id, ...spaces.map((s) => s.id), ...studios.map((s) => s.id)]);
+// Everyone who filmed here (or in one of its spaces), most videos first.
+const artistCounts = new Map<string, { artist: (typeof data.artists)[number]; count: number }>();
+for (const x of [location, ...spaces])
+  for (const a of data.atLocation(x.id))
+    for (const artist of data.videoArtists(a.video)) {
+      const entry = artistCounts.get(artist.id) ?? { artist, count: 0 };
+      entry.count += 1;
+      artistCounts.set(artist.id, entry);
+    }
+const filmedBy = [...artistCounts.values()].sort((a, b) => b.count - a.count || a.artist.data.name.localeCompare(b.artist.data.name));
 const nearby = l.tags?.length
   ? data.locations.filter((o) => !family.has(o.id) && o.data.tags?.some((t) => l.tags!.includes(t))).slice(0, 12)
   : [];
@@ -156,6 +166,23 @@ const nearby = l.tags?.length
   </div>
 
   {
+    filmedBy.length > 0 && (
+      <Window title="Artists who filmed here" tone="chrome">
+        <ul class="chips">
+          {filmedBy.map(({ artist, count }) => (
+            <li>
+              <a class="chip" href={href.artist(artist.id)}>
+                {artist.data.name}
+                <b>{count}</b>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </Window>
+    )
+  }
+
+  {
     spaces.length > 0 && (
       <Window title={`Spaces (${rooms.length})`} tone="chrome">
         <SpaceList parent={location.id} />
@@ -166,7 +193,9 @@ const nearby = l.tags?.length
   {
     l.photos?.length ? (
       <Window title="Photos of the place" tone="chrome">
-        <Shots shots={l.photos.map((image) => ({ image }))} caption={l.name} />
+        <div data-lightbox-group>
+          <Shots shots={l.photos.map((image) => ({ image }))} caption={l.name} />
+        </div>
       </Window>
     ) : null
   }
@@ -185,6 +214,7 @@ const nearby = l.tags?.length
         </div>
       ) : null
     }
+    <div data-lightbox-group>
     {
       here.map((a) => {
         const artists = data.videoArtists(a.video);
@@ -217,7 +247,14 @@ const nearby = l.tags?.length
             }
             {a.notes && <p class="muted">{a.notes}</p>}
             {a.shots.length > 0 ? (
-              <Shots shots={a.shots} context={`${videoLabel(a.video)} at ${l.name}`} />
+              <Shots
+                shots={a.shots.map((s) => ({
+                  ...s,
+                  video: { label: videoLabel(a.video), href: href.video(a.video.id) },
+                  location: { name: l.name },
+                }))}
+                context={`${videoLabel(a.video)} at ${l.name}`}
+              />
             ) : (
               <p class="muted">No screenshot yet.</p>
             )}
@@ -225,6 +262,7 @@ const nearby = l.tags?.length
         );
       })
     }
+    </div>
   </Window>
   )}
 

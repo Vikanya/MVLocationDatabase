@@ -1,0 +1,28 @@
+{
+  "title": "[EVENT] 우리은행 X RESCENE (리센느) l ‘우리는 해' Full Video",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=GVcLPHEvIFY",
+  "published": "2026-10-30",
+  "artists": [
+    "rescene"
+  ],
+  "songs": [
+    {
+      "title_ko": "우리는 해"
+    }
+  ],
+  "type": "mv",
+  "channel": "우리은행",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "acres-space-subway",
+      "screenshots": [
+        {
+          "image": "/media/full/27ab1e67dece.webp",
+          "set": "spot-3"
+        }
+      ]
+    }
+  ]
+}

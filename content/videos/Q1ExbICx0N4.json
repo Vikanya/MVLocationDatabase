@@ -1,0 +1,31 @@
+{
+  "title": "[FM_1.24] 지헌이랑 가을부터 겨울까지🍂❄️ 스파오 X 지그재그 비하인드",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=Q1ExbICx0N4",
+  "published": "2026-10-30",
+  "artists": [
+    "jiheon"
+  ],
+  "type": "other",
+  "channel": "fromis_9",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "acres-space-subway",
+      "screenshots": [
+        {
+          "image": "/media/full/505c431b4902.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "/media/full/b0a5bd64f4f3.webp",
+          "set": "spot-2"
+        },
+        {
+          "image": "/media/full/2747635d08e0.webp",
+          "set": "spot-3"
+        }
+      ]
+    }
+  ]
+}

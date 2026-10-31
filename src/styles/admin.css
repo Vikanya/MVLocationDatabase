@@ -269,6 +269,151 @@
   color: #fff;
   background: var(--electric);
 }
+.qa-pill:has(.qa-pill-img) {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding-left: 2px;
+}
+.qa-tile .qa-pill-img {
+  width: 36px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 999px 0 0 999px;
+  background: var(--screen);
+}
+
+/* Location pictures: search list, suggestions, the browse grid, the reference strip. */
+.qa-find-list .qa-find-img {
+  grid-row: span 2;
+  align-self: center;
+  width: 64px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: var(--screen);
+}
+.qa-loc-find {
+  align-items: center;
+}
+.qa-loc-find .qa-search {
+  flex: 1;
+  min-width: 240px;
+}
+.qa-sugs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.qa-card {
+  display: grid;
+  align-content: start;
+  gap: 2px;
+  padding: 0 0 5px;
+  font: inherit;
+  text-align: left;
+  color: var(--text);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  cursor: pointer;
+}
+.qa-card:hover {
+  outline: 3px solid var(--lime);
+  outline-offset: -1px;
+  box-shadow: var(--hard-sm);
+}
+.qa-card > b,
+.qa-card > small {
+  padding: 0 6px;
+  overflow-wrap: anywhere;
+}
+.qa-card > small {
+  font-size: 11px;
+}
+.qa-card-small {
+  width: 132px;
+}
+.qa-card-small > b {
+  font-size: 12px;
+}
+.qa-card-cover {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: var(--screen);
+}
+.qa-card-empty {
+  display: grid;
+  place-items: center;
+  font-size: 9px;
+  color: var(--chrome-lo);
+}
+.qa-card-more {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+}
+.qa-card-more img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: var(--screen);
+}
+.qa-cat {
+  margin: 4px 0 12px;
+  padding: 8px;
+  background: var(--zebra);
+  border: 1px solid var(--line);
+}
+.qa-cat .qa-row {
+  align-items: center;
+}
+.qa-cat .qa-sets {
+  padding: 0;
+}
+.qa-cat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 10px;
+  max-height: 70vh;
+  margin-top: 8px;
+  overflow-y: auto;
+}
+.qa-ref {
+  margin: 0 0 8px;
+}
+.qa-ref summary {
+  margin: 0 0 4px;
+  cursor: pointer;
+}
+.qa-ref-row {
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+}
+.qa-ref-row img {
+  display: block;
+  height: 64px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: var(--screen);
+}
+.qa-ref-row a:hover img {
+  outline: 2px solid var(--lime);
+}
+.qa-ref-sets {
+  display: grid;
+  gap: 4px;
+}
+.qa-ref-set {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  align-items: center;
+  gap: 6px;
+}
+.qa-ref-set > span {
+  font-size: 10px;
+  overflow-wrap: anywhere;
+}
 
 .qa-savebar {
   position: sticky;

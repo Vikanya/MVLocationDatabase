@@ -1,6 +1,7 @@
 // The quick-add form (src/pages/admin/add.astro). One state object, kept as a draft in IndexedDB; sections are
 // redrawn when their structure changes, text fields only update the state (so typing never loses focus).
 import { parseYoutubeId, slugify } from '../../lib/ids.ts';
+import { cover, full, loadCatalogue, look, thumb, thumbFallback } from './catalogue.ts';
 import { draft } from './draft.ts';
 import { ConflictError, findToken, github, MissingBlobError, mockRepo, type Change, type Repo, type Snapshot } from './github.ts';
 import { guessSong, guessType, hasHangul, matchArtists, parseCoordinates, type Song, type VideoType } from './guess.ts';
@@ -116,6 +117,10 @@ let state = fresh();
 /** Which filming location pasted screenshots go to. */
 let active = 0;
 let saving = false;
+/** The picture catalogue of locations: open or not, its filter text and kind of place. */
+const browse = { open: false, query: '', tag: '' };
+/** Locations whose "what it looks like" strip was folded away. */
+const refClosed = new Set<string>();
 
 let persistTimer: ReturnType<typeof setTimeout> | undefined;
 function persist() {
@@ -126,7 +131,8 @@ function persist() {
 function changed(...parts: ('video' | 'artists' | 'locations')[]) {
   if (parts.includes('video')) renderVideo();
   if (parts.includes('artists')) renderArtists();
-  if (parts.includes('locations')) renderLocations();
+  // The locations follow the artists too ("where these artists filmed before").
+  if (parts.includes('locations') || parts.includes('artists')) renderLocations();
   renderSave();
   persist();
 }
@@ -223,6 +229,8 @@ async function track(hash: string) {
   if (!urls.has(hash)) {
     const stored = await draft.image(hash);
     if (stored) urls.set(hash, URL.createObjectURL(stored.blob));
+    // A restored draft draws its tiles before the pictures are read back.
+    for (const img of document.querySelectorAll<HTMLImageElement>(`[data-hash="${hash}"] > img`)) img.src = urls.get(hash) ?? '';
   }
   paintTile(hash);
   pump();
@@ -257,6 +265,34 @@ const locationOf = (id: string) => locations.find((l) => l.id === id) ?? state.n
 const setsOf = (id: string) => locationOf(id)?.sets?.filter((s) => s.id && s.name) ?? [];
 const takenArtist = (id: string) => artists.some((a) => a.id === id);
 const takenLocation = (id: string) => locations.some((l) => l.id === id);
+/** The artists of the video being added (with their groups), for "filmed here before". */
+function videoArtists(): Set<string> {
+  const ids: string[] = state.existing ? (JSON.parse(state.existing.text).artists ?? []) : state.artists;
+  return new Set(ids.flatMap((id) => [id, ...(artists.find((a) => a.id === id)?.part_of ?? [])]));
+}
+
+const thumbImg = (f: string, props: Record<string, unknown> = {}) =>
+  h('img', { src: thumb(f), 'data-f': f, alt: '', loading: 'lazy', decoding: 'async', onerror: thumbFallback, ...props });
+
+/** A location as a search option: its picture, area, kinds of place, how many videos and by whom. */
+function locationOption(l: (typeof locations)[number]): Option {
+  const lk = look(l.id);
+  const names = (lk?.artists ?? []).map((id) => artists.find((a) => a.id === id)?.name ?? id);
+  return {
+    id: l.id,
+    label: l.name,
+    sub: [
+      l.part_of && locationOf(l.part_of)?.name,
+      ...(l.tags ?? []),
+      lk?.videos ? `${lk.videos} video${lk.videos === 1 ? '' : 's'}` : '',
+      names.slice(0, 3).join(', ') + (names.length > 3 ? '…' : ''),
+    ]
+      .filter(Boolean)
+      .join(' · '),
+    keys: names.join(' '),
+    img: cover(l.id),
+  };
+}
 
 function flash(text: string) {
   const el = $('qa-save-status');
@@ -270,6 +306,10 @@ interface Option {
   id: string;
   label: string;
   sub?: string;
+  /** Searched but not shown (e.g. every artist who filmed at a location). */
+  keys?: string;
+  /** A picture file in media/. */
+  img?: string;
 }
 function searchBox(opts: { placeholder: string; options: () => Option[]; pick: (id: string) => void; create?: (text: string) => void; createLabel?: string }) {
   const list = h('ul', { class: 'find-list qa-find-list', role: 'listbox', hidden: true });
@@ -285,7 +325,7 @@ function searchBox(opts: { placeholder: string; options: () => Option[]; pick: (
   const draw = () => {
     const q = norm(input.value.trim());
     if (!q) return (list.hidden = true);
-    const hits = opts.options().filter((o) => norm(`${o.label} ${o.sub ?? ''} ${o.id}`).includes(q));
+    const hits = opts.options().filter((o) => norm(`${o.label} ${o.sub ?? ''} ${o.keys ?? ''} ${o.id}`).includes(q));
     hits.sort((a, b) => Number(!norm(a.label).startsWith(q)) - Number(!norm(b.label).startsWith(q)));
     shown = [...hits.slice(0, 8), ...(opts.create ? [{ create: input.value.trim() }] : [])];
     sel = 0;
@@ -299,7 +339,11 @@ function searchBox(opts: { placeholder: string; options: () => Option[]; pick: (
             { href: '#', onmousedown: (e: Event) => (e.preventDefault(), choose(o)) },
             'create' in o
               ? h('span', { class: 'find-name' }, `${opts.createLabel} “${o.create}”`)
-              : [h('span', { class: 'find-name' }, o.label), o.sub ? h('span', { class: 'find-meta muted' }, o.sub) : null],
+              : [
+                  'img' in o ? (o.img ? thumbImg(o.img, { class: 'qa-find-img' }) : h('span', { class: 'qa-find-img' })) : null,
+                  h('span', { class: 'find-name' }, o.label),
+                  o.sub ? h('span', { class: 'find-meta muted' }, o.sub) : null,
+                ],
           ),
         ),
       ),
@@ -572,17 +616,21 @@ function renderLocations() {
   if (!state.id) return box.replaceChildren();
   const existingAps: { location: string; screenshots?: unknown[] }[] = state.existing ? (JSON.parse(state.existing.text).appearances ?? []) : [];
   const used = new Set(state.appearances.map((a) => a.location));
-  const options = () =>
-    locations
-      .filter((l) => !used.has(l.id))
-      .map((l) => ({ id: l.id, label: l.name, sub: [l.part_of && locationOf(l.part_of)?.name, ...(l.tags ?? [])].filter(Boolean).join(' · ') }));
+  const options = () => locations.filter((l) => !used.has(l.id)).map(locationOption);
   const startAppearance = (location: string) => {
     state.appearances.push({ location, shots: [] });
     active = state.appearances.length - 1;
+    browse.open = false;
     changed('locations');
   };
   // Existing video: its filming locations are offered first.
   const offer = existingAps.filter((a) => !used.has(a.location));
+  // Places where this video's artists (or their groups) filmed before.
+  const mine = videoArtists();
+  const before = locations
+    .filter((l) => !used.has(l.id) && !offer.some((a) => a.location === l.id) && look(l.id)?.artists.some((a) => mine.has(a)))
+    .sort((a, b) => look(b.id)!.videos - look(a.id)!.videos)
+    .slice(0, 8);
   fill(box,
     ...state.appearances.map((ap, i) => appearanceBlock(ap, i, existingAps.find((e) => e.location === ap.location)?.screenshots?.length)),
     offer.length
@@ -593,19 +641,135 @@ function renderLocations() {
           offer.map((a) => h('button', { class: 'btn', type: 'button', onclick: () => startAppearance(a.location) }, `${locationOf(a.location)?.name ?? a.location} (${a.screenshots?.length ?? 0})`)),
         )
       : null,
-    searchBox({
-      placeholder: state.appearances.length ? 'Another filming location…' : 'Filming location…',
-      options,
-      pick: startAppearance,
-      createLabel: '+ New location',
-      create: (text) => {
-        const l: NewLocation = { id: slugify(text), name: text, status: 'identified', part_of: '', where: '', tags: [], sets: [] };
-        state.newLocations.push(l);
-        startAppearance(l.id);
-      },
-    }),
+    before.length
+      ? h(
+          'div',
+          { class: 'qa-field' },
+          h('span', {}, 'Where these artists filmed before'),
+          h('div', { class: 'qa-sugs' }, before.map((l) => locationCard(l, startAppearance, true))),
+        )
+      : null,
+    h(
+      'div',
+      { class: 'qa-row qa-loc-find' },
+      searchBox({
+        placeholder: state.appearances.length ? 'Another filming location… (name, area, kind, artist)' : 'Filming location… (name, area, kind, artist)',
+        options,
+        pick: startAppearance,
+        createLabel: '+ New location',
+        create: (text) => {
+          const l: NewLocation = { id: slugify(text), name: text, status: 'identified', part_of: '', where: '', tags: [], sets: [] };
+          state.newLocations.push(l);
+          startAppearance(l.id);
+        },
+      }),
+      h(
+        'button',
+        { class: 'btn', type: 'button', 'aria-pressed': String(browse.open), onclick: () => ((browse.open = !browse.open), renderLocations()) },
+        browse.open ? 'HIDE PICTURES' : '▦ BROWSE BY PICTURE',
+      ),
+    ),
+    browse.open ? catalogue(used, startAppearance) : null,
   );
   for (const s of allShots()) paintTile(s.hash);
+}
+
+/** A location as a picture card: its cover, a few more screenshots, where it is and who filmed there. */
+function locationCard(l: (typeof locations)[number], pick: (id: string) => void, small = false) {
+  const lk = look(l.id);
+  const o = locationOption(l);
+  const more = small ? [] : (lk?.shots ?? []).slice(1, 5);
+  return h(
+    'button',
+    { type: 'button', class: small ? 'qa-card qa-card-small' : 'qa-card', title: `${l.name}${o.sub ? `\n${o.sub}` : ''}`, onclick: () => pick(l.id) },
+    o.img ? thumbImg(o.img, { class: 'qa-card-cover' }) : h('span', { class: 'qa-card-cover qa-card-empty pixel' }, 'NO PICTURE YET'),
+    more.length ? h('span', { class: 'qa-card-more' }, more.map((s) => thumbImg(s.f))) : null,
+    h('b', {}, l.name),
+    small ? null : h('small', { class: 'muted' }, o.sub),
+  );
+}
+
+/** Every location as a picture card, filtered by text and kind of place; most-used first. */
+function catalogue(used: Set<string>, pick: (id: string) => void) {
+  const grid = h('div', { class: 'qa-cat-grid' });
+  const draw = () => {
+    const q = norm(browse.query.trim());
+    const shown = locations
+      .filter((l) => !used.has(l.id) && (!browse.tag || l.tags?.includes(browse.tag)))
+      .map((l) => ({ l, o: locationOption(l) }))
+      .filter(({ l, o }) => !q || norm(`${o.label} ${o.sub} ${o.keys} ${l.id}`).includes(q))
+      .sort((a, b) => (look(b.l.id)?.videos ?? 0) - (look(a.l.id)?.videos ?? 0));
+    fill(grid, shown.length ? shown.map(({ l }) => locationCard(l, pick)) : h('p', { class: 'qa-note' }, 'No location matches.'));
+  };
+  draw();
+  const tags = h(
+    'div',
+    { class: 'qa-sets' },
+    ['', ...cfg.tags].map((t) =>
+      h(
+        'button',
+        {
+          type: 'button',
+          class: 'qa-pill',
+          'aria-pressed': String(browse.tag === t),
+          onclick: (e: Event) => {
+            browse.tag = t;
+            for (const b of tags.children) b.setAttribute('aria-pressed', String(b === e.currentTarget));
+            draw();
+          },
+        },
+        t || 'All',
+      ),
+    ),
+  );
+  return h(
+    'div',
+    { class: 'qa-cat' },
+    h(
+      'div',
+      { class: 'qa-row' },
+      h('input', {
+        type: 'search',
+        placeholder: 'Filter: name, area, artist…',
+        value: browse.query,
+        oninput: (e: Event) => ((browse.query = (e.target as HTMLInputElement).value), draw()),
+      }),
+      tags,
+    ),
+    grid,
+  );
+}
+
+/** Screenshots already on the site for this location — by set when it has several — to compare with. */
+function reference(ap: Appearance) {
+  const lk = look(ap.location);
+  if (!lk?.shots.length) return null;
+  const sets = setsOf(ap.location);
+  const pic = (f: string, title = '') =>
+    h('a', { href: full(f), target: '_blank', rel: 'noopener', title }, thumbImg(f));
+  return h(
+    'details',
+    {
+      class: 'qa-ref',
+      open: !refClosed.has(ap.location),
+      ontoggle: (e: Event) => ((e.target as HTMLDetailsElement).open ? refClosed.delete(ap.location) : refClosed.add(ap.location)),
+    },
+    h('summary', { class: 'qa-note' }, `What it looks like — ${lk.videos} video${lk.videos === 1 ? '' : 's'} so far${sets.length ? `, ${sets.length} sets` : ''}`),
+    sets.length
+      ? h(
+          'div',
+          { class: 'qa-ref-sets' },
+          sets.map((s) =>
+            h(
+              'div',
+              { class: 'qa-ref-set' },
+              h('span', { class: 'pixel' }, s.name),
+              h('div', { class: 'qa-ref-row' }, lk.sets[s.id]?.length ? lk.sets[s.id].map((f) => pic(f, s.name)) : h('small', { class: 'muted' }, 'no screenshot yet')),
+            ),
+          ),
+        )
+      : h('div', { class: 'qa-ref-row' }, lk.shots.map((s) => pic(s.f, s.v ?? 'Photo of the place'))),
+  );
 }
 
 function appearanceBlock(ap: Appearance, i: number, before?: number) {
@@ -659,7 +823,7 @@ function appearanceBlock(ap: Appearance, i: number, before?: number) {
       ),
       picker,
     ),
-    isNew ? newLocationForm(isNew, ap, heading) : null,
+    isNew ? newLocationForm(isNew, ap, heading) : reference(ap),
     h(
       'div',
       { class: 'qa-tiles' },
@@ -672,6 +836,7 @@ function appearanceBlock(ap: Appearance, i: number, before?: number) {
 
 function tile(ap: Appearance, s: Shot, j: number) {
   const sets = setsOf(ap.location);
+  const samples = look(ap.location)?.sets ?? {};
   return h(
     'figure',
     { class: 'qa-tile', 'data-hash': s.hash },
@@ -697,6 +862,7 @@ function tile(ap: Appearance, s: Shot, j: number) {
                 'aria-pressed': String(s.set === set.id),
                 onclick: () => ((s.set = s.set === set.id ? undefined : set.id), changed('locations')),
               },
+              samples[set.id]?.[0] ? thumbImg(samples[set.id][0], { class: 'qa-pill-img' }) : null,
               set.name,
             ),
           ),
@@ -777,7 +943,7 @@ function newLocationForm(l: NewLocation, ap: Appearance, heading: HTMLElement) {
         ? h('ul', { class: 'chips' }, h('li', {}, h('span', { class: 'chip' }, locationOf(l.part_of)?.name ?? l.part_of, h('button', { type: 'button', class: 'qa-x', onclick: () => ((l.part_of = ''), changed('locations')) }, '×'))))
         : searchBox({
             placeholder: 'Studio or area…',
-            options: () => locations.map((x) => ({ id: x.id, label: x.name, sub: (x.tags ?? []).join(' · ') })),
+            options: () => locations.map(locationOption),
             pick: (id) => ((l.part_of = id), changed('locations')),
           }),
     ),
@@ -1059,7 +1225,7 @@ export async function start() {
     repo = github(token, cfg.repo, branch);
   }
   try {
-    const [user, s] = await Promise.all([repo.user(), repo.snapshot()]);
+    const [user, s] = await Promise.all([repo.user(), repo.snapshot(), loadCatalogue(cfg.admin, cfg.site)]);
     snap = s;
     parseAll();
     account.textContent = `Signed in as ${user} · ${cfg.repo} (${branch})${mockMode ? ' · MOCK: nothing is sent to GitHub' : ''}${cfg.youtubeKey ? '' : ' · no YouTube API key: dates must be typed'}`;

@@ -367,6 +367,12 @@
 .qa-cat .qa-row {
   align-items: center;
 }
+.qa-cat-within {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
 .qa-cat .qa-sets {
   padding: 0;
 }

@@ -1,6 +1,7 @@
 {
   "name": "MAMAGO / 마마고",
   "status": "identified",
+  "group_only": true,
   "coordinates": {
     "lat": 37.599218,
     "lng": 126.892481

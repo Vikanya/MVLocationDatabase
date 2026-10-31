@@ -183,6 +183,8 @@ function checkReferences(
         problems.push(`video "${v.id}" uses location "${ap.location.id}", which doesn't exist`);
         continue;
       }
+      if (location.data.group_only)
+        problems.push(`video "${v.id}" is linked to "${location.id}", which only groups places — pick one of its spaces`);
       const sets = new Set((location.data.sets ?? []).map((s) => s.id));
       for (const s of ap.screenshots ?? [])
         if (s.set && !sets.has(s.set))

@@ -24,6 +24,8 @@ const locations = defineCollection({
     status: z.enum(['identified', 'unknown']),
     /** The studio / rental company this space belongs to (a space → Acres Space → Columbus Studio). */
     part_of: reference('locations').optional(),
+    /** Only gathers places (a studio / rental company page like Acres Space): videos link to its spaces, never here. */
+    group_only: z.boolean().optional(),
     address: z.string().optional(),
     coordinates: z.object({ lat: z.number(), lng: z.number() }).optional(),
     coordinates_source: z.string().optional(),

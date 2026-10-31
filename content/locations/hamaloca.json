@@ -1,6 +1,7 @@
 {
   "name": "Hamaloca",
   "status": "identified",
+  "group_only": true,
   "links": {
     "website": [
       "https://www.hamaloca.com/location"

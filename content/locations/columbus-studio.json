@@ -1,6 +1,7 @@
 {
   "name": "콜롬버스 스튜디오",
   "status": "identified",
+  "group_only": true,
   "coordinates": {
     "lat": 37.697729,
     "lng": 126.570402

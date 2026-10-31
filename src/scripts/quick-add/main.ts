@@ -112,13 +112,13 @@ const mockMode = params.has('mock') && cfg.mock ? params.get('mock') || 'on' : u
 let repo: Repo | undefined;
 let snap: Snapshot | undefined;
 let artists: { id: string; name: string; name_ko?: string; part_of?: string[] }[] = [];
-let locations: { id: string; name: string; part_of?: string; tags?: string[]; sets?: { id: string; name: string }[] }[] = [];
+let locations: { id: string; name: string; part_of?: string; group_only?: boolean; tags?: string[]; sets?: { id: string; name: string }[] }[] = [];
 let state = fresh();
 /** Which filming location pasted screenshots go to. */
 let active = 0;
 let saving = false;
-/** The picture catalogue of locations: open or not, its filter text and kind of place. */
-const browse = { open: false, query: '', tag: '' };
+/** The picture catalogue of locations: open or not, its filter text and kind of place, the studio / area shown. */
+const browse = { open: false, query: '', tag: '', within: '' };
 /** Locations whose "what it looks like" strip was folded away. */
 const refClosed = new Set<string>();
 
@@ -265,6 +265,21 @@ const locationOf = (id: string) => locations.find((l) => l.id === id) ?? state.n
 const setsOf = (id: string) => locationOf(id)?.sets?.filter((s) => s.id && s.name) ?? [];
 const takenArtist = (id: string) => artists.some((a) => a.id === id);
 const takenLocation = (id: string) => locations.some((l) => l.id === id);
+/** Spaces of a studio / area, at any depth (Columbus Studio → Acres Space → Acres Space – Subway). */
+function spacesOf(id: string) {
+  const out: typeof locations = [];
+  const walk = (x: string) => {
+    for (const l of locations) if (l.part_of === x && !out.includes(l)) (out.push(l), walk(l.id));
+  };
+  walk(id);
+  return out;
+}
+/** The studios / areas a location is part of, nearest first. */
+function studiosOf(id: string) {
+  const out: string[] = [];
+  for (let x = locationOf(id)?.part_of; x && !out.includes(x); x = locationOf(x)?.part_of) out.push(x);
+  return out;
+}
 /** The artists of the video being added (with their groups), for "filmed here before". */
 function videoArtists(): Set<string> {
   const ids: string[] = state.existing ? (JSON.parse(state.existing.text).artists ?? []) : state.artists;
@@ -278,18 +293,21 @@ const thumbImg = (f: string, props: Record<string, unknown> = {}) =>
 function locationOption(l: (typeof locations)[number]): Option {
   const lk = look(l.id);
   const names = (lk?.artists ?? []).map((id) => artists.find((a) => a.id === id)?.name ?? id);
+  const spaces = spacesOf(l.id).length;
   return {
     id: l.id,
     label: l.name,
     sub: [
       l.part_of && locationOf(l.part_of)?.name,
       ...(l.tags ?? []),
+      spaces ? `${spaces} space${spaces === 1 ? '' : 's'} →` : '',
       lk?.videos ? `${lk.videos} video${lk.videos === 1 ? '' : 's'}` : '',
       names.slice(0, 3).join(', ') + (names.length > 3 ? '…' : ''),
     ]
       .filter(Boolean)
       .join(' · '),
-    keys: names.join(' '),
+    // Every studio above it too, so "columbus" also finds Acres Space – Subway.
+    keys: [...studiosOf(l.id).map((x) => locationOf(x)?.name), ...names].join(' '),
     img: cover(l.id),
   };
 }
@@ -621,14 +639,22 @@ function renderLocations() {
     state.appearances.push({ location, shots: [] });
     active = state.appearances.length - 1;
     browse.open = false;
+    browse.within = '';
     changed('locations');
+  };
+  // A studio or area opens the pictures of its spaces instead (a "groups only" studio can't be picked itself).
+  const pickLocation = (id: string) => {
+    if (!spacesOf(id).length) return startAppearance(id);
+    Object.assign(browse, { open: true, within: id, query: '', tag: '' });
+    renderLocations();
+    document.querySelector('.qa-cat')?.scrollIntoView({ block: 'nearest' });
   };
   // Existing video: its filming locations are offered first.
   const offer = existingAps.filter((a) => !used.has(a.location));
   // Places where this video's artists (or their groups) filmed before.
   const mine = videoArtists();
   const before = locations
-    .filter((l) => !used.has(l.id) && !offer.some((a) => a.location === l.id) && look(l.id)?.artists.some((a) => mine.has(a)))
+    .filter((l) => !used.has(l.id) && !l.group_only && !offer.some((a) => a.location === l.id) && look(l.id)?.artists.some((a) => mine.has(a)))
     .sort((a, b) => look(b.id)!.videos - look(a.id)!.videos)
     .slice(0, 8);
   fill(box,
@@ -646,7 +672,7 @@ function renderLocations() {
           'div',
           { class: 'qa-field' },
           h('span', {}, 'Where these artists filmed before'),
-          h('div', { class: 'qa-sugs' }, before.map((l) => locationCard(l, startAppearance, true))),
+          h('div', { class: 'qa-sugs' }, before.map((l) => locationCard(l, pickLocation, undefined, true))),
         )
       : null,
     h(
@@ -655,7 +681,7 @@ function renderLocations() {
       searchBox({
         placeholder: state.appearances.length ? 'Another filming location… (name, area, kind, artist)' : 'Filming location… (name, area, kind, artist)',
         options,
-        pick: startAppearance,
+        pick: pickLocation,
         createLabel: '+ New location',
         create: (text) => {
           const l: NewLocation = { id: slugify(text), name: text, status: 'identified', part_of: '', where: '', tags: [], sets: [] };
@@ -665,17 +691,22 @@ function renderLocations() {
       }),
       h(
         'button',
-        { class: 'btn', type: 'button', 'aria-pressed': String(browse.open), onclick: () => ((browse.open = !browse.open), renderLocations()) },
+        {
+          class: 'btn',
+          type: 'button',
+          'aria-pressed': String(browse.open),
+          onclick: () => (Object.assign(browse, { open: !browse.open, within: '' }), renderLocations()),
+        },
         browse.open ? 'HIDE PICTURES' : '▦ BROWSE BY PICTURE',
       ),
     ),
-    browse.open ? catalogue(used, startAppearance) : null,
+    browse.open ? catalogue(used, pickLocation, startAppearance) : null,
   );
   for (const s of allShots()) paintTile(s.hash);
 }
 
 /** A location as a picture card: its cover, a few more screenshots, where it is and who filmed there. */
-function locationCard(l: (typeof locations)[number], pick: (id: string) => void, small = false) {
+function locationCard(l: (typeof locations)[number], pick: (id: string) => void, note?: string, small = false) {
   const lk = look(l.id);
   const o = locationOption(l);
   const more = small ? [] : (lk?.shots ?? []).slice(1, 5);
@@ -685,21 +716,32 @@ function locationCard(l: (typeof locations)[number], pick: (id: string) => void,
     o.img ? thumbImg(o.img, { class: 'qa-card-cover' }) : h('span', { class: 'qa-card-cover qa-card-empty pixel' }, 'NO PICTURE YET'),
     more.length ? h('span', { class: 'qa-card-more' }, more.map((s) => thumbImg(s.f))) : null,
     h('b', {}, l.name),
+    note ? h('small', { class: 'pixel' }, note) : null,
     small ? null : h('small', { class: 'muted' }, o.sub),
   );
 }
 
-/** Every location as a picture card, filtered by text and kind of place; most-used first. */
-function catalogue(used: Set<string>, pick: (id: string) => void) {
+/**
+ * Every location as a picture card, filtered by text and kind of place; most-used first. A studio or area card
+ * opens its spaces (`open`); inside one, the area itself can be picked too unless it only groups places.
+ */
+function catalogue(used: Set<string>, open: (id: string) => void, pick: (id: string) => void) {
   const grid = h('div', { class: 'qa-cat-grid' });
+  const hub = browse.within ? locations.find((l) => l.id === browse.within) : undefined;
+  const pool = hub ? [...(hub.group_only ? [] : [hub]), ...spacesOf(hub.id)] : locations;
   const draw = () => {
     const q = norm(browse.query.trim());
-    const shown = locations
+    const shown = pool
       .filter((l) => !used.has(l.id) && (!browse.tag || l.tags?.includes(browse.tag)))
       .map((l) => ({ l, o: locationOption(l) }))
       .filter(({ l, o }) => !q || norm(`${o.label} ${o.sub} ${o.keys} ${l.id}`).includes(q))
-      .sort((a, b) => (look(b.l.id)?.videos ?? 0) - (look(a.l.id)?.videos ?? 0));
-    fill(grid, shown.length ? shown.map(({ l }) => locationCard(l, pick)) : h('p', { class: 'qa-note' }, 'No location matches.'));
+      .sort((a, b) => Number(b.l === hub) - Number(a.l === hub) || (look(b.l.id)?.videos ?? 0) - (look(a.l.id)?.videos ?? 0));
+    fill(
+      grid,
+      shown.length
+        ? shown.map(({ l }) => locationCard(l, l === hub ? pick : open, l === hub ? `The whole of ${l.name}` : undefined))
+        : h('p', { class: 'qa-note' }, 'No location matches.'),
+    );
   };
   draw();
   const tags = h(
@@ -725,6 +767,16 @@ function catalogue(used: Set<string>, pick: (id: string) => void) {
   return h(
     'div',
     { class: 'qa-cat' },
+    hub
+      ? h(
+          'p',
+          { class: 'qa-note qa-cat-within' },
+          h('button', { class: 'btn', type: 'button', onclick: () => ((browse.within = ''), renderLocations()) }, '← ALL PLACES'),
+          ' ',
+          h('b', {}, hub.name),
+          hub.group_only ? ' — pick the space it was filmed in:' : ' — the whole place, or one of its spots:',
+        )
+      : null,
     h(
       'div',
       { class: 'qa-row' },

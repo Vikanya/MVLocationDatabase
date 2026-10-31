@@ -2,6 +2,7 @@
   "name": "Acres Space",
   "status": "identified",
   "part_of": "columbus-studio",
+  "group_only": true,
   "links": {
     "website": [
       "https://www.acres-space.co.kr/"

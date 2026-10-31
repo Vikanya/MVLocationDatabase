@@ -183,6 +183,9 @@ collections:
             value_field: '{{slug}}'
             search_fields: [name, address, tags]
             display_fields: ['{{name}}']
+            # Studio pages that only gather spaces (Acres Space…) can't be a filming location.
+            filters:
+              - { field: group_only, values: [true], exclude: true }
           - name: screenshots
             label: Screenshots
             label_singular: Screenshot
@@ -267,6 +270,13 @@ collections:
         display_fields: ['{{name}}']
         filters:
           - { field: slug, values: ['{{slug}}'], exclude: true }
+        required: false
+      - name: group_only
+        label: Only groups places (no video filmed here directly)
+        hint: >-
+          For a studio or rental company page like Acres Space or MAMAGO: videos are linked to its spaces, never to
+          it. It then can't be picked as a video's location, and quick add offers its spaces instead.
+        widget: boolean
         required: false
       - { name: address, label: Address, widget: string, required: false }
       - name: coordinates

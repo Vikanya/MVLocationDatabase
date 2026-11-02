@@ -1,0 +1,27 @@
+{
+  "title": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=naoGk-Zjc1s",
+  "published": "2026-06-07",
+  "artists": [
+    "babymonster"
+  ],
+  "songs": [
+    {
+      "title": "SUGAR HONEY ICE TEA"
+    }
+  ],
+  "type": "mv",
+  "channel": "BABYMONSTER",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "songdo-ibs-tower",
+      "screenshots": [
+        {
+          "image": "/media/full/e08a403d89fa.webp"
+        }
+      ]
+    }
+  ]
+}

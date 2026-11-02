@@ -1,0 +1,36 @@
+{
+  "title": "호시 (HOSHI) 'BOYFRIEND' Performance Film",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=_RUY9qgP-5g",
+  "published": "2026-10-10",
+  "artists": [
+    "hoshi"
+  ],
+  "songs": [
+    {
+      "title": "BOYFRIEND"
+    }
+  ],
+  "type": "performance",
+  "channel": "HYBE LABELS",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "acres-space-gas-station",
+      "screenshots": [
+        {
+          "image": "/media/full/b8353b0d7efd.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "/media/full/cad28f197e0f.webp",
+          "set": "spot-2"
+        },
+        {
+          "image": "/media/full/21b1b57c73c2.webp",
+          "set": "spot-3"
+        }
+      ]
+    }
+  ]
+}

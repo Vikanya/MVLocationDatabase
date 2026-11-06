@@ -1,0 +1,33 @@
+{
+  "title": "TWS (투어스) '내 이름을 불러줘' Official MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=3MPUCncZBR0",
+  "published": "2026-11-02",
+  "artists": [
+    "tws"
+  ],
+  "songs": [
+    {
+      "title": "Call My Name",
+      "title_ko": "내 이름을 불러줘"
+    }
+  ],
+  "type": "mv",
+  "channel": "HYBE LABELS",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "royal-x",
+      "screenshots": [
+        {
+          "image": "/media/full/9829709e7ca1.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "/media/full/76af0f2e3754.webp",
+          "set": "spot-3"
+        }
+      ]
+    }
+  ]
+}

@@ -8,7 +8,7 @@
   ],
   "songs": [
     {
-      "title": "We"
+      "title": "We’ll Never Change"
     }
   ],
   "type": "mv",
@@ -19,7 +19,8 @@
       "location": "geobug-island-1",
       "screenshots": [
         {
-          "image": "/media/full/61652e3cd053.webp"
+          "image": "/media/full/61652e3cd053.webp",
+          "set": "spot-1"
         }
       ],
       "sheet_rows": [

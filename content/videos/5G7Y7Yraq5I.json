@@ -20,7 +20,8 @@
       "location": "geobug-island-1",
       "screenshots": [
         {
-          "image": "/media/full/70ed4382f314.webp"
+          "image": "/media/full/70ed4382f314.webp",
+          "set": "spot-1"
         }
       ],
       "sheet_rows": [

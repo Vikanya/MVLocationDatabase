@@ -416,10 +416,7 @@ main {
   gap: 4px;
   margin-top: 6px;
 }
-/* Space is kept while the index loads so nothing below jumps; without JS or if loading fails it collapses. */
-.random[data-pending] {
-  visibility: hidden;
-}
+/* Without JS, or if the index fails to load, the buttons are removed. */
 .random[hidden] {
   display: none;
 }

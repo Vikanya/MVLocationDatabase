@@ -96,7 +96,7 @@ const shots = data.appearances.reduce((n, a) => n + a.shots.length, 0);
               </div>
               <button class="btn" type="submit">GO</button>
             </form>
-            <div class="random" id="random" data-pending>
+            <div class="random" id="random">
               <button class="btn" type="button" data-random="v">? RANDOM MV</button>
               <button class="btn" type="button" data-random="l">? RANDOM SPOT</button>
             </div>
@@ -153,7 +153,6 @@ const shots = data.appearances.reduce((n, a) => n + a.shots.length, 0);
           .then((res) => (res.ok ? res.json() : Promise.reject(res.status)))
           .then((all: Entry[]) => {
             entries = all.map((e) => ({ ...e, key: [norm(e.n), norm(e.ko), norm(e.x)] }));
-            random.removeAttribute('data-pending');
             if (document.activeElement === input) render();
           })
           .catch(() => (random.hidden = true))); // no suggestions, no random buttons; the plain search still works
@@ -228,8 +227,11 @@ const shots = data.appearances.reduce((n, a) => n + a.shots.length, 0);
           window.location.href = results[active].h;
         }
       });
-      random.addEventListener('click', (e) => {
+      // The buttons show from the start; a click before the index has arrived waits for it.
+      random.addEventListener('click', async (e) => {
         const type = (e.target as Element).closest<HTMLElement>('[data-random]')?.dataset.random;
+        if (!type) return;
+        await load();
         const pool = entries?.filter((x) => x.t === type && (type !== 'l' || x.s));
         if (pool?.length) window.location.href = pool[Math.floor(Math.random() * pool.length)].h;
       });

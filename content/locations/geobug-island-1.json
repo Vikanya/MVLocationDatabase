@@ -1,12 +1,22 @@
 {
-  "name": "Geobug Island #1",
+  "review": [
+    "Location not identified yet"
+  ],
+  "name": "Park #1",
   "status": "unknown",
-  "part_of": "geobugseom",
+  "group_only": false,
   "tags": [
     "Garden / Park"
   ],
-  "review": [
-    "Location not identified yet"
+  "sets": [
+    {
+      "id": "spot-1",
+      "name": "Spot 1"
+    },
+    {
+      "id": "spot-2",
+      "name": "Spot 2"
+    }
   ],
   "sheet_rows": [
     "Geobug Island!22"

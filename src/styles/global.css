@@ -22,7 +22,7 @@
   --grid: #cfd8ee;
   --zebra: #f2f5ff;
   --field: #ffffff;
-  --screen: #13153a; /* ticker, counter, empty image frames */
+  --screen: #13153a; /* counter, empty image frames */
   --screen-edge: #2a2f6b;
   --link: #2340ff;
   --visited: #7a1fd6;
@@ -151,6 +151,7 @@ h3 {
   align-items: flex-end;
   justify-content: space-between;
   gap: 8px 24px;
+  margin-bottom: 16px;
   padding: 14px 18px 12px;
   background: var(--metal);
   border: 1px solid var(--line);
@@ -189,52 +190,6 @@ h3 {
   font: 12px var(--f-body);
   font-weight: 700;
   color: var(--ink-soft);
-}
-
-/* ticker */
-.ticker {
-  display: flex;
-  margin: 10px 0 14px;
-  border: 1px solid var(--line);
-  background: var(--screen);
-  color: var(--lime);
-  white-space: nowrap;
-  box-shadow: var(--hard-sm);
-}
-.ticker-label {
-  flex: none;
-  padding: 4px 8px;
-  background: var(--pink);
-  color: #fff;
-  font: 11px var(--f-pixel);
-}
-.ticker-window {
-  flex: 1;
-  min-width: 0;
-  overflow: hidden;
-  padding: 4px 0 4px 14px;
-}
-.ticker-track {
-  display: inline-block;
-  animation: ticker 120s linear infinite;
-  font: 11px var(--f-pixel);
-}
-.ticker:hover .ticker-track {
-  animation-play-state: paused;
-}
-.ticker a,
-.ticker a:visited {
-  color: var(--lime);
-  text-decoration: none;
-  margin-right: 34px;
-}
-.ticker a:hover {
-  color: #fff;
-}
-@keyframes ticker {
-  to {
-    transform: translateX(-50%);
-  }
 }
 
 /* layout */
@@ -1046,9 +1001,6 @@ main {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .ticker-track {
-    animation: none;
-  }
   .card {
     transition: none;
   }

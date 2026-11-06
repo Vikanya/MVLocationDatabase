@@ -2,7 +2,7 @@
 import '../styles/global.css';
 import Window from '../components/Window.astro';
 import ThemeInit from '../components/ThemeInit.astro';
-import { db, href, url, stableShuffle, videoLabel, TYPE_LABEL } from '../lib/data';
+import { db, url, TYPE_LABEL } from '../lib/data';
 
 interface Props {
   title?: string;
@@ -30,12 +30,6 @@ const nav = [
 ];
 const current = (p: string) => (p === '/' ? path === '/' : path.startsWith(p));
 
-const ticker = stableShuffle(data.appearances.filter((a) => a.location.data.status === 'identified').map((a) => ({ ...a, id: a.video.id + a.location.id })))
-  .slice(0, 14)
-  .map((a) => ({
-    text: `${data.videoArtists(a.video).map((x) => x.data.name).join(', ') || a.video.data.channel} — ${videoLabel(a.video)} @ ${a.location.data.name}`,
-    href: href.video(a.video.id),
-  }));
 const pad = (n: number) => String(n).padStart(5, '0');
 const shots = data.appearances.reduce((n, a) => n + a.shots.length, 0);
 ---
@@ -67,16 +61,6 @@ const shots = data.appearances.reduce((n, a) => n + a.shots.length, 0);
           <span class="wordmark-sub" lang="ko">뮤비 촬영지 데이터베이스</span>
         </a>
       </header>
-
-      <div class="ticker" aria-label="Random filming spots">
-        <span class="ticker-label">NOW PLAYING</span>
-        <span class="ticker-window">
-          <span class="ticker-track">
-            {ticker.map((t) => <a href={t.href}>▶ {t.text}</a>)}
-            <span aria-hidden="true">{ticker.map((t) => <a href={t.href} tabindex="-1">▶ {t.text}</a>)}</span>
-          </span>
-        </span>
-      </div>
 
       <div class="shell">
         <aside class="sidebar">

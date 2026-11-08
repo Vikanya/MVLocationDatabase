@@ -1,0 +1,28 @@
+{
+  "title": "김결 '술래잡기(Hide and seek)' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=4smsQpCC-y0",
+  "published": "2026-10-16",
+  "artists": [
+    "kim-gyeol"
+  ],
+  "songs": [
+    {
+      "title": "Hide and seek",
+      "title_ko": "술래잡기"
+    }
+  ],
+  "type": "mv",
+  "channel": "김결",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "studio-jb-제이비",
+      "screenshots": [
+        {
+          "image": "/media/full/4c40d93a9bad.webp"
+        }
+      ]
+    }
+  ]
+}

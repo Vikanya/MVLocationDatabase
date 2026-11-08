@@ -1,0 +1,29 @@
+{
+  "name": "Studio JB 제이비",
+  "status": "identified",
+  "group_only": false,
+  "address": "512 Buil-ro, Bucheon-si, Gyeonggi-do, South Korea",
+  "coordinates": {
+    "lat": 37.48509833944406,
+    "lng": 126.78698197709807
+  },
+  "links": {
+    "google_maps": [
+      "https://maps.app.goo.gl/7SU8itinCAiFbJvz5"
+    ],
+    "naver_map": [
+      "https://naver.me/xLNRaA40"
+    ],
+    "instagram": [
+      "https://www.instagram.com/studio.jb.official"
+    ]
+  },
+  "photos": [
+    "/media/full/pasted-image-1794156335794.webp",
+    "/media/full/pasted-image-1794156868161.webp"
+  ],
+  "tags": [
+    "Rooftop",
+    "Abandoned place"
+  ]
+}

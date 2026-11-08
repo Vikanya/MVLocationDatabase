@@ -1,0 +1,13 @@
+{
+  "name": "Seongsu-dong Rooftop",
+  "status": "identified",
+  "group_only": false,
+  "address": "South Korea, Seoul, Seongdong-gu, Seongsu-dong 2(i)-ga, 336-48번지 102호",
+  "coordinates": {
+    "lat": 37.53877146910115,
+    "lng": 127.05413407096063
+  },
+  "tags": [
+    "Rooftop"
+  ]
+}

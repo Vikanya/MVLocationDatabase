@@ -1,6 +1,7 @@
 {
   "name": "ROYAL X",
   "status": "identified",
+  "group_only": false,
   "coordinates": {
     "lat": 37.171317,
     "lng": 126.887725
@@ -12,6 +13,9 @@
     ],
     "naver_map": [
       "https://naver.me/xyTaVmvn"
+    ],
+    "website": [
+      "https://royalco-studios.vercel.app/"
     ]
   },
   "tags": [

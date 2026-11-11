@@ -1,55 +1,16 @@
 ---
 // Quick add: a new video from its YouTube link (or more screenshots for one already in the database), with new
 // artists / locations inline. Screenshots upload one by one while the form is filled in; Save is one commit.
-// The logic is in src/scripts/quick-add/; the form order and kinds of place come from public/admin/config.yml.
-import { readdirSync, readFileSync } from 'node:fs';
+// The logic is in src/scripts/quick-add/ (main.ts); the config comes from src/lib/quick-add-page.ts.
 import Admin from '../../layouts/Admin.astro';
 import Window from '../../components/Window.astro';
-import { adminConfig } from '../../lib/admin-config';
-import { db, url, youtubeId } from '../../lib/data';
+import { configJson, quickAddConfig } from '../../lib/quick-add-page';
 
-const config = adminConfig();
-const data = await db();
-// Videos whose Link no longer matches their file name (re-uploaded): link ID → file ID, for the duplicate check.
-const linkIds = Object.fromEntries(
-  data.videos.flatMap((v) => {
-    const y = youtubeId(v);
-    return y && y !== v.id ? [[y, v.id]] : [];
-  }),
-);
-
-// `astro dev`, or a build with QUICK_ADD_MOCK=1, only: the local content/, so ?mock can stand in for GitHub
-// without signing in (never in the deployed site).
-const files = (dir: string, text = true) =>
-  readdirSync(dir).map((name) => ({ name, text: text ? readFileSync(`${dir}/${name}`, 'utf8').replace(/\r\n/g, '\n') : '' }));
-const mock = import.meta.env.DEV || process.env.QUICK_ADD_MOCK
-  ? {
-      snapshot: {
-        head: 'mock',
-        artists: files('content/artists'),
-        locations: files('content/locations'),
-        videos: readdirSync('content/videos'),
-        media: readdirSync('public/media/full'),
-      },
-      videos: Object.fromEntries(files('content/videos').map((f) => [f.name, f.text])),
-    }
-  : undefined;
-
-const page = {
-  repo: config.repo,
-  branch: config.branch,
-  order: config.order,
-  tags: config.tags,
-  linkIds,
-  youtubeKey: import.meta.env.PUBLIC_YOUTUBE_API_KEY ?? '',
-  admin: url('admin/'),
-  site: url(),
-  mock,
-};
+const page = await quickAddConfig({ videos: true });
 ---
 
-<Admin title="Quick add">
-  <script is:inline type="application/json" id="qa-config" set:html={JSON.stringify(page).replace(/</g, '\\u003c')} />
+<Admin title="Add video">
+  <script is:inline type="application/json" id="qa-config" set:html={configJson(page)} />
 
   <div class="qa" id="qa">
     <p class="qa-status" id="qa-account">Checking the sign-in…</p>

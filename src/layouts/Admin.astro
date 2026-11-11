@@ -1,5 +1,5 @@
 ---
-// Frame for the admin helper pages (quick add, to-do): the site's look, a small menu instead of the site's.
+// Frame for the admin helper pages (quick add for videos and locations, to-do): the site's look, a small menu instead of the site's.
 import '../styles/global.css';
 import '../styles/admin.css';
 import ThemeInit from '../components/ThemeInit.astro';
@@ -11,7 +11,8 @@ interface Props {
 const { title } = Astro.props;
 const path = Astro.url.pathname.replace(import.meta.env.BASE_URL.replace(/\/$/, ''), '') || '/';
 const nav = [
-  { label: 'QUICK ADD', path: '/admin/add/' },
+  { label: 'ADD VIDEO', path: '/admin/add/' },
+  { label: 'ADD LOCATION', path: '/admin/add-location/' },
   { label: 'TO-DO', path: '/admin/todo/' },
   { label: 'ADMIN', path: '/admin/' },
   { label: 'SITE', path: '/' },

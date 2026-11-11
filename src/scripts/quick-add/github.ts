@@ -31,7 +31,15 @@ export interface Repo {
   commit(changes: Change[], message: string): Promise<string>;
 }
 
-export class ConflictError extends Error {}
+/** A file we write was changed on GitHub since we read it (`path` says which). */
+export class ConflictError extends Error {
+  constructor(
+    message: string,
+    readonly path: string,
+  ) {
+    super(message);
+  }
+}
 /** A blob uploaded earlier is gone from GitHub (unreferenced blobs are cleaned up after a while). */
 export class MissingBlobError extends Error {}
 
@@ -166,6 +174,7 @@ export function github(token: string, repo: string, branch: string): Repo {
               c.base
                 ? `${c.path} was changed meanwhile (probably in the admin). Reload the page to start from the new version — your screenshots are kept.`
                 : `${c.path} already exists now. Reload the page to pick it up — your screenshots are kept.`,
+              c.path,
             );
         }
         const commit = await rest<{ tree: { sha: string } }>(`/git/commits/${head}`);
@@ -207,7 +216,7 @@ export function github(token: string, repo: string, branch: string): Repo {
 /**
  * Stand-in for GitHub when the page runs under `astro dev` with ?mock: the local content/ (embedded in the
  * page), uploads with fake progress. `?mock=slow` makes uploads slow, `?mock=flaky` makes every 3rd one fail.
- * Commits are kept in window.mockCommits.
+ * Commits are kept in window.mockCommits, the files in window.mockFiles.
  */
 export function mockRepo(snapshot: Snapshot, mode: string): Repo {
   const files = new Map<string, string>();
@@ -219,6 +228,8 @@ export function mockRepo(snapshot: Snapshot, mode: string): Repo {
   const blobs = new Set<string>();
   let uploads = 0;
   const commits: unknown[] = ((window as unknown as { mockCommits: unknown[] }).mockCommits = []);
+  // Tests change a file here to act like an admin save made meanwhile.
+  (window as unknown as { mockFiles: Map<string, string> }).mockFiles = files;
   return {
     user: async () => 'mock-user',
     snapshot: async () => snapshot,
@@ -249,7 +260,7 @@ export function mockRepo(snapshot: Snapshot, mode: string): Repo {
       for (const c of changes) {
         if ('blob' in c && !blobs.has(c.blob)) throw new MissingBlobError(`blob ${c.blob} not found (mock)`);
         if ('text' in c && (files.has(c.path) ? sha(files.get(c.path)!) : undefined) !== c.base)
-          throw new ConflictError(`${c.path} changed meanwhile (mock)`);
+          throw new ConflictError(`${c.path} changed meanwhile (mock)`, c.path);
       }
       for (const c of changes) if ('text' in c) files.set(c.path, c.text);
       commits.push({ message, changes });

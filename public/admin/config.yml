@@ -78,6 +78,14 @@ collections:
         hint: Things to check from the migration. Delete an item once it's fixed.
         widget: list
         required: false
+      - name: quick_add
+        label: Quick add
+        hint: >-
+          Adds screenshots or filming locations (and edits those locations) on the quick-add page, in a new tab. Save
+          there, then reload this form before editing here.
+        widget: quick-add-link # public/admin/quick-add-link.js
+        page: video
+        required: false
       - { name: title, label: Title, widget: string, hint: The video title as shown on YouTube }
       - name: platform
         label: Platform
@@ -220,7 +228,8 @@ collections:
     label_singular: Location
     description: >-
       One file per place. Sets (rooms / spots of a studio) are listed inside the location.
-      Open items: [to-do list](todo/).
+      New location, photos or sets? [Quick add](add-location/) uploads photos one by one. Open items:
+      [to-do list](todo/).
     folder: /content/locations
     format: json
     extension: json
@@ -248,6 +257,14 @@ collections:
         label: To-do
         hint: Things to check from the migration. Delete an item once it's fixed.
         widget: list
+        required: false
+      - name: quick_add
+        label: Quick add
+        hint: >-
+          Adds photos and sets, coordinates, address, links on the quick-add page, in a new tab. Save there, then
+          reload this form before editing here.
+        widget: quick-add-link # public/admin/quick-add-link.js
+        page: location
         required: false
       - { name: name, label: Name, widget: string }
       - name: status

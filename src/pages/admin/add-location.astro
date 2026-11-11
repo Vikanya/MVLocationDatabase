@@ -1,0 +1,35 @@
+---
+// Quick add for locations: a new location, or an existing one opened to add photos and sets, fill in
+// coordinates / address / links and tick off its to-dos. Photos upload one by one; Save is one commit.
+// The logic is in src/scripts/quick-add/ (location-main.ts, editor in location-form.ts).
+import Admin from '../../layouts/Admin.astro';
+import Window from '../../components/Window.astro';
+import { configJson, quickAddConfig } from '../../lib/quick-add-page';
+
+const page = await quickAddConfig({ videos: false });
+---
+
+<Admin title="Add location">
+  <script is:inline type="application/json" id="qa-config" set:html={configJson(page)} />
+
+  <div class="qa" id="qa">
+    <p class="qa-status" id="qa-account">Checking the sign-in…</p>
+    <div id="qa-draft"></div>
+
+    <Window title="Location">
+      <div id="ql-find"></div>
+      <div id="ql-edit"></div>
+    </Window>
+
+    <div class="qa-savebar" id="qa-savebar" hidden>
+      <p id="qa-save-status" class="qa-note"></p>
+      <button class="btn qa-save" id="qa-save" type="button" disabled>SAVE</button>
+    </div>
+    <div id="qa-result"></div>
+  </div>
+</Admin>
+
+<script>
+  import { start } from '../../scripts/quick-add/location-main.ts';
+  start();
+</script>

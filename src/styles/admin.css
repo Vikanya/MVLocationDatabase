@@ -57,7 +57,8 @@
 .qa input[type='search'],
 .qa input[type='date'],
 .qa input[type='password'],
-.qa select {
+.qa select,
+.qa textarea {
   width: 100%;
   min-width: 0;
   padding: 5px 6px;
@@ -177,6 +178,54 @@
 }
 .qa-ap.qa-drop {
   outline: 3px dashed var(--pink);
+}
+/* Photos of a place (location editor): a paste target of its own, inside a filming-location block or not. */
+.qa-photos {
+  margin: 0 0 10px;
+  padding: 8px 10px 10px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+.qa-photos[data-active] {
+  outline: 3px solid var(--lime);
+  outline-offset: -1px;
+}
+.qa-photos.qa-drop {
+  outline: 3px dashed var(--pink);
+}
+.qa-photos > .qa-ref-row {
+  margin-bottom: 8px;
+}
+.qa-loc-edit .qa-add {
+  justify-self: start;
+}
+.qa-link-row small:empty {
+  display: none;
+}
+.qa-link-row {
+  display: grid;
+  gap: 2px;
+  margin-bottom: 4px;
+}
+.qa-link-row .qa-row {
+  flex-wrap: nowrap;
+}
+.qa-todos .qa-check {
+  display: flex;
+  margin: 0 0 4px;
+}
+.qa-todos .qa-check[data-done] {
+  text-decoration: line-through;
+  color: var(--ink-soft);
+}
+.qa-todos .qa-check small {
+  text-decoration: none;
+}
+.qa-more {
+  margin: 0 0 10px;
+}
+.qa-more > summary {
+  cursor: pointer;
 }
 .qa-ap-head {
   display: flex;

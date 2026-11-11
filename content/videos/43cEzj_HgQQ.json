@@ -1,0 +1,32 @@
+{
+  "title": "유채훈(You Chaehoon) 'Made for This' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=43cEzj_HgQQ",
+  "published": "2026-10-26",
+  "artists": [
+    "you-chaehoon"
+  ],
+  "songs": [
+    {
+      "title": "Made for This"
+    }
+  ],
+  "type": "mv",
+  "channel": "라포엠 LA POEM",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "abandoned-park-1",
+      "screenshots": [
+        {
+          "image": "/media/full/3323b9fe98f7.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "/media/full/8ad6eefa71aa.webp",
+          "set": "spot-2"
+        }
+      ]
+    }
+  ]
+}

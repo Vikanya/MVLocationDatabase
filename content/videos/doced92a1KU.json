@@ -1,0 +1,27 @@
+{
+  "title": "유채훈(You Chaehoon) 'Come Home to Me' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=doced92a1KU",
+  "published": "2026-11-02",
+  "artists": [
+    "you-chaehoon"
+  ],
+  "songs": [
+    {
+      "title": "Come Home to Me"
+    }
+  ],
+  "type": "mv",
+  "channel": "라포엠 LA POEM",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "abandoned-park-1",
+      "screenshots": [
+        {
+          "image": "/media/full/280f584238b7.webp"
+        }
+      ]
+    }
+  ]
+}

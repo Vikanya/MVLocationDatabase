@@ -19,6 +19,7 @@ import {
   rebase,
   TODO_UNKNOWN,
 } from './location-record.ts';
+import { signIn } from './signin.ts';
 
 const config = adminConfig();
 const read = (collection: string) =>
@@ -190,4 +191,38 @@ test('a new location: form key order, links, coordinates from a full Maps link o
   edit.coords = 'nowhere';
   assert.match(locationProblems(edit, false)[0], /not understood/);
   assert.ok(open(locs[0].id).base);
+});
+
+// ------------------------------------------------------------------ sign-in
+
+const fail = (status?: number) => Object.assign(new Error(`GitHub ${status ?? 'network'}`), { status });
+const fakeUi = () => {
+  const log: string[] = [];
+  return {
+    log,
+    ui: {
+      trying: (m: string, n: number) => void log.push(`trying ${n}: ${m}`),
+      wait: async () => {},
+      stuck: async (m: string) => void log.push(`stuck: ${m}`),
+    },
+  };
+};
+
+test('sign-in: a refused token falls back to the next saved one', async () => {
+  const { ui, log } = fakeUi();
+  const refused: string[] = [];
+  const r = await signIn(['sveltia', 'copy'], async (t) => (t === 'sveltia' ? Promise.reject(fail(401)) : 'data'), ui, (t) => refused.push(t));
+  assert.deepEqual(r, { ok: true, token: 'copy', value: 'data' });
+  assert.deepEqual(refused, ['sveltia']);
+  assert.deepEqual(log, []);
+  assert.deepEqual(await signIn([], async () => 'x', ui), { ok: false, reason: 'none' });
+  assert.deepEqual(await signIn(['a', 'b'], async () => Promise.reject(fail(401)), ui), { ok: false, reason: 'invalid' });
+});
+
+test('sign-in: GitHub hiccups are retried, then offered as RETRY — never shown as signed out', async () => {
+  const { ui, log } = fakeUi();
+  let calls = 0;
+  const r = await signIn(['t'], async () => (++calls <= 4 ? Promise.reject(fail(calls % 2 ? 502 : undefined)) : 'data'), ui);
+  assert.deepEqual(r, { ok: true, token: 't', value: 'data' });
+  assert.deepEqual(log, ['trying 1: GitHub 502', 'trying 2: GitHub network', 'stuck: GitHub 502', 'trying 1: GitHub network']);
 });

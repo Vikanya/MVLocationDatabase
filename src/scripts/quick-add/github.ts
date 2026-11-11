@@ -45,17 +45,43 @@ export class MissingBlobError extends Error {}
 
 const API = 'https://api.github.com';
 
-/** The token the Sveltia admin keeps for this site (same origin), else one pasted on the quick-add page. */
-export function findToken(): string | undefined {
+/** Where quick add keeps its own copy of the token (Sveltia drops its copy when one of its loads fails). */
+export const TOKEN_COPY = 'quick-add.token';
+const SVELTIA_USER = 'sveltia-cms.user';
+
+/**
+ * Tokens to try, best first: the one the Sveltia admin keeps for this site (same origin; it's the newest when
+ * the owner signs in again with a new token), then quick add's own copy (the last one that worked here, or one
+ * pasted on the page).
+ */
+export function findTokens(): string[] {
+  const out: string[] = [];
   try {
-    const user = JSON.parse(localStorage.getItem('sveltia-cms.user') ?? 'null');
-    if (user?.token) return user.token;
+    const user = JSON.parse(localStorage.getItem(SVELTIA_USER) ?? 'null');
+    if (typeof user?.token === 'string' && user.token) out.push(user.token);
   } catch {}
   try {
-    return localStorage.getItem('quick-add.token') ?? undefined;
-  } catch {
-    return undefined;
-  }
+    const copy = localStorage.getItem(TOKEN_COPY);
+    if (copy && !out.includes(copy)) out.push(copy);
+  } catch {}
+  return out;
+}
+export function keepToken(token: string) {
+  try {
+    localStorage.setItem(TOKEN_COPY, token);
+  } catch {}
+}
+export function forgetToken(token: string) {
+  try {
+    if (localStorage.getItem(TOKEN_COPY) === token) localStorage.removeItem(TOKEN_COPY);
+  } catch {}
+}
+/** Sign out here and in the admin (Sveltia's own sign-out leaves `{}` the same way). */
+export function signOutEverywhere() {
+  try {
+    localStorage.removeItem(TOKEN_COPY);
+    if (localStorage.getItem(SVELTIA_USER)) localStorage.setItem(SVELTIA_USER, '{}');
+  } catch {}
 }
 
 function base64(bytes: ArrayBuffer) {
@@ -82,8 +108,12 @@ export function github(token: string, repo: string, branch: string): Repo {
   }
   async function graphql<T>(query: string, variables: Record<string, string>): Promise<T> {
     const res = await fetch(`${API}/graphql`, { method: 'POST', headers, body: JSON.stringify({ query, variables }) });
-    const body = await res.json();
-    if (!res.ok || body.errors) throw new Error(`GitHub: ${body.errors?.[0]?.message ?? body.message ?? res.status}`);
+    // A 502 / timeout page from GitHub isn't JSON.
+    const body = await res.json().catch(() => ({}));
+    if (!res.ok || body.errors)
+      throw Object.assign(new Error(`GitHub${res.ok ? '' : ` ${res.status}`}: ${body.errors?.[0]?.message ?? body.message ?? res.statusText}`), {
+        status: res.ok ? undefined : res.status,
+      });
     return body.data;
   }
 
@@ -101,7 +131,8 @@ export function github(token: string, repo: string, branch: string): Repo {
   return {
     async user() {
       const res = await fetch(`${API}/user`, { headers });
-      if (!res.ok) throw new Error(res.status === 401 ? 'The saved GitHub token is no longer valid.' : `GitHub ${res.status}`);
+      if (!res.ok)
+        throw Object.assign(new Error(res.status === 401 ? 'The saved GitHub token is no longer valid' : `GitHub ${res.status}`), { status: res.status });
       return (await res.json()).login;
     },
 
@@ -215,9 +246,13 @@ export function github(token: string, repo: string, branch: string): Repo {
 
 /**
  * Stand-in for GitHub when the page runs under `astro dev` with ?mock: the local content/ (embedded in the
- * page), uploads with fake progress. `?mock=slow` makes uploads slow, `?mock=flaky` makes every 3rd one fail.
+ * page), uploads with fake progress. `?mock=slow` makes uploads slow, `?mock=flaky` makes every 3rd one fail,
+ * `?mock=hiccup` fails the first two loads (a GitHub 502), `?mock=down` fails loading until `window.mockUp = true`.
  * Commits are kept in window.mockCommits, the files in window.mockFiles.
  */
+/** Mock loads so far (outside mockRepo: every sign-in attempt makes a new one). */
+let mockLoads = 0;
+
 export function mockRepo(snapshot: Snapshot, mode: string): Repo {
   const files = new Map<string, string>();
   for (const f of snapshot.artists) files.set(`content/artists/${f.name}`, f.text);
@@ -227,12 +262,19 @@ export function mockRepo(snapshot: Snapshot, mode: string): Repo {
   const sha = (text: string) => `mock-${text.length}-${[...text].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7).toString(16)}`;
   const blobs = new Set<string>();
   let uploads = 0;
+  /** `?mock=down`: loading works again once a test sets window.mockUp = true. */
+  const w = window as unknown as { mockUp?: boolean };
   const commits: unknown[] = ((window as unknown as { mockCommits: unknown[] }).mockCommits = []);
   // Tests change a file here to act like an admin save made meanwhile.
   (window as unknown as { mockFiles: Map<string, string> }).mockFiles = files;
   return {
     user: async () => 'mock-user',
-    snapshot: async () => snapshot,
+    snapshot: async () => {
+      mockLoads++;
+      if ((mode.includes('hiccup') && mockLoads <= 2) || (mode.includes('down') && !w.mockUp))
+        throw Object.assign(new Error('GitHub 502: Bad Gateway (mock)'), { status: 502 });
+      return snapshot;
+    },
     file: async (path) => {
       const text = files.get(path);
       return text === undefined ? undefined : { text, sha: sha(text) };

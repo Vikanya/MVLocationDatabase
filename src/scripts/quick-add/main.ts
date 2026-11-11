@@ -808,8 +808,7 @@ async function restoreDraft() {
 }
 
 export async function start() {
-  if (!(await connect())) return;
-  if (!cfg.youtubeKey) $('qa-account').textContent += ' · no YouTube API key: dates must be typed';
+  if (!(await connect(cfg.youtubeKey ? '' : ' · no YouTube API key: dates must be typed'))) return;
 
   const link = $('qa-link') as HTMLInputElement;
   let timer: ReturnType<typeof setTimeout> | undefined;

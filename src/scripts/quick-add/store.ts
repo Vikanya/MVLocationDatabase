@@ -2,9 +2,10 @@
 // locations read from the repo, and lookups over them that also see the locations being edited on the page.
 import { loadCatalogue } from './catalogue.ts';
 import { $, h } from './dom.ts';
-import { findToken, github, mockRepo, type Repo, type Snapshot } from './github.ts';
+import { findTokens, forgetToken, github, keepToken, mockRepo, signOutEverywhere, TOKEN_COPY, type Repo, type Snapshot } from './github.ts';
 import type { Order } from './json.ts';
 import { asLoc, type Loc, type LocationEdit } from './location-record.ts';
+import { signIn } from './signin.ts';
 
 export interface PageConfig {
   repo: string;
@@ -100,7 +101,7 @@ function signInForm(message: string) {
         type: 'button',
         onclick: () => {
           try {
-            localStorage.setItem('quick-add.token', input.value.trim());
+            localStorage.setItem(TOKEN_COPY, input.value.trim());
           } catch {}
           location.reload();
         },
@@ -110,25 +111,62 @@ function signInForm(message: string) {
   );
 }
 
-/** Sign in (or the mock), read the repo and the picture catalogue. False = the sign-in form is shown instead. */
-export async function connect(): Promise<boolean> {
+/**
+ * Sign in (or the mock), read the repo and the picture catalogue. False = the sign-in form is shown instead.
+ * `note` goes at the end of the "Signed in as …" line.
+ */
+export async function connect(note = ''): Promise<boolean> {
   const account = $('qa-account');
-  if (mockMode) {
-    (window as unknown as { mockVideos: Record<string, string> }).mockVideos = cfg.mock!.videos;
-    store.repo = mockRepo(cfg.mock!.snapshot, mockMode);
-  } else {
-    const token = findToken();
-    if (!token) return signInForm('Not signed in.'), false;
-    store.repo = github(token, cfg.repo, branch);
-  }
-  try {
-    const [user, s] = await Promise.all([store.repo.user(), store.repo.snapshot(), loadCatalogue(cfg.admin, cfg.site)]);
-    store.snap = s;
-    parseAll();
-    account.textContent = `Signed in as ${user} · ${cfg.repo} (${branch})${mockMode ? ' · MOCK: nothing is sent to GitHub' : ''}`;
-    return true;
-  } catch (e) {
-    signInForm(`${(e as Error).message}.`);
+  const tokens = mockMode ? ['mock'] : findTokens();
+  if (mockMode) (window as unknown as { mockVideos: Record<string, string> }).mockVideos = cfg.mock!.videos;
+  const load = async (token: string) => {
+    const repo = mockMode ? mockRepo(cfg.mock!.snapshot, mockMode) : github(token, cfg.repo, branch);
+    const [user, snap] = await Promise.all([repo.user(), repo.snapshot(), loadCatalogue(cfg.admin, cfg.site)]);
+    return { repo, user, snap };
+  };
+  const result = await signIn(
+    tokens,
+    load,
+    {
+      trying: (message, attempt) => (account.textContent = `GitHub didn’t answer (${message}) — trying again (${attempt}/2)…`),
+      wait: (ms) => new Promise((r) => setTimeout(r, ms)),
+      stuck: (message) =>
+        new Promise<void>((resolve) => {
+          account.replaceChildren(
+            h('span', { 'data-tone': 'error' }, `Couldn’t load from GitHub: ${message}. `),
+            'You are still signed in — this is GitHub or the connection. ',
+            h('button', { class: 'btn', type: 'button', onclick: () => ((account.textContent = 'Trying again…'), resolve()) }, 'RETRY'),
+          );
+        }),
+    },
+    forgetToken,
+  );
+  if (!result.ok) {
+    signInForm(result.reason === 'none' ? 'Not signed in.' : 'GitHub refused the saved token (expired or revoked).');
     return false;
   }
+  const { repo, user, snap } = result.value;
+  store.repo = repo;
+  store.snap = snap;
+  parseAll();
+  // Our own copy: Sveltia forgets its token when one of its loads fails, quick add then still has this one.
+  if (!mockMode) keepToken(result.token);
+  account.replaceChildren(
+    `Signed in as ${user} · ${cfg.repo} (${branch})${mockMode ? ' · MOCK: nothing is sent to GitHub' : ''}${note} · `,
+    h(
+      'button',
+      {
+        class: 'qa-link-btn',
+        type: 'button',
+        title: 'Forget the token in this browser (here and in the admin)',
+        onclick: () => {
+          if (!confirm('Sign out here and in the admin? You will need your GitHub token to sign in again.')) return;
+          signOutEverywhere();
+          location.reload();
+        },
+      },
+      'sign out',
+    ),
+  );
+  return true;
 }

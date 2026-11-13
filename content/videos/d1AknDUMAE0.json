@@ -1,0 +1,28 @@
+{
+  "title": "oftheblue(오브더블루) \"풍선인간\" Blind Performance Video",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=d1AknDUMAE0",
+  "published": "2026-11-10",
+  "artists": [
+    "oftheblue"
+  ],
+  "songs": [
+    {
+      "title": "Aerotherapy",
+      "title_ko": "풍선인간"
+    }
+  ],
+  "type": "performance",
+  "channel": "JYP Entertainment",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "geobugseom",
+      "screenshots": [
+        {
+          "image": "/media/full/9c91277376ae.webp"
+        }
+      ]
+    }
+  ]
+}

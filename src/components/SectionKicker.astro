@@ -1,25 +1,36 @@
 ---
 /**
- * The small label above a list page's title: its section, then the sub-page it sits under, each a link
- * back up ("LOCATIONS › KINDS OF PLACE" on a kind of place). Plain text on the section's own page.
+ * The breadcrumb above a page's title: its section, then the pages it sits under, each a link back up
+ * ("LOCATIONS › KINDS OF PLACE" on a kind of place, "LOCATIONS › COLUMBUS STUDIO" on one of its spaces).
+ * Plain text on the section's own page. `trail` adds parents after the section (detail pages); the slot
+ * goes at the end (a video's type badge).
  */
 import { url } from '../lib/data';
 import { pagePath, where } from '../lib/nav';
 
+interface Props {
+  trail?: { label: string; href: string }[];
+}
 const path = pagePath(Astro.url);
 const { section, sub } = where(path);
-const trail = [section, sub].filter((x) => x && x.path !== path);
+const links = [
+  ...[section, sub].filter((x) => x && x.path !== path).map((x) => ({ label: x!.label.toUpperCase(), href: url(x!.path) })),
+  ...(Astro.props.trail ?? []),
+];
+const extra = Astro.slots.has('default');
 ---
 
-<span class="kicker">
+<nav class="kicker" aria-label="Breadcrumb">
   {
-    trail.length === 0
+    links.length === 0
       ? section?.label.toUpperCase()
-      : trail.map((x, i) => (
+      : links.map((x, i) => (
           <>
             {i > 0 && <span aria-hidden="true"> › </span>}
-            <a href={url(x!.path)}>{x!.label.toUpperCase()}</a>
+            <a href={x.href}>{x.label}</a>
           </>
         ))
   }
-</span>
+  {extra && <span aria-hidden="true"> › </span>}
+  <slot />
+</nav>

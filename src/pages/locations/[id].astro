@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import SectionKicker from '../../components/SectionKicker.astro';
 import Window from '../../components/Window.astro';
 import MapView from '../../components/MapView.astro';
 import Shots from '../../components/Shots.astro';
@@ -58,21 +59,8 @@ const nearby = l.tags?.length
 
 <Base title={l.name} description={`${here.length} music videos filmed at ${l.name}${l.address ? `, ${l.address}` : ''}.`} searchable>
   <header class="page-head">
-    <span class="kicker">LOCATION</span>
+    <SectionKicker trail={[...studios].reverse().map((s) => ({ label: s.data.name, href: href.location(s.id) }))} />
     <h1>{l.name}</h1>
-    {
-      studios.length > 0 && (
-        <p class="sub">
-          Part of{' '}
-          {studios.map((s, i) => (
-            <>
-              {i > 0 && ' › '}
-              <a href={href.location(s.id)}>{s.data.name}</a>
-            </>
-          ))}
-        </p>
-      )
-    }
     <p class="sub">
       {
         spaces.length > 0
@@ -81,127 +69,28 @@ const nearby = l.tags?.length
       }
       {l.sets?.length ? ` · ${l.sets.length} sets` : ''}
     </p>
+    <p class="sub">
+      {l.address && <span>{l.address} · </span>}
+      {links.map((x) => (
+        <>
+          <a href={x.u} target="_blank" rel="noopener">{x.label} ↗</a>
+          {' · '}
+        </>
+      ))}
+      <a href="#details">Map &amp; details ↓</a>
+    </p>
   </header>
-
-  <div class="split">
-    <Window title="Info" tone="chrome">
-      <dl class="facts">
-        {l.address && (<><dt>ADDRESS</dt><dd>{l.address}</dd></>)}
-        {
-          l.coordinates && (
-            <>
-              <dt>GPS</dt>
-              <dd>
-                {l.coordinates.lat.toFixed(5)}, {l.coordinates.lng.toFixed(5)}
-                {l.coordinates_source?.includes('approximate') && <span class="muted"> (approximate)</span>}
-              </dd>
-            </>
-          )
-        }
-        {
-          links.length > 0 && (
-            <>
-              <dt>LINKS</dt>
-              <dd>
-                {links.map((x, i) => (
-                  <>
-                    {i > 0 && ' · '}
-                    <a href={x.u} target="_blank" rel="noopener">{x.label} ↗</a>
-                  </>
-                ))}
-              </dd>
-            </>
-          )
-        }
-        {
-          studio && (
-            <>
-              <dt>PART OF</dt>
-              <dd>
-                <a href={href.location(studio.id)}>{studio.data.name}</a>
-                {studioLinks.map((x) => (
-                  <>
-                    {' · '}
-                    <a href={x.u} target="_blank" rel="noopener">{x.label} ↗</a>
-                  </>
-                ))}
-              </dd>
-            </>
-          )
-        }
-        {
-          l.tags?.length ? (
-            <>
-              <dt>TAGS</dt>
-              <dd>
-                <ul class="chips">
-                  {l.tags.map((t) => <li><a class="chip" href={href.tag(slugify(t))}>{t}</a></li>)}
-                </ul>
-              </dd>
-            </>
-          ) : null
-        }
-        {
-          l.reference_videos?.length ? (
-            <>
-              <dt>SEE ALSO</dt>
-              <dd>
-                {l.reference_videos.map((u, i) => (
-                  <>
-                    {i > 0 && ' · '}
-                    <a href={u} target="_blank" rel="noopener">Reference video {l.reference_videos!.length > 1 ? i + 1 : ''} ↗</a>
-                  </>
-                ))}
-              </dd>
-            </>
-          ) : null
-        }
-        {l.notes && (<><dt>NOTES</dt><dd>{l.notes}</dd></>)}
-        {unknown && (<><dt>STATUS</dt><dd>Not identified yet.</dd></>)}
-      </dl>
-    </Window>
-    <Window title={spaces.length ? 'Map of its places' : 'Map'} flush>
-      <MapView pins={pins} height={280} label={`Map of ${l.name}`} />
-    </Window>
-  </div>
-
-  {
-    filmedBy.length > 0 && (
-      <Window title="Artists who filmed here" tone="chrome">
-        <ul class="chips">
-          {filmedBy.map(({ artist, count }) => (
-            <li>
-              <a class="chip" href={href.artist(artist.id)}>
-                {artist.data.name}
-                <b>{count}</b>
-              </a>
-            </li>
-          ))}
-        </ul>
-      </Window>
-    )
-  }
 
   {
     spaces.length > 0 && (
-      <Window title={`Places here (${rooms.length})`} tone="chrome">
+      <Window title={`Places here (${rooms.length})`} tone="pink">
         <SpaceList parent={location.id} />
       </Window>
     )
   }
 
-  {
-    l.photos?.length ? (
-      <Window title="Photos of the place" tone="chrome">
-        <div data-lightbox-group>
-          <Shots shots={l.photos.map((image) => ({ image }))} caption={l.name} />
-        </div>
-      </Window>
-    ) : null
-  }
-
   {(here.length > 0 || spaces.length === 0) && (
-  <Window title="Filmed here" tone="pink">
+  <Window title="Filmed here" tone={spaces.length > 0 ? 'blue' : 'pink'}>
     {
       l.sets?.length ? (
         <div class="chips" role="group" aria-label="Filter by set" id="set-filter" style="margin-bottom:16px">
@@ -270,12 +159,107 @@ const nearby = l.tags?.length
       })
     }
     </div>
+    <p class="show-all" hidden><button class="btn" type="button" id="show-all"></button></p>
   </Window>
   )}
 
+  <div class="split" id="details">
+    <Window title={spaces.length ? 'Map of its places' : 'Map'} box flush>
+      <MapView pins={pins} height={280} label={`Map of ${l.name}`} />
+    </Window>
+    <Window title="Details" box>
+      <dl class="facts">
+        {l.address && (<><dt>ADDRESS</dt><dd>{l.address}</dd></>)}
+        {
+          l.coordinates && (
+            <>
+              <dt>GPS</dt>
+              <dd>
+                {l.coordinates.lat.toFixed(5)}, {l.coordinates.lng.toFixed(5)}
+                {l.coordinates_source?.includes('approximate') && <span class="muted"> (approximate)</span>}
+              </dd>
+            </>
+          )
+        }
+        {
+          studio && (
+            <>
+              <dt>PART OF</dt>
+              <dd>
+                <a href={href.location(studio.id)}>{studio.data.name}</a>
+                {studioLinks.map((x) => (
+                  <>
+                    {' · '}
+                    <a href={x.u} target="_blank" rel="noopener">{x.label} ↗</a>
+                  </>
+                ))}
+              </dd>
+            </>
+          )
+        }
+        {
+          l.tags?.length ? (
+            <>
+              <dt>KIND</dt>
+              <dd>
+                <ul class="chips">
+                  {l.tags.map((t) => <li><a class="chip" href={href.tag(slugify(t))}>{t}</a></li>)}
+                </ul>
+              </dd>
+            </>
+          ) : null
+        }
+        {
+          l.reference_videos?.length ? (
+            <>
+              <dt>SEE ALSO</dt>
+              <dd>
+                {l.reference_videos.map((u, i) => (
+                  <>
+                    {i > 0 && ' · '}
+                    <a href={u} target="_blank" rel="noopener">Reference video {l.reference_videos!.length > 1 ? i + 1 : ''} ↗</a>
+                  </>
+                ))}
+              </dd>
+            </>
+          ) : null
+        }
+        {l.notes && (<><dt>NOTES</dt><dd>{l.notes}</dd></>)}
+        {unknown && (<><dt>STATUS</dt><dd>Not identified yet.</dd></>)}
+      </dl>
+    </Window>
+  </div>
+
+  {
+    filmedBy.length > 0 && (
+      <Window title="Artists who filmed here" box>
+        <ul class="chips">
+          {filmedBy.map(({ artist, count }) => (
+            <li>
+              <a class="chip" href={href.artist(artist.id)}>
+                {artist.data.name}
+                <b>{count}</b>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </Window>
+    )
+  }
+
+  {
+    l.photos?.length ? (
+      <Window title="Photos of the place" box>
+        <div data-lightbox-group>
+          <Shots shots={l.photos.map((image) => ({ image }))} caption={l.name} />
+        </div>
+      </Window>
+    ) : null
+  }
+
   {
     nearby.length > 0 && (
-      <Window title="Similar places" tone="chrome">
+      <Window title="Similar places" box>
         <ul class="dotlist columns">
           {nearby.map((o) => (
             <li>
@@ -290,11 +274,34 @@ const nearby = l.tags?.length
 
 <script>
   const buttons = document.querySelectorAll<HTMLButtonElement>('#set-filter button');
-  const items = document.querySelectorAll<HTMLElement>('article.appearance[data-sets]');
+  const items = [...document.querySelectorAll<HTMLElement>('article.appearance[data-sets]')];
   const compare = document.querySelector<HTMLAnchorElement>('#compare');
+  const showAll = document.querySelector<HTMLButtonElement>('#show-all');
+  // "Filmed here" shows its first videos only, so the map and details below stay within reach; a button shows
+  // the rest. Without JS everything shows. A list barely over the limit is shown whole.
+  const FIRST = 4;
+  let set = '';
+  let expanded = false;
+  function render() {
+    const matches = items.filter((item) => !set || item.dataset.sets!.split(' ').includes(set));
+    const cut = !expanded && matches.length > FIRST + 2;
+    items.forEach((item) => {
+      const i = matches.indexOf(item);
+      item.hidden = i === -1 || (cut && i >= FIRST);
+      item.querySelectorAll<HTMLElement>('.shots > li').forEach((li) => (li.hidden = !!set && li.dataset.set !== set));
+    });
+    if (showAll) {
+      showAll.parentElement!.hidden = !cut;
+      showAll.textContent = `SHOW ALL ${matches.length} VIDEOS ▾`;
+    }
+  }
+  showAll?.addEventListener('click', () => {
+    expanded = true;
+    render();
+  });
   buttons.forEach((button) =>
     button.addEventListener('click', () => {
-      const set = button.dataset.set;
+      set = button.dataset.set!;
       buttons.forEach((b) => b.setAttribute('aria-pressed', String(b === button)));
       if (compare) {
         const target = new URL(compare.href);
@@ -302,17 +309,19 @@ const nearby = l.tags?.length
         else target.searchParams.delete('set');
         compare.href = target.href;
       }
-      items.forEach((item) => {
-        item.hidden = !!set && !item.dataset.sets!.split(' ').includes(set);
-        item.querySelectorAll<HTMLElement>('.shots > li').forEach((li) => (li.hidden = !!set && li.dataset.set !== set));
-      });
+      render();
     }),
   );
+  render();
 </script>
 
 <style>
   .compare {
     margin: 0 0 14px;
+  }
+  .show-all {
+    margin: 16px 0 0;
+    text-align: center;
   }
   #set-filter button[aria-pressed='true'] {
     color: #fff;

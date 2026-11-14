@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import SectionKicker from '../../components/SectionKicker.astro';
 import Window from '../../components/Window.astro';
 import MapView from '../../components/MapView.astro';
 import VideoCard from '../../components/VideoCard.astro';
@@ -39,30 +40,17 @@ const plural = (n: number, word: string) => `${n} ${word}${n === 1 ? '' : 's'}`;
 
 <Base title={name} description={`Filming locations of ${name}'s music videos.`} searchable>
   <header class="page-head">
-    <span class="kicker">ARTIST</span>
+    <SectionKicker trail={[...groups].reverse().map((g) => ({ label: g.data.name, href: href.artist(g.id) }))} />
     <h1>{name}{name_ko && <span class="muted" lang="ko"> {name_ko}</span>}</h1>
     <p class="sub">
       {plural(allVideos.length, 'video')} · {plural(places.length, 'location')}
       {memberVideos.length > 0 && ` · includes ${plural(memberVideos.length, 'member / unit')}`}
     </p>
-    {
-      groups.length > 0 && (
-        <p class="sub">
-          Part of{' '}
-          {groups.map((g, i) => (
-            <>
-              {i > 0 && ', '}
-              <a href={href.artist(g.id)}>{g.data.name}</a>
-            </>
-          ))}
-        </p>
-      )
-    }
   </header>
 
   {
     directMembers.length > 0 && (
-      <Window title="Members & units" tone="chrome">
+      <Window title="Members & units" box>
         <ul class="chips">
           {directMembers.map((m) => (
             <li>
@@ -79,7 +67,7 @@ const plural = (n: number, word: string) => `${n} ${word}${n === 1 ? '' : 's'}`;
 
   {
     own.length > 0 && (
-      <Window title={memberVideos.length ? `Videos as ${name}` : 'Videos'}>
+      <Window title={memberVideos.length ? `Videos as ${name}` : 'Videos'} tone="pink">
         <ul class="cards">{own.map((v) => <li><VideoCard video={v} /></li>)}</ul>
       </Window>
     )
@@ -87,17 +75,17 @@ const plural = (n: number, word: string) => `${n} ${word}${n === 1 ? '' : 's'}`;
 
   {
     memberVideos.map(({ member, videos }) => (
-      <Window title={`Videos by ${member.data.name}`} tone="pink" href={href.artist(member.id)}>
+      <Window title={`Videos by ${member.data.name}`} box={own.length > 0} href={href.artist(member.id)}>
         <ul class="cards">{videos.map((v) => <li><VideoCard video={v} /></li>)}</ul>
       </Window>
     ))
   }
 
   <div class="split">
-    <Window title="Where they filmed" flush>
+    <Window title="Where they filmed" box flush>
       <MapView pins={pins} height={320} label={`Map of ${name}'s filming locations`} />
     </Window>
-    <Window title="Locations" tone="chrome">
+    <Window title="Locations" box>
       <ul class="dotlist">
         {
           places.map((p) => (

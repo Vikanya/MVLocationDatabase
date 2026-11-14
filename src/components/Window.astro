@@ -3,33 +3,53 @@
  * A panel framed like a Windows 2000 window: gradient title bar + decorative buttons. With `href`, the whole
  * title bar links to the full page that the window previews, and an OPEN ▸ button replaces the _ □ × ones so
  * the link shows without hovering.
+ *
+ * `box`: a Windows 2000 group box instead (flat frame, its label on the border), for secondary panels. Detail
+ * pages use one full window for their main content and group boxes for the rest.
  */
 interface Props {
   title: string;
   tone?: 'blue' | 'pink' | 'chrome';
   heading?: 'h1' | 'h2' | 'div';
   flush?: boolean;
+  box?: boolean;
   href?: string;
   id?: string;
   class?: string;
 }
-const { title, tone = 'blue', heading = 'h2', flush = false, href, id, class: className } = Astro.props;
+const { title, tone = 'blue', heading = 'h2', flush = false, box = false, href, id, class: className } = Astro.props;
 const Heading = heading;
 ---
 
-<section class:list={['win', className]} data-tone={tone} id={id}>
-  <div class:list={['win-title', { 'win-link': href }]}>
-    <span class="win-icon" aria-hidden="true" data-pagefind-ignore>✦</span>
-    <Heading class="win-heading">{href ? <a href={href}>{title}</a> : title}</Heading>
-    {
-      href ? (
-        <span class="win-open" aria-hidden="true" data-pagefind-ignore>OPEN ▸</span>
-      ) : (
-        <span class="win-btns" aria-hidden="true" data-pagefind-ignore><i>_</i><i>□</i><i>×</i></span>
-      )
-    }
-  </div>
-  <div class:list={['win-body', { flush }]}>
-    <slot />
-  </div>
-</section>
+{
+  box ? (
+    <section class:list={['gbox', className]} id={id}>
+      <div class="gbox-head">
+        <Heading class="gbox-label">{href ? <a href={href}>{title}</a> : title}</Heading>
+        {href && (
+          <a class="gbox-open" href={href} tabindex="-1" aria-hidden="true" data-pagefind-ignore>
+            OPEN ▸
+          </a>
+        )}
+      </div>
+      <div class:list={['gbox-body', { flush }]}>
+        <slot />
+      </div>
+    </section>
+  ) : (
+    <section class:list={['win', className]} data-tone={tone} id={id}>
+      <div class:list={['win-title', { 'win-link': href }]}>
+        <span class="win-icon" aria-hidden="true" data-pagefind-ignore>✦</span>
+        <Heading class="win-heading">{href ? <a href={href}>{title}</a> : title}</Heading>
+        {href ? (
+          <span class="win-open" aria-hidden="true" data-pagefind-ignore>OPEN ▸</span>
+        ) : (
+          <span class="win-btns" aria-hidden="true" data-pagefind-ignore><i>_</i><i>□</i><i>×</i></span>
+        )}
+      </div>
+      <div class:list={['win-body', { flush }]}>
+        <slot />
+      </div>
+    </section>
+  )
+}

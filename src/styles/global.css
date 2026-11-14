@@ -283,6 +283,63 @@ main {
   position: absolute;
   inset: 0;
 }
+/* Group box (secondary panels): a flat, unshadowed frame with its label sitting on the top border. */
+.gbox {
+  margin: 22px 0 16px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  box-shadow: inset 1px 1px 0 var(--bevel-hi), inset -1px -1px 0 var(--chrome-lo);
+}
+.split > .gbox {
+  margin-top: 10px; /* its label then lines up with the top of a window beside it */
+}
+.gbox-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin: -10px 10px 0;
+}
+.gbox-label {
+  margin: 0;
+  padding: 2px 8px;
+  font: 400 11px/1.3 var(--f-display);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text);
+  background: var(--paper);
+  border: 1px solid var(--line);
+}
+.gbox-label a,
+.gbox-label a:visited {
+  color: var(--link);
+}
+.gbox-open {
+  font: 10px/1.2 var(--f-pixel);
+  padding: 2px 7px;
+  white-space: nowrap;
+  color: var(--text);
+  text-decoration: none;
+  background: var(--chrome);
+  border: 1px solid var(--line);
+  box-shadow: var(--bevel);
+}
+.gbox-open:visited {
+  color: var(--text);
+}
+.gbox-open:hover {
+  color: var(--link);
+  background: var(--paper);
+}
+.gbox-body {
+  padding: 12px 14px 14px;
+}
+.gbox-body > :last-child {
+  margin-bottom: 0;
+}
+.gbox-body.flush {
+  padding: 10px 0 0;
+}
 .win-open {
   padding: 2px 7px;
   font: 10px/1.2 var(--f-pixel);
@@ -584,9 +641,10 @@ main {
   color: var(--ink-soft);
 }
 
-/* The kicker on a sub-page links back up to its section (and to the page it sits under). */
-.page-head .kicker a {
-  color: inherit;
+/* The kicker is a breadcrumb: its links go back up to the section and the pages above this one. */
+.page-head .kicker a,
+.page-head .kicker a:visited {
+  color: var(--link);
   text-decoration: none;
 }
 .page-head .kicker a:hover {
@@ -1094,6 +1152,7 @@ main {
 .more {
   margin: 12px 0 0;
   text-align: right;
+  font: 11px var(--f-pixel);
 }
 /* Previews on the section hubs: as many as fit on one row; the rest of the row grid is 0 tall and hidden. */
 .cards.one-row,

@@ -1,7 +1,7 @@
 // The video quick-add form (src/pages/admin/add.astro). One state object, kept as a draft in IndexedDB; sections
 // are redrawn when their structure changes, text fields only update the state (so typing never loses focus).
 // Locations can be created or edited inline with the shared editor (location-form.ts).
-import { parseYoutubeId, slugify } from '../../lib/ids.ts';
+import { parseYoutubeId, slugify, VIDEO_TYPES, VIDEO_TYPE_NAME } from '../../lib/ids.ts';
 import { look } from './catalogue.ts';
 import { $, chip, doneBox, field, fill, flash, guessBadge, h, onEdited, searchBox, textInput, thumbImg } from './dom.ts';
 import { draftStore } from './draft.ts';
@@ -263,7 +263,7 @@ function renderVideo() {
     );
   }
 
-  const types: [VideoType, string][] = [['mv', 'MV'], ['performance', 'Performance'], ['live', 'Live'], ['cover', 'Cover'], ['clip', 'Clip / special'], ['other', 'Other']];
+  const types: [VideoType, string][] = VIDEO_TYPES.map((t) => [t, VIDEO_TYPE_NAME[t]]);
   const songRows = h('div', { class: 'qa-songs' });
   const drawSongs = () =>
     songRows.replaceChildren(

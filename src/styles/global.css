@@ -9,6 +9,8 @@
   --lime: #c8ff1e;
   --cyan: #18cfff;
   --orange: #ff6b00;
+  --violet: #8a2be2;
+  --yellow: #ffe14d;
   --electric: #2340ff;
   --electric-lo: #1427b8;
 
@@ -211,6 +213,17 @@ main {
   .desktop {
     padding: 10px 16px 16px;
   }
+  .masthead {
+    margin-bottom: 10px;
+    padding: 10px 12px 9px;
+  }
+  .wordmark-main {
+    font-size: 19px;
+  }
+  .wordmark-sub {
+    margin-top: 6px;
+    font-size: 11px;
+  }
   .shell {
     grid-template-columns: 1fr;
   }
@@ -256,6 +269,49 @@ main {
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
+/* A title bar that links to the full page the window previews: the whole bar is the click target. */
+.win-link {
+  position: relative;
+}
+.win-link a,
+.win-link a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+.win-link a::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+.win-open {
+  padding: 2px 7px;
+  font: 10px/1.2 var(--f-pixel);
+  white-space: nowrap;
+  color: var(--text);
+  background: var(--chrome);
+  border: 1px solid var(--line);
+  box-shadow: var(--bevel);
+}
+.win-link:hover {
+  filter: brightness(1.12);
+}
+.win-link:hover a {
+  text-decoration: underline;
+}
+.win-link:hover .win-open {
+  color: var(--link);
+  background: var(--paper);
+}
+.win-link:active .win-open {
+  box-shadow: inset 1px 1px 0 var(--chrome-lo), inset -1px -1px 0 var(--bevel-hi);
+}
+.win-link a:focus-visible {
+  outline: none;
+}
+.win-link:has(a:focus-visible) {
+  outline: 2px solid var(--text);
+  outline-offset: 1px;
+}
 .win-icon {
   font-size: 12px;
   color: var(--lime);
@@ -298,7 +354,7 @@ main {
   padding: 0;
   list-style: none;
 }
-.nav a,
+.nav > li > a,
 .btn {
   display: flex;
   align-items: center;
@@ -313,20 +369,20 @@ main {
   box-shadow: var(--bevel);
   cursor: pointer;
 }
-.nav a:visited {
+.nav > li > a:visited {
   color: var(--text);
 }
-.nav a:hover,
+.nav > li > a:hover,
 .btn:hover {
   background: var(--lime);
   color: var(--on-accent);
 }
-.nav a[aria-current='page'] {
+.nav > li > a[aria-current] {
   color: #fff;
   background: var(--electric);
   box-shadow: inset 1px 1px 0 var(--electric-lo), inset -1px -1px 0 #7d8cff;
 }
-.nav a[aria-current='page']::after {
+.nav > li > a[aria-current]::after {
   content: '◀';
   font-size: 9px;
 }
@@ -335,28 +391,63 @@ main {
   justify-content: center;
 }
 .btn:active,
-.nav a:active {
+.nav > li > a:active {
   box-shadow: inset -1px -1px 0 var(--bevel-hi), inset 1px 1px 0 var(--chrome-lo);
   transform: translate(1px, 1px);
 }
 
+.menu-win nav {
+  margin-top: 10px;
+}
+.menu-extra {
+  margin-top: 10px;
+}
+.menu-more {
+  display: none;
+}
+
+/* Phone: the menu becomes a compact bar at the top — search on one row, the sections on the next;
+   the random and theme buttons hide behind the ≡ button. */
 @media (max-width: 760px) {
+  .menu-win .win-title {
+    display: none;
+  }
+  .menu-win .win-body {
+    padding: 8px;
+  }
+  .menu-win nav {
+    margin-top: 6px;
+  }
   .nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  .nav a {
+  .nav > li > a {
     justify-content: center;
+    padding: 7px 4px;
   }
-  .nav a[aria-current='page']::after {
+  .nav > li > a[aria-current]::after {
     display: none;
+  }
+  .menu-more {
+    display: inline-flex;
+    min-width: 34px;
+  }
+  .menu-extra {
+    display: none;
+    margin-top: 6px;
+  }
+  .menu-extra.open {
+    display: block;
+  }
+  .menu-extra .theme-toggle {
+    margin-top: 4px;
   }
 }
 
 .search-box {
   display: flex;
   gap: 4px;
-  margin-top: 10px;
 }
 .find {
   position: relative;
@@ -414,7 +505,6 @@ main {
 .random {
   display: grid;
   gap: 4px;
-  margin-top: 6px;
 }
 /* Without JS, or if the index fails to load, the buttons are removed. */
 .random[hidden] {
@@ -494,6 +584,15 @@ main {
   color: var(--ink-soft);
 }
 
+/* The kicker on a sub-page links back up to its section (and to the page it sits under). */
+.page-head .kicker a {
+  color: inherit;
+  text-decoration: none;
+}
+.page-head .kicker a:hover {
+  color: var(--link);
+  text-decoration: underline;
+}
 /* ------------------------------------------------------------ badges & chips */
 
 .badge {
@@ -517,7 +616,21 @@ main {
   background: var(--orange);
   color: #fff;
 }
-.badge[data-kind='clip'],
+.badge[data-kind='teaser'] {
+  background: var(--violet);
+  color: #fff;
+}
+.badge[data-kind='stage'] {
+  background: var(--yellow);
+}
+.badge[data-kind='ad'] {
+  background: var(--screen);
+  color: var(--orange);
+}
+.badge[data-kind='behind'] {
+  background: var(--screen);
+  color: var(--cyan);
+}
 .badge[data-kind='other'] {
   color: var(--text);
   background: var(--chrome);
@@ -525,10 +638,6 @@ main {
 .badge[data-kind='artist'] {
   background: var(--electric);
   color: #fff;
-}
-.badge[data-kind='unknown'] {
-  background: var(--screen);
-  color: var(--lime);
 }
 .badge[data-kind='unsure'] {
   background: var(--unsure);
@@ -981,20 +1090,40 @@ main {
 .welcome p {
   margin: 0 0 10px;
 }
-.welcome-note {
-  padding: 8px 10px;
-  font-size: 13px;
-  background: var(--note);
-  border: 1px dashed var(--orange);
-}
 
 .more {
   margin: 12px 0 0;
   text-align: right;
-  font: 11px var(--f-pixel);
 }
-.more .btn {
-  margin-right: 12px;
+/* Previews on the section hubs: as many as fit on one row; the rest of the row grid is 0 tall and hidden. */
+.cards.one-row,
+.shot-strip {
+  grid-template-rows: auto;
+  grid-auto-rows: 0;
+  row-gap: 0;
+  overflow: hidden;
+}
+.cards.one-row {
+  padding: 2px 4px 4px 2px; /* room for the cards' shadow inside the clip */
+}
+.shot-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  column-gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.shot-strip img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border: 1px solid var(--line);
+}
+.shot-strip a:hover img {
+  outline: 2px solid var(--electric);
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -87,10 +87,7 @@ const plural = (n: number, word: string) => `${n} ${word}${n === 1 ? '' : 's'}`;
 
   {
     memberVideos.map(({ member, videos }) => (
-      <Window title={`Videos by ${member.data.name}`} tone="pink">
-        <p class="more" style="margin:0 0 10px;text-align:left">
-          <a href={href.artist(member.id)}>{member.data.name.toUpperCase()} PAGE ▸</a>
-        </p>
+      <Window title={`Videos by ${member.data.name}`} tone="pink" href={href.artist(member.id)}>
         <ul class="cards">{videos.map((v) => <li><VideoCard video={v} /></li>)}</ul>
       </Window>
     ))
@@ -106,7 +103,6 @@ const plural = (n: number, word: string) => `${n} ${word}${n === 1 ? '' : 's'}`;
           places.map((p) => (
             <li>
               <a href={href.location(p.location.id)}>{p.location.data.name}</a>
-              {p.location.data.status === 'unknown' && <span class="badge" data-kind="unknown">???</span>}
               <span class="muted"> · {p.videos}</span>
             </li>
           ))

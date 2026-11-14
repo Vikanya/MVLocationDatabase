@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import SectionKicker from '../components/SectionKicker.astro';
 import Window from '../components/Window.astro';
 import MapView from '../components/MapView.astro';
 import { db, pinsFor } from '../lib/data';
@@ -10,8 +11,8 @@ const pins = pinsFor(data.locations, (l) => data.videoCount(l.id));
 
 <Base title="Map" description="Every located K-pop MV filming spot on one map.">
   <header class="page-head">
-    <span class="kicker">MAP</span>
-    <h1>Every spot on the map</h1>
+    <SectionKicker />
+    <h1>Map</h1>
     <p class="sub">{pins.length} places. Click the map to zoom with the scroll wheel.</p>
   </header>
   <Window title="Map" flush>

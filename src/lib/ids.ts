@@ -12,3 +12,18 @@ export function slugify(text: string) {
     .replace(/[^0-9a-z가-힣]+/g, '-')
     .replace(/^-|-$/g, '');
 }
+
+/** Kinds of video, in menu order. Also listed in public/admin/config.yml and public/admin/artist-videos.js. */
+export const VIDEO_TYPES = ['mv', 'teaser', 'performance', 'stage', 'live', 'cover', 'ad', 'behind', 'other'] as const;
+export type VideoType = (typeof VIDEO_TYPES)[number];
+export const VIDEO_TYPE_NAME: Record<VideoType, string> = {
+  mv: 'MV',
+  teaser: 'Teaser',
+  performance: 'Performance',
+  stage: 'Stage',
+  live: 'Live',
+  cover: 'Cover',
+  ad: 'Ad',
+  behind: 'Behind',
+  other: 'Other',
+};

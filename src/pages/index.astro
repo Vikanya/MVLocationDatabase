@@ -14,7 +14,6 @@ const busiest = data.locations
   .sort((a, b) => count(b.id) - count(a.id))
   .slice(0, 8);
 const picks = stableShuffle(data.videos.filter((v) => v.data.platform === 'youtube'), 'home').slice(0, 8);
-const unknown = data.locations.filter((l) => l.data.status === 'unknown').length;
 const recent = (await recentlyAdded()).slice(0, 8);
 const topArtists =[...data.artists].sort((a, b) => data.byArtist(b.id).length - data.byArtist(a.id).length).slice(0, 14);
 ---
@@ -28,9 +27,6 @@ const topArtists =[...data.artists].sort((a, b) => data.byArtist(b.id).length - 
           Browse by <a href={url('artists/')}>artist</a>, <a href={url('locations/')}>location</a> or on the{' '}
           <a href={url('map/')}>map</a>.
         </p>
-        <p class="welcome-note">
-          {unknown} locations not identified yet <span class="badge" data-kind="unknown">???</span>
-        </p>
       </div>
     </Window>
 
@@ -43,7 +39,7 @@ const topArtists =[...data.artists].sort((a, b) => data.byArtist(b.id).length - 
 
   {
     recent.length > 0 && (
-      <Window title="Recently added">
+      <Window title="Recently added" href={url('new/')}>
         <ul class="cards">
           {recent.map((a) => (
             <li>
@@ -51,29 +47,26 @@ const topArtists =[...data.artists].sort((a, b) => data.byArtist(b.id).length - 
             </li>
           ))}
         </ul>
-        <p class="more"><a href={url('new/')}>ALL NEW ▸</a></p>
       </Window>
     )
   }
 
-  <Window title="World map" flush>
+  <Window title="World map" flush href={url('map/')}>
     <MapView pins={pins} height={380} />
   </Window>
 
-  <Window title="Busiest spots" tone="pink">
+  <Window title="Busiest spots" tone="pink" href={url('locations/')}>
     <ul class="cards">{busiest.map((l) => <li><LocationCard location={l} /></li>)}</ul>
-    <p class="more"><a href={url('locations/')}>ALL LOCATIONS ▸</a></p>
   </Window>
 
   <div class="split">
-    <Window title="Random picks">
+    <Window title="Random picks" href={url('videos/')}>
       <ul class="cards" id="picks" data-src={url('picks.json')}>{picks.map((v) => <li><VideoCard video={v} /></li>)}</ul>
       <p class="more">
         <button class="btn" type="button" id="reshuffle" hidden>↻ SHUFFLE</button>
-        <a href={url('videos/')}>ALL VIDEOS ▸</a>
       </p>
     </Window>
-    <Window title="Most seen artists" tone="chrome">
+    <Window title="Most seen artists" tone="chrome" href={url('artists/')}>
       <ol class="dotlist">
         {
           topArtists.map((a) => (
@@ -85,7 +78,6 @@ const topArtists =[...data.artists].sort((a, b) => data.byArtist(b.id).length - 
           ))
         }
       </ol>
-      <p class="more"><a href={url('artists/')}>ALL ARTISTS ▸</a></p>
     </Window>
   </div>
 </Base>

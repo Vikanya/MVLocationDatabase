@@ -1,22 +1,33 @@
 ---
-/** A panel framed like a Windows 2000 window: gradient title bar + decorative buttons. */
+/**
+ * A panel framed like a Windows 2000 window: gradient title bar + decorative buttons. With `href`, the whole
+ * title bar links to the full page that the window previews, and an OPEN ▸ button replaces the _ □ × ones so
+ * the link shows without hovering.
+ */
 interface Props {
   title: string;
   tone?: 'blue' | 'pink' | 'chrome';
   heading?: 'h1' | 'h2' | 'div';
   flush?: boolean;
+  href?: string;
   id?: string;
   class?: string;
 }
-const { title, tone = 'blue', heading = 'h2', flush = false, id, class: className } = Astro.props;
+const { title, tone = 'blue', heading = 'h2', flush = false, href, id, class: className } = Astro.props;
 const Heading = heading;
 ---
 
 <section class:list={['win', className]} data-tone={tone} id={id}>
-  <div class="win-title">
+  <div class:list={['win-title', { 'win-link': href }]}>
     <span class="win-icon" aria-hidden="true" data-pagefind-ignore>✦</span>
-    <Heading class="win-heading">{title}</Heading>
-    <span class="win-btns" aria-hidden="true" data-pagefind-ignore><i>_</i><i>□</i><i>×</i></span>
+    <Heading class="win-heading">{href ? <a href={href}>{title}</a> : title}</Heading>
+    {
+      href ? (
+        <span class="win-open" aria-hidden="true" data-pagefind-ignore>OPEN ▸</span>
+      ) : (
+        <span class="win-btns" aria-hidden="true" data-pagefind-ignore><i>_</i><i>□</i><i>×</i></span>
+      )
+    }
   </div>
   <div class:list={['win-body', { flush }]}>
     <slot />

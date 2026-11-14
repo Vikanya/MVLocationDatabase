@@ -1,0 +1,25 @@
+---
+/**
+ * The small label above a list page's title: its section, then the sub-page it sits under, each a link
+ * back up ("LOCATIONS › KINDS OF PLACE" on a kind of place). Plain text on the section's own page.
+ */
+import { url } from '../lib/data';
+import { pagePath, where } from '../lib/nav';
+
+const path = pagePath(Astro.url);
+const { section, sub } = where(path);
+const trail = [section, sub].filter((x) => x && x.path !== path);
+---
+
+<span class="kicker">
+  {
+    trail.length === 0
+      ? section?.label.toUpperCase()
+      : trail.map((x, i) => (
+          <>
+            {i > 0 && <span aria-hidden="true"> › </span>}
+            <a href={url(x!.path)}>{x!.label.toUpperCase()}</a>
+          </>
+        ))
+  }
+</span>

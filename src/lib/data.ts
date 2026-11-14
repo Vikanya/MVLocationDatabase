@@ -1,7 +1,7 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import { execFileSync } from 'node:child_process';
 import { existsSync } from 'node:fs';
-import { parseYoutubeId, slugify } from './ids';
+import { parseYoutubeId, slugify, VIDEO_TYPES, VIDEO_TYPE_NAME } from './ids';
 
 export type Artist = CollectionEntry<'artists'>;
 export type Location = CollectionEntry<'locations'>;
@@ -313,14 +313,9 @@ export const videoYear = (v: Video) => v.data.published?.slice(0, 4) ?? '';
 export const cardMeta = (v: Video, artistNames: string) =>
   [artistNames || v.data.channel, videoYear(v)].filter(Boolean).join(' · ') || ' ';
 
-export const TYPE_LABEL: Record<string, string> = {
-  mv: 'MV',
-  performance: 'PERFORMANCE',
-  live: 'LIVE',
-  cover: 'COVER',
-  clip: 'CLIP',
-  other: 'VIDEO',
-};
+export const TYPE_LABEL: Record<string, string> = Object.fromEntries(
+  VIDEO_TYPES.map((t) => [t, VIDEO_TYPE_NAME[t].toUpperCase()]),
+);
 
 const songs = (v: Video) => v.data.songs ?? [];
 /** Short label for a video: its songs ("Glow up + LOVE ATTACK"), Latin titles first; else the video title. */

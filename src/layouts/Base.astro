@@ -3,6 +3,7 @@ import '../styles/global.css';
 import Window from '../components/Window.astro';
 import ThemeInit from '../components/ThemeInit.astro';
 import { db, url, TYPE_LABEL } from '../lib/data';
+import { SECTIONS, pagePath, where, type Section } from '../lib/nav';
 
 interface Props {
   title?: string;
@@ -16,19 +17,10 @@ const pageTitle = title ? `${title} · ${SITE}` : `${SITE} — K-pop music video
 const desc = description ?? 'K-pop music video filming locations, with screenshots and a map.';
 
 const data = await db();
-const path = Astro.url.pathname.replace(import.meta.env.BASE_URL.replace(/\/$/, ''), '') || '/';
-const nav = [
-  { label: 'HOME', path: '/' },
-  { label: 'MAP', path: '/map/' },
-  { label: 'LOCATIONS', path: '/locations/' },
-  { label: 'ARTISTS', path: '/artists/' },
-  { label: 'VIDEOS', path: '/videos/' },
-  { label: 'SCREENS', path: '/shots/' },
-  { label: 'YEARS', path: '/years/' },
-  { label: 'NEW', path: '/new/' },
-  { label: 'SEARCH', path: '/search/' },
-];
-const current = (p: string) => (p === '/' ? path === '/' : path.startsWith(p));
+const path = pagePath(Astro.url);
+// The menu: the three sections. On a section's own page its entry is 'page'; anywhere inside it, 'true'.
+const { section } = where(path);
+const mark = (x: Section) => (x === section ? (path === x.path ? 'page' : 'true') : undefined);
 
 const pad = (n: number) => String(n).padStart(5, '0');
 const shots = data.appearances.reduce((n, a) => n + a.shots.length, 0);
@@ -64,20 +56,7 @@ const shots = data.appearances.reduce((n, a) => n + a.shots.length, 0);
 
       <div class="shell">
         <aside class="sidebar">
-          <Window title="Menu" tone="chrome">
-            <nav aria-label="Main">
-              <ul class="nav">
-                {
-                  nav.map((item) => (
-                    <li>
-                      <a href={url(item.path)} aria-current={current(item.path) ? 'page' : undefined}>
-                        {item.label}
-                      </a>
-                    </li>
-                  ))
-                }
-              </ul>
-            </nav>
+          <Window title="Menu" tone="chrome" class="menu-win">
             <form class="search-box" action={url('search/')} method="get" role="search">
               <label class="visually-hidden" for="q">Search</label>
               <div class="find" id="find" data-src={url('find.json')} data-types={JSON.stringify(TYPE_LABEL)}>
@@ -95,14 +74,28 @@ const shots = data.appearances.reduce((n, a) => n + a.shots.length, 0);
                 <ul class="find-list" id="find-list" role="listbox" aria-label="Suggestions" hidden></ul>
               </div>
               <button class="btn" type="submit">GO</button>
+              <button class="btn menu-more" type="button" id="menu-more" aria-expanded="false" aria-controls="menu-extra" aria-label="More">≡</button>
             </form>
-            <div class="random" id="random">
-              <button class="btn" type="button" data-random="v">? RANDOM MV</button>
-              <button class="btn" type="button" data-random="l">? RANDOM SPOT</button>
+            <nav aria-label="Main">
+              <ul class="nav">
+                {
+                  SECTIONS.map((item) => (
+                    <li>
+                      <a href={url(item.path)} aria-current={mark(item)}>{item.label.toUpperCase()}</a>
+                    </li>
+                  ))
+                }
+              </ul>
+            </nav>
+            <div class="menu-extra" id="menu-extra">
+              <div class="random" id="random">
+                <button class="btn" type="button" data-random="v">? RANDOM MV</button>
+                <button class="btn" type="button" data-random="l">? RANDOM SPOT</button>
+              </div>
+              <button class="btn theme-toggle" type="button" id="theme-toggle">
+                <span class="theme-dark">☾ DARK MODE</span><span class="theme-light">☀ LIGHT MODE</span>
+              </button>
             </div>
-            <button class="btn theme-toggle" type="button" id="theme-toggle">
-              <span class="theme-dark">☾ DARK MODE</span><span class="theme-light">☀ LIGHT MODE</span>
-            </button>
           </Window>
           <Window title="Counter" tone="pink" class="counter-win">
             <dl class="counter">
@@ -123,6 +116,13 @@ const shots = data.appearances.reduce((n, a) => n + a.shots.length, 0);
 
     <script>
       const root = document.documentElement;
+      // Phone menu: the ≡ button shows the random and theme buttons (always shown on a computer).
+      const more = document.getElementById('menu-more')!;
+      more.addEventListener('click', () => {
+        const open = more.getAttribute('aria-expanded') !== 'true';
+        more.setAttribute('aria-expanded', String(open));
+        document.getElementById('menu-extra')!.classList.toggle('open', open);
+      });
       const button = document.getElementById('theme-toggle')!;
       const label = () =>
         button.setAttribute('aria-label', root.dataset.theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');

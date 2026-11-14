@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import SectionKicker from '../../components/SectionKicker.astro';
 import Window from '../../components/Window.astro';
 import MapView from '../../components/MapView.astro';
 import VideoCard from '../../components/VideoCard.astro';
@@ -33,7 +34,7 @@ const plural = (n: number, word: string) => `${n} ${word}${n === 1 ? '' : 's'}`;
 
 <Base title={year} description={`Filming locations of K-pop videos published in ${year}.`}>
   <header class="page-head">
-    <span class="kicker">YEAR</span>
+    <SectionKicker />
     <h1>{year}</h1>
     <p class="sub">{plural(videos.length, 'video')} · {plural(places.length, 'place')}</p>
     <p class="sub">
@@ -56,7 +57,6 @@ const plural = (n: number, word: string) => `${n} ${word}${n === 1 ? '' : 's'}`;
           places.map((p) => (
             <li>
               <a href={href.location(p.location.id)}>{p.location.data.name}</a>
-              {p.location.data.status === 'unknown' && <span class="badge" data-kind="unknown">???</span>}
               <span class="muted"> · {p.videos}</span>
             </li>
           ))

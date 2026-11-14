@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import SectionKicker from '../components/SectionKicker.astro';
 import Window from '../components/Window.astro';
 import VideoCard from '../components/VideoCard.astro';
 import LocationCard from '../components/LocationCard.astro';
@@ -27,7 +28,7 @@ const plural = (n: number, word: string) => `${n} ${word}${n === 1 ? '' : 's'}`;
 
 <Base title="New" description="Videos and filming locations added recently.">
   <header class="page-head">
-    <span class="kicker">NEW</span>
+    <SectionKicker />
     <h1>Recently added</h1>
     <p class="sub">
       {

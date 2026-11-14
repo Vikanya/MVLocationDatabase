@@ -58,9 +58,7 @@ const nearby = l.tags?.length
 
 <Base title={l.name} description={`${here.length} music videos filmed at ${l.name}${l.address ? `, ${l.address}` : ''}.`} searchable>
   <header class="page-head">
-    <span class="kicker">
-      LOCATION {unknown && <span class="badge" data-kind="unknown">??? NOT IDENTIFIED YET</span>}
-    </span>
+    <span class="kicker">LOCATION</span>
     <h1>{l.name}</h1>
     {
       studios.length > 0 && (
@@ -282,7 +280,6 @@ const nearby = l.tags?.length
           {nearby.map((o) => (
             <li>
               <a href={href.location(o.id)}>{o.data.name}</a>
-              {o.data.status === 'unknown' && <span class="badge" data-kind="unknown">???</span>}
             </li>
           ))}
         </ul>

@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import SectionKicker from '../../components/SectionKicker.astro';
 import Window from '../../components/Window.astro';
 import { db, href, media, stableShuffle, videoYear } from '../../lib/data';
 
@@ -24,7 +25,7 @@ const shotsOf = (year: string) =>
 
 <Base title="Years" description="K-pop MV filming locations by the year the video came out.">
   <header class="page-head">
-    <span class="kicker">YEARS</span>
+    <SectionKicker />
     <h1>By year</h1>
     <p class="sub">Videos by the year they were published on YouTube.</p>
   </header>

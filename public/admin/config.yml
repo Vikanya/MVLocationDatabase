@@ -159,11 +159,15 @@ collections:
         label: Type
         widget: select
         options:
-          - { label: MV, value: mv }
-          - { label: Performance, value: performance }
+          # Same list as VIDEO_TYPES in src/lib/ids.ts.
+          - { label: "MV (also special clips, track videos)", value: mv }
+          - { label: "Teaser / trailer / concept", value: teaser }
+          - { label: "Performance / dance", value: performance }
+          - { label: "Stage (TV show, awards, concert)", value: stage }
           - { label: Live, value: live }
           - { label: Cover, value: cover }
-          - { label: Clip / special, value: clip }
+          - { label: Ad, value: ad }
+          - { label: "Behind / shorts / variety", value: behind }
           - { label: Other, value: other }
         default: mv
         required: false

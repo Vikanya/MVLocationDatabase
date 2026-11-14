@@ -1,8 +1,9 @@
 ---
 import Base from '../../layouts/Base.astro';
+import SectionKicker from '../../components/SectionKicker.astro';
 import Window from '../../components/Window.astro';
 import VideoCard from '../../components/VideoCard.astro';
-import { db, TYPE_LABEL, videoLabel } from '../../lib/data';
+import { db, href, recentlyAdded, TYPE_LABEL, url, videoLabel, videoYear } from '../../lib/data';
 
 const data = await db();
 const collator = new Intl.Collator(['en', 'ko'], { sensitivity: 'base', numeric: true });
@@ -10,15 +11,32 @@ const artistName = (v: (typeof data.videos)[number]) => data.videoArtists(v)[0]?
 const videos = [...data.videos].sort(
   (a, b) => collator.compare(artistName(a), artistName(b)) || collator.compare(videoLabel(a), videoLabel(b)),
 );
+// The Videos hub: the newest videos and the years (each a preview of its own page), then every video.
+const recent = (await recentlyAdded()).filter((a) => a.video).slice(0, 6);
+const yearCount = new Map<string, number>();
+for (const v of data.videos) if (videoYear(v)) yearCount.set(videoYear(v), (yearCount.get(videoYear(v)) ?? 0) + 1);
+const years = [...yearCount].sort((a, b) => b[0].localeCompare(a[0]));
 const types = Object.keys(TYPE_LABEL).filter((t) => videos.some((v) => (v.data.type ?? 'other') === t));
 ---
 
 <Base title="Videos" description="All music videos, performances and clips in the database.">
   <header class="page-head">
-    <span class="kicker">INDEX</span>
+    <SectionKicker />
     <h1>Videos</h1>
     <p class="sub">{videos.length} videos, sorted by artist.</p>
   </header>
+
+  {
+    recent.length > 0 && (
+      <Window title="Recently added" href={url('new/')}>
+        <ul class="cards one-row">{recent.map((a) => <li><VideoCard video={a.video!} note={`Added ${a.date}`} /></li>)}</ul>
+      </Window>
+    )
+  }
+
+  <Window title="By year" tone="chrome" href={url('years/')}>
+    <ul class="chips">{years.map(([y, n]) => <li><a class="chip" href={href.year(y)}>{y}<b>{n}</b></a></li>)}</ul>
+  </Window>
 
   <Window title="All videos">
     <div class="chips" role="group" aria-label="Filter by type" id="type-filter">

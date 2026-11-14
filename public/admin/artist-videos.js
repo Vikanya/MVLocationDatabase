@@ -50,7 +50,8 @@
 
   const read = (obj, key) => (obj && typeof obj.get === 'function' ? obj.get(key) : obj && obj[key]);
   const editor = (collection, id) => `${base}#/collections/${collection}/entries/${encodeURIComponent(id)}`;
-  const TYPE = { mv: 'MV', performance: 'Performance', live: 'Live', cover: 'Cover', clip: 'Clip', other: 'Video' };
+  // Same names as VIDEO_TYPE_NAME in src/lib/ids.ts.
+  const TYPE = { mv: 'MV', teaser: 'Teaser', performance: 'Performance', stage: 'Stage', live: 'Live', cover: 'Cover', ad: 'Ad', behind: 'Behind', other: 'Other' };
 
   const link = (collection, id, text) =>
     h('a', { key: id, href: editor(collection, id), target: '_blank', rel: 'noopener', title: `Open ${id} in a new tab` }, `✎ ${text}`);

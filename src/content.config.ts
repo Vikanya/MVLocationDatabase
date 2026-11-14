@@ -1,6 +1,7 @@
 import { defineCollection, reference } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
+import { VIDEO_TYPES } from './lib/ids';
 
 // Keep file names exactly as IDs: YouTube IDs are case-sensitive and the default loader lowercases them.
 const fileId = ({ entry }: { entry: string }) => entry.replace(/\.json$/, '');
@@ -72,7 +73,7 @@ const videos = defineCollection({
           .refine((s) => s.title || s.title_ko, 'A song needs a Latin or a Korean title'),
       )
       .optional(),
-    type: z.enum(['mv', 'performance', 'live', 'cover', 'clip', 'other']).optional(),
+    type: z.enum(VIDEO_TYPES).optional(),
     channel: z.string().optional(),
     embeddable: z.boolean().optional(),
     start: z.number().optional(),

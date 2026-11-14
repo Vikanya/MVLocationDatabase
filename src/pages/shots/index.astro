@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import SectionKicker from '../../components/SectionKicker.astro';
 import Window from '../../components/Window.astro';
 import { byName, db, href, media, slugify, videoLabel, type Location } from '../../lib/data';
 
@@ -32,13 +33,14 @@ const sets = Object.fromEntries(
 
 <Base title="Screenshots" description="Every screenshot in the database, by kind of place, location and set.">
   <header class="page-head">
-    <span class="kicker">SCREENS</span>
+    <SectionKicker />
     <h1>Screenshots</h1>
     <p class="sub"><span id="wall-count">{tiles.length}</span> screenshots</p>
   </header>
 
   <Window title="All screenshots">
-    <div class="wall-filters" id="wall-filters" hidden>
+    <noscript><style>#wall-filters { display: none; }</style></noscript>
+    <div class="wall-filters" id="wall-filters">
       <div class="chips" role="group" aria-label="Filter by kind of place" id="wall-tags">
         <button class="btn" type="button" data-tag="" aria-pressed="true">ALL</button>
         {tags.map((t) => <button class="btn" type="button" data-tag={t.slug} aria-pressed="false">{t.name}</button>)}
@@ -160,7 +162,6 @@ const sets = Object.fromEntries(
     if (setsOf[loc].some((s) => s.id === set)) state.set = set;
   } else if (tags.has(params.get('tag') ?? '')) state.tag = params.get('tag')!;
 
-  document.getElementById('wall-filters')!.hidden = false;
   fillSets();
   if (!state.location) shuffle();
   apply();
@@ -196,9 +197,6 @@ const sets = Object.fromEntries(
     display: grid;
     gap: 10px;
     margin-bottom: 14px;
-  }
-  .wall-filters[hidden] {
-    display: none;
   }
   /* Long location names (some are still street addresses) must not widen the page. */
   .wall-filters > * {

@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import SectionKicker from '../../components/SectionKicker.astro';
 import Window from '../../components/Window.astro';
 import MapView from '../../components/MapView.astro';
 import LocationCard from '../../components/LocationCard.astro';
@@ -19,7 +20,7 @@ const videos = new Set(locations.flatMap((l) => data.atLocation(l.id).map((a) =>
 
 <Base title={name} description={`K-pop MV filming locations tagged “${name}”.`}>
   <header class="page-head">
-    <span class="kicker">TAG</span>
+    <SectionKicker />
     <h1>{name}</h1>
     <p class="sub">{locations.length} place{locations.length === 1 ? '' : 's'} · {videos} video{videos === 1 ? '' : 's'}</p>
   </header>

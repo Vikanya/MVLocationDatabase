@@ -1,36 +1,54 @@
 ---
 import Base from '../../layouts/Base.astro';
+import SectionKicker from '../../components/SectionKicker.astro';
 import Window from '../../components/Window.astro';
 import MapView from '../../components/MapView.astro';
-import LocationCard from '../../components/LocationCard.astro';
-import { db, href, pinsFor, slugify } from '../../lib/data';
+import { db, href, media, pinsFor, slugify, stableShuffle, url } from '../../lib/data';
 
+// The Locations hub: a window per way of browsing places (map, kinds, screenshots), each a preview of its own
+// page with its title bar linking there, then the full list.
 const data = await db();
 // A studio counts the videos of all its spaces.
 const count = (id: string) => data.videoCount(id);
-const identified = data.locations.filter((l) => l.data.status === 'identified');
-const unknown = data.locations.filter((l) => l.data.status === 'unknown');
-const pins = pinsFor(identified, (l) => count(l.id));
+const pins = pinsFor(data.locations, (l) => count(l.id));
+const shots = stableShuffle(
+  data.appearances.flatMap((a) => a.shots.map((s) => ({ image: s.image, location: a.location }))),
+  'locations',
+).slice(0, 8);
 ---
 
 <Base title="Locations" description="All known K-pop MV filming locations, with a map.">
   <header class="page-head">
-    <span class="kicker">INDEX</span>
+    <SectionKicker />
     <h1>Locations</h1>
-    <p class="sub">{identified.length} identified places · {unknown.length} still unknown</p>
+    <p class="sub">{data.locations.length} places</p>
   </header>
 
-  <Window title="Map" flush>
+  <Window title="Map" flush href={url('map/')}>
     <MapView pins={pins} height={360} />
   </Window>
 
-  <Window title="Kinds of place" tone="chrome">
+  <Window title="Kinds of place" tone="chrome" href={url('tags/')}>
     <ul class="chips">
       {data.tags.map((t) => <li><a class="chip" href={href.tag(t.slug)}>{t.name}<b>{t.count}</b></a></li>)}
     </ul>
   </Window>
 
-  <Window title="Identified places" flush>
+  <Window title="Screenshots" tone="pink" href={url('shots/')}>
+    <ul class="shot-strip">
+      {
+        shots.map((s) => (
+          <li>
+            <a href={href.location(s.location.id)} title={s.location.data.name}>
+              <img src={media.thumb(s.image)} alt={s.location.data.name} loading="lazy" decoding="async" width="480" height="270" />
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </Window>
+
+  <Window title="All places" flush>
     <div class="table-scroll">
       <table class="table">
         <thead>
@@ -38,13 +56,12 @@ const pins = pinsFor(identified, (l) => count(l.id));
         </thead>
         <tbody>
           {
-            identified.map((l) => (
+            data.locations.map((l) => (
               <tr>
                 <td>
                   <a href={href.location(l.id)}>{l.data.name}</a>
                   {l.data.part_of && <span class="muted"> · part of {data.location(l.data.part_of.id)?.data.name}</span>}
                   {data.directSpaces(l.id).length > 0 && <span class="muted"> · {data.directSpaces(l.id).length} places</span>}
-                  {!l.data.coordinates && <span class="muted"> (no map pin yet)</span>}
                 </td>
                 <td>
                   {(l.data.tags ?? []).map((t, i) => (
@@ -61,10 +78,5 @@ const pins = pinsFor(identified, (l) => count(l.id));
         </tbody>
       </table>
     </div>
-  </Window>
-
-  <Window title="Not identified yet" tone="pink">
-    <p class="muted">Seen in videos, but not located yet.</p>
-    <ul class="cards">{unknown.map((l) => <li><LocationCard location={l} /></li>)}</ul>
   </Window>
 </Base>

@@ -1,6 +1,8 @@
 // Guesses for the quick-add form from a YouTube title: artists, songs, video type, coordinates.
 // Pure functions (no DOM), tested with `node --test src/scripts/quick-add/`.
 
+import type { VideoType } from '../../lib/ids.ts';
+
 export interface ArtistRef {
   id: string;
   name: string;
@@ -108,14 +110,23 @@ export function guessSong(title: string, defaultTitle = title): Song | undefined
   return song.title || song.title_ko ? song : undefined;
 }
 
-export type VideoType = 'mv' | 'performance' | 'live' | 'cover' | 'clip' | 'other';
+export type { VideoType };
 
-/** Video type from words in the title; MV when nothing else fits (the most common kind). */
+/**
+ * Video type from words in the title; MV when nothing else fits (the most common kind). Teasers and
+ * behind-the-scenes come first ("MV Teaser", "MV Behind"), then anything that calls itself an MV
+ * ("Official MV (Performance ver.)", "Live Alive" in a song title), then the rest.
+ */
 export function guessType(title: string): VideoType {
   if (/\bcover(ed)?\b/i.test(title)) return 'cover';
-  if (/\blive\b/i.test(title)) return 'live';
-  if (/performance|dance practice|choreograph|안무|\bstage\b/i.test(title)) return 'performance';
-  if (/special clip|track video|\bfilm\b|teaser|visualizer/i.test(title)) return 'clip';
+  if (/teaser|trailer|티저|concept (photo|film|trailer|clip)|prologue/i.test(title)) return 'teaser';
+  if (/behind|making (film|video)|비하인드|메이킹|\bvlog\b|#shorts/i.test(title)) return 'behind';
+  if (/\bm\/?v\b|music video|뮤직비디오|special (clip|video)|track video|visual video|visuali[sz]er/i.test(title)) return 'mv';
+  if (/\blive\b|라이브/i.test(title)) return 'live';
+  if (/music core|음악중심|inkigayo|인기가요|music bank|뮤직뱅크|m ?countdown|엠카운트다운|show champion|쇼챔피언|\bthe show\b|\bmama\b|awards?\b|comeback show|concert|콘서트|\bstage\b/i.test(title)) return 'stage';
+  if (/performance|dance practice|choreograph|안무|dance video/i.test(title)) return 'performance';
+  if (/\bfilm\b/i.test(title)) return 'teaser';
+  if (/\bcf\b|commercial|광고/i.test(title)) return 'ad';
   return 'mv';
 }
 

@@ -117,7 +117,6 @@ const moreBy = artists
             <h3>
               <a href={href.location(a.location.id)}>{a.location.data.name}</a>
             </h3>
-            {a.location.data.status === 'unknown' && <span class="badge" data-kind="unknown">??? NOT IDENTIFIED YET</span>}
             {a.confidence === 'unsure' && <span class="badge" data-kind="unsure">NOT SURE</span>}
             {a.location.data.address && <span class="muted">{a.location.data.address}</span>}
           </div>
@@ -150,20 +149,16 @@ const moreBy = artists
 
   {
     alsoHere.map((s) => (
-      <Window title={`Also filmed at ${s.location.data.name}`}>
+      <Window title={`Also filmed at ${s.location.data.name}`} href={href.location(s.location.id)}>
         <ul class="cards">{s.cards.map((c) => <li><VideoCard video={c.video} image={c.image} /></li>)}</ul>
-        {s.total > STRIP + 1 && (
-          <p class="more"><a href={href.location(s.location.id)}>ALL {s.total} ▸</a></p>
-        )}
       </Window>
     ))
   }
 
   {
     moreBy.map((m) => (
-      <Window title={`More by ${m.artist.data.name}`} tone="chrome">
+      <Window title={`More by ${m.artist.data.name}`} tone="chrome" href={href.artist(m.artist.id)}>
         <ul class="cards">{m.cards.map((v) => <li><VideoCard video={v} /></li>)}</ul>
-        <p class="more"><a href={href.artist(m.artist.id)}>{m.artist.data.name.toUpperCase()} PAGE ▸</a></p>
       </Window>
     ))
   }

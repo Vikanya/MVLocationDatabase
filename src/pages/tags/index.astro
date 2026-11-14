@@ -1,0 +1,41 @@
+---
+import Base from '../../layouts/Base.astro';
+import SectionKicker from '../../components/SectionKicker.astro';
+import Window from '../../components/Window.astro';
+import { db, href } from '../../lib/data';
+
+const data = await db();
+const rows = data.tags.map((t) => {
+  const places = data.locations.filter((l) => l.data.tags?.includes(t.name));
+  const videos = new Set(places.flatMap((l) => data.atLocation(l.id).map((a) => a.video.id))).size;
+  return { ...t, videos };
+});
+---
+
+<Base title="Kinds of place" description="K-pop MV filming locations by kind of place: studios, subways, schools, rooftops…">
+  <header class="page-head">
+    <SectionKicker />
+    <h1>Kinds of place</h1>
+    <p class="sub">{rows.length} kinds. A place can be of several kinds.</p>
+  </header>
+  <Window title="Kinds of place" flush>
+    <div class="table-scroll">
+      <table class="table">
+        <thead>
+          <tr><th scope="col">KIND</th><th scope="col" class="num">PLACES</th><th scope="col" class="num">VIDEOS</th></tr>
+        </thead>
+        <tbody>
+          {
+            rows.map((t) => (
+              <tr>
+                <td><a href={href.tag(t.slug)}>{t.name}</a></td>
+                <td class="num">{t.count}</td>
+                <td class="num">{t.videos}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+  </Window>
+</Base>

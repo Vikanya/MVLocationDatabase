@@ -18,7 +18,6 @@ const spaces = data.directSpaces(parent);
       return (
         <li>
           <a href={href.location(s.id)}>{s.data.name}</a>
-          {s.data.status === 'unknown' && <span class="badge" data-kind="unknown">???</span>}
           <span class="muted">
             {' '}· {count} video{count === 1 ? '' : 's'}
             {own > 0 && ` in ${own} place${own === 1 ? '' : 's'}`}

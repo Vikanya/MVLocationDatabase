@@ -1,0 +1,29 @@
+{
+  "title": "[MV] 'I’ll Be Here' | 규현 (KYUHYUN) EP [CONTINUE]",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=5aiDwMOIRQE",
+  "published": "2026-11-11",
+  "artists": [
+    "kyuhyun"
+  ],
+  "songs": [
+    {
+      "title": "I’ll Be Here",
+      "title_ko": "약속"
+    }
+  ],
+  "type": "mv",
+  "channel": "안테나 Antenna",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "mamago-waikiki",
+      "screenshots": [
+        {
+          "image": "/media/full/d36cf48b6b65.webp",
+          "set": "spot-3"
+        }
+      ]
+    }
+  ]
+}

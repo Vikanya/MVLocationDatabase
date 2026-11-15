@@ -1,0 +1,40 @@
+{
+  "title": "ATEEZ(에이티즈) - 'UP' Official MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=SGovymtCzvA",
+  "published": "2026-11-13",
+  "artists": [
+    "ateez"
+  ],
+  "songs": [
+    {
+      "title": "UP"
+    }
+  ],
+  "type": "mv",
+  "channel": "KQ ENTERTAINMENT",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "taean-european-resort",
+      "screenshots": [
+        {
+          "image": "/media/full/6ac2ea026d12.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "/media/full/5b57a62ddb6f.webp",
+          "set": "spot-3"
+        },
+        {
+          "image": "/media/full/b81568861ba0.webp",
+          "set": "spot-4"
+        },
+        {
+          "image": "/media/full/7af63c43b010.webp",
+          "set": "spot-5"
+        }
+      ]
+    }
+  ]
+}

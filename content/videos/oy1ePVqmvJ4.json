@@ -1,0 +1,33 @@
+{
+  "title": "앰퍼샌드원 (AMPERS&ONE) 'King's Way' MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=oy1ePVqmvJ4",
+  "published": "2026-11-17",
+  "songs": [
+    {
+      "title": "King's Way"
+    }
+  ],
+  "type": "mv",
+  "channel": "앰퍼샌드원 (AMPERS&ONE)",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "taean-european-resort",
+      "screenshots": [
+        {
+          "image": "/media/full/b5309c35c212.webp",
+          "set": "spot-1"
+        },
+        {
+          "image": "/media/full/69f60f9cd796.webp",
+          "set": "spot-2"
+        },
+        {
+          "image": "/media/full/17712f273e65.webp",
+          "set": "spot-3"
+        }
+      ]
+    }
+  ]
+}

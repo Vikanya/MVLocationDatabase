@@ -1,0 +1,27 @@
+{
+  "title": "Yves 'Polaroid‘ Official MV",
+  "platform": "youtube",
+  "url": "https://www.youtube.com/watch?v=tMaJLflRUVI",
+  "published": "2026-11-20",
+  "artists": [
+    "loona-yves"
+  ],
+  "songs": [
+    {
+      "title": "Polaroid"
+    }
+  ],
+  "type": "mv",
+  "channel": "PAIX PER MIL",
+  "embeddable": true,
+  "appearances": [
+    {
+      "location": "songdo-ibs-tower",
+      "screenshots": [
+        {
+          "image": "/media/full/4e1c7a6ee0a0.webp"
+        }
+      ]
+    }
+  ]
+}
